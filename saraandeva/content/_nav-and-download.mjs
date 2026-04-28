@@ -6,7 +6,7 @@ import path from "node:path";
 import { chromium } from "playwright";
 
 const ROOT = path.resolve(path.dirname(new URL(import.meta.url).pathname), "..", "..");
-const OUT_DIR = path.join(ROOT, "exports/saraandeva/season_01/intro/clips");
+const OUT_DIR = path.join(ROOT, "season_01/intro/clips");
 fs.mkdirSync(OUT_DIR, { recursive: true });
 
 const tabs = await (await fetch("http://127.0.0.1:9222/json")).json();

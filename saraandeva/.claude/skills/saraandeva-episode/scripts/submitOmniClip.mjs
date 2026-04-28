@@ -67,6 +67,7 @@ const REQUIRED_NEGATIVE_TERMS = [
 const argv = process.argv.slice(2);
 const specPath = path.resolve(argv.find(a => !a.startsWith("--")) || "");
 const dryRun = argv.includes("--dry-run");
+const noGenerate = argv.includes("--no-generate");
 
 if (!specPath || !fs.existsSync(specPath)) {
   console.error("Usage: submitOmniClip.mjs <clip_json_path> [--dry-run]");
@@ -180,7 +181,7 @@ if (missingNeg.length > 0) {
 }
 
 // Library name verification — catch the "Joe rendered as Max" class of bug
-const KNOWN_LIBRARY_NAMES = new Set(["Sara", "Eva", "Ginger", "Joe", "Mama", "Papa", "Grandma"]);
+const KNOWN_LIBRARY_NAMES = new Set(["Sara", "Eva", "Ginger", "Joe", "Mama", "Papa", "Grandma", "Postman"]);
 for (const el of spec.boundElements) {
   if (el.source === "library" && !KNOWN_LIBRARY_NAMES.has(el.tag)) {
     console.warn(`⚠ boundElement tag "${el.tag}" not in known library set. If rendered output uses a different name (e.g. Joe → Max), the Kling library element is mis-named. Open the library and verify.`);
@@ -247,22 +248,68 @@ for (const el of spec.boundElements) {
 }
 
 // ─── SET QUALITY + DURATION ─────────────────────────────────────────────────
-// Verified codegen flow (2026-04-28): inside #design-view-container, click
-// the literal "1080p" text to open the dropdown, then pick 720p and 10s by text.
+// Verified codegen flow (v2 2026-04-27):
+//   await page.locator('div').filter({ hasText: /^1080p · 5s$/ }).first().click();
+//   await page.locator('#el-id-XXXX-XXX').getByText('720p').click();
+//   await page.locator('#el-id-XXXX-XXX').getByText('10s').click();
+//
+// The trigger renders a single combined-text element "<quality> · <duration>".
+// We match that with a regex so it works regardless of the current state.
+// After opening, both options sit inside the same dropdown popper (an Element
+// Plus .el-popper). We click both consecutively without re-opening.
 console.log(`→ Quality=${spec.quality} Duration=${spec.durationSec}s`);
-await page.locator('#design-view-container').getByText('1080p').first().click({ timeout: 5000 });
-await page.waitForTimeout(500);
-await page.getByText(spec.quality, { exact: true }).first().click({ timeout: 3000 }).catch(err => {
-  console.warn(`  ⚠ could not click "${spec.quality}": ${err.message.slice(0, 80)}`);
-});
-await page.waitForTimeout(400);
-await page.getByText(`${spec.durationSec}s`, { exact: true }).first().click({ timeout: 3000 }).catch(err => {
-  console.warn(`  ⚠ could not click "${spec.durationSec}s": ${err.message.slice(0, 80)}`);
-});
-await page.waitForTimeout(500);
-// Click outside to close any lingering dropdown
-await page.locator('body').click({ position: { x: 100, y: 100 } }).catch(() => {});
-await page.waitForTimeout(400);
+await setQualityAndDuration(page, spec.quality, spec.durationSec);
+
+async function setQualityAndDuration(page, quality, durationSec) {
+  // Try up to 3 times — Element Plus poppers are flaky if the previous one
+  // hasn't fully unmounted.
+  for (let attempt = 1; attempt <= 3; attempt++) {
+    // Open the dropdown by clicking the combined "<quality> · <duration>" trigger.
+    // Regex matches any current state (e.g. "1080p · 5s", "720p · 10s").
+    const trigger = page.locator('div').filter({ hasText: /^\d{3,4}p · \d+s$/ }).first();
+    if (await trigger.count() === 0) {
+      console.warn(`  ⚠ attempt ${attempt}: combined-text trigger not found`);
+      await page.waitForTimeout(500);
+      continue;
+    }
+    await trigger.click({ timeout: 5000 }).catch(() => {});
+    await page.waitForTimeout(600);
+
+    // The dropdown panel is an Element Plus popper. Take the visible one.
+    // We re-locate fresh each time to avoid stale handles.
+    const popper = page.locator('.el-popper:visible, [class*="popper"]:visible').last();
+    if (await popper.count() === 0) {
+      console.warn(`  ⚠ attempt ${attempt}: dropdown popper did not appear`);
+      await page.waitForTimeout(500);
+      continue;
+    }
+
+    // Click quality option, then duration option, inside the popper.
+    const qOk = await popper.getByText(quality, { exact: true })
+      .first().click({ timeout: 2500 }).then(() => true).catch(() => false);
+    await page.waitForTimeout(300);
+    const dOk = await popper.getByText(`${durationSec}s`, { exact: true })
+      .first().click({ timeout: 2500 }).then(() => true).catch(() => false);
+    await page.waitForTimeout(400);
+
+    // Verify the trigger now reads "<quality> · <duration>"
+    const triggerText = await page.locator('div').filter({ hasText: /^\d{3,4}p · \d+s$/ })
+      .first().innerText().catch(() => "");
+    const want = `${quality} · ${durationSec}s`;
+    if (triggerText.trim() === want) {
+      console.log(`  ✓ trigger now shows "${want}"`);
+      // Click outside to dismiss any lingering popper
+      await page.locator('body').click({ position: { x: 100, y: 100 } }).catch(() => {});
+      await page.waitForTimeout(300);
+      return;
+    }
+
+    console.warn(`  ⚠ attempt ${attempt}: trigger="${triggerText.trim()}" want="${want}" (qOk=${qOk} dOk=${dOk}) — retrying`);
+    await page.locator('body').click({ position: { x: 100, y: 100 } }).catch(() => {});
+    await page.waitForTimeout(700);
+  }
+  console.error(`  ❌ could not set ${quality} · ${durationSec}s after 3 attempts`);
+}
 
 // ─── TYPE PROMPT WITH @-AUTOCOMPLETE ────────────────────────────────────────
 console.log("→ Typing prompt with @-autocomplete chips");
@@ -336,6 +383,13 @@ if (actualCost !== expectedCredits) {
 }
 
 // ─── GENERATE ───────────────────────────────────────────────────────────────
+if (noGenerate) {
+  console.log("⏸  --no-generate set: form is filled, Generate NOT clicked.");
+  console.log(`   Review the page in Chrome. Click Generate manually when ready.`);
+  console.log(`   Credit cost shown on button: ${actualCost}`);
+  await browser.close();
+  process.exit(0);
+}
 console.log("→ Clicking Generate (this WILL spend credits)...");
 await generateBtn.click();
 await page.waitForTimeout(2000);
@@ -369,7 +423,7 @@ async function addLibraryElement(page, tag) {
   await page.waitForTimeout(800);
 
   // 2. Pick category — characters vs scenes (heuristic by tag casing/known set)
-  const KNOWN_CHAR_TAGS = new Set(["Sara", "Eva", "Ginger", "Joe", "Mama", "Papa", "Grandma"]);
+  const KNOWN_CHAR_TAGS = new Set(["Sara", "Eva", "Ginger", "Joe", "Mama", "Papa", "Grandma", "Postman"]);
   const category = KNOWN_CHAR_TAGS.has(tag) ? "Characters" : "Scenes";
   await page.getByText(category, { exact: true }).click().catch(() => {
     console.log(`    (category tab "${category}" not found, continuing without filter)`);

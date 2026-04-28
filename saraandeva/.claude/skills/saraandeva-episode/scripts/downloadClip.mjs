@@ -12,7 +12,7 @@
  *   node content/saraandeva/downloadKlingClips.mjs [OUT_DIR] [N]
  *
  * Defaults:
- *   OUT_DIR: exports/saraandeva/season_01/intro/clips
+ *   OUT_DIR: season_01/intro/clips
  *   N:       3 (latest 3 videos)
  */
 
@@ -22,7 +22,7 @@ import { chromium } from "playwright";
 
 const ROOT = path.resolve(path.dirname(new URL(import.meta.url).pathname), "..", "..");
 const OUT_DIR = path.resolve(
-  process.argv[2] || path.join(ROOT, "exports/saraandeva/season_01/intro/clips")
+  process.argv[2] || path.join(ROOT, "season_01/intro/clips")
 );
 const N = Number(process.argv[3] || 3);
 fs.mkdirSync(OUT_DIR, { recursive: true });

@@ -56,6 +56,9 @@ yarn-error.log*
 *.vtt
 exports/
 **/exports/
+# Render output — episodes/clips live on disk, never in git
+saraandeva/season_01/
+**/season_01/
 
 # SaraAndEva reference assets ARE committed (user works on them).
 # stories/ generated character PNGs stay out — regen from JSON.

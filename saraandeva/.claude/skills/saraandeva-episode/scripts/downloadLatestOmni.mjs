@@ -13,7 +13,7 @@
  *
  * Usage:
  *   node downloadLatestOmni.mjs <out_path>
- *   e.g. node downloadLatestOmni.mjs exports/saraandeva/season_01/episode_03/clip_01a.mp4
+ *   e.g. node downloadLatestOmni.mjs season_01/episode_03/clip_01a.mp4
  */
 import fs from "node:fs";
 import path from "node:path";
