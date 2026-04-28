@@ -48,11 +48,8 @@ yarn-error.log*
 exports/
 **/exports/
 
-# Reference photos / character assets — live on disk, not in git
-saraandeva/assets/**/*.png
-saraandeva/assets/**/*.jpg
-saraandeva/assets/**/*.jpeg
-saraandeva/assets/**/*.webp
+# SaraAndEva reference assets ARE committed (user works on them).
+# stories/ generated character PNGs stay out — regen from JSON.
 stories/assets/characters/*.png
 
 # Curation/iteration artifacts (saraandeva)
