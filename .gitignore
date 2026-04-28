@@ -38,13 +38,22 @@ yarn-debug.log*
 yarn-error.log*
 
 # =====================================================================
-# Generated media — large, regenerable
+# Video / audio files — never in git
 # =====================================================================
-*.mp3
 *.mp4
+*.mov
+*.avi
+*.mkv
+*.webm
+*.m4v
+*.mp3
 *.wav
 *.pcm
+*.aac
+*.flac
+*.ogg
 *.srt
+*.vtt
 exports/
 **/exports/
 

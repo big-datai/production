@@ -1,0 +1,11 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(pod update:*)",
+      "Bash(npx cap:*)",
+      "Bash(node scripts/fix_subscription.mjs)",
+      "Bash(gcloud app:*)",
+      "Bash(gcloud logging:*)"
+    ]
+  }
+}
