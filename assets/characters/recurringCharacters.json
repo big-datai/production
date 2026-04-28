@@ -1,0 +1,136 @@
+{
+  "version": 1,
+  "description": "GoReadling recurring character universe. These characters appear across stories as a connected journey. Use their canonical descriptions and reference images for visual consistency.",
+  "characters": [
+    {
+      "id": "luna",
+      "name": "Luna",
+      "role": "The Brave Princess",
+      "species": "human",
+      "age": "8-year-old girl",
+      "personality": "Courageous, kind-hearted, curious, and determined. She leads with empathy rather than force. She believes in doing what's right even when it's scary.",
+      "body": "Slender, graceful build, average height for her age",
+      "face": "Warm brown eyes with long lashes, gentle round face with rosy cheeks, small freckles across her nose",
+      "hair": "Long wavy dark brown hair, often loose with a small braid on one side",
+      "skin": "Warm olive complexion",
+      "outfit": "A soft lavender dress with silver star embroidery along the hem, a small silver crescent moon pendant necklace, brown leather boots",
+      "features": "Always wears her crescent moon pendant — it was a gift from her grandmother",
+      "voice": "Kore",
+      "voiceStyle": "Gentle, warm, slightly breathy with wonder",
+      "storyRoles": ["princess", "brave child", "kind girl", "heroine", "daughter"],
+      "avatarPath": "assets/characters/luna.png"
+    },
+    {
+      "id": "finn",
+      "name": "Finn",
+      "role": "The Curious Explorer",
+      "species": "human",
+      "age": "9-year-old boy",
+      "personality": "Adventurous, cheerful, resourceful, and endlessly curious. He asks questions about everything and loves solving problems. Sometimes rushes in before thinking.",
+      "body": "Sturdy, energetic build with slightly scruffy appearance",
+      "face": "Bright green eyes full of wonder, a wide friendly smile, a light dusting of freckles",
+      "hair": "Messy reddish-brown curly hair that sticks up in places",
+      "skin": "Fair complexion with sun-kissed cheeks",
+      "outfit": "A forest-green tunic with rolled-up sleeves, a brown leather satchel across his chest, tan trousers tucked into worn adventure boots",
+      "features": "Always carries his trusty brown leather satchel filled with treasures he's found on adventures",
+      "voice": "Puck",
+      "voiceStyle": "Bright, energetic, playful with occasional excitement bursts",
+      "storyRoles": ["explorer", "brave boy", "youngest traveler", "curious child", "helper", "son"],
+      "avatarPath": "assets/characters/finn.png"
+    },
+    {
+      "id": "rosie",
+      "name": "Rosie",
+      "role": "The Clever Hen",
+      "species": "hen",
+      "age": "Young adult hen",
+      "personality": "Hardworking, patient, clever, and warmly sarcastic. She teaches through example rather than lectures. Has a dry sense of humor but a big heart.",
+      "body": "Plump, well-kept hen with proud posture, two legs, two wings",
+      "face": "Bright alert eyes, a small sharp orange beak, a cheerful red comb on top of her head",
+      "hair": "None (feathered head with red comb and small red wattles)",
+      "skin": "Covered in glossy reddish-brown feathers with golden highlights on her chest",
+      "outfit": "A tiny blue apron with a daisy pattern (she wears it when cooking or working)",
+      "features": "Wears a small blue apron with daisies. Always has flour on her feathers when she's been baking.",
+      "voice": "Aoede",
+      "voiceStyle": "Warm, matter-of-fact, slightly musical with a knowing tone",
+      "storyRoles": ["hardworking animal", "wise female character", "hen", "mother hen", "teacher"],
+      "avatarPath": "assets/characters/rosie.png"
+    },
+    {
+      "id": "pip",
+      "name": "Pip",
+      "role": "The Mischievous Fox",
+      "species": "fox",
+      "age": "Young fox (equivalent to a 10-year-old)",
+      "personality": "Witty, playful, a bit of a trickster but ultimately good-hearted. He's always got a scheme but learns that honesty works better. Loyal to his friends despite his mischief.",
+      "body": "Sleek, agile fox body with four legs, bushy tail, medium size",
+      "face": "Bright amber eyes with a cunning glint, a pointed snout with a permanent sly grin, triangular pointed ears",
+      "hair": "None (furred)",
+      "skin": "Vibrant orange-red fur with a creamy white chest and belly, black-tipped ears and paws",
+      "outfit": "A tattered green scarf tied loosely around his neck",
+      "features": "Always wears his signature green scarf. His bushy tail has a white tip that bounces when he walks.",
+      "voice": "Fenrir",
+      "voiceStyle": "Quick, clever, slightly raspy with mischievous energy",
+      "storyRoles": ["trickster", "fox", "cunning character", "comic relief", "reluctant helper"],
+      "avatarPath": "assets/characters/pip.png"
+    },
+    {
+      "id": "captain_bramble",
+      "name": "Captain Bramble",
+      "role": "The Wise Old Storyteller",
+      "species": "human",
+      "age": "Elderly man, around 70",
+      "personality": "Warm, patient, full of wisdom from a lifetime of adventures. He speaks in a slow, soothing cadence. He was once a great sea captain and now tells stories by the fireside. Grandfatherly and protective.",
+      "body": "Stocky, broad-shouldered but slightly hunched with age, strong weathered hands",
+      "face": "Kind deep blue eyes with smile wrinkles, a thick white bushy beard, a wide warm smile, ruddy round nose",
+      "hair": "Thick white hair under a worn navy captain's hat",
+      "skin": "Weathered tan complexion from years at sea",
+      "outfit": "A cozy dark navy peacoat with brass buttons, a cream wool scarf, his old captain's hat slightly tilted",
+      "features": "Always wears his old captain's hat. Has a wooden pipe (unlit) he gestures with while telling stories.",
+      "voice": "Charon",
+      "voiceStyle": "Deep, warm, slow and soothing like a bedtime storyteller",
+      "storyRoles": ["narrator", "wise elder", "grandfather", "old man", "storyteller", "mentor"],
+      "avatarPath": "assets/characters/captain_bramble.png"
+    },
+    {
+      "id": "stella",
+      "name": "Stella",
+      "role": "The Kind Fairy",
+      "species": "fairy",
+      "age": "Ageless (appears as a young woman)",
+      "personality": "Gentle, ethereal, nurturing, and mysteriously wise. She appears when characters need guidance but never gives direct answers — she helps them find the answer themselves. Speaks in a soft, musical voice.",
+      "body": "Petite, delicate build, slightly luminous, translucent iridescent wings on her back",
+      "face": "Large violet eyes that shimmer with starlight, a serene gentle smile, high cheekbones",
+      "hair": "Long flowing silver-white hair that seems to float and glow softly",
+      "skin": "Pale luminous complexion with a faint golden glow",
+      "outfit": "A flowing gown that shifts between pale blue and soft gold like the sky at dawn, barefoot with tiny flowers growing where she steps",
+      "features": "Her wings shimmer with rainbow iridescence. Tiny flowers bloom where she steps. She carries a small lantern that glows with warm golden light.",
+      "voice": "Kore",
+      "voiceStyle": "Soft, ethereal, musical, like a whisper carried by the wind",
+      "storyRoles": ["fairy godmother", "magical guide", "fairy", "spirit", "enchantress", "helper"],
+      "avatarPath": "assets/characters/stella.png"
+    }
+  ],
+  "voiceAssignments": {
+    "narrator": {
+      "voice": "Zephyr",
+      "description": "The main narrator voice — warm, soothing, storytelling cadence"
+    },
+    "fallbackMale": {
+      "voice": "Puck",
+      "description": "Default for unassigned male characters"
+    },
+    "fallbackFemale": {
+      "voice": "Kore",
+      "description": "Default for unassigned female characters"
+    },
+    "fallbackAnimal": {
+      "voice": "Fenrir",
+      "description": "Default for unassigned animal characters"
+    },
+    "fallbackElder": {
+      "voice": "Charon",
+      "description": "Default for old/wise unassigned characters"
+    }
+  }
+}

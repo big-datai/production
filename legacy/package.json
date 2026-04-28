@@ -1,0 +1,22 @@
+{
+  "name": "goreadling-data-legacy",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "description": "Legacy Node.js content pipeline. Being ported to Python in ../src/goreadling/.",
+  "scripts": {
+    "seed-story": "node content/stories/seed.mjs"
+  },
+  "dependencies": {
+    "@google/genai": "^1.46.0",
+    "@google/generative-ai": "^0.24.1",
+    "dotenv": "^16.6.1",
+    "firebase": "^12.6.0",
+    "firebase-admin": "^12.6.0",
+    "google-auth-library": "^10.6.2",
+    "googleapis": "^171.4.0"
+  },
+  "devDependencies": {
+    "playwright": "^1.57.0"
+  }
+}

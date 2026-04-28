@@ -1,0 +1,63 @@
+# Secrets
+.env
+.env.local
+.env.production
+.env.*.local
+credentials.json
+token.json
+*.pem
+*.key
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+.python-version
+.mypy_cache/
+.ruff_cache/
+.pytest_cache/
+build/
+dist/
+
+# Node (legacy/)
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Generated media (large)
+*.mp3
+*.mp4
+*.wav
+*.pcm
+*.srt
+exports/
+legacy/exports/
+
+# Generated character images (regen from JSON)
+assets/characters/*.png
+legacy/content/**/exports/
+
+# Editor / OS
+.DS_Store
+.idea/
+.vscode/*
+!.vscode/extensions.json
+*.swp
+*.swo
+
+# Logs
+*.log
+dev.log
+
+# Trash
+_trash/
+**/_trash/
+
+# Misc
+*.bak
+*.docx
+orphaned_stories.json
+.firebase/

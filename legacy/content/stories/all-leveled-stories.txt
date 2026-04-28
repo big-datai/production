@@ -1,0 +1,1159 @@
+============================================================
+Level A — I See Colors
+============================================================
+Page 1: I see red.
+Page 2: I see blue.
+Page 3: I see green.
+Page 4: I see yellow.
+Page 5: I see pink.
+Page 6: I see colors!
+
+============================================================
+Level A — My Pet Cat
+============================================================
+Page 1: My cat sits.
+Page 2: My cat naps.
+Page 3: My cat runs.
+Page 4: My cat plays.
+Page 5: My cat eats.
+Page 6: I love my cat.
+
+============================================================
+Level A — At the Park
+============================================================
+Page 1: I go up.
+Page 2: I go down.
+Page 3: I run fast.
+Page 4: I jump high.
+Page 5: I dig sand.
+Page 6: The park is fun!
+
+============================================================
+Level A — Big and Little
+============================================================
+Page 1: A big dog.
+Page 2: A little bug.
+Page 3: A big tree.
+Page 4: A little bird.
+Page 5: A big sun.
+Page 6: A little star.
+
+============================================================
+Level A — Food I Like
+============================================================
+Page 1: I like apples.
+Page 2: I like bread.
+Page 3: I like milk.
+Page 4: I like rice.
+Page 5: I like bananas.
+Page 6: Yum, yum, yum!
+
+============================================================
+Level A — I Can Go
+============================================================
+Page 1: I can hop.
+Page 2: I can skip.
+Page 3: I can spin.
+Page 4: I can clap.
+Page 5: I can stomp.
+Page 6: I can dance!
+
+============================================================
+Level A — Animals Sleep
+============================================================
+Page 1: The bear sleeps.
+Page 2: The owl sleeps.
+Page 3: The fox sleeps.
+Page 4: The frog sleeps.
+Page 5: The duck sleeps.
+Page 6: Goodnight, animals!
+
+============================================================
+Level A — My Toys
+============================================================
+Page 1: My red ball.
+Page 2: My blue car.
+Page 3: My soft bear.
+Page 4: My toy boat.
+Page 5: My green blocks.
+Page 6: I love my toys!
+
+============================================================
+Level A — In the Rain
+============================================================
+Page 1: Rain comes down.
+Page 2: Puddles get big.
+Page 3: I splash hard.
+Page 4: Boots get wet.
+Page 5: Mud is fun.
+Page 6: I love rain!
+
+============================================================
+Level A — What I Hear
+============================================================
+Page 1: I hear birds.
+Page 2: I hear wind.
+Page 3: I hear dogs.
+Page 4: I hear bells.
+Page 5: I hear rain.
+Page 6: So many sounds!
+
+============================================================
+Level B — What Can You See?
+============================================================
+Page 1: Look at the sky. What can you see?
+Page 2: I can see the sun. The sun is big.
+Page 3: I can see a cloud. The cloud is white.
+Page 4: I can see a bird. The bird can fly.
+Page 5: I can see a plane. The plane is fast.
+Page 6: I can see the moon. The moon is round.
+Page 7: I can see the stars. The stars are bright.
+Page 8: I can see so many things in the sky!
+
+============================================================
+Level B — The Little Red Hen
+============================================================
+Page 1: The little red hen found some seeds.
+Page 2: Who will help me plant? said the hen.
+Page 3: Not I, said the cat. Not I, said the dog.
+Page 4: Then I will do it myself, said the hen.
+Page 5: Who will help me bake? said the hen.
+Page 6: Not I, said the cat. Not I, said the dog.
+Page 7: Then I will eat it myself, said the hen.
+Page 8: And the little red hen ate the bread. Yum!
+
+============================================================
+Level B — My Baby Brother
+============================================================
+Page 1: My baby brother is little. He is so cute.
+Page 2: My baby brother can cry. He cries a lot.
+Page 3: My baby brother can smile. I love his smile.
+Page 4: My baby brother can eat. He likes his milk.
+Page 5: My baby brother can sleep. He naps all day.
+Page 6: My baby brother can grab. He grabs my hand.
+Page 7: My baby brother can kick. He kicks his feet.
+Page 8: I love my baby brother very much!
+
+============================================================
+Level B — On the Farm
+============================================================
+Page 1: We went to the farm. The farm is big.
+Page 2: I see a cow. The cow says moo.
+Page 3: I see a pig. The pig says oink.
+Page 4: I see a duck. The duck says quack.
+Page 5: I see a horse. The horse says neigh.
+Page 6: I see a sheep. The sheep says baa.
+Page 7: I see a rooster. The rooster says cock-a-doodle-doo!
+Page 8: I like the farm. The animals are fun!
+
+============================================================
+Level B — Getting Dressed
+============================================================
+Page 1: Time to get dressed! What do I put on?
+Page 2: I put on my shirt. It is blue.
+Page 3: I put on my pants. They are soft.
+Page 4: I put on my socks. One, two!
+Page 5: I put on my shoes. Left, right!
+Page 6: I put on my hat. It is red.
+Page 7: I put on my coat. It is warm.
+Page 8: Now I am ready to go! Let's play!
+
+============================================================
+Level B — Where Is My Hat?
+============================================================
+Page 1: I cannot find my hat. Where is it?
+Page 2: Is it under the bed? No, it is not.
+Page 3: Is it in the box? No, it is not.
+Page 4: Is it on the chair? No, it is not.
+Page 5: Is it behind the door? No, it is not.
+Page 6: Is it in the closet? No, it is not.
+Page 7: Wait! It is on my head! Silly me!
+Page 8: Now I am ready to go outside and play!
+
+============================================================
+Level B — Let's Count
+============================================================
+Page 1: I can count! Come count with me.
+Page 2: One red apple in the tree.
+Page 3: Two yellow birds on the fence.
+Page 4: Three brown dogs in the yard.
+Page 5: Four green frogs on a log.
+Page 6: Five white clouds in the sky.
+Page 7: Six pink flowers in the garden.
+Page 8: I can count to six! Can you count more?
+
+============================================================
+Level B — Bath Time
+============================================================
+Page 1: Time for a bath! The water is warm.
+Page 2: I put in bubbles. Pop, pop, pop!
+Page 3: My duck floats. My boat floats too.
+Page 4: I wash my hands. Rub, rub, rub.
+Page 5: I wash my toes. Scrub, scrub, scrub.
+Page 6: I wash my hair. Splash, splash, splash!
+Page 7: Now I am all clean and shiny.
+Page 8: Time to dry off and put on pajamas!
+
+============================================================
+Level B — Shapes All Around
+============================================================
+Page 1: I can see shapes. Shapes are everywhere!
+Page 2: The clock is a circle. Round and round.
+Page 3: The door is a rectangle. Tall and long.
+Page 4: The window is a square. Four sides the same.
+Page 5: The roof is a triangle. Pointy on top.
+Page 6: The star has five points. Twinkle, twinkle!
+Page 7: The egg is an oval. Smooth and round.
+Page 8: How many shapes can you find today?
+
+============================================================
+Level B — My Five Senses
+============================================================
+Page 1: I have five senses. They help me a lot.
+Page 2: I see with my eyes. I see the blue sky.
+Page 3: I hear with my ears. I hear the birds sing.
+Page 4: I smell with my nose. I smell the flowers.
+Page 5: I taste with my tongue. I taste sweet fruit.
+Page 6: I touch with my hands. I feel soft fur.
+Page 7: My five senses help me every single day.
+Page 8: What can you see, hear, smell, taste, and touch?
+
+============================================================
+Level C — The Lost Puppy
+============================================================
+Page 1: Emma found a little puppy in the park. The puppy was brown with big, sad eyes.
+Page 2: Where is your home? Emma asked. The puppy just wagged its tail.
+Page 3: Emma looked around the park. She did not see anyone looking for a dog.
+Page 4: Let's find your family, Emma said. She picked up the puppy.
+Page 5: Emma walked down the street. She asked a man, Is this your puppy?
+Page 6: No, the man said. But I hope you find the owner.
+Page 7: Then a girl ran up. My puppy! she cried. Thank you for finding him!
+Page 8: Emma smiled. She was happy the puppy was home. She waved goodbye.
+
+============================================================
+Level C — Rainy Day Fun
+============================================================
+Page 1: It was raining outside. Ben looked out the window and felt sad.
+Page 2: I wanted to play outside, Ben said to his mom.
+Page 3: We can have fun inside! said Mom. Let's make something.
+Page 4: Ben and Mom got out paper, paint, and glue. They made a big picture.
+Page 5: Ben painted a rainbow. Mom painted a happy sun.
+Page 6: Then they made cookies. Ben mixed the dough. Mom put them in the oven.
+Page 7: The rain stopped. Ben looked out the window and saw a real rainbow!
+Page 8: This was the best rainy day ever, said Ben with a big smile.
+
+============================================================
+Level C — The Brave Little Fish
+============================================================
+Page 1: Finn was a little fish who lived in a pond. He was the smallest fish.
+Page 2: The big fish always swam to the other side. Finn was too scared to go.
+Page 3: One day, a frog jumped in. Hello! I am Fred, said the frog.
+Page 4: Do you want to swim to the other side? asked Fred.
+Page 5: I am too little, said Finn. What if it is dark and scary?
+Page 6: I will go with you, said Fred. Friends stick together!
+Page 7: So Finn and Fred swam across the pond. It was not scary at all!
+Page 8: Finn was so happy. I am small, but I am brave! he said.
+
+============================================================
+Level C — Sam and the Snow
+============================================================
+Page 1: Sam woke up and saw white everywhere. It snowed last night!
+Page 2: Sam put on his warm coat, hat, and mittens. He ran outside.
+Page 3: First, Sam made a big snowball. Then a bigger one on top.
+Page 4: He put a carrot for a nose and rocks for eyes. It was a snowman!
+Page 5: Sam's friend Lily came over. Can I help? she asked.
+Page 6: Yes! said Sam. Let's make snow angels! They fell back into the snow.
+Page 7: They laughed and played all morning. Then Mom called them inside.
+Page 8: They drank hot cocoa by the fire. What a wonderful snow day!
+
+============================================================
+Level C — A Trip to the Library
+============================================================
+Page 1: Mia loved books. Today she went to the library with her dad.
+Page 2: The library was big and quiet. There were so many books!
+Page 3: Mia found a book about space. She found one about animals too.
+Page 4: Can I get both? Mia asked Dad. Of course! he said.
+Page 5: The librarian smiled and stamped the books. Enjoy your reading!
+Page 6: At home, Mia read the space book first. She learned about stars.
+Page 7: Then she read about animals. Her favorite was the penguin.
+Page 8: Mia could not wait to go back to the library and find more books.
+
+============================================================
+Level C — The Tiny Seed
+============================================================
+Page 1: Anna planted a tiny seed in a pot. She put it by the window.
+Page 2: She watered it every day. Come on, little seed, she said.
+Page 3: Nothing happened for a long time. Anna was sad. Is it broken?
+Page 4: Then one morning she saw a small green leaf poking out of the dirt!
+Page 5: The leaf grew bigger each day. Soon there were two leaves, then three.
+Page 6: A bud appeared at the top. It was round and green and tight.
+Page 7: One sunny morning, the bud opened. It was a beautiful yellow flower!
+Page 8: Anna smiled. Good things take time, she said to her little plant.
+
+============================================================
+Level C — Bedtime for Bear
+============================================================
+Page 1: It was bedtime, but Bear did not want to sleep. I am not tired!
+Page 2: Mama Bear said, First, let's brush your teeth. Bear brushed and brushed.
+Page 3: Now put on your pajamas, said Mama. Bear put on his blue pajamas.
+Page 4: Time to pick a story, said Mama. Bear picked his favorite book.
+Page 5: Mama read the story in a soft, quiet voice. Bear listened carefully.
+Page 6: Bear yawned a big yawn. His eyes started to close. I am still not...
+Page 7: But before he could finish, Bear was fast asleep. Mama kissed his head.
+Page 8: Goodnight, little Bear, she whispered. Sweet dreams. The room was quiet.
+
+============================================================
+Level C — The Mud Pie
+============================================================
+Page 1: Leo and Rosa were playing in the garden. It rained last night.
+Page 2: Look at all this mud! said Leo. Let's make a mud pie!
+Page 3: They scooped wet mud into a bucket and patted it down flat.
+Page 4: Rosa put leaves on top. These are the decorations, she said.
+Page 5: Leo added small stones around the edge. Now it looks fancy!
+Page 6: They left it in the sun to dry. Mom came outside to look.
+Page 7: What a beautiful pie! said Mom. Is it for me? Yes! they said.
+Page 8: Mom pretended to eat it. Delicious! Best mud pie I have ever had!
+
+============================================================
+Level C — My Shadow
+============================================================
+Page 1: When the sun is out, I can see my shadow on the ground.
+Page 2: I wave my hand. My shadow waves too! It copies everything I do.
+Page 3: I jump up and down. My shadow jumps with me. Hello, shadow!
+Page 4: When I stand near a wall, my shadow gets tall. Very, very tall!
+Page 5: When I crouch down low, my shadow gets small. Tiny and round!
+Page 6: On a cloudy day, my shadow hides. Where did you go, shadow?
+Page 7: When the sun comes back, there it is again! I missed you, shadow.
+Page 8: My shadow is my friend. It follows me everywhere I go.
+
+============================================================
+Level C — The Balloon
+============================================================
+Page 1: Dad gave Kai a big red balloon at the fair. Hold on tight!
+Page 2: Kai held the string and walked through the crowd. He felt so happy.
+Page 3: A gust of wind came. The string slipped through Kai's fingers. Oh no!
+Page 4: The red balloon floated up into the sky, higher and higher.
+Page 5: Kai watched it go. His lip wobbled. My balloon is gone, he said.
+Page 6: Dad knelt down. I am sorry, buddy. Do you want a new one?
+Page 7: They went back to the balloon stand and got a blue one this time.
+Page 8: Kai wrapped the string around his wrist twice. This one is staying!
+
+============================================================
+Level D — The Loose Tooth
+============================================================
+Page 1: Jake wiggled his tooth back and forth with his tongue. It had been loose for three whole days. He wanted it to fall out so the tooth fairy would come.
+Page 2: At breakfast, Jake tried to bite his toast. Ouch! The wiggly tooth hurt. Maybe I should just pull it out, he thought.
+Page 3: His big sister laughed. Don't be silly, she said. It will fall out when it is ready. Just be patient.
+Page 4: At school, Jake told his friend Marco about the tooth. Marco said, Tie a string to it and slam a door! That only works in cartoons, said Jake.
+Page 5: During lunch, Jake bit into his apple. Pop! Something small and hard was in his mouth. His tooth had finally come out!
+Page 6: Jake ran to show his teacher. She gave him a small treasure box to keep it safe. All his classmates clapped and cheered for him.
+Page 7: That night, Jake put the tiny tooth under his pillow. He was so excited he could barely sleep. He tossed and turned for a long time.
+Page 8: In the morning, Jake found a shiny gold coin under his pillow. The tooth fairy came! he shouted, running to show his mom and dad.
+
+============================================================
+Level D — The Garden Surprise
+============================================================
+Page 1: Grandma gave Zara three small seeds. Plant these in the garden, she said with a smile. Take care of them every day and watch what happens.
+Page 2: Zara dug three little holes in the dirt. She dropped one seed into each hole and covered them gently with soil.
+Page 3: Every morning, Zara watered the seeds. She talked to them too. Grow big and strong! she whispered to the ground.
+Page 4: After a week, she saw tiny green shoots poking through the dirt. They are growing! Zara called to Grandma. Come and see!
+Page 5: The plants grew taller every day. Zara pulled out the weeds around them so they would have room. She was a good gardener.
+Page 6: One morning, Zara saw something bright and orange. A pumpkin! The seeds were pumpkin seeds all along! she said, surprised.
+Page 7: The pumpkins grew bigger and bigger until they were the biggest ones on the block. The neighbors came to take photos of them.
+Page 8: At Halloween, Zara carved her pumpkin with a big smile on its face. I grew this, she said proudly. She could not wait to plant more seeds next year.
+
+============================================================
+Level D — The Treehouse Club
+============================================================
+Page 1: Leo, Maya, and Sam decided to build a treehouse in the big oak tree in Leo's backyard. They drew plans on a big piece of paper.
+Page 2: Leo's dad helped them with the hard parts. He cut the wood and nailed the floor. The kids painted the walls bright blue and green.
+Page 3: When it was done, they climbed up the ladder and looked around. We can see the whole neighborhood from up here! Maya said.
+Page 4: They made a sign that said The Treehouse Club. They made up a secret password too. Only members could come inside.
+Page 5: Every day after school, they would meet in the treehouse. Sometimes they read books. Sometimes they played card games.
+Page 6: One day, a new girl named Priya moved in next door. She looked lonely sitting on her porch by herself all afternoon.
+Page 7: Can Priya join our club? asked Maya. The others agreed right away. They ran over and invited her up to the treehouse.
+Page 8: Priya was so happy. She brought her telescope, and they all looked at the stars together that night. The club was even better with four.
+
+============================================================
+Level D — A New Pet
+============================================================
+Page 1: Olivia had been asking for a pet for a very long time. For her birthday, her parents said she could finally pick one out.
+Page 2: At the pet store, Olivia saw puppies, kittens, hamsters, and fish. There were so many animals to choose from!
+Page 3: She walked slowly past every cage. Then she saw a small gray rabbit sitting quietly in the corner, twitching its nose.
+Page 4: This one, said Olivia softly. The rabbit looked up at her with big, gentle eyes. She knew this was the right pet.
+Page 5: She named the rabbit Clover. At home, she set up a cozy cage with soft bedding, a water bottle, and a little food dish.
+Page 6: Every day, Olivia fed Clover fresh lettuce and carrots. She learned that rabbits need exercise, so she let Clover hop around the room.
+Page 7: Clover liked to sit on Olivia's lap while she read books. The rabbit would nap while Olivia turned the pages quietly.
+Page 8: Having a pet was a big responsibility, but Olivia loved every moment. Clover was the best birthday present she ever got.
+
+============================================================
+Level D — The Kite Contest
+============================================================
+Page 1: There was a big kite contest at the beach this Saturday. Tom wanted to enter, but he did not have a kite yet.
+Page 2: Dad said, Let's make one ourselves! They got sticks, paper, string, and tape. They worked together in the garage.
+Page 3: Tom decorated his kite with a big red dragon. He drew sharp teeth and fiery eyes. This is going to be the best one, he said.
+Page 4: On Saturday, the beach was full of kids with colorful kites. There were kites shaped like butterflies, fish, and even rockets.
+Page 5: Tom held his kite up and ran along the sand. The wind caught it, and the dragon soared into the sky high above everyone.
+Page 6: Some kites crashed into the water. Some got tangled in each other's strings. But Tom's dragon kite flew steady and strong.
+Page 7: The judges picked the winners. Tom won the prize for the highest-flying kite! He got a blue ribbon and a trophy.
+Page 8: Tom proudly showed his trophy to Dad. We make a great team, Tom said. Dad smiled and gave him a big hug.
+
+============================================================
+Level D — The Snow Fort
+============================================================
+Page 1: It had snowed all night, and when Ruby looked out her window, the whole yard was covered in a thick, white blanket. She pulled on her boots right away.
+Page 2: Outside, her neighbor James was already building something. I am making a snow fort! he called. Want to help? Ruby grabbed her mittens and ran over.
+Page 3: They packed snow into big blocks and stacked them into walls. Ruby shaped a doorway just big enough to crawl through. It took a long time, but they kept going.
+Page 4: By lunchtime, the fort had three walls and a lookout window. They could sit inside and see the whole street. It felt like their own secret hideout.
+Page 5: James brought hot cocoa from his house, and they sat inside the fort sipping it. Steam rose from the cups into the cold air. This is so cool, said Ruby.
+Page 6: Ruby's little sister wanted to join. She is too small, James said. But Ruby shook her head. Everyone should get to play. They helped her sister crawl inside.
+Page 7: Her sister's eyes went wide with wonder. She giggled and clapped her small mittens together. I love it in here! she whispered, as if it were a secret.
+Page 8: They played in the snow fort until the sun went down and the first stars came out. It was the best winter day any of them could remember.
+
+============================================================
+Level D — The Bake Sale
+============================================================
+Page 1: Ms. Park's class was having a bake sale to raise money for new books. Every student could bring something to sell at the table.
+Page 2: Devin wanted to make cupcakes, but he had never baked before. His grandma said she would teach him. They went to the kitchen together after school.
+Page 3: First, they measured flour, sugar, and cocoa powder into a big bowl. Devin cracked the eggs himself, though a tiny piece of shell fell in.
+Page 4: Grandma showed him how to mix the batter slowly so it would not splash. Then they poured it carefully into the cupcake pan, filling each cup halfway.
+Page 5: While the cupcakes baked, Devin made frosting with butter and powdered sugar. He added a few drops of blue food coloring and stirred until it was sky blue.
+Page 6: The cupcakes came out golden and puffy. Devin frosted each one and added rainbow sprinkles on top. They looked amazing. He could not believe he made them.
+Page 7: At the bake sale, Devin's cupcakes sold out in fifteen minutes. Everyone said they were delicious. His friend Ava bought three and ate them all.
+Page 8: The class raised enough money for twenty new books. Devin felt proud. He asked Grandma if they could bake cookies next. She laughed and said absolutely.
+
+============================================================
+Level D — The Lost Key
+============================================================
+Page 1: Mila came home from school and reached into her backpack for her house key. It was not there. She checked every pocket. The key was gone.
+Page 2: She sat on the front step and tried to think. Where did I have it last? She remembered putting it in her jacket pocket that morning.
+Page 3: But she had taken her jacket off at recess. Maybe it fell out on the playground! She walked back to school as fast as she could.
+Page 4: The playground was empty now. Mila checked the swings, the slide, and the bench where she had left her jacket. Nothing. Her stomach felt tight.
+Page 5: Then she noticed something shiny in the grass near the monkey bars. She ran over and picked it up. Her key! It must have fallen when she was climbing.
+Page 6: She held the key tightly in her fist and walked home. This time she put it on a string around her neck, just like Mom had suggested weeks ago.
+Page 7: When Mom came home, Mila told her what happened. Mom smiled and said, I am proud of you for solving the problem yourself instead of panicking.
+Page 8: From that day on, Mila always wore her key on the string. She never lost it again. Some lessons, she thought, you only need to learn once.
+
+============================================================
+Level D — The Talent Show
+============================================================
+Page 1: The school talent show was next Friday, and everyone was signing up. Some kids were singing. Some were dancing. One boy was doing magic tricks with cards.
+Page 2: Nate wanted to perform, but he did not know what his talent was. I am not good at anything special, he told his dad after dinner.
+Page 3: Dad thought for a moment. You are really good at telling jokes. People always laugh when you talk. Maybe you could do a comedy act.
+Page 4: Nate spent the whole week writing jokes in a notebook. He practiced telling them in front of the bathroom mirror until the timing felt right.
+Page 5: On Friday night, the auditorium was packed. Nate stood backstage and his hands were sweating. He wiped them on his pants and took three slow breaths.
+Page 6: When his name was called, he walked to the microphone. The spotlight was so bright he could barely see the audience. He opened his mouth and told his first joke.
+Page 7: The audience laughed. They laughed at the second joke even harder. By the third joke, people were wiping tears from their eyes. Nate could not stop smiling.
+Page 8: He did not win first place, but everyone told him he was their favorite act. Nate learned something important that night — being yourself is the best talent of all.
+
+============================================================
+Level D — The Broken Vase
+============================================================
+Page 1: Omar was playing ball inside the house, even though Mom always said not to. He tossed the ball up and caught it, up and caught it. Then he missed.
+Page 2: The ball bounced off the shelf and knocked over Mom's favorite blue vase. It hit the floor and cracked into three big pieces. Omar's heart sank.
+Page 3: He picked up the pieces carefully so he would not cut himself. Maybe I can glue it back together, he thought. He got the glue from the drawer.
+Page 4: He tried his best, but the vase still looked cracked. You could see the lines where it had broken. It was not the same anymore.
+Page 5: When Mom came home, Omar thought about hiding the vase in the back of the closet. But his stomach felt awful. He knew he had to tell the truth.
+Page 6: Mom, I broke your vase. I was playing ball inside. I am really sorry. He held out the glued vase with both hands. His eyes were wet.
+Page 7: Mom looked at the vase for a long time. Then she hugged Omar. Thank you for telling me the truth. That means more to me than any vase.
+Page 8: Omar still felt bad, but he also felt lighter. He saved up his allowance and bought Mom a new vase. This time, he always played ball outside.
+
+============================================================
+Level E — The Mystery of the Missing Cookies
+============================================================
+Page 1: Nadia came home from school to find something terrible. The plate of chocolate chip cookies that Mom had baked that morning was completely empty. Only a few crumbs were left on the counter.
+Page 2: Who ate all the cookies? Nadia asked her brother Max. Not me! Max said, holding up his hands. I just got home. Nadia looked at him carefully. He did not have any crumbs on his face.
+Page 3: She decided to investigate like a real detective. First, she looked for clues in the kitchen. She found a trail of tiny crumbs leading from the counter toward the back door.
+Page 4: Nadia followed the crumbs across the floor, out the back door, and into the garden. The trail led to the big bush next to the fence. She peeked behind it.
+Page 5: There was a squirrel sitting on the ground with chocolate all over its paws! It had found a way through the window screen and helped itself to the cookies.
+Page 6: The squirrel looked up at Nadia, stuffed the last piece of cookie into its cheeks, and scrambled up the fence. Hey, come back! Nadia laughed.
+Page 7: She went inside and told Mom the whole story. Mom could not stop laughing. I guess I need to close the window when I bake, she said.
+Page 8: Mom and Nadia baked a new batch of cookies together, and this time they made sure every window was shut tight. Nadia saved one cookie and left it outside for the squirrel. After all, it had good taste.
+
+============================================================
+Level E — The Night the Lights Went Out
+============================================================
+Page 1: It was a dark and stormy evening when suddenly all the lights in the house went out. The power is gone! said Dad, looking out the window. The whole street was dark.
+Page 2: Aiden was a little nervous. He did not like the dark very much. But his mom found some candles and soon the living room had a warm, golden glow.
+Page 3: Since we cannot watch TV or use our tablets, what should we do? asked Mom. Aiden's little sister Lily suggested they tell stories.
+Page 4: Dad went first. He told a funny story about when he was a boy and his dog ate his homework. Everyone laughed so hard their stomachs hurt.
+Page 5: Then Mom told a story about a magical forest where the trees could talk and the rivers sang songs. Lily's eyes got very wide as she listened.
+Page 6: It was Aiden's turn. He made up a story about a boy who could fly. He used different voices for all the characters, and Lily clapped at the end.
+Page 7: They played card games by candlelight, ate sandwiches for dinner, and sang songs together. It was one of the best evenings they ever had as a family.
+Page 8: When the power finally came back on, nobody wanted to turn on the TV. Can we keep the candles? asked Lily. This is more fun. And everyone agreed.
+
+============================================================
+Level E — The Lemonade Stand
+============================================================
+Page 1: It was the hottest day of summer, and twins Ella and Noah had a big idea. Let's open a lemonade stand! said Ella. We can earn money to buy that board game we want.
+Page 2: They squeezed twenty lemons, added sugar and cold water, and stirred it all together in a big pitcher. Noah tasted it. Perfect, he said, licking his lips.
+Page 3: They set up a table in front of their house with paper cups and a hand-painted sign that said Best Lemonade in Town! Each cup cost fifty cents.
+Page 4: The first hour was slow. Only one neighbor came by. Maybe we need to do something to get more attention, said Noah, scratching his head.
+Page 5: Ella had an idea. She ran inside and came back with her mom's radio. They turned on some music. Then Noah started dancing and waving to cars driving by.
+Page 6: Soon people started stopping. They sold cup after cup. Some people even said it was the best lemonade they had ever tasted. The pitcher was almost empty.
+Page 7: By the end of the day, they had earned twelve dollars. That was more than enough for the board game! They high-fived each other and did a little victory dance.
+Page 8: That night, the whole family played the new board game together. Ella said, We should have a lemonade stand every weekend! Maybe next time we can try pink lemonade.
+
+============================================================
+Level E — The Camping Trip
+============================================================
+Page 1: This weekend, the Chen family was going camping for the very first time. They packed sleeping bags, a tent, flashlights, and lots of snacks into the car.
+Page 2: When they arrived at the campsite near the lake, Grace and her brother Danny helped Dad set up the tent. It took three tries, but they finally got it standing up straight.
+Page 3: Let's explore! said Grace. They walked along a trail through the woods and saw a deer drinking from a stream. It looked up at them, then quietly walked away.
+Page 4: Back at camp, Mom showed them how to build a fire safely with rocks in a circle. They roasted hot dogs on sticks and the food tasted better than anything from a restaurant.
+Page 5: When it got dark, Dad brought out a bag of marshmallows. They made s'mores with chocolate and graham crackers. Danny got marshmallow all over his face and everyone laughed.
+Page 6: Grace zipped open the tent door and looked up at the sky. There were more stars than she had ever seen before. She could even see the Milky Way stretching across the darkness.
+Page 7: They heard an owl hooting in the trees. Danny was a little scared, but Grace said, Don't worry. Owls are friendly. They're just saying goodnight. That made him feel better.
+Page 8: In the morning, they woke up to birds singing and the smell of campfire coffee. Can we come camping every month? asked Grace. Mom and Dad smiled at each other and said, Absolutely.
+
+============================================================
+Level E — The School Play
+============================================================
+Page 1: Ms. Rivera announced that the second-grade class would be putting on a play called The Enchanted Garden. Everyone could try out for a part. Sofia wanted to be the lead flower more than anything.
+Page 2: Sofia practiced her lines every day after school. She stood in front of the mirror and said them over and over until she knew every word by heart.
+Page 3: On the day of tryouts, Sofia was very nervous. Her hands were shaking and her voice was quiet at first. But then she took a deep breath and spoke loud and clear.
+Page 4: The next morning, Ms. Rivera posted the list. Sofia got the lead part! She was so excited she jumped up and down. Her best friend Mia got the part of the butterfly.
+Page 5: For two weeks, the class rehearsed after school. They made costumes out of fabric and cardboard. Sofia's flower costume had big pink petals and green leaves.
+Page 6: On the night of the play, the auditorium was packed with families. Sofia peeked through the curtain and saw her mom, dad, and grandma in the front row.
+Page 7: When it was her turn, Sofia walked onto the stage. The spotlight was bright and warm. She spoke her lines perfectly, and the audience laughed and clapped at all the right moments.
+Page 8: After the show, everyone got flowers and hugs. A flower got flowers! joked Sofia's dad. Sofia hugged Ms. Rivera and said, Thank you for believing in me. It was a night she would always remember.
+
+============================================================
+Level E — The Map in the Attic
+============================================================
+Page 1: On a rainy Saturday afternoon, Juno was exploring her grandmother's dusty attic when she found an old rolled-up paper tucked inside a leather tube. She unrolled it carefully and discovered it was a hand-drawn map.
+Page 2: The map showed the garden, the old stone wall, and a dotted path leading to a spot marked with a red X. There were tiny drawings of trees and a compass rose in the corner. Juno's heart beat faster.
+Page 3: She showed it to her brother Felix. This could be a treasure map! he said, his eyes wide. It looks really old. Do you think Grandma knows about it? Let's go look before the rain stops.
+Page 4: They pulled on their raincoats and followed the dotted path from the back door, past the rose bushes, along the stone wall, and through the gap in the hedge that led to the wild part of the garden.
+Page 5: The X on the map pointed to the base of the oldest oak tree. They dug carefully with a small shovel and hit something hard after just a few inches. It was a rusty tin box with a latch.
+Page 6: Inside the box were three things — a small brass compass, a bundle of letters tied with a ribbon, and a black-and-white photograph of a young girl standing in front of the same oak tree, smiling.
+Page 7: They brought the box inside and showed Grandma. Her eyes filled with tears. That is me, she whispered, pointing at the photograph. I buried this time capsule when I was eight years old. I had completely forgotten.
+Page 8: Grandma read the letters aloud. They were notes she had written to her future self, full of wishes and funny drawings. The whole family sat together listening, and Juno decided she would bury her own time capsule that very afternoon.
+
+============================================================
+Level E — The Rescue Dog
+============================================================
+Page 1: When the Martinez family went to the animal shelter, they were not planning to get a dog. Mom just wanted to drop off some old blankets. But then they walked past the kennels, and everything changed.
+Page 2: In the last kennel sat a scruffy brown dog with one floppy ear and one straight ear. He was not barking like the other dogs. He just sat quietly, watching them with big amber eyes.
+Page 3: He has been here the longest, said the shelter worker. His name is Biscuit. He is very gentle, but people always pick the puppies instead. Nobody seems to want an older dog.
+Page 4: Can we pet him? asked Carlos. The worker opened the kennel, and Biscuit walked slowly over to Carlos and rested his chin on the boy's knee. Carlos looked up at his parents with the biggest eyes they had ever seen.
+Page 5: Mom and Dad looked at each other. They had a long, silent conversation with just their eyes — the kind that parents are experts at. Then Dad smiled and said, I think Biscuit just picked us.
+Page 6: The first week was hard. Biscuit hid under the bed and would not eat much. He flinched at loud sounds and did not know how to play with toys. Carlos sat beside him every evening and read books aloud.
+Page 7: Slowly, day by day, Biscuit came out of his shell. He started wagging his mismatched ears when Carlos came home from school. He learned to fetch. He even learned to shake hands with his right paw.
+Page 8: By the end of the month, Biscuit slept on Carlos's bed every night and followed him everywhere like a shadow. People always choose puppies, Carlos told his mom. But I think the best ones are the ones that need you the most.
+
+============================================================
+Level E — The Science Fair Project
+============================================================
+Page 1: The science fair was in two weeks, and Priya still had no idea what to do. Every good topic seemed taken. Volcanoes, plants growing toward light, magnets — all claimed by other kids in her class.
+Page 2: Then one morning at breakfast, she watched her little brother drop a raisin into his fizzy lemonade. The raisin sank to the bottom, then floated back up, then sank again. It kept going up and down like a tiny dancer.
+Page 3: Why does it do that? she wondered. She spent the evening researching and learned that the bubbles stick to the rough surface of the raisin and lift it up, then pop at the top, and the raisin sinks again.
+Page 4: Priya decided to test different objects — raisins, pasta, beads, rice, and small buttons — in different fizzy liquids. She made a chart to record which ones danced and which ones just sank or floated.
+Page 5: She set up her experiment on the kitchen table with five different cups and took careful notes. Some results surprised her. The pasta danced the best, while the smooth beads did nothing at all.
+Page 6: For her display board, she wrote a clear explanation with diagrams and glued photos of each step. Her dad helped her print the title in big letters — The Dancing Raisin: Why Bubbles Make Things Move.
+Page 7: On science fair day, the gym was full of projects. The judges stopped at Priya's table and asked her questions. She explained everything calmly and even showed them a live demonstration with a fresh cup of soda.
+Page 8: Priya won second place and got a ribbon with a silver star. But the best part was when three younger kids came up afterward and asked, Can you show us how to do that at home? She felt like a real scientist.
+
+============================================================
+Level E — The Pen Pal
+============================================================
+Page 1: Ms. Chen's class started a pen pal project with a school in Japan. Each student was matched with a partner, and they would exchange letters every two weeks. Kai got matched with a boy named Hiro.
+Page 2: Kai did not know what to write at first. He stared at the blank paper for ten minutes. Then he decided to just introduce himself — his favorite food, his pet hamster, and the fact that he liked to draw comics.
+Page 3: Three weeks later, a letter arrived in a pale blue envelope covered in Japanese stamps. Hiro had written back in careful English. He liked sushi, had a cat named Mochi, and he drew manga comics too.
+Page 4: Hiro included a small drawing of his cat. It was really good, with big round eyes and whiskers made of thin, confident lines. Kai taped it to his bedroom wall and drew a picture of his hamster to send back.
+Page 5: Over the months, the letters grew longer and thicker. They traded drawings, stickers, and stories about their schools. Hiro explained that in Japan, students clean their own classrooms. Kai thought that was pretty cool.
+Page 6: For Hiro's birthday, Kai made a small comic book — eight pages, hand-drawn and stapled, about a hamster and a cat who become friends despite living on opposite sides of the world. He mailed it in a padded envelope.
+Page 7: Hiro wrote back the longest letter yet. He said the comic made him laugh so much that his mom asked what was so funny. He included his own comic, drawn in manga style, continuing the story. The hamster and cat had adventures together.
+Page 8: At the end of the school year, both classes had a video call. Kai finally saw Hiro's face on the screen, and they both waved and laughed. It is amazing, Kai thought, how a piece of paper can connect two people across the entire ocean.
+
+============================================================
+Level E — The First Bike Ride
+============================================================
+Page 1: Amara had been riding with training wheels for as long as she could remember. All her friends had already taken theirs off. She wanted to try, but every time she thought about it, her stomach did a flip.
+Page 2: One Saturday, Dad said, Today is the day. He knelt down and unscrewed the training wheels with a wrench. Amara watched them come off and felt her heart start to race. The bike looked different without them — thinner, wobbly, dangerous.
+Page 3: Dad held the back of the seat as Amara climbed on. I will not let go until you are ready, he promised. She gripped the handlebars so tightly her knuckles turned white and started pedaling slowly down the sidewalk.
+Page 4: For the first few minutes, Dad jogged beside her, one hand on the seat. Amara wobbled left, then right, then left again. She felt like a baby bird trying to balance on a branch for the very first time.
+Page 5: Keep pedaling, Dad said. Don't look down — look ahead at where you want to go. Amara fixed her eyes on the big tree at the end of the block and pumped her legs harder. The wobbling started to fade.
+Page 6: She did not notice when Dad's hand left the seat. She was pedaling on her own, the wind pushing her braids back, the sidewalk rolling smoothly beneath her wheels. She was doing it. She was actually doing it.
+Page 7: Dad! she yelled over her shoulder. Look! She saw him standing twenty feet behind her, grinning with his arms crossed. You have been on your own for the last thirty seconds! he called back.
+Page 8: Amara rode all the way to the end of the block, turned around, and rode back. Then she did it again. And again. By the time the streetlights came on, her legs were sore and her smile was the biggest it had ever been.
+
+============================================================
+Level A — Up and Down
+============================================================
+Page 1: I go up.
+Page 2: I go down.
+Page 3: Up high!
+Page 4: Down low.
+Page 5: Up, down, up.
+Page 6: So fun!
+
+============================================================
+Level A — Hot and Cold
+============================================================
+Page 1: This is hot.
+Page 2: This is cold.
+Page 3: Hot soup.
+Page 4: Cold milk.
+Page 5: Hot sun.
+Page 6: Cold snow!
+
+============================================================
+Level A — My Dog Spot
+============================================================
+Page 1: Spot runs.
+Page 2: Spot digs.
+Page 3: Spot barks.
+Page 4: Spot jumps.
+Page 5: Spot sits.
+Page 6: Good dog, Spot!
+
+============================================================
+Level A — I Can Help
+============================================================
+Page 1: I help sweep.
+Page 2: I help fold.
+Page 3: I help pour.
+Page 4: I help carry.
+Page 5: I help sort.
+Page 6: Helping feels good!
+
+============================================================
+Level A — On My Face
+============================================================
+Page 1: Two eyes.
+Page 2: One nose.
+Page 3: Two ears.
+Page 4: One mouth.
+Page 5: Big smile!
+Page 6: That is me.
+
+============================================================
+Level A — Things That Go
+============================================================
+Page 1: A fast car.
+Page 2: A big bus.
+Page 3: A loud train.
+Page 4: A red truck.
+Page 5: A tall plane.
+Page 6: Zoom, zoom, zoom!
+
+============================================================
+Level A — The Garden
+============================================================
+Page 1: I see dirt.
+Page 2: I see seeds.
+Page 3: I see rain.
+Page 4: I see sun.
+Page 5: I see green.
+Page 6: Flowers grow!
+
+============================================================
+Level A — Day and Night
+============================================================
+Page 1: The sun shines.
+Page 2: Birds sing.
+Page 3: The moon glows.
+Page 4: Stars twinkle.
+Page 5: I sleep.
+Page 6: Good night!
+
+============================================================
+Level A — I Can Count
+============================================================
+Page 1: One dog.
+Page 2: Two cats.
+Page 3: Three fish.
+Page 4: Four frogs.
+Page 5: Five bugs.
+Page 6: I can count!
+
+============================================================
+Level A — Wet and Dry
+============================================================
+Page 1: Rain is wet.
+Page 2: Mud is wet.
+Page 3: Sand is dry.
+Page 4: Rocks are dry.
+Page 5: Towels are dry.
+Page 6: Now I am dry!
+
+============================================================
+Level B — What Do Animals Eat?
+============================================================
+Page 1: Animals eat many things. Let's find out what!
+Page 2: The rabbit eats carrots. Munch, munch, munch!
+Page 3: The bird eats worms. Peck, peck, peck!
+Page 4: The bear eats fish. Splash, catch, yum!
+Page 5: The bee drinks nectar. Buzz, buzz, buzz!
+Page 6: The cow eats grass. Chomp, chomp, chomp!
+Page 7: The frog eats flies. Snap! Gone in a flash!
+Page 8: All animals need food to grow big and strong!
+
+============================================================
+Level B — Seasons Change
+============================================================
+Page 1: There are four seasons. They come and go all year.
+Page 2: In spring, flowers bloom. The rain makes everything green.
+Page 3: In summer, the sun is hot. We swim and play outside.
+Page 4: In fall, the leaves turn red and orange. They fall to the ground.
+Page 5: In winter, it is cold. Snow covers the ground like a blanket.
+Page 6: Each season brings new things to see and do.
+Page 7: My favorite season is summer. I love the long sunny days!
+Page 8: What is your favorite season? Every season is special!
+
+============================================================
+Level B — Morning Helpers
+============================================================
+Page 1: Every morning I do my jobs. I am a good helper!
+Page 2: First I make my bed. I pull the covers up nice and flat.
+Page 3: Then I brush my teeth. Two minutes, top and bottom!
+Page 4: Next I wash my face. Cold water wakes me up!
+Page 5: I eat my breakfast. Today I have oatmeal with berries.
+Page 6: I pack my backpack. Books, lunch, water bottle — check!
+Page 7: I put on my shoes and tie them all by myself.
+Page 8: Now I am ready! Good morning, new day!
+
+============================================================
+Level B — My Feelings
+============================================================
+Page 1: I have many feelings. Feelings are okay!
+Page 2: Sometimes I feel happy. I smile and laugh out loud.
+Page 3: Sometimes I feel sad. Tears roll down my cheeks.
+Page 4: Sometimes I feel scared. I hold on tight to someone I love.
+Page 5: Sometimes I feel angry. I take deep breaths to calm down.
+Page 6: Sometimes I feel surprised. My eyes go big and wide!
+Page 7: Sometimes I feel proud. I did something hard and did it well.
+Page 8: All feelings are okay. I can talk about how I feel.
+
+============================================================
+Level B — A Walk in the Woods
+============================================================
+Page 1: We went for a walk in the woods. The trail was soft and brown.
+Page 2: I saw a tall tree. It was so big I could not hug it!
+Page 3: I heard a woodpecker tapping. Tap, tap, tap on the bark.
+Page 4: I found a feather on the ground. It was blue and white.
+Page 5: A squirrel ran up a tree. It had a big fluffy tail.
+Page 6: I spotted a spider web. It glittered with tiny drops of dew.
+Page 7: We sat by a stream and ate our snack. The water hummed softly.
+Page 8: I love the woods. I want to come back again very soon!
+
+============================================================
+Level B — The Library Visit
+============================================================
+Page 1: Today we went to the library. It smelled like books and wood.
+Page 2: I looked at the picture books. There were so many to pick from!
+Page 3: I found a book about dinosaurs. The pictures were amazing.
+Page 4: I found a book about the ocean. It had a big blue whale on the cover.
+Page 5: The librarian read us a story. We all sat on the soft rug.
+Page 6: I got my very own library card. My name is on it!
+Page 7: I checked out three books. I carried them home in my bag.
+Page 8: I will read one book every night until I have to bring them back.
+
+============================================================
+Level B — Time to Cook
+============================================================
+Page 1: Grandpa is teaching me to cook. I put on my apron.
+Page 2: First we wash our hands very well. Clean hands are important!
+Page 3: We make soup with carrots and beans. I stir the big pot.
+Page 4: I put in a pinch of salt. Just a tiny bit!
+Page 5: The soup bubbles and smells so good. My tummy growls.
+Page 6: Grandpa lets me pour the soup into the bowls carefully.
+Page 7: We blow on it to cool it down. Then we taste it.
+Page 8: Delicious! Cooking with Grandpa is my favorite thing to do.
+
+============================================================
+Level B — Colors of the Rainbow
+============================================================
+Page 1: After the rain, a rainbow shines. It has so many colors!
+Page 2: Red is first. Red like apples and fire trucks.
+Page 3: Orange comes next. Orange like pumpkins and sunsets.
+Page 4: Yellow shines bright. Yellow like the sun and bananas.
+Page 5: Green is next. Green like grass and tree leaves.
+Page 6: Blue is cool. Blue like the sky and the deep sea.
+Page 7: Last is purple. Purple like grapes and lavender flowers.
+Page 8: Red, orange, yellow, green, blue, purple — can you name them all?
+
+============================================================
+Level B — The Funny Mix-Up
+============================================================
+Page 1: I got dressed in the dark. Something felt very wrong!
+Page 2: I put my shirt on backwards. The tag tickled my chin!
+Page 3: I put my shoes on the wrong feet. Clump, clump, clump!
+Page 4: I put my hat on upside down. It fell over my eyes!
+Page 5: My sister started laughing. She could not stop!
+Page 6: Look in the mirror! she said. I looked and laughed too.
+Page 7: I fixed my shirt, my shoes, and my hat. Much better!
+Page 8: Sometimes getting dressed in the dark is a funny mistake!
+
+============================================================
+Level B — My Favorite Foods
+============================================================
+Page 1: I love to eat! There are so many yummy foods.
+Page 2: I love pizza with lots of cheese on top.
+Page 3: I love strawberries. They are sweet and a little tart.
+Page 4: I love mac and cheese. It is warm and soft.
+Page 5: I love corn on the cob. Butter drips down my hand!
+Page 6: I love watermelon in summer. It is cold and juicy.
+Page 7: I love soup when it is cold outside. It warms me up.
+Page 8: What are your favorite foods? Food is one of the best things!
+
+============================================================
+Level C — The New Kid
+============================================================
+Page 1: A new boy named Marco started at school on a Monday. He sat alone at the back of the class.
+Page 2: At recess, everyone ran outside to play. Marco stayed near the wall by himself.
+Page 3: Jasmine noticed him. She walked over and said, Do you want to play with us?
+Page 4: Marco shrugged. I do not know anyone here yet, he said quietly.
+Page 5: That is okay! said Jasmine. You did not know me five minutes ago. Now you do!
+Page 6: Marco smiled a little. They ran to join the others. Jasmine introduced him to everyone.
+Page 7: By the end of recess, Marco was laughing with the group like he had been there forever.
+Page 8: Walking back inside, Marco said, Thank you. That was the best recess I ever had.
+
+============================================================
+Level C — The Missing Mitten
+============================================================
+Page 1: It was a cold winter morning. Lily put on her coat, scarf, and boots. But she could only find one mitten!
+Page 2: Where is my red mitten? she asked. Mom and Dad helped her look.
+Page 3: They checked the coat hooks, the shoe bin, and under the sofa cushions.
+Page 4: They looked in the toy box and behind the bookshelf. Still nothing.
+Page 5: I will have to go to school with one cold hand, Lily said sadly.
+Page 6: Then her dog Biscuit padded in from the hall. Something dangled from his mouth.
+Page 7: My mitten! cried Lily. Biscuit wagged his tail and dropped it at her feet.
+Page 8: Thank you, Biscuit! Lily said, hugging the soggy mitten. You are the best dog ever.
+
+============================================================
+Level C — Grandma's Kitchen
+============================================================
+Page 1: Every Sunday, Noah and his sister went to Grandma's house. The whole house smelled like cinnamon.
+Page 2: Grandma was always in the kitchen. Her apron was covered in little blue flowers.
+Page 3: What are we making today? Noah asked. He loved this question.
+Page 4: Today we make bread! said Grandma. She poured flour into a big bowl.
+Page 5: Noah helped knead the dough. It was soft and warm under his hands.
+Page 6: They shaped it into two loaves and put them in the oven to bake.
+Page 7: An hour later, the bread was golden and crusty. They ate it with butter while it was still warm.
+Page 8: Noah ate two thick slices and licked his fingers. This is the best bread in the world, he said.
+
+============================================================
+Level C — The Bug Jar
+============================================================
+Page 1: Mia found a big green caterpillar in the backyard. It moved slowly along a leaf.
+Page 2: She ran inside and got a jar from the kitchen. She poked holes in the lid with a pencil.
+Page 3: I am going to keep it! she told her dad. It is so cool.
+Page 4: Dad knelt beside her. What do caterpillars eat? he asked.
+Page 5: Mia did not know. They looked it up together on a tablet. Caterpillars eat leaves!
+Page 6: Mia put some leaves in the jar. She watched the caterpillar munch and munch.
+Page 7: A week later, the caterpillar made a cocoon. It stayed still for many days.
+Page 8: Then one morning, a butterfly opened its wings inside the jar. Mia opened the lid and watched it fly free.
+
+============================================================
+Level C — Too Many Cooks
+============================================================
+Page 1: Three brothers — Jin, Cal, and Pete — all wanted to make breakfast at the same time.
+Page 2: I will make eggs! said Jin. I will make toast! said Cal. I will make juice! said Pete.
+Page 3: But the kitchen was very small. Everyone bumped into everyone else.
+Page 4: Jin spilled the eggs. Cal burned the toast. Pete knocked over the juice.
+Page 5: The kitchen was a mess. All three boys stood looking at it.
+Page 6: Then they started laughing. This is a disaster! said Cal.
+Page 7: Let's do one thing at a time, said Jin. We will take turns.
+Page 8: This time it worked. They made a great breakfast and cleaned the kitchen together.
+
+============================================================
+Level C — The Firefly Night
+============================================================
+Page 1: One warm summer night, Mom took Zoe outside after dark. The yard was full of tiny glowing lights.
+Page 2: Fireflies! said Mom. Zoe had never seen them before. She reached out her hand.
+Page 3: A firefly landed on her finger. It glowed on and off, on and off, like a tiny lamp.
+Page 4: Why do they glow? Zoe asked softly, afraid to scare it away.
+Page 5: They flash to talk to each other, said Mom. It is their way of saying hello.
+Page 6: Hello! Zoe whispered to the firefly. The firefly blinked and flew off into the dark.
+Page 7: Zoe and Mom sat in the grass for a long time, watching the lights dance all around them.
+Page 8: That night Zoe dreamed of glowing lights floating through a warm and whispering darkness.
+
+============================================================
+Level C — Pedro's Plant
+============================================================
+Page 1: Pedro got a little cactus plant for his birthday. He named it Spike.
+Page 2: His teacher said cactuses are easy to grow. They do not need much water.
+Page 3: Pedro put Spike on his windowsill where it got lots of sunlight.
+Page 4: He watered it a little bit once a week. Not too much, not too little.
+Page 5: One day, Pedro noticed a tiny bump on the side of Spike's green stem.
+Page 6: He asked his teacher what it was. That is a new arm growing! she said.
+Page 7: Pedro was so proud. He had helped Spike grow bigger and stronger.
+Page 8: Now Pedro wants to learn about all kinds of plants. Spike was just the beginning.
+
+============================================================
+Level C — The Big Puddle
+============================================================
+Page 1: After a huge rainstorm, there was a puddle as big as a pond at the end of the street.
+Page 2: Three kids stood at the edge looking at it. No one wanted to go first.
+Page 3: I dare you, said Will to his friend Dee. Dee shook her head.
+Page 4: Then the youngest, a boy named Sam, ran straight into the middle. SPLASH!
+Page 5: Water flew everywhere. Sam stood knee-deep, laughing with his arms out wide.
+Page 6: See? It is great! Come in! Dee and Will looked at each other and jumped in.
+Page 7: They splashed and stomped until they were completely soaked from head to toe.
+Page 8: All three walked home dripping wet, still laughing. Their parents were not as amused.
+
+============================================================
+Level C — The Shy Hamster
+============================================================
+Page 1: The class hamster, Nugget, always hid in her little wooden house. No one could get her to come out.
+Page 2: The kids tried treats, gentle voices, and waiting very still. Nugget peeked out but would not step outside.
+Page 3: A quiet girl named Bea decided to try something different. She sat near the cage and read a book aloud in a soft voice.
+Page 4: The next day Bea did the same thing. And the day after that.
+Page 5: On the fourth day, Nugget crept to the cage door and sniffed the air. Then she came all the way out.
+Page 6: Everyone froze. Bea kept reading in her calm, quiet voice. Nugget climbed onto Bea's sleeve.
+Page 7: She did it! someone whispered. Bea smiled but kept reading so she would not startle Nugget.
+Page 8: After that, Nugget came out every day when Bea sat near the cage. Some friendships just need a little patience.
+
+============================================================
+Level C — Storm Night
+============================================================
+Page 1: Thunder crashed outside and lightning flashed at the window. Cam woke up scared in the dark.
+Page 2: He pulled his blanket over his head, but the thunder was very loud.
+Page 3: Cam heard his dad's footsteps in the hall. The bedroom door opened.
+Page 4: Dad sat on the edge of the bed. Storms are a little scary, huh? he said.
+Page 5: Can you stay? Cam asked. Dad nodded and sat beside him.
+Page 6: He explained that thunder is just sound. Lightning is light. They cannot come inside.
+Page 7: They counted together — one, two, three — between the lightning and the thunder. The gap grew longer.
+Page 8: The storm is moving away, Dad said. By then, Cam's eyes were closing again. He felt safe.
+
+============================================================
+Level D — The Trading Card
+============================================================
+Page 1: Eli had one trading card that every kid in his class wanted — a holographic dragon card that shimmered gold and purple in the light.
+Page 2: His friend Ben offered him five regular cards for it. Then he offered ten. Then he offered his entire collection.
+Page 3: Eli shook his head every time. This card was special. His uncle had given it to him when he was sick in the hospital, and it had made him feel so much better.
+Page 4: But then Eli saw how much Ben loved that card. Ben held it up to the light every day at lunch, just to watch it sparkle. Eli started to feel torn.
+Page 5: One afternoon, Eli sat down with his mom. She listened as he explained everything. Then she asked, What do you think would make you feel good about yourself?
+Page 6: Eli thought about it for a long time. The next day at school, he found Ben on the playground and held out the card.
+Page 7: I want you to have it, Eli said. You love it even more than I do. And I have all my memories with my uncle already.
+Page 8: Ben's face went wide with disbelief. He promised to take great care of it. That afternoon, both boys felt like they had won something important.
+
+============================================================
+Level D — The Long Car Ride
+============================================================
+Page 1: The Torres family was driving twelve hours to visit their cousins. Rosa and her brother Leo had never been on such a long car ride before.
+Page 2: By hour two, Rosa had already asked are we there yet four times. Dad turned on a playlist of funny road trip songs. Leo and Rosa sang every word.
+Page 3: They stopped at a diner for lunch. Rosa had pancakes for lunch, which felt wonderfully silly. Leo got a grilled cheese bigger than his head.
+Page 4: Back in the car, they played twenty questions, the alphabet game with road signs, and tried to count how many red cars they passed.
+Page 5: As the sun got lower, Rosa pressed her face to the window and watched the farms and fields roll past. It was peaceful and a little like a dream.
+Page 6: Then Leo spotted something. Look! An actual castle! he yelled. It turned out to be a water tower shaped like a castle, but they all agreed it still counted.
+Page 7: When they finally pulled into the cousins' driveway, Rosa could not believe how fast the last few hours had gone. She had almost forgotten to ask if they were there yet.
+Page 8: The cousins ran out the front door before the car stopped. Rosa jumped out and was immediately pulled into a huge group hug. The long ride had completely been worth it.
+
+============================================================
+Level D — The Spelling Bee
+============================================================
+Page 1: The school spelling bee was on Thursday. Iris had been studying her word list every single evening for two weeks. She whispered the words while she ate breakfast, too.
+Page 2: Mom quizzed her at dinner every night. Iris got most of them right, but two words kept tripping her up — necessary and separate. She mixed up the letters every time.
+Page 3: She wrote those two words ten times each on a piece of paper and taped it to the bathroom mirror so she would see them every morning.
+Page 4: On Thursday morning, Iris's hands were shaking. She had been in the spelling bee last year and gotten out on the very first round. She did not want that to happen again.
+Page 5: The gym was full. Iris stood at the microphone and got the word responsible. She closed her eyes, pictured it on the mirror, and spelled it out loud, slowly and clearly.
+Page 6: She made it through round after round, feeling more confident with each correct word. Then came the word that won it all — necessary. She smiled.
+Page 7: N-E-C-E-S-S-A-R-Y, she said, loud and clear. The audience applauded. The judge smiled and nodded. Iris had spelled it perfectly.
+Page 8: She won the school spelling bee and got a silver trophy. But the best part was standing at the mirror the next morning and spelling necessary without even thinking twice.
+
+============================================================
+Level D — Helping at the Shelter
+============================================================
+Page 1: For his community service project, Marcus chose to volunteer at the local animal shelter every Saturday morning for a month. He had never been to a shelter before.
+Page 2: On his first visit, the shelter worker showed him around. There were dogs, cats, and even a few guinea pigs. Every animal had a card on its kennel with its name and story.
+Page 3: Marcus was given the job of cleaning water bowls and refilling them with fresh water. It was not exciting, but the shelter worker said it was one of the most important jobs.
+Page 4: He also helped walk the dogs in the small yard behind the building. An old beagle named Pepper walked slowly beside him and leaned against his leg the whole time.
+Page 5: By the third Saturday, Marcus knew every animal by name. He brought old towels from home for the dogs to sleep on. He made toys out of rolled-up newspaper for the cats.
+Page 6: On his last Saturday, a family came in and adopted Pepper. Marcus felt happy and sad at the same time as he watched the beagle waddle out with his new family.
+Page 7: The shelter worker took a photo of Marcus and put it on the volunteer board on the wall. You made a real difference, she told him. The animals noticed your kindness.
+Page 8: Marcus did not know that helping others could make him feel so full inside. He signed up to volunteer every month. He brought his younger sister the next time.
+
+============================================================
+Level D — The Great Egg Drop
+============================================================
+Page 1: Ms. Hall gave the class an exciting challenge — build a container that would protect a raw egg when dropped from the top of the school stairs. They had one week to prepare.
+Page 2: Teams of three were allowed to use any materials they could bring from home. Finn, Dalia, and Rob spent two lunch breaks brainstorming before they settled on their design.
+Page 3: They built a small box out of cardboard and filled it with bubble wrap on every side. Then they wrapped the egg in cotton balls and put it right in the center.
+Page 4: Some teams used plastic bags full of water. One team used a parachute made from a trash bag. Another team used a tube packed tightly with foam noodles.
+Page 5: On drop day, the whole class gathered at the top of the stairs. Ms. Hall dropped each container one at a time. The first two eggs cracked loudly on impact. The class groaned.
+Page 6: When it was Finn's team's turn, Finn held his breath. Ms. Hall dropped the box. It bounced once, then stopped. Everyone went quiet as Rob opened the box.
+Page 7: The egg was completely uncracked. The class erupted in cheers. Even teams whose eggs had cracked clapped for them.
+Page 8: That afternoon, Finn wrote in his journal that failing at something and figuring out why is half of science. He thought the other half might be jumping up and down when it works.
+
+============================================================
+Level D — The River Cleanup
+============================================================
+Page 1: When Lily walked along the path beside the river, she noticed how much trash was tangled in the reeds and floating near the banks. It made her feel very upset.
+Page 2: She told her parents that night. Someone should clean that up, she said. Dad raised an eyebrow and said, Someone like who?
+Page 3: Lily thought about it. She made some flyers on the computer and put them up around the neighborhood, asking people to come help on a Saturday morning.
+Page 4: She was worried no one would show up. But that Saturday, twelve neighbors arrived with gloves and garbage bags. Even the elderly couple from down the street came.
+Page 5: They spent three hours picking up cans, plastic bags, bottles, and other trash from the water and the muddy bank. The bags filled up quickly.
+Page 6: When they were done, the river looked so much better. Light glinted off the clean water. A duck paddled by as if to say thank you.
+Page 7: The local newspaper sent a reporter to take a photo. The headline the next day read: Ten-Year-Old Organizes Neighborhood River Cleanup. Lily's mom cut it out and framed it.
+Page 8: But what mattered most to Lily was not the headline. It was knowing that the fish and ducks and herons would have a cleaner home because she had decided to do something.
+
+============================================================
+Level D — The Night Hike
+============================================================
+Page 1: Dad had a surprise for Sasha and her brother Theo. They were going on a night hike in the forest behind the campsite, armed with headlamps and a thermos of hot chocolate.
+Page 2: At first the dark felt big and thick, pressing in from all sides. Theo kept his flashlight pointed straight ahead and walked close to Dad.
+Page 3: Dad told them to pause and turn off their headlamps. For a moment it was completely dark. Then their eyes slowly adjusted and the world reappeared in silver and shadow.
+Page 4: Look up, Dad said softly. The trees opened above them, and the sky was packed with stars, more than either of them had ever seen.
+Page 5: As they walked deeper into the forest, they heard owls calling from high in the branches. Frogs sang from a nearby pond. The forest was full of sound.
+Page 6: Then Dad pointed his light at a tree trunk. A moth the size of a hand rested there, its wings patterned like two big eyes staring back at them.
+Page 7: They stood very still and watched until the moth fluttered away into the dark. Sasha felt like they were in a different world, a secret one that only came alive at night.
+Page 8: Back at the campsite, they wrapped their hands around warm mugs and talked about everything they had seen. Sasha decided that nighttime was not frightening. It was just the world wearing a different outfit.
+
+============================================================
+Level D — The Sandwich Contest
+============================================================
+Page 1: On a rainy Saturday, Dad declared that there would be a family sandwich contest. Everyone would create the best sandwich they could, and Mom would judge it blindfolded.
+Page 2: The rules were simple — only ingredients already in the kitchen, no help from anyone else, and the sandwich had to fit on one plate.
+Page 3: Younger brother Eli made a peanut butter sandwich with banana slices and a drizzle of honey. It was simple but neat, and he arranged the banana slices in a smiley face.
+Page 4: Dad made a towering club sandwich with turkey, cheese, tomato, lettuce, and a toothpick flag. It was so tall that it fell over before Mom could taste it. Dad called it abstract art.
+Page 5: Nora took a long time planning hers. She made a grilled cheese with apple slices and a tiny bit of mustard. She had seen that combination in a cookbook once.
+Page 6: Mom sat at the table and tasted all three sandwiches without peeking. She made thoughtful sounds with each bite, which made everyone nervous.
+Page 7: After the third taste, she pulled off the blindfold. Nora's grilled cheese won for unexpected flavor. Eli's won for most cheerful presentation. Dad's won for most ambitious attempt.
+Page 8: Everyone got a small prize — a sticker from the junk drawer. But they all agreed the best prize was eating three sandwiches for lunch and calling it a competition.
+
+============================================================
+Level D — The Obstacle Course
+============================================================
+Page 1: Coach Wu gave the class a challenge for the last day of gym class before summer. They would design their own obstacle course using equipment from the gym storage room.
+Page 2: Groups of four had thirty minutes to plan and set up their course. Then every team would run every course and vote on which one they liked best.
+Page 3: Ana's group built a course with jumping, crawling through a tunnel, tossing beanbags into hoops, and spinning three times before crossing the finish line.
+Page 4: The spinning part made everyone dizzy and giggly. More than one person went the wrong way after spinning, which caused loud laughter from the sidelines.
+Page 5: Another group made a balance beam walk followed by crab walking, backward jumping, and carrying a ball between their knees to the end.
+Page 6: Each course was harder and funnier than the last. By the end of class, everyone was out of breath, sweaty, and grinning from ear to ear.
+Page 7: Ana's team won the vote by a wide margin — mostly because the spinning part was so unpredictable that no two people wobbled in the same direction.
+Page 8: Coach Wu said this was one of his favorite class days of the year. Ana decided that gym was a lot more fun when you got to make up your own rules.
+
+============================================================
+Level D — The Flooded Basement
+============================================================
+Page 1: After three days of heavy rain, the Kim family discovered two inches of water in their basement. It was not a disaster, but it was a big mess that needed to be cleaned up.
+Page 2: Mom and Dad put on rubber boots and went down to assess the damage. Dad set up a pump to remove the water. It made a loud sucking noise that the kids could hear from upstairs.
+Page 3: Jake and his older sister Erin were told they could help by moving things up from the basement before anything else got wet.
+Page 4: Jake carried boxes of old books while Erin moved the holiday decorations to the upstairs hallway. They made a pile in the living room that nearly reached the ceiling.
+Page 5: Some things were damaged — a box of old photos had gotten soggy at the bottom, and a stack of board games had warped lids. Jake felt sad about the photos.
+Page 6: But Mom held one of the damp photos up to the light. Most of them are fine, she said. A little water cannot erase a memory. They spread the photos out to dry on towels.
+Page 7: By evening, the basement was empty and drying out. The family sat on the living room floor surrounded by piles of saved belongings and ate pizza because nobody had cooked dinner.
+Page 8: Jake thought about the photos drying on the towels. He decided that when everything was sorted, he would ask Mom to make a real photo album so the pictures would be safe forever.
+
+============================================================
+Level E — The Robot Project
+============================================================
+Page 1: When the teacher announced that the class would spend a month building a simple robot from a kit, Theo was the most excited student in the room. He had been reading about robotics for two years and had been waiting for exactly this kind of challenge.
+Page 2: His partner was a quiet girl named Ingrid who had never built anything mechanical before. On the first day, she opened the kit box, looked at the hundreds of tiny pieces, and nearly put the lid back on.
+Page 3: Theo dove straight into the instructions, reading ahead and skipping steps. Parts kept going in the wrong place and having to be pulled apart. Ingrid watched and noticed a pattern. You are rushing, she said gently.
+Page 4: Theo stopped and looked at the mess of parts in front of him. He took a breath. Ingrid picked up the instruction sheet and read step one aloud. Just step one. They did it together slowly.
+Page 5: It turned out that Ingrid was very good at keeping track of small parts, organizing the workspace, and catching mistakes before they became big problems. Theo was good at understanding how the pieces fit together mechanically.
+Page 6: Over the next three weeks, their robot took shape. It had two wheels, a sensor that stopped it from bumping into walls, and a small arm that could push a block across the floor.
+Page 7: On demonstration day, nearly every robot in the class bumped into something or stopped short. Theo and Ingrid's robot smoothly navigated the cardboard maze on the first try. The class applauded.
+Page 8: Afterward, Ingrid said she wanted to learn more about coding so the robot could do more complicated things. Theo handed her the book he had been reading. That, he thought, was how the best partnerships worked — each person teaching the other something new.
+
+============================================================
+Level E — The Community Garden
+============================================================
+Page 1: The empty lot on Maple Street had been covered in weeds and broken glass for as long as anyone in the neighborhood could remember. Then one spring, a woman named Ms. Okafor put up a sign that said Community Garden Coming Soon! and everything changed.
+Page 2: Twelve families signed up to help. They spent two weekends clearing the weeds, hauling away the trash, and testing the soil. It was backbreaking work, but nobody complained because they could already imagine what it would look like.
+Page 3: Each family was given a small plot to grow whatever they wanted. The Chens planted bok choy and snow peas. The Garcias planted tomatoes, peppers, and herbs. An older man named Mr. Singh planted five different varieties of squash.
+Page 4: Ten-year-old Dani and her mom planted sunflowers along the fence because, as Dani said, every garden needs something tall and happy-looking to greet you when you walk in.
+Page 5: By July, the lot had been transformed. It was green and buzzing with bees, smelling of basil and warm earth. Neighbors who had never spoken much to each other found themselves chatting over the fence between their plots.
+Page 6: There were setbacks too — a heat wave scorched the lettuce in August, and a family of rabbits found a gap under the fence and ate half of Mr. Singh's squash. But people shared their harvests and helped each other replant.
+Page 7: In the fall, the garden held a harvest festival. People brought dishes made entirely from things they had grown. Dani made sunflower seed brittle and gave a piece to every person who came through the gate.
+Page 8: Standing at the edge of the lot that evening, watching neighbors talk and laugh and share food under strings of warm lights, Dani thought that the most important thing they had grown all summer was not a vegetable at all.
+
+============================================================
+Level E — The Broken Bridge
+============================================================
+Page 1: The old footbridge over the creek at the edge of town had been closed for two years with a chain and a sign that said Unsafe — Do Not Cross. For most people it was easy to ignore. For Maya and her friends it was the fastest way to the nature trail on the other side.
+Page 2: One afternoon Maya stopped and really looked at the bridge for the first time. Some of the boards were cracked, a few were missing, and the rope railing had frayed in places. But the main beams looked solid.
+Page 3: She brought it up at dinner that night. Dad, who was an engineer, talked with her about the difference between cosmetic damage and structural damage. He explained that something can look bad but still be fundamentally sound, or it can look fine and be secretly dangerous.
+Page 4: That weekend, Dad walked to the bridge with Maya and a clipboard. He spent an hour looking carefully at every part, pressing on wood, testing the railing posts, examining the bolts at each end. He made notes.
+Page 5: The structure is fine, he said finally. It just needs new boards and new rope. We could fix this ourselves if we got permission and a few volunteers. Maya's eyes lit up like two small suns.
+Page 6: She wrote a letter to the town council with Dad's inspection notes attached. Three weeks later, she stood in the council chambers and read the letter out loud. The council voted unanimously to approve the repair project.
+Page 7: On a cool October Saturday, twelve volunteers — including Maya's friends, four parents, and two retired neighbors — replaced every damaged board and all the railing rope. By noon, the chain was down and the sign was gone.
+Page 8: Maya was the first one across. The boards were solid under her feet, the railing firm in her hand. On the other side she turned around and looked back at the group cheering from the near bank. She thought: a thing that seems impossible is often just a problem waiting for someone to look at it closely enough.
+
+============================================================
+Level E — The Long Winter
+============================================================
+Page 1: The winter that Petra turned ten was the longest and coldest anyone in the town could remember. By February, the snow was up to the windowsills and school had been cancelled for eight days in a row. The whole family was restless.
+Page 2: Petra's little brother Soren had run out of things to do. He had built every LEGO set twice, finished all his library books, and watched every cartoon he was allowed to watch. He trailed after Petra asking for ideas.
+Page 3: Petra decided to take the situation seriously. She got out a large piece of paper and drew a grid. At the top she wrote The Long Winter Activity Plan. She and Soren filled every box together.
+Page 4: They learned origami from a library book and folded a hundred paper cranes, which they hung from the bedroom ceiling. They taught themselves to play chess using a dusty set from the back of the closet and watched videos to learn the rules.
+Page 5: They built a fort in the living room so elaborate that it had rooms, a skylight made from a clear shower curtain, and a snack station. Mom and Dad were formally invited in for a candlelight tea party.
+Page 6: Petra taught Soren to knit, which she had learned from their grandmother the previous summer. His first scarf was lumpy and uneven, and he was incredibly proud of it. He gave it to the dog.
+Page 7: On the last snow day, they made a book together. Petra wrote and Soren drew pictures. It was called Everything We Learned During the Long Winter and had thirty-two pages. Grandma called it a masterpiece.
+Page 8: When the snow finally melted and they ran outside blinking into the cold sunshine, Petra realized something surprising. She was actually a little sad the long winter was over. She had never spent so much time making things, and she was not sure she wanted to stop.
+
+============================================================
+Level E — The Old Photograph
+============================================================
+Page 1: While helping her grandmother sort through boxes in the spare room, twelve-year-old Lia found a black-and-white photograph tucked inside an old envelope. It showed a young woman standing in front of a storefront, arms crossed, smiling directly at the camera with great confidence.
+Page 2: Who is this? Lia asked. Grandma took the photo and was quiet for a moment. That is my mother, she said finally. Your great-grandmother. She owned that bakery for thirty years.
+Page 3: Lia looked more closely. The sign above the door read Hana's Bread. The woman in the photo was young — maybe thirty — with her hair pinned back and flour on her apron. She looked like someone who knew exactly what she was doing.
+Page 4: She came to this country with nothing, Grandma said, sitting down on the edge of the bed. She spoke no English. She had no money. But she knew how to bake. So she started small — selling bread from a basket at the market.
+Page 5: Grandma told the story slowly, pausing sometimes to remember details. How Hana had saved every coin for two years before renting a tiny space. How she had learned English from her customers. How people lined up around the block on Sunday mornings for her poppy seed rolls.
+Page 6: Did you work there? Lia asked. Every day after school, said Grandma. I folded boxes and swept floors and eventually learned to braid the challah. She taught me that good work done with care is never wasted. Not even the sweeping.
+Page 7: Lia turned the photo over. On the back, in faded pencil, someone had written: Hana, 1954. First day open. She thought about everything she did not know about her own family — all the stories folded into envelopes in boxes in spare rooms.
+Page 8: Can I keep this? Lia asked. Grandma shook her head gently. It belongs with the family, she said. But I will tell you what — let's put it in a frame. Things worth remembering should not be hidden in boxes. Lia nodded and thought she was beginning to understand what that meant.
+
+============================================================
+Level E — The Audition
+============================================================
+Page 1: Jonah had never sung in front of anyone other than his mother, his bedroom mirror, and occasionally his confused golden retriever. When his music teacher announced that the city youth choir was holding open auditions, he spent three days pretending he had not heard the news.
+Page 2: It was his friend Bree who finally called him out. You want to go, she said, not as a question but as a fact. She had heard him singing in the hallway once, clearly not realizing anyone was near. You are really good, Jonah. You should do it.
+Page 3: He told himself he was only going to watch. He sat in the back of the community center and watched eleven other kids walk up to the piano, sing their sixteen bars, and receive a nod from the director. Some were technically perfect. A few were shaky but earnest.
+Page 4: When the volunteer called his name — he had not even remembered signing up on the clipboard by the door — Jonah's legs stood up before his brain gave permission. He walked to the front of the room as if watching himself from a distance.
+Page 5: The accompanist asked what he was singing. Jonah named the song he had practiced in his bedroom for two years, a folk melody his grandmother had taught him. The accompanist found it in her book and began to play.
+Page 6: For the first four notes, Jonah's voice felt thin and faraway. Then something shifted. He stopped watching himself from a distance and just — sang. He thought about his grandmother's kitchen, and Sunday mornings, and the way the song felt in his chest, not in his throat.
+Page 7: When he finished, the room was very quiet. The director made a note on her clipboard. Thank you, Jonah, she said. That was lovely. The word lovely landed somewhere in his ribcage and stayed there.
+Page 8: Two weeks later, a letter arrived in the mail. He had made the choir. Bree heard him shout from two houses away and came over immediately. His golden retriever, who had always been his most loyal audience, wagged his tail as if he had known all along.
+
+============================================================
+Level E — The Hurricane Season
+============================================================
+Page 1: Mara had lived in Florida her whole life, which meant she had spent every August and September watching weather maps and listening to adults talk about storm tracks and storm surges and emergency preparedness. Most years nothing came close. The summer she was eleven, one did.
+Page 2: The storm was named Ida and it was a Category 2 when it made landfall. Their neighborhood was not in the evacuation zone, but the family still prepared carefully — filling bathtubs with water, charging every device, buying extra canned food, and boarding up the biggest windows.
+Page 3: Dad explained each step as they did it, not to frighten her but because, he said, understanding what you are doing and why makes you feel less powerless. Mara wrote down every step in a small notebook she kept in her pocket.
+Page 4: The storm arrived at night. Mara lay in her bed listening to the wind build from a hum to a howl to something that rattled the walls and made the whole house feel like a boat on an enormous dark ocean.
+Page 5: She was not exactly scared. She was something more complicated than scared — intensely aware of how small the house was and how large the world outside it was, and how extraordinary it was that four walls and a roof could hold against something so vast.
+Page 6: The power went out at midnight. They sat together in the living room by flashlight, playing cards and telling stories. The wind reached its peak at around three in the morning. Then slowly, over an hour, it began to ease.
+Page 7: In the morning they walked outside to assess the yard. A large oak branch had crushed the garden shed. Shingles were scattered across the lawn. A neighbor's trash can sat in the middle of their driveway. But the house was intact, and everyone was safe.
+Page 8: Mara looked at her notebook full of preparation steps. She thought about adding a new page — one about what it felt like to sit inside a storm and know you had done everything you could. Some lessons, she decided, were too important to leave unwritten.
+
+============================================================
+Level E — The Best Worst Day
+============================================================
+Page 1: The day of the regional cross-country meet, everything went wrong. Theo woke up with a sore throat. The family car wouldn't start. His dad's phone died with the race address still on it, and they spent twenty frantic minutes finding a neighbor who knew the park.
+Page 2: They arrived eleven minutes before his heat. Theo had no time to warm up properly, no time to find his teammates, and barely enough time to pin his race number to his shirt before the starter called all runners to the line.
+Page 3: He had trained for this race for eight weeks. He had run the course distances in practice. He knew his pacing strategy and had it memorized like a song. But standing at the starting line with a raw throat and cold legs, every bit of preparation felt far away.
+Page 4: When the gun went off, Theo started too fast — he could feel it immediately but could not stop himself. The first half mile felt good in the wrong way, the kind of good that promises to become pain. By mile one he was breathing too hard.
+Page 5: By mile two, three runners had passed him. His legs were heavy. His throat burned. He thought about stopping, walking, pretending to be injured, all the forms of giving up that the mind offers when the body is struggling.
+Page 6: Then he passed a younger kid who had stopped to tie a shoe. The kid looked up at Theo struggling past and said, You've got it! with complete sincerity. Something about that voice — a stranger cheering for him with zero reason to — pulled Theo back into his body.
+Page 7: He did not win. He finished ninth out of forty-two, which was three places behind his practice goal. His coach shook his hand and said, That was a real race. You learned more today than in any training run this season.
+Page 8: On the ride home, Theo sat in the back seat with his head against the window. His dad asked how he felt. Tired, Theo said. And sort of proud. Of what? his dad asked. Of finishing, Theo said. When finishing was the hardest possible option.
+
+============================================================
+Level E — The Migration
+============================================================
+Page 1: When Dr. Reyes announced that the class would track monarch butterfly migration for their fall science project, most students thought it would be easy. You look up butterflies and write it down, someone said. It turned out to be much more complicated and much more interesting than that.
+Page 2: Lily and her partner James were assigned to research the biology of migration itself — not just where the butterflies went, but how they knew to go there. The question seemed simple until they started reading and discovered that nobody fully understood the answer.
+Page 3: Monarch butterflies fly up to three thousand miles from Canada to a small mountain forest in Mexico. They have never made the trip before — the generation that migrates is four generations removed from the last one that made the journey. Yet they find the exact same trees.
+Page 4: Scientists believe they use the angle of sunlight as a compass, corrected by an internal clock. They may also sense the Earth's magnetic field. Some researchers think they even navigate by the polarization of light that human eyes cannot perceive.
+Page 5: Lily stayed up one night reading studies on her tablet, genuinely unable to stop. James filled three pages of notes. At school the next day they could not talk about anything else, which annoyed their other friends but delighted Dr. Reyes.
+Page 6: For their presentation, they built a giant paper mural showing the migration route, with arrows marking the waypoints. They hung orange paper butterflies from the ceiling above the mural using fishing line so they appeared to be flying.
+Page 7: During the presentation, James explained the navigation science while Lily showed the route. Then Lily asked the class a question she had not been able to stop thinking about: If the butterfly has never made this journey before, and its parents have never made it, what is carrying the memory? The class was quiet for a long time.
+Page 8: Dr. Reyes told them that was one of the great questions of biology — a question still being studied at universities around the world. Lily wrote that sentence down in her notebook and underlined it. She thought that knowing the right questions might matter even more than knowing all the answers.
+
+============================================================
+Level E — The Apology
+============================================================
+Page 1: At lunch on a Tuesday, in front of twelve people, Nina said something unkind about her best friend Cora's project — the one Cora had spent three weeks building. It was a model of a tidal power generator made entirely from cardboard and rubber bands, and Nina said it looked like something a kindergartner would make. Everyone at the table laughed.
+Page 2: Cora's face changed in a way Nina had never seen before. Not angry, exactly. More like something had been quietly broken. She picked up her lunch tray and moved to another table without saying anything.
+Page 3: Nina told herself it was just a joke. Cora was too sensitive. It wasn't a big deal. She thought this for approximately three hours before she admitted to herself, lying on her bed staring at the ceiling, that it had been unkind and she had known it was unkind when she said it.
+Page 4: The hard part was not knowing it was wrong. The hard part was that apologizing meant admitting, out loud, that she had chosen to be mean. That she had wanted the table to laugh more than she had wanted to protect her friend. That was a difficult truth to hold.
+Page 5: She called Cora that evening. Cora answered but didn't say anything, just waited. Nina had practiced what to say and all of it sounded hollow now. She started over. I said something cruel today because I wanted people to laugh. It wasn't true and it wasn't kind and I am genuinely sorry.
+Page 6: There was a long pause. Cora said, You really hurt my feelings. Nina said, I know. I'm sorry. Not as an explanation or a defense, just the two words, plain.
+Page 7: Cora did not immediately say it was okay, because it was not immediately okay. But she said, Thank you for calling. That meant a lot. They talked for another twenty minutes about other things, carefully, the way people do when they are beginning to mend something.
+Page 8: At school the next day, Nina sat with Cora at lunch. Nobody mentioned the day before. But Nina looked at the tidal generator model Cora had brought in for class and said, Actually, I think it's impressive. And she meant it. Cora smiled. Some apologies, Nina learned, are only the first step of a longer road.
