@@ -1,0 +1,12 @@
+{
+  "episode": 2, "beat": 5, "microClip": "a",
+  "title": "CLIFFHANGER — Ginger eyes the postman",
+  "durationSec": 5,
+  "mode": "single-shot",
+  "subjects": ["Ginger"],
+  "scene": "Livingroom",
+  "nativeAudio": true,
+  "expectedCredits": 45,
+  "negativePrompt": "extra people, duplicate character, twin, clone, two of the same person, mirrored figure, background extras, second dog, kids, parents, second jack russell",
+  "prompt": "Wide shot from inside @Livingroom looking through the front window. @Ginger sits center-frame staring intently out at a postman walking up the path with a brown package. Her ears perk up sharply: \"Woof? Woof woof!\""
+}

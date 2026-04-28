@@ -1,0 +1,38 @@
+{
+  "episode": 3,
+  "beat": 4,
+  "microClip": "c",
+  "title": "RESOLUTION 3 — Eva wears helmet, sisters hug Ginger (forgiveness)",
+  "_socialEmotionalBeat": "Forgiveness — recurring theme. Ginger broke a rule but is forgiven with a hug, helmet adventure ahead.",
+  "mode": "omni",
+  "durationSec": 10,
+  "quality": "720p",
+  "nativeAudio": true,
+  "expectedCredits": 90,
+  "subjects": [
+    "Sara",
+    "Eva",
+    "Ginger"
+  ],
+  "scene": "bedroom-sisters",
+  "boundElements": [
+    {
+      "tag": "Sara",
+      "source": "library"
+    },
+    {
+      "tag": "Eva",
+      "source": "library"
+    },
+    {
+      "tag": "Ginger",
+      "source": "library"
+    },
+    {
+      "tag": "bedroom-sisters",
+      "source": "library"
+    }
+  ],
+  "prompt": "Medium shot in @bedroom-sisters. @Eva on the RIGHT now wears the pink-and-white bike helmet, beaming. @Sara on the LEFT and Eva together kneel down and hug @Ginger between them. Ginger licks Eva's cheek. Eva (giggling): \"Thanks for showing us, Ginger!\" Sara (ruffling Ginger's ears): \"Silly puppy!\" Ginger: \"Woof!\" Eva (squeezing Ginger): \"I forgive you!\" Warm group-hug Pixar lighting, soft cuddly mood.",
+  "negativePrompt": "duplicate character, twin, clone, two of the same, mirrored figure, second father, second mother, two Papa, two Mama, identical adults, extra people, third child, second sister, second sara, second eva, second dog, third dog, two ginger, joe visible, pomeranian visible, baby doll, stuffed toy in place of dog, twin beds, single bed, no helmet"
+}

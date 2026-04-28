@@ -1,0 +1,37 @@
+{
+  "episode": 3,
+  "beat": 3,
+  "microClip": "d",
+  "title": "SEARCH 4 — Mama walks in, sisters present clues",
+  "mode": "omni",
+  "durationSec": 10,
+  "quality": "720p",
+  "nativeAudio": true,
+  "expectedCredits": 90,
+  "subjects": [
+    "Mama",
+    "Sara",
+    "Eva"
+  ],
+  "scene": "livingroom",
+  "boundElements": [
+    {
+      "tag": "Mama",
+      "source": "library"
+    },
+    {
+      "tag": "Sara",
+      "source": "library"
+    },
+    {
+      "tag": "Eva",
+      "source": "library"
+    },
+    {
+      "tag": "livingroom",
+      "source": "library"
+    }
+  ],
+  "prompt": "Wide shot in @livingroom. @Mama walks in from screen-left, hands on hips, gentle curious smile. @Sara stands center holding up the chewed brown package. @Eva is on the RIGHT pointing at the paw-print trail on the rug. Mama (warm): \"What's all this, girls?\" Sara (proudly): \"We're solving a mystery, Mama!\" Eva (excited): \"Ginger took the package!\" Mama (kneels down with a smile): \"And what did you find?\" Sara (presenting the chewed corner): \"Thirteen clues!\" Warm collaborative-learning energy.",
+  "negativePrompt": "duplicate character, twin, clone, two of the same, mirrored figure, second father, second mother, two Papa, two Mama, identical adults, extra people, third child, second sister, second sara, second eva, dogs visible, baby doll, stuffed toy, scolding face, strict expression"
+}

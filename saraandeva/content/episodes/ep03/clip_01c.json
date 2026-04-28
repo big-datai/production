@@ -1,0 +1,32 @@
+{
+  "episode": 3,
+  "beat": 1,
+  "microClip": "c",
+  "title": "HOOK 3 — Mama opens door and accepts the package",
+  "mode": "omni",
+  "durationSec": 10,
+  "quality": "720p",
+  "nativeAudio": true,
+  "expectedCredits": 90,
+  "subjects": [
+    "Mama",
+    "Postman"
+  ],
+  "scene": "front-yard-spring",
+  "boundElements": [
+    {
+      "tag": "Mama",
+      "source": "library"
+    },
+    {
+      "tag": "Postman",
+      "source": "library"
+    },
+    {
+      "tag": "front-yard-spring",
+      "source": "library"
+    }
+  ],
+  "prompt": "Medium two-shot in @front-yard-spring at the open red front door. @Mama stands on the LEFT just inside the doorway, warm smile. @Postman stands on the RIGHT on the front step, holding out the brown package with both hands. Postman: \"Good morning! Special delivery!\" Mama (smiling): \"Oh thank you so much!\" She accepts the package with both hands. Postman: \"Have a wonderful day!\" Mama: \"You too!\" Postman waves, turns to leave. Bright spring morning, daffodils visible in the bed, cheerful cartoon mood.",
+  "negativePrompt": "duplicate character, twin, clone, two of the same, mirrored figure, second father, second mother, two Papa, two Mama, identical adults, extra people, second postman, two postmen, kids visible, kids opening door, kids reaching for package, dogs visible, mailbox visible, house number visible, license plate visible, scary, threatening posture"
+}

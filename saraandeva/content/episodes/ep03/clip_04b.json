@@ -1,0 +1,38 @@
+{
+  "episode": 3,
+  "beat": 4,
+  "microClip": "b",
+  "title": "RESOLUTION 2 — Mama explains: it's Eva's birthday helmet!",
+  "_realFamilyLore": "Real-life Eva just got a 2-wheel bike (Apr 2026). The birthday helmet payoff connects to her actual milestone. Watch parents will love.",
+  "mode": "omni",
+  "durationSec": 10,
+  "quality": "720p",
+  "nativeAudio": true,
+  "expectedCredits": 90,
+  "subjects": [
+    "Mama",
+    "Eva",
+    "Sara"
+  ],
+  "scene": "bedroom-sisters",
+  "boundElements": [
+    {
+      "tag": "Mama",
+      "source": "library"
+    },
+    {
+      "tag": "Eva",
+      "source": "library"
+    },
+    {
+      "tag": "Sara",
+      "source": "library"
+    },
+    {
+      "tag": "bedroom-sisters",
+      "source": "library"
+    }
+  ],
+  "prompt": "Medium shot in @bedroom-sisters. @Mama appears in the bedroom doorway, smiles big when she sees the helmet. She walks over and kneels next to @Eva on the RIGHT, putting one hand gently on Eva's shoulder. @Sara stands on the LEFT, smiling. Mama (warm, proud): \"Eva, that's YOUR new helmet!\" Eva (jaw drops, eyes huge): \"REALLY?!\" Mama: \"For your two-wheel bike!\" Eva (bouncing on her toes): \"REALLY-REALLY?!\" Warm golden light, big-reveal Pixar moment.",
+  "negativePrompt": "duplicate character, twin, clone, two of the same, mirrored figure, second father, second mother, two Papa, two Mama, identical adults, extra people, third child, second sister, second sara, second eva, dogs visible, baby doll, stuffed toy, twin beds, single bed, two mamas, scolding face"
+}

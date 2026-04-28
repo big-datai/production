@@ -1,0 +1,100 @@
+{
+  "episode": 2,
+  "title": "Ginger Steals the Pancakes!",
+  "seasonTitle": "Season 1",
+  "logline": "The morning after Episode 1's pancake feast, Mama bakes a fresh stack for Papa (he was working late on goreadling.com again). Ginger climbs the kitchen table and steals the entire plate. Sara turns detective: a trail of syrup paw-prints leads through the house. Where did Ginger hide the pancake hoard?",
+  "showFormulaBeat": "First episode using the 5-beat detective formula. Pilot (Ep 1) was off-formula.",
+  "durationSec": 130,
+  "totalMicroClips": 13,
+  "microClipDurationSec": 5,
+  "characters_in_episode": ["Sara", "Eva", "Mama", "Ginger", "Joe"],
+  "scenes": ["KitchenMorning", "Livingroom", "DiningRoom", "BedroomSisters"],
+
+  "designConstraint": "EVERY sub-clip ≤3 bound characters. Cast rotates between sub-clips. Audience perceives ensemble through cuts.",
+
+  "fiveBeatStructure": [
+    {
+      "beat": 1, "label": "HOOK_THE_ESCAPE", "scene": "KitchenMorning",
+      "summary": "AUDIENCE-ONLY: Ginger sneaks into the empty kitchen, climbs onto a chair, then onto the kitchen table. She grabs the entire stack of pancakes (with chocolate syrup) in her mouth and bolts.",
+      "subClips": [
+        { "id": "01a", "subjects": ["Ginger"], "shot": "Wide shot, locked camera, empty @KitchenMorning. @Ginger pads in carefully, looks around: \"Woof... woof?\" (whisper-bark)", "duration": 5 },
+        { "id": "01b", "subjects": ["Ginger"], "shot": "Medium shot. @Ginger jumps onto a chair, then onto the kitchen table next to a stack of pancakes with chocolate syrup. @Ginger licks lips: \"Woof!\"", "duration": 5 },
+        { "id": "01c", "subjects": ["Ginger"], "shot": "Low tracking shot at floor level. @Ginger jumps off the table with the entire pancake stack in her mouth, paws printing chocolate syrup as she runs out: \"Woof woof!\"", "duration": 5 }
+      ]
+    },
+    {
+      "beat": 2, "label": "DISCOVERY", "scene": "KitchenMorning",
+      "summary": "Sara, Eva, Mama enter kitchen. Plate is GONE. Sara: 'Wait — I have a plan!' Eva spots syrupy paw prints on the floor.",
+      "subClips": [
+        { "id": "02a", "subjects": ["Sara", "Eva", "Mama"], "shot": "Wide shot. @Sara, @Eva, and @Mama walk into @KitchenMorning. @Mama gasps: \"The pancakes are gone!\"", "duration": 5 },
+        { "id": "02b", "subjects": ["Sara"], "shot": "Close shot. @Sara hands on hips, eyes narrowed in detective focus: \"Wait — I have a plan!\"", "duration": 5 },
+        { "id": "02c", "subjects": ["Eva"], "shot": "Low shot on @KitchenMorning floor. @Eva crouches pointing at chocolate paw prints: \"Really?! Really-really-really chocolate paw prints!\"", "duration": 5 }
+      ]
+    },
+    {
+      "beat": 3, "label": "SEARCH_CLUES", "scene": "Livingroom",
+      "summary": "Sara, Eva, Joe follow paw prints into the living room. Sara reads a syrup smudge on the wall. Joe sniffs the trail.",
+      "subClips": [
+        { "id": "03a", "subjects": ["Sara", "Eva", "Joe"], "shot": "Tracking shot across @Livingroom floor. @Sara, @Eva, and @Joe follow chocolate paw prints. @Joe sniffs the floor: \"Yip yip!\"", "duration": 5 },
+        { "id": "03b", "subjects": ["Sara"], "shot": "Close shot of a chocolate-syrup smudge on the @Livingroom wall, shaped like letters. @Sara reading slowly: \"G-I-N-G-E-R was here!\"", "duration": 5 },
+        { "id": "03c", "subjects": ["Sara", "Eva"], "shot": "Two-shot in @Livingroom. @Sara on the LEFT pointing at the smudge: \"Six letters!\" @Eva on the RIGHT counting on fingers: \"One, two, three, four, five, six!\"", "duration": 5 }
+      ]
+    },
+    {
+      "beat": 4, "label": "EUREKA_RESOLUTION", "scene": "BedroomSisters",
+      "summary": "Trail leads under the bunk bed. Sara discovers Ginger's hoard — pancakes hidden in the trundle drawer! Big Eva reveal moment.",
+      "subClips": [
+        { "id": "04a", "subjects": ["Sara", "Eva"], "shot": "Wide shot in @BedroomSisters. @Sara on the LEFT, @Eva on the RIGHT, both peer under the bunk bed at chocolate-syrup trail leading to the trundle. @Sara: \"Under the bed!\"", "duration": 5 },
+        { "id": "04b", "subjects": ["Sara", "Eva", "Ginger"], "shot": "Medium shot. @Sara opens the trundle drawer. Inside: pancakes everywhere, @Ginger curled on top of them, mouth full. @Eva: \"Really?! Really-really-really?!\" @Ginger sheepish: \"Woof?\"", "duration": 5 },
+        { "id": "04c", "subjects": ["Sara", "Ginger"], "shot": "Close shot of @Sara crouched petting @Ginger's head, both syrupy. @Sara: \"Next time just ask, okay?\" @Ginger licks her cheek: \"Woof.\"", "duration": 5 }
+      ]
+    },
+    {
+      "beat": 5, "label": "CLIFFHANGER_TAG", "scene": "Livingroom",
+      "summary": "Final shot: Ginger sitting alone, watching the postman walk up the path through the front window. She perks her ears.",
+      "subClips": [
+        { "id": "05a", "subjects": ["Ginger"], "shot": "Wide shot of @Livingroom from the side. @Ginger sits center-frame staring out the front window at a postman walking up the path with a package. @Ginger's ears perk: \"Woof?\" Title card overlay: NEXT TIME — THE POSTMAN MYSTERY", "duration": 5 }
+      ]
+    }
+  ],
+
+  "castingMatrix": {
+    "comment": "Every sub-clip ≤3 bound subjects. Counts below verify constraint compliance.",
+    "01a": 1, "01b": 1, "01c": 1,
+    "02a": 3, "02b": 1, "02c": 1,
+    "03a": 3, "03b": 1, "03c": 2,
+    "04a": 2, "04b": 3, "04c": 2,
+    "05a": 1
+  },
+
+  "learningMoments": {
+    "reading": "Beat 3 — Sara reads the syrup smudge: 'G-I-N-G-E-R was here'",
+    "math": "Beat 3c — Eva counts the letters of GINGER on her fingers (1-6)",
+    "social_emotional": "Beat 4c — Forgiveness: Sara teaches Ginger to ask next time"
+  },
+
+  "catchphrases_used": {
+    "Sara": "Wait — I have a plan!",
+    "Eva": "Really-really-really?!",
+    "Ginger": "Woof! Woof!",
+    "Joe": "Yip yip!"
+  },
+
+  "expectedCreditsPerMicroClip": 45,
+  "expectedCreditsTotal_base": 585,
+  "expectedCreditsTotal_with_30pct_rerender_buffer": 760,
+
+  "youtube": {
+    "channel": "@SaraAndEva",
+    "privacy_at_upload": "unlisted",
+    "madeForKids": true,
+    "links_in_description": [
+      "https://youtu.be/AohVDHtq7SI (link back to Ep 1)",
+      "https://goreadling.com/stories",
+      "https://apps.apple.com/app/goreadling/id6755505679"
+    ],
+    "next_episode_teaser": "The Postman Mystery"
+  },
+
+  "rules_reference": "See /Users/admin1/.claude/projects/-Volumes-Samsung500-goreadling/memory/feedback_saraandeva_sets.md (the foundational doc — 3-character constraint, 23 prompt rules, show formula, all real-family details)"
+}

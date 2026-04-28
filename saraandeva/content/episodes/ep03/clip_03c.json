@@ -1,0 +1,38 @@
+{
+  "episode": 3,
+  "beat": 3,
+  "microClip": "c",
+  "title": "SEARCH 3 — Sara solves 9 + 4 = 13 (ADDITION beat)",
+  "_educationalBeat": "addition — Sara is learning addition (4+9 type problems). She counts on fingers from 9, says 'plus four', counts up to 13. This matches her real-life learning level.",
+  "mode": "omni",
+  "durationSec": 10,
+  "quality": "720p",
+  "nativeAudio": true,
+  "expectedCredits": 90,
+  "subjects": [
+    "Sara",
+    "Eva",
+    "Ginger"
+  ],
+  "scene": "livingroom",
+  "boundElements": [
+    {
+      "tag": "Sara",
+      "source": "library"
+    },
+    {
+      "tag": "Eva",
+      "source": "library"
+    },
+    {
+      "tag": "Ginger",
+      "source": "library"
+    },
+    {
+      "tag": "livingroom",
+      "source": "library"
+    }
+  ],
+  "prompt": "Medium shot in @livingroom. @Sara on the LEFT holds up the chewed brown package showing FOUR clear chew holes on the corner. @Eva on the RIGHT watches with curiosity. @Ginger sits in the BACKGROUND looking sheepish, ears down. Sara (counting holes): \"One, two, three, four chew holes.\" Sara (thinking aloud): \"So nine paw prints PLUS four chew holes equals…\" She counts up on her fingers: \"Nine, ten, eleven, twelve, THIRTEEN!\" Sara (excited): \"Thirteen clues!\" Eva: \"Thirteen!\" Warm encouraging light.",
+  "negativePrompt": "duplicate character, twin, clone, two of the same, mirrored figure, second father, second mother, two Papa, two Mama, identical adults, extra people, third child, second sister, second sara, second eva, second dog, third dog, two ginger, joe visible, pomeranian visible, baby doll, stuffed toy"
+}

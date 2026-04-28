@@ -1,0 +1,12 @@
+{
+  "episode": 2, "beat": 3, "microClip": "b",
+  "title": "Sara reads syrup smudge: G-I-N-G-E-R",
+  "durationSec": 5,
+  "mode": "single-shot",
+  "subjects": ["Sara"],
+  "scene": "Livingroom",
+  "nativeAudio": true,
+  "expectedCredits": 45,
+  "negativePrompt": "extra people, duplicate character, twin, clone, two of the same person, mirrored figure, background extras, second sister, second girl, additional kid",
+  "prompt": "Close shot of @Sara in @Livingroom standing next to a chocolate-syrup smudge on the wall shaped like letters. @Sara reading slowly, pointing at each letter: \"G... I... N... G... E... R. Ginger! Ginger was here!\""
+}

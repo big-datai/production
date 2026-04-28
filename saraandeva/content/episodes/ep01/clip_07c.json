@@ -1,0 +1,12 @@
+{
+  "episode": 1, "beat": 7, "microClip": "c",
+  "title": "FIVE pancakes celebration",
+  "durationSec": 5,
+  "mode": "single-shot",
+  "subjects": ["Sara", "Eva"],
+  "scene": "DiningRoom",
+  "nativeAudio": true,
+  "expectedCredits": 45,
+  "negativePrompt": "extra people, duplicate character, twin, clone, two of the same person, mirrored figure, background extras, crowd, identical sibling, dog, puppy, hand, extra hands, second girl, second sister, third child",
+  "prompt": "Two-shot at the @DiningRoom table. @Sara on the LEFT side smiling: \"Five pancakes — we did it!\" @Eva on the RIGHT side with arms up: \"Yay! All five!\""
+}

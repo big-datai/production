@@ -1,0 +1,19 @@
+{
+  "name": "saraandeva",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "description": "Node.js helpers for SaraAndEva — Kling Omni submission via Playwright. Being migrated to Python.",
+  "scripts": {
+    "submit-omni": "node .claude/skills/saraandeva-episode/scripts/submitOmniClip.mjs"
+  },
+  "dependencies": {
+    "dotenv": "^16.6.1",
+    "firebase-admin": "^12.6.0",
+    "google-auth-library": "^10.6.2",
+    "googleapis": "^171.4.0"
+  },
+  "devDependencies": {
+    "playwright": "^1.57.0"
+  }
+}

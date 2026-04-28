@@ -1,0 +1,12 @@
+{
+  "episode": 2, "beat": 2, "microClip": "a",
+  "title": "Sisters and Joe enter empty kitchen",
+  "durationSec": 5,
+  "mode": "single-shot",
+  "subjects": ["Sara", "Eva", "Joe"],
+  "scene": "KitchenMorning",
+  "nativeAudio": true,
+  "expectedCredits": 45,
+  "negativePrompt": "extra people, duplicate character, twin, clone, two of the same person, mirrored figure, background extras, third child, second sister, fourth child",
+  "prompt": "Wide shot of @KitchenMorning. @Sara walks in on the LEFT, @Eva on the RIGHT, @Joe trotting between them. All three stop when they see the empty pancake plate. @Sara: \"Wait — the pancakes are gone!\""
+}

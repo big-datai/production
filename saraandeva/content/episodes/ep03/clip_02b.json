@@ -1,0 +1,27 @@
+{
+  "episode": 3,
+  "beat": 2,
+  "microClip": "b",
+  "title": "DISCOVERY 2 — Ginger spots the package",
+  "mode": "omni",
+  "durationSec": 10,
+  "quality": "720p",
+  "nativeAudio": true,
+  "expectedCredits": 90,
+  "subjects": [
+    "Ginger"
+  ],
+  "scene": "livingroom",
+  "boundElements": [
+    {
+      "tag": "Ginger",
+      "source": "library"
+    },
+    {
+      "tag": "livingroom",
+      "source": "library"
+    }
+  ],
+  "prompt": "Low angle close-up in @livingroom. @Ginger creeps slowly into frame from screen-left, ears perked, nose lifted, sniffing. The brown package sits center-frame on the wicker coffee table. Ginger circles the table once, eyes locked on the package. Ginger: \"Woof?\" Sniffs deeply. Ginger: \"Woof woof!\" Tail wags mischievously. Camera holds steady, mischievous music tone. Soft warm afternoon light.",
+  "negativePrompt": "duplicate character, twin, clone, two of the same, mirrored figure, second father, second mother, two Papa, two Mama, identical adults, extra people, kids visible, second dog, third dog, second jack russell, second ginger, two ginger, joe visible, pomeranian visible"
+}

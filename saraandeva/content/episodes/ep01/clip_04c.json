@@ -1,0 +1,12 @@
+{
+  "episode": 1, "beat": 4, "microClip": "c",
+  "title": "Mama looks down at the dogs",
+  "durationSec": 5,
+  "mode": "single-shot",
+  "subjects": ["Mama", "Ginger", "Joe"],
+  "scene": "KitchenMorning",
+  "nativeAudio": true,
+  "expectedCredits": 45,
+  "negativePrompt": "extra people, duplicate character, twin, clone, two of the same person, mirrored figure, background extras, crowd, identical sibling, third dog, extra puppy, dogs on counter, dogs on table, second mama",
+  "prompt": "Medium shot in @KitchenMorning, camera angled down. @Mama stands at the black range. @Ginger sits on the floor by @Mama's feet. @Joe sits on the floor next to @Ginger. @Mama looks down at @Ginger: \"Oh! So hungry!\" @Mama laughs: \"Tiny pancakes coming up!\""
+}

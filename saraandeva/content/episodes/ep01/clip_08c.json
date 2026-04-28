@@ -1,0 +1,12 @@
+{
+  "episode": 1, "beat": 8, "microClip": "c",
+  "title": "Spin spin spin with Papa (Eva first)",
+  "durationSec": 5,
+  "mode": "single-shot",
+  "subjects": ["Papa", "Eva"],
+  "scene": "DiningRoom",
+  "nativeAudio": true,
+  "expectedCredits": 45,
+  "negativePrompt": "extra people, duplicate character, twin, clone, two of the same person, mirrored figure, background extras, crowd, identical sibling, second girl",
+  "prompt": "Wide shot in @DiningRoom. @Papa holds both of @Eva's hands and lifts her, spinning her in a circle through the air. @Eva: \"Spin, spin, spin!\" @Eva: \"Higher! Higher!\" @Papa: \"Hold on tight!\""
+}

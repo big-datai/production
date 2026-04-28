@@ -1,0 +1,12 @@
+{
+  "episode": 1, "beat": 4, "microClip": "b",
+  "title": "Dogs sit and beg for pancakes",
+  "durationSec": 5,
+  "mode": "single-shot",
+  "subjects": ["Ginger", "Joe"],
+  "scene": "KitchenMorning",
+  "nativeAudio": true,
+  "expectedCredits": 45,
+  "negativePrompt": "extra people, duplicate character, twin, clone, two of the same person, mirrored figure, background extras, crowd, identical sibling, third dog, extra puppy",
+  "prompt": "Low-angle shot on the kitchen floor in @KitchenMorning. @Ginger sits up tall in beg position. @Joe sits next to @Ginger with tongue out. @Ginger: \"Woof, please!\" @Joe: \"Pancake! Pancake!\" @Joe: \"Spin spin please!\""
+}

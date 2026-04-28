@@ -1,0 +1,12 @@
+{
+  "episode": 1, "beat": 3, "microClip": "a",
+  "title": "Sara dashes into the playroom",
+  "durationSec": 5,
+  "mode": "single-shot",
+  "subjects": ["Sara"],
+  "scene": "Livingroom",
+  "nativeAudio": true,
+  "expectedCredits": 45,
+  "negativePrompt": "extra people, duplicate character, twin, clone, two of the same person, mirrored figure, background extras, crowd, identical sibling, second girl, additional child, dog, puppy",
+  "prompt": "Wide shot, static, @Livingroom. @Sara dashes in from the right side of frame and smiles at the camera. @Sara: \"Pancakes!\""
+}

@@ -1,0 +1,12 @@
+{
+  "episode": 1, "beat": 5, "microClip": "a",
+  "title": "Sisters dash into the kitchen",
+  "durationSec": 5,
+  "mode": "single-shot",
+  "subjects": ["Sara", "Eva"],
+  "scene": "KitchenMorning",
+  "nativeAudio": true,
+  "expectedCredits": 45,
+  "negativePrompt": "extra people, duplicate character, twin, clone, two of the same person, mirrored figure, background extras, crowd, identical sibling",
+  "prompt": "Wide shot, locked camera. @Sara dashes into @KitchenMorning, @Eva dashes in right behind. @Sara: \"Pancake o'clock!\" @Eva: \"I want eight!\" @Sara: \"You can't even count to eight!\""
+}

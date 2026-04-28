@@ -1,0 +1,12 @@
+{
+  "episode": 2, "beat": 3, "microClip": "d",
+  "title": "Mama cameo with flashlight",
+  "durationSec": 5,
+  "mode": "single-shot",
+  "subjects": ["Mama", "Sara"],
+  "scene": "Livingroom",
+  "nativeAudio": true,
+  "expectedCredits": 45,
+  "negativePrompt": "extra people, duplicate character, twin, clone, two of the same person, mirrored figure, background extras, second mama, second sister, additional adult",
+  "prompt": "Medium shot in @Livingroom doorway. @Mama hands a small flashlight to @Sara, smiling: \"Need help, detectives?\" @Sara takes it eagerly: \"Thanks Mama!\""
+}

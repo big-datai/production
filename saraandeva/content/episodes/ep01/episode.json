@@ -1,0 +1,114 @@
+{
+  "episode": 1,
+  "title": "The Puppies Want Pancakes",
+  "seasonTitle": "Season 1",
+  "logline": "Ginger and Joe wake the sisters at dawn begging for pancakes. Sara, Eva, Mama, and Papa end up with a cheerful kitchen morning — counting pancakes, feeding the pups, and laughing together.",
+  "durationSec": 110,
+  "totalMicroClips": 22,
+  "microClipDurationSec": 5,
+  "characters": ["Sara", "Eva", "Mama", "Papa", "Ginger", "Joe"],
+  "scenes": ["BedroomSisters", "Livingroom", "KitchenMorning", "DiningRoom"],
+  "learningMoment": "Counting 1 to 5 (Sara teaches Eva to count pancakes on the plate)",
+  "learningBeat": 7,
+  "catchphrases": {
+    "Sara": "Wait — I have a plan.",
+    "Eva": "Really?! Really-really?!",
+    "Sisters_to_Papa": "Spin, spin, spin!  (real-family beat — sisters ask Papa to spin them by their hands)",
+    "Ginger": "Woof! Woof!",
+    "Joe": "Yip yip!  (Pomeranian happy yips, NOT 'Spin spin spin')"
+  },
+  "mode": "single-shot-per-microClip",
+  "modeReason": "Single-shot per micro-clip = surgical re-renders. A bad 5s shot costs 45 credits to redo, vs 135 if it were one shot inside a 15s multi-shot. ~25% credit savings per episode after typical re-render rate.",
+  "arc": [
+    {
+      "beat": 1, "label": "HOOK", "scene": "BedroomSisters",
+      "summary": "Ginger barks awake the bunk-bed sisters.",
+      "microClips": ["clip_01.json"],
+      "status": "rendered (legacy 15s multi-shot — keep)"
+    },
+    {
+      "beat": 2, "label": "SETUP", "scene": "BedroomSisters",
+      "summary": "Sisters sit up; Joe runs in to greet Eva.",
+      "microClips": ["clip_02a.json", "clip_02b.json", "clip_02c.json"],
+      "status": "to-submit"
+    },
+    {
+      "beat": 3, "label": "RISING", "scene": "Livingroom",
+      "summary": "Sara + Eva + Ginger stampede through the playroom toward the kitchen smell.",
+      "microClips": ["clip_03a.json", "clip_03b.json", "clip_03c.json"],
+      "status": "to-submit"
+    },
+    {
+      "beat": 4, "label": "DISCOVERY", "scene": "KitchenMorning",
+      "summary": "Mama at the stove flipping pancakes; the two dogs sit and beg.",
+      "microClips": ["clip_04a.json", "clip_04b.json", "clip_04c.json"],
+      "status": "to-submit"
+    },
+    {
+      "beat": 5, "label": "FAMILY", "scene": "KitchenMorning",
+      "summary": "Sara and Eva run in to greet Mama.",
+      "microClips": ["clip_05a.json", "clip_05b.json", "clip_05c.json"],
+      "status": "to-submit"
+    },
+    {
+      "beat": 6, "label": "DAD", "scene": "KitchenMorning",
+      "summary": "Papa walks in yawning, tickles Eva, kisses Mama.",
+      "microClips": ["clip_06a.json", "clip_06b.json", "clip_06c.json"],
+      "status": "to-submit"
+    },
+    {
+      "beat": 7, "label": "LEARNING", "scene": "DiningRoom",
+      "summary": "Sara teaches Eva to count pancakes 1-2-3-4-5.",
+      "microClips": ["clip_07a.json", "clip_07b.json", "clip_07c.json"],
+      "status": "to-submit"
+    },
+    {
+      "beat": 8, "label": "RESOLUTION", "scene": "DiningRoom",
+      "summary": "Warm payoff at the table — Joe yips, Spin spin spin with Papa.",
+      "microClips": ["clip_08a.json", "clip_08b.json", "clip_08c.json"],
+      "status": "to-submit"
+    },
+    {
+      "beat": 9, "label": "FAMILY_TABLE", "scene": "DiningRoom",
+      "summary": "Family closer at the dining table — Mama, Papa, Sara eating together.",
+      "microClips": ["clip_09a.json"],
+      "status": "to-submit"
+    },
+    {
+      "beat": 10, "label": "BRUSH_TEETH", "scene": "Bathroom",
+      "summary": "Papa brushes teeth with Sara and Eva — healthy teeth!",
+      "microClips": ["clip_10a.json"],
+      "status": "to-submit"
+    },
+    {
+      "beat": 11, "label": "PACK_SCHOOL", "scene": "KitchenMorning",
+      "summary": "Mama packs lunchboxes for Sara and Eva.",
+      "microClips": ["clip_11a.json"],
+      "status": "to-submit"
+    },
+    {
+      "beat": 12, "label": "OFF_TO_SCHOOL", "scene": "FrontFenceSidewalk + FrontWalk",
+      "summary": "Sara catches school bus #1 (sidewalk). Eva is driven by Mama (front walk).",
+      "microClips": ["clip_12a.json", "clip_12b.json"],
+      "status": "to-submit"
+    }
+  ],
+  "expectedCreditsPerMicroClip": 45,
+  "expectedCreditsTotal": 1080,
+  "expectedCreditsTotalNote": "Clip 1 (legacy 15s multi-shot) = 135 already spent. New 21 micro-clips × 45 = 945 to submit. Plus ~30% buffer for re-renders ~280 credits. Net ~1,225 credits.",
+  "rules": {
+    "bedroomLayout": "ONE dark-wood BUNK BED — Sara on the TOP bunk (pink bedding), Eva on the BOTTOM bunk (lavender bedding). NEVER twin beds, NEVER separate beds.",
+    "maxBoundSubjectsPerClip": 3,
+    "subjectCapHandling": "Each micro-clip can have its OWN ≤3 subjects, rotated per beat. A character not in the shot need not be bound.",
+    "nativeAudio": "ON for every micro-clip (Kling +50% audio surcharge baked into 45 credit estimate).",
+    "resolution": "720p",
+    "shotsPerMicroClip": "1 — micro-clips are by definition single-shot.",
+    "masterPrompt": "MUST BE EMPTY. Single-shot mode uses the main prompt textarea (which IS the only prompt) — fill it with the micro-clip's `prompt` field.",
+    "promptSkeleton": "[Shot type] [camera move], @Name [verb] [object/direction]. @Name: \"dialogue.\"",
+    "promptStyle": "camera + action with @tags + dialogue. NO appearance, NO voice descriptors, NO pronouns (he/she/it/they), NO group nouns (both/sisters/girls/everyone), NO entry verbs for already-on-screen characters, NO bound-character names spoken inside another character's dialogue.",
+    "characterNamesInDialogue": "Drop the bound character's name from other characters' dialogue. Sara says 'Come on — pancakes are waiting' NOT 'Come on, Eva — pancakes are waiting' (the latter spawns an extra Eva).",
+    "everyoneIsCalledByRealName": "Always Sara, Eva, Mama, Papa, Ginger, Joe — never nicknames (no Zhorik, no Evochka, no honey/sweetie).",
+    "negativePrompt": "extra people, duplicate character, twin, clone, two of the same person, mirrored figure, background extras, crowd, identical sibling",
+    "concat": "ffmpeg concat the 22 MP4s in arc order with optional 0.2s xfade between adjacent micro-clips. Hard cuts also acceptable for kids' show pacing."
+  }
+}

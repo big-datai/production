@@ -1,0 +1,12 @@
+{
+  "episode": 2, "beat": 4, "microClip": "f",
+  "title": "Case closed!",
+  "durationSec": 5,
+  "mode": "single-shot",
+  "subjects": ["Sara", "Eva"],
+  "scene": "BedroomSisters",
+  "nativeAudio": true,
+  "expectedCredits": 45,
+  "negativePrompt": "extra people, duplicate character, twin, clone, two of the same person, mirrored figure, background extras, third child, second sister",
+  "prompt": "Two-shot in @BedroomSisters. @Sara on the LEFT high-fives @Eva on the RIGHT. @Sara grinning: \"Case closed, detective Eva!\" @Eva proud: \"Case closed, really-really-really closed!\""
+}

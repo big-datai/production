@@ -1,0 +1,33 @@
+{
+  "episode": 3,
+  "beat": 6,
+  "microClip": "a",
+  "title": "SUBSCRIBE OUTRO — Sara + Eva direct to camera",
+  "_lockedFormula": "MANDATORY recurring beat — same dialogue every episode for catchphrase reinforcement",
+  "mode": "omni",
+  "durationSec": 10,
+  "quality": "720p",
+  "nativeAudio": true,
+  "expectedCredits": 90,
+  "subjects": [
+    "Sara",
+    "Eva"
+  ],
+  "scene": "livingroom",
+  "boundElements": [
+    {
+      "tag": "Sara",
+      "source": "library"
+    },
+    {
+      "tag": "Eva",
+      "source": "library"
+    },
+    {
+      "tag": "livingroom",
+      "source": "library"
+    }
+  ],
+  "prompt": "Medium two-shot in @livingroom. @Sara on the LEFT and @Eva on the RIGHT face directly toward the camera, smiling brightly, both waving with both hands. Sara (cheerful): \"Subscribe so you don't miss new videos!\" Eva (excited): \"New episodes every week!\" Bright friendly outro lighting, warm welcoming mood. Steady centered framing.",
+  "negativePrompt": "duplicate character, twin, clone, two of the same, mirrored figure, second father, second mother, two Papa, two Mama, identical adults, extra people, third child, second sister, second sara, second eva, dogs visible, baby doll, stuffed toy"
+}

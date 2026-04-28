@@ -1,0 +1,12 @@
+{
+  "episode": 1, "beat": 8, "microClip": "a",
+  "title": "Sisters eating: best morning",
+  "durationSec": 5,
+  "mode": "single-shot",
+  "subjects": ["Sara", "Eva"],
+  "scene": "DiningRoom",
+  "nativeAudio": true,
+  "expectedCredits": 45,
+  "negativePrompt": "extra people, duplicate character, twin, clone, two of the same person, mirrored figure, background extras, crowd, identical sibling",
+  "prompt": "Wide shot. @Sara and @Eva sit at the @DiningRoom table eating pancakes. @Sara: \"Best morning!\" @Eva: \"Mmm syrupy!\" @Sara: \"More please!\""
+}

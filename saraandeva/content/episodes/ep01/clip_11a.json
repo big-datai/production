@@ -1,0 +1,12 @@
+{
+  "episode": 1, "beat": 11, "microClip": "a",
+  "title": "Mama packs Sara and Eva for school",
+  "durationSec": 5,
+  "mode": "single-shot",
+  "subjects": ["Mama", "Sara", "Eva"],
+  "scene": "KitchenMorning",
+  "nativeAudio": true,
+  "expectedCredits": 45,
+  "negativePrompt": "extra people, duplicate character, twin, clone, two of the same person, mirrored figure, background extras, crowd, identical sibling",
+  "prompt": "Medium shot in @KitchenMorning. @Mama at the counter packing two lunchboxes while @Sara and @Eva wait beside her with backpacks: \"Sandwich, apple, juice — all set!\" @Sara: \"Don't forget my snack!\" @Eva: \"Mine is pink one!\""
+}

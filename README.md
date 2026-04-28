@@ -1,62 +1,49 @@
 # goreadling-production
 
-Content production pipeline for [GoReadling](https://goreadling.com): generates stories, podcasts, and animated video clips, then publishes to Firestore / YouTube / Spotify.
+Content production pipelines for [GoReadling](https://goreadling.com).
 
-The web and mobile app live in a separate repo. This repo only handles data transformation and external API calls.
+The web/mobile app lives in a separate repo. This repo contains **two fully separated content projects**:
+
+| Project | What it does | Status | Primary language |
+|---------|--------------|--------|------------------|
+| [`stories/`](./stories) | Daily story → multi-voice podcast → Kling video → YouTube/Spotify/Firestore publish | Stable, won't change much | Node.js (legacy) + light Python helpers |
+| [`saraandeva/`](./saraandeva) | SaraAndEva flagship YouTube series — Kling Omni clip submission, episode assembly | New project, active development | Python (target 70%) + some Node.js |
+
+Each project is self-contained: its own `pyproject.toml`, `requirements.txt`, `package.json`, `.claude/skills/`, credentials, and `.env`. They share git history and `.gitignore`, nothing else.
+
+## Working in a project
+
+```bash
+cd stories      # or: cd saraandeva
+# All commands, scripts, skills, and config are scoped to that folder.
+```
+
+Claude Code skills are per-project — they only resolve when your shell is inside that project's folder.
 
 ## Layout
 
 ```
-.
-├── src/goreadling/      # Python — primary, going forward
-│   ├── config.py        # env loading, paths
-│   └── firebase_client.py
-├── legacy/              # existing Node.js .mjs pipeline (being ported)
-│   ├── content/         # story / podcast / video generators
-│   ├── scripts/         # db checks, SEO updaters
-│   └── package.json
-├── scripts/             # Python utility scripts
-│   └── create-shorts.py
-├── assets/characters/   # character config (PNGs are gitignored, regen from JSON)
-├── pyproject.toml
-├── requirements.txt
-└── requirements-dev.txt
+goreadling-production/
+├── stories/
+│   ├── legacy/                 # existing .mjs pipeline
+│   ├── src/stories/            # Python helpers
+│   ├── scripts/                # python utilities (create-shorts.py)
+│   ├── assets/characters/      # general-stories character config
+│   ├── .claude/skills/         # publish-story, publish-shorts
+│   ├── pyproject.toml, requirements.txt, package.json
+│   └── README.md
+├── saraandeva/
+│   ├── content/                # working .mjs + .py + .yaml + episode JSONs
+│   ├── src/saraandeva/         # Python (primary)
+│   ├── assets/                 # character/scene reference images (gitignored)
+│   ├── .claude/skills/         # saraandeva-episode
+│   ├── pyproject.toml, requirements.txt, package.json
+│   └── README.md
+├── .gitignore
+└── README.md
 ```
 
-## Setup
+## Secrets
 
-```bash
-# Python (primary)
-python3.11 -m venv .venv
-source .venv/bin/activate
-pip install -r requirements-dev.txt
-pip install -e .
-
-# Node legacy (still runnable until ported)
-cd legacy && npm install
-```
-
-Copy `.env.example` to `.env` and fill in keys. `credentials.json` and `token.json` are not committed — drop yours at the repo root.
-
-## Running
-
-```bash
-# Python (porting in progress)
-python -m goreadling.db.check_duplicates
-
-# Node legacy (until ported)
-cd legacy && npm run seed-story
-node legacy/scripts/db/checkStories.mjs
-```
-
-## Porting plan
-
-Scripts are ported to Python one at a time. The .mjs version stays in `legacy/` until the Python port is verified. Order is roughly:
-
-1. **db checks** (`legacy/scripts/db/*.mjs`) — small, easy, no external state changes
-2. **seo** (`legacy/scripts/seo/*.mjs`) — Google Search Console, Spotify/YouTube metadata
-3. **stories** (`legacy/content/stories/*.mjs`) — Firestore seeders
-4. **podcast pipeline** (`legacy/content/podcast/*.mjs`) — TTS, video assembly, uploads
-5. **kling/video** — animated clip generation
-
-Once a script's Python equivalent is working in production, delete the `.mjs`.
+Each project keeps its own `credentials.json` and `token.json` at its root. Both are gitignored.
+Copy your service account JSONs into place before running anything.

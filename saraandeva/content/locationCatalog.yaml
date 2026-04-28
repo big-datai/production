@@ -1,0 +1,183 @@
+# Sara & Eva — Location Catalog
+#
+# Persistent library of every canonical scene/location for the show.
+# The storyboard generator reads from this catalog when deciding which
+# scene to bind for each Kling multi-shot clip. Every entry locks:
+#
+#   id                  — stable scene ID (matches SCENES dict in generateScenes.py)
+#   label               — human-readable name (for story writer)
+#   description         — 1–2 sentence summary (what this location is for)
+#   rendered_png        — the Pixar-style locked scene PNG (Kling scene-ref)
+#   real_photo_refs     — source photos used to generate it (layout anchor)
+#   tags                — story-relevance tags (helps episode prompts pick locations)
+#   time_of_day         — implicit time-of-day; use a different scene if you need another
+#
+# To add a new location:
+#   1. Add an entry to SCENES in generateScenes.py
+#   2. Generate it via `python3 generateScenes.py --scene <id>`
+#   3. Add a block here
+#   4. Commit both files together
+
+locations:
+
+  # ───────────────── Home interior ─────────────────
+
+  - id: kitchen_morning
+    label: "Kitchen (morning)"
+    description: "The family's bright morning kitchen — white cabinets, black fridge with kids' art, diamond-tile floor, breakfast nook at the back window."
+    rendered_png: "assets/characters/saraandeva/scenes/kitchen_morning.png"
+    real_photo_refs:
+      - "/Volumes/Samsung500/photo/house/kitchen.JPG"
+      - "/Volumes/Samsung500/photo/house/enterence_to_kitchen.JPG"
+    time_of_day: morning
+    tags: [home, interior, breakfast, morning-routine, cooking-with-mom, cereal, pancakes, brushing-teeth-before-breakfast]
+
+  - id: kitchen_evening
+    label: "Kitchen (evening)"
+    description: "Same kitchen in cozy golden-hour evening light — pendant glows over the table, end-of-day warmth."
+    rendered_png: "assets/characters/saraandeva/scenes/kitchen_evening.png"
+    real_photo_refs:
+      - "/Volumes/Samsung500/photo/house/kitchen.JPG"
+    time_of_day: evening
+    tags: [home, interior, dinner, evening-routine, baking, family-time, end-of-day]
+
+  - id: livingroom
+    label: "Living room / play room"
+    description: "Open-plan living/play area with the rainbow afghan couch, mini trampoline, play kitchen, dollhouse, and alphabet wall decals."
+    rendered_png: "assets/characters/saraandeva/scenes/livingroom.png"
+    real_photo_refs:
+      - "/Volumes/Samsung500/photo/house/living_room_play_room.JPG"
+      - "/Volumes/Samsung500/photo/house/dining_room.JPG"
+    time_of_day: day
+    tags: [home, interior, play, toys, dancing, pretend-play, rainy-day-indoor, movie-night]
+
+  - id: dining_room
+    label: "Dining room"
+    description: "Long farmhouse table with cream tufted chairs, matte-black cage chandelier, red placemats — the 'family meal' setting."
+    rendered_png: "assets/characters/saraandeva/scenes/dining_room.png"
+    real_photo_refs:
+      - "/Volumes/Samsung500/photo/house/dining_room.JPG"
+    time_of_day: day
+    tags: [home, interior, meals, dinner-party, birthday-party, grandma-visit, craft-time]
+
+  - id: bedroom_sisters
+    label: "Sisters' shared bedroom"
+    description: "Pink-walled bedroom with the dark-wood bunk bed, white closet, ceiling fan, pink play kitchen corner."
+    rendered_png: "assets/characters/saraandeva/scenes/bedroom_sisters.png"
+    real_photo_refs:
+      - "/Volumes/Samsung500/photo/house/girls_bed.JPG"
+      - "/Volumes/Samsung500/photo/house/girls_closet.JPG"
+    time_of_day: day
+    tags: [home, interior, bedtime, morning-wake-up, sick-day, pajama-party, reading, sibling-chat]
+
+  - id: girls_closet
+    label: "Girls' closet"
+    description: "Pink-walled walk-in closet with kids' clothes on wire shelves and a little white vanity under the window."
+    rendered_png: "assets/characters/saraandeva/scenes/girls_closet.png"
+    real_photo_refs:
+      - "/Volumes/Samsung500/photo/house/girls_closet.JPG"
+    time_of_day: day
+    tags: [home, interior, dress-up, getting-ready, picking-outfit, lost-shoe, make-believe-fashion]
+
+  - id: bathroom
+    label: "Kids' bathroom"
+    description: "Cheerful shared bathroom with the oval mirror, pink + lavender step stools, rubber-duck-lined tub."
+    rendered_png: "assets/characters/saraandeva/scenes/bathroom.png"
+    real_photo_refs: []
+    time_of_day: day
+    tags: [home, interior, bath-time, brushing-teeth, hygiene, splashy-fun, bubbles]
+
+  # ───────────────── Home exterior ─────────────────
+
+  - id: backyard
+    label: "Backyard (with trees + play toys)"
+    description: "The real backyard with grass, kids' bikes tipped over, mature trees, black iron fence — where the deer sometimes visit."
+    rendered_png: "assets/characters/saraandeva/scenes/backyard.png"
+    real_photo_refs:
+      - "/Volumes/Samsung500/photo/house/back_yard.jpeg"
+      - "/Volumes/Samsung500/photo/house/house_dron_top.png"
+    time_of_day: afternoon
+    tags: [home, exterior, outdoor-play, bikes, running-around, wildlife-visit, spotting-a-deer, picnic]
+
+  - id: pool
+    label: "Backyard pool"
+    description: "In-ground rectangular pool with pale turquoise water, brick retaining wall, black iron fence, summer sunshine."
+    rendered_png: "assets/characters/saraandeva/scenes/pool.png"
+    real_photo_refs:
+      - "/Volumes/Samsung500/photo/house/pool.jpeg"
+      - "/Volumes/Samsung500/photo/house/house_dron_top.png"
+    time_of_day: day
+    tags: [home, exterior, summer, swimming, splashing, learning-to-swim, pool-party, floaties]
+
+  - id: front_house
+    label: "Front of house (summer)"
+    description: "Stone-clad two-story house behind the black iron fence, summer sunshine, across the street from a stone retaining wall."
+    rendered_png: "assets/characters/saraandeva/scenes/front_house.png"
+    real_photo_refs:
+      - "/Volumes/Samsung500/photo/house/fron_house_lemonade_stand.jpeg"
+      - "/Volumes/Samsung500/photo/house/front_fence_school_buss.jpeg"
+    time_of_day: day
+    tags: [home, exterior, arrival, departure, lemonade-stand, neighbor-visit, delivery]
+
+  - id: front_house_fall
+    label: "Front of house (autumn)"
+    description: "Same front of the house but in blazing autumn with a red Japanese maple, fallen leaves, golden-hour light."
+    rendered_png: "assets/characters/saraandeva/scenes/front_house_fall.png"
+    real_photo_refs:
+      - "/Volumes/Samsung500/photo/house/fron_house_in_fall.jpeg"
+    time_of_day: afternoon
+    season: autumn
+    tags: [home, exterior, autumn, leaf-pile, halloween-prep, pumpkin-picking, first-sweater]
+
+  - id: front_fence_sidewalk
+    label: "Front fence + sidewalk (school morning)"
+    description: "Sidewalk along the black iron fence, dappled morning shade, the 'waiting for the school bus / walking to school' spot."
+    rendered_png: "assets/characters/saraandeva/scenes/front_fence_sidewalk.png"
+    real_photo_refs:
+      - "/Volumes/Samsung500/photo/house/front_fence_school_buss.jpeg"
+    time_of_day: morning
+    tags: [exterior, school-morning, school-bus, walking-to-school, first-day-of-school, waiting, backpack]
+
+  - id: front_walk
+    label: "Front walkway (dog walks)"
+    description: "Hedge-lined concrete path outside the front of the house — the canonical 'walking Ginger and Joe' location."
+    rendered_png: "assets/characters/saraandeva/scenes/front_walk.png"
+    real_photo_refs:
+      - "/Volumes/Samsung500/photo/family_dogwalk_01.jpg"
+      - "/Volumes/Samsung500/photo/family_dogwalk_02.jpg"
+      - "/Volumes/Samsung500/photo/family_dogwalk_03.jpg"
+    time_of_day: day
+    tags: [exterior, dog-walk, neighborhood, leash-training, meeting-neighbors, morning-walk]
+
+  - id: house_aerial
+    label: "Property aerial (establishing)"
+    description: "Bird's-eye top-down of the whole property — house in the middle, pool on the left, backyard + driveway. Used as the opening 'this is their home' hero shot."
+    rendered_png: "assets/characters/saraandeva/scenes/house_aerial.png"
+    real_photo_refs:
+      - "/Volumes/Samsung500/photo/house/house_dron_top.png"
+    time_of_day: day
+    tags: [establishing, opening-shot, property-overview, hero-shot, whole-neighborhood]
+
+  # ───────────────── Community / generic ─────────────────
+
+  - id: park
+    label: "Neighborhood park / playground"
+    description: "Bright cartoon playground with red slide, teal climbing frame, yellow swings — the neighborhood park destination."
+    rendered_png: "assets/characters/saraandeva/scenes/park.png"
+    real_photo_refs: []
+    time_of_day: afternoon
+    tags: [community, outdoor, playground, swing, slide, new-friend, park-picnic]
+
+  # ───────────────── Future locations to add ─────────────────
+  # Placeholder stub — not yet generated. Add refs + description when user
+  # provides photos or decides to invent the scene, then generate.
+  #
+  # - id: school_classroom
+  # - id: school_hallway
+  # - id: grocery_store
+  # - id: beach
+  # - id: grandma_house
+  # - id: garage
+  # - id: car_interior
+  # - id: christmas_livingroom  (seasonal variant)
+  # - id: winter_backyard       (seasonal variant)

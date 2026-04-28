@@ -1,0 +1,12 @@
+{
+  "episode": 2, "beat": 3, "microClip": "e",
+  "title": "Sara discovers chocolate footprint",
+  "durationSec": 5,
+  "mode": "single-shot",
+  "subjects": ["Sara", "Eva"],
+  "scene": "Livingroom",
+  "nativeAudio": true,
+  "expectedCredits": 45,
+  "negativePrompt": "extra people, duplicate character, twin, clone, two of the same person, mirrored figure, background extras, third child, second sister",
+  "prompt": "Two-shot in @Livingroom. @Sara on the LEFT crouching pointing at a chocolate paw-print on the wood floor: \"A clue! Look — a chocolate footprint!\" @Eva on the RIGHT leaning in: \"Really? Really-really? Whose foot is that small?\""
+}

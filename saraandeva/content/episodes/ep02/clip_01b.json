@@ -1,0 +1,12 @@
+{
+  "episode": 2, "beat": 1, "microClip": "b",
+  "title": "Ginger eyes the pancake stack",
+  "durationSec": 5,
+  "mode": "single-shot",
+  "subjects": ["Ginger"],
+  "scene": "KitchenMorning",
+  "nativeAudio": true,
+  "expectedCredits": 45,
+  "negativePrompt": "extra people, duplicate character, twin, clone, two of the same person, mirrored figure, background extras, second dog, kids, parents",
+  "prompt": "Medium shot in @KitchenMorning. @Ginger sits next to the kitchen table looking up at a tall stack of golden pancakes with chocolate syrup, tail wagging, tongue out: \"Woof! Woof!\""
+}

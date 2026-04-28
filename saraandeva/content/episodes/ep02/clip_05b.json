@@ -1,0 +1,12 @@
+{
+  "episode": 2, "beat": 5, "microClip": "b",
+  "title": "Title card — Next time on Sara and Eva",
+  "durationSec": 5,
+  "mode": "single-shot",
+  "subjects": ["Ginger"],
+  "scene": "Livingroom",
+  "nativeAudio": true,
+  "expectedCredits": 45,
+  "negativePrompt": "extra people, duplicate character, twin, clone, two of the same person, mirrored figure, background extras, second dog, kids, parents",
+  "prompt": "Close shot of @Ginger in @Livingroom looking dramatically at the camera, eyes wide with mischief, ears perked. Hold steady, dramatic light. @Ginger: \"Woof!\""
+}

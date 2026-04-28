@@ -1,0 +1,38 @@
+{
+  "episode": 3,
+  "beat": 1,
+  "microClip": "b",
+  "title": "HOOK 2 — SAFETY BEAT — Mama stops the girls from opening the door",
+  "_safetyBeat": "MANDATORY recurring lesson per show formula: Mama or Papa teaches the safety rule BEFORE the action. Don't open the door yourself.",
+  "mode": "omni",
+  "durationSec": 15,
+  "quality": "720p",
+  "nativeAudio": true,
+  "expectedCredits": 135,
+  "subjects": [
+    "Sara",
+    "Eva",
+    "Mama"
+  ],
+  "scene": "livingroom",
+  "boundElements": [
+    {
+      "tag": "Sara",
+      "source": "library"
+    },
+    {
+      "tag": "Eva",
+      "source": "library"
+    },
+    {
+      "tag": "Mama",
+      "source": "library"
+    },
+    {
+      "tag": "livingroom",
+      "source": "library"
+    }
+  ],
+  "prompt": "Medium shot in @livingroom. The doorbell rings DING-DONG. @Sara is on the LEFT and @Eva is on the RIGHT, both excited, eyes wide. They start to run toward the front door (off-camera left). @Mama appears mid-frame, gentle smile, calmly raising one hand to stop them. Eva: \"Someone's at the door!\" Sara: \"Let's open it!\" Mama (calmly, smiling): \"Wait girls — never open the door yourself! Mama gets it.\" Sara and Eva (together, nodding): \"Okay Mama!\"",
+  "negativePrompt": "duplicate character, twin, clone, two of the same, mirrored figure, second father, second mother, two Papa, two Mama, identical adults, extra people, third child, second sister, second sara, second eva, dogs visible, baby doll, stuffed toy, scary, scolding face, strict expression"
+}

@@ -1,0 +1,48 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "saraandeva"
+version = "0.1.0"
+description = "SaraAndEva flagship YouTube series — Kling Omni clip submission and episode assembly"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+  "firebase-admin>=6.5",
+  "google-cloud-firestore>=2.16",
+  "google-cloud-storage>=2.18",
+  "google-auth>=2.30",
+  "google-api-python-client>=2.140",
+  "google-generativeai>=0.8",
+  "google-genai>=1.0",
+  "python-dotenv>=1.0",
+  "httpx>=0.27",
+  "pydantic>=2.8",
+  "tenacity>=9.0",
+  "playwright>=1.48",
+  "Pillow>=10.4",
+  "pyyaml>=6.0",
+]
+
+[project.optional-dependencies]
+dev = [
+  "pytest>=8.3",
+  "pytest-asyncio>=0.24",
+  "ruff>=0.6",
+  "mypy>=1.11",
+]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.ruff]
+line-length = 100
+target-version = "py311"
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "B", "UP"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+asyncio_mode = "auto"

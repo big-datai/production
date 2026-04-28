@@ -1,0 +1,12 @@
+{
+  "episode": 2, "beat": 6, "microClip": "b",
+  "title": "Subscribe button point — see you next time",
+  "durationSec": 5,
+  "mode": "single-shot",
+  "subjects": ["Sara", "Eva"],
+  "scene": "Livingroom",
+  "nativeAudio": true,
+  "expectedCredits": 45,
+  "negativePrompt": "extra people, duplicate character, twin, clone, two of the same person, mirrored figure, background extras, third child, second sister",
+  "prompt": "Medium two-shot in @Livingroom. @Sara on the LEFT and @Eva on the RIGHT both pointing down toward the bottom of the camera (where the YouTube subscribe button would be), big smiles. @Sara: \"Click subscribe down there!\" @Eva: \"See you next time! Bye-bye!\""
+}

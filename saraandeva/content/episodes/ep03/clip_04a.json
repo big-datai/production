@@ -1,0 +1,37 @@
+{
+  "episode": 3,
+  "beat": 4,
+  "microClip": "a",
+  "title": "RESOLUTION 1 — Helmet revealed!",
+  "mode": "omni",
+  "durationSec": 10,
+  "quality": "720p",
+  "nativeAudio": true,
+  "expectedCredits": 90,
+  "subjects": [
+    "Sara",
+    "Eva",
+    "Ginger"
+  ],
+  "scene": "bedroom-sisters",
+  "boundElements": [
+    {
+      "tag": "Sara",
+      "source": "library"
+    },
+    {
+      "tag": "Eva",
+      "source": "library"
+    },
+    {
+      "tag": "Ginger",
+      "source": "library"
+    },
+    {
+      "tag": "bedroom-sisters",
+      "source": "library"
+    }
+  ],
+  "prompt": "Medium shot in @bedroom-sisters. @Eva on the RIGHT pulls a brightly colored kids' bike helmet (pink and white with sparkly stickers) up out of the chewed package. @Sara on the LEFT, hand to mouth in surprise. @Ginger sits between them on the lower bunk, looking up. Eva (eyes huge): \"It's a HELMET!\" Sara (excited): \"A bike helmet!\" Eva (turning helmet in hands): \"Whose is it?\" Warm reveal lighting, sparkle effect on the helmet.",
+  "negativePrompt": "duplicate character, twin, clone, two of the same, mirrored figure, second father, second mother, two Papa, two Mama, identical adults, extra people, third child, second sister, second sara, second eva, second dog, third dog, two ginger, joe visible, pomeranian visible, baby doll, stuffed toy in place of dog, twin beds, single bed, two helmets"
+}

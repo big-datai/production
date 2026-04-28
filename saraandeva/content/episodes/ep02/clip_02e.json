@@ -1,0 +1,12 @@
+{
+  "episode": 2, "beat": 2, "microClip": "e",
+  "title": "Eva eliminates herself as suspect",
+  "durationSec": 5,
+  "mode": "single-shot",
+  "subjects": ["Eva"],
+  "scene": "KitchenMorning",
+  "nativeAudio": true,
+  "expectedCredits": 45,
+  "negativePrompt": "extra people, duplicate character, twin, clone, two of the same person, mirrored figure, background extras, second sister, second girl",
+  "prompt": "Close shot of @Eva in @KitchenMorning, hand to chin thinking, then shaking head emphatically: \"Was it... was it ME? No no no! I would remember eating ten pancakes!\""
+}

@@ -1,0 +1,228 @@
+{
+  "episode": 1,
+  "title": "Sara and Eva Meet a Baby Deer",
+  "slug": "sara_and_eva_meet_a_baby_deer",
+  "logline": "Sara spots two baby deer in the backyard. She whispers Eva over to the kitchen window, and together — with Mama, Ginger, and Joe — the family learns how to meet wild animals the gentle way.",
+  "learning_moment": "Being gentle and quiet with wild animals; patience; wonder at nature.",
+  "tone": "Warm, quiet-magical, a Pixar-tier wonder moment that kids want to rewatch.",
+  "duration_target_sec": 300,
+  "pages_target": 15,
+  "locked_catchphrases": {
+    "Sara": "Wait — I have a plan.",
+    "Eva": "Really?! Really-really?!",
+    "Ginger": "*Ears up!*",
+    "Joe": "Spin, spin, spin!"
+  },
+  "locations_used": [
+    "house_aerial",
+    "kitchen_morning",
+    "livingroom",
+    "backyard",
+    "dining_room"
+  ],
+  "characters_on_screen": ["sara", "eva", "mama", "papa", "ginger", "joe"],
+  "pages": [
+    {
+      "page": 1,
+      "beat": "COLD OPEN — warm narrator sets the scene over an aerial establishing shot of the property. Camera slowly pushes down toward the kitchen window.",
+      "location": "house_aerial → kitchen_morning (transition)",
+      "duration_sec": 18,
+      "segments": [
+        { "speaker": "Narrator", "text": "In a quiet suburban neighborhood, on a bright spring morning, in a cozy stone house with a rainbow afghan on the couch and a rainbow of kids' drawings on the fridge..." },
+        { "speaker": "Narrator", "text": "...lived two sisters. A big one, named Sara. And a little one, named Eva. And on this particular morning..." },
+        { "speaker": "Narrator", "text": "...something very small, and very new, and very spotted, had come into their backyard." }
+      ]
+    },
+    {
+      "page": 2,
+      "beat": "HOOK — Sara at the kitchen window, breath fogs the glass. She goes wide-eyed. Whisper-calls Eva.",
+      "location": "kitchen_morning",
+      "duration_sec": 22,
+      "segments": [
+        { "speaker": "Sara", "text": "(whispers) Eva... Eva, come here. Come here right now." },
+        { "speaker": "Sara", "text": "And walk very, very quietly." },
+        { "speaker": "Eva", "text": "(bouncing in from the living room) Whaaat? Why do I have to be quiet? I'm never quiet!" },
+        { "speaker": "Sara", "text": "Shhhh. Look. Through the window. On the grass. By the big tree." },
+        { "silent_beat_sec": 3, "note": "Eva pads over, climbs the kitchen stool, looks out." }
+      ]
+    },
+    {
+      "page": 3,
+      "beat": "Eva sees them. Big wow. First full reveal of the two fawns in the yard (camera finally shows them from the girls' POV through the window).",
+      "location": "kitchen_morning (window POV)",
+      "duration_sec": 18,
+      "segments": [
+        { "speaker": "Eva", "text": "(soft gasp) ...Sara." },
+        { "speaker": "Eva", "text": "Really?! Really-really?!" },
+        { "speaker": "Sara", "text": "Really-really. Two of them. Right by the big tree." },
+        { "speaker": "Eva", "text": "(whisper-squeal) They're so tiiiiiinyyyy." },
+        { "silent_beat_sec": 4, "note": "Hold on the window reflection — both sisters' wide eyes, fawns in soft focus beyond." }
+      ]
+    },
+    {
+      "page": 4,
+      "beat": "Mama comes in drying her hands, crouches between them. Explains what they are.",
+      "location": "kitchen_morning",
+      "duration_sec": 22,
+      "segments": [
+        { "speaker": "Mama", "text": "What are you two staring at? ...oh." },
+        { "speaker": "Mama", "text": "Oh, wow. Girls." },
+        { "speaker": "Mama", "text": "Those are baby deer. They're called fawns." },
+        { "speaker": "Sara", "text": "Fawns? Like the word for a baby deer?" },
+        { "speaker": "Mama", "text": "Exactly. And see the little spots on their backs? Those help them hide in the forest, so nothing can find them. That's their superpower." },
+        { "speaker": "Eva", "text": "(whispers) Spots are a superpower? Whoa." }
+      ]
+    },
+    {
+      "page": 5,
+      "beat": "Ginger pads in, freezes, ears go up. She's about to bark. Sara lunges softly to stop her.",
+      "location": "kitchen_morning",
+      "duration_sec": 18,
+      "segments": [
+        { "speaker": "Ginger", "text": "*Ears up!*" },
+        { "speaker": "Sara", "text": "(very soft) No, Ginger. Not today. Shhhh. Good girl." },
+        { "speaker": "Ginger", "text": "(low confused whine)" },
+        { "speaker": "Mama", "text": "She knows something's out there, doesn't she. Good girl, Ginger. Quiet paws. Quiet paws." },
+        { "silent_beat_sec": 3, "note": "Ginger sits, tense, ears swiveling. Sara gently rests a hand on her back." }
+      ]
+    },
+    {
+      "page": 6,
+      "beat": "Joe comes bouncing in, ready to bark at the window. Eva scoops him up fast.",
+      "location": "kitchen_morning",
+      "duration_sec": 16,
+      "segments": [
+        { "speaker": "Joe", "text": "Spin, spin, spin! (little happy yip)" },
+        { "speaker": "Eva", "text": "No no no no no, Zhorik, not now! Come here, fluffy buddy." },
+        { "speaker": "Eva", "text": "Shhhhh. Shhhhh." },
+        { "speaker": "Joe", "text": "(muffled tiny whimper into Eva's sweater)" },
+        { "speaker": "Sara", "text": "Good catch, Eva." }
+      ]
+    },
+    {
+      "page": 7,
+      "beat": "They tiptoe from the kitchen, through the living room, toward the sliding door to the backyard. Sara gives the plan.",
+      "location": "livingroom",
+      "duration_sec": 28,
+      "segments": [
+        { "speaker": "Mama", "text": "If we want to see them closer, we have to be sloooow. No running. No talking. Just watching." },
+        { "speaker": "Eva", "text": "(whisper) Like a ninja?" },
+        { "speaker": "Sara", "text": "Like a gentle ninja." },
+        { "speaker": "Sara", "text": "Follow me. Wait — I have a plan." },
+        { "speaker": "Mama", "text": "I'm listening, detective." },
+        { "speaker": "Sara", "text": "Step one. We open the door just a crack. Step two. We sit on the patio. Step three — this is the most important step — we do not move. We do not breathe loud." },
+        { "speaker": "Eva", "text": "(whisper-excited) I love steps." },
+        { "silent_beat_sec": 4, "note": "The family tip-toes in a gentle single-file line across the wood floor, Eva holding Joe like a football." }
+      ]
+    },
+    {
+      "page": 8,
+      "beat": "Outside on the patio. The fawns see them. Time stops. A held-breath moment — Pixar peak. MOSTLY SILENT.",
+      "location": "backyard",
+      "duration_sec": 28,
+      "segments": [
+        { "speaker": "Mama", "text": "(barely above a whisper) Freeze, girls. They saw us." },
+        { "silent_beat_sec": 6, "note": "Slow push-in on the fawns' wide, wet, curious eyes. Birds chirp softly. Wind moves leaves." },
+        { "speaker": "Eva", "text": "(tiny) I'm frozen, I'm frozen, I'm frozen..." },
+        { "speaker": "Sara", "text": "Breathe slooow. In. Out." },
+        { "silent_beat_sec": 4, "note": "Close-up: Eva's exaggerated slow belly breath. Sara's gentle smile watching her." },
+        { "speaker": "Eva", "text": "(soft) Ohhh. Their ears are so big." }
+      ]
+    },
+    {
+      "page": 9,
+      "beat": "One of the fawns takes a curious step toward them. Eva almost bursts.",
+      "location": "backyard",
+      "duration_sec": 18,
+      "segments": [
+        { "speaker": "Eva", "text": "(tiny-but-huge) Sara. Sara. Sara-Sara-Sara. It's walking closer!" },
+        { "speaker": "Sara", "text": "Don't move. Don't move." },
+        { "speaker": "Eva", "text": "Really?! Really-really?!" },
+        { "speaker": "Sara", "text": "Really-really. Just stay soft." },
+        { "silent_beat_sec": 4, "note": "The fawn takes two more tentative steps into the morning sun. Light catches its coat." }
+      ]
+    },
+    {
+      "page": 10,
+      "beat": "Ginger, hero dog, holds her silence. Joe is tucked quiet in Eva's arms. Fawn a few steps away.",
+      "location": "backyard",
+      "duration_sec": 18,
+      "segments": [
+        { "speaker": "Sara", "text": "Ginger, you're being so brave right now." },
+        { "speaker": "Ginger", "text": "(proud tiny huff)" },
+        { "speaker": "Mama", "text": "Look at how close he's getting. Oh, girls..." },
+        { "speaker": "Eva", "text": "(whisper) Hi, little deer. Hi. I'm Eva." },
+        { "silent_beat_sec": 4, "note": "Fawn tilts its head. Eva tilts her head the same way, unconsciously." }
+      ]
+    },
+    {
+      "page": 11,
+      "beat": "A crow caws from a tree. Both fawns startle and leap away gracefully over the back fence. Slow-motion beat.",
+      "location": "backyard",
+      "duration_sec": 20,
+      "segments": [
+        { "silent_beat_sec": 2, "note": "Sharp crow CAW. Ginger's ears flick." },
+        { "speaker": "Sara", "text": "Oh!" },
+        { "speaker": "Eva", "text": "They're flying! Are they flying?!" },
+        { "silent_beat_sec": 4, "note": "SLOW-MOTION: both fawns arc gracefully over the iron fence, white tails up, into the trees. Golden dust motes catch light." },
+        { "speaker": "Mama", "text": "(laughing softly) Leaping, sweetheart. Deer jump like that." },
+        { "speaker": "Sara", "text": "Wow. Wow wow wow." }
+      ]
+    },
+    {
+      "page": 12,
+      "beat": "Resolution on the patio. Warm close-up. Mama delivers the gentle lesson.",
+      "location": "backyard",
+      "duration_sec": 20,
+      "segments": [
+        { "speaker": "Eva", "text": "Really?! Really-really?! That happened? In OUR yard?!" },
+        { "speaker": "Sara", "text": "In our yard. And we were quiet enough to see them." },
+        { "speaker": "Mama", "text": "That's how you meet wild friends, girls. Gentle and slow. Not grabbing. Not chasing. Just watching." },
+        { "speaker": "Joe", "text": "Spin, spin, spin!" },
+        { "speaker": "Eva", "text": "(giggling) Now you can spin, Zhorik. Now you can spin." },
+        { "silent_beat_sec": 3, "note": "Joe does a tiny happy twirl on the patio. Everyone laughs quietly. Warm close-up family shot." }
+      ]
+    },
+    {
+      "page": 13,
+      "beat": "TIME CUT — that evening. Papa is home from work. Dinner at the dining room table. The girls retell the story in overlapping excited voices.",
+      "location": "dining_room",
+      "duration_sec": 25,
+      "segments": [
+        { "speaker": "Papa", "text": "So. I hear there was a visitor today." },
+        { "speaker": "Eva", "text": "Papa. Papa. Papa-Papa-Papa. There were TWO visitors. Baby deer. WITH spots!" },
+        { "speaker": "Sara", "text": "Fawns. They're called fawns. And the spots are a superpower, Papa. They HIDE them." },
+        { "speaker": "Papa", "text": "A superpower? In our yard? This I've got to hear. Start from the beginning." },
+        { "speaker": "Eva", "text": "Okay. Okay okay okay. I was in the living room. And Sara was at the window. And she said—" },
+        { "speaker": "Sara", "text": "(grinning) Eva, come here, come here right now." },
+        { "speaker": "Eva", "text": "—and I came here, and there were TWO BABIES ON THE GRASS." }
+      ]
+    },
+    {
+      "page": 14,
+      "beat": "Papa's warm reaction. Small beat where Ginger gets a pat for being 'the quietest dog in the world today' and Joe gets a little piece of carrot for being carried like a good boy.",
+      "location": "dining_room",
+      "duration_sec": 22,
+      "segments": [
+        { "speaker": "Papa", "text": "Ginger. Is this true? You didn't bark?" },
+        { "speaker": "Ginger", "text": "(proud-dog chuff)" },
+        { "speaker": "Mama", "text": "Not one single bark. Not one. She was a legend." },
+        { "speaker": "Papa", "text": "And you, little Zhorik? You were a legend too?" },
+        { "speaker": "Joe", "text": "(tiny proud yip) Spin, spin, spin!" },
+        { "speaker": "Eva", "text": "He was QUIET, Papa. I held him like a loaf of bread." },
+        { "speaker": "Papa", "text": "(laughing) A loaf of bread! Okay. Legendary family all around." }
+      ]
+    },
+    {
+      "page": 15,
+      "beat": "OUTRO — warm narrator wrap-up, camera pulls back to aerial of the house as the sun sets.",
+      "location": "dining_room → house_aerial (pull back)",
+      "duration_sec": 15,
+      "segments": [
+        { "speaker": "Narrator", "text": "And that — is how Sara and Eva met their very first wild friends. Gentle and slow. Quiet and soft. And sometimes..." },
+        { "speaker": "Narrator", "text": "...if you're patient enough, the whole world tiptoes right up to your back door." },
+        { "silent_beat_sec": 4, "note": "Camera pulls back from the dining room window, up and over the house, sun setting on the neighborhood. Title card: 'Sara & Eva — Episode 1'." }
+      ]
+    }
+  ]
+}

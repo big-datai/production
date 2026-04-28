@@ -1,0 +1,12 @@
+{
+  "episode": 2, "beat": 4, "microClip": "c",
+  "title": "Sara forgives Ginger",
+  "durationSec": 5,
+  "mode": "single-shot",
+  "subjects": ["Sara", "Ginger"],
+  "scene": "BedroomSisters",
+  "nativeAudio": true,
+  "expectedCredits": 45,
+  "negativePrompt": "extra people, duplicate character, twin, clone, two of the same person, mirrored figure, background extras, second sara, second ginger, additional child, additional dog",
+  "prompt": "Close shot in @BedroomSisters. @Sara crouches gently petting @Ginger's syrupy head, both messy with chocolate. @Sara warmly: \"Next time just ask, okay?\" @Ginger licks her cheek: \"Woof.\""
+}

@@ -1,0 +1,12 @@
+{
+  "episode": 1, "beat": 2, "microClip": "b",
+  "title": "Joe runs in to greet Eva",
+  "durationSec": 5,
+  "mode": "single-shot",
+  "subjects": ["Eva", "Joe"],
+  "scene": "BedroomSisters",
+  "nativeAudio": true,
+  "expectedCredits": 45,
+  "negativePrompt": "extra people, duplicate character, twin, clone, two of the same person, mirrored figure, background extras, crowd, identical sibling",
+  "prompt": "Medium shot, low angle. @Joe runs through the bedroom doorway and yips: \"Spin, spin, spin!\" @Eva leans over the side of the bottom bunk: \"You came too!\""
+}

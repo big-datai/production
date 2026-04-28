@@ -1,0 +1,12 @@
+{
+  "episode": 2, "beat": 3, "microClip": "a",
+  "title": "Sisters and Joe follow the trail into livingroom",
+  "durationSec": 5,
+  "mode": "single-shot",
+  "subjects": ["Sara", "Eva", "Joe"],
+  "scene": "Livingroom",
+  "nativeAudio": true,
+  "expectedCredits": 45,
+  "negativePrompt": "extra people, duplicate character, twin, clone, two of the same person, mirrored figure, background extras, third child, second sara, second eva, second joe",
+  "prompt": "Tracking shot across @Livingroom floor. @Sara walks in front carefully, @Eva right behind her, @Joe sniffing the chocolate paw-prints. @Joe: \"Yip yip yip!\""
+}

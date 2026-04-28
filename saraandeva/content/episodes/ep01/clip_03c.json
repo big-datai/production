@@ -1,0 +1,12 @@
+{
+  "episode": 1, "beat": 3, "microClip": "c",
+  "title": "Three freeze and sniff pancakes",
+  "durationSec": 5,
+  "mode": "single-shot",
+  "subjects": ["Sara", "Eva", "Ginger"],
+  "scene": "Livingroom",
+  "nativeAudio": true,
+  "expectedCredits": 45,
+  "negativePrompt": "extra people, duplicate character, twin, clone, two of the same person, mirrored figure, background extras, crowd, identical sibling",
+  "prompt": "Wide shot, static, @Livingroom. @Sara stands center-frame next to @Eva. @Ginger sits at @Sara's feet. @Sara, @Eva, and @Ginger freeze, noses up. @Sara whispers: \"Pancakes.\""
+}

@@ -1,0 +1,12 @@
+{
+  "episode": 1, "beat": 12, "microClip": "a",
+  "title": "Sara boards school bus number 1",
+  "durationSec": 5,
+  "mode": "single-shot",
+  "subjects": ["Sara"],
+  "scene": "FrontFenceSidewalk",
+  "nativeAudio": true,
+  "expectedCredits": 45,
+  "negativePrompt": "extra people, duplicate character, twin, clone, two of the same person, mirrored figure, background extras, crowd, identical sibling, second girl, second sister, second child, other children, empty scene, no people",
+  "prompt": "Medium shot of @Sara front and center at @FrontFenceSidewalk, smiling and waving toward the camera with backpack on shoulders: \"Bye-bye! See you after school!\" A yellow school bus marked \"1\" is just visible pulling up behind her."
+}

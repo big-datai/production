@@ -1,0 +1,33 @@
+{
+  "episode": 3,
+  "beat": 6,
+  "microClip": "b",
+  "title": "SUBSCRIBE BUTTON POINT — see you next time",
+  "_lockedFormula": "MANDATORY recurring beat — pointing-down beat, same every episode",
+  "mode": "omni",
+  "durationSec": 10,
+  "quality": "720p",
+  "nativeAudio": true,
+  "expectedCredits": 90,
+  "subjects": [
+    "Sara",
+    "Eva"
+  ],
+  "scene": "livingroom",
+  "boundElements": [
+    {
+      "tag": "Sara",
+      "source": "library"
+    },
+    {
+      "tag": "Eva",
+      "source": "library"
+    },
+    {
+      "tag": "livingroom",
+      "source": "library"
+    }
+  ],
+  "prompt": "Medium two-shot in @livingroom. @Sara on the LEFT and @Eva on the RIGHT both point downward toward the bottom of the camera (where the YouTube subscribe button sits), big smiles, slight playful lean-forward. Sara (cheerful): \"Click subscribe down there!\" Eva (waving big): \"See you next time! Bye-bye!\" Bright friendly outro lighting, warm welcoming mood.",
+  "negativePrompt": "duplicate character, twin, clone, two of the same, mirrored figure, second father, second mother, two Papa, two Mama, identical adults, extra people, third child, second sister, second sara, second eva, dogs visible, baby doll, stuffed toy"
+}

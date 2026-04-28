@@ -1,0 +1,333 @@
+{"kind":"click","target":{"tag":"div","id":"","cls":"from-history__btn","text":"History","selector":"div:has-text(\"History\")"},"href":null,"ts":1776985813654}
+{"kind":"click","target":{"tag":"div","id":"","cls":"category-option","text":"Uploads","selector":"div:has-text(\"Uploads\")"},"href":null,"ts":1776985822317}
+{"kind":"click","target":{"tag":"div","id":"el-id-2930-226","cls":"filter-face el-tooltip__trigger el-tooltip__trigger","text":"Images","selector":"#el-id-2930-226"},"href":null,"ts":1776985828349}
+{"kind":"click","target":{"tag":"svg","id":"","cls":"","text":"","selector":"svg.svg-icon.active"},"href":null,"ts":1776985829799}
+{"kind":"click","target":{"tag":"div","id":"","cls":"inner","text":"Cancel","selector":"div:has-text(\"Cancel\")"},"href":null,"ts":1776985834081}
+{"kind":"click","target":{"tag":"svg","id":"","cls":"","text":"","selector":"svg.svg-icon"},"href":null,"ts":1776985836417}
+{"kind":"click","target":{"tag":"input","id":"","cls":"el-upload__input","text":"","selector":"input[name=\"file\"]"},"href":null,"ts":1776985836418}
+{"kind":"input","target":{"tag":"input","id":"","cls":"el-upload__input","text":"","selector":"input[name=\"file\"]"},"value":"C:\\fakepath\\backyard.png","ts":1776985881244}
+{"kind":"change","target":{"tag":"input","id":"","cls":"el-upload__input","text":"","selector":"input[name=\"file\"]"},"value":"C:\\fakepath\\backyard.png","ts":1776985881244}
+{"kind":"upload","target":{"tag":"input","id":"","cls":"el-upload__input","text":"","selector":"input[name=\"file\"]"},"files":["backyard.png"],"ts":1776985881245}
+{"kind":"click","target":{"tag":"svg","id":"","cls":"","text":"","selector":"svg.svg-icon.bind-subject__options-setting"},"href":null,"ts":1776985890047}
+{"kind":"click","target":{"tag":"span","id":"","cls":"","text":"Create Element","selector":"span:has-text(\"Create Element\")"},"href":null,"ts":1776985892214}
+{"kind":"click","target":{"tag":"div","id":"","cls":"bind-subject-dialog__item-name el-tooltip__trigger el-toolti","text":"Create Element","selector":"div:has-text(\"Create Element\")"},"href":null,"ts":1776985893297}
+{"kind":"click","target":{"tag":"li","id":"","cls":"el-dropdown-menu__item","text":"Add Image","selector":"li:has-text(\"Add Image\")"},"href":null,"ts":1776985897497}
+{"kind":"click","target":{"tag":"div","id":"","cls":"category-option","text":"Uploads","selector":"div:has-text(\"Uploads\")"},"href":null,"ts":1776985899863}
+{"kind":"click","target":{"tag":"button","id":"","cls":"generic-button border big","text":"Cancel","selector":"button:has-text(\"Cancel\")"},"href":null,"ts":1776985905580}
+{"kind":"click","target":{"tag":"span","id":"","cls":"","text":"Select Tag","selector":"span:has-text(\"Select Tag\")"},"href":null,"ts":1776985908345}
+{"kind":"click","target":{"tag":"input","id":"el-id-2930-267","cls":"el-input__inner","text":"","selector":"#el-id-2930-267"},"href":null,"ts":1776985910295}
+{"kind":"click","target":{"tag":"li","id":"","cls":"el-dropdown-menu__item","text":"Add Image","selector":"li:has-text(\"Add Image\")"},"href":null,"ts":1776985913812}
+{"kind":"click","target":{"tag":"svg","id":"","cls":"","text":"","selector":"svg.svg-icon.active"},"href":null,"ts":1776985916513}
+{"kind":"click","target":{"tag":"svg","id":"","cls":"","text":"","selector":"svg"},"href":null,"ts":1776985919046}
+{"kind":"click","target":{"tag":"div","id":"","cls":"inner","text":"Cancel","selector":"div:has-text(\"Cancel\")"},"href":null,"ts":1776985973661}
+{"kind":"click","target":{"tag":"div","id":"","cls":"bind-subject-dialog-container","text":"Bind elements to enhance consistency\nCreate Element\nfarmer_giles","selector":"div.bind-subject-dialog-container"},"href":null,"ts":1776985976344}
+{"kind":"click","target":{"tag":"div","id":"","cls":"container vertical-center el-tooltip__trigger el-tooltip__tr","text":"Images","selector":"div:has-text(\"Images\")"},"href":null,"ts":1776985977277}
+{"kind":"click","target":{"tag":"svg","id":"","cls":"","text":"","selector":"svg.svg-icon"},"href":null,"ts":1776985983993}
+{"kind":"click","target":{"tag":"div","id":"","cls":"container vertical-center el-tooltip__trigger el-tooltip__tr","text":"Uploads","selector":"div:has-text(\"Uploads\")"},"href":null,"ts":1776985988578}
+{"kind":"click","target":{"tag":"svg","id":"","cls":"","text":"","selector":"svg.svg-icon"},"href":null,"ts":1776985991593}
+{"kind":"click","target":{"tag":"input","id":"","cls":"el-upload__input","text":"","selector":"input[name=\"file\"]"},"href":null,"ts":1776985991594}
+{"kind":"change","target":{"tag":"input","id":"","cls":"el-upload__input","text":"","selector":"input[name=\"file\"]"},"value":"C:\\fakepath\\backyard.png","ts":1776985999602}
+{"kind":"upload","target":{"tag":"input","id":"","cls":"el-upload__input","text":"","selector":"input[name=\"file\"]"},"files":["backyard.png"],"ts":1776985999602}
+{"kind":"click","target":{"tag":"svg","id":"","cls":"","text":"","selector":"svg.svg-icon"},"href":null,"ts":1776986005911}
+{"kind":"click","target":{"tag":"input","id":"","cls":"el-upload__input","text":"","selector":"input[name=\"file\"]"},"href":null,"ts":1776986005912}
+{"kind":"change","target":{"tag":"input","id":"","cls":"el-upload__input","text":"","selector":"input[name=\"file\"]"},"value":"C:\\fakepath\\eva_3q.png","ts":1776986014692}
+{"kind":"upload","target":{"tag":"input","id":"","cls":"el-upload__input","text":"","selector":"input[name=\"file\"]"},"files":["eva_3q.png"],"ts":1776986014692}
+{"kind":"click","target":{"tag":"svg","id":"","cls":"","text":"","selector":"svg.svg-icon"},"href":null,"ts":1776986020109}
+{"kind":"click","target":{"tag":"input","id":"","cls":"el-upload__input","text":"","selector":"input[name=\"file\"]"},"href":null,"ts":1776986020109}
+{"kind":"change","target":{"tag":"input","id":"","cls":"el-upload__input","text":"","selector":"input[name=\"file\"]"},"value":"C:\\fakepath\\eva_front.png","ts":1776986022837}
+{"kind":"upload","target":{"tag":"input","id":"","cls":"el-upload__input","text":"","selector":"input[name=\"file\"]"},"files":["eva_front.png"],"ts":1776986022838}
+{"kind":"click","target":{"tag":"svg","id":"","cls":"","text":"","selector":"svg.svg-icon"},"href":null,"ts":1776986028025}
+{"kind":"click","target":{"tag":"input","id":"","cls":"el-upload__input","text":"","selector":"input[name=\"file\"]"},"href":null,"ts":1776986028026}
+{"kind":"change","target":{"tag":"input","id":"","cls":"el-upload__input","text":"","selector":"input[name=\"file\"]"},"value":"C:\\fakepath\\eva_profile.png","ts":1776986030691}
+{"kind":"upload","target":{"tag":"input","id":"","cls":"el-upload__input","text":"","selector":"input[name=\"file\"]"},"files":["eva_profile.png"],"ts":1776986030691}
+{"kind":"click","target":{"tag":"svg","id":"","cls":"","text":"","selector":"svg.svg-icon"},"href":null,"ts":1776986036642}
+{"kind":"click","target":{"tag":"input","id":"","cls":"el-upload__input","text":"","selector":"input[name=\"file\"]"},"href":null,"ts":1776986036642}
+{"kind":"change","target":{"tag":"input","id":"","cls":"el-upload__input","text":"","selector":"input[name=\"file\"]"},"value":"C:\\fakepath\\eva_sheet.png","ts":1776986039192}
+{"kind":"upload","target":{"tag":"input","id":"","cls":"el-upload__input","text":"","selector":"input[name=\"file\"]"},"files":["eva_sheet.png"],"ts":1776986039192}
+{"kind":"click","target":{"tag":"svg","id":"","cls":"","text":"","selector":"svg.svg-icon"},"href":null,"ts":1776986049274}
+{"kind":"click","target":{"tag":"input","id":"","cls":"el-upload__input","text":"","selector":"input[name=\"file\"]"},"href":null,"ts":1776986049275}
+{"kind":"change","target":{"tag":"input","id":"","cls":"el-upload__input","text":"","selector":"input[name=\"file\"]"},"value":"C:\\fakepath\\ginger_3q.png","ts":1776986052657}
+{"kind":"upload","target":{"tag":"input","id":"","cls":"el-upload__input","text":"","selector":"input[name=\"file\"]"},"files":["ginger_3q.png"],"ts":1776986052657}
+{"kind":"click","target":{"tag":"use","id":"","cls":"","text":"","selector":"use.svg-icon"},"href":{},"ts":1776986059024}
+{"kind":"click","target":{"tag":"input","id":"","cls":"el-upload__input","text":"","selector":"input[name=\"file\"]"},"href":null,"ts":1776986059025}
+{"kind":"change","target":{"tag":"input","id":"","cls":"el-upload__input","text":"","selector":"input[name=\"file\"]"},"value":"C:\\fakepath\\ginger_front.png","ts":1776986062367}
+{"kind":"upload","target":{"tag":"input","id":"","cls":"el-upload__input","text":"","selector":"input[name=\"file\"]"},"files":["ginger_front.png"],"ts":1776986062367}
+{"kind":"click","target":{"tag":"svg","id":"","cls":"","text":"","selector":"svg.svg-icon"},"href":null,"ts":1776986068207}
+{"kind":"click","target":{"tag":"input","id":"","cls":"el-upload__input","text":"","selector":"input[name=\"file\"]"},"href":null,"ts":1776986068207}
+{"kind":"change","target":{"tag":"input","id":"","cls":"el-upload__input","text":"","selector":"input[name=\"file\"]"},"value":"C:\\fakepath\\ginger_profile.png","ts":1776986071389}
+{"kind":"upload","target":{"tag":"input","id":"","cls":"el-upload__input","text":"","selector":"input[name=\"file\"]"},"files":["ginger_profile.png"],"ts":1776986071389}
+{"kind":"click","target":{"tag":"svg","id":"","cls":"","text":"","selector":"svg.svg-icon"},"href":null,"ts":1776986077590}
+{"kind":"click","target":{"tag":"input","id":"","cls":"el-upload__input","text":"","selector":"input[name=\"file\"]"},"href":null,"ts":1776986077591}
+{"kind":"change","target":{"tag":"input","id":"","cls":"el-upload__input","text":"","selector":"input[name=\"file\"]"},"value":"C:\\fakepath\\ginger_sheet.png","ts":1776986081054}
+{"kind":"upload","target":{"tag":"input","id":"","cls":"el-upload__input","text":"","selector":"input[name=\"file\"]"},"files":["ginger_sheet.png"],"ts":1776986081055}
+{"kind":"click","target":{"tag":"div","id":"","cls":"upload-icon all-center","text":"","selector":"div.upload-icon.all-center"},"href":null,"ts":1776986088306}
+{"kind":"click","target":{"tag":"input","id":"","cls":"el-upload__input","text":"","selector":"input[name=\"file\"]"},"href":null,"ts":1776986088307}
+{"kind":"change","target":{"tag":"input","id":"","cls":"el-upload__input","text":"","selector":"input[name=\"file\"]"},"value":"C:\\fakepath\\grandma_3q.png","ts":1776986091121}
+{"kind":"upload","target":{"tag":"input","id":"","cls":"el-upload__input","text":"","selector":"input[name=\"file\"]"},"files":["grandma_3q.png"],"ts":1776986091121}
+{"kind":"click","target":{"tag":"svg","id":"","cls":"","text":"","selector":"svg.svg-icon"},"href":null,"ts":1776986098489}
+{"kind":"click","target":{"tag":"input","id":"","cls":"el-upload__input","text":"","selector":"input[name=\"file\"]"},"href":null,"ts":1776986098489}
+{"kind":"change","target":{"tag":"input","id":"","cls":"el-upload__input","text":"","selector":"input[name=\"file\"]"},"value":"C:\\fakepath\\grandma_front.png","ts":1776986101325}
+{"kind":"upload","target":{"tag":"input","id":"","cls":"el-upload__input","text":"","selector":"input[name=\"file\"]"},"files":["grandma_front.png"],"ts":1776986101326}
+{"kind":"click","target":{"tag":"div","id":"","cls":"header-bar","text":"All\nFavorites\nSelect\n|\nLatest\nUnified View","selector":"div:has-text(\"All\nFavorites\nSelect\n|\nLatest\nUnified View\")"},"href":null,"ts":1776986111190}
+{"kind":"click","target":{"tag":"div","id":"","cls":"upload-icon all-center","text":"","selector":"div.upload-icon.all-center"},"href":null,"ts":1776986112222}
+{"kind":"click","target":{"tag":"input","id":"","cls":"el-upload__input","text":"","selector":"input[name=\"file\"]"},"href":null,"ts":1776986112223}
+{"kind":"change","target":{"tag":"input","id":"","cls":"el-upload__input","text":"","selector":"input[name=\"file\"]"},"value":"C:\\fakepath\\grandma_profile.png","ts":1776986118568}
+{"kind":"upload","target":{"tag":"input","id":"","cls":"el-upload__input","text":"","selector":"input[name=\"file\"]"},"files":["grandma_profile.png"],"ts":1776986118569}
+{"kind":"click","target":{"tag":"div","id":"","cls":"upload-icon all-center","text":"","selector":"div.upload-icon.all-center"},"href":null,"ts":1776986124772}
+{"kind":"click","target":{"tag":"input","id":"","cls":"el-upload__input","text":"","selector":"input[name=\"file\"]"},"href":null,"ts":1776986124773}
+{"kind":"change","target":{"tag":"input","id":"","cls":"el-upload__input","text":"","selector":"input[name=\"file\"]"},"value":"C:\\fakepath\\grandma_profile.png","ts":1776986131966}
+{"kind":"upload","target":{"tag":"input","id":"","cls":"el-upload__input","text":"","selector":"input[name=\"file\"]"},"files":["grandma_profile.png"],"ts":1776986131966}
+{"kind":"click","target":{"tag":"svg","id":"","cls":"","text":"","selector":"svg.svg-icon"},"href":null,"ts":1776986139222}
+{"kind":"click","target":{"tag":"input","id":"","cls":"el-upload__input","text":"","selector":"input[name=\"file\"]"},"href":null,"ts":1776986139222}
+{"kind":"change","target":{"tag":"input","id":"","cls":"el-upload__input","text":"","selector":"input[name=\"file\"]"},"value":"C:\\fakepath\\grandma_sheet.png","ts":1776986144790}
+{"kind":"upload","target":{"tag":"input","id":"","cls":"el-upload__input","text":"","selector":"input[name=\"file\"]"},"files":["grandma_sheet.png"],"ts":1776986144790}
+{"kind":"click","target":{"tag":"div","id":"","cls":"upload-icon all-center","text":"","selector":"div.upload-icon.all-center"},"href":null,"ts":1776986153088}
+{"kind":"click","target":{"tag":"input","id":"","cls":"el-upload__input","text":"","selector":"input[name=\"file\"]"},"href":null,"ts":1776986153088}
+{"kind":"change","target":{"tag":"input","id":"","cls":"el-upload__input","text":"","selector":"input[name=\"file\"]"},"value":"C:\\fakepath\\grandma_3q.png","ts":1776986155995}
+{"kind":"upload","target":{"tag":"input","id":"","cls":"el-upload__input","text":"","selector":"input[name=\"file\"]"},"files":["grandma_3q.png"],"ts":1776986155996}
+{"kind":"click","target":{"tag":"svg","id":"","cls":"","text":"","selector":"svg.svg-icon"},"href":null,"ts":1776986160770}
+{"kind":"click","target":{"tag":"svg","id":"","cls":"","text":"","selector":"svg"},"href":null,"ts":1776986163436}
+{"kind":"click","target":{"tag":"svg","id":"","cls":"","text":"","selector":"svg.svg-icon"},"href":null,"ts":1776986168353}
+{"kind":"click","target":{"tag":"input","id":"","cls":"el-upload__input","text":"","selector":"input[name=\"file\"]"},"href":null,"ts":1776986168354}
+{"kind":"change","target":{"tag":"input","id":"","cls":"el-upload__input","text":"","selector":"input[name=\"file\"]"},"value":"C:\\fakepath\\joe_3q.png","ts":1776986177390}
+{"kind":"upload","target":{"tag":"input","id":"","cls":"el-upload__input","text":"","selector":"input[name=\"file\"]"},"files":["joe_3q.png"],"ts":1776986177391}
+{"kind":"click","target":{"tag":"svg","id":"","cls":"","text":"","selector":"svg.svg-icon"},"href":null,"ts":1776986182703}
+{"kind":"click","target":{"tag":"input","id":"","cls":"el-upload__input","text":"","selector":"input[name=\"file\"]"},"href":null,"ts":1776986182704}
+{"kind":"change","target":{"tag":"input","id":"","cls":"el-upload__input","text":"","selector":"input[name=\"file\"]"},"value":"C:\\fakepath\\joe_profile.png","ts":1776986186117}
+{"kind":"upload","target":{"tag":"input","id":"","cls":"el-upload__input","text":"","selector":"input[name=\"file\"]"},"files":["joe_profile.png"],"ts":1776986186118}
+{"kind":"click","target":{"tag":"svg","id":"","cls":"","text":"","selector":"svg.svg-icon"},"href":null,"ts":1776986193353}
+{"kind":"click","target":{"tag":"input","id":"","cls":"el-upload__input","text":"","selector":"input[name=\"file\"]"},"href":null,"ts":1776986193353}
+{"kind":"change","target":{"tag":"input","id":"","cls":"el-upload__input","text":"","selector":"input[name=\"file\"]"},"value":"C:\\fakepath\\joe_profile.png","ts":1776986205429}
+{"kind":"upload","target":{"tag":"input","id":"","cls":"el-upload__input","text":"","selector":"input[name=\"file\"]"},"files":["joe_profile.png"],"ts":1776986205429}
+{"kind":"click","target":{"tag":"svg","id":"","cls":"","text":"","selector":"svg.svg-icon"},"href":null,"ts":1776986213202}
+{"kind":"click","target":{"tag":"input","id":"","cls":"el-upload__input","text":"","selector":"input[name=\"file\"]"},"href":null,"ts":1776986213203}
+{"kind":"change","target":{"tag":"input","id":"","cls":"el-upload__input","text":"","selector":"input[name=\"file\"]"},"value":"C:\\fakepath\\joe_sheet.png","ts":1776986221781}
+{"kind":"upload","target":{"tag":"input","id":"","cls":"el-upload__input","text":"","selector":"input[name=\"file\"]"},"files":["joe_sheet.png"],"ts":1776986221782}
+{"kind":"click","target":{"tag":"svg","id":"","cls":"","text":"","selector":"svg.svg-icon"},"href":null,"ts":1776986234284}
+{"kind":"click","target":{"tag":"input","id":"","cls":"el-upload__input","text":"","selector":"input[name=\"file\"]"},"href":null,"ts":1776986234285}
+{"kind":"change","target":{"tag":"input","id":"","cls":"el-upload__input","text":"","selector":"input[name=\"file\"]"},"value":"C:\\fakepath\\mama_3q.png","ts":1776986242360}
+{"kind":"upload","target":{"tag":"input","id":"","cls":"el-upload__input","text":"","selector":"input[name=\"file\"]"},"files":["mama_3q.png"],"ts":1776986242361}
+{"kind":"click","target":{"tag":"svg","id":"","cls":"","text":"","selector":"svg.svg-icon"},"href":null,"ts":1776986247101}
+{"kind":"click","target":{"tag":"input","id":"","cls":"el-upload__input","text":"","selector":"input[name=\"file\"]"},"href":null,"ts":1776986247101}
+{"kind":"change","target":{"tag":"input","id":"","cls":"el-upload__input","text":"","selector":"input[name=\"file\"]"},"value":"C:\\fakepath\\mama_front.png","ts":1776986256659}
+{"kind":"upload","target":{"tag":"input","id":"","cls":"el-upload__input","text":"","selector":"input[name=\"file\"]"},"files":["mama_front.png"],"ts":1776986256660}
+{"kind":"click","target":{"tag":"svg","id":"","cls":"","text":"","selector":"svg.svg-icon"},"href":null,"ts":1776986264084}
+{"kind":"click","target":{"tag":"input","id":"","cls":"el-upload__input","text":"","selector":"input[name=\"file\"]"},"href":null,"ts":1776986264084}
+{"kind":"change","target":{"tag":"input","id":"","cls":"el-upload__input","text":"","selector":"input[name=\"file\"]"},"value":"C:\\fakepath\\mama_profile.png","ts":1776986270912}
+{"kind":"upload","target":{"tag":"input","id":"","cls":"el-upload__input","text":"","selector":"input[name=\"file\"]"},"files":["mama_profile.png"],"ts":1776986270913}
+{"kind":"click","target":{"tag":"svg","id":"","cls":"","text":"","selector":"svg.svg-icon"},"href":null,"ts":1776986276424}
+{"kind":"click","target":{"tag":"input","id":"","cls":"el-upload__input","text":"","selector":"input[name=\"file\"]"},"href":null,"ts":1776986276425}
+{"kind":"change","target":{"tag":"input","id":"","cls":"el-upload__input","text":"","selector":"input[name=\"file\"]"},"value":"C:\\fakepath\\mama_sheet.png","ts":1776986279494}
+{"kind":"upload","target":{"tag":"input","id":"","cls":"el-upload__input","text":"","selector":"input[name=\"file\"]"},"files":["mama_sheet.png"],"ts":1776986279494}
+{"kind":"click","target":{"tag":"svg","id":"","cls":"","text":"","selector":"svg.svg-icon"},"href":null,"ts":1776986286074}
+{"kind":"click","target":{"tag":"input","id":"","cls":"el-upload__input","text":"","selector":"input[name=\"file\"]"},"href":null,"ts":1776986286075}
+{"kind":"change","target":{"tag":"input","id":"","cls":"el-upload__input","text":"","selector":"input[name=\"file\"]"},"value":"C:\\fakepath\\papa_3q.png","ts":1776986291467}
+{"kind":"upload","target":{"tag":"input","id":"","cls":"el-upload__input","text":"","selector":"input[name=\"file\"]"},"files":["papa_3q.png"],"ts":1776986291467}
+{"kind":"click","target":{"tag":"svg","id":"","cls":"","text":"","selector":"svg.svg-icon"},"href":null,"ts":1776986297191}
+{"kind":"click","target":{"tag":"input","id":"","cls":"el-upload__input","text":"","selector":"input[name=\"file\"]"},"href":null,"ts":1776986297191}
+{"kind":"change","target":{"tag":"input","id":"","cls":"el-upload__input","text":"","selector":"input[name=\"file\"]"},"value":"C:\\fakepath\\papa_front.png","ts":1776986300487}
+{"kind":"upload","target":{"tag":"input","id":"","cls":"el-upload__input","text":"","selector":"input[name=\"file\"]"},"files":["papa_front.png"],"ts":1776986300488}
+{"kind":"click","target":{"tag":"div","id":"","cls":"upload all-center","text":"Upload","selector":"div:has-text(\"Upload\")"},"href":null,"ts":1776986305924}
+{"kind":"click","target":{"tag":"input","id":"","cls":"el-upload__input","text":"","selector":"input[name=\"file\"]"},"href":null,"ts":1776986305924}
+{"kind":"change","target":{"tag":"input","id":"","cls":"el-upload__input","text":"","selector":"input[name=\"file\"]"},"value":"C:\\fakepath\\papa_profile.png","ts":1776986309920}
+{"kind":"upload","target":{"tag":"input","id":"","cls":"el-upload__input","text":"","selector":"input[name=\"file\"]"},"files":["papa_profile.png"],"ts":1776986309921}
+{"kind":"click","target":{"tag":"div","id":"","cls":"upload-icon all-center","text":"","selector":"div.upload-icon.all-center"},"href":null,"ts":1776986314790}
+{"kind":"click","target":{"tag":"input","id":"","cls":"el-upload__input","text":"","selector":"input[name=\"file\"]"},"href":null,"ts":1776986314791}
+{"kind":"change","target":{"tag":"input","id":"","cls":"el-upload__input","text":"","selector":"input[name=\"file\"]"},"value":"C:\\fakepath\\papa_sheet.png","ts":1776986319753}
+{"kind":"upload","target":{"tag":"input","id":"","cls":"el-upload__input","text":"","selector":"input[name=\"file\"]"},"files":["papa_sheet.png"],"ts":1776986319754}
+{"kind":"click","target":{"tag":"svg","id":"","cls":"","text":"","selector":"svg.svg-icon"},"href":null,"ts":1776986329440}
+{"kind":"click","target":{"tag":"input","id":"","cls":"el-upload__input","text":"","selector":"input[name=\"file\"]"},"href":null,"ts":1776986329441}
+{"kind":"change","target":{"tag":"input","id":"","cls":"el-upload__input","text":"","selector":"input[name=\"file\"]"},"value":"C:\\fakepath\\sara_3q.png","ts":1776986377698}
+{"kind":"upload","target":{"tag":"input","id":"","cls":"el-upload__input","text":"","selector":"input[name=\"file\"]"},"files":["sara_3q.png"],"ts":1776986377698}
+{"kind":"click","target":{"tag":"svg","id":"","cls":"","text":"","selector":"svg.svg-icon"},"href":null,"ts":1776986383856}
+{"kind":"click","target":{"tag":"input","id":"","cls":"el-upload__input","text":"","selector":"input[name=\"file\"]"},"href":null,"ts":1776986383857}
+{"kind":"change","target":{"tag":"input","id":"","cls":"el-upload__input","text":"","selector":"input[name=\"file\"]"},"value":"C:\\fakepath\\sara_front_pixar.png","ts":1776986389668}
+{"kind":"upload","target":{"tag":"input","id":"","cls":"el-upload__input","text":"","selector":"input[name=\"file\"]"},"files":["sara_front_pixar.png"],"ts":1776986389668}
+{"kind":"click","target":{"tag":"svg","id":"","cls":"","text":"","selector":"svg.svg-icon"},"href":null,"ts":1776986394639}
+{"kind":"click","target":{"tag":"input","id":"","cls":"el-upload__input","text":"","selector":"input[name=\"file\"]"},"href":null,"ts":1776986394640}
+{"kind":"click","target":{"tag":"svg","id":"","cls":"","text":"","selector":"svg.svg-icon"},"href":null,"ts":1776986407339}
+{"kind":"click","target":{"tag":"input","id":"","cls":"el-upload__input","text":"","selector":"input[name=\"file\"]"},"href":null,"ts":1776986407340}
+{"kind":"change","target":{"tag":"input","id":"","cls":"el-upload__input","text":"","selector":"input[name=\"file\"]"},"value":"C:\\fakepath\\sara_front.png","ts":1776986412883}
+{"kind":"upload","target":{"tag":"input","id":"","cls":"el-upload__input","text":"","selector":"input[name=\"file\"]"},"files":["sara_front.png"],"ts":1776986412884}
+{"kind":"click","target":{"tag":"svg","id":"","cls":"","text":"","selector":"svg.svg-icon"},"href":null,"ts":1776986420323}
+{"kind":"click","target":{"tag":"div","id":"","cls":"vertical-center","text":"Delete","selector":"div:has-text(\"Delete\")"},"href":null,"ts":1776986425322}
+{"kind":"click","target":{"tag":"button","id":"","cls":"generic-button error big","text":"Confirm","selector":"button:has-text(\"Confirm\")"},"href":null,"ts":1776986426805}
+{"kind":"click","target":{"tag":"svg","id":"","cls":"","text":"","selector":"svg.svg-icon"},"href":null,"ts":1776986430106}
+{"kind":"click","target":{"tag":"input","id":"","cls":"el-upload__input","text":"","selector":"input[name=\"file\"]"},"href":null,"ts":1776986430106}
+{"kind":"change","target":{"tag":"input","id":"","cls":"el-upload__input","text":"","selector":"input[name=\"file\"]"},"value":"C:\\fakepath\\sara_profile.png","ts":1776986434321}
+{"kind":"upload","target":{"tag":"input","id":"","cls":"el-upload__input","text":"","selector":"input[name=\"file\"]"},"files":["sara_profile.png"],"ts":1776986434322}
+{"kind":"click","target":{"tag":"svg","id":"","cls":"","text":"","selector":"svg.svg-icon"},"href":null,"ts":1776986440905}
+{"kind":"click","target":{"tag":"input","id":"","cls":"el-upload__input","text":"","selector":"input[name=\"file\"]"},"href":null,"ts":1776986440906}
+{"kind":"change","target":{"tag":"input","id":"","cls":"el-upload__input","text":"","selector":"input[name=\"file\"]"},"value":"C:\\fakepath\\sara_sheet.png","ts":1776986443554}
+{"kind":"upload","target":{"tag":"input","id":"","cls":"el-upload__input","text":"","selector":"input[name=\"file\"]"},"files":["sara_sheet.png"],"ts":1776986443554}
+{"kind":"click","target":{"tag":"div","id":"","cls":"header-bar","text":"All\nFavorites\nSelect\n|\nLatest\nUnified View","selector":"div:has-text(\"All\nFavorites\nSelect\n|\nLatest\nUnified View\")"},"href":null,"ts":1776986458223}
+{"kind":"click","target":{"tag":"div","id":"","cls":"container vertical-center el-tooltip__trigger el-tooltip__tr","text":"Creatives","selector":"div:has-text(\"Creatives\")"},"href":null,"ts":1776986461021}
+{"kind":"click","target":{"tag":"header","id":"","cls":"el-dialog__header","text":"Assets","selector":"header:has-text(\"Assets\")"},"href":null,"ts":1776986471116}
+{"kind":"click","target":{"tag":"div","id":"","cls":"container vertical-center el-tooltip__trigger el-tooltip__tr","text":"Uploads","selector":"div:has-text(\"Uploads\")"},"href":null,"ts":1776986474421}
+{"kind":"click","target":{"tag":"div","id":"","cls":"container vertical-center el-tooltip__trigger el-tooltip__tr","text":"Image Editing","selector":"div:has-text(\"Image Editing\")"},"href":null,"ts":1776986475704}
+{"kind":"click","target":{"tag":"div","id":"","cls":"container vertical-center el-tooltip__trigger el-tooltip__tr","text":"Principal Assets","selector":"div:has-text(\"Principal Assets\")"},"href":null,"ts":1776986479936}
+{"kind":"click","target":{"tag":"div","id":"","cls":"container vertical-center el-tooltip__trigger el-tooltip__tr","text":"Models","selector":"div:has-text(\"Models\")"},"href":null,"ts":1776986489520}
+{"kind":"click","target":{"tag":"div","id":"","cls":"container vertical-center el-tooltip__trigger el-tooltip__tr","text":"Elements","selector":"div:has-text(\"Elements\")"},"href":null,"ts":1776986496886}
+{"kind":"click","target":{"tag":"svg","id":"","cls":"","text":"","selector":"svg.svg-icon"},"href":null,"ts":1776986507538}
+{"kind":"click","target":{"tag":"input","id":"","cls":"el-upload__input","text":"","selector":"input[name=\"file\"]"},"href":null,"ts":1776986507539}
+{"kind":"input","target":{"tag":"input","id":"","cls":"el-upload__input","text":"","selector":"input[name=\"file\"]"},"value":"C:\\fakepath\\bathroom.png","ts":1776986516331}
+{"kind":"change","target":{"tag":"input","id":"","cls":"el-upload__input","text":"","selector":"input[name=\"file\"]"},"value":"C:\\fakepath\\bathroom.png","ts":1776986516331}
+{"kind":"upload","target":{"tag":"input","id":"","cls":"el-upload__input","text":"","selector":"input[name=\"file\"]"},"files":["bathroom.png"],"ts":1776986516332}
+{"kind":"click","target":{"tag":"div","id":"","cls":"bind-subject__options","text":"","selector":"div.bind-subject__options"},"href":null,"ts":1776986522620}
+{"kind":"click","target":{"tag":"div","id":"","cls":"bind-subject-dialog__item-avatar","text":"","selector":"div.bind-subject-dialog__item-avatar"},"href":null,"ts":1776986525604}
+{"kind":"click","target":{"tag":"div","id":"el-id-2460-242","cls":"video-and-image-upload-area_bottom history-button el-tooltip","text":"History","selector":"#el-id-2460-242"},"href":null,"ts":1776986528320}
+{"kind":"click","target":{"tag":"li","id":"","cls":"el-dropdown-menu__item","text":"Add Image","selector":"li:has-text(\"Add Image\")"},"href":null,"ts":1776986529753}
+{"kind":"click","target":{"tag":"div","id":"","cls":"category-option","text":"Uploads","selector":"div:has-text(\"Uploads\")"},"href":null,"ts":1776986533303}
+{"kind":"click","target":{"tag":"div","id":"","cls":"mask el-tooltip__trigger el-tooltip__trigger","text":"","selector":"div.mask.el-tooltip__trigger"},"href":null,"ts":1776986538470}
+{"kind":"click","target":{"tag":"img","id":"","cls":"image-item-source","text":"","selector":"img.image-item-source"},"href":null,"ts":1776986539861}
+{"kind":"click","target":{"tag":"div","id":"","cls":"inner","text":"Confirm","selector":"div:has-text(\"Confirm\")"},"href":null,"ts":1776986542145}
+{"kind":"click","target":{"tag":"div","id":"","cls":"upload-text-history","text":"Select from History","selector":"div:has-text(\"Select from History\")"},"href":null,"ts":1776986545687}
+{"kind":"click","target":{"tag":"div","id":"","cls":"category-option","text":"Uploads","selector":"div:has-text(\"Uploads\")"},"href":null,"ts":1776986547720}
+{"kind":"click","target":{"tag":"img","id":"","cls":"image-item-source","text":"","selector":"img.image-item-source"},"href":null,"ts":1776986548921}
+{"kind":"click","target":{"tag":"img","id":"","cls":"image-item-source","text":"","selector":"img.image-item-source"},"href":null,"ts":1776986551019}
+{"kind":"click","target":{"tag":"img","id":"","cls":"image-item-source","text":"","selector":"img.image-item-source"},"href":null,"ts":1776986553269}
+{"kind":"click","target":{"tag":"div","id":"","cls":"inner","text":"Confirm","selector":"div:has-text(\"Confirm\")"},"href":null,"ts":1776986555155}
+{"kind":"click","target":{"tag":"input","id":"el-id-2460-262","cls":"el-input__inner","text":"","selector":"#el-id-2460-262"},"href":null,"ts":1776986559435}
+{"kind":"input","target":{"tag":"input","id":"el-id-2460-262","cls":"el-input__inner","text":"","selector":"#el-id-2460-262"},"value":"S","ts":1776986560580}
+{"kind":"change","target":{"tag":"input","id":"el-id-2460-262","cls":"el-input__inner","text":"","selector":"#el-id-2460-262"},"value":"Sara","ts":1776986565388}
+{"kind":"click","target":{"tag":"div","id":"","cls":"inner","text":"Generate","selector":"div:has-text(\"Generate\")"},"href":null,"ts":1776986565503}
+{"kind":"click","target":{"tag":"use","id":"","cls":"","text":"","selector":"use.svg-icon"},"href":{},"ts":1776986570153}
+{"kind":"click","target":{"tag":"div","id":"","cls":"bind-subject-dialog__item-name el-tooltip__trigger el-toolti","text":"Create Element","selector":"div:has-text(\"Create Element\")"},"href":null,"ts":1776986573152}
+{"kind":"click","target":{"tag":"li","id":"","cls":"el-dropdown-menu__item","text":"Add Image","selector":"li:has-text(\"Add Image\")"},"href":null,"ts":1776986576868}
+{"kind":"click","target":{"tag":"div","id":"","cls":"image-item-mask","text":"","selector":"div.image-item-mask"},"href":null,"ts":1776986581219}
+{"kind":"click","target":{"tag":"img","id":"","cls":"image-item-source","text":"","selector":"img.image-item-source"},"href":null,"ts":1776986581753}
+{"kind":"click","target":{"tag":"img","id":"","cls":"image-item-source","text":"","selector":"img.image-item-source"},"href":null,"ts":1776986582320}
+{"kind":"click","target":{"tag":"div","id":"","cls":"mask el-tooltip__trigger el-tooltip__trigger","text":"","selector":"div.mask.el-tooltip__trigger"},"href":null,"ts":1776986583454}
+{"kind":"click","target":{"tag":"img","id":"","cls":"image-item-source","text":"","selector":"img.image-item-source"},"href":null,"ts":1776986587352}
+{"kind":"click","target":{"tag":"div","id":"","cls":"inner","text":"Confirm","selector":"div:has-text(\"Confirm\")"},"href":null,"ts":1776986588686}
+{"kind":"click","target":{"tag":"div","id":"","cls":"upload-text-history","text":"Select from History","selector":"div:has-text(\"Select from History\")"},"href":null,"ts":1776986591984}
+{"kind":"click","target":{"tag":"div","id":"","cls":"category-option","text":"Uploads","selector":"div:has-text(\"Uploads\")"},"href":null,"ts":1776986594185}
+{"kind":"click","target":{"tag":"img","id":"","cls":"image-item-source","text":"","selector":"img.image-item-source"},"href":null,"ts":1776986595652}
+{"kind":"click","target":{"tag":"img","id":"","cls":"image-item-source","text":"","selector":"img.image-item-source"},"href":null,"ts":1776986596168}
+{"kind":"click","target":{"tag":"img","id":"","cls":"image-item-source","text":"","selector":"img.image-item-source"},"href":null,"ts":1776986596717}
+{"kind":"click","target":{"tag":"div","id":"","cls":"inner","text":"Confirm","selector":"div:has-text(\"Confirm\")"},"href":null,"ts":1776986601786}
+{"kind":"click","target":{"tag":"span","id":"","cls":"","text":"Characters","selector":"span:has-text(\"Characters\")"},"href":null,"ts":1776986606319}
+{"kind":"click","target":{"tag":"input","id":"el-id-2460-262","cls":"el-input__inner","text":"","selector":"#el-id-2460-262"},"href":null,"ts":1776986610607}
+{"kind":"click","target":{"tag":"div","id":"","cls":"timbre-item-area","text":"William","selector":"div:has-text(\"William\")"},"href":null,"ts":1776986615552}
+{"kind":"click","target":{"tag":"input","id":"el-id-2460-262","cls":"el-input__inner","text":"","selector":"#el-id-2460-262"},"href":null,"ts":1776986616701}
+{"kind":"change","target":{"tag":"input","id":"el-id-2460-262","cls":"el-input__inner","text":"","selector":"#el-id-2460-262"},"value":"Dad","ts":1776986703922}
+{"kind":"click","target":{"tag":"textarea","id":"","cls":"kling-input","text":"","selector":"textarea.kling-input"},"href":null,"ts":1776986704042}
+{"kind":"input","target":{"tag":"textarea","id":"","cls":"kling-input","text":"","selector":"textarea.kling-input"},"value":"Sara and Eva's dad. Mid-30s man, clean-shaven bald head, neat full dark beard with a hint of auburn, warm brown eyes behind modern rectangular eyeglasses, broad friendly smile, medium build. Wears a n","ts":1776986704812}
+{"kind":"change","target":{"tag":"textarea","id":"","cls":"kling-input","text":"","selector":"textarea.kling-input"},"value":"Sara and Eva's dad. Mid-30s man, clean-shaven bald head, neat full dark beard with a hint of auburn, warm brown eyes behind modern rectangular eyeglasses, broad friendly smile, medium build. Wears a navy henley shirt with the top two buttons undone, charcoal chinos, warm-brown casual sneakers. Warm, approachable dad energy.","ts":1776986705683}
+{"kind":"click","target":{"tag":"input","id":"el-id-2460-262","cls":"el-input__inner","text":"","selector":"#el-id-2460-262"},"href":null,"ts":1776986705783}
+{"kind":"click","target":{"tag":"input","id":"el-id-2460-262","cls":"el-input__inner","text":"","selector":"#el-id-2460-262"},"href":null,"ts":1776986706015}
+{"kind":"input","target":{"tag":"input","id":"el-id-2460-262","cls":"el-input__inner","text":"","selector":"#el-id-2460-262"},"value":"P","ts":1776986706793}
+{"kind":"change","target":{"tag":"input","id":"el-id-2460-262","cls":"el-input__inner","text":"","selector":"#el-id-2460-262"},"value":"Papa","ts":1776986714966}
+{"kind":"click","target":{"tag":"div","id":"","cls":"upload-form","text":"Voices\nNo Voice\nPreset\nWilliam\nPreset\nLaura\nPreset\nCatherine\nPreset\nOwen\nCharact","selector":"div.upload-form"},"href":null,"ts":1776986716033}
+{"kind":"click","target":{"tag":"div","id":"","cls":"inner","text":"Generate","selector":"div:has-text(\"Generate\")"},"href":null,"ts":1776986717117}
+{"kind":"click","target":{"tag":"use","id":"","cls":"","text":"","selector":"use.svg-icon"},"href":{},"ts":1776986723033}
+{"kind":"click","target":{"tag":"div","id":"","cls":"bind-subject-dialog__item-avatar","text":"","selector":"div.bind-subject-dialog__item-avatar"},"href":null,"ts":1776986724416}
+{"kind":"click","target":{"tag":"div","id":"el-id-2460-242","cls":"video-and-image-upload-area_bottom history-button el-tooltip","text":"History","selector":"#el-id-2460-242"},"href":null,"ts":1776986726616}
+{"kind":"click","target":{"tag":"li","id":"","cls":"el-dropdown-menu__item","text":"Add Image","selector":"li:has-text(\"Add Image\")"},"href":null,"ts":1776986728171}
+{"kind":"click","target":{"tag":"img","id":"","cls":"image-item-source","text":"","selector":"img.image-item-source"},"href":null,"ts":1776986732083}
+{"kind":"click","target":{"tag":"img","id":"","cls":"image-item-source","text":"","selector":"img.image-item-source"},"href":null,"ts":1776986733249}
+{"kind":"click","target":{"tag":"div","id":"","cls":"inner","text":"Confirm","selector":"div:has-text(\"Confirm\")"},"href":null,"ts":1776986734600}
+{"kind":"click","target":{"tag":"div","id":"","cls":"upload-text-history","text":"Select from History","selector":"div:has-text(\"Select from History\")"},"href":null,"ts":1776986736984}
+{"kind":"click","target":{"tag":"div","id":"","cls":"category-option","text":"Uploads","selector":"div:has-text(\"Uploads\")"},"href":null,"ts":1776986738899}
+{"kind":"click","target":{"tag":"div","id":"","cls":"image-item-mask","text":"","selector":"div.image-item-mask"},"href":null,"ts":1776986740567}
+{"kind":"click","target":{"tag":"img","id":"","cls":"image-item-source","text":"","selector":"img.image-item-source"},"href":null,"ts":1776986741316}
+{"kind":"click","target":{"tag":"img","id":"","cls":"image-item-source","text":"","selector":"img.image-item-source"},"href":null,"ts":1776986743167}
+{"kind":"click","target":{"tag":"div","id":"","cls":"inner","text":"Confirm","selector":"div:has-text(\"Confirm\")"},"href":null,"ts":1776986744166}
+{"kind":"click","target":{"tag":"div","id":"","cls":"timbre-item-icon","text":"","selector":"div.timbre-item-icon"},"href":null,"ts":1776986747604}
+{"kind":"click","target":{"tag":"span","id":"","cls":"","text":"Characters","selector":"span:has-text(\"Characters\")"},"href":null,"ts":1776986749871}
+{"kind":"click","target":{"tag":"span","id":"","cls":"","text":"Characters","selector":"span:has-text(\"Characters\")"},"href":null,"ts":1776986750699}
+{"kind":"click","target":{"tag":"input","id":"el-id-2460-262","cls":"el-input__inner","text":"","selector":"#el-id-2460-262"},"href":null,"ts":1776986751680}
+{"kind":"click","target":{"tag":"input","id":"el-id-2460-262","cls":"el-input__inner","text":"","selector":"#el-id-2460-262"},"href":null,"ts":1776986760303}
+{"kind":"change","target":{"tag":"input","id":"el-id-2460-262","cls":"el-input__inner","text":"","selector":"#el-id-2460-262"},"value":"mama","ts":1776986770217}
+{"kind":"click","target":{"tag":"textarea","id":"","cls":"kling-input","text":"","selector":"textarea.kling-input"},"href":null,"ts":1776986770350}
+{"kind":"input","target":{"tag":"textarea","id":"","cls":"kling-input","text":"","selector":"textarea.kling-input"},"value":"Sara and Eva's mom — a fitness coach. Mid-30s woman with straight shoulder-length golden-blonde hair (often in a top-knot or loose ponytail), warm brown eyes, bright smile, light sun-kissed skin, trim","ts":1776986770918}
+{"kind":"click","target":{"tag":"div","id":"","cls":"upload-form","text":"Voices\nNo Voice\nPreset\nWilliam\nPreset\nLaura\nPreset\nCatherine\nPreset\nOwen\nCharact","selector":"div.upload-form"},"href":null,"ts":1776986777633}
+{"kind":"click","target":{"tag":"textarea","id":"","cls":"kling-input","text":"","selector":"textarea.kling-input"},"href":null,"ts":1776986778582}
+{"kind":"change","target":{"tag":"textarea","id":"","cls":"kling-input","text":"","selector":"textarea.kling-input"},"value":"Sara and Eva's mom — a fitness coach. Mid-30s woman with straight shoulder-length golden-blonde hair (often in a top-knot or loose ponytail), warm brown eyes, bright smile, light sun-kissed skin, trim athletic toned build (visibly strong, great posture). Wears a coral-pink athletic tank top, high-waist heather-gray training leggings, clean white cross-training sneakers, slim fitness watch on the left wrist.\n","ts":1776986783117}
+{"kind":"click","target":{"tag":"div","id":"","cls":"inner","text":"Generate","selector":"div:has-text(\"Generate\")"},"href":null,"ts":1776986783249}
+{"kind":"click","target":{"tag":"span","id":"","cls":"","text":"Create Element","selector":"span:has-text(\"Create Element\")"},"href":null,"ts":1776986786549}
+{"kind":"click","target":{"tag":"div","id":"","cls":"bind-subject-dialog__item-name el-tooltip__trigger el-toolti","text":"Create Element","selector":"div:has-text(\"Create Element\")"},"href":null,"ts":1776986788682}
+{"kind":"click","target":{"tag":"div","id":"el-id-2460-242","cls":"video-and-image-upload-area_bottom history-button el-tooltip","text":"History","selector":"#el-id-2460-242"},"href":null,"ts":1776986790548}
+{"kind":"click","target":{"tag":"li","id":"","cls":"el-dropdown-menu__item","text":"Add Image","selector":"li:has-text(\"Add Image\")"},"href":null,"ts":1776986791615}
+{"kind":"click","target":{"tag":"div","id":"","cls":"image-item-mask","text":"","selector":"div.image-item-mask"},"href":null,"ts":1776986805115}
+{"kind":"click","target":{"tag":"div","id":"","cls":"inner","text":"Confirm","selector":"div:has-text(\"Confirm\")"},"href":null,"ts":1776986807133}
+{"kind":"click","target":{"tag":"div","id":"","cls":"upload-text-history","text":"Select from History","selector":"div:has-text(\"Select from History\")"},"href":null,"ts":1776986809449}
+{"kind":"click","target":{"tag":"div","id":"","cls":"tab vertical-center","text":"Creatives\nUploads\nImages\n|\nFavorites\nLatest","selector":"div:has-text(\"Creatives\nUploads\nImages\n|\nFavorites\nLatest\")"},"href":null,"ts":1776986811615}
+{"kind":"click","target":{"tag":"div","id":"","cls":"category-option","text":"Uploads","selector":"div:has-text(\"Uploads\")"},"href":null,"ts":1776986812215}
+{"kind":"click","target":{"tag":"img","id":"","cls":"image-item-source","text":"","selector":"img.image-item-source"},"href":null,"ts":1776986818331}
+{"kind":"click","target":{"tag":"img","id":"","cls":"image-item-source","text":"","selector":"img.image-item-source"},"href":null,"ts":1776986819367}
+{"kind":"click","target":{"tag":"img","id":"","cls":"image-item-source","text":"","selector":"img.image-item-source"},"href":null,"ts":1776986819998}
+{"kind":"click","target":{"tag":"div","id":"","cls":"inner","text":"Confirm","selector":"div:has-text(\"Confirm\")"},"href":null,"ts":1776986821082}
+{"kind":"click","target":{"tag":"textarea","id":"","cls":"kling-input","text":"","selector":"textarea.kling-input"},"href":null,"ts":1776986833902}
+{"kind":"change","target":{"tag":"textarea","id":"","cls":"kling-input","text":"","selector":"textarea.kling-input"},"value":"4-year-old little sister. Big bouncy halo of LIGHT-GOLD-BROWN curly hair (honey / caramel / wheat-blonde with warm golden tone, NOT auburn, NOT reddish) with a pastel-pink bow clipped on the right side. Warm brown eyes, fair peachy skin, rosy cheeks, wide dimpled smile with tiny baby teeth. Small compact build, shorter than Sara (about 2/3 her height). Wears a soft-pink sweatshirt with a small rainbow on the chest, lavender leggings, light-pink sneakers. Playful, expressive.\n\n","ts":1776986835448}
+{"kind":"click","target":{"tag":"input","id":"el-id-2460-262","cls":"el-input__inner","text":"","selector":"#el-id-2460-262"},"href":null,"ts":1776986835565}
+{"kind":"input","target":{"tag":"input","id":"el-id-2460-262","cls":"el-input__inner","text":"","selector":"#el-id-2460-262"},"value":"E","ts":1776986836245}
+{"kind":"change","target":{"tag":"input","id":"el-id-2460-262","cls":"el-input__inner","text":"","selector":"#el-id-2460-262"},"value":"Eva","ts":1776986844981}
+{"kind":"click","target":{"tag":"img","id":"","cls":"timbre-item-icon-play","text":"","selector":"img.timbre-item-icon-play"},"href":null,"ts":1776986845265}
+{"kind":"click","target":{"tag":"div","id":"","cls":"inner","text":"Generate","selector":"div:has-text(\"Generate\")"},"href":null,"ts":1776986847904}
+{"kind":"click","target":{"tag":"use","id":"","cls":"","text":"","selector":"use.svg-icon"},"href":{},"ts":1776986854847}
+{"kind":"click","target":{"tag":"use","id":"","cls":"","text":"","selector":"use.svg-icon"},"href":{},"ts":1776986855947}
+{"kind":"click","target":{"tag":"div","id":"","cls":"bind-subject-dialog__item-avatar","text":"","selector":"div.bind-subject-dialog__item-avatar"},"href":null,"ts":1776986858397}
+{"kind":"click","target":{"tag":"div","id":"","cls":"bind-subject-dialog__item-avatar","text":"","selector":"div.bind-subject-dialog__item-avatar"},"href":null,"ts":1776986860181}
+{"kind":"click","target":{"tag":"div","id":"","cls":"bind-subject-dialog__item-avatar","text":"","selector":"div.bind-subject-dialog__item-avatar"},"href":null,"ts":1776986860797}
+{"kind":"click","target":{"tag":"div","id":"","cls":"bind-subject-dialog__item-avatar","text":"","selector":"div.bind-subject-dialog__item-avatar"},"href":null,"ts":1776986861647}
+{"kind":"click","target":{"tag":"div","id":"","cls":"bind-subject-dialog__item-avatar","text":"","selector":"div.bind-subject-dialog__item-avatar"},"href":null,"ts":1776986862146}
+{"kind":"click","target":{"tag":"div","id":"","cls":"bind-subject-dialog__item-avatar","text":"","selector":"div.bind-subject-dialog__item-avatar"},"href":null,"ts":1776986862680}
+{"kind":"click","target":{"tag":"div","id":"","cls":"bind-subject-dialog__item-name el-tooltip__trigger el-toolti","text":"Sara","selector":"div:has-text(\"Sara\")"},"href":null,"ts":1776986863880}
+{"kind":"click","target":{"tag":"div","id":"","cls":"bind-subject-dialog__item-name el-tooltip__trigger el-toolti","text":"Sara","selector":"div:has-text(\"Sara\")"},"href":null,"ts":1776986865348}
+{"kind":"click","target":{"tag":"div","id":"","cls":"bind-subject-dialog__item el-tooltip__trigger el-tooltip__tr","text":"Sara","selector":"div:has-text(\"Sara\")"},"href":null,"ts":1776986871664}
+{"kind":"click","target":{"tag":"div","id":"","cls":"bind-subject-dialog__item bind-subject-dialog__item--selecte","text":"Sara","selector":"div:has-text(\"Sara\")"},"href":null,"ts":1776986871914}
+{"kind":"click","target":{"tag":"div","id":"","cls":"bind-subject-dialog__item el-tooltip__trigger el-tooltip__tr","text":"Sara","selector":"div:has-text(\"Sara\")"},"href":null,"ts":1776986872865}
+{"kind":"click","target":{"tag":"div","id":"","cls":"bind-subject-dialog__item-avatar","text":"","selector":"div.bind-subject-dialog__item-avatar"},"href":null,"ts":1776986876380}
+{"kind":"click","target":{"tag":"div","id":"","cls":"bind-subject-dialog__item-avatar","text":"","selector":"div.bind-subject-dialog__item-avatar"},"href":null,"ts":1776986879231}
+{"kind":"click","target":{"tag":"div","id":"","cls":"bind-subject-dialog__item-avatar","text":"","selector":"div.bind-subject-dialog__item-avatar"},"href":null,"ts":1776986879780}
+{"kind":"click","target":{"tag":"div","id":"","cls":"bind-subject-dialog-container","text":"Bind elements to enhance consistency\nCreate Element\nEva\nmama\nPapa\nSara\nfarmer_gi","selector":"div.bind-subject-dialog-container"},"href":null,"ts":1776986889781}
+{"kind":"click","target":{"tag":"div","id":"","cls":"tiptap ProseMirror ProseMirror-focused","text":"","selector":"div.tiptap.ProseMirror"},"href":null,"ts":1776986890547}
+{"kind":"input","target":{"tag":"div","id":"","cls":"tiptap ProseMirror ProseMirror-focused","text":"S","selector":"div:has-text(\"S\")"},"value":"S","ts":1776986891440}
+{"kind":"input","target":{"tag":"div","id":"","cls":"tiptap ProseMirror ProseMirror-focused","text":"Sa","selector":"div:has-text(\"Sa\")"},"value":"Sa","ts":1776986891718}
+{"kind":"input","target":{"tag":"div","id":"","cls":"tiptap ProseMirror ProseMirror-focused","text":"Sar","selector":"div:has-text(\"Sar\")"},"value":"Sar","ts":1776986891859}
+{"kind":"input","target":{"tag":"div","id":"","cls":"tiptap ProseMirror ProseMirror-focused","text":"Sara","selector":"div:has-text(\"Sara\")"},"value":"Sara","ts":1776986892018}
+{"kind":"click","target":{"tag":"div","id":"","cls":"content-container","text":"Video\nFrames\nVideo 3.0\n720p\nGentle camera zoom out from illustration, warm golde","selector":"div.content-container"},"href":null,"ts":1776986927783}
+{"kind":"click","target":{"tag":"div","id":"","cls":"tiptap ProseMirror ProseMirror-focused","text":"Sara","selector":"div:has-text(\"Sara\")"},"href":null,"ts":1776986970049}
+{"kind":"click","target":{"tag":"span","id":"","cls":"feature-btn-text","text":"Multi-Shot","selector":"span:has-text(\"Multi-Shot\")"},"href":null,"ts":1776986980129}
+{"kind":"click","target":{"tag":"span","id":"","cls":"feature-btn-text","text":"Multi-Shot","selector":"span:has-text(\"Multi-Shot\")"},"href":null,"ts":1776986980962}
+{"kind":"click","target":{"tag":"svg","id":"","cls":"","text":"","selector":"svg.svg-icon"},"href":null,"ts":1776986982112}
+{"kind":"click","target":{"tag":"div","id":"","cls":"tiptap ProseMirror ProseMirror-focused","text":"Sara","selector":"div:has-text(\"Sara\")"},"href":null,"ts":1776986983330}
+{"kind":"input","target":{"tag":"div","id":"","cls":"tiptap ProseMirror ProseMirror-focused","text":"Sar","selector":"div:has-text(\"Sar\")"},"value":"Sar","ts":1776986984985}
+{"kind":"input","target":{"tag":"div","id":"","cls":"tiptap ProseMirror ProseMirror-focused","text":"Sa","selector":"div:has-text(\"Sa\")"},"value":"Sa","ts":1776986985222}
+{"kind":"input","target":{"tag":"div","id":"","cls":"tiptap ProseMirror ProseMirror-focused","text":"S","selector":"div:has-text(\"S\")"},"value":"S","ts":1776986985404}
+{"kind":"input","target":{"tag":"div","id":"","cls":"tiptap ProseMirror ProseMirror-focused","text":"","selector":"div.tiptap.ProseMirror"},"value":"","ts":1776986986051}
+{"kind":"click","target":{"tag":"use","id":"","cls":"","text":"","selector":"use.svg-icon"},"href":{},"ts":1776986990345}
+{"kind":"click","target":{"tag":"use","id":"","cls":"","text":"","selector":"use.svg-icon"},"href":{},"ts":1776986991878}
+{"kind":"click","target":{"tag":"svg","id":"","cls":"","text":"","selector":"svg.svg-icon"},"href":null,"ts":1776986992665}
+{"kind":"click","target":{"tag":"svg","id":"","cls":"","text":"","selector":"svg.svg-icon"},"href":null,"ts":1776986993717}
+{"kind":"click","target":{"tag":"svg","id":"","cls":"","text":"","selector":"svg.svg-icon.bind-subject__options-setting"},"href":null,"ts":1776986995778}
+{"kind":"click","target":{"tag":"div","id":"","cls":"bind-subject-dialog-container","text":"Bind elements to enhance consistency\nCreate Element\nSara\nPapa\nmama\nEva\nfarmer_gi","selector":"div.bind-subject-dialog-container"},"href":null,"ts":1776986996645}
+{"kind":"click","target":{"tag":"div","id":"","cls":"","text":"1080p · 5s · 1","selector":"div:has-text(\"1080p · 5s · 1\")"},"href":null,"ts":1776986999829}
+{"kind":"click","target":{"tag":"div","id":"","cls":"tiptap ProseMirror ProseMirror-focused","text":"","selector":"div.tiptap.ProseMirror"},"href":null,"ts":1776987004346}
+{"kind":"click","target":{"tag":"span","id":"","cls":"feature-btn-text","text":"Custom Multi-Shot","selector":"span:has-text(\"Custom Multi-Shot\")"},"href":null,"ts":1776987008095}
+{"kind":"click","target":{"tag":"div","id":"","cls":"tiptap ProseMirror ProseMirror-focused","text":"","selector":"div.tiptap.ProseMirror"},"href":null,"ts":1776987009512}
+{"kind":"click","target":{"tag":"div","id":"","cls":"label focus-within","text":"s","selector":"div:has-text(\"s\")"},"href":null,"ts":1776987018846}
+{"kind":"click","target":{"tag":"input","id":"el-id-2460-803","cls":"el-input__inner","text":"","selector":"#el-id-2460-803"},"href":null,"ts":1776987019978}
+{"kind":"input","target":{"tag":"input","id":"el-id-2460-803","cls":"el-input__inner","text":"","selector":"#el-id-2460-803"},"value":"","ts":1776987020878}
+{"kind":"change","target":{"tag":"input","id":"el-id-2460-803","cls":"el-input__inner","text":"","selector":"#el-id-2460-803"},"value":"3","ts":1776987029066}
+{"kind":"click","target":{"tag":"div","id":"","cls":"tiptap ProseMirror ProseMirror-focused","text":"","selector":"div.tiptap.ProseMirror"},"href":null,"ts":1776987029216}
+{"kind":"click","target":{"tag":"span","id":"","cls":"","text":"Shot","selector":"span:has-text(\"Shot\")"},"href":null,"ts":1776987031429}
+{"kind":"click","target":{"tag":"div","id":"","cls":"label focus-within","text":"s","selector":"div:has-text(\"s\")"},"href":null,"ts":1776987038480}
+{"kind":"click","target":{"tag":"div","id":"","cls":"label focus-within","text":"s","selector":"div:has-text(\"s\")"},"href":null,"ts":1776987039310}
+{"kind":"click","target":{"tag":"div","id":"","cls":"label focus-within","text":"s","selector":"div:has-text(\"s\")"},"href":null,"ts":1776987039893}
+{"kind":"click","target":{"tag":"div","id":"","cls":"label focus-within","text":"s","selector":"div:has-text(\"s\")"},"href":null,"ts":1776987040094}
+{"kind":"click","target":{"tag":"div","id":"","cls":"tiptap ProseMirror ProseMirror-focused","text":"","selector":"div.tiptap.ProseMirror"},"href":null,"ts":1776987042677}
+{"kind":"click","target":{"tag":"div","id":"","cls":"","text":"1080p · 5s · 1","selector":"div:has-text(\"1080p · 5s · 1\")"},"href":null,"ts":1776987053330}
+{"kind":"click","target":{"tag":"div","id":"","cls":"el-slider__button hover dragging el-tooltip__trigger el-tool","text":"","selector":"div.el-slider__button.hover"},"href":null,"ts":1776987058111}
+{"kind":"click","target":{"tag":"div","id":"","cls":"editor","text":"Medium two-shot in @Bathroom. @Mama walks in wearing her coral tank + gray leggi","selector":"div.editor"},"href":null,"ts":1776987059230}
+{"kind":"click","target":{"tag":"div","id":"","cls":"label focus-within","text":"s","selector":"div:has-text(\"s\")"},"href":null,"ts":1776987069264}
+{"kind":"click","target":{"tag":"input","id":"el-id-2460-807","cls":"el-input__inner","text":"","selector":"#el-id-2460-807"},"href":null,"ts":1776987069976}
+{"kind":"input","target":{"tag":"input","id":"el-id-2460-807","cls":"el-input__inner","text":"","selector":"#el-id-2460-807"},"value":"","ts":1776987072648}
+{"kind":"change","target":{"tag":"input","id":"el-id-2460-807","cls":"el-input__inner","text":"","selector":"#el-id-2460-807"},"value":"3","ts":1776987075361}
+{"kind":"click","target":{"tag":"input","id":"el-id-2460-804","cls":"el-input__inner","text":"","selector":"#el-id-2460-804"},"href":null,"ts":1776987075511}
+{"kind":"input","target":{"tag":"input","id":"el-id-2460-804","cls":"el-input__inner","text":"","selector":"#el-id-2460-804"},"value":"","ts":1776987076796}
+{"kind":"change","target":{"tag":"input","id":"el-id-2460-804","cls":"el-input__inner","text":"","selector":"#el-id-2460-804"},"value":"4","ts":1776987086661}
+{"kind":"click","target":{"tag":"svg","id":"","cls":"","text":"","selector":"svg.svg-icon.bind-subject__options-setting"},"href":null,"ts":1776987086793}
+{"kind":"click","target":{"tag":"div","id":"","cls":"bind-subject-dialog-container","text":"Bind elements to enhance consistency\nCreate Element\nSara\nPapa\nmama\nEva\nfarmer_gi","selector":"div.bind-subject-dialog-container"},"href":null,"ts":1776987094360}
+{"kind":"click","target":{"tag":"span","id":"","cls":"value","text":"120","selector":"span:has-text(\"120\")"},"href":null,"ts":1776987095193}

@@ -1,0 +1,32 @@
+{
+  "episode": 3,
+  "beat": 5,
+  "microClip": "a",
+  "title": "CLIFFHANGER — Joe runs by with Eva's other shoe (Ep 4 setup)",
+  "mode": "omni",
+  "durationSec": 10,
+  "quality": "720p",
+  "nativeAudio": true,
+  "expectedCredits": 90,
+  "subjects": [
+    "Joe",
+    "Eva"
+  ],
+  "scene": "livingroom",
+  "boundElements": [
+    {
+      "tag": "Joe",
+      "source": "library"
+    },
+    {
+      "tag": "Eva",
+      "source": "library"
+    },
+    {
+      "tag": "livingroom",
+      "source": "library"
+    }
+  ],
+  "prompt": "Medium shot in @livingroom. @Eva stands on the LEFT wearing her new pink-and-white bike helmet, smiling. @Joe (small fluffy white-tan Pomeranian) trots happily across the foreground from screen-right with a single small white sneaker (a kid's shoe) clenched in his teeth. Eva (slowly realizing): \"Hey… wait… JOE!\" Eva (looking down at her own bare foot): \"That's MY shoe!\" Joe: \"Yip yip!\" Joe trots offscreen-left gleefully. Cliffhanger sting, warm cartoon light.",
+  "negativePrompt": "duplicate character, twin, clone, two of the same, mirrored figure, second father, second mother, two Papa, two Mama, identical adults, extra people, third child, second sister, second sara, second eva, second dog, third dog, two joe, two pomeranian, ginger visible, jack russell visible, baby doll, stuffed toy in place of dog, two shoes in mouth"
+}

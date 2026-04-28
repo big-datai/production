@@ -1,0 +1,37 @@
+{
+  "episode": 3,
+  "beat": 2,
+  "microClip": "c",
+  "title": "DISCOVERY 3 — Sisters return, package GONE!",
+  "mode": "omni",
+  "durationSec": 10,
+  "quality": "720p",
+  "nativeAudio": true,
+  "expectedCredits": 90,
+  "subjects": [
+    "Sara",
+    "Eva",
+    "Ginger"
+  ],
+  "scene": "livingroom",
+  "boundElements": [
+    {
+      "tag": "Sara",
+      "source": "library"
+    },
+    {
+      "tag": "Eva",
+      "source": "library"
+    },
+    {
+      "tag": "Ginger",
+      "source": "library"
+    },
+    {
+      "tag": "livingroom",
+      "source": "library"
+    }
+  ],
+  "prompt": "Wide shot in @livingroom. @Sara on the LEFT and @Eva on the RIGHT walk up to the wicker coffee table — but the package is GONE. They stop, look at each other, eyes wide with surprise. Then Eva spots @Ginger sitting in the corner with the chewed-corner package between her paws. Eva (pointing, urgent): \"The package is GONE!\" Sara (hand on cheek): \"Oh no…\" Eva: \"Look! Ginger has it!\" Sara: \"She chewed the corner!\" Ginger looks up guiltily, ears down.",
+  "negativePrompt": "duplicate character, twin, clone, two of the same, mirrored figure, second father, second mother, two Papa, two Mama, identical adults, extra people, third child, second sister, second sara, second eva, second dog, third dog, two ginger, joe visible, pomeranian visible, baby doll, stuffed toy, race, chase"
+}

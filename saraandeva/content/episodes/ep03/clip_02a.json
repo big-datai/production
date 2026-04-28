@@ -1,0 +1,37 @@
+{
+  "episode": 3,
+  "beat": 2,
+  "microClip": "a",
+  "title": "DISCOVERY 1 — Mama places package on table, gives the rule",
+  "mode": "omni",
+  "durationSec": 10,
+  "quality": "720p",
+  "nativeAudio": true,
+  "expectedCredits": 90,
+  "subjects": [
+    "Mama",
+    "Sara",
+    "Eva"
+  ],
+  "scene": "livingroom",
+  "boundElements": [
+    {
+      "tag": "Mama",
+      "source": "library"
+    },
+    {
+      "tag": "Sara",
+      "source": "library"
+    },
+    {
+      "tag": "Eva",
+      "source": "library"
+    },
+    {
+      "tag": "livingroom",
+      "source": "library"
+    }
+  ],
+  "prompt": "Wide shot in @livingroom. @Mama places the brown package on the wicker coffee table, center frame. @Sara stands on the LEFT, @Eva on the RIGHT, both leaning forward to peer at the package, big curious eyes. Mama (kneels to their level, calm): \"I'll open this later, after lunch. Don't touch it, okay?\" Sara: \"We won't, Mama!\" Eva (eyes wide): \"What's inside?\" Mama (smiling, mysterious): \"It's a surprise!\" Mama walks off toward kitchen. Warm daylight through the sliding door.",
+  "negativePrompt": "duplicate character, twin, clone, two of the same, mirrored figure, second father, second mother, two Papa, two Mama, identical adults, extra people, third child, second sister, second sara, second eva, dogs visible, baby doll, stuffed toy"
+}

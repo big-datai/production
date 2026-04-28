@@ -1,0 +1,12 @@
+{
+  "episode": 2, "beat": 4, "microClip": "e",
+  "title": "Eva to Ginger: silly silly silly puppy",
+  "durationSec": 5,
+  "mode": "single-shot",
+  "subjects": ["Eva", "Ginger"],
+  "scene": "BedroomSisters",
+  "nativeAudio": true,
+  "expectedCredits": 45,
+  "negativePrompt": "extra people, duplicate character, twin, clone, two of the same person, mirrored figure, background extras, second eva, second ginger, additional child, additional dog",
+  "prompt": "Close shot in @BedroomSisters. @Eva sits cross-legged hugging @Ginger to her chest, beaming: \"Ginger! You silly silly silly puppy! Did you eat all the pancakes by yourself?\""
+}

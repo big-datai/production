@@ -1,0 +1,346 @@
+# Sara & Eva — Photo Reference Labels
+#
+# Running inventory of family reference photos, labeled for:
+#   - who appears in the shot
+#   - where / what the location is
+#   - what's happening (activity) — feeds scene ideas
+#
+# Two uses:
+#   1. character_refs[] — which photos to feed to Gemini for each character avatar
+#   2. scene_ideas[] — which real-life scenarios to translate into story episodes
+#      (e.g. "kids walking the dogs", "riding bikes", "grandma visit", "pool day")
+#
+# Scope: /Volumes/Samsung500/photo/* (flat dir) and /Users/admin1/Desktop/Photos-3-001/*
+# HEICs converted to JPEG previews in content/saraandeva/_curation/jpegs/
+#
+# Character tags:
+#   sara, eva, mama, papa, grandma, grandpa, ginger, joe, other_adult
+
+photos:
+  # ───────────── Labeled "sara*" files (user-tagged) ─────────────
+  - file: /Volumes/Samsung500/photo/sara.jpg
+    characters: [sara]
+    location: beach
+    activity: "Sara on the beach with a yellow sand bucket, pastel tie-dye swimsuit, hair blowing in the wind"
+    useful_for: [sara-front-avatar, beach-scene]
+
+  - file: /Volumes/Samsung500/photo/sara 2.JPG
+    characters: [sara]
+    location: beach (water's edge)
+    activity: "Sara lying on wet sand, close-up of face with wet hair, eyes closed, mid-word"
+    useful_for: [sara-face-detail]
+
+  - file: /Volumes/Samsung500/photo/sara pool.jpeg
+    characters: [sara]
+    location: resort pool
+    activity: "Sara with fox face-paint, pink/lilac tie-dye swimsuit, looking at camera"
+    useful_for: [sara-avatar, pool-scene]
+
+  - file: /Volumes/Samsung500/photo/sara ski.jpeg
+    characters: [sara, papa]
+    location: ski slope
+    activity: "Sara and Papa on slopes — Papa in purple helmet with beard, Sara in blue 'Born' helmet + pastel ski suit, pink pants, big smile"
+    useful_for: [sara-avatar, papa-avatar, ski-scene]
+
+  - file: /Volumes/Samsung500/photo/sara and eva.jpeg
+    characters: [sara, eva]
+    location: beach
+    activity: "Sisters at the beach — Sara in pink watermelon swimsuit with pink goggles and face paint dots; Eva in blue Frozen (Anna/Elsa) swimsuit with big auburn curls and face paint"
+    useful_for: [sara-avatar, eva-avatar, beach-scene, sisters-together]
+
+  # ───────────── Family selfies / multi-person ─────────────
+  - file: /Volumes/Samsung500/photo/IMG_4103 Medium.jpeg
+    characters: [sara, eva, mama, papa, grandma]
+    location: outdoor (overcast, rural)
+    activity: "Family selfie on a cloudy day — Papa on right (bearded, bald, glasses), Mama (blonde), Grandma (red raincoat, wool scarf, dark hair), Eva being held by Papa with unicorn face paint in pink plaid, Sara peeking in back"
+    useful_for: [mama-avatar, papa-avatar, grandma-avatar, family-scene]
+
+  - file: /Volumes/Samsung500/photo/IMG_5253 Medium.jpeg
+    characters: [sara, eva, mama, papa, grandma]
+    location: residential street / driveway
+    activity: "Papa selfie with kids on bikes/trikes — Mama in red-striped long-sleeve + shorts (athletic posture visible), Grandma in teal top, Sara on pink scooter, Eva in yellow shirt on teal tricycle, bikes in frame"
+    useful_for: [mama-avatar, papa-avatar, grandma-avatar, bike-scene, outdoor-play-scene]
+
+  - file: /Volumes/Samsung500/photo/IMG_5261 Medium.jpeg
+    characters: [sara, eva, mama, papa, grandma]
+    location: residential street / driveway
+    activity: "Near-duplicate of IMG_5253, slightly later in the bike outing"
+    useful_for: [bike-scene]
+
+  - file: /Volumes/Samsung500/photo/IMG_5360 Medium.jpeg
+    characters: [sara, eva, mama, papa]
+    location: beach boardwalk / seaside bike path (tropical, palms)
+    activity: "Family bike selfie on oceanfront path — Papa in front with sunglasses and tan hoodie, Mama cycling with Eva on back seat in flame-print shirt and red helmet, Sara cycling behind on floral dress with pink helmet. Palm trees, ocean"
+    useful_for: [bike-scene, beach-boardwalk-scene]
+
+  - file: /Volumes/Samsung500/photo/IMG_9011 Medium.jpeg
+    characters: [sara, eva]
+    location: beach boardwalk (Ocean City style, 'Fudge' sign)
+    activity: "Sisters cycling on a boardwalk past a Fudge shop — Eva on pink bike with pink unicorn helmet + streamers, Sara on teal bike with blue helmet, boardwalk crowd behind"
+    useful_for: [bike-scene, boardwalk-scene]
+
+  - file: /Volumes/Samsung500/photo/IMG_9805 Medium.jpeg
+    characters: [sara, eva, mama, papa]
+    location: residential street (afternoon light)
+    activity: "Mama selfie in helmet + sunglasses, Papa cycling behind with Eva in rear seat (pink helmet, unicorn), Sara in child seat with blue polka-dot helmet"
+    useful_for: [mama-avatar, bike-scene, family-scene]
+
+  - file: /Volumes/Samsung500/photo/IMG_6058.JPG
+    characters: [sara, eva]
+    location: residential suburban street
+    activity: "Sisters racing each other on bikes — Eva on pink bike with training wheels and unicorn helmet, Sara on teal bike with training wheels and blue helmet. Trees and other houses in the background"
+    useful_for: [bike-scene, sisters-together, suburban-neighborhood-scene]
+
+  - file: /Volumes/Samsung500/photo/9c6c5363-2cbe-4e76-bf02-8de056311413.jpg
+    characters: [sara, eva]
+    location: residential street
+    activity: "Same scene as IMG_6058, slightly earlier frame"
+    useful_for: [bike-scene]
+
+  # ───────────── Pool / water photos ─────────────
+  - file: /Volumes/Samsung500/photo/IMG_1036.JPG
+    characters: [sara, eva, other_adult]
+    location: resort indoor pool with wave features
+    activity: "Two girls at edge of a wave pool holding a pink/purple squirt toy (or noodle) — Sara in pink goggles, Eva behind with curly hair"
+    useful_for: [pool-scene]
+
+  - file: /Volumes/Samsung500/photo/IMG_1163.JPG
+    characters: [sara]
+    location: beach
+    activity: "Close-up of Sara lying on the beach — wet wavy dark hair, face detail visible, blue and white floral swimsuit"
+    useful_for: [sara-face-detail]
+
+  - file: /Volumes/Samsung500/photo/IMG_1212.JPG
+    characters: [sara, eva, unknown_child]
+    location: resort pool
+    activity: "Three girls chilling at the edge of a resort pool, wearing swim vests, lounge chairs in background"
+    useful_for: [pool-scene]
+
+  - file: /Volumes/Samsung500/photo/IMG_2395.JPG
+    characters: [sara, eva]
+    location: indoor swim hall
+    activity: "Sisters playing in indoor pool — Eva holding a green/blue bucket, both in matching blue-and-yellow floral swimsuits"
+    useful_for: [pool-scene, sisters-together]
+
+  - file: /Volumes/Samsung500/photo/IMG_7009.JPG
+    characters: [sara]
+    location: resort flowrider / wave surf pool
+    activity: "Sara riding a body-board on a flowrider wave (indoor/outdoor surf simulator)"
+    useful_for: [pool-scene, flowrider-scene]
+
+  - file: /Volumes/Samsung500/photo/28ee3421-890b-4924-9b6c-e8708ee08831.jpg
+    characters: [sara, eva, mama]
+    location: outdoor resort pool (palm trees)
+    activity: "Mama in sunglasses holding both kids in pool — Sara at her left arm wearing orange armbands, Eva at her right in curly hair with orange floatie swimsuit"
+    useful_for: [mama-avatar, pool-scene]
+
+  - file: /Volumes/Samsung500/photo/4B682EA5-AAD3-43AE-95EA-6A8750953019.jpg
+    characters: [sara]
+    location: beach (tropical)
+    activity: "Sara close-up — cheeky smile, floral swimsuit, wind-blown hair, yellow bucket raised"
+    useful_for: [sara-avatar, beach-scene]
+
+  # ───────────── Skiing photos ─────────────
+  - file: /Volumes/Samsung500/goreadling/content/saraandeva/_curation/jpegs/IMG_2471.jpg
+    characters: [eva, papa]
+    location: ski resort (base with red cross medical sign)
+    activity: "Papa selfie in purple helmet on chair lift; Eva below in blue helmet + rainbow/pastel ski suit + pink mittens, on skis"
+    useful_for: [papa-avatar, ski-scene]
+
+  - file: /Volumes/Samsung500/goreadling/content/saraandeva/_curation/jpegs/IMG_2473.jpg
+    characters: [eva, papa]
+    location: ski resort
+    activity: "Near-duplicate of IMG_2471, slightly different angle"
+    useful_for: [ski-scene]
+
+  - file: /Volumes/Samsung500/goreadling/content/saraandeva/_curation/jpegs/IMG_3085.jpg
+    characters: [eva, papa]
+    location: ski resort base village, outdoor cafe / Woodfired Pizza sign
+    activity: "Eva seated outside ski lodge in blue jacket + scarf, pink ski jacket hanging on chair beside her, helmet on table, Papa across table"
+    useful_for: [ski-scene, apres-ski-scene]
+
+  - file: /Volumes/Samsung500/goreadling/content/saraandeva/_curation/jpegs/IMG_4128.jpg
+    characters: [eva]
+    location: ski resort base with pastel lodge
+    activity: "Eva snowboarding (small snowboard, not skis), pastel outfit, pink helmet"
+    useful_for: [ski-scene]
+
+  - file: /Volumes/Samsung500/goreadling/content/saraandeva/_curation/jpegs/IMG_4408.jpg
+    characters: [eva]
+    location: ski resort
+    activity: "Close-up of Eva in blue helmet, pink mittens, pastel jacket, pink pants, on skis with turquoise-tipped kid skis, standing on groomed slope"
+    useful_for: [eva-avatar, ski-scene]
+
+  - file: /Volumes/Samsung500/goreadling/content/saraandeva/_curation/jpegs/IMG_6112.jpg
+    characters: [sara, eva]
+    location: ski resort — Eva on skis, another skier in green jacket (possibly mama)
+    activity: "Eva in pink helmet with rainbow goggles, blue/pink ski suit, on junior skis, next to a ski-in/ski-out chalet"
+    useful_for: [ski-scene]
+
+  - file: /Volumes/Samsung500/goreadling/content/saraandeva/_curation/jpegs/IMG_5423.jpg
+    characters: [eva]
+    location: ski slope
+    activity: "Eva on snowboard, pink mittens, blue and pink outfit, solo on groomed run"
+    useful_for: [ski-scene]
+
+  - file: /Volumes/Samsung500/goreadling/content/saraandeva/_curation/jpegs/IMG_5457.jpg
+    characters: [eva]
+    location: ski slope
+    activity: "Eva mid-run on skis with pink mittens"
+    useful_for: [ski-scene]
+
+  - file: /Volumes/Samsung500/goreadling/content/saraandeva/_curation/jpegs/IMG_5460.jpg
+    characters: [eva]
+    location: ski village
+    activity: "Eva in rainbow goggles + blue helmet, pastel ski jacket + pink pants, holding kid ski poles"
+    useful_for: [ski-scene]
+
+  - file: /Volumes/Samsung500/goreadling/content/saraandeva/_curation/jpegs/IMG_7456.jpg
+    characters: [sara, papa]
+    location: ski slope
+    activity: "Papa selfie in purple helmet; Sara in foreground in blue 'Born' helmet + pastel ski jacket + hot-pink ski pants + pink mittens, biggest smile in the whole set — great expression reference"
+    useful_for: [sara-avatar, papa-avatar, ski-scene]
+
+  - file: /Volumes/Samsung500/goreadling/content/saraandeva/_curation/jpegs/IMG_6890.jpg
+    characters: [eva]
+    location: home bedroom
+    activity: "Eva twirling in a pastel floral sundress, bare feet on wood floor, big curly auburn hair, closet behind her"
+    useful_for: [eva-avatar, bedroom-scene]
+
+  # ───────────── Home / restaurant photos ─────────────
+  - file: /Volumes/Samsung500/photo/IMG_5716.jpeg
+    characters: [sara, eva, mama, papa]
+    location: hotel restaurant buffet (tropical resort)
+    activity: "Family brunch selfie — Papa in front in pink polo, Mama in white cami, Eva in curls with a pancake, Sara in yellow tank with drink"
+    useful_for: [mama-avatar, papa-avatar, restaurant-scene]
+
+  - file: /Volumes/Samsung500/photo/IMG_5831.jpeg
+    characters: [sara, eva, mama]
+    location: outdoor restaurant patio (beach view)
+    activity: "Lunch on a patio overlooking the ocean at sunset — fries and tortillas on the table, Sara with curly hair and Eva visible"
+    useful_for: [restaurant-scene, beach-sunset-scene]
+
+  - file: /Volumes/Samsung500/photo/IMG_7307.jpeg
+    characters: [sara, eva, mama]
+    location: intracoastal boat charter / water taxi (Florida palms, waterfront mansions)
+    activity: "Mama in sunglasses + blue shirt, Sara in yellow tank + rainbow skirt (holding something), Eva in pink polka dot dress with curls and a small brown purse"
+    useful_for: [mama-avatar, boat-scene, florida-waterfront-scene]
+
+  # ───────────── NEW: Dog + home photos ─────────────
+  - file: /Volumes/Samsung500/goreadling/content/saraandeva/_curation/jpegs/IMG_5903.jpg
+    characters: [ginger]
+    location: home living room (gray couch)
+    activity: "Ginger curled on a beige couch — Jack Russell, tan head with white blaze, brown saddle, white legs. Side view"
+    useful_for: [ginger-avatar, home-living-room-scene]
+
+  - file: /Volumes/Samsung500/goreadling/content/saraandeva/_curation/jpegs/IMG_6190.jpg
+    characters: [ginger]
+    location: home living room
+    activity: "Ginger lying among a white blanket with rope-edge trim, cuddled in and looking sleepy, one child's foot barely visible in frame"
+    useful_for: [ginger-avatar, home-living-room-scene]
+
+  - file: /Volumes/Samsung500/goreadling/content/saraandeva/_curation/jpegs/IMG_6193.jpg
+    characters: [sara, eva, mama, joe, ginger]
+    location: home living room / kitchen-dining combo
+    activity: "Sara (curly lighter-hair? or Eva) on couch cuddling a white Pomeranian (Joe); Mama in animal-print top standing mid-room with ball in hand; Ginger the Jack Russell at Mama's feet eager for the ball. Toys scattered. Open-plan home."
+    useful_for: [mama-avatar, joe-avatar, ginger-avatar, home-living-room-scene, play-with-dogs-scene]
+
+  - file: /Volumes/Samsung500/goreadling/content/saraandeva/_curation/jpegs/IMG_6194.jpg
+    characters: [sara, eva, mama, grandma, joe, ginger]
+    location: home living room
+    activity: "Selfie with multiple adults — Papa in front (reversed position), Grandma visible in leopard-print blouse, Mama in chair, Eva held, Joe on lap, Ginger at feet"
+    useful_for: [mama-avatar, grandma-avatar, joe-avatar, ginger-avatar, grandma-visit-scene]
+
+  - file: /Volumes/Samsung500/goreadling/content/saraandeva/_curation/jpegs/IMG_6195.jpg
+    characters: [sara, eva, mama, grandma, joe, ginger]
+    location: home living room
+    activity: "Similar to IMG_6194 — another selfie with the whole gang during grandma's visit. Ginger visible with a blue ball at feet. Grandma in leopard-print blouse, lighter blonde hair, smiling warmly"
+    useful_for: [grandma-avatar, grandma-visit-scene]
+
+  - file: /Volumes/Samsung500/goreadling/content/saraandeva/_curation/jpegs/IMG_6196.jpg
+    characters: [sara, eva, mama, grandma, joe, ginger]
+    location: home living room
+    activity: "Near-duplicate of IMG_6195 — another frame of the multi-person selfie, Grandma clearly visible looking up, Ginger near blue ball"
+    useful_for: [grandma-avatar, grandma-visit-scene]
+
+  - file: /Volumes/Samsung500/goreadling/content/saraandeva/_curation/jpegs/IMG_7183.jpg
+    characters: [mama, sara, joe, ginger]
+    location: home front walk / garden path (hedge, pavement)
+    activity: "Bird's-eye view — Eva (curly hair, gray coat) and Sara (purple puffy jacket) walking Ginger on a leash along a hedge, Joe (Pomeranian) trotting along. Winter jackets, bare pavement."
+    useful_for: [dog-walk-scene, outdoor-neighborhood-scene]
+
+  - file: /Volumes/Samsung500/goreadling/content/saraandeva/_curation/jpegs/IMG_7184.jpg
+    characters: [sara, eva, ginger, joe]
+    location: home front walk (hedge + pavement)
+    activity: "Near-duplicate of IMG_7183, kids walking dogs along a neatly-trimmed hedge — great kids-walking-dogs scene reference"
+    useful_for: [dog-walk-scene]
+
+  - file: /Volumes/Samsung500/goreadling/content/saraandeva/_curation/jpegs/IMG_7185.jpg
+    characters: [sara, eva, ginger, joe]
+    location: home front walk (hedge + pavement)
+    activity: "Third frame of the dog-walk series — two girls + two dogs on the path. Ideal for a 'walking the dogs' episode"
+    useful_for: [dog-walk-scene]
+
+  - file: /Volumes/Samsung500/photo/IMG_0422.JPG
+    characters: [sara, eva, mama, ginger]
+    location: home kitchen island (evening, view through window to backyard)
+    activity: "Mama in blue tank seated at kitchen island holding a donut; Sara leaning into her with pastel-print pajamas holding another donut; Eva in the background in blue-trim pajamas; Ginger at Mama's feet by the kitchen. Canvas paintings ('Heart Full of Joy', 'Grateful Heart') behind. Kid-art by the table. Warm nighttime home energy."
+    useful_for: [mama-avatar, kitchen-scene, family-cozy-evening-scene, donut-treat-scene]
+
+  - file: /Volumes/Samsung500/goreadling/content/saraandeva/_curation/jpegs/IMG_0350.jpg
+    characters: [sara, eva, ginger]
+    location: outside near hedge (same spot as IMG_7183-85)
+    activity: "From ground level — Sara (left, purple puffy jacket) and Eva (right, gray coat with curls) kneeling/walking with Ginger jumping toward them on pavement"
+    useful_for: [dog-walk-scene]
+
+  # ───────────── TO DO: Still need to review/label ─────────────
+  # - 2025-05-24-14-08-56-230.PNG
+  # - 2025-05-24-14-09-02-253.PNG
+  # - /Users/admin1/Desktop/Photos-3-001/* — may contain new grandpa / grandma refs
+  # - Need clear Grandpa (papa's dad) photos — none identified yet
+
+# ───────────── Recurring Scene Ideas (derived from real family activities) ─────────────
+scene_ideas:
+  - tag: dog_walk
+    story_hook: "Sara and Eva walk Ginger & Joe around the block — one episode per season (spring flowers, summer heat, autumn leaves, first snow)"
+    real_photo_refs: [IMG_7183, IMG_7184, IMG_7185, IMG_0350]
+
+  - tag: grandma_visit
+    story_hook: "Grandma arrives for a visit — brings a treat, plays with the dogs, cooks with the girls"
+    real_photo_refs: [IMG_6194, IMG_6195, IMG_6196]
+
+  - tag: bike_ride_driveway
+    story_hook: "Sisters race their bikes in the driveway — who gets to the mailbox first?"
+    real_photo_refs: [IMG_5253, IMG_5261, IMG_6058, IMG_9011]
+
+  - tag: bike_ride_boardwalk
+    story_hook: "Family cycles along the boardwalk past the fudge shop and to the beach — vacation-themed episode"
+    real_photo_refs: [IMG_5360, IMG_9011, IMG_9805]
+
+  - tag: ski_day
+    story_hook: "Sara and Eva's first / hundredth ski day with Papa — learning to turn, après-ski cocoa"
+    real_photo_refs: [IMG_2471, IMG_2473, IMG_7456, sara_ski.jpeg, IMG_4408, IMG_6112]
+
+  - tag: beach_day
+    story_hook: "Sand castles, sea shells, chasing waves with the family"
+    real_photo_refs: [sara.jpg, sara_and_eva.jpeg, 4B682EA5]
+
+  - tag: pool_day
+    story_hook: "Resort pool adventures — flowrider for Sara, wave pool for Eva"
+    real_photo_refs: [IMG_1036, IMG_1163, IMG_1212, IMG_2395, IMG_7009, 28ee3421, sara_pool.jpeg]
+
+  - tag: playing_in_house
+    story_hook: "Rainy-day indoor play with Ginger and Joe — couch forts, ball games, dress-up"
+    real_photo_refs: [IMG_6193, IMG_6194, IMG_5903, IMG_6190]
+
+  - tag: cozy_evening_kitchen
+    story_hook: "Making/sharing a treat at the kitchen island with Mama, dogs at feet"
+    real_photo_refs: [IMG_0422]
+
+  - tag: boat_day
+    story_hook: "Family day on a boat along the Florida intracoastal — spotting herons, eating ice cream"
+    real_photo_refs: [IMG_7307]
+
+  - tag: restaurant_dinner
+    story_hook: "Going out for dinner — sisters pick their own meals, dessert at the end"
+    real_photo_refs: [IMG_5716, IMG_5831]

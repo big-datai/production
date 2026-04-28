@@ -1,0 +1,29 @@
+{
+  "_comment_purpose": "Single-clip paid validation of the full Omni pipeline before drafting Ep 3. 90-credit fail-fast check: confirms (a) 5 bound elements work, (b) characters are present from frame 1, (c) Joe is rendered as Joe (not Max), (d) no duplicate characters appear, (e) 10s gives room for natural multi-sentence dialogue, (f) submitOmniClip.mjs all guards pass.",
+  "_comment_dialogue_pacing": "10s @ kid-friendly speech rate ≈ 4 short exchanges (~2s each) + 2s reaction tail. Lines are deliberately short and conversational so Kling's TTS doesn't rush.",
+
+  "episode": 3,
+  "clipIndex": "validation_001",
+  "title": "VALIDATION — Family pancake breakfast (Omni 10s pilot)",
+
+  "mode": "omni",
+  "durationSec": 10,
+  "quality": "720p",
+  "nativeAudio": true,
+  "expectedCredits": 90,
+
+  "boundElements": [
+    { "tag": "Sara",    "source": "library" },
+    { "tag": "Eva",     "source": "library" },
+    { "tag": "Ginger",  "source": "library" },
+    { "tag": "Joe",     "source": "library" },
+    { "tag": "kitchen", "source": "library" }
+  ],
+
+  "scene": "kitchen",
+  "subjects": ["Sara", "Eva", "Ginger", "Joe"],
+
+  "prompt": "Wide shot in @kitchen. @Sara sits on the LEFT side of the kitchen table eating a stack of fluffy pancakes with syrup, fork in hand. @Eva sits on the RIGHT side of the table holding her plate with both hands. @Ginger lies on the floor under the table, ears perked, looking up. @Joe spins in a happy circle on the rug behind the chairs. Warm morning sunlight through the window. @Sara: \"Mmm, these pancakes are SO fluffy!\" @Eva: \"I want more syrup on mine!\" @Sara: \"Don't drop any — Ginger's watching!\" @Eva: \"Joe is spinning again, look!\"",
+
+  "negativePrompt": "extra people, third child, second sister, second sara, second eva, duplicate character, twin, clone, two of the same, two of the same person, mirrored figure, second father, second mother, two Papa, two Mama, identical adults, background extras, second dog, third dog, second jack russell, second pomeranian, two ginger, two joe, dog on counter, pancake monster, baby doll, stuffed toy, blue uniform postman"
+}

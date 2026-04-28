@@ -1,14 +1,22 @@
-# Secrets
+# =====================================================================
+# Secrets — never commit
+# =====================================================================
 .env
 .env.local
 .env.production
 .env.*.local
-credentials.json
-token.json
+**/credentials.json
+**/token.json
+**/credentials-*.json
+**/token-*.json
+**/.claude/client_secret_*
+**/.claude/settings.local.json
 *.pem
 *.key
 
+# =====================================================================
 # Python
+# =====================================================================
 __pycache__/
 *.py[cod]
 *.egg-info/
@@ -21,26 +29,38 @@ venv/
 build/
 dist/
 
+# =====================================================================
 # Node (legacy/)
+# =====================================================================
 node_modules/
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 
-# Generated media (large)
+# =====================================================================
+# Generated media — large, regenerable
+# =====================================================================
 *.mp3
 *.mp4
 *.wav
 *.pcm
 *.srt
 exports/
-legacy/exports/
+**/exports/
 
-# Generated character images (regen from JSON)
-assets/characters/*.png
-legacy/content/**/exports/
+# Reference photos / character assets — live on disk, not in git
+saraandeva/assets/**/*.png
+saraandeva/assets/**/*.jpg
+saraandeva/assets/**/*.jpeg
+saraandeva/assets/**/*.webp
+stories/assets/characters/*.png
 
+# Curation/iteration artifacts (saraandeva)
+saraandeva/content/_curation/
+
+# =====================================================================
 # Editor / OS
+# =====================================================================
 .DS_Store
 .idea/
 .vscode/*
@@ -48,15 +68,17 @@ legacy/content/**/exports/
 *.swp
 *.swo
 
+# =====================================================================
 # Logs
+# =====================================================================
 *.log
 dev.log
 
-# Trash
+# =====================================================================
+# Trash + bak
+# =====================================================================
 _trash/
 **/_trash/
-
-# Misc
 *.bak
 *.docx
 orphaned_stories.json

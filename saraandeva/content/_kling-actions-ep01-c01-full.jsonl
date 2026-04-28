@@ -1,0 +1,91 @@
+{"kind":"click","target":{"tag":"span","id":"","cls":"","text":"Generate","selector":"span:has-text(\"Generate\")"},"href":null,"ts":1776996146244}
+{"kind":"click","target":{"tag":"div","id":"","cls":"from-history__btn","text":"History","selector":"div:has-text(\"History\")"},"href":null,"ts":1776996217526}
+{"kind":"click","target":{"tag":"div","id":"","cls":"from-history__btn","text":"History","selector":"div:has-text(\"History\")"},"href":null,"ts":1776996217527}
+{"kind":"click","target":{"tag":"div","id":"","cls":"category-option","text":"Uploads","selector":"div:has-text(\"Uploads\")"},"href":null,"ts":1776996220006}
+{"kind":"click","target":{"tag":"div","id":"","cls":"category-option","text":"Uploads","selector":"div:has-text(\"Uploads\")"},"href":null,"ts":1776996220006}
+{"kind":"click","target":{"tag":"img","id":"","cls":"image-item-source","text":"","selector":"img.image-item-source"},"href":null,"ts":1776996227923}
+{"kind":"click","target":{"tag":"img","id":"","cls":"image-item-source","text":"","selector":"img.image-item-source"},"href":null,"ts":1776996227923}
+{"kind":"click","target":{"tag":"div","id":"","cls":"inner","text":"Confirm","selector":"div:has-text(\"Confirm\")"},"href":null,"ts":1776996234607}
+{"kind":"click","target":{"tag":"div","id":"","cls":"inner","text":"Confirm","selector":"div:has-text(\"Confirm\")"},"href":null,"ts":1776996234608}
+{"kind":"click","target":{"tag":"svg","id":"","cls":"","text":"","selector":"svg.svg-icon.bind-subject__options-setting"},"href":null,"ts":1776996237373}
+{"kind":"click","target":{"tag":"svg","id":"","cls":"","text":"","selector":"svg.svg-icon.bind-subject__options-setting"},"href":null,"ts":1776996237373}
+{"kind":"click","target":{"tag":"div","id":"","cls":"bind-subject-dialog__item-avatar","text":"","selector":"div.bind-subject-dialog__item-avatar"},"href":null,"ts":1776996238874}
+{"kind":"click","target":{"tag":"div","id":"","cls":"bind-subject-dialog__item-avatar","text":"","selector":"div.bind-subject-dialog__item-avatar"},"href":null,"ts":1776996238874}
+{"kind":"click","target":{"tag":"div","id":"","cls":"bind-subject-dialog__item-avatar","text":"","selector":"div.bind-subject-dialog__item-avatar"},"href":null,"ts":1776996239592}
+{"kind":"click","target":{"tag":"div","id":"","cls":"bind-subject-dialog__item-avatar","text":"","selector":"div.bind-subject-dialog__item-avatar"},"href":null,"ts":1776996239592}
+{"kind":"click","target":{"tag":"div","id":"","cls":"bind-subject-dialog__item-avatar","text":"","selector":"div.bind-subject-dialog__item-avatar"},"href":null,"ts":1776996240557}
+{"kind":"click","target":{"tag":"div","id":"","cls":"bind-subject-dialog__item-avatar","text":"","selector":"div.bind-subject-dialog__item-avatar"},"href":null,"ts":1776996240557}
+{"kind":"click","target":{"tag":"div","id":"","cls":"bind-subject-dialog-container","text":"Bind elements to enhance consistency\nCreate Element\nGinger\nEva\nSara\nGrandma\nmama","selector":"div.bind-subject-dialog-container"},"href":null,"ts":1776996241839}
+{"kind":"click","target":{"tag":"div","id":"","cls":"bind-subject-dialog-container","text":"Bind elements to enhance consistency\nCreate Element\nGinger\nEva\nSara\nGrandma\nmama","selector":"div.bind-subject-dialog-container"},"href":null,"ts":1776996241839}
+{"kind":"click","target":{"tag":"span","id":"","cls":"feature-btn-text","text":"Custom Multi-Shot","selector":"span:has-text(\"Custom Multi-Shot\")"},"href":null,"ts":1776996245390}
+{"kind":"click","target":{"tag":"span","id":"","cls":"feature-btn-text","text":"Custom Multi-Shot","selector":"span:has-text(\"Custom Multi-Shot\")"},"href":null,"ts":1776996245390}
+{"kind":"click","target":{"tag":"div","id":"","cls":"storyboard-item__header","text":"Shot1\ns","selector":"div:has-text(\"Shot1\ns\")"},"href":null,"ts":1776996257141}
+{"kind":"click","target":{"tag":"div","id":"","cls":"storyboard-item__header","text":"Shot1\ns","selector":"div:has-text(\"Shot1\ns\")"},"href":null,"ts":1776996257142}
+{"kind":"click","target":{"tag":"input","id":"el-id-1336-289","cls":"el-input__inner","text":"","selector":"#el-id-1336-289"},"href":null,"ts":1776996258075}
+{"kind":"click","target":{"tag":"input","id":"el-id-1336-289","cls":"el-input__inner","text":"","selector":"#el-id-1336-289"},"href":null,"ts":1776996258075}
+{"kind":"click","target":{"tag":"input","id":"el-id-1336-289","cls":"el-input__inner","text":"","selector":"#el-id-1336-289"},"href":null,"ts":1776996258289}
+{"kind":"click","target":{"tag":"input","id":"el-id-1336-289","cls":"el-input__inner","text":"","selector":"#el-id-1336-289"},"href":null,"ts":1776996258289}
+{"kind":"input","target":{"tag":"input","id":"el-id-1336-289","cls":"el-input__inner","text":"","selector":"#el-id-1336-289"},"value":"4","ts":1776996259317}
+{"kind":"input","target":{"tag":"input","id":"el-id-1336-289","cls":"el-input__inner","text":"","selector":"#el-id-1336-289"},"value":"4","ts":1776996259317}
+{"kind":"change","target":{"tag":"input","id":"el-id-1336-289","cls":"el-input__inner","text":"","selector":"#el-id-1336-289"},"value":"4","ts":1776996261023}
+{"kind":"change","target":{"tag":"input","id":"el-id-1336-289","cls":"el-input__inner","text":"","selector":"#el-id-1336-289"},"value":"4","ts":1776996261023}
+{"kind":"click","target":{"tag":"div","id":"","cls":"tiptap ProseMirror ProseMirror-focused","text":"","selector":"div.tiptap.ProseMirror"},"href":null,"ts":1776996261157}
+{"kind":"click","target":{"tag":"div","id":"","cls":"tiptap ProseMirror ProseMirror-focused","text":"","selector":"div.tiptap.ProseMirror"},"href":null,"ts":1776996261157}
+{"kind":"input","target":{"tag":"div","id":"","cls":"tiptap ProseMirror ProseMirror-focused","text":"v","selector":"div:has-text(\"v\")"},"value":"v","ts":1776996262685}
+{"kind":"input","target":{"tag":"div","id":"","cls":"tiptap ProseMirror ProseMirror-focused","text":"v","selector":"div:has-text(\"v\")"},"value":"v","ts":1776996262690}
+{"kind":"input","target":{"tag":"div","id":"","cls":"tiptap ProseMirror ProseMirror-focused","text":"","selector":"div.tiptap.ProseMirror"},"value":"","ts":1776996264032}
+{"kind":"input","target":{"tag":"div","id":"","cls":"tiptap ProseMirror ProseMirror-focused","text":"","selector":"div.tiptap.ProseMirror"},"value":"","ts":1776996264036}
+{"kind":"click","target":{"tag":"div","id":"","cls":"tiptap ProseMirror ProseMirror-focused","text":"","selector":"div.tiptap.ProseMirror"},"href":null,"ts":1776996289349}
+{"kind":"click","target":{"tag":"div","id":"","cls":"tiptap ProseMirror ProseMirror-focused","text":"","selector":"div.tiptap.ProseMirror"},"href":null,"ts":1776996289349}
+{"kind":"click","target":{"tag":"span","id":"","cls":"","text":"Shot","selector":"span:has-text(\"Shot\")"},"href":null,"ts":1776996310087}
+{"kind":"click","target":{"tag":"span","id":"","cls":"","text":"Shot","selector":"span:has-text(\"Shot\")"},"href":null,"ts":1776996310088}
+{"kind":"click","target":{"tag":"div","id":"","cls":"tiptap ProseMirror ProseMirror-focused","text":"","selector":"div.tiptap.ProseMirror"},"href":null,"ts":1776996320009}
+{"kind":"click","target":{"tag":"div","id":"","cls":"tiptap ProseMirror ProseMirror-focused","text":"","selector":"div.tiptap.ProseMirror"},"href":null,"ts":1776996320010}
+{"kind":"click","target":{"tag":"div","id":"","cls":"tiptap ProseMirror ProseMirror-focused","text":"Close on @Sara's bed. @Sara pulls the covers over her face, groaning playfully: ","selector":"div.tiptap.ProseMirror"},"href":null,"ts":1776996327638}
+{"kind":"click","target":{"tag":"div","id":"","cls":"tiptap ProseMirror ProseMirror-focused","text":"Close on @Sara's bed. @Sara pulls the covers over her face, groaning playfully: ","selector":"div.tiptap.ProseMirror"},"href":null,"ts":1776996327639}
+{"kind":"click","target":{"tag":"div","id":"","cls":"tiptap ProseMirror ProseMirror-focused","text":"Wide of the @BedroomSisters, soft pink walls, dawn light filtering through the p","selector":"div.tiptap.ProseMirror"},"href":null,"ts":1776996335275}
+{"kind":"click","target":{"tag":"div","id":"","cls":"tiptap ProseMirror ProseMirror-focused","text":"Wide of the @BedroomSisters, soft pink walls, dawn light filtering through the p","selector":"div.tiptap.ProseMirror"},"href":null,"ts":1776996335277}
+{"kind":"click","target":{"tag":"div","id":"","cls":"tiptap ProseMirror ProseMirror-focused","text":"Wide of the @BedroomSisters, soft pink walls, dawn light filtering through the p","selector":"div.tiptap.ProseMirror"},"href":null,"ts":1776996343825}
+{"kind":"click","target":{"tag":"div","id":"","cls":"tiptap ProseMirror ProseMirror-focused","text":"Wide of the @BedroomSisters, soft pink walls, dawn light filtering through the p","selector":"div.tiptap.ProseMirror"},"href":null,"ts":1776996343826}
+{"kind":"click","target":{"tag":"div","id":"","cls":"tiptap ProseMirror ProseMirror-focused","text":"Close on @Sara's bed. @Sara pulls the covers over her face, groaning playfully: ","selector":"div.tiptap.ProseMirror"},"href":null,"ts":1776996352276}
+{"kind":"click","target":{"tag":"div","id":"","cls":"tiptap ProseMirror ProseMirror-focused","text":"Close on @Sara's bed. @Sara pulls the covers over her face, groaning playfully: ","selector":"div.tiptap.ProseMirror"},"href":null,"ts":1776996352277}
+{"kind":"click","target":{"tag":"div","id":"","cls":"tiptap ProseMirror ProseMirror-focused","text":"Close on @Sara's bed. @Sara pulls the covers over her face, groaning playfully: ","selector":"div.tiptap.ProseMirror"},"href":null,"ts":1776996352922}
+{"kind":"click","target":{"tag":"div","id":"","cls":"tiptap ProseMirror ProseMirror-focused","text":"Close on @Sara's bed. @Sara pulls the covers over her face, groaning playfully: ","selector":"div.tiptap.ProseMirror"},"href":null,"ts":1776996352923}
+{"kind":"click","target":{"tag":"div","id":"","cls":"tiptap ProseMirror ProseMirror-focused","text":"Two-shot of both beds in @BedroomSisters. @Sara and @Eva exchange a delighted lo","selector":"div.tiptap.ProseMirror"},"href":null,"ts":1776996359925}
+{"kind":"click","target":{"tag":"div","id":"","cls":"tiptap ProseMirror ProseMirror-focused","text":"Two-shot of both beds in @BedroomSisters. @Sara and @Eva exchange a delighted lo","selector":"div.tiptap.ProseMirror"},"href":null,"ts":1776996359925}
+{"kind":"click","target":{"tag":"div","id":"","cls":"tiptap ProseMirror ProseMirror-focused","text":"Two-shot of both beds in @BedroomSisters. @Sara and @Eva exchange a delighted lo","selector":"div.tiptap.ProseMirror"},"href":null,"ts":1776996360488}
+{"kind":"click","target":{"tag":"div","id":"","cls":"tiptap ProseMirror ProseMirror-focused","text":"Two-shot of both beds in @BedroomSisters. @Sara and @Eva exchange a delighted lo","selector":"div.tiptap.ProseMirror"},"href":null,"ts":1776996360488}
+{"kind":"click","target":{"tag":"span","id":"","cls":"","text":"Shot","selector":"span:has-text(\"Shot\")"},"href":null,"ts":1776996363505}
+{"kind":"click","target":{"tag":"span","id":"","cls":"","text":"Shot","selector":"span:has-text(\"Shot\")"},"href":null,"ts":1776996363506}
+{"kind":"click","target":{"tag":"div","id":"","cls":"tiptap ProseMirror ProseMirror-focused","text":"","selector":"div.tiptap.ProseMirror"},"href":null,"ts":1776996370541}
+{"kind":"click","target":{"tag":"div","id":"","cls":"tiptap ProseMirror ProseMirror-focused","text":"","selector":"div.tiptap.ProseMirror"},"href":null,"ts":1776996370542}
+{"kind":"click","target":{"tag":"div","id":"","cls":"","text":"1080p · 5s · 1","selector":"div:has-text(\"1080p · 5s · 1\")"},"href":null,"ts":1776996372919}
+{"kind":"click","target":{"tag":"div","id":"","cls":"","text":"1080p · 5s · 1","selector":"div:has-text(\"1080p · 5s · 1\")"},"href":null,"ts":1776996372919}
+{"kind":"click","target":{"tag":"body","id":"","cls":"lang-en lang-sgp","text":"Image Generation\nVideo Generation\nMotion Control\nAvatar\nVIDEO 3.0\nSubscribers Ge","selector":"body.lang-en.lang-sgp"},"href":null,"ts":1776996375743}
+{"kind":"click","target":{"tag":"body","id":"","cls":"lang-en lang-sgp","text":"Image Generation\nVideo Generation\nMotion Control\nAvatar\nVIDEO 3.0\nSubscribers Ge","selector":"body.lang-en.lang-sgp"},"href":null,"ts":1776996375744}
+{"kind":"click","target":{"tag":"div","id":"","cls":"inner","text":"720p","selector":"div:has-text(\"720p\")"},"href":null,"ts":1776996376954}
+{"kind":"click","target":{"tag":"div","id":"","cls":"inner","text":"720p","selector":"div:has-text(\"720p\")"},"href":null,"ts":1776996376955}
+{"kind":"click","target":{"tag":"div","id":"","cls":"tiptap ProseMirror ProseMirror-focused","text":"Cut to @Eva's bed. @Eva sits straight up suddenly, her big honey-gold-brown curl","selector":"div.tiptap.ProseMirror"},"href":null,"ts":1776996378871}
+{"kind":"click","target":{"tag":"div","id":"","cls":"tiptap ProseMirror ProseMirror-focused","text":"Cut to @Eva's bed. @Eva sits straight up suddenly, her big honey-gold-brown curl","selector":"div.tiptap.ProseMirror"},"href":null,"ts":1776996378872}
+{"kind":"click","target":{"tag":"input","id":"el-id-1336-296","cls":"el-input__inner","text":"","selector":"#el-id-1336-296"},"href":null,"ts":1776996386692}
+{"kind":"click","target":{"tag":"input","id":"el-id-1336-296","cls":"el-input__inner","text":"","selector":"#el-id-1336-296"},"href":null,"ts":1776996386692}
+{"kind":"input","target":{"tag":"input","id":"el-id-1336-296","cls":"el-input__inner","text":"","selector":"#el-id-1336-296"},"value":"","ts":1776996389422}
+{"kind":"input","target":{"tag":"input","id":"el-id-1336-296","cls":"el-input__inner","text":"","selector":"#el-id-1336-296"},"value":"","ts":1776996389422}
+{"kind":"change","target":{"tag":"input","id":"el-id-1336-296","cls":"el-input__inner","text":"","selector":"#el-id-1336-296"},"value":"2","ts":1776996391622}
+{"kind":"change","target":{"tag":"input","id":"el-id-1336-296","cls":"el-input__inner","text":"","selector":"#el-id-1336-296"},"value":"2","ts":1776996391622}
+{"kind":"click","target":{"tag":"input","id":"el-id-1336-293","cls":"el-input__inner","text":"","selector":"#el-id-1336-293"},"href":null,"ts":1776996391789}
+{"kind":"click","target":{"tag":"input","id":"el-id-1336-293","cls":"el-input__inner","text":"","selector":"#el-id-1336-293"},"href":null,"ts":1776996391789}
+{"kind":"input","target":{"tag":"input","id":"el-id-1336-293","cls":"el-input__inner","text":"","selector":"#el-id-1336-293"},"value":"","ts":1776996392634}
+{"kind":"input","target":{"tag":"input","id":"el-id-1336-293","cls":"el-input__inner","text":"","selector":"#el-id-1336-293"},"value":"","ts":1776996392634}
+{"kind":"change","target":{"tag":"input","id":"el-id-1336-293","cls":"el-input__inner","text":"","selector":"#el-id-1336-293"},"value":"4","ts":1776996395488}
+{"kind":"change","target":{"tag":"input","id":"el-id-1336-293","cls":"el-input__inner","text":"","selector":"#el-id-1336-293"},"value":"4","ts":1776996395488}
+{"kind":"click","target":{"tag":"input","id":"el-id-1336-290","cls":"el-input__inner","text":"","selector":"#el-id-1336-290"},"href":null,"ts":1776996395622}
+{"kind":"click","target":{"tag":"input","id":"el-id-1336-290","cls":"el-input__inner","text":"","selector":"#el-id-1336-290"},"href":null,"ts":1776996395622}
+{"kind":"input","target":{"tag":"input","id":"el-id-1336-290","cls":"el-input__inner","text":"","selector":"#el-id-1336-290"},"value":"","ts":1776996397089}
+{"kind":"input","target":{"tag":"input","id":"el-id-1336-290","cls":"el-input__inner","text":"","selector":"#el-id-1336-290"},"value":"","ts":1776996397090}
+{"kind":"change","target":{"tag":"input","id":"el-id-1336-290","cls":"el-input__inner","text":"","selector":"#el-id-1336-290"},"value":"5","ts":1776996403942}
+{"kind":"change","target":{"tag":"input","id":"el-id-1336-290","cls":"el-input__inner","text":"","selector":"#el-id-1336-290"},"value":"5","ts":1776996403942}
+{"kind":"click","target":{"tag":"input","id":"el-id-1336-289","cls":"el-input__inner","text":"","selector":"#el-id-1336-289"},"href":null,"ts":1776996404074}
+{"kind":"click","target":{"tag":"input","id":"el-id-1336-289","cls":"el-input__inner","text":"","selector":"#el-id-1336-289"},"href":null,"ts":1776996404074}
+{"kind":"click","target":{"tag":"div","id":"","cls":"inner","text":"135\nGenerate","selector":"div:has-text(\"135\nGenerate\")"},"href":null,"ts":1776996417055}
+{"kind":"click","target":{"tag":"div","id":"","cls":"inner","text":"135\nGenerate","selector":"div:has-text(\"135\nGenerate\")"},"href":null,"ts":1776996417056}

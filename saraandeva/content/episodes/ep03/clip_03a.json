@@ -1,0 +1,33 @@
+{
+  "episode": 3,
+  "beat": 3,
+  "microClip": "a",
+  "title": "SEARCH 1 — Sara reads FRAGILE sticker (READING beat)",
+  "_educationalBeat": "literacy — Sara is a B-level reader, sounds out F-R-A-G-I-L-E letter by letter then says the word",
+  "mode": "omni",
+  "durationSec": 10,
+  "quality": "720p",
+  "nativeAudio": true,
+  "expectedCredits": 90,
+  "subjects": [
+    "Sara",
+    "Eva"
+  ],
+  "scene": "livingroom",
+  "boundElements": [
+    {
+      "tag": "Sara",
+      "source": "library"
+    },
+    {
+      "tag": "Eva",
+      "source": "library"
+    },
+    {
+      "tag": "livingroom",
+      "source": "library"
+    }
+  ],
+  "prompt": "Medium close-up in @livingroom. @Sara on the LEFT crouches down holding the chewed brown package on her lap, examining a red FRAGILE sticker on the side. @Eva on the RIGHT leans in over Sara's shoulder, finger pointing at the sticker. Sara (slowly, sounding out): \"Look, there's a sticker. F... R... A... G... I... L... E.\" Sara (proudly): \"FRAGILE!\" Eva: \"What does that mean?\" Sara: \"It means be careful!\" Warm reading-corner light, books on the table behind them.",
+  "negativePrompt": "duplicate character, twin, clone, two of the same, mirrored figure, second father, second mother, two Papa, two Mama, identical adults, extra people, third child, second sister, second sara, second eva, dogs visible, baby doll, stuffed toy, blank sticker, no text on sticker"
+}
