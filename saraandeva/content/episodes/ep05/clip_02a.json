@@ -1,0 +1,32 @@
+{
+  "episode": 5,
+  "beat": 2,
+  "microClip": "a",
+  "title": "DISCOVERY 1 — READING beat",
+  "mode": "omni",
+  "durationSec": 15,
+  "quality": "720p",
+  "nativeAudio": true,
+  "expectedCredits": 135,
+  "subjects": [
+    "Sara",
+    "Eva"
+  ],
+  "scene": "dream-house",
+  "boundElements": [
+    {
+      "tag": "Sara",
+      "source": "library"
+    },
+    {
+      "tag": "Eva",
+      "source": "library"
+    },
+    {
+      "tag": "dream-house",
+      "source": "library"
+    }
+  ],
+  "prompt": "Medium close-up in @dream-house. @Sara on the LEFT crouches in front of the Dream House, finger tracing the glittery pink letters on a sign across the front. @Eva on the RIGHT leans over Sara's shoulder watching. Sara (slowly, sounding out): \"D… O… L… L. DOLL!\" Sara: \"D… R… E… A… M. DREAM!\" Sara (proudly): \"DOLL DREAM HOUSE!\" Eva (clapping): \"Hooray Sara!\" Warm morning light.",
+  "negativePrompt": "duplicate character, twin, clone, two of the same, mirrored figure, second father, second mother, two Papa, two Mama, identical adults, extra people, third child, second sister, second sara, second eva, two eva, duplicate eva"
+}

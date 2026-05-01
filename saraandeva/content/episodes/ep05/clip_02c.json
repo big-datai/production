@@ -1,0 +1,27 @@
+{
+  "episode": 5,
+  "beat": 2,
+  "microClip": "c",
+  "title": "DISCOVERY 3 — Eva's reaction",
+  "mode": "omni",
+  "durationSec": 10,
+  "quality": "720p",
+  "nativeAudio": true,
+  "expectedCredits": 90,
+  "subjects": [
+    "Eva"
+  ],
+  "scene": "dream-house",
+  "boundElements": [
+    {
+      "tag": "Eva",
+      "source": "library"
+    },
+    {
+      "tag": "dream-house",
+      "source": "library"
+    }
+  ],
+  "prompt": "Medium close-up in @dream-house. @Eva bounces on her toes, hands clasped under her chin, eyes huge with excitement. The Dream House sits center-back, just out of focus. Eva (overflowing): \"It's the BIGGEST house I ever saw! Can I see it, can I, can I, CAN I?!\" Eva (turning to camera, hands up): \"Pleeeease!\" Bright morning light.",
+  "negativePrompt": "duplicate character, twin, clone, two of the same, mirrored figure, second father, second mother, two Papa, two Mama, identical adults, extra people, third child, second sister, second sara, second eva, two eva, duplicate eva"
+}

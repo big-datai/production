@@ -1,0 +1,13 @@
+{
+  "klingId": 530,
+  "status": "keep",
+  "mappedTo": "clip_04a",
+  "spec": "Peer under the bunk bed",
+  "rendered": "Eva on top bunk with small Jack-Russell-style dog (real Ginger likely)",
+  "rejectReason": null,
+  "reviewedBy": "dave",
+  "reviewedAt": "2026-04-27T19:57:21.866Z",
+  "usedIn": [
+    "ep02_v3"
+  ]
+}

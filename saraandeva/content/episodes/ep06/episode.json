@@ -1,0 +1,87 @@
+{
+  "episode": 6,
+  "title": "The Bagel Burglar (and Eva's First Ride!)",
+  "logline": "Ginger turns out to be the Bagel Burglar — burying breakfast in the flowerbed. The family cracks the case while Sara reads on the goreadling iPad. Plus: Eva finally rides her two-wheel bike!",
+  "realLifeSeed": "On 2026-04-29, dad threw 5 small bagels in the backyard for the birds. Ginger picked them up one by one and buried them next to the flowers, pushing dirt with her nose. Sara and dad watched through the kitchen window while reading 'A New Pet' Level D on the goreadling iPad app. Later that day, Eva finally rode her white 2-wheel bike with helmet, after many tries.",
+  "mode": "omni",
+  "durationTotal": "~3:00",
+  "expectedCreditsTotal": 1755,
+  "reuse": {
+    "intro": {
+      "source": "season_01/intro/",
+      "clips": ["intro_sara.mp4", "intro_eva.mp4", "intro_mama.mp4"],
+      "totalDuration": "~16s",
+      "playOrder": "Sara → Eva → Mama (matches ep01 'Meet the family' order)",
+      "appliesTo": "every episode from ep06 onward — prepended at the very start of the assembled video"
+    },
+    "outro": {
+      "source": "season_01/OUTRO/",
+      "clips": ["17.mp4", "18.mp4"],
+      "totalDuration": "~20s",
+      "playOrder": "17 (subscribe wave) → 18 (button point)",
+      "appliesTo": "every episode from ep06 onward — appended at the very end of the assembled video"
+    },
+    "savings": "Vs re-rendering intro (3×~5s = 135 cr) and outro (2×10s = 180 cr) per episode: saves ~315 credits per episode (~$15)."
+  },
+  "newBoundElements": [
+    { "tag": "eva-bike", "source": "library", "asset": "assets/scenes/eva_bike.png", "purpose": "Eva's white 2-wheel kid's bike + white helmet on handlebar — recurring prop for bike scenes" },
+    { "tag": "ipad", "source": "library", "asset": "assets/scenes/goreadling_ipad.png", "purpose": "iPad showing the goreadling app open to 'A New Pet' Level D — recurring prop for any reading-on-iPad shot" }
+  ],
+  "scenes": ["backyard", "kitchen-morning", "bike-circle"],
+  "cast": ["Sara", "Eva", "Mama", "Papa", "Ginger"],
+  "arc": [
+    {
+      "beat": 1,
+      "name": "HOOK — The Bagel Burglar",
+      "purpose": "Audience-only POV: Ginger swipes a bagel, digs a hole by the petunias, buries it with her nose. Family offscreen.",
+      "clips": [1, 2, 3]
+    },
+    {
+      "beat": 2,
+      "name": "DISCOVERY — Reading + Spotting",
+      "purpose": "Sara reads 'A New Pet' aloud on goreadling iPad with Papa. Through the kitchen window they spot Ginger digging. Eva runs up.",
+      "clips": [4, 5, 6]
+    },
+    {
+      "beat": 3,
+      "name": "SEARCH — Clues in the Flowerbed",
+      "purpose": "Family approaches; Ginger looks innocent; Sara reads plant marker 'PETUNIAS'; Eva counts bagel mounds.",
+      "clips": [7, 8, 9, 10]
+    },
+    {
+      "beat": 4,
+      "name": "EUREKA — Five Bagels Found",
+      "purpose": "All 5 bagels uncovered in a row on the grass; Mama explains 'Ginger thinks she's sharing breakfast with the flowers'; Sara hugs Ginger.",
+      "clips": [11, 12, 13]
+    },
+    {
+      "beat": 5,
+      "name": "B-PLOT — Eva's First Two-Wheel Ride",
+      "purpose": "Later that day. Eva on her white bike + helmet, Papa holding the seat → Papa lets go → Eva pedals solo: 'I DID IT!' Family cheers.",
+      "clips": [14, 15, 16]
+    },
+    {
+      "beat": 6,
+      "name": "CLIFFHANGER",
+      "purpose": "Ginger eyes the next bagel-stash spot through the fence. Subscribe-bait.",
+      "clips": [17]
+    },
+    {
+      "beat": 7,
+      "name": "OUTRO (reused from ep05)",
+      "purpose": "Sara + Eva subscribe call-to-action. NOT re-rendered — copy ep05/clips/17.mp4 → ep06/clips/18.mp4 and ep05/clips/18.mp4 → ep06/clips/19.mp4 at assembly time.",
+      "clips": [18, 19],
+      "reusedFrom": {
+        "episode": 5,
+        "mapping": { "18": "season_01/episode_05/clips/17.mp4", "19": "season_01/episode_05/clips/18.mp4" }
+      }
+    }
+  ],
+  "rules": {
+    "maxBoundPerClip": 7,
+    "maxTagMentionsPerCharacter": 1,
+    "negativePromptRequired": "duplicate character, twin, clone, two of the same, mirrored figure, second father, second mother, two Papa, two Mama, identical adults, extra people, third child, second sister, second sara, second eva, two eva, duplicate eva, second ginger, two ginger",
+    "forbiddenPhrases": ["race", "chase", "high-five", "group of", "crowd", "family of", "enters", "arriving", "mirrored figure"],
+    "promptTemplate": "[Shot type] in @scene. @CharA on the LEFT [verb + object]: \"dialogue\". @CharB on the RIGHT [verb + object]: \"dialogue\". [Lighting/mood]"
+  }
+}

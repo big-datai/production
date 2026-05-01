@@ -1,0 +1,13 @@
+{
+  "klingId": 519,
+  "status": "keep",
+  "mappedTo": "clip_03b",
+  "spec": "Sara reads syrup smudge: G-I-N-G-E-R",
+  "rendered": "Eva at chalkboard with ABC letters visible",
+  "rejectReason": null,
+  "reviewedBy": "dave",
+  "reviewedAt": "2026-04-27T19:57:21.866Z",
+  "usedIn": [
+    "ep02_v3"
+  ]
+}

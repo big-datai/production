@@ -1,0 +1,27 @@
+{
+  "episode": 6,
+  "beat": 1,
+  "clip": 1,
+  "title": "HOOK 1 — Ginger swipes a bagel",
+  "mode": "omni",
+  "durationSec": 10,
+  "quality": "720p",
+  "nativeAudio": true,
+  "expectedCredits": 90,
+  "subjects": [
+    "Ginger"
+  ],
+  "scene": "backyard-kitchen",
+  "boundElements": [
+    {
+      "tag": "Ginger",
+      "source": "library"
+    },
+    {
+      "tag": "backyard-kitchen",
+      "source": "library"
+    }
+  ],
+  "prompt": "Wide low-angle shot in @backyard-kitchen, locked camera, soft mid-morning sunlight on the grass. @Ginger trots into frame from screen-right with a small golden bagel held proudly in her teeth, tail wagging high, ears perked. She slows near a flowerbed of pink and purple petunias center-frame, sniffs the soil, then sets the bagel down carefully on the dirt. Ginger: \"Mmf-mmf!\" Quick playful music sting, no humans visible.",
+  "negativePrompt": "duplicate character, twin, clone, two of the same, mirrored figure, second father, second mother, two Papa, two Mama, identical adults, extra people, third child, second sister, second sara, second eva, two eva, duplicate eva, second ginger, two ginger, second dog, two dogs, mirror reflection, human, person, hands, child, kid"
+}

@@ -1,0 +1,13 @@
+{
+  "klingId": 526,
+  "status": "keep",
+  "mappedTo": "clip_03f",
+  "spec": "Sara reads P-A-W",
+  "rendered": "Sisters walking through hallway/livingroom",
+  "rejectReason": null,
+  "reviewedBy": "dave",
+  "reviewedAt": "2026-04-27T19:57:21.866Z",
+  "usedIn": [
+    "ep02_v3"
+  ]
+}

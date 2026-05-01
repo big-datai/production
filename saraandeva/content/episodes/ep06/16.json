@@ -1,0 +1,31 @@
+{
+  "episode": 6,
+  "beat": 5,
+  "clip": 16,
+  "title": "B-PLOT 3 — Eva celebrates",
+  "mode": "omni",
+  "durationSec": 10,
+  "quality": "720p",
+  "nativeAudio": true,
+  "expectedCredits": 90,
+  "subjects": [
+    "Eva"
+  ],
+  "scene": "bike_circle",
+  "boundElements": [
+    {
+      "tag": "Eva",
+      "source": "library"
+    },
+    {
+      "tag": "eva-bike",
+      "source": "library"
+    },
+    {
+      "tag": "bike_circle",
+      "source": "library"
+    }
+  ],
+  "prompt": "Medium close-up in @bike_circle, golden hour light. @Eva straddles @eva-bike with one foot down on the pavement, white helmet pushed back slightly off the forehead, both fists raised over head in triumph, biggest smile. Off-camera cheers and clapping from family. Eva (yelling, beaming): \"I DID IT! ALL BY MYSELF!\" Sun-flare effect, triumphant music sting.",
+  "negativePrompt": "duplicate character, twin, clone, two of the same, mirrored figure, second father, second mother, two Papa, two Mama, identical adults, extra people, third child, second sister, second sara, second eva, two eva, duplicate eva, second bike, two bikes, training wheels, mirror reflection"
+}

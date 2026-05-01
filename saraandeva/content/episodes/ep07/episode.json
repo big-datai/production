@@ -1,0 +1,42 @@
+{
+  "episode": 7,
+  "title": "The Best Mother's Day Present",
+  "logline": "Papa and the girls plan a perfect breakfast-in-bed surprise for Mama. Eva trips. The tray flies. Eva cries that she ruined Mother's Day. Sara has a better idea — and the family makes the gift Mama actually wants: a coupon book for one whole day together, no perfect breakfast required.",
+  "formulaReference": "Bluey 'The Show' (Mother's Day, IMDb 9.0) — disaster → emotional crisis → creative-kid pivot → tear-up-mom heart line → family-day montage → cliffhanger.",
+  "mode": "omni",
+  "durationTotal": "~3:51",
+  "expectedCreditsTotal": 1755,
+  "newBoundElements": [
+    { "tag": "coupon-book", "source": "library", "asset": "assets/scenes/coupon_book.png", "purpose": "Hand-decorated kid-made Mother's Day coupon book — recurring prop in the craft + present + heart beats" }
+  ],
+  "scenes": ["living-room", "kitchen", "dining-room", "backyard"],
+  "cast": ["Sara", "Eva", "Mama", "Papa", "Ginger"],
+  "reuse": {
+    "intro": {
+      "source": "season_01/intro/",
+      "clips": ["intro_song.mp4", "intro_sara.mp4", "intro_eva.mp4", "intro_mama.mp4"],
+      "totalDuration": "~31s",
+      "playOrder": "Theme song → Sara → Eva → Mama"
+    },
+    "outro": {
+      "source": "season_01/OUTRO/",
+      "clips": ["17.mp4", "18.mp4"],
+      "totalDuration": "~20s"
+    }
+  },
+  "arc": [
+    { "beat": 1, "name": "HOOK — The Plan", "purpose": "Papa + girls huddle to plan Mother's Day breakfast surprise. Sister-pitch comedy.", "clips": [1, 2, 3] },
+    { "beat": 2, "name": "DISASTER — The Tray Flies", "purpose": "Mother's Day dawn. Tiptoe with breakfast tray → Eva trips → tray crashes → Eva cries 'I RUINED IT'.", "clips": [4, 5, 6] },
+    { "beat": 3, "name": "PIVOT — Sara's Plan", "purpose": "Mama hears, comes to comfort. Sara's eyes light up: 'I have a PLAN.' Whisper plan to Eva + Papa.", "clips": [7, 8, 9] },
+    { "beat": 4, "name": "CRAFT — The Coupon Book", "purpose": "Sara + Eva at dining table making the kid-decorated coupon book.", "clips": [10, 11, 12] },
+    { "beat": 5, "name": "PRESENT + HEART LINE", "purpose": "Tiptoe in with coupon book + dandelion. Mama opens it, reads each coupon, tears up. THE viral line.", "clips": [13, 14] },
+    { "beat": 6, "name": "FAMILY DAY", "purpose": "Picnic in the backyard. Living-room dance with Mama Song.", "clips": [15, 16] },
+    { "beat": 7, "name": "CLIFFHANGER", "purpose": "Late afternoon. Papa whispers: '...you know what's coming next, right?' Sara: 'Father's Day?!'", "clips": [17] },
+    { "beat": 8, "name": "OUTRO (reused)", "purpose": "Subscribe pair from season_01/OUTRO/", "clips": ["reused"] }
+  ],
+  "rules": {
+    "maxBoundPerClip": 7,
+    "maxTagMentionsPerCharacter": 1,
+    "negativePromptRequired": "duplicate character, twin, clone, two of the same, mirrored figure, second father, second mother, two Papa, two Mama, identical adults, extra people, third child, second sister, second sara, second eva, two eva, duplicate eva, second ginger, two ginger"
+  }
+}

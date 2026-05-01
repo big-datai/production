@@ -1,0 +1,37 @@
+{
+  "episode": 6,
+  "beat": 4,
+  "clip": 11,
+  "title": "EUREKA 1 — Five bagels in a row",
+  "mode": "omni",
+  "durationSec": 15,
+  "quality": "720p",
+  "nativeAudio": true,
+  "expectedCredits": 135,
+  "subjects": [
+    "Sara",
+    "Eva",
+    "Mama"
+  ],
+  "scene": "backyard-kitchen",
+  "boundElements": [
+    {
+      "tag": "Sara",
+      "source": "library"
+    },
+    {
+      "tag": "Eva",
+      "source": "library"
+    },
+    {
+      "tag": "Mama",
+      "source": "library"
+    },
+    {
+      "tag": "backyard-kitchen",
+      "source": "library"
+    }
+  ],
+  "prompt": "Wide shot in @backyard-kitchen, soft golden afternoon light on the lawn. Five small golden bagels lie in a neat row on the grass center-frame. @Sara on the LEFT stands smiling proudly with hands on hips. @Eva on the RIGHT bounces happily on her toes with arms wide. @Mama kneels in the CENTER behind the bagel row, smiling warmly with both hands clasped. Sara: \"We solved it!\" Eva (giggling): \"Five whole bagel mysteries!\" Mama (laughing): \"My little detectives!\"",
+  "negativePrompt": "duplicate character, twin, clone, two of the same, mirrored figure, second father, second mother, two Papa, two Mama, identical adults, extra people, third child, second sister, second sara, second eva, two eva, duplicate eva, second ginger, two ginger, mirror reflection"
+}

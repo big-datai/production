@@ -1,0 +1,27 @@
+{
+  "episode": 6,
+  "beat": 3,
+  "clip": 10,
+  "title": "SEARCH 4 — Sara digs up the first bagel",
+  "mode": "omni",
+  "durationSec": 10,
+  "quality": "720p",
+  "nativeAudio": true,
+  "expectedCredits": 90,
+  "subjects": [
+    "Sara"
+  ],
+  "scene": "backyard-kitchen",
+  "boundElements": [
+    {
+      "tag": "Sara",
+      "source": "library"
+    },
+    {
+      "tag": "backyard-kitchen",
+      "source": "library"
+    }
+  ],
+  "prompt": "Medium close-up in @backyard-kitchen. @Sara kneels in the dirt of the petunia flowerbed, both hands gently brushing soil aside. A small golden bagel emerges from the dirt. Sara holds it up triumphantly with both hands, jaw dropping in delight. Sara (giggling): \"It's a BAGEL! A bagel from the dirt!\" Soft afternoon sunlight, no other people visible.",
+  "negativePrompt": "duplicate character, twin, clone, two of the same, mirrored figure, second father, second mother, two Papa, two Mama, identical adults, extra people, third child, second sister, second sara, second eva, two eva, duplicate eva, second ginger, two ginger, mirror reflection"
+}

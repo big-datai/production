@@ -1,0 +1,27 @@
+{
+  "episode": 5,
+  "beat": 5,
+  "microClip": "a",
+  "title": "CLIFFHANGER — Ginger eyes mini-latch",
+  "mode": "omni",
+  "durationSec": 10,
+  "quality": "720p",
+  "nativeAudio": true,
+  "expectedCredits": 90,
+  "subjects": [
+    "Ginger"
+  ],
+  "scene": "dream-house",
+  "boundElements": [
+    {
+      "tag": "Ginger",
+      "source": "library"
+    },
+    {
+      "tag": "dream-house",
+      "source": "library"
+    }
+  ],
+  "prompt": "Close-up in @dream-house. @Ginger sits in the foreground, head tilted, eyes locked on a tiny wooden latch on the front door of the Dream House. She lifts one paw, sniffing the tiny latch curiously. Ginger: \"Woof?\" Mischievous music sting, slight zoom-in. The Dream House behind her glows warmly.",
+  "negativePrompt": "duplicate character, twin, clone, two of the same, mirrored figure, second father, second mother, two Papa, two Mama, identical adults, extra people, third child, second sister, second sara, second eva, two eva, duplicate eva, kids visible, sara visible, eva visible"
+}

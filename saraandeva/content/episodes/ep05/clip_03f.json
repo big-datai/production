@@ -1,0 +1,27 @@
+{
+  "episode": 5,
+  "beat": 3,
+  "microClip": "f",
+  "title": "FUNNY 2 — Joe disappears into a room",
+  "mode": "omni",
+  "durationSec": 10,
+  "quality": "720p",
+  "nativeAudio": true,
+  "expectedCredits": 90,
+  "subjects": [
+    "Joe"
+  ],
+  "scene": "dream-house",
+  "boundElements": [
+    {
+      "tag": "Joe",
+      "source": "library"
+    },
+    {
+      "tag": "dream-house",
+      "source": "library"
+    }
+  ],
+  "prompt": "Wide shot in @dream-house. @Joe trots into a tiny open-front room of the Dream House — the doorway is just big enough for the small fluffy white-tan Pomeranian to disappear inside. Only his fluffy tail sticks out, wagging happily. Joe (muffled, from inside): \"Yip yip!\" Bright living-room light, comedic music.",
+  "negativePrompt": "duplicate character, twin, clone, two of the same, mirrored figure, second father, second mother, two Papa, two Mama, identical adults, extra people, third child, second sister, second sara, second eva, two eva, duplicate eva, kids visible, sara visible, eva visible, ginger visible"
+}

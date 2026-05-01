@@ -1,0 +1,13 @@
+{
+  "klingId": 521,
+  "status": "keep",
+  "mappedTo": "clip_02d",
+  "spec": "Sara reasons through the case",
+  "rendered": "Empty kitchen + Eva walking through livingroom at end",
+  "rejectReason": null,
+  "reviewedBy": "dave",
+  "reviewedAt": "2026-04-27T19:57:21.866Z",
+  "usedIn": [
+    "ep02_v3"
+  ]
+}

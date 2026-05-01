@@ -1,0 +1,32 @@
+{
+  "episode": 5,
+  "beat": 1,
+  "microClip": "a",
+  "title": "HOOK 1 — Birthday reveal (blindfold off)",
+  "mode": "omni",
+  "durationSec": 10,
+  "quality": "720p",
+  "nativeAudio": true,
+  "expectedCredits": 90,
+  "subjects": [
+    "Sara",
+    "Mama"
+  ],
+  "scene": "dream-house",
+  "boundElements": [
+    {
+      "tag": "Sara",
+      "source": "library"
+    },
+    {
+      "tag": "Mama",
+      "source": "library"
+    },
+    {
+      "tag": "dream-house",
+      "source": "library"
+    }
+  ],
+  "prompt": "Wide shot in @dream-house. @Mama on the LEFT gently guides @Sara into the frame from screen-right with one hand, Sara's eyes covered by Mama's other hand. The giant pink-and-purple doll Dream House sits center, wrapped with a huge sparkly bow. Balloons float overhead. Mama: \"Three… two… one… open your eyes, birthday girl!\" Sara (eyes opening, jaw drops): \"Mama!!!\" Bright morning sunlight, party music sting.",
+  "negativePrompt": "duplicate character, twin, clone, two of the same, mirrored figure, second father, second mother, two Papa, two Mama, identical adults, extra people, third child, second sister, second sara, second eva, two eva, duplicate eva"
+}

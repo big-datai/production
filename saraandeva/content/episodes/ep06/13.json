@@ -1,0 +1,32 @@
+{
+  "episode": 6,
+  "beat": 4,
+  "clip": 13,
+  "title": "EUREKA 3 — Sara hugs Ginger",
+  "mode": "omni",
+  "durationSec": 10,
+  "quality": "720p",
+  "nativeAudio": true,
+  "expectedCredits": 90,
+  "subjects": [
+    "Sara",
+    "Ginger"
+  ],
+  "scene": "backyard-kitchen",
+  "boundElements": [
+    {
+      "tag": "Sara",
+      "source": "library"
+    },
+    {
+      "tag": "Ginger",
+      "source": "library"
+    },
+    {
+      "tag": "backyard-kitchen",
+      "source": "library"
+    }
+  ],
+  "prompt": "Medium close-up in @backyard-kitchen. @Sara kneels on the grass and wraps both arms around @Ginger in a warm hug, faces close, both smiling huge. The petunia flowerbed visible center-back. Sara (giggling): \"Silly girl! No more hiding bagels, OK?\" Ginger licks happily and pants: \"Yip yip!\" Soft golden afternoon light.",
+  "negativePrompt": "duplicate character, twin, clone, two of the same, mirrored figure, second father, second mother, two Papa, two Mama, identical adults, extra people, third child, second sister, second sara, second eva, two eva, duplicate eva, second ginger, two ginger, second dog, two dogs, mirror reflection"
+}

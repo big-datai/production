@@ -1,0 +1,37 @@
+{
+  "episode": 6,
+  "beat": 3,
+  "clip": 7,
+  "title": "SEARCH 1 — Family approaches, Ginger looks innocent",
+  "mode": "omni",
+  "durationSec": 10,
+  "quality": "720p",
+  "nativeAudio": true,
+  "expectedCredits": 90,
+  "subjects": [
+    "Sara",
+    "Eva",
+    "Ginger"
+  ],
+  "scene": "backyard-kitchen",
+  "boundElements": [
+    {
+      "tag": "Sara",
+      "source": "library"
+    },
+    {
+      "tag": "Eva",
+      "source": "library"
+    },
+    {
+      "tag": "Ginger",
+      "source": "library"
+    },
+    {
+      "tag": "backyard-kitchen",
+      "source": "library"
+    }
+  ],
+  "prompt": "Wide low-angle shot in @backyard-kitchen, soft afternoon sunlight. @Sara on the LEFT stops on the lawn looking suspiciously toward the flowerbed. @Eva on the RIGHT stops beside her sister, hands on hips. @Ginger sits in the CENTER of the frame near the petunias trying to look innocent — eyes huge, ears perked, tail unmoving, a tiny patch of dirt on her snout. Sara (squinting): \"Hmmm…\" Eva: \"Something happened here!\" Playful suspense music.",
+  "negativePrompt": "duplicate character, twin, clone, two of the same, mirrored figure, second father, second mother, two Papa, two Mama, identical adults, extra people, third child, second sister, second sara, second eva, two eva, duplicate eva, second ginger, two ginger, second dog, two dogs, mirror reflection"
+}

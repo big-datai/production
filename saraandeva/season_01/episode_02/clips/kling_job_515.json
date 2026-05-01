@@ -1,0 +1,13 @@
+{
+  "klingId": 515,
+  "status": "keep",
+  "mappedTo": "clip_02b",
+  "spec": "Sara: Wait — I have a plan!",
+  "rendered": "Empty kitchen most frames, Sara+Eva at end",
+  "rejectReason": null,
+  "reviewedBy": "dave",
+  "reviewedAt": "2026-04-27T19:57:21.866Z",
+  "usedIn": [
+    "ep02_v3"
+  ]
+}

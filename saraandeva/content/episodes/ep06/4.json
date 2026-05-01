@@ -1,0 +1,36 @@
+{
+  "episode": 6,
+  "beat": 2,
+  "clip": 4,
+  "title": "DISCOVERY 1 — Sara reads on the goreadling iPad",
+  "mode": "omni",
+  "durationSec": 15,
+  "quality": "720p",
+  "nativeAudio": true,
+  "expectedCredits": 135,
+  "subjects": [
+    "Sara",
+    "Papa"
+  ],
+  "scene": "kitchen",
+  "boundElements": [
+    {
+      "tag": "Sara",
+      "source": "library"
+    },
+    {
+      "tag": "Papa",
+      "source": "library"
+    },
+    {
+      "tag": "ipad",
+      "source": "library"
+    },
+    {
+      "tag": "kitchen",
+      "source": "library"
+    }
+  ],
+  "prompt": "Medium two-shot at the @kitchen table, warm sunlight from the kitchen window behind. @Sara on the LEFT sits cross-legged on a kitchen chair, holding @ipad in both hands and tracing the words on the screen with her finger as she reads aloud, slowly and proudly: \"Olivia had been asking for a pet… for a very long time.\" @Papa on the RIGHT leans in beside her smiling warmly with a coffee mug, gently nodding: \"Beautiful reading, sweetheart.\" Cozy domestic mood, soft cheerful music.",
+  "negativePrompt": "duplicate character, twin, clone, two of the same, mirrored figure, second father, second mother, two Papa, two Mama, identical adults, extra people, third child, second sister, second sara, second eva, two eva, duplicate eva, second ginger, two ginger, second ipad, two ipads, mirror reflection, blurry text, lorem ipsum"
+}

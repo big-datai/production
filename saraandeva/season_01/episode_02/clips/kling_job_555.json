@@ -1,0 +1,13 @@
+{
+  "klingId": 555,
+  "status": "keep",
+  "mappedTo": "clip_06a",
+  "spec": "SUBSCRIBE OUTRO — direct to camera",
+  "rendered": "Sara+Eva facing camera 'Subscribe so you don't miss new videos!'",
+  "rejectReason": null,
+  "reviewedBy": "dave",
+  "reviewedAt": "2026-04-27T19:57:21.866Z",
+  "usedIn": [
+    "ep02_v3"
+  ]
+}

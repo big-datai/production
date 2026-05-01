@@ -1,0 +1,32 @@
+{
+  "episode": 5,
+  "beat": 3,
+  "microClip": "a",
+  "title": "EXPLORE 1 — KITCHEN room label",
+  "mode": "omni",
+  "durationSec": 10,
+  "quality": "720p",
+  "nativeAudio": true,
+  "expectedCredits": 90,
+  "subjects": [
+    "Sara",
+    "Eva"
+  ],
+  "scene": "dream-house",
+  "boundElements": [
+    {
+      "tag": "Sara",
+      "source": "library"
+    },
+    {
+      "tag": "Eva",
+      "source": "library"
+    },
+    {
+      "tag": "dream-house",
+      "source": "library"
+    }
+  ],
+  "prompt": "Close-up in @dream-house. @Sara on the LEFT crouches in front of one floor of the Dream House, finger pointing at a tiny printed sign on a pink mini door that reads \"KITCHEN\". @Eva on the RIGHT peers in over her shoulder. Sara (slowly): \"K… I… T… C… H… E… N. KITCHEN!\" Sara (giggling): \"There's even a tiny kitchen!\" Eva: \"I want to see!\" Warm morning light.",
+  "negativePrompt": "duplicate character, twin, clone, two of the same, mirrored figure, second father, second mother, two Papa, two Mama, identical adults, extra people, third child, second sister, second sara, second eva, two eva, duplicate eva"
+}

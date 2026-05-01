@@ -1,0 +1,27 @@
+{
+  "episode": 5,
+  "beat": 3,
+  "microClip": "e",
+  "title": "FUNNY 1 — Ginger sniffs mini-bed",
+  "mode": "omni",
+  "durationSec": 10,
+  "quality": "720p",
+  "nativeAudio": true,
+  "expectedCredits": 90,
+  "subjects": [
+    "Ginger"
+  ],
+  "scene": "dream-house",
+  "boundElements": [
+    {
+      "tag": "Ginger",
+      "source": "library"
+    },
+    {
+      "tag": "dream-house",
+      "source": "library"
+    }
+  ],
+  "prompt": "Low-angle close-up in @dream-house. @Ginger pokes her head into a tiny pink mini-bed inside one floor of the Dream House — the bed is too small for her, she barely fits her snout in. Tail wagging. Off to the side, a small doll lies fallen on the floor where Ginger knocked it over. Ginger: \"Woof?\" Mischievous music sting.",
+  "negativePrompt": "duplicate character, twin, clone, two of the same, mirrored figure, second father, second mother, two Papa, two Mama, identical adults, extra people, third child, second sister, second sara, second eva, two eva, duplicate eva, kids visible, sara visible, eva visible"
+}

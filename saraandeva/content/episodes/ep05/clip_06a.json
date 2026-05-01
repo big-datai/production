@@ -1,0 +1,32 @@
+{
+  "episode": 5,
+  "beat": 6,
+  "microClip": "a",
+  "title": "OUTRO — Subscribe",
+  "mode": "omni",
+  "durationSec": 10,
+  "quality": "720p",
+  "nativeAudio": true,
+  "expectedCredits": 90,
+  "subjects": [
+    "Sara",
+    "Eva"
+  ],
+  "scene": "living-room",
+  "boundElements": [
+    {
+      "tag": "Sara",
+      "source": "library"
+    },
+    {
+      "tag": "Eva",
+      "source": "library"
+    },
+    {
+      "tag": "living-room",
+      "source": "library"
+    }
+  ],
+  "prompt": "Medium two-shot in @living-room. @Sara on the LEFT and @Eva on the RIGHT face directly toward the camera, smiling brightly, both waving with both hands. Sara (cheerful): \"Subscribe so you don't miss new videos!\" Eva (excited): \"New episodes every week!\" Bright friendly outro lighting, steady centered framing.",
+  "negativePrompt": "duplicate character, twin, clone, two of the same, mirrored figure, second father, second mother, two Papa, two Mama, identical adults, extra people, third child, second sister, second sara, second eva, two eva, duplicate eva"
+}

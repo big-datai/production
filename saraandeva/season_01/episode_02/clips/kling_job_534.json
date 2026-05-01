@@ -1,0 +1,13 @@
+{
+  "klingId": 534,
+  "status": "keep",
+  "mappedTo": "clip_04d",
+  "spec": "Sharing a pancake with Ginger",
+  "rendered": "Joe close-up frame 1 → Ginger close-ups frames 2-5",
+  "rejectReason": null,
+  "reviewedBy": "dave",
+  "reviewedAt": "2026-04-27T19:57:21.866Z",
+  "usedIn": [
+    "ep02_v3"
+  ]
+}

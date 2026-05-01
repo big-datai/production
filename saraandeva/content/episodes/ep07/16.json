@@ -1,0 +1,21 @@
+{
+  "episode": 7,
+  "beat": 6,
+  "clip": 16,
+  "title": "FAMILY DAY 2 — Living-room dance with Mama Song",
+  "mode": "omni",
+  "durationSec": 10,
+  "quality": "720p",
+  "nativeAudio": true,
+  "expectedCredits": 90,
+  "subjects": ["Sara", "Eva", "Mama"],
+  "scene": "living-room",
+  "boundElements": [
+    { "tag": "Sara", "source": "library" },
+    { "tag": "Eva", "source": "library" },
+    { "tag": "Mama", "source": "library" },
+    { "tag": "living-room", "source": "library" }
+  ],
+  "prompt": "Wide shot in @living-room, golden hour sunlight slanting through the window, a colorful play rug. STRONG bouncy ukulele + handclaps + tambourine kids'-show music plays. @Mama in the CENTER spins joyfully, holding @Sara's hand on the LEFT and @Eva's hand on the RIGHT — all three twirling together in a tight circle, hair flying, laughter ringing. All three singing together brightly: \"Ma-ma-ma-ma LOVES us! Ma-ma-ma-ma HUGS us! Ma-ma-ma-ma — best best BEST!\" Glitter confetti rains. Lens flare. Pure joy.",
+  "negativePrompt": "duplicate character, twin, clone, two of the same, mirrored figure, second father, second mother, two Papa, two Mama, identical adults, extra people, third child, second sister, second sara, second eva, two eva, duplicate eva, silent, no music, mirror reflection"
+}

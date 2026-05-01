@@ -1,0 +1,13 @@
+{
+  "klingId": 480,
+  "status": "keep",
+  "mappedTo": "clip_01a",
+  "spec": "Ginger sneaks into kitchen",
+  "rendered": "Empty kitchen → Ginger appears at window with jar",
+  "rejectReason": null,
+  "reviewedBy": "dave",
+  "reviewedAt": "2026-04-27T19:57:21.866Z",
+  "usedIn": [
+    "ep02_v3"
+  ]
+}

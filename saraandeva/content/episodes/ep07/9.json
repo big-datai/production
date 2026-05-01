@@ -1,0 +1,21 @@
+{
+  "episode": 7,
+  "beat": 3,
+  "clip": 9,
+  "title": "WHISPER PLAN — \"We have something better!\"",
+  "mode": "omni",
+  "durationSec": 10,
+  "quality": "720p",
+  "nativeAudio": true,
+  "expectedCredits": 90,
+  "subjects": ["Sara", "Eva", "Papa"],
+  "scene": "kitchen",
+  "boundElements": [
+    { "tag": "Sara", "source": "library" },
+    { "tag": "Eva", "source": "library" },
+    { "tag": "Papa", "source": "library" },
+    { "tag": "kitchen", "source": "library" }
+  ],
+  "prompt": "Medium shot in @kitchen, three heads close together in a tight conspiratorial huddle. @Sara in the CENTER, eyes shining with excitement. @Eva on the LEFT leans in, tears already drying, eyes growing wide with hope. @Papa on the RIGHT leans in too, eyebrows raising. Sara (whispered, fast, excited): \"We don't NEED a perfect breakfast. We have something WAY better. Come ON, follow me!\" Eva (whispered, sniffling): \"What is it?\" Sara (winking): \"Crayons. We need crayons.\" Cheerful mystery music sting.",
+  "negativePrompt": "duplicate character, twin, clone, two of the same, mirrored figure, second father, second mother, two Papa, two Mama, identical adults, extra people, third child, second sister, second sara, second eva, two eva, duplicate eva, mirror reflection"
+}

@@ -1,0 +1,20 @@
+{
+  "episode": 7,
+  "beat": 2,
+  "clip": 4,
+  "title": "DISASTER 1 — Tiptoe with the breakfast tray",
+  "mode": "omni",
+  "durationSec": 10,
+  "quality": "720p",
+  "nativeAudio": true,
+  "expectedCredits": 90,
+  "subjects": ["Sara", "Eva"],
+  "scene": "kitchen",
+  "boundElements": [
+    { "tag": "Sara", "source": "library" },
+    { "tag": "Eva", "source": "library" },
+    { "tag": "kitchen", "source": "library" }
+  ],
+  "prompt": "Wide low-angle tracking shot in @kitchen, soft pre-dawn blue light from the window, the world quiet and sleepy. @Sara on the LEFT and @Eva on the RIGHT carry a giant white wooden breakfast tray together, holding the side handles between them — the tray loaded with a tall stack of golden pancakes, a tiny vase of yellow dandelions, a glass of orange juice, a pat of butter, and a folded paper card. Sara (whispering, focused): \"Slow. Slow. Like a NINJA.\" Eva (whispering, wobbling slightly): \"Like a quiet quiet ninja.\" Tense playful music. Their tiny socked feet creep along the floor.",
+  "negativePrompt": "duplicate character, twin, clone, two of the same, mirrored figure, second father, second mother, two Papa, two Mama, identical adults, extra people, third child, second sister, second sara, second eva, two eva, duplicate eva, mirror reflection"
+}

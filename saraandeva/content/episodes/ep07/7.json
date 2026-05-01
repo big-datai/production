@@ -1,0 +1,21 @@
+{
+  "episode": 7,
+  "beat": 3,
+  "clip": 7,
+  "title": "COMFORT — Mama hears, comes in",
+  "mode": "omni",
+  "durationSec": 15,
+  "quality": "720p",
+  "nativeAudio": true,
+  "expectedCredits": 135,
+  "subjects": ["Sara", "Eva", "Mama"],
+  "scene": "kitchen",
+  "boundElements": [
+    { "tag": "Sara", "source": "library" },
+    { "tag": "Eva", "source": "library" },
+    { "tag": "Mama", "source": "library" },
+    { "tag": "kitchen", "source": "library" }
+  ],
+  "prompt": "Wide shot in @kitchen, warming morning light. @Mama in the CENTER of the doorway, hair tousled in pajamas, takes in the pancake-mess scene with concerned eyes. She crosses straight to the girls and kneels on the floor, one hand on @Eva on the RIGHT, one hand on @Sara on the LEFT. Mama (gentle, no judgment, full warmth): \"Oh, my sweethearts. Look at me. It's just pancakes. The floor will wash. Are you OK?\" Eva (sniffling into Mama's shoulder): \"We wanted... we wanted it to be PERFECT.\" Mama (whispered, smiling): \"Nothing perfect ever made me as happy as you two.\" Soft warm music swell.",
+  "negativePrompt": "duplicate character, twin, clone, two of the same, mirrored figure, second father, second mother, two Papa, two Mama, identical adults, extra people, third child, second sister, second sara, second eva, two eva, duplicate eva, second dog, mirror reflection"
+}

@@ -1,0 +1,21 @@
+{
+  "episode": 0,
+  "beat": 0,
+  "clip": "intro_song_short",
+  "title": "REPRISE — 5s theme-song hook for mid-episode insertion",
+  "purpose": "Reusable across every episode. Drop in at a beat transition (e.g. between SEARCH and EUREKA) so kids hear the hook again and can sing along. Same song as intro_song, just the chorus.",
+  "mode": "omni",
+  "durationSec": 5,
+  "quality": "720p",
+  "nativeAudio": true,
+  "expectedCredits": 45,
+  "subjects": ["Sara", "Eva"],
+  "scene": "living-room",
+  "boundElements": [
+    { "tag": "Sara", "source": "library" },
+    { "tag": "Eva", "source": "library" },
+    { "tag": "living-room", "source": "library" }
+  ],
+  "prompt": "Quick musical bumper in @living-room — kids'-show theme song reprise, music-dominant. LOUD bright instrumentation: ukulele riff, snappy handclaps, bouncy bass, jingling tambourine, sparkling glockenspiel. BPM 110, bright major key. @Sara on the LEFT and @Eva on the RIGHT pop in frame side-by-side, holding hands and bouncing energetically to the beat, both grinning huge. Both children singing together in joyful unison: \"Sa-ra and E-va! Sa-ra and E-va!\" Glitter confetti burst, stage-lights flash rainbow-colors on the beat. Quick high-energy reprise.",
+  "negativePrompt": "duplicate character, twin, clone, two of the same, mirrored figure, second father, second mother, two Papa, two Mama, identical adults, extra people, third child, second sister, second sara, second eva, two eva, duplicate eva, second ginger, two ginger, mirror reflection, silent, no music, sad music, slow music, scary music, mumbling, off-key, monotone, gibberish lyrics, spoken without music"
+}

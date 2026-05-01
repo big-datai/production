@@ -1,0 +1,21 @@
+{
+  "episode": 7,
+  "beat": 7,
+  "clip": 17,
+  "title": "CLIFFHANGER — Father's Day setup",
+  "mode": "omni",
+  "durationSec": 10,
+  "quality": "720p",
+  "nativeAudio": true,
+  "expectedCredits": 90,
+  "subjects": ["Sara", "Mama", "Papa"],
+  "scene": "living-room",
+  "boundElements": [
+    { "tag": "Sara", "source": "library" },
+    { "tag": "Mama", "source": "library" },
+    { "tag": "Papa", "source": "library" },
+    { "tag": "living-room", "source": "library" }
+  ],
+  "prompt": "Medium close-up in @living-room, late afternoon golden light low and warm, lamp glow. @Mama in the CENTER on the couch holds @Sara on the LEFT curled sleepy against her chest. @Papa on the RIGHT sits on the arm of the couch leaning in, a sly grin growing on his face. Papa (whispered to Sara, conspiratorial): \"You know what's coming next, right? Three weeks from now…\" Sara (one eye opening, sleepy whisper): \"…Father's Day?\" Papa (winking, big mock-serious): \"Father's Day.\" Cheeky comedic music sting. Soft fade.",
+  "negativePrompt": "duplicate character, twin, clone, two of the same, mirrored figure, second father, second mother, two Papa, two Mama, identical adults, extra people, third child, second sister, second sara, second eva, two eva, duplicate eva, mirror reflection"
+}

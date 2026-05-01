@@ -1,0 +1,27 @@
+{
+  "episode": 6,
+  "beat": 3,
+  "clip": 9,
+  "title": "SEARCH 3 — Eva counts mounds 1 to 5",
+  "mode": "omni",
+  "durationSec": 10,
+  "quality": "720p",
+  "nativeAudio": true,
+  "expectedCredits": 90,
+  "subjects": [
+    "Eva"
+  ],
+  "scene": "backyard-kitchen",
+  "boundElements": [
+    {
+      "tag": "Eva",
+      "source": "library"
+    },
+    {
+      "tag": "backyard-kitchen",
+      "source": "library"
+    }
+  ],
+  "prompt": "Top-down high-angle shot in @backyard-kitchen onto the freshly-disturbed soil of the petunia flowerbed. Five small bumps of dark soil sit in a wobbly line. @Eva crouches in the FOREGROUND in a pink shirt, finger touching each mound one by one, counting slowly and excitedly: \"ONE… TWO… THREE… FOUR… FIVE! Five bumpies!\" Eva looks up beaming with both arms in the air. Soft afternoon sunlight, no other people.",
+  "negativePrompt": "duplicate character, twin, clone, two of the same, mirrored figure, second father, second mother, two Papa, two Mama, identical adults, extra people, third child, second sister, second sara, second eva, two eva, duplicate eva, second ginger, two ginger, mirror reflection"
+}

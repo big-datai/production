@@ -1,0 +1,13 @@
+{
+  "klingId": 490,
+  "status": "keep",
+  "mappedTo": "clip_01c",
+  "spec": "Ginger climbs the chair",
+  "rendered": "Empty kitchen all 5 frames — Ginger never rendered",
+  "rejectReason": null,
+  "reviewedBy": "dave",
+  "reviewedAt": "2026-04-27T19:57:21.866Z",
+  "usedIn": [
+    "ep02_v5"
+  ]
+}

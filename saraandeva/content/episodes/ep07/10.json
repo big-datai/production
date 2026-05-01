@@ -1,0 +1,20 @@
+{
+  "episode": 7,
+  "beat": 4,
+  "clip": 10,
+  "title": "CRAFT 1 — Furious coloring montage",
+  "mode": "omni",
+  "durationSec": 10,
+  "quality": "720p",
+  "nativeAudio": true,
+  "expectedCredits": 90,
+  "subjects": ["Sara", "Eva"],
+  "scene": "dining-room",
+  "boundElements": [
+    { "tag": "Sara", "source": "library" },
+    { "tag": "Eva", "source": "library" },
+    { "tag": "dining-room", "source": "library" }
+  ],
+  "prompt": "Top-down high-angle shot in @dining-room onto the wooden table covered with crayons in every color, scissors, a glue stick, glitter stickers, and several pieces of construction paper. @Sara on the LEFT side of the table draws a sun with a yellow crayon, tongue poking out of the corner of her mouth in concentration. @Eva on the RIGHT side draws a wobbly heart with a pink crayon, both hands working. Cheerful upbeat crafting music with handclaps. Sara (humming): \"Mmm-mm-mmm…\" Eva (humming, badly off-key, happily): \"La-la-laaa!\"",
+  "negativePrompt": "duplicate character, twin, clone, two of the same, mirrored figure, second father, second mother, two Papa, two Mama, identical adults, extra people, third child, second sister, second sara, second eva, two eva, duplicate eva, mirror reflection"
+}

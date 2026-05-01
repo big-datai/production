@@ -1,0 +1,13 @@
+{
+  "klingId": 537,
+  "status": "keep",
+  "mappedTo": "clip_04b",
+  "spec": "EUREKA — pancake hoard found!",
+  "rendered": "Sara peers at bunk-bed pancakes → Ginger close-up appears",
+  "rejectReason": null,
+  "reviewedBy": "dave",
+  "reviewedAt": "2026-04-27T19:57:21.866Z",
+  "usedIn": [
+    "ep02_v3"
+  ]
+}

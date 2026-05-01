@@ -1,0 +1,21 @@
+{
+  "episode": 0,
+  "beat": 0,
+  "clip": "intro_song",
+  "title": "INTRO THEME SONG — Sara and Eva sing the show theme",
+  "purpose": "Reusable across every episode. Generate ONCE, save to season_01/intro/intro_song.mp4, prepend at start of every episode.",
+  "mode": "omni",
+  "durationSec": 15,
+  "quality": "720p",
+  "nativeAudio": true,
+  "expectedCredits": 135,
+  "subjects": ["Sara", "Eva"],
+  "scene": "living-room",
+  "boundElements": [
+    { "tag": "Sara", "source": "library" },
+    { "tag": "Eva", "source": "library" },
+    { "tag": "living-room", "source": "library" }
+  ],
+  "prompt": "FULL MUSICAL NUMBER. Bright stage-lit wide shot in @living-room — this is a kids'-show theme-song opener, music-dominant. STRONG upbeat instrumentation throughout: dynamic ukulele riff, snappy handclaps on every beat, bouncy walking bass line, jingling tambourine, sparkling glockenspiel, light brass stabs on accents. BPM 110, bright major key, Disney-Channel-opener energy. @Sara on the LEFT and @Eva on the RIGHT face the camera grinning ear-to-ear, holding hands, bouncing energetically in perfect rhythm to the music, swaying side-to-side with the beat. Both children singing together brightly in joyful unison, voices clear over the loud cheerful music, perfectly on the beat: \"Sa-ra! E-va! Sa-ra and E-va! Best big sister, baby sister, hoo-RAY! Sa-ra and E-va — let's start the show to-DAY!\" Glitter confetti rains down, stage-lights pulse rainbow-colors in time with the beat, the room glows with warm cheerful magic. Final note holds with both arms raised triumphantly.",
+  "negativePrompt": "duplicate character, twin, clone, two of the same, mirrored figure, second father, second mother, two Papa, two Mama, identical adults, extra people, third child, second sister, second sara, second eva, two eva, duplicate eva, second ginger, two ginger, mirror reflection, silent, no music, sad music, slow music, scary music, mumbling, off-key, monotone, gibberish lyrics, lorem ipsum, spoken without music"
+}

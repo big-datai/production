@@ -1,0 +1,37 @@
+{
+  "episode": 6,
+  "beat": 4,
+  "clip": 12,
+  "title": "EUREKA 2 — Mama's lesson lands",
+  "mode": "omni",
+  "durationSec": 15,
+  "quality": "720p",
+  "nativeAudio": true,
+  "expectedCredits": 135,
+  "subjects": [
+    "Sara",
+    "Eva",
+    "Mama"
+  ],
+  "scene": "backyard-kitchen",
+  "boundElements": [
+    {
+      "tag": "Sara",
+      "source": "library"
+    },
+    {
+      "tag": "Eva",
+      "source": "library"
+    },
+    {
+      "tag": "Mama",
+      "source": "library"
+    },
+    {
+      "tag": "backyard-kitchen",
+      "source": "library"
+    }
+  ],
+  "prompt": "Medium shot in @backyard-kitchen. @Mama kneels in the CENTER on the grass, smiling warmly. @Sara on the LEFT crouches on the grass listening attentively. @Eva on the RIGHT crouches on the grass listening with wide eyes. The five-bagel row is visible in the foreground on the grass. Mama (warm, teaching, slow): \"That's not a mess, sweethearts — that's a love-letter to the flowers. Hiding bagels next to friends is how puppies say I love you.\" Soft golden afternoon light.",
+  "negativePrompt": "duplicate character, twin, clone, two of the same, mirrored figure, second father, second mother, two Papa, two Mama, identical adults, extra people, third child, second sister, second sara, second eva, two eva, duplicate eva, second ginger, two ginger, second dog, mirror reflection"
+}

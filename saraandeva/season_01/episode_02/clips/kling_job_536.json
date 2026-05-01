@@ -1,0 +1,13 @@
+{
+  "klingId": 536,
+  "status": "keep",
+  "mappedTo": "clip_03i",
+  "spec": "Trail leads to the stairs!",
+  "rendered": "Bedroom → livingroom transition, sisters proceed",
+  "rejectReason": null,
+  "reviewedBy": "dave",
+  "reviewedAt": "2026-04-27T19:57:21.866Z",
+  "usedIn": [
+    "ep02_v3"
+  ]
+}

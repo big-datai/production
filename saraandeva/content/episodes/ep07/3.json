@@ -1,0 +1,22 @@
+{
+  "episode": 7,
+  "beat": 1,
+  "clip": 3,
+  "title": "HOOK 3 — Papa's vacuum-cleaner dad joke",
+  "mode": "omni",
+  "durationSec": 10,
+  "quality": "720p",
+  "nativeAudio": true,
+  "expectedCredits": 90,
+  "subjects": ["Sara", "Eva", "Papa"],
+  "scene": "living-room",
+  "boundElements": [
+    { "tag": "Sara", "source": "library" },
+    { "tag": "Eva", "source": "library" },
+    { "tag": "Papa", "source": "library" },
+    { "tag": "papa-notepad", "source": "upload", "file": "/Volumes/Samsung500/goreadling-production/saraandeva/assets/scenes/papa_notepad_v1.png" },
+    { "tag": "living-room", "source": "library" }
+  ],
+  "prompt": "Medium close-up in @living-room. @Papa in the CENTER holds out @papa-notepad proudly toward @Sara on the LEFT, who takes it in both hands and scans the page reading aloud, finger tracing each line. @Eva on the RIGHT leans in over the shoulder to read along, brow furrowing curiously. Sara (reading slowly, deadpan, scanning down the page): \"Mother's Day ideas… pancakes… flowers… …vacuum cleaner?\" Two pairs of eyes slowly look up in unison, narrowing into a unified deadpan side-eye. Beat. Sara + Eva (in tight unison, deadpan, drawn out): \"NOOOOOOO!\" Papa (sheepish, hands up defensively, grinning): \"Just kidding! JUST kidding!\" Comedic awkward sting.",
+  "negativePrompt": "duplicate character, twin, clone, two of the same, mirrored figure, second father, second mother, two Papa, two Mama, identical adults, extra people, third child, second sister, second sara, second eva, two eva, duplicate eva, mirror reflection"
+}

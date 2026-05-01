@@ -1,0 +1,22 @@
+{
+  "episode": 7,
+  "beat": 5,
+  "clip": 14,
+  "title": "HEART LINE — \"I want THIS, every single day with you\"",
+  "mode": "omni",
+  "durationSec": 15,
+  "quality": "720p",
+  "nativeAudio": true,
+  "expectedCredits": 135,
+  "subjects": ["Sara", "Eva", "Mama"],
+  "scene": "living-room",
+  "boundElements": [
+    { "tag": "Sara", "source": "library" },
+    { "tag": "Eva", "source": "library" },
+    { "tag": "Mama", "source": "library" },
+    { "tag": "coupon-book", "source": "library" },
+    { "tag": "living-room", "source": "library" }
+  ],
+  "prompt": "Slow push-in medium close-up in @living-room. @Mama in the CENTER on the couch carefully opens the @coupon-book, reading each page slowly out loud — voice cracking with emotion, eyes welling up. @Sara on the LEFT and @Eva on the RIGHT lean against Mama on either side, watching her face. Mama (whispered, reading): \"One whole family day. Dance party. Walk both puppies. Story time on the couch.\" She presses the book to her chest, tears spilling, and pulls both girls into a fierce hug. Mama (choked, smiling through tears): \"My loves… I don't want a perfect breakfast. I want THIS — every single day with you.\" Tender swelling string music. Golden window-light frames the hug.",
+  "negativePrompt": "duplicate character, twin, clone, two of the same, mirrored figure, second father, second mother, two Papa, two Mama, identical adults, extra people, third child, second sister, second sara, second eva, two eva, duplicate eva, mirror reflection"
+}

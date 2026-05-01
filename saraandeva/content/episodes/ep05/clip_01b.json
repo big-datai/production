@@ -1,0 +1,37 @@
+{
+  "episode": 5,
+  "beat": 1,
+  "microClip": "b",
+  "title": "HOOK 2 — SAFETY/SHARING beat",
+  "mode": "omni",
+  "durationSec": 15,
+  "quality": "720p",
+  "nativeAudio": true,
+  "expectedCredits": 135,
+  "subjects": [
+    "Sara",
+    "Eva",
+    "Mama"
+  ],
+  "scene": "dream-house",
+  "boundElements": [
+    {
+      "tag": "Sara",
+      "source": "library"
+    },
+    {
+      "tag": "Eva",
+      "source": "library"
+    },
+    {
+      "tag": "Mama",
+      "source": "library"
+    },
+    {
+      "tag": "dream-house",
+      "source": "library"
+    }
+  ],
+  "prompt": "Medium shot in @dream-house. @Sara on the LEFT stands wide-eyed in front of the wrapped Dream House. @Eva on the RIGHT bounces excitedly on her toes. @Mama kneels just behind them in the center, one gentle hand on Sara's shoulder. Mama (warm, calm): \"This is your special birthday gift, Sara — but the most magical houses are the ones we play in together. Will you share with your sister?\" Sara (smiling big): \"Of course, Mama!\" Eva (eyes huge): \"REALLY-REALLY-REALLY?!\" Bright morning light.",
+  "negativePrompt": "duplicate character, twin, clone, two of the same, mirrored figure, second father, second mother, two Papa, two Mama, identical adults, extra people, third child, second sister, second sara, second eva, two eva, duplicate eva"
+}

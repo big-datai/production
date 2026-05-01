@@ -1,0 +1,36 @@
+{
+  "episode": 6,
+  "beat": 2,
+  "clip": 5,
+  "title": "DISCOVERY 2 — Spot through the kitchen window",
+  "mode": "omni",
+  "durationSec": 10,
+  "quality": "720p",
+  "nativeAudio": true,
+  "expectedCredits": 90,
+  "subjects": [
+    "Sara",
+    "Papa"
+  ],
+  "scene": "kitchen",
+  "boundElements": [
+    {
+      "tag": "Sara",
+      "source": "library"
+    },
+    {
+      "tag": "Papa",
+      "source": "library"
+    },
+    {
+      "tag": "ipad",
+      "source": "library"
+    },
+    {
+      "tag": "kitchen",
+      "source": "library"
+    }
+  ],
+  "prompt": "Medium two-shot in @kitchen at the window, soft daylight from outside. @Sara on the LEFT lowers @ipad and points through the glass with wide eyes. @Papa on the RIGHT leans in beside her, jaw dropping. Sara: \"Papa, look outside!\" Papa: \"Oh my goodness — what is happening out there?!\" Through the window glass, soft-focus, a small white-and-tan jack russell can be seen far away digging in the flowerbed. Cheerful surprised mood.",
+  "negativePrompt": "duplicate character, twin, clone, two of the same, mirrored figure, second father, second mother, two Papa, two Mama, identical adults, extra people, third child, second sister, second sara, second eva, two eva, duplicate eva, second ginger, two ginger, second ipad, two ipads, mirror reflection, blurry text, lorem ipsum"
+}

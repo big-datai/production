@@ -1,0 +1,21 @@
+{
+  "episode": 7,
+  "beat": 1,
+  "clip": 2,
+  "title": "HOOK 2 — Pitch montage",
+  "mode": "omni",
+  "durationSec": 10,
+  "quality": "720p",
+  "nativeAudio": true,
+  "expectedCredits": 90,
+  "subjects": ["Sara", "Eva", "Papa"],
+  "scene": "living-room",
+  "boundElements": [
+    { "tag": "Sara", "source": "library" },
+    { "tag": "Eva", "source": "library" },
+    { "tag": "Papa", "source": "library" },
+    { "tag": "living-room", "source": "library" }
+  ],
+  "prompt": "Medium shot in @living-room. @Sara on the LEFT crouches over a notepad on the floor, drawing furiously with a purple crayon — the page shows a wobbly stack of pancakes and a vase of flowers. @Eva on the RIGHT bounces on her toes with both arms wide, eyes huge. @Papa in the CENTER smiles watching, pen tapping his chin. Sara (proud): \"Pancakes, juice, and flowers from the yard!\" Eva (overflowing, bouncing): \"And ONE HUNDRED CHOCOLATE CAKES! And a UNICORN!\" Papa (chuckling): \"Maybe we start smaller.\"",
+  "negativePrompt": "duplicate character, twin, clone, two of the same, mirrored figure, second father, second mother, two Papa, two Mama, identical adults, extra people, third child, second sister, second sara, second eva, two eva, duplicate eva, mirror reflection"
+}

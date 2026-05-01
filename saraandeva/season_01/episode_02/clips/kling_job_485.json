@@ -1,0 +1,13 @@
+{
+  "klingId": 485,
+  "status": "keep",
+  "mappedTo": "clip_01b",
+  "spec": "Ginger eyes the pancake stack",
+  "rendered": "Pancake stack on table, Ginger sniffs/reaches",
+  "rejectReason": null,
+  "reviewedBy": "dave",
+  "reviewedAt": "2026-04-27T19:57:21.866Z",
+  "usedIn": [
+    "ep02_v3"
+  ]
+}

@@ -1,0 +1,32 @@
+{
+  "episode": 5,
+  "beat": 4,
+  "microClip": "a",
+  "title": "RESOLUTION 1 — Sara invites Eva",
+  "mode": "omni",
+  "durationSec": 10,
+  "quality": "720p",
+  "nativeAudio": true,
+  "expectedCredits": 90,
+  "subjects": [
+    "Sara",
+    "Eva"
+  ],
+  "scene": "dream-house",
+  "boundElements": [
+    {
+      "tag": "Sara",
+      "source": "library"
+    },
+    {
+      "tag": "Eva",
+      "source": "library"
+    },
+    {
+      "tag": "dream-house",
+      "source": "library"
+    }
+  ],
+  "prompt": "Medium two-shot in @dream-house. @Sara on the LEFT sits cross-legged on the rug holding two dolls. @Eva on the RIGHT stands hopefully nearby. Sara (gentle, warm): \"Eva — come play with me?\" Eva (eyes lighting up): \"REALLY?!\" Sara (smiling, scooting over): \"Really, really, really!\" Warm afternoon light.",
+  "negativePrompt": "duplicate character, twin, clone, two of the same, mirrored figure, second father, second mother, two Papa, two Mama, identical adults, extra people, third child, second sister, second sara, second eva, two eva, duplicate eva"
+}

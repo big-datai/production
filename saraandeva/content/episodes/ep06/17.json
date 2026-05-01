@@ -1,0 +1,27 @@
+{
+  "episode": 6,
+  "beat": 6,
+  "clip": 17,
+  "title": "CLIFFHANGER — Ginger eyes the next stash spot",
+  "mode": "omni",
+  "durationSec": 10,
+  "quality": "720p",
+  "nativeAudio": true,
+  "expectedCredits": 90,
+  "subjects": [
+    "Ginger"
+  ],
+  "scene": "backyard-kitchen",
+  "boundElements": [
+    {
+      "tag": "Ginger",
+      "source": "library"
+    },
+    {
+      "tag": "backyard-kitchen",
+      "source": "library"
+    }
+  ],
+  "prompt": "Close-up in @backyard-kitchen, slow push-in. @Ginger sits in the foreground center-frame, head tilted, eyes locked just past the camera with a sly mischievous look. The black metal fence is visible behind her. Ginger lifts one paw and sniffs it slyly. Ginger: \"Hrf!\" Slight zoom-in, mischievous music sting, a long shadow falls across the petunias behind.",
+  "negativePrompt": "duplicate character, twin, clone, two of the same, mirrored figure, second father, second mother, two Papa, two Mama, identical adults, extra people, third child, second sister, second sara, second eva, two eva, duplicate eva, second ginger, two ginger, second dog, two dogs, mirror reflection, human, person, hands, child, kid"
+}

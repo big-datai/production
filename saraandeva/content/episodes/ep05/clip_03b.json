@@ -1,0 +1,27 @@
+{
+  "episode": 5,
+  "beat": 3,
+  "microClip": "b",
+  "title": "EXPLORE 2 — BEDROOM room label",
+  "mode": "omni",
+  "durationSec": 10,
+  "quality": "720p",
+  "nativeAudio": true,
+  "expectedCredits": 90,
+  "subjects": [
+    "Sara"
+  ],
+  "scene": "dream-house",
+  "boundElements": [
+    {
+      "tag": "Sara",
+      "source": "library"
+    },
+    {
+      "tag": "dream-house",
+      "source": "library"
+    }
+  ],
+  "prompt": "Close-up in @dream-house. @Sara crouches center, finger tracing letters on a tiny door labeled \"BEDROOM\". The mini-bedroom inside is visible — pink bedspread, mini lamp, mini dollhouse-mirror. Sara (sounding out): \"B… E… D… R… O… O… M. BEDROOM!\" Sara: \"Look how tiny!\" Warm morning light.",
+  "negativePrompt": "duplicate character, twin, clone, two of the same, mirrored figure, second father, second mother, two Papa, two Mama, identical adults, extra people, third child, second sister, second sara, second eva, two eva, duplicate eva"
+}

@@ -1,0 +1,13 @@
+{
+  "klingId": 486,
+  "status": "keep",
+  "mappedTo": "clip_01e",
+  "spec": "Ginger BOLTS with pancakes",
+  "rendered": "Ginger running on hardwood with pancake in mouth",
+  "rejectReason": null,
+  "reviewedBy": "dave",
+  "reviewedAt": "2026-04-27T19:57:21.866Z",
+  "usedIn": [
+    "ep02_v3"
+  ]
+}

@@ -1,0 +1,37 @@
+{
+  "episode": 5,
+  "beat": 4,
+  "microClip": "b",
+  "title": "RESOLUTION 2 — Mama's lesson lands",
+  "mode": "omni",
+  "durationSec": 15,
+  "quality": "720p",
+  "nativeAudio": true,
+  "expectedCredits": 135,
+  "subjects": [
+    "Mama",
+    "Sara",
+    "Eva"
+  ],
+  "scene": "dream-house",
+  "boundElements": [
+    {
+      "tag": "Mama",
+      "source": "library"
+    },
+    {
+      "tag": "Sara",
+      "source": "library"
+    },
+    {
+      "tag": "Eva",
+      "source": "library"
+    },
+    {
+      "tag": "dream-house",
+      "source": "library"
+    }
+  ],
+  "prompt": "Medium shot in @dream-house. @Mama kneels in the CENTER on the rug, hands clasped, smiling warmly toward the rug. @Sara on the LEFT sits cross-legged on the rug holding one doll, looking up. @Eva on the RIGHT sits cross-legged on the rug holding a different doll, also looking up. Mama (warm, teaching, slow): \"When we share with the people we love, the joy gets BIGGER, not smaller. That's the real magic of this Dream House.\" Warm golden afternoon light, locked camera.",
+  "negativePrompt": "duplicate character, twin, clone, two of the same, mirrored figure, second father, second mother, two Papa, two Mama, identical adults, extra people, third child, second sister, second sara, second eva, two eva, duplicate eva"
+}

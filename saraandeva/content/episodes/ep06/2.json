@@ -1,0 +1,27 @@
+{
+  "episode": 6,
+  "beat": 1,
+  "clip": 2,
+  "title": "HOOK 2 — Ginger digs a hole",
+  "mode": "omni",
+  "durationSec": 10,
+  "quality": "720p",
+  "nativeAudio": true,
+  "expectedCredits": 90,
+  "subjects": [
+    "Ginger"
+  ],
+  "scene": "backyard-kitchen",
+  "boundElements": [
+    {
+      "tag": "Ginger",
+      "source": "library"
+    },
+    {
+      "tag": "backyard-kitchen",
+      "source": "library"
+    }
+  ],
+  "prompt": "Medium close-up in @backyard-kitchen, locked low camera at ground level. @Ginger crouches in front of a flowerbed of pink and purple petunias center-frame, both front paws scratching rapidly at the dark soil, dirt flying behind. The small golden bagel sits to the side on the grass. Ginger panting happily: \"Hff hff hff!\" Soft warm sunlight, no humans visible.",
+  "negativePrompt": "duplicate character, twin, clone, two of the same, mirrored figure, second father, second mother, two Papa, two Mama, identical adults, extra people, third child, second sister, second sara, second eva, two eva, duplicate eva, second ginger, two ginger, second dog, two dogs, mirror reflection, human, person, hands, child, kid"
+}

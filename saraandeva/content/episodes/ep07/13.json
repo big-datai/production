@@ -1,0 +1,22 @@
+{
+  "episode": 7,
+  "beat": 5,
+  "clip": 13,
+  "title": "PRESENT — Tiptoe in with coupon book + dandelion",
+  "mode": "omni",
+  "durationSec": 10,
+  "quality": "720p",
+  "nativeAudio": true,
+  "expectedCredits": 90,
+  "subjects": ["Sara", "Eva", "Mama"],
+  "scene": "living-room",
+  "boundElements": [
+    { "tag": "Sara", "source": "library" },
+    { "tag": "Eva", "source": "library" },
+    { "tag": "Mama", "source": "library" },
+    { "tag": "coupon-book", "source": "library" },
+    { "tag": "living-room", "source": "library" }
+  ],
+  "prompt": "Wide shot in @living-room, soft late-morning sunlight through the window. @Mama in the CENTER sits on the beige couch in cozy clothes holding a coffee mug, eyes still slightly puffy from the morning, soft smile. @Sara on the LEFT tiptoes forward holding the @coupon-book in both hands like a treasured gift. @Eva on the RIGHT tiptoes beside her holding a single tiny yellow dandelion stem, both hands. Sara (whispered, reverent): \"We made you something.\" Eva (whispered, sniffling-proud): \"It's better than pancakes.\" Tender music swell.",
+  "negativePrompt": "duplicate character, twin, clone, two of the same, mirrored figure, second father, second mother, two Papa, two Mama, identical adults, extra people, third child, second sister, second sara, second eva, two eva, duplicate eva, mirror reflection"
+}

@@ -1,78 +1,29 @@
 #!/usr/bin/env node
 /**
- * Export cookies + localStorage from the debug-port Chrome's Kling tab
- * to /tmp/kling-storage.json using raw CDP (no Playwright attach) so we
- * dodge the "Browser.setDownloadBehavior not supported" error.
+ * Export cookies + localStorage from the debug-port Chrome's Kling tab to
+ * /tmp/kling-storage.json in Playwright's storage-state format.
+ *
+ * Use it to clone the user's logged-in session into a fresh Playwright
+ * codegen window (so they don't have to re-login):
+ *
+ *   node _export-cookies.mjs
+ *   npx playwright codegen --target=javascript \
+ *     --load-storage=/tmp/kling-storage.json \
+ *     https://kling.ai/app/omni/new?ac=1
+ *
+ * Uses Playwright's connectOverCDP + ctx.storageState() — no `ws` dependency.
  */
-import fs from "node:fs";
-import WebSocket from "ws";
+import { chromium } from "playwright";
 
-const LIST = await fetch("http://127.0.0.1:9222/json").then((r) => r.json());
-const kling = LIST.find((t) => t.type === "page" && t.url.includes("kling.ai"));
-if (!kling) { console.error("No Kling tab"); process.exit(1); }
-console.log(`📄 ${kling.url}`);
+const browser = await chromium.connectOverCDP("http://127.0.0.1:9222", { timeout: 30000 });
+const ctx = browser.contexts()[0];
+const page = ctx.pages().find(p => p.url().includes("kling.ai")) || ctx.pages()[0];
+console.log(`📄 Source tab: ${page.url()}`);
 
-const ws = new WebSocket(kling.webSocketDebuggerUrl);
-await new Promise((resolve, reject) => {
-  ws.once("open", resolve);
-  ws.once("error", reject);
-});
+const state = await ctx.storageState({ path: "/tmp/kling-storage.json" });
+const lsCount = state.origins.reduce((n, o) => n + o.localStorage.length, 0);
+console.log(`✓ ${state.cookies.length} cookies + ${lsCount} localStorage entries → /tmp/kling-storage.json`);
+console.log(`\nLoad in codegen:`);
+console.log(`  npx playwright codegen --target=javascript --load-storage=/tmp/kling-storage.json https://kling.ai/app/omni/new?ac=1`);
 
-let seq = 0;
-const pending = new Map();
-ws.on("message", (data) => {
-  const msg = JSON.parse(data.toString());
-  if (msg.id && pending.has(msg.id)) {
-    const { resolve, reject } = pending.get(msg.id);
-    pending.delete(msg.id);
-    if (msg.error) reject(new Error(msg.error.message));
-    else resolve(msg.result);
-  }
-});
-
-function send(method, params = {}) {
-  const id = ++seq;
-  ws.send(JSON.stringify({ id, method, params }));
-  return new Promise((resolve, reject) => pending.set(id, { resolve, reject }));
-}
-
-// Get all cookies
-const { cookies: raw } = await send("Network.getAllCookies");
-// Playwright storage state format requires specific cookie shape
-const cookies = raw.map((c) => ({
-  name: c.name,
-  value: c.value,
-  domain: c.domain,
-  path: c.path,
-  expires: c.expires === -1 ? -1 : Math.floor(c.expires),
-  httpOnly: c.httpOnly,
-  secure: c.secure,
-  sameSite: c.sameSite === "None" ? "None" : c.sameSite === "Lax" ? "Lax" : c.sameSite === "Strict" ? "Strict" : "Lax",
-}));
-
-// Get localStorage via Runtime.evaluate
-const { result: lsResult } = await send("Runtime.evaluate", {
-  expression: `
-    (() => {
-      const out = [];
-      for (let i = 0; i < localStorage.length; i++) {
-        const k = localStorage.key(i);
-        out.push({ name: k, value: localStorage.getItem(k) });
-      }
-      return JSON.stringify(out);
-    })()
-  `,
-  returnByValue: true,
-});
-const ls = JSON.parse(lsResult.value);
-
-const origin = new URL(kling.url).origin;
-const state = {
-  cookies,
-  origins: [{ origin, localStorage: ls }],
-};
-
-fs.writeFileSync("/tmp/kling-storage.json", JSON.stringify(state, null, 2));
-console.log(`✓ ${cookies.length} cookies + ${ls.length} localStorage entries → /tmp/kling-storage.json`);
-
-ws.close();
+await browser.close();

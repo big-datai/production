@@ -36,7 +36,10 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[2]
 ENV_FILE = ROOT / ".env.local"
-OUTPUT_DIR = ROOT / "assets" / "characters" / "saraandeva" / "scenes"
+# After the project split, scenes live inside the saraandeva project, not at the
+# repo root. ROOT is goreadling-production/ (parents[2]); the project is one deeper.
+SARAANDEVA_DIR = ROOT / "saraandeva"
+OUTPUT_DIR = SARAANDEVA_DIR / "assets" / "scenes"
 OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
 
 PHOTO_DIR = Path("/Volumes/Samsung500/photo")
@@ -537,6 +540,35 @@ SCENES = {
             "the background, sunny spring morning, golden-hour warm "
             "light. Soft Pixar lighting, no people, no pets — just the "
             "empty driveway ready to film the family heading off to school."
+        ),
+    },
+    "dream_house": {
+        "label": "Doll Dream House (Sara's birthday gift, recurring prop)",
+        "refs": [
+            "/Volumes/Samsung500/goreadling-production/saraandeva/assets/photos/dream_house_source.JPG",
+        ],
+        "description": (
+            "A giant pink-and-purple multi-story doll dream house — match "
+            "the reference photo's design EXACTLY. Three open floors of "
+            "pink molded plastic, white interior walls. Tall multi-story "
+            "tower on the left with small windows. A curving bright-pink "
+            "slide spirals from the upper floor down the RIGHT side to a "
+            "yellow-and-pink mini pool at ground level. Inside the rooms: "
+            "a mini kitchen with tiny fridge, a bedroom with a pink "
+            "bedspread and tiny lamp, a bathroom with a small tub, and a "
+            "living area with mini-couches. A small green plastic palm "
+            "tree decoration at the base of the slide. A few small dolls "
+            "visible inside and around the house (NOT featured — just "
+            "props in the scene). The dream house STANDS UPRIGHT in the "
+            "family's REAL living room — light honey wood floor visible at "
+            "base, soft pink wall behind, viewed straight-on from the "
+            "front so all three floors and the slide are clearly readable. "
+            "NO PEOPLE in frame. Strongly stylized Pixar render: colors "
+            "pushed saturated, cartoon-chunky proportions, soft warm "
+            "storybook lighting, slight magical sparkle around the "
+            "structure. The house should look unmistakably animated, not "
+            "photographic — same visual universe as the family characters "
+            "and other locked scenes."
         ),
     },
 }

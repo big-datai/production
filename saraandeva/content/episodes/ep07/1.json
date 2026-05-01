@@ -1,0 +1,21 @@
+{
+  "episode": 7,
+  "beat": 1,
+  "clip": 1,
+  "title": "HOOK 1 — Operation Mama: breakfast in bed!",
+  "mode": "omni",
+  "durationSec": 10,
+  "quality": "720p",
+  "nativeAudio": true,
+  "expectedCredits": 90,
+  "subjects": ["Sara", "Eva", "Papa"],
+  "scene": "living-room",
+  "boundElements": [
+    { "tag": "Sara", "source": "library" },
+    { "tag": "Eva", "source": "library" },
+    { "tag": "Papa", "source": "library" },
+    { "tag": "living-room", "source": "library" }
+  ],
+  "prompt": "Wide shot in @living-room, soft golden afternoon light. @Papa sits cross-legged in the CENTER of the rug holding a small notepad. @Sara on the LEFT leans in close, eyes huge with mission focus. @Eva on the RIGHT sits cross-legged copying her sister, also leaning in. Papa (whispering, conspiratorial): \"Operation Mama: tomorrow morning, BREAKFAST IN BED.\" Sara (whispering, excited): \"And FLOWERS!\" Eva (loud-whispering): \"AND ONE HUNDRED CHOCOLATE CAKES!\" Sara puts a finger to her lips. Cheerful comedic music sting.",
+  "negativePrompt": "duplicate character, twin, clone, two of the same, mirrored figure, second father, second mother, two Papa, two Mama, identical adults, extra people, third child, second sister, second sara, second eva, two eva, duplicate eva, mirror reflection"
+}

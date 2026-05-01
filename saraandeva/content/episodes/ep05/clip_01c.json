@@ -1,0 +1,27 @@
+{
+  "episode": 5,
+  "beat": 1,
+  "microClip": "c",
+  "title": "HOOK 3 — Sara unwraps",
+  "mode": "omni",
+  "durationSec": 10,
+  "quality": "720p",
+  "nativeAudio": true,
+  "expectedCredits": 90,
+  "subjects": [
+    "Sara"
+  ],
+  "scene": "dream-house",
+  "boundElements": [
+    {
+      "tag": "Sara",
+      "source": "library"
+    },
+    {
+      "tag": "dream-house",
+      "source": "library"
+    }
+  ],
+  "prompt": "Medium close-up in @dream-house. @Sara grabs the giant sparkly bow and pulls it free with both hands, ribbon flying. The wrapping flutters off. Sara (giggling): \"Wheeeee!\" Then her eyes go huge. Sara (slowly, in awe): \"It's… a DREAM HOUSE!\" Confetti effect, bright morning light.",
+  "negativePrompt": "duplicate character, twin, clone, two of the same, mirrored figure, second father, second mother, two Papa, two Mama, identical adults, extra people, third child, second sister, second sara, second eva, two eva, duplicate eva"
+}

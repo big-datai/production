@@ -1,0 +1,36 @@
+{
+  "episode": 6,
+  "beat": 5,
+  "clip": 14,
+  "title": "B-PLOT 1 — Eva on the bike, Papa holds the seat",
+  "mode": "omni",
+  "durationSec": 15,
+  "quality": "720p",
+  "nativeAudio": true,
+  "expectedCredits": 135,
+  "subjects": [
+    "Eva",
+    "Papa"
+  ],
+  "scene": "bike_circle",
+  "boundElements": [
+    {
+      "tag": "Eva",
+      "source": "library"
+    },
+    {
+      "tag": "Papa",
+      "source": "library"
+    },
+    {
+      "tag": "eva-bike",
+      "source": "library"
+    },
+    {
+      "tag": "bike_circle",
+      "source": "library"
+    }
+  ],
+  "prompt": "Medium tracking shot in @bike_circle, soft afternoon sunlight on the cul-de-sac asphalt. @Eva sits on @eva-bike with both hands on the handlebars, white helmet on head buckled tight, feet on the pedals, nervous-excited smile. @Papa kneels behind the bike, one hand steadying the seat, smiling encouragingly. Papa (warm, gentle): \"You ready, sweet pea? I'll hold on tight.\" Eva (nervous-excited): \"OK! OK, I'm ready!\" Cheerful encouraging music.",
+  "negativePrompt": "duplicate character, twin, clone, two of the same, mirrored figure, second father, second mother, two Papa, two Mama, identical adults, extra people, third child, second sister, second sara, second eva, two eva, duplicate eva, second bike, two bikes, training wheels, mirror reflection"
+}

@@ -1,0 +1,13 @@
+{
+  "klingId": 523,
+  "status": "keep",
+  "mappedTo": "clip_03e",
+  "spec": "Sara discovers chocolate footprint",
+  "rendered": "Livingroom paw-print discovery beat",
+  "rejectReason": null,
+  "reviewedBy": "dave",
+  "reviewedAt": "2026-04-27T19:57:21.866Z",
+  "usedIn": [
+    "ep02_v3"
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "episode": 7,
+  "beat": 6,
+  "clip": 15,
+  "title": "FAMILY DAY 1 — Backyard picnic",
+  "mode": "omni",
+  "durationSec": 15,
+  "quality": "720p",
+  "nativeAudio": true,
+  "expectedCredits": 135,
+  "subjects": ["Sara", "Eva", "Mama"],
+  "scene": "backyard",
+  "boundElements": [
+    { "tag": "Sara", "source": "library" },
+    { "tag": "Eva", "source": "library" },
+    { "tag": "Mama", "source": "library" },
+    { "tag": "backyard", "source": "library" }
+  ],
+  "prompt": "Wide cinematic shot in @backyard, bright sunny afternoon, lens flare, shallow depth of field. A red-and-white checkered picnic blanket spread on the green grass, a basket of sandwiches, a bowl of strawberries, a thermos. @Mama in the CENTER of the blanket, legs tucked under her, laughing — head thrown back. @Sara on the LEFT holds up half a sandwich triumphantly. @Eva on the RIGHT lies on her back giggling, holding a strawberry up to the sun. Mama (laughing, warm): \"This is the best Mother's Day breakfast I've ever had.\" Sara (giggling): \"It's LUNCH, Mama!\" Eva (singing-along): \"LUNCH-LUNCH-LUNCH!\" Cheerful warm folk music.",
+  "negativePrompt": "duplicate character, twin, clone, two of the same, mirrored figure, second father, second mother, two Papa, two Mama, identical adults, extra people, third child, second sister, second sara, second eva, two eva, duplicate eva, mirror reflection"
+}

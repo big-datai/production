@@ -1,0 +1,32 @@
+{
+  "episode": 5,
+  "beat": 4,
+  "microClip": "c",
+  "title": "RESOLUTION 3 — Sisters group hug",
+  "mode": "omni",
+  "durationSec": 15,
+  "quality": "720p",
+  "nativeAudio": true,
+  "expectedCredits": 135,
+  "subjects": [
+    "Sara",
+    "Eva"
+  ],
+  "scene": "dream-house",
+  "boundElements": [
+    {
+      "tag": "Sara",
+      "source": "library"
+    },
+    {
+      "tag": "Eva",
+      "source": "library"
+    },
+    {
+      "tag": "dream-house",
+      "source": "library"
+    }
+  ],
+  "prompt": "Wide shot in @dream-house. @Sara on the LEFT and @Eva on the RIGHT hug each other in front of the Dream House, smiling huge. The Dream House glows warmly center-back. Sara (excited): \"Best birthday EVER!\" Eva (squeezing Sara): \"Best big sister ever!\" Warm group-hug Pixar lighting, sparkle effect on the dollhouse.",
+  "negativePrompt": "duplicate character, twin, clone, two of the same, mirrored figure, second father, second mother, two Papa, two Mama, identical adults, extra people, third child, second sister, second sara, second eva, two eva, duplicate eva"
+}

@@ -199,15 +199,14 @@ const ctx = browser.contexts()[0];
 const page = ctx.pages().find(p => p.url().includes("kling.ai")) || ctx.pages()[0];
 await page.bringToFront();
 
-// Navigate to a Kling new-clip page if not already there.
-// Kling's Omni mode lives at /app/omni/new; legacy single-shot at /app/video/new.
-const url = page.url();
-const onKlingNewPage = /\/app\/(omni|video)\/new/.test(url);
-if (!onKlingNewPage) {
-  console.log(`→ Navigating from ${url} → /app/omni/new`);
-  await page.goto("https://kling.ai/app/omni/new?ac=1", { waitUntil: "domcontentloaded" });
-  await page.waitForTimeout(2000);
-}
+// HARD RELOAD to /app/omni/new at the start of every submission. This resets
+// quality/duration to defaults (1080p + 5s), making dropdown automation
+// reliable — clicking the visible "5s" label opens the duration menu so we
+// can pick 10s/15s. Without this, prior-session state (e.g. duration stuck
+// at 10s) makes the "5s" opener invisible and the dropdown stays closed.
+console.log(`→ Hard-reloading /app/omni/new for clean state...`);
+await page.goto("https://kling.ai/app/omni/new?ac=1", { waitUntil: "domcontentloaded" });
+await page.waitForTimeout(2500);
 
 // Click the Omni link only if we're not already in Omni mode.
 if (!page.url().includes("/app/omni")) {
@@ -247,19 +246,64 @@ for (const el of spec.boundElements) {
 }
 
 // ─── SET QUALITY + DURATION ─────────────────────────────────────────────────
-// Verified codegen flow (2026-04-28): inside #design-view-container, click
-// the literal "1080p" text to open the dropdown, then pick 720p and 10s by text.
+// Robust dropdown handler — tries multiple selectors with retries. The Kling
+// dropdown sometimes silent-closes if clicked too fast after Reset.
 console.log(`→ Quality=${spec.quality} Duration=${spec.durationSec}s`);
-await page.locator('#design-view-container').getByText('1080p').first().click({ timeout: 5000 });
-await page.waitForTimeout(500);
-await page.getByText(spec.quality, { exact: true }).first().click({ timeout: 3000 }).catch(err => {
-  console.warn(`  ⚠ could not click "${spec.quality}": ${err.message.slice(0, 80)}`);
-});
-await page.waitForTimeout(400);
-await page.getByText(`${spec.durationSec}s`, { exact: true }).first().click({ timeout: 3000 }).catch(err => {
-  console.warn(`  ⚠ could not click "${spec.durationSec}s": ${err.message.slice(0, 80)}`);
-});
-await page.waitForTimeout(500);
+async function pickFromDropdown(targetLabel, openLabelCandidates) {
+  // openLabelCandidates can be string OR array — try all (since Kling might
+  // currently display ANY of "5s"/"10s"/"15s" or "1080p"/"720p"/"540p"
+  // depending on prior-session state).
+  const candidates = Array.isArray(openLabelCandidates) ? openLabelCandidates : [openLabelCandidates];
+  for (let attempt = 1; attempt <= 4; attempt++) {
+    // Try each opener label until one is visible
+    for (const ol of candidates) {
+      const opener = page.locator(`#design-view-container :text-matches("^${ol}$","i")`).first();
+      if (await opener.isVisible({ timeout: 400 }).catch(() => false)) {
+        await opener.click({ force: true }).catch(() => {});
+        await page.waitForTimeout(700);
+        break;
+      }
+    }
+    // Try multiple selectors for the target option
+    const optionStrategies = [
+      page.getByText(targetLabel, { exact: true }).last(),
+      page.locator(`text=/^${targetLabel.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')}$/i`).last(),
+      page.locator(`[role="menuitem"]:has-text("${targetLabel}")`).last(),
+      page.locator(`li:has-text("${targetLabel}")`).last(),
+      page.locator(`div:has-text("${targetLabel}"):not(:has(div:has-text("${targetLabel}")))`).last(),
+    ];
+    for (const opt of optionStrategies) {
+      try {
+        if (await opt.isVisible({ timeout: 600 }).catch(() => false)) {
+          await opt.click({ timeout: 1500 });
+          console.log(`  ✓ picked "${targetLabel}" (attempt ${attempt})`);
+          await page.waitForTimeout(400);
+          return true;
+        }
+      } catch {}
+    }
+    console.log(`  · attempt ${attempt}: could not click "${targetLabel}", retrying...`);
+    await page.waitForTimeout(600);
+  }
+  return false;
+}
+await pickFromDropdown(spec.quality, ['1080p', '720p', '540p']);
+
+// Duration: directly click the .option-tab-item.duration_N tab. These tabs
+// are pre-rendered in the DOM but may have rect=0 (collapsed in layout) —
+// force-click bypasses the visibility check and Kling's Vue handler still
+// fires the tab-switch.
+console.log(`→ Duration=${spec.durationSec}s (clicking .option-tab-item.duration_${spec.durationSec})`);
+const durationSel = `.option-tab-item.duration_${spec.durationSec}`;
+try {
+  await page.locator(durationSel).first().click({ force: true, timeout: 3000 });
+  console.log(`  ✓ clicked ${durationSel}`);
+  await page.waitForTimeout(500);
+} catch (e) {
+  // Fallback to the legacy text-based dropdown approach
+  console.log(`  · direct duration click failed (${e.message.slice(0,60)}) — falling back to dropdown`);
+  await pickFromDropdown(`${spec.durationSec}s`, ['5s', '10s', '15s']);
+}
 // Click outside to close any lingering dropdown
 await page.locator('body').click({ position: { x: 100, y: 100 } }).catch(() => {});
 await page.waitForTimeout(400);
@@ -301,6 +345,37 @@ for (let i = 0; i < segments.length; i++) {
     await page.waitForTimeout(150);
   }
 }
+
+// ─── VERIFY FULL PROMPT IS IN TEXTBOX ───────────────────────────────────────
+// Defense against truncated/aborted typing or autocomplete dropping content.
+// Read back the textbox content and check that key chunks of the spec prompt
+// (especially the LAST sentence) appear in it. If not, abort before Generate.
+await page.waitForTimeout(800);
+const textboxNode = page.locator("#design-view-container").getByRole("textbox");
+const actualText = (await textboxNode.innerText().catch(() => null)) || (await textboxNode.textContent().catch(() => "")) || "";
+const expectedText = spec.prompt.replace(/@/g, ""); // chips render the tag name without the @
+const norm = (s) => s.toLowerCase().replace(/[\s ]+/g, " ").trim();
+const a = norm(actualText);
+const e = norm(expectedText);
+// Heuristic 1: textbox length must be ≥ 85% of expected
+const lenRatio = a.length / Math.max(1, e.length);
+// Heuristic 2: last 50 normalized chars of expected must appear in actual
+const tail = e.slice(-50);
+const tailFound = a.includes(tail);
+// Heuristic 3: every quoted dialogue chunk in expected must appear in actual
+const quotes = [...expectedText.matchAll(/"([^"]{3,})"/g)].map(m => norm(m[1]));
+const missingQuotes = quotes.filter(q => !a.includes(q));
+console.log(`📝 Prompt verify — len=${a.length}/${e.length} (${(lenRatio*100).toFixed(0)}%) tail=${tailFound ? "✓" : "❌"} quotes=${quotes.length - missingQuotes.length}/${quotes.length}`);
+if (lenRatio < 0.85 || !tailFound || missingQuotes.length > 0) {
+  console.error("❌ PROMPT VERIFICATION FAILED — textbox does not contain the full intended prompt.");
+  if (lenRatio < 0.85) console.error(`   • length too short: ${a.length} vs expected ${e.length}`);
+  if (!tailFound) console.error(`   • last sentence missing: "...${tail}"`);
+  if (missingQuotes.length) console.error(`   • missing dialogue: ${missingQuotes.map(q=>`"${q.slice(0,50)}"`).join(", ")}`);
+  console.error(`   ABORTING (do not Generate). Textbox actual content:\n   ${actualText.slice(0, 500)}`);
+  await browser.close();
+  process.exit(4);
+}
+console.log("✓ Prompt verified — full content present in textbox");
 
 // ─── ASSERT CREDIT COST ─────────────────────────────────────────────────────
 await page.waitForTimeout(1200);
@@ -368,19 +443,66 @@ async function addLibraryElement(page, tag) {
   await page.getByRole("button", { name: "Add from Element Library" }).click();
   await page.waitForTimeout(800);
 
-  // 2. Pick category — characters vs scenes (heuristic by tag casing/known set)
-  const KNOWN_CHAR_TAGS = new Set(["Sara", "Eva", "Ginger", "Joe", "Mama", "Papa", "Grandma"]);
-  const category = KNOWN_CHAR_TAGS.has(tag) ? "Characters" : "Scenes";
-  await page.getByText(category, { exact: true }).click().catch(() => {
-    console.log(`    (category tab "${category}" not found, continuing without filter)`);
-  });
-  await page.waitForTimeout(500);
+  // 2. Click the "All" category tab using the exact Kling DOM:
+  //    <div class="selected"><span>All</span><span class="total-number">25</span></div>
+  //    The All tab is the only one with both an "All" span AND a sibling
+  //    .total-number span. Click it to ensure we see characters + scenes + props.
+  try {
+    const allTab = page
+      .locator('div')
+      .filter({ has: page.locator('> span:text-is("All")') })
+      .filter({ has: page.locator('> span.total-number') })
+      .first();
+    if (await allTab.isVisible({ timeout: 800 }).catch(() => false)) {
+      await allTab.click({ timeout: 1500 });
+    }
+  } catch {}
+  await page.waitForTimeout(600);
 
-  // 3. Click the element by its visible name. The library panel renders
-  //    .subject-item tiles with a label; click the one matching `tag`.
-  const tile = page.locator(`.subject-item:has-text("${tag}")`).first();
-  await tile.locator(".cover").click({ timeout: 5000 });
-  console.log(`    ✓ selected library element @${tag} (${category})`);
+  // 3. Click the element by its visible name. Try multiple casings/variations
+  //    in case the library uses Title Case or removes punctuation. If not
+  //    found in the visible viewport, scroll the panel and retry.
+  const variations = [
+    tag,
+    tag[0].toUpperCase() + tag.slice(1),
+    tag.replace(/-/g, " "),
+    tag.replace(/-/g, " ").split(" ").map(w => w[0].toUpperCase()+w.slice(1)).join(" "),
+    tag.replace(/-/g, "_"),
+    tag.toUpperCase(),
+  ];
+  async function findAndClickTile() {
+    for (const v of variations) {
+      const escaped = v.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+      const tile = page.locator(`.subject-item`).filter({ has: page.locator(`text=/^${escaped}$/i`) }).first();
+      try {
+        if (await tile.isVisible({ timeout: 500 }).catch(() => false)) {
+          await tile.locator(".cover").click({ timeout: 2000 });
+          console.log(`    ✓ selected library element "${v}" (matched @${tag})`);
+          return true;
+        }
+      } catch {}
+    }
+    return false;
+  }
+  let tileClicked = await findAndClickTile();
+  // If not found, try scrolling the library list and retrying up to 3 times
+  for (let scroll = 1; !tileClicked && scroll <= 4; scroll++) {
+    await page.locator('.subject-item').last().scrollIntoViewIfNeeded().catch(() => {});
+    await page.waitForTimeout(400);
+    tileClicked = await findAndClickTile();
+    if (!tileClicked) {
+      // Force scroll via mouse wheel inside the panel
+      await page.mouse.wheel(0, 600).catch(() => {});
+      await page.waitForTimeout(400);
+      tileClicked = await findAndClickTile();
+    }
+  }
+  if (!tileClicked) {
+    const visibleNames = await page.locator(`.subject-item`).allInnerTexts().catch(() => []);
+    console.error(`    ❌ could not find @${tag} (tried variations: ${variations.join(", ")}, with scrolling)`);
+    console.error(`    📋 Visible library tiles (${visibleNames.length}): ${JSON.stringify(visibleNames.map(s => s.split('\n')[0]).slice(0, 50))}`);
+    throw new Error(`Library element "${tag}" not found. Update spec.json or check Kling library.`);
+  }
   await page.waitForTimeout(500);
 
   // 4. Confirm if a confirm button is present
@@ -392,37 +514,21 @@ async function addLibraryElement(page, tag) {
 }
 
 async function addUploadElement(page, tag, filePath) {
-  // Open subject panel + Add Image menu
-  await page.locator(".subject-item").first().click();
-  await page.waitForTimeout(400);
-  await page.getByRole("menuitem", { name: "Add Image" }).click();
-  await page.waitForTimeout(500);
-  // Switch to Uploads tab
-  await page.getByText("Uploads").click().catch(()=>{});
-  await page.waitForTimeout(400);
-  // Direct file upload via input
-  const fileInput = page.locator('input[type="file"]').first();
-  await fileInput.setInputFiles(filePath);
-  await page.waitForTimeout(1500); // upload time
-  // Pick the just-uploaded image (first in list)
-  await page.locator(".image-item-mask, .image-item-source").first().click();
-  await page.waitForTimeout(300);
-  await page.getByRole("button", { name: "Confirm" }).click();
-  await page.waitForTimeout(500);
-  // Name the new element
-  const nameBox = page.getByRole("textbox", { name: "Enter Name" });
-  await nameBox.click();
-  await nameBox.fill(tag);
-  await page.waitForTimeout(300);
-  // Click the Generate-style "create" button (NOT the main generate at the footer —
-  // this is the modal's Confirm/Done button to commit the new element).
-  // The modal's generate button is contextual; some versions use "Create" or "Done".
-  const createBtn = page.locator(
-    'button:has-text("Create"), button:has-text("Done"), button:has-text("Generate")'
-  ).filter({ hasNotText: /^\d+$/ }).first(); // skip the credit-counted main Generate
-  await createBtn.click().catch(async () => {
-    // Fallback: assume the contentinfo Generate finalizes element creation in this version
-    await page.getByRole("contentinfo").getByRole("button", { name: "Generate" }).click();
-  });
-  await page.waitForTimeout(800);
+  // 2026-05-01 — Image/Video → Image-Upload triggers a native file picker.
+  // setInputFiles on the role=button doesn't work (it's a div, not an
+  // <input>). Use Playwright's filechooser pattern instead.
+
+  // Step 1: click Image/Video to open the bind menu
+  await page.locator("a").filter({ hasText: "Image/Video" }).first().click();
+  await page.waitForTimeout(700);
+
+  // Step 2: setup filechooser listener BEFORE the click that triggers it
+  const fileChooserPromise = page.waitForEvent("filechooser", { timeout: 10000 });
+  await page.getByText("Image-Upload").first().click();
+  const fileChooser = await fileChooserPromise;
+
+  // Step 3: pick the file
+  await fileChooser.setFiles(filePath);
+  console.log(`    ↑ uploaded ${filePath.split('/').pop()}`);
+  await page.waitForTimeout(2500);
 }

@@ -1,0 +1,32 @@
+{
+  "episode": 5,
+  "beat": 3,
+  "microClip": "d",
+  "title": "EXPLORE 4 — MATH (sharing/division)",
+  "mode": "omni",
+  "durationSec": 15,
+  "quality": "720p",
+  "nativeAudio": true,
+  "expectedCredits": 135,
+  "subjects": [
+    "Sara",
+    "Eva"
+  ],
+  "scene": "dream-house",
+  "boundElements": [
+    {
+      "tag": "Sara",
+      "source": "library"
+    },
+    {
+      "tag": "Eva",
+      "source": "library"
+    },
+    {
+      "tag": "dream-house",
+      "source": "library"
+    }
+  ],
+  "prompt": "Medium shot in @dream-house. @Sara on the LEFT counts on her fingers smiling. @Eva on the RIGHT watches with curiosity, both kneeling on the rug. Sara (thinking aloud): \"There are FIVE dolls and TWO of us. So… TWO for me, TWO for Eva, and ONE to share!\" Sara (handing a doll to Eva): \"Here, Eva!\" Eva (eyes wide, hugging the doll): \"I get to share!\" Sara: \"We all get to share!\"",
+  "negativePrompt": "duplicate character, twin, clone, two of the same, mirrored figure, second father, second mother, two Papa, two Mama, identical adults, extra people, third child, second sister, second sara, second eva, two eva, duplicate eva"
+}

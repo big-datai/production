@@ -1,0 +1,20 @@
+{
+  "episode": 7,
+  "beat": 4,
+  "clip": 11,
+  "title": "CRAFT 2 — The coupon pages reveal",
+  "mode": "omni",
+  "durationSec": 10,
+  "quality": "720p",
+  "nativeAudio": true,
+  "expectedCredits": 90,
+  "subjects": ["Sara"],
+  "scene": "dining-room",
+  "boundElements": [
+    { "tag": "Sara", "source": "library" },
+    { "tag": "coupon-book", "source": "library" },
+    { "tag": "dining-room", "source": "library" }
+  ],
+  "prompt": "Slow tilt-down close-up in @dining-room onto the @coupon-book lying open on the wooden table. The hand-decorated kid-made booklet is mid-creation: cover reads \"TO THE BEST MAMA EVER\" in big rainbow crayon letters with hand-drawn hearts and a smiling sun. The four inside coupon pages are visible: \"ONE WHOLE FAMILY DAY\" with crayon stick-figures, \"DANCE PARTY\" with music notes, \"WALK BOTH PUPPIES\" with two tiny dog drawings, \"STORY TIME ON THE COUCH\" with a stick-figure book. @Sara in the FOREGROUND-LEFT carefully adds a sticker to the cover. Sara (humming, satisfied): \"Mmmmm-perfect.\" Soft warm afternoon light, gentle craft music.",
+  "negativePrompt": "duplicate character, twin, clone, two of the same, mirrored figure, second father, second mother, two Papa, two Mama, identical adults, extra people, third child, second sister, second sara, second eva, two eva, duplicate eva, blurry text, lorem ipsum, mirror reflection"
+}

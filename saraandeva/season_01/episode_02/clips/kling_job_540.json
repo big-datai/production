@@ -1,0 +1,13 @@
+{
+  "klingId": 540,
+  "status": "keep",
+  "mappedTo": "clip_03c",
+  "spec": "Counting letters together",
+  "rendered": "Sara teaching Eva at chalkboard with ABCDEFG letters + 'EV'",
+  "rejectReason": null,
+  "reviewedBy": "dave",
+  "reviewedAt": "2026-04-27T19:57:21.866Z",
+  "usedIn": [
+    "ep02_v3"
+  ]
+}

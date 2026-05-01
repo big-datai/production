@@ -1,0 +1,19 @@
+{
+  "episode": 7,
+  "beat": 3,
+  "clip": 8,
+  "title": "PIVOT — Sara has THE idea",
+  "mode": "omni",
+  "durationSec": 10,
+  "quality": "720p",
+  "nativeAudio": true,
+  "expectedCredits": 90,
+  "subjects": ["Sara"],
+  "scene": "kitchen",
+  "boundElements": [
+    { "tag": "Sara", "source": "library" },
+    { "tag": "kitchen", "source": "library" }
+  ],
+  "prompt": "Slow push-in extreme close-up in @kitchen on @Sara's face only — Sara fills the frame. Soft morning sunlight catches in her hair. Sara's eyes slowly widen as something CLICKS — gears turning, a smile creeping up. The camera holds tight on the moment of realization. Sara (whispered, awed at her own idea): \"Oh… OH. Oh-oh-oh-oh — wait. WAIT.\" Sara (louder, lighting up): \"I have a PLAN. I have a really REALLY good plan!\" Bright cheerful music sting on the realization. Solo shot, no other people in frame, no other faces visible.",
+  "negativePrompt": "duplicate character, twin, clone, two of the same, mirrored figure, second father, second mother, two Papa, two Mama, identical adults, extra people, third child, second sister, second sara, second eva, two eva, duplicate eva, mirror reflection, family members, strangers, crowd, group of people, hugging hands, other faces, background people, friends, neighbors"
+}

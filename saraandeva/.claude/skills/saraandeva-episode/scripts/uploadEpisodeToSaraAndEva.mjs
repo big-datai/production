@@ -13,7 +13,10 @@
  * token and uploads run unattended.
  *
  * Usage:
- *   node uploadEpisodeToSaraAndEva.mjs <video_path> [--title "..."] [--description-file path] [--privacy unlisted|public|private]
+ *   node uploadEpisodeToSaraAndEva.mjs <video_path> [--title "..."] [--description-file path] [--tags-file path] [--privacy unlisted|public|private]
+ *
+ * --tags-file: newline-separated tags file. If omitted, falls back to the ep01
+ * default tag list below.
  */
 
 import fs from 'node:fs';
@@ -37,7 +40,17 @@ if (!videoPath || !fs.existsSync(videoPath)) {
 const argFlag = (name) => { const i = argv.indexOf(`--${name}`); return i >= 0 ? argv[i+1] : null; };
 const title = argFlag('title') || 'Sara and Eva — Episode 1: The Puppies Want Pancakes';
 const descFile = argFlag('description-file');
+const tagsFile = argFlag('tags-file');
 const privacy = argFlag('privacy') || 'unlisted';
+
+const tags = tagsFile && fs.existsSync(tagsFile)
+  ? fs.readFileSync(tagsFile, 'utf8').split('\n').map(s => s.trim()).filter(Boolean)
+  : [
+      'kids cartoon', 'sara and eva', 'pixar style',
+      'puppy cartoon', 'cartoons for kids', 'kids stories',
+      'family cartoon', 'preschool', 'jack russell', 'pomeranian',
+      'breakfast', 'pancakes', 'morning routine', 'school bus',
+    ];
 
 const description = descFile && fs.existsSync(descFile)
   ? fs.readFileSync(descFile, 'utf8')
@@ -110,12 +123,7 @@ async function main() {
       snippet: {
         title,
         description,
-        tags: [
-          'kids cartoon', 'sara and eva', 'pixar style',
-          'puppy cartoon', 'cartoons for kids', 'kids stories',
-          'family cartoon', 'preschool', 'jack russell', 'pomeranian',
-          'breakfast', 'pancakes', 'morning routine', 'school bus',
-        ],
+        tags,
         categoryId: '24', // Entertainment
         defaultLanguage: 'en',
       },

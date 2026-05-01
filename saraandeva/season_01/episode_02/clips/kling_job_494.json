@@ -1,0 +1,13 @@
+{
+  "klingId": 494,
+  "status": "keep",
+  "mappedTo": "clip_02a",
+  "spec": "Sisters and Joe enter empty kitchen",
+  "rendered": "Sara+Eva enter, see empty plate (Joe didn't render)",
+  "rejectReason": null,
+  "reviewedBy": "dave",
+  "reviewedAt": "2026-04-27T19:57:21.866Z",
+  "usedIn": [
+    "ep02_v3"
+  ]
+}

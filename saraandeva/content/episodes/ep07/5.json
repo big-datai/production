@@ -1,0 +1,21 @@
+{
+  "episode": 7,
+  "beat": 2,
+  "clip": 5,
+  "title": "DISASTER 2 — Eva trips, the tray FLIES",
+  "mode": "omni",
+  "durationSec": 10,
+  "quality": "720p",
+  "nativeAudio": true,
+  "expectedCredits": 90,
+  "subjects": ["Sara", "Eva", "Ginger"],
+  "scene": "kitchen",
+  "boundElements": [
+    { "tag": "Sara", "source": "library" },
+    { "tag": "Eva", "source": "library" },
+    { "tag": "Ginger", "source": "library" },
+    { "tag": "kitchen", "source": "library" }
+  ],
+  "prompt": "Slow-motion wide shot in @kitchen. @Eva on the RIGHT trips on the corner of the rug — her foot snags. The white wooden tray launches into the air in slow-motion: pancakes flipping, the dandelion vase tumbling end-over-end, orange juice arcing in a perfect parabola. @Sara on the LEFT reaches out helplessly, mouth wide open. CRASH — pancakes splat across the tile floor, juice everywhere, vase rolls clattering under the cabinet. @Ginger trots calmly into frame from screen-left, sniffs a fallen pancake, picks it up in her teeth and trots happily away. Sara (eyes huge): \"OH NO.\" Eva (frozen, mouth quivering): \"…oh… no.\" Comedic disaster sting.",
+  "negativePrompt": "duplicate character, twin, clone, two of the same, mirrored figure, second father, second mother, two Papa, two Mama, identical adults, extra people, third child, second sister, second sara, second eva, two eva, duplicate eva, second ginger, two ginger, second dog, mirror reflection"
+}

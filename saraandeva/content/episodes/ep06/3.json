@@ -1,0 +1,27 @@
+{
+  "episode": 6,
+  "beat": 1,
+  "clip": 3,
+  "title": "HOOK 3 — Ginger buries with her nose",
+  "mode": "omni",
+  "durationSec": 10,
+  "quality": "720p",
+  "nativeAudio": true,
+  "expectedCredits": 90,
+  "subjects": [
+    "Ginger"
+  ],
+  "scene": "backyard-kitchen",
+  "boundElements": [
+    {
+      "tag": "Ginger",
+      "source": "library"
+    },
+    {
+      "tag": "backyard-kitchen",
+      "source": "library"
+    }
+  ],
+  "prompt": "Close-up in @backyard-kitchen, slow push-in. @Ginger uses her wet black nose to push a small mound of dark soil over a golden bagel sitting in a freshly-dug hole next to the petunia flowerbed. The snout pushes soil left, then right, then satisfied sniffs the spot. Ginger snorts proudly: \"Snrf!\" Tail wagging high. Soft afternoon sunlight, no humans visible.",
+  "negativePrompt": "duplicate character, twin, clone, two of the same, mirrored figure, second father, second mother, two Papa, two Mama, identical adults, extra people, third child, second sister, second sara, second eva, two eva, duplicate eva, second ginger, two ginger, second dog, two dogs, mirror reflection, human, person, hands, child, kid"
+}

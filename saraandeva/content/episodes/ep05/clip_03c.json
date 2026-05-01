@@ -1,0 +1,32 @@
+{
+  "episode": 5,
+  "beat": 3,
+  "microClip": "c",
+  "title": "EXPLORE 3 — COUNTING dolls",
+  "mode": "omni",
+  "durationSec": 15,
+  "quality": "720p",
+  "nativeAudio": true,
+  "expectedCredits": 135,
+  "subjects": [
+    "Eva",
+    "Sara"
+  ],
+  "scene": "dream-house",
+  "boundElements": [
+    {
+      "tag": "Eva",
+      "source": "library"
+    },
+    {
+      "tag": "Sara",
+      "source": "library"
+    },
+    {
+      "tag": "dream-house",
+      "source": "library"
+    }
+  ],
+  "prompt": "Top-down high-angle shot in @dream-house. Five small dolls are laid out on the colorful play rug in a row in front of the Dream House. @Eva on the LEFT in a pink shirt, on hands and knees, finger touching each doll one by one as she counts slowly. @Sara stands on the RIGHT smiling. Eva (pointing each one carefully): \"One, two, three, four, FIVE!\" Eva (sitting back, proud): \"Five dolls!\" Sara: \"All five for our Dream House!\"",
+  "negativePrompt": "duplicate character, twin, clone, two of the same, mirrored figure, second father, second mother, two Papa, two Mama, identical adults, extra people, third child, second sister, second sara, second eva, two eva, duplicate eva"
+}

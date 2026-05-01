@@ -1,0 +1,36 @@
+{
+  "episode": 6,
+  "beat": 5,
+  "clip": 15,
+  "title": "B-PLOT 2 — Papa lets go, Eva pedals solo",
+  "mode": "omni",
+  "durationSec": 15,
+  "quality": "720p",
+  "nativeAudio": true,
+  "expectedCredits": 135,
+  "subjects": [
+    "Eva",
+    "Papa"
+  ],
+  "scene": "bike_circle",
+  "boundElements": [
+    {
+      "tag": "Eva",
+      "source": "library"
+    },
+    {
+      "tag": "Papa",
+      "source": "library"
+    },
+    {
+      "tag": "eva-bike",
+      "source": "library"
+    },
+    {
+      "tag": "bike_circle",
+      "source": "library"
+    }
+  ],
+  "prompt": "Wide tracking shot in @bike_circle, golden hour light. @Eva pedals forward on @eva-bike, both hands on the handlebars, white helmet on, eyes wide with joyful focus. @Papa stands in the BACKGROUND with arms wide open, having just let go, face glowing with pride. Papa (cheering): \"You're doing it! All by yourself!\" Eva (squealing): \"I'M DOING IT! I'M DOING IT!\" Triumphant music swell, lens flare.",
+  "negativePrompt": "duplicate character, twin, clone, two of the same, mirrored figure, second father, second mother, two Papa, two Mama, identical adults, extra people, third child, second sister, second sara, second eva, two eva, duplicate eva, second bike, two bikes, training wheels, mirror reflection"
+}

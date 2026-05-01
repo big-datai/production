@@ -1,0 +1,20 @@
+{
+  "episode": 7,
+  "beat": 4,
+  "clip": 12,
+  "title": "CRAFT 3 — Final cover sticker, Eva adds a wobbly heart",
+  "mode": "omni",
+  "durationSec": 10,
+  "quality": "720p",
+  "nativeAudio": true,
+  "expectedCredits": 90,
+  "subjects": ["Eva"],
+  "scene": "dining-room",
+  "boundElements": [
+    { "tag": "Eva", "source": "library" },
+    { "tag": "coupon-book", "source": "library" },
+    { "tag": "dining-room", "source": "library" }
+  ],
+  "prompt": "Close-up in @dining-room. @Eva on the LEFT, tongue poking out in deep four-year-old concentration, peels a tiny sparkly red heart sticker from a sticker sheet and presses it onto the cover of the @coupon-book — the sticker lands intentionally crooked, slightly off-center. Eva sits back, beams up at the camera with a huge proud gappy smile, both arms thrown up in triumph. Eva (joyful): \"DONE! I made it PERFECT!\" Warm afternoon sunlight. Cheerful triumphant music sting.",
+  "negativePrompt": "duplicate character, twin, clone, two of the same, mirrored figure, second father, second mother, two Papa, two Mama, identical adults, extra people, third child, second sister, second sara, second eva, two eva, duplicate eva, mirror reflection"
+}

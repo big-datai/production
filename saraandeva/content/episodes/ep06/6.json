@@ -1,0 +1,36 @@
+{
+  "episode": 6,
+  "beat": 2,
+  "clip": 6,
+  "title": "DISCOVERY 3 — Eva joins to look",
+  "mode": "omni",
+  "durationSec": 10,
+  "quality": "720p",
+  "nativeAudio": true,
+  "expectedCredits": 90,
+  "subjects": [
+    "Sara",
+    "Eva"
+  ],
+  "scene": "kitchen",
+  "boundElements": [
+    {
+      "tag": "Sara",
+      "source": "library"
+    },
+    {
+      "tag": "Eva",
+      "source": "library"
+    },
+    {
+      "tag": "ipad",
+      "source": "library"
+    },
+    {
+      "tag": "kitchen",
+      "source": "library"
+    }
+  ],
+  "prompt": "Medium shot in @kitchen by the window. @Sara on the LEFT still points at the window, holding @ipad in her other hand. @Eva on the RIGHT stops beside her sister, hands on her cheeks in shocked surprise, eyes huge. Eva (gasping): \"What is going on?!\" Sara (eyes locked on the window): \"You have to see this!\" Cheerful surprised mood, warm daylight from the window.",
+  "negativePrompt": "duplicate character, twin, clone, two of the same, mirrored figure, second father, second mother, two Papa, two Mama, identical adults, extra people, third child, second sister, second sara, second eva, two eva, duplicate eva, second ginger, two ginger, second ipad, two ipads, mirror reflection, blurry text"
+}

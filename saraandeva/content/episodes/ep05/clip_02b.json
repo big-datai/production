@@ -1,0 +1,32 @@
+{
+  "episode": 5,
+  "beat": 2,
+  "microClip": "b",
+  "title": "DISCOVERY 2 — COUNTING floors",
+  "mode": "omni",
+  "durationSec": 10,
+  "quality": "720p",
+  "nativeAudio": true,
+  "expectedCredits": 90,
+  "subjects": [
+    "Sara",
+    "Eva"
+  ],
+  "scene": "dream-house",
+  "boundElements": [
+    {
+      "tag": "Sara",
+      "source": "library"
+    },
+    {
+      "tag": "Eva",
+      "source": "library"
+    },
+    {
+      "tag": "dream-house",
+      "source": "library"
+    }
+  ],
+  "prompt": "Wide shot in @dream-house. The three-floor pink Dream House fills the frame center-back. @Sara on the LEFT points upward at each floor as she counts. @Eva on the RIGHT watches in awe. Sara (pointing each floor): \"One floor… two floors… THREE floors!\" Sara (turning to Eva, excited): \"It has THREE whole floors!\" Eva (eyes huge): \"THREE?!\" Bright morning light.",
+  "negativePrompt": "duplicate character, twin, clone, two of the same, mirrored figure, second father, second mother, two Papa, two Mama, identical adults, extra people, third child, second sister, second sara, second eva, two eva, duplicate eva"
+}

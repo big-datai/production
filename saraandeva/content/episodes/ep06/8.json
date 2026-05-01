@@ -1,0 +1,32 @@
+{
+  "episode": 6,
+  "beat": 3,
+  "clip": 8,
+  "title": "SEARCH 2 — Sara reads PETUNIAS plant marker",
+  "mode": "omni",
+  "durationSec": 10,
+  "quality": "720p",
+  "nativeAudio": true,
+  "expectedCredits": 90,
+  "subjects": [
+    "Sara",
+    "Eva"
+  ],
+  "scene": "backyard-kitchen",
+  "boundElements": [
+    {
+      "tag": "Sara",
+      "source": "library"
+    },
+    {
+      "tag": "Eva",
+      "source": "library"
+    },
+    {
+      "tag": "backyard-kitchen",
+      "source": "library"
+    }
+  ],
+  "prompt": "Medium close-up in @backyard-kitchen. @Sara on the LEFT crouches next to a small wooden plant marker stuck in the soil that reads \"PETUNIAS\" in friendly hand-written letters. Sara traces each letter with a finger, sounding them out slowly and proudly: \"P… E… T… U… N… I… A… S. PETUNIAS!\" @Eva on the RIGHT leans in over the shoulder watching, big smile. Soft warm afternoon light.",
+  "negativePrompt": "duplicate character, twin, clone, two of the same, mirrored figure, second father, second mother, two Papa, two Mama, identical adults, extra people, third child, second sister, second sara, second eva, two eva, duplicate eva, mirror reflection, blurry text"
+}

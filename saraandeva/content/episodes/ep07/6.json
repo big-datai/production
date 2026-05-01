@@ -1,0 +1,20 @@
+{
+  "episode": 7,
+  "beat": 2,
+  "clip": 6,
+  "title": "CRISIS — \"I RUINED IT!\"",
+  "mode": "omni",
+  "durationSec": 10,
+  "quality": "720p",
+  "nativeAudio": true,
+  "expectedCredits": 90,
+  "subjects": ["Sara", "Eva"],
+  "scene": "kitchen",
+  "boundElements": [
+    { "tag": "Sara", "source": "library" },
+    { "tag": "Eva", "source": "library" },
+    { "tag": "kitchen", "source": "library" }
+  ],
+  "prompt": "Medium close-up in @kitchen, soft morning light, pancake mess on the floor surrounding them. @Eva on the RIGHT sits on the floor next to the broken vase, real tears welling up in her huge brown eyes, lower lip wobbling. @Sara on the LEFT kneels close beside her sister, one arm around her shoulders, face heartbroken. Eva (cracking, tears spilling): \"I RUINED IT! I ruined Mama's WHOLE DAY!\" Sara (gentle, fierce): \"No no no — sweetheart. Sweetheart, listen to me.\" Soft sad music sting, then a gentle warm note as Sara's eyes start to focus.",
+  "negativePrompt": "duplicate character, twin, clone, two of the same, mirrored figure, second father, second mother, two Papa, two Mama, identical adults, extra people, third child, second sister, second sara, second eva, two eva, duplicate eva, mirror reflection"
+}

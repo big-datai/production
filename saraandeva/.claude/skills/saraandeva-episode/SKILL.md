@@ -156,14 +156,38 @@ for c in clip_02a clip_02b clip_02c; do
 done
 ```
 
-### 3. Download all finished renders
+### 3. Download all finished renders (Omni — canonical method, ep06+)
 
 ```bash
-node .claude/skills/saraandeva-episode/scripts/downloadClip.mjs \
-  exports/saraandeva/season_01/episode_01/clips 8
+node .claude/skills/saraandeva-episode/scripts/downloadOmniByPrompt.mjs \
+  content/episodes/ep<NN> \
+  season_01/episode_<NN>/clips
 ```
 
-Kling caps batch download at 8 clips per ZIP. Re-run the script in rounds (each round picks the visible top 8) until every needed clip is on disk. Use `ditto -x -k <zip> <dest>` (NOT `unzip` — chokes on CJK filenames in Kling ZIPs).
+This is THE method. Pulls render URLs straight out of Kling's IndexedDB
+`request_data_cache → task-feeds`, matches each cached prompt to a spec JSON
+by longest-common-prefix, and HTTP-fetches the unwatermarked output URL.
+
+**Why not the asset-page UI flow?** The old `downloadAllClips.mjs` /
+`downloadClip.mjs` scripts navigate to `/app/user-assets/materials`, tick
+checkboxes in render order, and use the "Download without Watermark" menu.
+They break:
+1. Order in the asset list shuffles (newest-first, but rendered-out-of-order
+   batches mean clip 1 might be at position 7 in the panel).
+2. UI selectors drift between Kling releases.
+3. Capped at 8 clips per batch.
+
+The IndexedDB-driven flow has none of those problems. Output filename is the
+spec's `clip` number (so clip 1 → `1.mp4`, deterministic).
+
+**Critical detail — IndexedDB cache CLEAR is mandatory.** Kling caches API
+responses by pageTime. A page fetched while a task was status=5 (rendering)
+keeps that stale data forever — even if the task has since finished. The
+script clears the `task-feeds` store before reload to force a fresh API
+fetch. Without this clear, recently-finished renders won't show up.
+
+If a clip is reported "no match", it likely silent-failed at credit cap and
+was never queued. Top up credits and re-submit just those clip JSONs.
 
 ### 3.5 ★ POST-RENDER AUDIT + AUTO-REPLACE (mandatory after every batch)
 
@@ -290,10 +314,12 @@ Example clean clip:
 ## Files
 
 ### Production scripts
-- `scripts/submitSingleShotClip.mjs` — single-shot Kling submission with anti-pattern lint (HARD-FAIL on bad prompts)
-- `scripts/downloadClip.mjs` — download from `/app/user-assets/materials` (top 8 visible per round)
-- `scripts/uploadEpisodeToSaraAndEva.mjs` — YouTube upload to the @SaraAndEva channel (Made-for-Kids forced ON, UNLISTED default)
+- `scripts/submitOmniClip.mjs` — **CANONICAL** Omni submission (ep03+). Lints prompts (HARD-FAIL on banned phrases / repeated tags / missing negatives), hard-reloads /app/omni/new for clean state, robust dropdown handler with multi-opener candidates, prompt-verification guard before Generate, and library lookup with case variations + scroll fallback. The "All" library tab is forced (Characters/Scenes filters break newly-uploaded element visibility).
+- `scripts/downloadOmniByPrompt.mjs` — **CANONICAL** download (ep06+). IndexedDB-driven, prompt-matched, deterministic numbered output. See "Download all finished renders" above.
+- `scripts/assembleEpisode.mjs` — **CANONICAL** assembly. Prepends `intro_song.mp4 + intro_sara/eva/mama.mp4` from `--intro-dir`, concats numbered clips from `--clips-dir`, appends outro pair from `--outro-dir`. Skips missing-numbered files gracefully (e.g. credit-cap silent failures). Standard preprocessing: 0.15s scene-pop trim, 1280×720@30, AAC 44.1k stereo.
+- `scripts/uploadEpisodeToSaraAndEva.mjs` — YouTube upload to the @SaraAndEva channel (Made-for-Kids forced ON, UNLISTED default). Supports `--tags-file` for per-episode tag overrides.
 - `scripts/_updateYoutubeMetadata.mjs` — patch existing YouTube video's title/description/tags via API
+- `scripts/submitSingleShotClip.mjs` — *legacy* (ep01–ep02 only); use `submitOmniClip.mjs` instead
 
 ### Diagnostic / one-off scripts (`_` prefix)
 - `_export-cookies.mjs` — export Kling cookies for codegen
@@ -325,12 +351,240 @@ Example clean clip:
 | Realistic per-episode budget | **~1,250 credits** |
 | Monthly Platinum (25K credits) | **~20 episodes/month** sustainable |
 
-## Current state (2026-04-26)
+## Generating bound-element assets via Gemini Nano Banana (Pixar-style props/scenes)
 
-- ✅ Single-shot micro-clip workflow proven on 6 clips (beats 2–3)
-- ✅ Search-by-name bind dialog automation (no tile-index fragility)
-- ✅ Anti-pattern prompt linter inline in submit script
-- ⚠️ Negative prompt UI textarea may not be exposed in single-shot mode — best-effort injection
-- 🔜 Beats 4–8 (clips 04a → 08c) ready to submit
-- 🔜 `downloadClip.mjs` reliability — final 2 selectors still flaky
-- 🔜 ffmpeg concat in arc order (currently manual)
+For new recurring props (Eva's bike, the goreadling iPad, a new room) we generate
+Pixar-3D PNGs via Gemini's `gemini-3.1-flash-image-preview` model (a.k.a.
+"Nano Banana") and then upload to Kling's Element Library by hand. The
+generated PNGs match the existing show aesthetic (compare to
+`backyard.png`, `bike_circle.png`, `dream_house.png`).
+
+### Style suffix to bake into every prompt
+
+```
+Pixar / 3D-CG kids'-show aesthetic — high-quality product render,
+soft volumetric studio lighting, gentle saturated colors, smooth
+subsurface materials, slight cel-shading on edges, friendly cheerful
+mood. Plain off-white seamless studio background, no people, no hands,
+prop alone center-frame, soft drop shadow underneath. Square 1024x1024.
+```
+
+For SCENES (vs props), drop the "prop alone center-frame" + "studio
+background" lines and instead describe the actual environment.
+
+### Image-to-image (style-converting a real photo)
+
+For backyard/house references where the *real* place matters (so the
+family recognizes their world), pass the actual photo as `inlineData`
+alongside the text prompt and tell Gemini to "reimagine the source
+photograph as a Pixar 3D animated scene — preserve the recognizable
+layout (X, Y, Z), enhance for cartoon use." Example pattern lives in
+the ep06 backyard generation (3 variants generated, user picked v1).
+
+### Recipe (3 variants is the sweet spot — pick the best, delete the rest)
+
+1. Read API key from `/Volumes/Samsung500/goreadling/.env.local` —
+   accepts `GEMINI_API_KEY` through `GEMINI_API_KEY_6`. **Strip
+   surrounding quotes** when parsing — keys are stored as `="AIza..."`
+   not bare. Auto-rotate keys on `INVALID_ARGUMENT` / `RESOURCE_EXHAUSTED`.
+2. Save 3 variants as `<asset>_v1.png`, `<asset>_v2.png`, `<asset>_v3.png`
+   under `assets/scenes/`.
+3. Show all 3 to the user, let them pick. Rename winner to `<asset>.png`,
+   delete losers.
+4. User uploads the winner to Kling's Element Library and gives it a
+   library name (often kebab-case like `eva-bike`, `backyard-kitchen`).
+   That library name is the spec tag. **Library names are user-defined
+   — verify before writing specs.**
+
+### macOS TCC gotcha
+
+Spawned bash subprocesses can't read files in `~/Desktop` /
+`~/Documents` even when Claude's own Read tool can. If a user attaches
+a screenshot for image-to-image input, it lands in `~/Desktop` and the
+generation script will hit `ENOENT`. Tell the user to drag the file to
+`/Volumes/...` (not TCC-protected), then read from there.
+
+### Playwright install-time gotcha (DO NOT skip)
+
+Playwright 1.57 has an assertion bug in
+`node_modules/playwright-core/lib/server/chromium/crBrowser.js` line
+~147 that crashes `chromium.connectOverCDP()` when it tries to attach
+to Kling's service worker (which has no `browserContextId`). After
+`npm install`, hot-patch by adding before the `assert(targetInfo.browserContextId, ...)`:
+
+```js
+if (!targetInfo.browserContextId) {
+  // Skip context-less service workers (e.g. kling.ai sw) — playwright 1.57
+  // assertion would otherwise crash connectOverCDP.
+  session.detach().catch(() => {});
+  return;
+}
+```
+
+Without this, every Kling automation script crashes on startup with
+"Error: targetInfo: ...service_worker..." — re-apply after every
+`npm install`.
+
+## Reusable assets across episodes (intro / outro / theme song)
+
+To avoid re-rendering the same intro/outro every episode, certain clips are
+generated ONCE and reused as MP4 files prepended/appended at assembly time.
+
+```
+season_01/
+├── intro/
+│   ├── intro_sara.mp4         # 5s wave   — character cameo
+│   ├── intro_eva.mp4          # 5s spin   — character cameo
+│   ├── intro_mama.mp4         # 6s smile  — character cameo
+│   └── intro_song.mp4         # 15s theme song (TBD — see _shared/intro_song.json)
+├── OUTRO/
+│   ├── 17.mp4                 # 10s subscribe wave
+│   └── 18.mp4                 # 10s subscribe button-point
+└── episode_<NN>/clips/        # only the per-episode unique renders live here
+```
+
+The episode's `episode.json` should declare `reuse.intro` and `reuse.outro`
+blocks pointing to those files. Saves ~315 credits (~$15) per episode vs
+re-rendering every time, and gives the show a consistent recurring opener
+and closer.
+
+Reusable theme-song specs live in `content/episodes/_shared/`:
+- `intro_song.json` — 15s sing-along Sara+Eva theme (135 credits)
+- `intro_song_short.json` — 5s reprise hook for mid-episode insertion (45 credits)
+
+## ★ Lessons from ep06 (2026-04-29)
+
+These are baked into the current `submitOmniClip.mjs` and
+`downloadOmniByPrompt.mjs`. Read before debugging future failures.
+
+### Submission (Omni mode)
+
+1. **Hard-reload `/app/omni/new` at the start of every submission.** Without
+   this, Kling remembers the previous session's quality + duration settings.
+   That sounds harmless until the dropdown automation tries to click a "5s"
+   opener label that's no longer visible (current is "10s") and the dropdown
+   never opens. After hard reload, defaults reset to 1080p + 5s, and the
+   "5s" opener is reliably clickable.
+
+2. **Multi-opener dropdown candidates.** When opening the duration/quality
+   dropdown, try `["5s","10s","15s"]` for duration and `["1080p","720p","540p"]`
+   for quality — whichever is currently displayed is the active opener.
+
+3. **Force the "All" library tab.** When binding elements, click the All
+   tab (DOM: `<div class="selected"><span>All</span><span class="total-number">N</span></div>`)
+   so characters + scenes + props are visible together. Switching to the
+   Scenes tab specifically filters out newly-uploaded elements (a
+   freshly-uploaded `backyard-kitchen` may not show up in Scenes-only view
+   even though it's in the library — bug observed during ep06).
+
+4. **Library element lookup must support name variations.** Kling library
+   element names are case-insensitive substring matched, but our spec tags
+   may use kebab-case (`backyard-kitchen`) while the library shows display
+   case (`Backyard-kitchen`). The script tries: lowercase, Title Case,
+   space-separated, snake_case, UPPERCASE — falls through until match.
+
+5. **Scroll fallback inside the library panel.** If the target tile is
+   below the visible viewport, the script auto-scrolls inside the library
+   list (mouse wheel + scrollIntoViewIfNeeded) up to 4 times before giving up.
+
+6. **Prompt-verification guard before Generate.** After typing the prompt
+   with @-autocomplete chips, read back the textbox content and verify:
+   - Length ≥ 85% of expected
+   - Last 50 chars of expected appear in actual (catches truncation)
+   - Every quoted dialogue chunk appears verbatim
+   If any check fails, ABORT before Generate. Catches dropped chips,
+   autocomplete glitches, or paste failures that would otherwise spend
+   credits on a broken render.
+
+7. **Cost-mismatch HARD GUARD.** Before clicking Generate, read the credit
+   cost shown on the button. If it doesn't match `expectedCredits` from the
+   spec, abort. Most common cause: duration dropdown didn't switch (cost
+   stuck at the previous setting's value).
+
+8. **Each `@Tag` must appear EXACTLY ONCE in the prompt.** Repeated tags
+   trigger Kling's clone bug (renders the character twice on screen). If
+   you need a character to act AND speak, fold them into one sentence:
+   `@Sara on the LEFT pointing with a fork: "Two. Three. Four."`
+
+9. **Library element names are user-defined.** Don't assume `backyard`
+   exists — it might be `backyard-front` (driveway side) or
+   `backyard-kitchen` (kitchen side). Always check the actual library
+   contents before writing specs.
+
+10. **Kling cannot reliably render text or words.** Specifying exact
+    text content in prompts (signs, labels, book pages, written notes)
+    produces garbled/truncated output ~90% of the time. Workarounds:
+    - Bake the text into a bound element PNG (Nano-Banana-generated
+      with the text correct); the @bound-element renders that text
+      consistently, vs Kling re-generating it imperfectly.
+    - In the prompt, refer to the prop/sign WITHOUT quoting its text:
+      `"Sara reads the plant marker"` ≠ `"the plant marker reads PETUNIAS"`.
+    - For dialogue moments where a character reads text aloud, the
+      AUDIO will be perfect but the visible text will be wrong — design
+      the shot so the printed text isn't the focus of the frame.
+
+10a. **TEXT-PROP MANDATE (post-ep07 rule):** Whenever a clip needs
+    visible text (a sign, a label, a written note, a book cover, a
+    list, a screen, anything with words), the text MUST be generated
+    as a Nano Banana image FIRST, uploaded to the Kling library as a
+    bound element, and referenced in the prompt as `@<element-name>`.
+    NEVER quote the text in the prompt and let Kling render it. Established
+    text-props in the library: `coupon-book` (ep07 Mother's Day), `papa-notepad`
+    (ep07 vacuum-cleaner joke). Adding new text-props is a one-time
+    prep step before submitting the clip — see "Generating bound-element
+    assets via Gemini Nano Banana" section above.
+
+11. **"The family" / "the kids" / "the parents" without binding spawns
+    random strangers.** Kling improvises with generic stock characters
+    when group nouns aren't tied to bound elements. If the family is
+    in the shot, bind each member; if they're offscreen, don't mention
+    them. The previous-clip context carries — you don't need to recap
+    "she's mid-hug with the family" if the prior clip showed the hug.
+
+### Download (canonical via IndexedDB)
+
+10. **Clear `request_data_cache → task-feeds` before each download run.**
+    Kling caches API responses by pageTime, and stale pages keep status=5
+    (rendering) entries forever even after they finish. The clear forces a
+    fresh API fetch on the next reload.
+
+11. **Filter cached tasks by `output URL exists`, not `status === 99`.**
+    Status propagation lags, output URL is the cleaner signal.
+
+12. **Match clips by normalized longest-common-prefix.** Both spec prompts
+    (with `@Tag` references) and cached prompts (with `Element1/2/3`
+    references) get normalized to the same `X` placeholder. Compare the
+    first 200 chars and pick highest-prefix-match. Greedy-assign best
+    pairs first to avoid two specs claiming the same task.
+
+13. **MIN_SCORE = 30.** Below that the match is too ambiguous (likely a
+    coincidental partial-match against an unrelated task). Treat anything
+    below 30 as "no match" → silent-failed.
+
+14. **NEVER fall back to the asset-page UI.** `/app/user-assets/materials`
+    shows clips in render-completion order, not submission order, which
+    breaks the numbered-clip mapping. The IndexedDB-driven match is the
+    only reliable method.
+
+### Credit-cap silent failures
+
+15. **Watch for "Submitted" log lines without queue confirmation.** When
+    Kling runs out of credits mid-burst, the Generate click LOG-succeeds
+    but no task actually queues. The submit script can't detect this
+    locally — only the IndexedDB cache (after refresh) tells the truth.
+    After every batch, verify task count in cache matches submission count.
+
+## Current state (2026-04-29)
+
+- ✅ Omni-mode submit pipeline proven across ep03–ep06 (~70 clips submitted)
+- ✅ IndexedDB-driven download (ep06) — replaces asset-page UI flow
+- ✅ Reusable intro (3 character cameos) + OUTRO (subscribe pair) — saves
+  ~315 credits per episode
+- ✅ Hard-reload + multi-opener dropdown + prompt-verify guards baked into
+  `submitOmniClip.mjs`
+- ✅ Library lookup robust against display-case variations + below-fold tiles
+- 🔜 Theme song (`_shared/intro_song.json`) — spec ready, awaiting Kling
+  credit refill to render
+- 🔜 ep06 clip 15 (Eva pedals solo) — silent-failed at credit cap, awaiting
+  refill
+- 🔜 Frame-audit + final assembly + YouTube upload for ep06

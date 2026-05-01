@@ -1,0 +1,11 @@
+{
+  "klingId": 528,
+  "status": "reject",
+  "mappedTo": "clip_03d",
+  "spec": "Mama cameo with flashlight",
+  "rendered": "Eva cradling a baby doll wrapped in colorful blanket on bunk bed — NOT Mama, deep frame audit at 1:05 in v3 caught it",
+  "rejectReason": "baby-doll-instead-of-mama-cameo-render-failed",
+  "reviewedBy": "dave",
+  "reviewedAt": "2026-04-27T19:57:21.866Z",
+  "usedIn": []
+}
