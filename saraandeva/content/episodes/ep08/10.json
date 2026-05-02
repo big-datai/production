@@ -1,0 +1,20 @@
+{
+  "episode": 8,
+  "beat": 11,
+  "clip": 10,
+  "title": "SARA — GAS MASK SNIFF: 'EWW SOCKS!'",
+  "mode": "omni",
+  "durationSec": 10,
+  "quality": "720p",
+  "nativeAudio": true,
+  "expectedCredits": 90,
+  "subjects": ["Sara"],
+  "scene": "dentist-chair",
+  "boundElements": [
+    { "tag": "Sara", "source": "library" },
+    { "tag": "dentist-chair", "source": "library" },
+    { "tag": "gas-mask", "source": "library" }
+  ],
+  "prompt": "Tight close-up in @dentist-chair on @Sara reclined on the turquoise chair, paper bib clipped on, eyes uncertain but curious. From off-screen at the edge of the frame, a single soft cartoon-mitten-style gloved hand offers her the @gas-mask — the small pink-elephant pediatric nose-piece on a teal tube. Sara takes the mask in both her own hands, lifts it close, and takes one careful sniff. Her face transforms in slow-motion HORROR — nose wrinkling, lips curling, eyes squeezing shut. Sara (sniffing once, then recoiling): \"Eww — eww — EWWWW!\" Sara (loud and outraged, mask at arm's length): \"It SMELLS like SOCKS! OLD SOCKS!\" Solo shot — only Sara visible, only one off-screen gloved hand at frame edge, no full dentist body or face shown.",
+  "negativePrompt": "duplicate character, twin, clone, two of the same, mirrored figure, second father, second mother, two Papa, two Mama, identical adults, extra people, third child, second sister, second sara, second eva, two eva, duplicate eva, mirror reflection, family members, strangers, crowd, group of people, other faces, background people, friends, neighbors, full dentist body, dentist face, multiple dentists, second dentist, second nurse, multiple gloved hands, two pink elephants, two masks, duplicate gas mask"
+}

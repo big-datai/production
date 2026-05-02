@@ -1,0 +1,19 @@
+{
+  "episode": 8,
+  "beat": 10,
+  "clip": 9,
+  "title": "EVA OPENS HER EYES — 'THAT'S IT?!'",
+  "mode": "omni",
+  "durationSec": 10,
+  "quality": "720p",
+  "nativeAudio": true,
+  "expectedCredits": 90,
+  "subjects": ["Eva"],
+  "scene": "dentist-chair",
+  "boundElements": [
+    { "tag": "Eva", "source": "library" },
+    { "tag": "dentist-chair", "source": "library" }
+  ],
+  "prompt": "Tight close-up in @dentist-chair on @Eva's face. Her eyes are still squeezed shut, paper bib clipped on. A beat of stillness — then her eyes FLY OPEN, wide and surprised. A slow disbelieving smile spreads across her face. Eva (whispered, surprised): \"...wait.\" Eva (louder, beaming, total astonishment): \"That's IT?!\" Eva (giggling, wonder): \"It TICKLED! It just TICKLED!\" Eva looks straight at the camera, beaming the biggest grin of the whole episode — the moment the fear officially breaks. Solo shot, only Eva visible, no other faces, no full dentist body.",
+  "negativePrompt": "duplicate character, twin, clone, two of the same, mirrored figure, second father, second mother, two Papa, two Mama, identical adults, extra people, third child, second sister, second sara, second eva, two eva, duplicate eva, mirror reflection, family members, strangers, crowd, group of people, other faces, background people, friends, neighbors, full dentist body, dentist face, second dentist, blood, scary face"
+}

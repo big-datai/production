@@ -1,0 +1,27 @@
+{
+  "episode": 8,
+  "beat": "music-video-A",
+  "clip": "A",
+  "title": "MUSIC VIDEO RENDER A — Sara + Eva duo dance (reusable)",
+  "mode": "omni",
+  "durationSec": 10,
+  "quality": "720p",
+  "nativeAudio": false,
+  "expectedCredits": 60,
+  "subjects": ["Sara", "Eva"],
+  "scene": "(none — soft pastel studio backdrop, no scene PNG)",
+  "boundElements": [
+    { "tag": "Sara", "source": "library" },
+    { "tag": "Eva", "source": "library" }
+  ],
+  "reuseAsset": true,
+  "reuseAssetNote": "ONE render, reused across multiple music blocks via ffmpeg loop+audio-overlay. Background MUST be neutral so it works under any song in any episode.",
+  "musicVideoBlock": true,
+  "loopExpansion": { "iterations": 6, "xfadeDuration": 0.3, "outputDurationSec": 58 },
+  "usedUnderSongs": [
+    { "song": "assets/music/Dentist Day Fun.mp3",  "blockDurationSec": 60, "placementClipNumber": "8music" },
+    { "song": "assets/music/Brave Tooth Club.mp3", "blockDurationSec": 30, "placementClipNumber": "14music" }
+  ],
+  "prompt": "Wide front-facing music-video shot — soft pastel gradient backdrop (sky-blue fading to soft mint) with a HUGE stylized RAINBOW arching across the upper half of the frame (red, orange, yellow, green, blue, purple, soft cartoon-chunky rainbow style) and CONFETTI flowing continuously from the top of the frame downward — colorful paper-confetti pieces and a few floating stars in pink, yellow, teal, mint, lavender, drifting slowly past on either side of the dancers. NO scene, NO room, NO furniture, NO logos, NO text. Just the rainbow + confetti backdrop. @Sara on the LEFT and @Eva on the RIGHT stand side-by-side, grinning huge, bopping in rhythm. Sara claps her hands on the beat. Eva spins on the spot then claps too. Sara leans left, Eva leans right. Sara pumps her fist up, Eva pumps her fist up. Sara spins once, Eva spins once. Both return to start position. Movements are RHYTHMIC and LOOPABLE — clean cycle: bop → clap → lean → fist-pump → spin → return. Camera locked, head-on, kid-eye-level. Bright cheerful party lighting. Sara and Eva hum and sing along generically — no specific dialogue, no specific syllables, no lip-sync to any words, just happy singing-along mouth movements. The shot is designed to LOOP cleanly: Sara and Eva return to the same side-by-side starting pose at second 0 and second 10. The rainbow arches and confetti continuously rains down throughout — it's a music-video moment. No audible speech, no music — silent render.",
+  "negativePrompt": "duplicate character, twin, clone, two of the same, mirrored figure, second father, second mother, two Papa, two Mama, identical adults, extra people, third child, second sister, second sara, second eva, two eva, duplicate eva, mirror reflection, family members, strangers, crowd, group of people, other faces, background people, friends, neighbors, scene, room, furniture, kitchen, bedroom, bathroom, dentist office, specific dialogue words, lip-sync to specific syllables, falling down, sad face, scared face, audible music, audible singing words, text, logos, watermarks"
+}

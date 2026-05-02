@@ -1,0 +1,121 @@
+{
+  "episode": 8,
+  "title": "Sara's Silver Tooth!",
+  "logline": "It's dentist day — and Eva is SCARED. Sara's been reading her a 'Brave Little Tooth' picture book, but the moment Eva hears the word 'dentist' she freezes. Sara coaches her through brushing, holds her hand all the way to the chair, and quietly promises she's not going anywhere. Eva opens her mouth shaking, opens her eyes, and discovers — wait. THAT'S IT?! Sara has her own moment with the funny pink-elephant gas mask (it smells like SOCKS — Papa agrees), and earns a shiny silver bridge. Eva earns something better: a gold BRAVE TOOTH coin from the doctor for being the bravest first-timer of the week. The girls dance home. The end-line lands quiet and big: 'Sara… thank you for going first.'",
+  "formulaReference": "Bluey-style 'first-time-at-the-dentist' family episode — anticipation hook → rush prep → musical practice → comedic gag at the office → quiet brave-moment → reward + heart line → cliffhanger.",
+  "mode": "omni",
+  "durationTotal": "~5:21 (15 normal × 10s + 2 music-video blocks of 60s + intro 31s + outro 20s)",
+  "expectedCreditsTotal": 1470,
+  "expectedCreditsBreakdown": "15 normal clips × 90 cr = 1350 + 2 render specs (A,B) × 60 cr = 120 → 1470 cr base; +25% buffer ≈ 1840 cr realistic",
+  "newBoundElements": [
+    { "tag": "dentist-waiting",     "source": "library", "asset": "assets/scenes/dentist_waiting.png",     "purpose": "Sea-themed pediatric waiting room with giant tooth chairs — used in beats 5 + 9" },
+    { "tag": "dentist-chair",       "source": "library", "asset": "assets/scenes/dentist_chair.png",       "purpose": "Pediatric exam room with chair + overhead light — used in beats 6, 7, 8" },
+    { "tag": "tesla-interior",      "source": "library", "asset": "assets/scenes/tesla_interior.png",      "purpose": "Tesla Model 3 back-seat POV — used in beat 10 (victory song cruise) + beat 11 (school drop-off)" },
+    { "tag": "gas-mask",            "source": "library", "asset": "assets/scenes/gas_mask.png",            "purpose": "Pink-elephant pediatric nose-piece gas mask — comedy prop in beat 7" },
+    { "tag": "dental-coin",         "source": "library", "asset": "assets/scenes/dental_coin.png",         "purpose": "Shiny gold 'BRAVE TOOTH' reward coin — beats 9, 10, 11" },
+    { "tag": "dentist-goodie-bag",  "source": "library", "asset": "assets/scenes/dentist_goodie_bag.png",  "purpose": "Kid-style toothbrush goodie bag (TOOTHCO) — beat 9 onward" }
+  ],
+  "scenes": [
+    "living-room",
+    "bedroom-sisters",
+    "girls-closet",
+    "bathroom",
+    "driveway",
+    "dentist-waiting",
+    "dentist-chair",
+    "tesla-interior",
+    "front-fence-sidewalk"
+  ],
+  "cast": ["Sara", "Eva", "Mama", "Papa"],
+  "reuse": {
+    "intro": {
+      "source": "season_01/intro/",
+      "clips": ["intro_song.mp4"],
+      "totalDuration": "~31s",
+      "playOrder": "Theme song"
+    },
+    "outro": {
+      "source": "season_01/OUTRO/",
+      "clips": ["17.mp4", "18.mp4", "0_song.mp4"],
+      "totalDuration": "~20s",
+      "note": "0_song.mp4 sorts last via parseInt-Infinity hack — keep (memory rule #23)"
+    }
+  },
+  "music": {
+    "policy": "ALL music is Suno — Kling renders dialogue + ambient ONLY. No 'music sting' / 'tender swell' / 'cheerful music' phrases inside any clip prompt (memory rule #24).",
+    "stings": [
+      { "file": "assets/music/Brush Brush Brush.mov",   "lengthSec": 13, "playedOver": [5, 6], "mood": "Upbeat 12s brushing jingle, layered as background under regular dialogue clips at 0.30× volume" }
+    ],
+    "musicVideoBlocks": [
+      {
+        "blockId": "8music",
+        "song": "assets/music/Dentist Day Fun.mp3",
+        "trimStart": 0,
+        "blockDurationSec": 60,
+        "render": "A",
+        "renderSpec": "content/episodes/ep08/A.json",
+        "placement": "after clip 8 (waiting room reveal) — Sara+Eva duo dance music video as the family kills time in the waiting room",
+        "mood": "Both girls singing 'Dentist Day Fun!' — sets up the whole-family-vibe before each girl heads back for her appointment"
+      },
+      {
+        "blockId": "14music",
+        "song": "assets/music/Brave Tooth Club.mp3",
+        "trimStart": 50,
+        "blockDurationSec": 30,
+        "render": "A",
+        "renderSpec": "content/episodes/ep08/A.json",
+        "placement": "between clips 14 and 15 — bridge from rewards walk-out to the Tesla cruise. Reuses Render A under a different song.",
+        "mood": "Heart-line — both girls singing the 'I LOVE the dentist!' chorus, Sara holding the silver-bridge mouth-open grin"
+      },
+      {
+        "blockId": "16music",
+        "song": "assets/music/Brave-Tooth Coin.mp3",
+        "trimStart": 0,
+        "blockDurationSec": 60,
+        "render": "B",
+        "renderSpec": "content/episodes/ep08/B.json",
+        "placement": "after clip 15 (brave-coin reveal) — Eva solo dance on the giant tooth chair, coin held high",
+        "mood": "Eva's emotional peak — she went from scared-of-the-dentist to dance-on-the-tooth-chair-queen in one episode"
+      }
+    ],
+    "renders": {
+      "A": "content/episodes/ep08/A.json — Sara+Eva duo, neutral pastel backdrop, REUSABLE across episodes",
+      "B": "content/episodes/ep08/B.json — Eva solo on tooth chair, ep08-specific"
+    },
+    "mixRecipe": "[1:a]atrim=start=X:duration=N,asetpts=PTS-STARTPTS,volume=0.30[bg]; [0:a]volume=1.4[fg]; [fg][bg]amix=inputs=2:duration=first:dropout_transition=0[a]",
+    "loopRecipe": "ffmpeg -i <render>.mp4 -filter_complex 'split=N → xfade chain (0.3s)' -map [v] -an looped.mp4; then overlay Suno song with -map 0:v -map 1:a -t <duration> -shortest"
+  },
+  "arc": [
+    { "beat": 1,  "name": "HOOK — Sara reads, Eva walks in",          "purpose": "Sara reading 'Brave Little Tooth' aloud cheerfully on the couch. Eva walks in mid-sentence, hears the word DENTIST, FREEZES.", "clips": [1] },
+    { "beat": 2,  "name": "EVA FEAR",                                  "purpose": "Eva on Mama's lap, clutching her: 'Does it… HURT?' Mama: 'Just a tickle, sweetheart.'",                                       "clips": [2] },
+    { "beat": 3,  "name": "BRUSHING + SARA COMFORT (sting)",           "purpose": "Bathroom — Sara teaches anxious Eva to brush. 'I was scared too last year — now look at me!' Brush Brush Brush sting plays bg.", "clips": [3] },
+    { "beat": 4,  "name": "OFF TO DENTIST",                            "purpose": "Tesla driveway — Eva clutches Sara's hand. Eva: 'Don't let go!' Sara: 'Sister-promise.'",                                       "clips": [4] },
+    { "beat": 5,  "name": "WAITING ROOM REVEAL",                       "purpose": "Sea-mural waiting room + giant tooth chairs. Eva forgets fear momentarily: 'WAIT — IS THAT A TOOTH?!'",                       "clips": [5] },
+    { "beat": 6,  "name": "TURTLE PUZZLE",                             "purpose": "Sisters at the puzzle station — Eva relaxing, almost forgetting why they're there.",                                          "clips": [6] },
+    { "beat": 7,  "name": "🎵 MUSIC VIDEO 1 — Dentist Day Fun (60s)",  "purpose": "Render A under 'Dentist Day Fun' — Sara+Eva duo dance/sing. Reusable neutral-bg render, looped 6× with xfade.",              "clips": ["A→8music"] },
+    { "beat": 8,  "name": "NURSE CALLS — Eva freezes again",           "purpose": "Eva mid-laugh, smile drops. 'is it… my turn?' Fear returns just before going in.",                                            "clips": [7] },
+    { "beat": 9,  "name": "EVA ON CHAIR — Sara holds her hand",        "purpose": "Eva eyes squeezed shut, paper bib clipped. Sara stands beside chair gripping her hand. Sara: 'Just open your mouth.'",       "clips": [8] },
+    { "beat": 10, "name": "EVA OPENS HER EYES — 'THAT'S IT?!'",        "purpose": "Cleaning is over. Eva eyes pop open, smile blooms. 'It TICKLED!' — emotional pivot of the episode.",                       "clips": [9] },
+    { "beat": 11, "name": "SARA — GAS MASK COMEDY",                    "purpose": "Sara on chair, sniffs gas mask: 'EWW SOCKS!' Pure comedy beat to break tension after Eva's pivot.",                          "clips": [10] },
+    { "beat": 12, "name": "PAPA SNIFFS — 'SHE'S RIGHT'",               "purpose": "Papa bravely sniffs to back Sara up → 'cough cough — she's RIGHT.' Mask gets waved off.",                                    "clips": [11] },
+    { "beat": 13, "name": "SARA — SILVER BRIDGE",                      "purpose": "Sara opens mouth wide — silver-tooth glint. 'I'm SHINY now!'",                                                                "clips": [12] },
+    { "beat": 14, "name": "BRAVE COIN MOMENT (heart-line)",            "purpose": "Doctor presents Eva a gold BRAVE TOOTH coin. 'Bravest first-timer all week.' Eva fills with quiet pride. Brave Tooth Club bg.", "clips": [13] },
+    { "beat": 15, "name": "🎵 MUSIC VIDEO 2 — Brave-Tooth Coin (60s)", "purpose": "Render B under 'Brave-Tooth Coin' — Eva solo dance on tooth chair, coin held high. Looped 6× with xfade.",                   "clips": ["B→15music"] },
+    { "beat": 16, "name": "TESLA HOME — sister thanks",                "purpose": "Eva turns to Sara in back seat: 'Sara… thank you for going first.' Sara: 'Sisters first.' Quiet emotional payoff.",       "clips": [14] },
+    { "beat": 17, "name": "SCHOOL DROP-OFF + CLIFFHANGER",             "purpose": "Tesla pulls up. Sara: 'When's our NEXT visit?' Papa: 'Six MONTHS!' Eva: 'I LIKE going to the dentist.' Heart wipe.",        "clips": [15] },
+    { "beat": 18, "name": "OUTRO (reused)",                            "purpose": "Subscribe pair from season_01/OUTRO/ — 17.mp4 → 18.mp4 → 0_song.mp4 last (memory rule #23).",                                "clips": ["reused"] }
+  ],
+  "rules": {
+    "maxBoundPerClip": 7,
+    "maxTagMentionsPerCharacter": 1,
+    "klingPromptMustNotContain": [
+      "music sting", "music swell", "tender swell", "cheerful music",
+      "comedic music", "playful music", "heartfelt music",
+      "music cue", "score swell", "background music"
+    ],
+    "klingPromptMustNotContainReason": "All music is Suno-mixed in assemble. Letting Kling improvise music ruins the dialogue track and locks in off-key swells (memory rule #24).",
+    "negativePromptRequired": "duplicate character, twin, clone, two of the same, mirrored figure, second father, second mother, two Papa, two Mama, identical adults, extra people, third child, second sister, second sara, second eva, two eva, duplicate eva, mirror reflection",
+    "englishTextAnchor": "When the prompt has visible text (calendar, mural, posters), append: 'English text only, large clear printed Roman alphabet, NO foreign characters' and add to negative: 'Cyrillic, Chinese characters, Korean, Japanese, Arabic, garbled letters, misspelled, scrambled letters'.",
+    "characterNamesInDialogue": "Drop the bound character's name from other characters' dialogue (rule from ep01 — speaking a bound name spawns an extra of that character)."
+  }
+}

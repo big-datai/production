@@ -1,0 +1,22 @@
+{
+  "episode": 8,
+  "beat": 14,
+  "clip": 13,
+  "title": "BRAVE COIN MOMENT — Eva fills with quiet pride",
+  "mode": "omni",
+  "durationSec": 10,
+  "quality": "720p",
+  "nativeAudio": true,
+  "expectedCredits": 90,
+  "subjects": ["Eva", "Sara"],
+  "scene": "dentist-waiting",
+  "boundElements": [
+    { "tag": "Eva", "source": "library" },
+    { "tag": "Sara", "source": "library" },
+    { "tag": "dentist-waiting", "source": "library" },
+    { "tag": "dental-coin", "source": "library" },
+    { "tag": "dentist-goodie-bag", "source": "library" }
+  ],
+  "prompt": "Medium shot in @dentist-waiting — sea-themed waiting room. @Eva on the LEFT stands center-frame, tiny and proud, both hands cupped open in front of her. From off-screen at the edge of frame, a single soft cartoon-mitten-style gloved hand presents a shiny gold @dental-coin into Eva's palms. A white @dentist-goodie-bag rests on the bench beside her. @Sara on the RIGHT stands beside Eva, her own face beaming with sister-pride. Off-screen kindly female voice (the doctor, only audio): \"This is for the BRAVEST first-timer I've seen all WEEK.\" Eva (looking down at the coin in her palms, eyes filling): \"I... I did it.\" Sara (proud whisper, putting an arm around Eva): \"Welcome to the Brave Tooth Club, sis.\" Eva clutches the coin to her chest, a single happy tear slipping down her cheek.",
+  "negativePrompt": "duplicate character, twin, clone, two of the same, mirrored figure, second father, second mother, two Papa, two Mama, identical adults, extra people, third child, second sister, second sara, second eva, two eva, duplicate eva, mirror reflection, family members, strangers, crowd, group of people, other faces, background people, friends, neighbors, full doctor body, doctor face, multiple doctors, second nurse, multiple gloved hands, multiple coins, several coins, three coins, dozens of coins"
+}

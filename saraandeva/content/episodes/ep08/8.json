@@ -1,0 +1,20 @@
+{
+  "episode": 8,
+  "beat": 9,
+  "clip": 8,
+  "title": "EVA ON CHAIR — Sara holds her hand",
+  "mode": "omni",
+  "durationSec": 10,
+  "quality": "720p",
+  "nativeAudio": true,
+  "expectedCredits": 90,
+  "subjects": ["Eva", "Sara"],
+  "scene": "dentist-chair",
+  "boundElements": [
+    { "tag": "Eva", "source": "library" },
+    { "tag": "Sara", "source": "library" },
+    { "tag": "dentist-chair", "source": "library" }
+  ],
+  "prompt": "Medium two-shot in @dentist-chair. @Eva reclined on the turquoise pediatric chair, paper bib clipped on, eyes squeezed shut tight, both hands gripping the chair arm, body trembling slightly. @Sara stands LEFT of the chair beside Eva, holding Eva's hand firmly with both of her own, leaning in close so only Eva can hear, calm and steady. Bright soft overhead exam light glows above. Sara (whispered, gentle, steady): \"Hey. I'm RIGHT here. You can squeeze as hard as you want.\" Eva (eyes still shut, shaking): \"...don't go.\" Sara (squeezing back hard): \"Not going anywhere. Just open your mouth a tiny bit.\" Eva (slowly, brave shaky breath): \"...okay.\" Eva opens her mouth a tiny crack.",
+  "negativePrompt": "duplicate character, twin, clone, two of the same, mirrored figure, second father, second mother, two Papa, two Mama, identical adults, extra people, third child, second sister, second sara, second eva, two eva, duplicate eva, mirror reflection, family members, strangers, crowd, group of people, other faces, background people, friends, neighbors, full dentist body, dentist face, second dentist, blood, gory mouth, scary medical imagery"
+}

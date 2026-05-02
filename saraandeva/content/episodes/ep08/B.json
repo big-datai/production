@@ -1,0 +1,25 @@
+{
+  "episode": 8,
+  "beat": "music-video-B",
+  "clip": "B",
+  "title": "MUSIC VIDEO RENDER B — Eva solo dance with brave coin",
+  "mode": "omni",
+  "durationSec": 10,
+  "quality": "720p",
+  "nativeAudio": false,
+  "expectedCredits": 60,
+  "subjects": ["Eva"],
+  "scene": "dentist-waiting",
+  "boundElements": [
+    { "tag": "Eva",    "source": "library" },
+    { "tag": "Image1", "source": "upload", "asset": "dentist-waiting", "file": "/Volumes/Samsung500/goreadling-production/saraandeva/assets/scenes/dentist_waiting.png" },
+    { "tag": "Image2", "source": "upload", "asset": "dental-coin",     "file": "/Volumes/Samsung500/goreadling-production/saraandeva/assets/scenes/dental_coin.png" }
+  ],
+  "musicVideoBlock": true,
+  "loopExpansion": { "iterations": 6, "xfadeDuration": 0.3, "outputDurationSec": 58 },
+  "usedUnderSongs": [
+    { "song": "assets/music/Brave-Tooth Coin.mp3", "blockDurationSec": 60, "trimStart": 0, "trimDuration": 60, "placementClipNumber": "16music" }
+  ],
+  "prompt": "Wide low-angle music-video shot in @Image1 — sea-turtle floor mural visible, the giant white molar-tooth chairs in soft focus background. @Eva stands ON TOP of one of the giant tooth chairs, holding a shiny gold @Image2 high in one hand like a trophy, the other arm out for balance. Eva spins on the spot, then bops side-to-side, hair bouncing, beaming so wide her whole face is grinning, mouth moving rhythmically as she sings along to a song. Movements are RHYTHMIC and LOOPABLE — clean cycle: spin → bop-left → bop-right → coin-pump-up → return-to-start. Camera slowly orbits at kid-eye-level. Bright cheerful warm lighting. Solo shot — only Eva visible, no other people, no other faces, no dialogue (music-video beat), no audible speech, generic happy singing-along mouth movements. The shot is designed to LOOP cleanly: Eva returns to roughly the same coin-held-high pose at second 0 and second 10. No audible music — silent render.",
+  "negativePrompt": "duplicate character, twin, clone, two of the same, mirrored figure, second father, second mother, two Papa, two Mama, identical adults, extra people, third child, second sister, second sara, second eva, two eva, duplicate eva, mirror reflection, family members, strangers, crowd, group of people, other faces, background people, friends, neighbors, specific dialogue words, lip-sync to specific syllables, falling off the chair, scared face, sad face, audible music, audible singing words"
+}

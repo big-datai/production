@@ -1,0 +1,19 @@
+{
+  "episode": 8,
+  "beat": 13,
+  "clip": 12,
+  "title": "SARA SILVER BRIDGE — 'I'm SHINY now!'",
+  "mode": "omni",
+  "durationSec": 10,
+  "quality": "720p",
+  "nativeAudio": true,
+  "expectedCredits": 90,
+  "subjects": ["Sara"],
+  "scene": "dentist-chair",
+  "boundElements": [
+    { "tag": "Sara", "source": "library" },
+    { "tag": "dentist-chair", "source": "library" }
+  ],
+  "prompt": "Slow push-in extreme close-up in @dentist-chair on @Sara's face — Sara fills the frame, paper bib still clipped on, soft warm overhead exam light reflecting in her eyes. Sara gives one brave little thumbs-up to the camera. Then Sara opens her mouth WIDE, showing her teeth — and on one of her side molars there is a tiny shiny SILVER metal crown bridge cap, polished mirror-bright. A small sharp glint of light sparkles off the silver. Sara (mouth wide open, awe-struck whisper): \"Whoaaa...\" Sara (closing mouth slowly into a huge proud beaming smile): \"I'm SHINY now!\" Solo shot — only Sara's face and shoulders, no other people in frame, no other faces visible.",
+  "negativePrompt": "duplicate character, twin, clone, two of the same, mirrored figure, second father, second mother, two Papa, two Mama, identical adults, extra people, third child, second sister, second sara, second eva, two eva, duplicate eva, mirror reflection, family members, strangers, crowd, group of people, other faces, background people, friends, neighbors, full dentist body, dentist face, second dentist, gold tooth, blackened tooth, missing tooth, gory mouth, blood, scary medical imagery"
+}

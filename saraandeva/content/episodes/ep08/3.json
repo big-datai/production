@@ -1,0 +1,20 @@
+{
+  "episode": 8,
+  "beat": 3,
+  "clip": 3,
+  "title": "BRUSHING — Sara coaches anxious Eva",
+  "mode": "omni",
+  "durationSec": 10,
+  "quality": "720p",
+  "nativeAudio": true,
+  "expectedCredits": 90,
+  "subjects": ["Sara", "Eva"],
+  "scene": "bathroom",
+  "boundElements": [
+    { "tag": "Sara", "source": "library" },
+    { "tag": "Eva", "source": "library" },
+    { "tag": "bathroom", "source": "library" }
+  ],
+  "prompt": "Wide shot in @bathroom — kid-friendly family bathroom with the oval mirror and double sink. @Sara on the LEFT step stool brushes confidently in big circles, mouth full of bright white foam. @Eva on the RIGHT step stool, smaller, copies the motion nervously — toothbrush wobbling, foam at the corners of her mouth, anxious eyes still flicking to the mirror. Both visible in reflection. Sara (cheerful, foam in her mouth): \"Up! Down! AND in CIRCLES — easy-peasy!\" Eva (foam, nervous): \"Up… down… circles… okay.\" Sara (encouraging, holds up own toothy grin): \"I was scared too last year. Now look — TWENTY clean ones!\" Eva (tiny shaky smile starts): \"…twenty?\" Sound of running water and brushing — no music in audio track.",
+  "negativePrompt": "duplicate character, twin, clone, two of the same, mirrored figure, second father, second mother, two Papa, two Mama, identical adults, extra people, third child, second sister, second sara, second eva, two eva, duplicate eva, mirror reflection, family members, strangers, crowd, group of people, other faces, background people, friends, neighbors, music, singing, song, music score, soundtrack"
+}

@@ -1,0 +1,20 @@
+{
+  "episode": 8,
+  "beat": 2,
+  "clip": 2,
+  "title": "EVA FEAR — 'Does it HURT?'",
+  "mode": "omni",
+  "durationSec": 10,
+  "quality": "720p",
+  "nativeAudio": true,
+  "expectedCredits": 90,
+  "subjects": ["Eva", "Mama"],
+  "scene": "living-room",
+  "boundElements": [
+    { "tag": "Eva", "source": "library" },
+    { "tag": "Mama", "source": "library" },
+    { "tag": "living-room", "source": "library" }
+  ],
+  "prompt": "Tight medium shot in @living-room — soft warm morning light. @Mama sits on the rainbow afghan couch holding @Eva on her lap. Eva clutches the front of Mama's sweater with both hands, curls pressed against her cheek, eyes huge and worried, lower lip wobbling. Mama strokes Eva's hair gently, calm and warm. Eva (small worried whisper): \"Does it… HURT?\" Mama (gentle, smiling): \"Just a tickle, sweetheart. Like a little brush on your teeth.\" Eva (still uncertain): \"…promise?\" Mama (soft kiss on Eva's forehead): \"Promise. And big sister will be right beside you.\"",
+  "negativePrompt": "duplicate character, twin, clone, two of the same, mirrored figure, second father, second mother, two Papa, two Mama, identical adults, extra people, third child, second sister, second sara, second eva, two eva, duplicate eva, mirror reflection, family members, strangers, crowd, group of people, other faces, background people, friends, neighbors"
+}

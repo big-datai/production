@@ -1,0 +1,21 @@
+{
+  "episode": 8,
+  "beat": 1,
+  "clip": 1,
+  "title": "HOOK — Sara reads, Eva walks in and FREEZES",
+  "mode": "omni",
+  "durationSec": 10,
+  "quality": "720p",
+  "nativeAudio": true,
+  "expectedCredits": 90,
+  "subjects": ["Sara", "Eva"],
+  "scene": "living-room",
+  "boundElements": [
+    { "tag": "Sara", "source": "library" },
+    { "tag": "Eva", "source": "library" },
+    { "tag": "living-room", "source": "library" },
+    { "tag": "brave-tooth-book", "source": "library" }
+  ],
+  "prompt": "Wide shot in @living-room, soft golden early-morning sunlight from the sliding-door wall. @Sara sits cross-legged on the rainbow afghan couch in cozy pajamas, holding @brave-tooth-book open in her lap, reading aloud cheerfully. @Eva walks in from the right side of the frame in pajamas, sleepy, mid-yawn — and stops dead, eyes widening, freezing in place as she catches the word from the book. Sara (reading aloud, animated, doesn't see Eva yet): \"And then the brave little tooth said: I'm not SCARED of the dentist!\" Eva (frozen, small panicked voice): \"...d-d-DENTIST?\" Sara looks up brightly: \"Yeah, silly — TODAY's the day!\" Eva's lower lip starts to tremble.",
+  "negativePrompt": "duplicate character, twin, clone, two of the same, mirrored figure, second father, second mother, two Papa, two Mama, identical adults, extra people, third child, second sister, second sara, second eva, two eva, duplicate eva, mirror reflection, family members, strangers, crowd, group of people, other faces, background people, friends, neighbors"
+}

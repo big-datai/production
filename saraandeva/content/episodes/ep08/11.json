@@ -1,0 +1,21 @@
+{
+  "episode": 8,
+  "beat": 12,
+  "clip": 11,
+  "title": "PAPA SNIFFS — 'SHE'S RIGHT!'",
+  "mode": "omni",
+  "durationSec": 10,
+  "quality": "720p",
+  "nativeAudio": true,
+  "expectedCredits": 90,
+  "subjects": ["Sara", "Papa"],
+  "scene": "dentist-chair",
+  "boundElements": [
+    { "tag": "Sara", "source": "library" },
+    { "tag": "Papa", "source": "library" },
+    { "tag": "dentist-chair", "source": "library" },
+    { "tag": "gas-mask", "source": "library" }
+  ],
+  "prompt": "Medium two-shot in @dentist-chair. @Sara on the LEFT lies reclined on the turquoise chair, watching with wide hopeful eyes — backup has arrived. @Papa on the RIGHT leans down from the side of the chair, takes the @gas-mask in one hand, and bravely lifts it to his own nose for a big curious sniff. His face transforms in slow-motion comedy horror — eyebrows climbing, eyes watering, cheeks puffing. Papa (one big cough): \"*cough cough* — oh BOY.\" Papa (waving the mask away with his other hand, mock-serious to Sara): \"She's RIGHT. That smells like SOCKS. We're SKIPPING the elephant.\" Papa (giving Sara a tiny thumbs-up): \"Brave girl, no mask.\"",
+  "negativePrompt": "duplicate character, twin, clone, two of the same, mirrored figure, second father, second mother, two Papa, two Mama, identical adults, extra people, third child, second sister, second sara, second eva, two eva, duplicate eva, mirror reflection, family members, strangers, crowd, group of people, other faces, background people, friends, neighbors, full dentist body, dentist face, multiple dentists, second dentist, second nurse, multiple gloved hands, two pink elephants, two masks, duplicate gas mask"
+}

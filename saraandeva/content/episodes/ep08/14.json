@@ -1,0 +1,22 @@
+{
+  "episode": 8,
+  "beat": 16,
+  "clip": 14,
+  "title": "TESLA HOME — 'Sara… thank you for going first.'",
+  "mode": "omni",
+  "durationSec": 10,
+  "quality": "720p",
+  "nativeAudio": true,
+  "expectedCredits": 90,
+  "subjects": ["Sara", "Eva", "Papa"],
+  "scene": "tesla-interior",
+  "boundElements": [
+    { "tag": "Sara", "source": "library" },
+    { "tag": "Eva", "source": "library" },
+    { "tag": "Papa", "source": "library" },
+    { "tag": "tesla-interior", "source": "library" },
+    { "tag": "dental-coin", "source": "library" }
+  ],
+  "prompt": "Wide back-seat-POV shot in @tesla-interior — looking forward between the two front seats. @Papa is in the FRONT-LEFT driver's seat, hands on the minimalist steering wheel, glancing softly in the rearview at his daughters. @Sara in the BACK-LEFT pink booster seat. @Eva in the BACK-RIGHT purple booster seat, holding her shiny gold @dental-coin in both hands like a treasure, looking down at it. The big horizontal center touchscreen glows with a route line. Soft warm afternoon light pours through the panoramic glass roof. Eva turns her head slowly to look at Sara, voice small and full of feeling: \"Sara… thank you for going first.\" Sara (looking back at Eva, soft proud smile): \"Sisters first.\" Papa (eyes a little glassy in the rearview, gentle smile): \"Best customers EVER.\" A quiet emotional payoff beat — no shouting, no comedy, just sisters.",
+  "negativePrompt": "duplicate character, twin, clone, two of the same, mirrored figure, second father, second mother, two Papa, two Mama, identical adults, extra people, third child, second sister, second sara, second eva, two eva, duplicate eva, mirror reflection, family members, strangers, crowd, group of people, other faces, background people, friends, neighbors, second driver, second car interior, two steering wheels, traditional dashboard with gauges, audible music, audible singing"
+}
