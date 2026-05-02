@@ -24,7 +24,7 @@ import { execSync } from "node:child_process";
 import { chromium } from "playwright";
 
 const argv = process.argv.slice(2);
-const OUT_DIR = path.resolve(argv.find(a => !a.startsWith("--")) || "exports/saraandeva/season_01/episode_02/clips");
+const OUT_DIR = path.resolve(argv.find(a => !a.startsWith("--")) || "season_01/episode_02/clips");
 const MAX = Number(argv.includes("--max") ? argv[argv.indexOf("--max") + 1] : 30);
 const SCROLLS = Number(argv.includes("--scroll") ? argv[argv.indexOf("--scroll") + 1] : 5);
 fs.mkdirSync(OUT_DIR, { recursive: true });

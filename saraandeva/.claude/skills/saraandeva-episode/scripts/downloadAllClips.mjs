@@ -20,7 +20,7 @@ import { execSync } from "node:child_process";
 import { chromium } from "playwright";
 
 const argv = process.argv.slice(2);
-const OUT_DIR = path.resolve(argv.find(a => !a.startsWith("--")) || "exports/saraandeva/season_01/episode_01/clips");
+const OUT_DIR = path.resolve(argv.find(a => !a.startsWith("--")) || "season_01/episode_01/clips");
 const MAX_ROUNDS = Number(argv.includes("--max-rounds") ? argv[argv.indexOf("--max-rounds")+1] : 5);
 fs.mkdirSync(OUT_DIR, { recursive: true });
 console.log(`📂 Out: ${OUT_DIR}\n🎯 Max rounds: ${MAX_ROUNDS} (8 clips per round)`);

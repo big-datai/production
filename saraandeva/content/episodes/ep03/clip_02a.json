@@ -13,7 +13,7 @@
     "Sara",
     "Eva"
   ],
-  "scene": "livingroom",
+  "scene": "living-room",
   "boundElements": [
     {
       "tag": "Mama",
@@ -28,10 +28,10 @@
       "source": "library"
     },
     {
-      "tag": "livingroom",
+      "tag": "living-room",
       "source": "library"
     }
   ],
-  "prompt": "Wide shot in @livingroom. @Mama places the brown package on the wicker coffee table, center frame. @Sara stands on the LEFT, @Eva on the RIGHT, both leaning forward to peer at the package, big curious eyes. Mama (kneels to their level, calm): \"I'll open this later, after lunch. Don't touch it, okay?\" Sara: \"We won't, Mama!\" Eva (eyes wide): \"What's inside?\" Mama (smiling, mysterious): \"It's a surprise!\" Mama walks off toward kitchen. Warm daylight through the sliding door.",
+  "prompt": "Wide shot in @living-room. @Mama places the brown package on the wicker coffee table, center frame. @Sara stands on the LEFT, @Eva on the RIGHT, both leaning forward to peer at the package, big curious eyes. Mama (kneels to their level, calm): \"I'll open this later, after lunch. Don't touch it, okay?\" Sara: \"We won't, Mama!\" Eva (eyes wide): \"What's inside?\" Mama (smiling, mysterious): \"It's a surprise!\" Mama walks off toward kitchen. Warm daylight through the sliding door.",
   "negativePrompt": "duplicate character, twin, clone, two of the same, mirrored figure, second father, second mother, two Papa, two Mama, identical adults, extra people, third child, second sister, second sara, second eva, dogs visible, baby doll, stuffed toy"
 }

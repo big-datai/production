@@ -10,7 +10,7 @@ import fs from "node:fs";
 import path from "node:path";
 import { chromium } from "playwright";
 
-const OUT_DIR = path.resolve(process.argv[2] || "exports/saraandeva/season_01/episode_01/clips");
+const OUT_DIR = path.resolve(process.argv[2] || "season_01/episode_01/clips");
 const SCROLL_N = Number(process.argv[3] || 3);
 fs.mkdirSync(OUT_DIR, { recursive: true });
 

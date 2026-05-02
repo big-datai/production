@@ -337,9 +337,9 @@ Example clean clip:
 - `content/saraandeva/episodes/ep<NN>/episode.json` — episode arc + 5-beat structure + cast
 - `content/saraandeva/episodes/ep<NN>/clip_<beat><microclip>.json` — per-clip spec
 - `content/saraandeva/episodes/ep<NN>/YOUTUBE_METADATA.md` — title + description + tags + thumbnail concept
-- `exports/saraandeva/season_01/episode_<NN>/clips/` — staged MP4s with arc names
-- `exports/saraandeva/season_01/episode_<NN>/ep01_v<N>.mp4` — concat'd episode versions
-- `exports/saraandeva/season_01/episode_<NN>/shorts/` — 1080×1920 vertical Shorts
+- `season_01/episode_<NN>/clips/` — staged MP4s with arc names
+- `season_01/episode_<NN>/ep01_v<N>.mp4` — concat'd episode versions
+- `season_01/episode_<NN>/shorts/` — 1080×1920 vertical Shorts
 
 ## Credit math
 

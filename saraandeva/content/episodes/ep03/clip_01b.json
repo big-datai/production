@@ -14,7 +14,7 @@
     "Eva",
     "Mama"
   ],
-  "scene": "livingroom",
+  "scene": "living-room",
   "boundElements": [
     {
       "tag": "Sara",
@@ -29,10 +29,10 @@
       "source": "library"
     },
     {
-      "tag": "livingroom",
+      "tag": "living-room",
       "source": "library"
     }
   ],
-  "prompt": "Medium shot in @livingroom. The doorbell rings DING-DONG. @Sara is on the LEFT and @Eva is on the RIGHT, both excited, eyes wide. They start to run toward the front door (off-camera left). @Mama appears mid-frame, gentle smile, calmly raising one hand to stop them. Eva: \"Someone's at the door!\" Sara: \"Let's open it!\" Mama (calmly, smiling): \"Wait girls — never open the door yourself! Mama gets it.\" Sara and Eva (together, nodding): \"Okay Mama!\"",
+  "prompt": "Medium shot in @living-room. The doorbell rings DING-DONG. @Sara is on the LEFT and @Eva is on the RIGHT, both excited, eyes wide. They start to run toward the front door, off-camera left. @Mama appears mid-frame, gentle smile, calmly raising one hand to stop them. Eva: \"Someone's at the door!\" Sara: \"Let's open it!\" Mama (calmly, smiling): \"Wait girls — opening the door to strangers can be dangerous. Never open it yourself, okay? Mama always gets it.\" Sara and Eva (together, nodding): \"Okay Mama!\"",
   "negativePrompt": "duplicate character, twin, clone, two of the same, mirrored figure, second father, second mother, two Papa, two Mama, identical adults, extra people, third child, second sister, second sara, second eva, dogs visible, baby doll, stuffed toy, scary, scolding face, strict expression"
 }

@@ -10,7 +10,7 @@ import fs from "node:fs";
 import path from "node:path";
 import { execSync } from "node:child_process";
 
-const STAGING = "/Volumes/Samsung500/goreadling/exports/saraandeva/season_01/episode_01/clips";
+const STAGING = "/Volumes/Samsung500/goreadling-production/saraandeva/season_01/episode_01/clips";
 const FRAMES = "/tmp/audit-frames";
 fs.mkdirSync(FRAMES, { recursive: true });
 

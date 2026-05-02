@@ -67,6 +67,7 @@ const REQUIRED_NEGATIVE_TERMS = [
 const argv = process.argv.slice(2);
 const specPath = path.resolve(argv.find(a => !a.startsWith("--")) || "");
 const dryRun = argv.includes("--dry-run");
+const noGenerate = argv.includes("--no-generate");
 
 if (!specPath || !fs.existsSync(specPath)) {
   console.error("Usage: submitOmniClip.mjs <clip_json_path> [--dry-run]");
@@ -180,7 +181,7 @@ if (missingNeg.length > 0) {
 }
 
 // Library name verification — catch the "Joe rendered as Max" class of bug
-const KNOWN_LIBRARY_NAMES = new Set(["Sara", "Eva", "Ginger", "Joe", "Mama", "Papa", "Grandma"]);
+const KNOWN_LIBRARY_NAMES = new Set(["Sara", "Eva", "Ginger", "Joe", "Mama", "Papa", "Grandma", "Postman"]);
 for (const el of spec.boundElements) {
   if (el.source === "library" && !KNOWN_LIBRARY_NAMES.has(el.tag)) {
     console.warn(`⚠ boundElement tag "${el.tag}" not in known library set. If rendered output uses a different name (e.g. Joe → Max), the Kling library element is mis-named. Open the library and verify.`);
@@ -411,6 +412,13 @@ if (actualCost !== expectedCredits) {
 }
 
 // ─── GENERATE ───────────────────────────────────────────────────────────────
+if (noGenerate) {
+  console.log("⏸  --no-generate set: form is filled, Generate NOT clicked.");
+  console.log(`   Review the page in Chrome. Click Generate manually when ready.`);
+  console.log(`   Credit cost shown on button: ${actualCost}`);
+  await browser.close();
+  process.exit(0);
+}
 console.log("→ Clicking Generate (this WILL spend credits)...");
 await generateBtn.click();
 await page.waitForTimeout(2000);
