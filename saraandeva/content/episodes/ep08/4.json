@@ -2,7 +2,7 @@
   "episode": 8,
   "beat": 4,
   "clip": 4,
-  "title": "OFF TO DENTIST — Eva clutches Sara's hand",
+  "title": "OFF TO DENTIST — Eva clutches Sara's hand at the car door",
   "mode": "omni",
   "durationSec": 10,
   "quality": "720p",
@@ -16,6 +16,6 @@
     { "tag": "Mama", "source": "library" },
     { "tag": "driveway", "source": "library" }
   ],
-  "prompt": "Wide shot in @driveway, warm golden morning sunlight. The gray Tesla Model 3 sedan is parked on the asphalt driveway. @Mama stands in the FOREGROUND beside the open rear passenger door, smiling gently. @Sara on the LEFT walks calmly toward the car. @Eva on the RIGHT walks half a step behind, smaller, gripping Sara's hand firmly with both of her own, eyes wide and worried. Eva (small whisper, looking up at her sister): \"Don't let go!\" Sara (squeezing back, steady): \"Never. Sister-promise.\" Eva (taking a deep brave breath): \"…sister-promise.\"",
+  "prompt": "Wide shot in @driveway, warm golden morning sunlight. The gray Tesla Model 3 sedan is parked on the asphalt driveway. @Mama stands in the FOREGROUND on the LEFT, holding the rear passenger door open, smiling gently. @Sara stands on the RIGHT right at the open door of the car. @Eva stands directly beside Sara, smaller, gripping Sara's hand firmly with both of her own, eyes wide and worried. None of them are walking. Eva (small whisper, looking up at her sister): \"Don't let go!\" Sara (squeezing back, steady): \"Never. Sister-promise.\" Eva (taking a deep brave breath): \"…sister-promise.\"",
   "negativePrompt": "duplicate character, twin, clone, two of the same, mirrored figure, second father, second mother, two Papa, two Mama, identical adults, extra people, third child, second sister, second sara, second eva, two eva, duplicate eva, mirror reflection, family members, strangers, crowd, group of people, other faces, background people, friends, neighbors, second car"
 }

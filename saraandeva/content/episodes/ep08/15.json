@@ -15,9 +15,9 @@
     { "tag": "Eva", "source": "library" },
     { "tag": "Papa", "source": "library" },
     { "tag": "front-fence-sidewalk", "source": "library" },
-    { "tag": "dentist-goodie-bag", "source": "library" },
+    { "tag": "dental-tooth-goodie", "source": "library" },
     { "tag": "dental-coin", "source": "library" }
   ],
-  "prompt": "Medium shot at @front-fence-sidewalk in warm morning light — the gray Tesla Model 3 just pulled up at the curb, rear door open. @Sara on the LEFT hops out onto the sidewalk holding her white @dentist-goodie-bag in one hand. @Eva on the RIGHT hops out behind her, clutching her shiny gold @dental-coin in both hands like the most precious thing she's ever held. @Papa is in the BACKGROUND leaning out the open driver's-side window, grinning a big sly grin. Sara (turning back, curious): \"When's our NEXT visit?\" Papa (winking, mock-serious through the window): \"Six MONTHS.\" Eva (looking up from her coin, eyes shining, tiny proud determined smile): \"Six months? I LIKE going to the dentist.\" Sara and Eva exchange a wide-eyed grin and run together toward the school out of frame.",
+  "prompt": "Medium shot at @front-fence-sidewalk in warm morning light — the gray Tesla Model 3 just pulled up at the curb, rear door open. @Sara on the LEFT hops out onto the sidewalk holding her white @dental-tooth-goodie in one hand. @Eva on the RIGHT hops out behind her, clutching her shiny gold @dental-coin in both hands like the most precious thing she's ever held. @Papa is in the BACKGROUND leaning out the open driver's-side window, grinning a big sly grin. Sara (turning back, curious): \"When's our NEXT visit?\" Papa (winking, mock-serious through the window): \"Six MONTHS.\" Eva (looking up from her coin, eyes shining, tiny proud determined smile): \"Six months? I LIKE going to the dentist.\" Sara and Eva exchange a wide-eyed grin and run together toward the school out of frame.",
   "negativePrompt": "duplicate character, twin, clone, two of the same, mirrored figure, second father, second mother, two Papa, two Mama, identical adults, extra people, third child, second sister, second sara, second eva, two eva, duplicate eva, mirror reflection, family members, strangers, crowd, group of people, other faces, background people, friends, neighbors, school bus, parked bus, other students, other parents, second car"
 }

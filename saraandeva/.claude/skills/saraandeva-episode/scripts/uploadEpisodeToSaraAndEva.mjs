@@ -41,6 +41,7 @@ const argFlag = (name) => { const i = argv.indexOf(`--${name}`); return i >= 0 ?
 const title = argFlag('title') || 'Sara and Eva — Episode 1: The Puppies Want Pancakes';
 const descFile = argFlag('description-file');
 const tagsFile = argFlag('tags-file');
+const thumbnailPath = argFlag('thumbnail');
 const privacy = argFlag('privacy') || 'unlisted';
 
 const tags = tagsFile && fs.existsSync(tagsFile)
@@ -141,6 +142,27 @@ async function main() {
   console.log(`   Video ID:  ${videoId}`);
   console.log(`   Watch:     https://youtu.be/${videoId}`);
   console.log(`   Edit:      https://studio.youtube.com/video/${videoId}/edit`);
+
+  // Custom thumbnail — uses youtube.thumbnails.set, requires the channel to
+  // have thumbnail-upload privileges. Made-for-Kids and Shorts both support
+  // custom thumbnails (Shorts thumbnails are taken from the video frame in
+  // the feed but appear in the video's own page).
+  if (thumbnailPath) {
+    if (!fs.existsSync(thumbnailPath)) {
+      console.warn(`\n⚠ thumbnail file not found: ${thumbnailPath} — skipping thumbnail upload`);
+    } else {
+      try {
+        await youtube.thumbnails.set({
+          videoId,
+          media: { body: fs.createReadStream(thumbnailPath) },
+        });
+        console.log(`   Thumbnail: ${path.basename(thumbnailPath)} ✓`);
+      } catch (err) {
+        console.warn(`\n⚠ thumbnail upload failed: ${err.message}`);
+        console.warn(`   (channel may need verification — set thumbnail manually in YouTube Studio)`);
+      }
+    }
+  }
   if (privacy === 'unlisted') {
     console.log(`\n📋 Status: UNLISTED — review the video in YouTube Studio.`);
     console.log(`   When ready, flip privacy to PUBLIC in the Studio editor.`);

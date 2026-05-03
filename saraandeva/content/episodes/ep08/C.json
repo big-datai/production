@@ -1,0 +1,25 @@
+{
+  "episode": 8,
+  "beat": "music-video-C",
+  "clip": "C",
+  "title": "MUSIC VIDEO RENDER C — Sara solo dance with brave-tooth book",
+  "mode": "omni",
+  "durationSec": 10,
+  "quality": "720p",
+  "nativeAudio": false,
+  "expectedCredits": 60,
+  "subjects": ["Sara"],
+  "scene": "dentist-waiting-room",
+  "boundElements": [
+    { "tag": "Sara",   "source": "library" },
+    { "tag": "Image1", "source": "upload", "asset": "dentist-waiting-room",  "file": "/Volumes/Samsung500/goreadling-production/saraandeva/assets/scenes/dentist_waiting.png" },
+    { "tag": "Image2", "source": "upload", "asset": "brave-tooth-book", "file": "/Volumes/Samsung500/goreadling-production/saraandeva/assets/scenes/brave_tooth_book.png" }
+  ],
+  "reuseAsset": true,
+  "reuseAssetNote": "ONE render, paired with any song via loopVideoWithSong.mjs (video looped to song length, audio replaced).",
+  "musicVideoBlock": true,
+  "loopExpansion": { "iterations": 6, "xfadeDuration": 0.3, "outputDurationSec": 58 },
+  "usedUnderSongs": [],
+  "prompt": "Wide low-angle music-video shot in @Image1 — sea-turtle floor mural visible, the giant white molar-tooth chairs in soft focus background. @Sara stands ON TOP of one of the giant tooth chairs, holding her shiny @Image2 high in one hand like a trophy, the other arm out for balance. Sara spins on the spot, then bops side-to-side, hair bouncing, beaming so wide her whole face is grinning, mouth moving rhythmically as she sings along to a song. Movements are RHYTHMIC and LOOPABLE — clean cycle: spin → bop-left → bop-right → book-pump-up → return-to-start. Camera slowly orbits at kid-eye-level. Bright cheerful warm lighting. Solo shot — only Sara visible, no other people, no other faces, no dialogue (music-video beat), no audible speech, generic happy singing-along mouth movements. The shot is designed to LOOP cleanly: Sara returns to roughly the same book-held-high pose at second 0 and second 10. No audible music — silent render.",
+  "negativePrompt": "duplicate character, twin, clone, two of the same, mirrored figure, second father, second mother, two Papa, two Mama, identical adults, extra people, third child, second sister, second sara, second eva, two sara, duplicate sara, mirror reflection, family members, strangers, crowd, group of people, other faces, background people, friends, neighbors, specific dialogue words, lip-sync to specific syllables, falling off the chair, scared face, sad face, audible music, audible singing words"
+}

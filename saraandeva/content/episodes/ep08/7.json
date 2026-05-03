@@ -9,11 +9,11 @@
   "nativeAudio": true,
   "expectedCredits": 90,
   "subjects": ["Eva"],
-  "scene": "dentist-waiting",
+  "scene": "dentist-waiting-room",
   "boundElements": [
     { "tag": "Eva", "source": "library" },
-    { "tag": "dentist-waiting", "source": "library" }
+    { "tag": "dentist-waiting-room", "source": "library" }
   ],
-  "prompt": "Tight close-up in @dentist-waiting on @Eva's face — she's mid-laugh, foam-of-fun still on her face, then a kind off-screen voice calls her name. Eva's smile drops in slow motion, her face goes pale, eyes widen, her shoulders pull up to her ears. Off-screen kind female voice (the nurse, only audio, no body in frame): \"Eva? We're ready for you, sweetheart.\" Eva (frozen, small panicked whisper): \"...is it… my turn?\" Eva (looks down at her own hand reaching for Sara off-frame): \"Sara?\" Solo shot — only Eva's face and shoulders visible, no other people in frame, no other faces.",
+  "prompt": "Tight close-up in @dentist-waiting-room on @Eva's face — she's mid-laugh, foam-of-fun still on her face, then a kind off-screen voice calls her name. Eva's smile drops in slow motion, her face goes pale, eyes widen, her shoulders pull up to her ears. Off-screen kind female voice (the nurse, only audio, no body in frame): \"Eva? We're ready for you, sweetheart.\" Eva (frozen, small panicked whisper): \"...is it… my turn?\" Eva (looks down at her own hand reaching for Sara off-frame): \"Sara?\" Solo shot — only Eva's face and shoulders visible, no other people in frame, no other faces.",
   "negativePrompt": "duplicate character, twin, clone, two of the same, mirrored figure, second father, second mother, two Papa, two Mama, identical adults, extra people, third child, second sister, second sara, second eva, two eva, duplicate eva, mirror reflection, family members, strangers, crowd, group of people, other faces, background people, friends, neighbors, full nurse body, nurse face, second eva, audible music"
 }

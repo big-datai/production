@@ -95,9 +95,11 @@ if (introDir && fs.existsSync(introDir)) {
 }
 
 // ─── BODY (numbered episode clips) ──────────────────────────────────────────
+// Accepts integer-named clips (1.mp4, 2.mp4, …) AND decimal-named music
+// inserts (e.g. 8.5.mp4 between 8 and 9). Sorted by parseFloat.
 const bodyFiles = fs.readdirSync(clipsDir)
-  .filter(f => /^\d+\.mp4$/.test(f))
-  .map(f => ({ n: parseInt(f, 10), f }))
+  .filter(f => /^\d+(\.\d+)?\.mp4$/.test(f))
+  .map(f => ({ n: parseFloat(f), f }))
   .sort((a, b) => a.n - b.n);
 
 console.log(`\n📺 Body (${bodyFiles.length} numbered clips from ${clipsDir}):`);

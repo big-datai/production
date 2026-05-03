@@ -9,12 +9,12 @@
   "nativeAudio": true,
   "expectedCredits": 90,
   "subjects": ["Sara", "Eva"],
-  "scene": "dentist-waiting",
+  "scene": "dentist-waiting-room",
   "boundElements": [
     { "tag": "Sara", "source": "library" },
     { "tag": "Eva", "source": "library" },
-    { "tag": "dentist-waiting", "source": "library" }
+    { "tag": "dentist-waiting-room", "source": "library" }
   ],
-  "prompt": "Medium two-shot in @dentist-waiting. @Sara on the LEFT sits cross-legged inside one of the giant white molar-tooth armchairs, leaning over a colorful turtle-themed puzzle on a small bright-yellow box stand, sliding a green turtle piece into place with concentration. @Eva on the RIGHT kneels on the sea-turtle floor mural beside the puzzle station, leaning in too, pointing emphatically at a different spot. Both relaxed and giggling — Eva has clearly forgotten she was scared. Sara (concentrating): \"The green turtle goes RIGHT here.\" Eva (loud, helpful, bossy): \"NO! Green turtle goes by the PINK fish! See? OBVIOUSLY.\" Sara pauses, looks at where Eva is pointing, then nods. Sara (deadpan): \"...you're right.\" Both burst into giggles.",
+  "prompt": "Medium two-shot in @dentist-waiting-room. @Sara on the LEFT sits cross-legged inside one of the giant white molar-tooth armchairs, leaning over a colorful turtle-themed puzzle on a small bright-yellow box stand, sliding a green turtle piece into place with concentration. @Eva on the RIGHT kneels on the sea-turtle floor mural beside the puzzle station, leaning in too, pointing emphatically at a different spot. Both relaxed and giggling — Eva has clearly forgotten she was scared. Sara (concentrating): \"The green turtle goes RIGHT here.\" Eva (loud, helpful, bossy): \"NO! Green turtle goes by the PINK fish! See? OBVIOUSLY.\" Sara pauses, looks at where Eva is pointing, then nods. Sara (deadpan): \"...you're right.\" Both burst into giggles.",
   "negativePrompt": "duplicate character, twin, clone, two of the same, mirrored figure, second father, second mother, two Papa, two Mama, identical adults, extra people, third child, second sister, second sara, second eva, two eva, duplicate eva, mirror reflection, family members, strangers, crowd, group of people, other faces, background people, friends, neighbors, other patients, other kids waiting"
 }

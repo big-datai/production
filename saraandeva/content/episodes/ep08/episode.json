@@ -8,12 +8,12 @@
   "expectedCreditsTotal": 1470,
   "expectedCreditsBreakdown": "15 normal clips × 90 cr = 1350 + 2 render specs (A,B) × 60 cr = 120 → 1470 cr base; +25% buffer ≈ 1840 cr realistic",
   "newBoundElements": [
-    { "tag": "dentist-waiting",     "source": "library", "asset": "assets/scenes/dentist_waiting.png",     "purpose": "Sea-themed pediatric waiting room with giant tooth chairs — used in beats 5 + 9" },
+    { "tag": "dentist-waiting-room",     "source": "library", "asset": "assets/scenes/dentist_waiting.png",     "purpose": "Sea-themed pediatric waiting room with giant tooth chairs — used in beats 5 + 9" },
     { "tag": "dentist-chair",       "source": "library", "asset": "assets/scenes/dentist_chair.png",       "purpose": "Pediatric exam room with chair + overhead light — used in beats 6, 7, 8" },
     { "tag": "tesla-interior",      "source": "library", "asset": "assets/scenes/tesla_interior.png",      "purpose": "Tesla Model 3 back-seat POV — used in beat 10 (victory song cruise) + beat 11 (school drop-off)" },
     { "tag": "gas-mask",            "source": "library", "asset": "assets/scenes/gas_mask.png",            "purpose": "Pink-elephant pediatric nose-piece gas mask — comedy prop in beat 7" },
     { "tag": "dental-coin",         "source": "library", "asset": "assets/scenes/dental_coin.png",         "purpose": "Shiny gold 'BRAVE TOOTH' reward coin — beats 9, 10, 11" },
-    { "tag": "dentist-goodie-bag",  "source": "library", "asset": "assets/scenes/dentist_goodie_bag.png",  "purpose": "Kid-style toothbrush goodie bag (TOOTHCO) — beat 9 onward" }
+    { "tag": "dental-tooth-goodie",  "source": "library", "asset": "assets/scenes/dentist_goodie_bag.png",  "purpose": "Kid-style toothbrush goodie bag (TOOTHCO) — beat 9 onward" }
   ],
   "scenes": [
     "living-room",
@@ -21,7 +21,7 @@
     "girls-closet",
     "bathroom",
     "driveway",
-    "dentist-waiting",
+    "dentist-waiting-room",
     "dentist-chair",
     "tesla-interior",
     "front-fence-sidewalk"

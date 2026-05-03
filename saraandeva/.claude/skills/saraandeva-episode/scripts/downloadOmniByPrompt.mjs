@@ -73,10 +73,13 @@ for (const f of fs.readdirSync(specDir)) {
     continue;
   }
   // Normalize for matching: @-tags AND Element\d+ both → X (Kling stores
-  // bound elements as Element1/2/3 in the cached prompt, while specs use @Tag)
+  // bound elements as Element1/2/3 in the cached prompt, while specs use @Tag).
+  // Also consume the optional possessive `'s` after either form — Kling renders
+  // chips with a space before `'s` while specs write `@Eva's` tight; without
+  // this both shapes would diverge after the X token and tank the prefix score.
   const norm = spec.prompt
-    .replace(/@[A-Za-z][A-Za-z0-9_-]*/g, "X")
-    .replace(/Element\d+/g, "X")
+    .replace(/@[A-Za-z][A-Za-z0-9_-]*(\s*'s)?/g, "X")
+    .replace(/Element\d+(\s*'s)?/g, "X")
     .replace(/[\s,.]+/g, " ")
     .toLowerCase()
     .trim();
@@ -159,9 +162,15 @@ console.log(`📦 ${cachedTasks.length} completed Omni renders in cache (last 24
 
 // ─── MATCH SPECS → TASKS ────────────────────────────────────────────────────
 // Normalize cached prompts the same way we did the specs.
+// Both `Element\d+` (Kling's chip-rendered form) and `@Tag` (the spec's form)
+// can be followed by a possessive `'s`. Kling inserts a space before the
+// apostrophe (e.g. `Element1 's face`) but specs write it tight (`@Eva's
+// face`). Capture the optional possessive in both regexes so both shapes
+// collapse to the same token "X". Without this, prompts with `@Char's`
+// score below MIN_SCORE and silently fail to match. (ep08 clips 7, 9)
 const normCached = (s) => s
-  .replace(/Element\d+/g, "X")
-  .replace(/@[A-Za-z][A-Za-z0-9_-]*/g, "X")
+  .replace(/Element\d+(\s*'s)?/g, "X")
+  .replace(/@[A-Za-z][A-Za-z0-9_-]*(\s*'s)?/g, "X")
   .replace(/[\s,.]+/g, " ")
   .toLowerCase()
   .trim();

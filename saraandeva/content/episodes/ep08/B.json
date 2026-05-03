@@ -9,10 +9,10 @@
   "nativeAudio": false,
   "expectedCredits": 60,
   "subjects": ["Eva"],
-  "scene": "dentist-waiting",
+  "scene": "dentist-waiting-room",
   "boundElements": [
     { "tag": "Eva",    "source": "library" },
-    { "tag": "Image1", "source": "upload", "asset": "dentist-waiting", "file": "/Volumes/Samsung500/goreadling-production/saraandeva/assets/scenes/dentist_waiting.png" },
+    { "tag": "Image1", "source": "upload", "asset": "dentist-waiting-room", "file": "/Volumes/Samsung500/goreadling-production/saraandeva/assets/scenes/dentist_waiting.png" },
     { "tag": "Image2", "source": "upload", "asset": "dental-coin",     "file": "/Volumes/Samsung500/goreadling-production/saraandeva/assets/scenes/dental_coin.png" }
   ],
   "musicVideoBlock": true,

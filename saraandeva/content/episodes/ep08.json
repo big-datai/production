@@ -1,0 +1,956 @@
+{
+  "episode": 8,
+  "title": "Sara's Silver Tooth!",
+  "logline": "It's dentist day — and Eva is SCARED. Sara's been reading her a 'Brave Little Tooth' picture book, but the moment Eva hears the word 'dentist' she freezes. Sara coaches her through brushing, holds her hand all the way to the chair, and quietly promises she's not going anywhere. Eva opens her mouth shaking, opens her eyes, and discovers — wait. THAT'S IT?! Sara has her own moment with the funny pink-elephant gas mask (it smells like SOCKS — Papa agrees), and earns a shiny silver bridge. Eva earns something better: a gold BRAVE TOOTH coin from the doctor for being the bravest first-timer of the week. The girls dance home. The end-line lands quiet and big: 'Sara… thank you for going first.'",
+  "formulaReference": "Bluey-style 'first-time-at-the-dentist' family episode — anticipation hook → rush prep → musical practice → comedic gag at the office → quiet brave-moment → reward + heart line → cliffhanger.",
+  "mode": "omni",
+  "durationTotal": "~5:21 (15 normal × 10s + 2 music-video blocks of 60s + intro 31s + outro 20s)",
+  "expectedCreditsTotal": 1470,
+  "expectedCreditsBreakdown": "15 normal clips × 90 cr = 1350 + 2 render specs (A,B) × 60 cr = 120 → 1470 cr base; +25% buffer ≈ 1840 cr realistic",
+  "newBoundElements": [
+    {
+      "tag": "dentist-waiting-room",
+      "source": "library",
+      "asset": "assets/scenes/dentist_waiting.png",
+      "purpose": "Sea-themed pediatric waiting room with giant tooth chairs — used in beats 5 + 9"
+    },
+    {
+      "tag": "dentist-chair",
+      "source": "library",
+      "asset": "assets/scenes/dentist_chair.png",
+      "purpose": "Pediatric exam room with chair + overhead light — used in beats 6, 7, 8"
+    },
+    {
+      "tag": "tesla-interior",
+      "source": "library",
+      "asset": "assets/scenes/tesla_interior.png",
+      "purpose": "Tesla Model 3 back-seat POV — used in beat 10 (victory song cruise) + beat 11 (school drop-off)"
+    },
+    {
+      "tag": "gas-mask",
+      "source": "library",
+      "asset": "assets/scenes/gas_mask.png",
+      "purpose": "Pink-elephant pediatric nose-piece gas mask — comedy prop in beat 7"
+    },
+    {
+      "tag": "dental-coin",
+      "source": "library",
+      "asset": "assets/scenes/dental_coin.png",
+      "purpose": "Shiny gold 'BRAVE TOOTH' reward coin — beats 9, 10, 11"
+    },
+    {
+      "tag": "dental-tooth-goodie",
+      "source": "library",
+      "asset": "assets/scenes/dentist_goodie_bag.png",
+      "purpose": "Kid-style toothbrush goodie bag (TOOTHCO) — beat 9 onward"
+    }
+  ],
+  "scenes": [
+    "living-room",
+    "bedroom-sisters",
+    "girls-closet",
+    "bathroom",
+    "driveway",
+    "dentist-waiting-room",
+    "dentist-chair",
+    "tesla-interior",
+    "front-fence-sidewalk"
+  ],
+  "cast": [
+    "Sara",
+    "Eva",
+    "Mama",
+    "Papa"
+  ],
+  "reuse": {
+    "intro": {
+      "source": "season_01/intro/",
+      "clips": [
+        "intro_song.mp4"
+      ],
+      "totalDuration": "~31s",
+      "playOrder": "Theme song"
+    },
+    "outro": {
+      "source": "season_01/OUTRO/",
+      "clips": [
+        "17.mp4",
+        "18.mp4",
+        "0_song.mp4"
+      ],
+      "totalDuration": "~20s",
+      "note": "0_song.mp4 sorts last via parseInt-Infinity hack — keep (memory rule #23)"
+    }
+  },
+  "music": {
+    "policy": "ALL music is Suno — Kling renders dialogue + ambient ONLY. No 'music sting' / 'tender swell' / 'cheerful music' phrases inside any clip prompt (memory rule #24).",
+    "stings": [
+      {
+        "file": "assets/music/Brush Brush Brush.mov",
+        "lengthSec": 13,
+        "playedOver": [
+          5,
+          6
+        ],
+        "mood": "Upbeat 12s brushing jingle, layered as background under regular dialogue clips at 0.30× volume"
+      }
+    ],
+    "musicVideoBlocks": [
+      {
+        "blockId": "8music",
+        "song": "assets/music/Dentist Day Fun.mp3",
+        "trimStart": 0,
+        "blockDurationSec": 60,
+        "render": "A",
+        "renderSpec": "content/episodes/ep08/A.json",
+        "placement": "after clip 8 (waiting room reveal) — Sara+Eva duo dance music video as the family kills time in the waiting room",
+        "mood": "Both girls singing 'Dentist Day Fun!' — sets up the whole-family-vibe before each girl heads back for her appointment"
+      },
+      {
+        "blockId": "14music",
+        "song": "assets/music/Brave Tooth Club.mp3",
+        "trimStart": 50,
+        "blockDurationSec": 30,
+        "render": "A",
+        "renderSpec": "content/episodes/ep08/A.json",
+        "placement": "between clips 14 and 15 — bridge from rewards walk-out to the Tesla cruise. Reuses Render A under a different song.",
+        "mood": "Heart-line — both girls singing the 'I LOVE the dentist!' chorus, Sara holding the silver-bridge mouth-open grin"
+      },
+      {
+        "blockId": "16music",
+        "song": "assets/music/Brave-Tooth Coin.mp3",
+        "trimStart": 0,
+        "blockDurationSec": 60,
+        "render": "B",
+        "renderSpec": "content/episodes/ep08/B.json",
+        "placement": "after clip 15 (brave-coin reveal) — Eva solo dance on the giant tooth chair, coin held high",
+        "mood": "Eva's emotional peak — she went from scared-of-the-dentist to dance-on-the-tooth-chair-queen in one episode"
+      }
+    ],
+    "renders": {
+      "A": "content/episodes/ep08/A.json — Sara+Eva duo, neutral pastel backdrop, REUSABLE across episodes",
+      "B": "content/episodes/ep08/B.json — Eva solo on tooth chair, ep08-specific"
+    },
+    "mixRecipe": "[1:a]atrim=start=X:duration=N,asetpts=PTS-STARTPTS,volume=0.30[bg]; [0:a]volume=1.4[fg]; [fg][bg]amix=inputs=2:duration=first:dropout_transition=0[a]",
+    "loopRecipe": "ffmpeg -i <render>.mp4 -filter_complex 'split=N → xfade chain (0.3s)' -map [v] -an looped.mp4; then overlay Suno song with -map 0:v -map 1:a -t <duration> -shortest"
+  },
+  "arc": [
+    {
+      "beat": 1,
+      "name": "HOOK — Sara reads, Eva walks in",
+      "purpose": "Sara reading 'Brave Little Tooth' aloud cheerfully on the couch. Eva walks in mid-sentence, hears the word DENTIST, FREEZES.",
+      "clips": [
+        1
+      ]
+    },
+    {
+      "beat": 2,
+      "name": "EVA FEAR",
+      "purpose": "Eva on Mama's lap, clutching her: 'Does it… HURT?' Mama: 'Just a tickle, sweetheart.'",
+      "clips": [
+        2
+      ]
+    },
+    {
+      "beat": 3,
+      "name": "BRUSHING + SARA COMFORT (sting)",
+      "purpose": "Bathroom — Sara teaches anxious Eva to brush. 'I was scared too last year — now look at me!' Brush Brush Brush sting plays bg.",
+      "clips": [
+        3
+      ]
+    },
+    {
+      "beat": 4,
+      "name": "OFF TO DENTIST",
+      "purpose": "Tesla driveway — Eva clutches Sara's hand. Eva: 'Don't let go!' Sara: 'Sister-promise.'",
+      "clips": [
+        4
+      ]
+    },
+    {
+      "beat": 5,
+      "name": "WAITING ROOM REVEAL",
+      "purpose": "Sea-mural waiting room + giant tooth chairs. Eva forgets fear momentarily: 'WAIT — IS THAT A TOOTH?!'",
+      "clips": [
+        5
+      ]
+    },
+    {
+      "beat": 6,
+      "name": "TURTLE PUZZLE",
+      "purpose": "Sisters at the puzzle station — Eva relaxing, almost forgetting why they're there.",
+      "clips": [
+        6
+      ]
+    },
+    {
+      "beat": 7,
+      "name": "🎵 MUSIC VIDEO 1 — Dentist Day Fun (60s)",
+      "purpose": "Render A under 'Dentist Day Fun' — Sara+Eva duo dance/sing. Reusable neutral-bg render, looped 6× with xfade.",
+      "clips": [
+        "A→8music"
+      ]
+    },
+    {
+      "beat": 8,
+      "name": "NURSE CALLS — Eva freezes again",
+      "purpose": "Eva mid-laugh, smile drops. 'is it… my turn?' Fear returns just before going in.",
+      "clips": [
+        7
+      ]
+    },
+    {
+      "beat": 9,
+      "name": "EVA ON CHAIR — Sara holds her hand",
+      "purpose": "Eva eyes squeezed shut, paper bib clipped. Sara stands beside chair gripping her hand. Sara: 'Just open your mouth.'",
+      "clips": [
+        8
+      ]
+    },
+    {
+      "beat": 10,
+      "name": "EVA OPENS HER EYES — 'THAT'S IT?!'",
+      "purpose": "Cleaning is over. Eva eyes pop open, smile blooms. 'It TICKLED!' — emotional pivot of the episode.",
+      "clips": [
+        9
+      ]
+    },
+    {
+      "beat": 11,
+      "name": "SARA — GAS MASK COMEDY",
+      "purpose": "Sara on chair, sniffs gas mask: 'EWW SOCKS!' Pure comedy beat to break tension after Eva's pivot.",
+      "clips": [
+        10
+      ]
+    },
+    {
+      "beat": 12,
+      "name": "PAPA SNIFFS — 'SHE'S RIGHT'",
+      "purpose": "Papa bravely sniffs to back Sara up → 'cough cough — she's RIGHT.' Mask gets waved off.",
+      "clips": [
+        11
+      ]
+    },
+    {
+      "beat": 13,
+      "name": "SARA — SILVER BRIDGE",
+      "purpose": "Sara opens mouth wide — silver-tooth glint. 'I'm SHINY now!'",
+      "clips": [
+        12
+      ]
+    },
+    {
+      "beat": 14,
+      "name": "BRAVE COIN MOMENT (heart-line)",
+      "purpose": "Doctor presents Eva a gold BRAVE TOOTH coin. 'Bravest first-timer all week.' Eva fills with quiet pride. Brave Tooth Club bg.",
+      "clips": [
+        13
+      ]
+    },
+    {
+      "beat": 15,
+      "name": "🎵 MUSIC VIDEO 2 — Brave-Tooth Coin (60s)",
+      "purpose": "Render B under 'Brave-Tooth Coin' — Eva solo dance on tooth chair, coin held high. Looped 6× with xfade.",
+      "clips": [
+        "B→15music"
+      ]
+    },
+    {
+      "beat": 16,
+      "name": "TESLA HOME — sister thanks",
+      "purpose": "Eva turns to Sara in back seat: 'Sara… thank you for going first.' Sara: 'Sisters first.' Quiet emotional payoff.",
+      "clips": [
+        14
+      ]
+    },
+    {
+      "beat": 17,
+      "name": "SCHOOL DROP-OFF + CLIFFHANGER",
+      "purpose": "Tesla pulls up. Sara: 'When's our NEXT visit?' Papa: 'Six MONTHS!' Eva: 'I LIKE going to the dentist.' Heart wipe.",
+      "clips": [
+        15
+      ]
+    },
+    {
+      "beat": 18,
+      "name": "OUTRO (reused)",
+      "purpose": "Subscribe pair from season_01/OUTRO/ — 17.mp4 → 18.mp4 → 0_song.mp4 last (memory rule #23).",
+      "clips": [
+        "reused"
+      ]
+    }
+  ],
+  "rules": {
+    "maxBoundPerClip": 7,
+    "maxTagMentionsPerCharacter": 1,
+    "klingPromptMustNotContain": [
+      "music sting",
+      "music swell",
+      "tender swell",
+      "cheerful music",
+      "comedic music",
+      "playful music",
+      "heartfelt music",
+      "music cue",
+      "score swell",
+      "background music"
+    ],
+    "klingPromptMustNotContainReason": "All music is Suno-mixed in assemble. Letting Kling improvise music ruins the dialogue track and locks in off-key swells (memory rule #24).",
+    "negativePromptRequired": "duplicate character, twin, clone, two of the same, mirrored figure, second father, second mother, two Papa, two Mama, identical adults, extra people, third child, second sister, second sara, second eva, two eva, duplicate eva, mirror reflection",
+    "englishTextAnchor": "When the prompt has visible text (calendar, mural, posters), append: 'English text only, large clear printed Roman alphabet, NO foreign characters' and add to negative: 'Cyrillic, Chinese characters, Korean, Japanese, Arabic, garbled letters, misspelled, scrambled letters'.",
+    "characterNamesInDialogue": "Drop the bound character's name from other characters' dialogue (rule from ep01 — speaking a bound name spawns an extra of that character)."
+  },
+  "clips": [
+    {
+      "episode": 8,
+      "beat": 1,
+      "clip": 1,
+      "title": "HOOK — Sara reads, Eva freezes mid-yawn",
+      "mode": "omni",
+      "durationSec": 10,
+      "quality": "720p",
+      "nativeAudio": true,
+      "expectedCredits": 90,
+      "subjects": [
+        "Sara",
+        "Eva"
+      ],
+      "scene": "living-room",
+      "boundElements": [
+        {
+          "tag": "Sara",
+          "source": "library"
+        },
+        {
+          "tag": "Eva",
+          "source": "library"
+        },
+        {
+          "tag": "living-room",
+          "source": "library"
+        },
+        {
+          "tag": "brave-tooth-book",
+          "source": "library"
+        }
+      ],
+      "prompt": "Wide shot in @living-room, soft golden early-morning sunlight from the sliding-door wall. @Sara sits cross-legged on the LEFT side of the rainbow afghan couch in cozy pajamas, holding @brave-tooth-book open in her lap, reading aloud cheerfully. @Eva is already sitting RIGHT next to Sara on the same couch in matching pajamas, sleepy and mid-yawn with a soft blanket around her shoulders — then suddenly stops yawning and freezes, eyes wide, as she catches the word from the book. Sara (reading aloud, animated, looking down at the book): \"And then the brave little tooth said: I'm not SCARED of the dentist!\" Eva (frozen beside her, small panicked voice): \"...d-d-DENTIST?\" Sara looks up brightly: \"Yeah, silly — TODAY's the day!\" Eva's lower lip starts to tremble.",
+      "negativePrompt": "duplicate character, twin, clone, two of the same, mirrored figure, second father, second mother, two Papa, two Mama, identical adults, extra people, third child, second sister, second sara, second eva, two eva, duplicate eva, mirror reflection, family members, strangers, crowd, group of people, other faces, background people, friends, neighbors"
+    },
+    {
+      "episode": 8,
+      "beat": 2,
+      "clip": 2,
+      "title": "EVA FEAR — 'Does it HURT?'",
+      "mode": "omni",
+      "durationSec": 10,
+      "quality": "720p",
+      "nativeAudio": true,
+      "expectedCredits": 90,
+      "subjects": [
+        "Eva",
+        "Mama"
+      ],
+      "scene": "living-room",
+      "boundElements": [
+        {
+          "tag": "Eva",
+          "source": "library"
+        },
+        {
+          "tag": "Mama",
+          "source": "library"
+        },
+        {
+          "tag": "living-room",
+          "source": "library"
+        }
+      ],
+      "prompt": "Tight medium shot in @living-room — soft warm morning light. @Mama sits on the rainbow afghan couch holding @Eva on her lap. Eva clutches the front of Mama's sweater with both hands, curls pressed against her cheek, eyes huge and worried, lower lip wobbling. Mama strokes Eva's hair gently, calm and warm. Eva (small worried whisper): \"Does it… HURT?\" Mama (gentle, smiling): \"Just a tickle, sweetheart. Like a little brush on your teeth.\" Eva (still uncertain): \"…promise?\" Mama (soft kiss on Eva's forehead): \"Promise. And big sister will be right beside you.\"",
+      "negativePrompt": "duplicate character, twin, clone, two of the same, mirrored figure, second father, second mother, two Papa, two Mama, identical adults, extra people, third child, second sister, second sara, second eva, two eva, duplicate eva, mirror reflection, family members, strangers, crowd, group of people, other faces, background people, friends, neighbors"
+    },
+    {
+      "episode": 8,
+      "beat": 3,
+      "clip": 3,
+      "title": "BRUSHING — Sara coaches anxious Eva",
+      "mode": "omni",
+      "durationSec": 10,
+      "quality": "720p",
+      "nativeAudio": true,
+      "expectedCredits": 90,
+      "subjects": [
+        "Sara",
+        "Eva"
+      ],
+      "scene": "bathroom",
+      "boundElements": [
+        {
+          "tag": "Sara",
+          "source": "library"
+        },
+        {
+          "tag": "Eva",
+          "source": "library"
+        },
+        {
+          "tag": "bathroom",
+          "source": "library"
+        }
+      ],
+      "prompt": "Wide shot in @bathroom — kid-friendly family bathroom with the oval mirror and double sink. @Sara on the LEFT step stool brushes confidently in big circles, mouth full of bright white foam. @Eva on the RIGHT step stool, smaller, copies the motion nervously — toothbrush wobbling, foam at the corners of her mouth, anxious eyes still flicking to the mirror. Both visible in reflection. Sara (cheerful, foam in her mouth): \"Up! Down! AND in CIRCLES — easy-peasy!\" Eva (foam, nervous): \"Up… down… circles… okay.\" Sara (encouraging, holds up own toothy grin): \"I was scared too last year. Now look — TWENTY clean ones!\" Eva (tiny shaky smile starts): \"…twenty?\" Sound of running water and brushing — no music in audio track.",
+      "negativePrompt": "duplicate character, twin, clone, two of the same, mirrored figure, second father, second mother, two Papa, two Mama, identical adults, extra people, third child, second sister, second sara, second eva, two eva, duplicate eva, mirror reflection, family members, strangers, crowd, group of people, other faces, background people, friends, neighbors, music, singing, song, music score, soundtrack"
+    },
+    {
+      "episode": 8,
+      "beat": 4,
+      "clip": 4,
+      "title": "OFF TO DENTIST — Eva clutches Sara's hand at the car door",
+      "mode": "omni",
+      "durationSec": 10,
+      "quality": "720p",
+      "nativeAudio": true,
+      "expectedCredits": 90,
+      "subjects": [
+        "Sara",
+        "Eva",
+        "Mama"
+      ],
+      "scene": "driveway",
+      "boundElements": [
+        {
+          "tag": "Sara",
+          "source": "library"
+        },
+        {
+          "tag": "Eva",
+          "source": "library"
+        },
+        {
+          "tag": "Mama",
+          "source": "library"
+        },
+        {
+          "tag": "driveway",
+          "source": "library"
+        }
+      ],
+      "prompt": "Wide shot in @driveway, warm golden morning sunlight. The gray Tesla Model 3 sedan is parked on the asphalt driveway. @Mama stands in the FOREGROUND on the LEFT, holding the rear passenger door open, smiling gently. @Sara stands on the RIGHT right at the open door of the car. @Eva stands directly beside Sara, smaller, gripping Sara's hand firmly with both of her own, eyes wide and worried. None of them are walking. Eva (small whisper, looking up at her sister): \"Don't let go!\" Sara (squeezing back, steady): \"Never. Sister-promise.\" Eva (taking a deep brave breath): \"…sister-promise.\"",
+      "negativePrompt": "duplicate character, twin, clone, two of the same, mirrored figure, second father, second mother, two Papa, two Mama, identical adults, extra people, third child, second sister, second sara, second eva, two eva, duplicate eva, mirror reflection, family members, strangers, crowd, group of people, other faces, background people, friends, neighbors, second car"
+    },
+    {
+      "episode": 8,
+      "beat": 5,
+      "clip": 5,
+      "title": "WAITING ROOM REVEAL — 'IS THAT A TOOTH?!'",
+      "mode": "omni",
+      "durationSec": 10,
+      "quality": "720p",
+      "nativeAudio": true,
+      "expectedCredits": 90,
+      "subjects": [
+        "Sara",
+        "Eva"
+      ],
+      "scene": "dentist-waiting-room",
+      "boundElements": [
+        {
+          "tag": "Sara",
+          "source": "library"
+        },
+        {
+          "tag": "Eva",
+          "source": "library"
+        },
+        {
+          "tag": "dentist-waiting-room",
+          "source": "library"
+        }
+      ],
+      "prompt": "Wide reveal shot in @dentist-waiting-room — sea-themed waiting room with the giant white molar-tooth chairs front and center, sea-turtle floor mural visible. @Sara on the LEFT walks in calmly, hands on her hips, looking pleased with herself. @Eva on the RIGHT walks in still gripping Sara's hand, jaw drops open, eyes widen — fear momentarily forgotten as the giant tooth chairs absolutely blow her mind. Eva (loud, jaw on the floor, fear-totally-replaced-by-amazement): \"WAIT — IS THAT A TOOTH?!\" Sara (smug, big-sister-knowing): \"Told ya it's not scary.\" Eva (whispered, awed, finally smiling for real): \"...it's a CHAIR. Made of TOOTH.\"",
+      "negativePrompt": "duplicate character, twin, clone, two of the same, mirrored figure, second father, second mother, two Papa, two Mama, identical adults, extra people, third child, second sister, second sara, second eva, two eva, duplicate eva, mirror reflection, family members, strangers, crowd, group of people, other faces, background people, friends, neighbors, other patients, other kids waiting"
+    },
+    {
+      "episode": 8,
+      "beat": 6,
+      "clip": 6,
+      "title": "TURTLE PUZZLE — Eva relaxing",
+      "mode": "omni",
+      "durationSec": 10,
+      "quality": "720p",
+      "nativeAudio": true,
+      "expectedCredits": 90,
+      "subjects": [
+        "Sara",
+        "Eva"
+      ],
+      "scene": "dentist-waiting-room",
+      "boundElements": [
+        {
+          "tag": "Sara",
+          "source": "library"
+        },
+        {
+          "tag": "Eva",
+          "source": "library"
+        },
+        {
+          "tag": "dentist-waiting-room",
+          "source": "library"
+        }
+      ],
+      "prompt": "Medium two-shot in @dentist-waiting-room. @Sara on the LEFT sits cross-legged inside one of the giant white molar-tooth armchairs, leaning over a colorful turtle-themed puzzle on a small bright-yellow box stand, sliding a green turtle piece into place with concentration. @Eva on the RIGHT kneels on the sea-turtle floor mural beside the puzzle station, leaning in too, pointing emphatically at a different spot. Both relaxed and giggling — Eva has clearly forgotten she was scared. Sara (concentrating): \"The green turtle goes RIGHT here.\" Eva (loud, helpful, bossy): \"NO! Green turtle goes by the PINK fish! See? OBVIOUSLY.\" Sara pauses, looks at where Eva is pointing, then nods. Sara (deadpan): \"...you're right.\" Both burst into giggles.",
+      "negativePrompt": "duplicate character, twin, clone, two of the same, mirrored figure, second father, second mother, two Papa, two Mama, identical adults, extra people, third child, second sister, second sara, second eva, two eva, duplicate eva, mirror reflection, family members, strangers, crowd, group of people, other faces, background people, friends, neighbors, other patients, other kids waiting"
+    },
+    {
+      "episode": 8,
+      "beat": 8,
+      "clip": 7,
+      "title": "NURSE CALLS — Eva freezes again",
+      "mode": "omni",
+      "durationSec": 10,
+      "quality": "720p",
+      "nativeAudio": true,
+      "expectedCredits": 90,
+      "subjects": [
+        "Eva"
+      ],
+      "scene": "dentist-waiting-room",
+      "boundElements": [
+        {
+          "tag": "Eva",
+          "source": "library"
+        },
+        {
+          "tag": "dentist-waiting-room",
+          "source": "library"
+        }
+      ],
+      "prompt": "Tight close-up in @dentist-waiting-room on @Eva's face — she's mid-laugh, foam-of-fun still on her face, then a kind off-screen voice calls her name. Eva's smile drops in slow motion, her face goes pale, eyes widen, her shoulders pull up to her ears. Off-screen kind female voice (the nurse, only audio, no body in frame): \"Eva? We're ready for you, sweetheart.\" Eva (frozen, small panicked whisper): \"...is it… my turn?\" Eva (looks down at her own hand reaching for Sara off-frame): \"Sara?\" Solo shot — only Eva's face and shoulders visible, no other people in frame, no other faces.",
+      "negativePrompt": "duplicate character, twin, clone, two of the same, mirrored figure, second father, second mother, two Papa, two Mama, identical adults, extra people, third child, second sister, second sara, second eva, two eva, duplicate eva, mirror reflection, family members, strangers, crowd, group of people, other faces, background people, friends, neighbors, full nurse body, nurse face, second eva, audible music"
+    },
+    {
+      "episode": 8,
+      "beat": 9,
+      "clip": 8,
+      "title": "EVA ON CHAIR — Sara holds her hand",
+      "mode": "omni",
+      "durationSec": 10,
+      "quality": "720p",
+      "nativeAudio": true,
+      "expectedCredits": 90,
+      "subjects": [
+        "Eva",
+        "Sara"
+      ],
+      "scene": "dentist-chair",
+      "boundElements": [
+        {
+          "tag": "Eva",
+          "source": "library"
+        },
+        {
+          "tag": "Sara",
+          "source": "library"
+        },
+        {
+          "tag": "dentist-chair",
+          "source": "library"
+        }
+      ],
+      "prompt": "Medium two-shot in @dentist-chair. @Eva reclined on the turquoise pediatric chair, paper bib clipped on, eyes squeezed shut tight, both hands gripping the chair arm, body trembling slightly. @Sara stands LEFT of the chair beside Eva, holding Eva's hand firmly with both of her own, leaning in close so only Eva can hear, calm and steady. Bright soft overhead exam light glows above. Sara (whispered, gentle, steady): \"Hey. I'm RIGHT here. You can squeeze as hard as you want.\" Eva (eyes still shut, shaking): \"...don't go.\" Sara (squeezing back hard): \"Not going anywhere. Just open your mouth a tiny bit.\" Eva (slowly, brave shaky breath): \"...okay.\" Eva opens her mouth a tiny crack.",
+      "negativePrompt": "duplicate character, twin, clone, two of the same, mirrored figure, second father, second mother, two Papa, two Mama, identical adults, extra people, third child, second sister, second sara, second eva, two eva, duplicate eva, mirror reflection, family members, strangers, crowd, group of people, other faces, background people, friends, neighbors, full dentist body, dentist face, second dentist, blood, gory mouth, scary medical imagery"
+    },
+    {
+      "episode": 8,
+      "beat": 10,
+      "clip": 9,
+      "title": "EVA OPENS HER EYES — 'THAT'S IT?!'",
+      "mode": "omni",
+      "durationSec": 10,
+      "quality": "720p",
+      "nativeAudio": true,
+      "expectedCredits": 90,
+      "subjects": [
+        "Eva"
+      ],
+      "scene": "dentist-chair",
+      "boundElements": [
+        {
+          "tag": "Eva",
+          "source": "library"
+        },
+        {
+          "tag": "dentist-chair",
+          "source": "library"
+        }
+      ],
+      "prompt": "Tight close-up in @dentist-chair on @Eva's face. Her eyes are still squeezed shut, paper bib clipped on. A beat of stillness — then her eyes FLY OPEN, wide and surprised. A slow disbelieving smile spreads across her face. Eva (whispered, surprised): \"...wait.\" Eva (louder, beaming, total astonishment): \"That's IT?!\" Eva (giggling, wonder): \"It TICKLED! It just TICKLED!\" Eva looks straight at the camera, beaming the biggest grin of the whole episode — the moment the fear officially breaks. Solo shot, only Eva visible, no other faces, no full dentist body.",
+      "negativePrompt": "duplicate character, twin, clone, two of the same, mirrored figure, second father, second mother, two Papa, two Mama, identical adults, extra people, third child, second sister, second sara, second eva, two eva, duplicate eva, mirror reflection, family members, strangers, crowd, group of people, other faces, background people, friends, neighbors, full dentist body, dentist face, second dentist, blood, scary face"
+    },
+    {
+      "episode": 8,
+      "beat": 11,
+      "clip": 10,
+      "title": "SARA — GAS MASK SNIFF: 'EWW SOCKS!'",
+      "mode": "omni",
+      "durationSec": 10,
+      "quality": "720p",
+      "nativeAudio": true,
+      "expectedCredits": 90,
+      "subjects": [
+        "Sara"
+      ],
+      "scene": "dentist-chair",
+      "boundElements": [
+        {
+          "tag": "Sara",
+          "source": "library"
+        },
+        {
+          "tag": "dentist-chair",
+          "source": "library"
+        },
+        {
+          "tag": "gas-mask",
+          "source": "library"
+        }
+      ],
+      "prompt": "Tight close-up in @dentist-chair on @Sara reclined on the turquoise chair, paper bib clipped on, eyes uncertain but curious. From off-screen at the edge of the frame, a single soft cartoon-mitten-style gloved hand offers her the @gas-mask — the small pink-elephant pediatric nose-piece on a teal tube. Sara takes the mask in both her own hands, lifts it close, and takes one careful sniff. Her face transforms in slow-motion HORROR — nose wrinkling, lips curling, eyes squeezing shut. Sara (sniffing once, then recoiling): \"Eww — eww — EWWWW!\" Sara (loud and outraged, mask at arm's length): \"It SMELLS like SOCKS! OLD SOCKS!\" Solo shot — only Sara visible, only one off-screen gloved hand at frame edge, no full dentist body or face shown.",
+      "negativePrompt": "duplicate character, twin, clone, two of the same, mirrored figure, second father, second mother, two Papa, two Mama, identical adults, extra people, third child, second sister, second sara, second eva, two eva, duplicate eva, mirror reflection, family members, strangers, crowd, group of people, other faces, background people, friends, neighbors, full dentist body, dentist face, multiple dentists, second dentist, second nurse, multiple gloved hands, two pink elephants, two masks, duplicate gas mask"
+    },
+    {
+      "episode": 8,
+      "beat": 12,
+      "clip": 11,
+      "title": "PAPA SNIFFS — 'SHE'S RIGHT!'",
+      "mode": "omni",
+      "durationSec": 10,
+      "quality": "720p",
+      "nativeAudio": true,
+      "expectedCredits": 90,
+      "subjects": [
+        "Sara",
+        "Papa"
+      ],
+      "scene": "dentist-chair",
+      "boundElements": [
+        {
+          "tag": "Sara",
+          "source": "library"
+        },
+        {
+          "tag": "Papa",
+          "source": "library"
+        },
+        {
+          "tag": "dentist-chair",
+          "source": "library"
+        },
+        {
+          "tag": "gas-mask",
+          "source": "library"
+        }
+      ],
+      "prompt": "Medium two-shot in @dentist-chair. @Sara on the LEFT lies reclined on the turquoise chair, watching with wide hopeful eyes — backup has arrived. @Papa on the RIGHT leans down from the side of the chair, takes the @gas-mask in one hand, and bravely lifts it to his own nose for a big curious sniff. His face transforms in slow-motion comedy horror — eyebrows climbing, eyes watering, cheeks puffing. Papa (one big cough): \"*cough cough* — oh BOY.\" Papa (waving the mask away with his other hand, mock-serious to Sara): \"She's RIGHT. That smells like SOCKS. We're SKIPPING the elephant.\" Papa (giving Sara a tiny thumbs-up): \"Brave girl, no mask.\"",
+      "negativePrompt": "duplicate character, twin, clone, two of the same, mirrored figure, second father, second mother, two Papa, two Mama, identical adults, extra people, third child, second sister, second sara, second eva, two eva, duplicate eva, mirror reflection, family members, strangers, crowd, group of people, other faces, background people, friends, neighbors, full dentist body, dentist face, multiple dentists, second dentist, second nurse, multiple gloved hands, two pink elephants, two masks, duplicate gas mask"
+    },
+    {
+      "episode": 8,
+      "beat": 13,
+      "clip": 12,
+      "title": "SARA SILVER BRIDGE — 'I'm SHINY now!'",
+      "mode": "omni",
+      "durationSec": 10,
+      "quality": "720p",
+      "nativeAudio": true,
+      "expectedCredits": 90,
+      "subjects": [
+        "Sara"
+      ],
+      "scene": "dentist-chair",
+      "boundElements": [
+        {
+          "tag": "Sara",
+          "source": "library"
+        },
+        {
+          "tag": "dentist-chair",
+          "source": "library"
+        }
+      ],
+      "prompt": "Slow push-in extreme close-up in @dentist-chair on @Sara's face — Sara fills the frame, paper bib still clipped on, soft warm overhead exam light reflecting in her eyes. Sara gives one brave little thumbs-up to the camera. Then Sara opens her mouth WIDE, showing her teeth — and on one of her side molars there is a tiny shiny SILVER metal crown bridge cap, polished mirror-bright. A small sharp glint of light sparkles off the silver. Sara (mouth wide open, awe-struck whisper): \"Whoaaa...\" Sara (closing mouth slowly into a huge proud beaming smile): \"I'm SHINY now!\" Solo shot — only Sara's face and shoulders, no other people in frame, no other faces visible.",
+      "negativePrompt": "duplicate character, twin, clone, two of the same, mirrored figure, second father, second mother, two Papa, two Mama, identical adults, extra people, third child, second sister, second sara, second eva, two eva, duplicate eva, mirror reflection, family members, strangers, crowd, group of people, other faces, background people, friends, neighbors, full dentist body, dentist face, second dentist, gold tooth, blackened tooth, missing tooth, gory mouth, blood, scary medical imagery"
+    },
+    {
+      "episode": 8,
+      "beat": 14,
+      "clip": 13,
+      "title": "BRAVE COIN MOMENT — Eva fills with quiet pride",
+      "mode": "omni",
+      "durationSec": 10,
+      "quality": "720p",
+      "nativeAudio": true,
+      "expectedCredits": 90,
+      "subjects": [
+        "Eva",
+        "Sara"
+      ],
+      "scene": "dentist-waiting-room",
+      "boundElements": [
+        {
+          "tag": "Eva",
+          "source": "library"
+        },
+        {
+          "tag": "Sara",
+          "source": "library"
+        },
+        {
+          "tag": "dentist-waiting-room",
+          "source": "library"
+        },
+        {
+          "tag": "dental-coin",
+          "source": "library"
+        },
+        {
+          "tag": "dental-tooth-goodie",
+          "source": "library"
+        }
+      ],
+      "prompt": "Medium shot in @dentist-waiting-room — sea-themed waiting room. @Eva on the LEFT stands center-frame, tiny and proud, both hands cupped open in front of her. From off-screen at the edge of frame, a single soft cartoon-mitten-style gloved hand presents a shiny gold @dental-coin into Eva's palms. A white @dental-tooth-goodie rests on the bench beside her. @Sara on the RIGHT stands beside Eva, her own face beaming with sister-pride. Off-screen kindly female voice (the doctor, only audio): \"This is for the BRAVEST first-timer I've seen all WEEK.\" Eva (looking down at the coin in her palms, eyes filling): \"I... I did it.\" Sara (proud whisper, putting an arm around Eva): \"Welcome to the Brave Tooth Club, sis.\" Eva clutches the coin to her chest, a single happy tear slipping down her cheek.",
+      "negativePrompt": "duplicate character, twin, clone, two of the same, mirrored figure, second father, second mother, two Papa, two Mama, identical adults, extra people, third child, second sister, second sara, second eva, two eva, duplicate eva, mirror reflection, family members, strangers, crowd, group of people, other faces, background people, friends, neighbors, full doctor body, doctor face, multiple doctors, second nurse, multiple gloved hands, multiple coins, several coins, three coins, dozens of coins"
+    },
+    {
+      "episode": 8,
+      "beat": 16,
+      "clip": 14,
+      "title": "TESLA HOME — 'Sara… thank you for going first.'",
+      "mode": "omni",
+      "durationSec": 10,
+      "quality": "720p",
+      "nativeAudio": true,
+      "expectedCredits": 90,
+      "subjects": [
+        "Sara",
+        "Eva",
+        "Papa"
+      ],
+      "scene": "tesla-interior",
+      "boundElements": [
+        {
+          "tag": "Sara",
+          "source": "library"
+        },
+        {
+          "tag": "Eva",
+          "source": "library"
+        },
+        {
+          "tag": "Papa",
+          "source": "library"
+        },
+        {
+          "tag": "tesla-interior",
+          "source": "library"
+        },
+        {
+          "tag": "dental-coin",
+          "source": "library"
+        }
+      ],
+      "prompt": "Wide back-seat-POV shot in @tesla-interior — looking forward between the two front seats. @Papa is in the FRONT-LEFT driver's seat, hands on the minimalist steering wheel, glancing softly in the rearview at his daughters. @Sara in the BACK-LEFT pink booster seat. @Eva in the BACK-RIGHT purple booster seat, holding her shiny gold @dental-coin in both hands like a treasure, looking down at it. The big horizontal center touchscreen glows with a route line. Soft warm afternoon light pours through the panoramic glass roof. Eva turns her head slowly to look at Sara, voice small and full of feeling: \"Sara… thank you for going first.\" Sara (looking back at Eva, soft proud smile): \"Sisters first.\" Papa (eyes a little glassy in the rearview, gentle smile): \"Best customers EVER.\" A quiet emotional payoff beat — no shouting, no comedy, just sisters.",
+      "negativePrompt": "duplicate character, twin, clone, two of the same, mirrored figure, second father, second mother, two Papa, two Mama, identical adults, extra people, third child, second sister, second sara, second eva, two eva, duplicate eva, mirror reflection, family members, strangers, crowd, group of people, other faces, background people, friends, neighbors, second driver, second car interior, two steering wheels, traditional dashboard with gauges, audible music, audible singing"
+    },
+    {
+      "episode": 8,
+      "beat": 17,
+      "clip": 15,
+      "title": "DROP-OFF + CLIFFHANGER — 'I LIKE going to the dentist!'",
+      "mode": "omni",
+      "durationSec": 10,
+      "quality": "720p",
+      "nativeAudio": true,
+      "expectedCredits": 90,
+      "subjects": [
+        "Sara",
+        "Eva",
+        "Papa"
+      ],
+      "scene": "front-fence-sidewalk",
+      "boundElements": [
+        {
+          "tag": "Sara",
+          "source": "library"
+        },
+        {
+          "tag": "Eva",
+          "source": "library"
+        },
+        {
+          "tag": "Papa",
+          "source": "library"
+        },
+        {
+          "tag": "front-fence-sidewalk",
+          "source": "library"
+        },
+        {
+          "tag": "dental-tooth-goodie",
+          "source": "library"
+        },
+        {
+          "tag": "dental-coin",
+          "source": "library"
+        }
+      ],
+      "prompt": "Medium shot at @front-fence-sidewalk in warm morning light — the gray Tesla Model 3 just pulled up at the curb, rear door open. @Sara on the LEFT hops out onto the sidewalk holding her white @dental-tooth-goodie in one hand. @Eva on the RIGHT hops out behind her, clutching her shiny gold @dental-coin in both hands like the most precious thing she's ever held. @Papa is in the BACKGROUND leaning out the open driver's-side window, grinning a big sly grin. Sara (turning back, curious): \"When's our NEXT visit?\" Papa (winking, mock-serious through the window): \"Six MONTHS.\" Eva (looking up from her coin, eyes shining, tiny proud determined smile): \"Six months? I LIKE going to the dentist.\" Sara and Eva exchange a wide-eyed grin and run together toward the school out of frame.",
+      "negativePrompt": "duplicate character, twin, clone, two of the same, mirrored figure, second father, second mother, two Papa, two Mama, identical adults, extra people, third child, second sister, second sara, second eva, two eva, duplicate eva, mirror reflection, family members, strangers, crowd, group of people, other faces, background people, friends, neighbors, school bus, parked bus, other students, other parents, second car"
+    }
+  ],
+  "musicVideos": [
+    {
+      "episode": 8,
+      "beat": "music-video-A",
+      "clip": "A",
+      "title": "MUSIC VIDEO RENDER A — Sara + Eva duo dance (reusable)",
+      "mode": "omni",
+      "durationSec": 10,
+      "quality": "720p",
+      "nativeAudio": false,
+      "expectedCredits": 60,
+      "subjects": [
+        "Sara",
+        "Eva"
+      ],
+      "scene": "(none — soft pastel studio backdrop, no scene PNG)",
+      "boundElements": [
+        {
+          "tag": "Sara",
+          "source": "library"
+        },
+        {
+          "tag": "Eva",
+          "source": "library"
+        }
+      ],
+      "reuseAsset": true,
+      "reuseAssetNote": "ONE render, reused across multiple music blocks via ffmpeg loop+audio-overlay. Background MUST be neutral so it works under any song in any episode.",
+      "musicVideoBlock": true,
+      "loopExpansion": {
+        "iterations": 6,
+        "xfadeDuration": 0.3,
+        "outputDurationSec": 58
+      },
+      "usedUnderSongs": [
+        {
+          "song": "assets/music/Dentist Day Fun.mp3",
+          "blockDurationSec": 60,
+          "placementClipNumber": "8music"
+        },
+        {
+          "song": "assets/music/Brave Tooth Club.mp3",
+          "blockDurationSec": 30,
+          "placementClipNumber": "14music"
+        }
+      ],
+      "prompt": "Wide front-facing music-video shot — soft pastel gradient backdrop (sky-blue fading to soft mint) with a HUGE stylized RAINBOW arching across the upper half of the frame (red, orange, yellow, green, blue, purple, soft cartoon-chunky rainbow style) and CONFETTI flowing continuously from the top of the frame downward — colorful paper-confetti pieces and a few floating stars in pink, yellow, teal, mint, lavender, drifting slowly past on either side of the dancers. NO scene, NO room, NO furniture, NO logos, NO text. Just the rainbow + confetti backdrop. @Sara on the LEFT and @Eva on the RIGHT stand side-by-side, grinning huge, bopping in rhythm. Sara claps her hands on the beat. Eva spins on the spot then claps too. Sara leans left, Eva leans right. Sara pumps her fist up, Eva pumps her fist up. Sara spins once, Eva spins once. Both return to start position. Movements are RHYTHMIC and LOOPABLE — clean cycle: bop → clap → lean → fist-pump → spin → return. Camera locked, head-on, kid-eye-level. Bright cheerful party lighting. Sara and Eva hum and sing along generically — no specific dialogue, no specific syllables, no lip-sync to any words, just happy singing-along mouth movements. The shot is designed to LOOP cleanly: Sara and Eva return to the same side-by-side starting pose at second 0 and second 10. The rainbow arches and confetti continuously rains down throughout — it's a music-video moment. No audible speech, no music — silent render.",
+      "negativePrompt": "duplicate character, twin, clone, two of the same, mirrored figure, second father, second mother, two Papa, two Mama, identical adults, extra people, third child, second sister, second sara, second eva, two eva, duplicate eva, mirror reflection, family members, strangers, crowd, group of people, other faces, background people, friends, neighbors, scene, room, furniture, kitchen, bedroom, bathroom, dentist office, specific dialogue words, lip-sync to specific syllables, falling down, sad face, scared face, audible music, audible singing words, text, logos, watermarks"
+    },
+    {
+      "episode": 8,
+      "beat": "music-video-B",
+      "clip": "B",
+      "title": "MUSIC VIDEO RENDER B — Eva solo dance with brave coin",
+      "mode": "omni",
+      "durationSec": 10,
+      "quality": "720p",
+      "nativeAudio": false,
+      "expectedCredits": 60,
+      "subjects": [
+        "Eva"
+      ],
+      "scene": "dentist-waiting-room",
+      "boundElements": [
+        {
+          "tag": "Eva",
+          "source": "library"
+        },
+        {
+          "tag": "Image1",
+          "source": "upload",
+          "asset": "dentist-waiting-room",
+          "file": "/Volumes/Samsung500/goreadling-production/saraandeva/assets/scenes/dentist_waiting.png"
+        },
+        {
+          "tag": "Image2",
+          "source": "upload",
+          "asset": "dental-coin",
+          "file": "/Volumes/Samsung500/goreadling-production/saraandeva/assets/scenes/dental_coin.png"
+        }
+      ],
+      "musicVideoBlock": true,
+      "loopExpansion": {
+        "iterations": 6,
+        "xfadeDuration": 0.3,
+        "outputDurationSec": 58
+      },
+      "usedUnderSongs": [
+        {
+          "song": "assets/music/Brave-Tooth Coin.mp3",
+          "blockDurationSec": 60,
+          "trimStart": 0,
+          "trimDuration": 60,
+          "placementClipNumber": "16music"
+        }
+      ],
+      "prompt": "Wide low-angle music-video shot in @Image1 — sea-turtle floor mural visible, the giant white molar-tooth chairs in soft focus background. @Eva stands ON TOP of one of the giant tooth chairs, holding a shiny gold @Image2 high in one hand like a trophy, the other arm out for balance. Eva spins on the spot, then bops side-to-side, hair bouncing, beaming so wide her whole face is grinning, mouth moving rhythmically as she sings along to a song. Movements are RHYTHMIC and LOOPABLE — clean cycle: spin → bop-left → bop-right → coin-pump-up → return-to-start. Camera slowly orbits at kid-eye-level. Bright cheerful warm lighting. Solo shot — only Eva visible, no other people, no other faces, no dialogue (music-video beat), no audible speech, generic happy singing-along mouth movements. The shot is designed to LOOP cleanly: Eva returns to roughly the same coin-held-high pose at second 0 and second 10. No audible music — silent render.",
+      "negativePrompt": "duplicate character, twin, clone, two of the same, mirrored figure, second father, second mother, two Papa, two Mama, identical adults, extra people, third child, second sister, second sara, second eva, two eva, duplicate eva, mirror reflection, family members, strangers, crowd, group of people, other faces, background people, friends, neighbors, specific dialogue words, lip-sync to specific syllables, falling off the chair, scared face, sad face, audible music, audible singing words"
+    },
+    {
+      "episode": 8,
+      "beat": "music-video-C",
+      "clip": "C",
+      "title": "MUSIC VIDEO RENDER C — Sara solo dance with brave-tooth book",
+      "mode": "omni",
+      "durationSec": 10,
+      "quality": "720p",
+      "nativeAudio": false,
+      "expectedCredits": 60,
+      "subjects": [
+        "Sara"
+      ],
+      "scene": "dentist-waiting-room",
+      "boundElements": [
+        {
+          "tag": "Sara",
+          "source": "library"
+        },
+        {
+          "tag": "Image1",
+          "source": "upload",
+          "asset": "dentist-waiting-room",
+          "file": "/Volumes/Samsung500/goreadling-production/saraandeva/assets/scenes/dentist_waiting.png"
+        },
+        {
+          "tag": "Image2",
+          "source": "upload",
+          "asset": "brave-tooth-book",
+          "file": "/Volumes/Samsung500/goreadling-production/saraandeva/assets/scenes/brave_tooth_book.png"
+        }
+      ],
+      "reuseAsset": true,
+      "reuseAssetNote": "ONE render, paired with any song via loopVideoWithSong.mjs (video looped to song length, audio replaced).",
+      "musicVideoBlock": true,
+      "loopExpansion": {
+        "iterations": 6,
+        "xfadeDuration": 0.3,
+        "outputDurationSec": 58
+      },
+      "usedUnderSongs": [],
+      "prompt": "Wide low-angle music-video shot in @Image1 — sea-turtle floor mural visible, the giant white molar-tooth chairs in soft focus background. @Sara stands ON TOP of one of the giant tooth chairs, holding her shiny @Image2 high in one hand like a trophy, the other arm out for balance. Sara spins on the spot, then bops side-to-side, hair bouncing, beaming so wide her whole face is grinning, mouth moving rhythmically as she sings along to a song. Movements are RHYTHMIC and LOOPABLE — clean cycle: spin → bop-left → bop-right → book-pump-up → return-to-start. Camera slowly orbits at kid-eye-level. Bright cheerful warm lighting. Solo shot — only Sara visible, no other people, no other faces, no dialogue (music-video beat), no audible speech, generic happy singing-along mouth movements. The shot is designed to LOOP cleanly: Sara returns to roughly the same book-held-high pose at second 0 and second 10. No audible music — silent render.",
+      "negativePrompt": "duplicate character, twin, clone, two of the same, mirrored figure, second father, second mother, two Papa, two Mama, identical adults, extra people, third child, second sister, second sara, second eva, two sara, duplicate sara, mirror reflection, family members, strangers, crowd, group of people, other faces, background people, friends, neighbors, specific dialogue words, lip-sync to specific syllables, falling off the chair, scared face, sad face, audible music, audible singing words"
+    }
+  ]
+}

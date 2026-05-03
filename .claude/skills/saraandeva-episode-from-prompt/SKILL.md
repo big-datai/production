@@ -15,7 +15,13 @@ When this skill finishes, the following files exist on disk and pass the sanity 
 ```
 saraandeva/content/episodes/ep<NN>/
   episode.json                    # master arc — beats, cast, scenes, music, rules
-  1.json … N.json                 # one per 10s omni clip (typical N = 17–22)
+  1.json … N.json                 # one per 10s omni clip (typical N = 15–18)
+  A.json                          # MUSIC VIDEO A — duo (Sara + Eva) on generic backdrop, REUSABLE
+  B.json                          # MUSIC VIDEO B — solo orbit on episode-specific scene + prop
+
+saraandeva/assets/music/lyrics/
+  <Song 1 name>.md                # Suno-ready lyrics for music-video A's track
+  <Song 2 name>.md                # Suno-ready lyrics for music-video B's track
 
 saraandeva/season_01/episode_<NN>/
   ep<NN>_description.txt          # full YouTube description with chapter timestamps
@@ -104,6 +110,13 @@ Comedy density target: **one funny line every 20–25 seconds**. Track this. If 
 | **+2 music-video blocks** | 15 normal + 2 loops (60s each) | **~6:00** | **1,470 cr** |
 
 **Don't overuse.** Max 2 loop blocks per episode — repetition kills the technique. Always crossfade between iterations (`xfade=fade:duration=0.3`) to hide the seam.
+
+**Cheaper alternative — real dance footage (zero Kling cost).** If `assets/video/` already has dance clips of the kids (Sara, Eva, Sara+Eva duo), use them directly via `loopVideoWithSong.mjs <video> <song> <out> --duration=N [--audio-start=S]` instead of rendering a Kling A/B render. Saved 180 cr in ep08 by reusing existing 10–15s footage. Render specs (A/B/C) become optional when the footage exists.
+
+**Music-block insertion in the assembled episode** — `assembleEpisode.mjs` reads `clips/` and concats numerically (1.mp4, 2.mp4, …). To insert a music-video segment between clips N and N+1, drop it as `clips/N.5.mp4` (decimal sort). Conventional decimal slots used in ep08:
+- `8.5.mp4` — between body clips 8 and 9 (Dentist Day Fun MV, 60s)
+- `14.5.mp4` — between 14 and 15 (Brave Tooth Club MV, 30s)
+- `15.5.mp4` — after final body clip 15, before outro (Brave-Tooth Coin MV, 60s)
 
 ## Step 3 — Draft the arc
 
@@ -214,6 +227,7 @@ These come from memory `lesson_kling_omni_pipeline_fixes.md`. The submit script 
    - `Sara: "Come on — pancakes!"` ✓
    - `Sara: "Come on, Eva — pancakes!"` ✗ (spawns a second Eva)
 5. **No group nouns** in action description (`everyone`, `the family`, `both girls`, `the kids`, `the sisters`). They spawn strangers.
+5b. **No motion-toward verbs when another character is anchored in the scene** — `walks in`, `walks toward / up to / over to / into`, `approaches`, `moves to(ward)`, `heads in/to/toward/over`. Kling renders both the start and end states of motion, doubling whichever character is the anchor. Lint-blocked in `submitOmniClip.mjs`. Use static placement only — characters are already where they need to be at the start of the action. If you need an entrance, split it into a prior clip. (memory: `lesson_kling_motion_verbs_duplicate.md`, post-ep08 fix)
 6. **No "music sting" / "music swell" / "tender swell" / "cheerful music" phrases.** Music is Suno-mixed in assemble. Kling clip prompts contain ONLY dialogue + ambient (footsteps, door, instrument whirr, car ambience).
 7. **English text anchor + Cyrillic-etc. negative** if any visible printed text appears in the shot.
 8. **Every clip needs ≥1 explicit `Name: "dialogue"` line**, otherwise Native Audio renders gibberish.

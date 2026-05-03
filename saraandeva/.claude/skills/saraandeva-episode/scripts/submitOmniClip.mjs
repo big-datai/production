@@ -53,6 +53,14 @@ const FORBIDDEN_PROMPT_PHRASES = [
   /\bhigh[- ]?five\b/i, /\bhigh[- ]?fives\b/i,
   /\bgroup of\b/i, /\bcrowd\b/i, /\bfamily of\b/i,
   /\benters\b/i, /\barriving\b/i, /\bmirror(ed)? figure\b/i,
+  // Motion-toward verbs spawn duplicates: Kling renders both the moving
+  // character AND a destination/origin instance. See memory: lesson_kling_omni_pipeline_fixes
+  // and the ep08 clip-1 / clip-4 incident (2026-05-02). Use static placement instead.
+  /\bwalks?\s+in\b/i, /\bwalking\s+in\b/i,
+  /\bwalks?\s+(toward|up to|over to|into)\b/i, /\bwalking\s+(toward|up to|over to|into)\b/i,
+  /\bapproach(es|ing)\b/i,
+  /\bmoves?\s+to(ward)?\b/i, /\bmoving\s+to(ward)?\b/i,
+  /\bheads?\s+(in|to|toward|over)\b/i, /\bheading\s+(in|to|toward|over)\b/i,
 ];
 
 // ─── REQUIRED NEGATIVE PROMPT (Omni duplicate-character defense) ────────────
@@ -481,7 +489,7 @@ async function addLibraryElement(page, tag) {
   async function findAndClickTile() {
     for (const v of variations) {
       const escaped = v.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
-      const tile = page.locator(`.subject-item`).filter({ has: page.locator(`text=/^${escaped}$/i`) }).first();
+      const tile = page.locator(`.subject-item`).filter({ has: page.locator(`text=/^\\s*${escaped}\\s*$/i`) }).first();
       try {
         if (await tile.isVisible({ timeout: 500 }).catch(() => false)) {
           await tile.locator(".cover").click({ timeout: 2000 });
