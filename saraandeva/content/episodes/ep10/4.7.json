@@ -1,0 +1,21 @@
+{
+  "episode": 10,
+  "beat": "4.7",
+  "clip": "4.7",
+  "title": "Magic forest idea — kids beg Mama for an adventure",
+  "mode": "omni",
+  "durationSec": 10,
+  "quality": "720p",
+  "nativeAudio": true,
+  "expectedCredits": 90,
+  "subjects": ["Sara", "Eva", "Mama"],
+  "scene": "kitchen-morning",
+  "boundElements": [
+    { "tag": "Sara", "source": "library" },
+    { "tag": "Eva", "source": "library" },
+    { "tag": "Mama", "source": "library" },
+    { "tag": "kitchen-morning", "source": "library" }
+  ],
+  "prompt": "Mid-shot in @kitchen-morning, soft warm light from the back window. @Mama already at the kitchen island holding a coffee mug, leaning against the counter. @Sara already on the LEFT-FOREGROUND in front of the island, hands clasped together pleadingly under her chin, soccer cleats still on. @Eva already on the RIGHT-FOREGROUND next to her sister, vibrating with excitement, bouncing on her toes, soccer ball tucked under her arm. Sara (eyes huge, hands clasped, pleading): \"Mama, can we go on an ADVENTURE to the MAGIC FOREST today?\" Eva (jumping in place, hands fluttering): \"PLEASE PLEASE PLEASE!\" Mama (one eyebrow raised, tiny smile, sipping coffee): \"An adventure to the WHAT now?\" Sara (super serious): \"MAGIC. FOREST.\" Eva (eyes huge, whisper-shouting): \"It has unicorns! PROBABLY!\" Mama (laughing softly, setting down mug): \"...okay. Let's GO!\" Both kids erupt: \"YESSSSS!\"",
+  "negativePrompt": "duplicate character, twin, clone, two of the same, mirrored figure, second father, second mother, two Papa, two Mama, identical adults, extra people, third child, second sister, second sara, second eva, two eva, duplicate eva, mirror reflection, family members in the background, additional children, extra child in background, second blonde child, ghost figure, shadow of person, strangers, crowd, group of people, other faces, background people, friends, neighbors, papa in this clip, partial face peeking out, half face at edge, child between mama and sara, small face in the back"
+}

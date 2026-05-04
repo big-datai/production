@@ -65,6 +65,15 @@ Episodes are FOR KIDS but they live or die by adult-watchable moments. Bake thes
 - **Emotional pivot in act 2** — every episode needs a moment where the kid character almost loses (Eva tripping, Sara about to cry, the gas-mask doubt). Without the pivot, the resolution carries no weight.
 - **Cliffhanger every act, not just the end** — beat ends should resolve THIS thing while exposing the NEXT thing. e.g. "tray flies — Eva crying" resolves into "Sara's eyes light up: I have a PLAN!" — a pivot that's also a cliffhanger.
 - **Final-beat tag must SET UP the next episode.** Always. The last 10s should make the kid want next week's video. ep07 → "Father's Day?!"  ep08 → "I'm starting to brush NOW."  This is the strongest retention lever the show has.
+- **At LEAST one parent-with-girls activity scene per episode, rendered at 15s (not the default 10s).** This is a top-three retention driver for the @SaraAndEva audience — kid-with-parent activity content is exceptionally catchy (the "Nastia + dad" / dad-tickle-monster genre). **Activity assignment is gender-coded for character consistency** (per user, ep10 review):
+    - **PAPA + girls = ACTIVE / OUTDOOR / SPORTS**: tickle-monster tag, jogging together, skiing, bike riding, scooter riding, playing on a playground, push-on-swing, soccer one-on-one, tennis, basketball, catch, frisbee, pool splash fight, piggy-back rides, daddy-daughter dance, building a fort, hike, beach day. (Most episodes — Papa's signature dynamic.)
+    - **MAMA + girls = COOKING / BAKING / DOMESTIC**: making pancakes, baking cookies, decorating cupcakes, prepping pizza dough, mixing smoothies, packing lunches together, gardening, painting nails, doing hair. (Episodes that have a kitchen or home setting can substitute Mama-cooking for Papa-sports as the play-scene anchor.)
+    - **EITHER PARENT + girls = READING**: bedtime story, reading on the couch, library trip. Use as a calming closer or a transition beat.
+    - ep10 added: Papa-Eva soccer mini-match (3.7) + tag-around-the-Jeep at Weber's (18.3) — both Papa-active. Future episodes should rotate which parent gets the play scene.
+    - **15s gives the play room to breathe** — choreograph 3 beats inside the prompt: `(BEAT 1 — 0-5s)` setup, `(BEAT 2 — 5-10s)` peak silly moment, `(BEAT 3 — 10-15s)` reaction punchline / tag-team handoff.
+    - **Cap chars at 2-3** (Papa+1 or 2 kids; Mama+1 or 2 kids) to avoid the 4-char ghost trap.
+    - **No "chase", "race", "pursuit" verbs** — lint-blocked. Use "tickle-monster game", "tag-game", "tip-toes", "lunges to one side", "circles around" instead.
+    - (memory: `lesson_papa_play_scene_per_episode.md` + ep10 review feedback)
 
 If the drafted arc has 3+ beats in a row that feel "and then…" instead of "and so…/but…", rewrite. Story flows on `but` and `therefore`, never `and`. (South Park rule.)
 
@@ -188,6 +197,19 @@ Use the ep07 shape exactly. Required keys:
 }
 ```
 
+## Step 4.5 — Extend the Nano Banana catalogs (so the next steps can run)
+
+For every NEW bound element you put in `episode.json.newBoundElements`, add a corresponding entry to the right Python catalog so `generateScenes.py` / `generateProps.py` can produce the PNG. This is required — the gen scripts won't render an unknown id.
+
+- **Scenes** → `saraandeva/content/generateScenes.py` `SCENES` dict
+- **Props** → `saraandeva/content/generateProps.py` `PROPS` dict
+
+Each entry is `{ "label": ..., "refs": [...absolute paths to layout-photo refs or empty list...], "description": "..." }`. For the description, write a Pixar-locked render brief (Pixar 3D, lit from soft top-key, premium materials, drop shadow, NO real-world brand marks, NO foreign characters, NO PEOPLE in scene PNGs).
+
+If there's a real photo of the location/object in `assets/photos/<topic>/`, pass it as a layout ref — the model will keep the architecture/composition while applying Pixar style. If invented (e.g. YMCA gym), leave `refs: []` and describe it richly.
+
+**Why:** the `addMissingElements.mjs` orchestrator calls `generateScenes.py --scene <stem>` and `generateProps.py --prop <stem>` for each missing local PNG. If the catalog doesn't have the entry, gen fails and the pipeline stops. Adding entries during spec drafting lets the user fire the whole pipeline in one go.
+
 ## Step 5 — Write each numbered clip JSON
 
 One per clip, named `1.json` … `N.json`. Use the exact ep07 shape:
@@ -228,6 +250,19 @@ These come from memory `lesson_kling_omni_pipeline_fixes.md`. The submit script 
    - `Sara: "Come on, Eva — pancakes!"` ✗ (spawns a second Eva)
 5. **No group nouns** in action description (`everyone`, `the family`, `both girls`, `the kids`, `the sisters`). They spawn strangers.
 5b. **No motion-toward verbs when another character is anchored in the scene** — `walks in`, `walks toward / up to / over to / into`, `approaches`, `moves to(ward)`, `heads in/to/toward/over`. Kling renders both the start and end states of motion, doubling whichever character is the anchor. Lint-blocked in `submitOmniClip.mjs`. Use static placement only — characters are already where they need to be at the start of the action. If you need an entrance, split it into a prior clip. (memory: `lesson_kling_motion_verbs_duplicate.md`, post-ep08 fix)
+5c. **Max 3 foreground-anchored characters per clip; never anchor a 4th in the BACKGROUND.** ep09 clip 19 burned 270 cr (3 attempts) when "Papa in the BACKGROUND" caused random extras to spawn. Drop the 4th character if their role is "stands behind / in the distance / in the background" — their visual presence is rarely worth the retake cost. If 4 chars are needed, foreground all of them with explicit LEFT/RIGHT/CENTER positions. (memory: `lesson_background_character_duplicates.md`)
+5d. **For 4+ char clips, generate the still in Nano Banana FIRST, then submit as Kling image-to-video.** Even tight 4-char selfies still ghost on Kling video (~25%+ rate when many novel anchors stack — ep10 clip 11 produced a 5th phantom child on TWO Kling attempts). Run `python3 content/generateGroupShot.py <id> --chars mama,papa,sara,eva --pose "..." --scene <bg> --n 3`, pick the cleanest candidate (~$0.03 total, 90s), then upload that PNG to Kling library and bind it as the scene reference. Kling preserves char count when animating from a locked still. (memory: `lesson_nano_banana_group_shot.md`)
+5e. **No "looking back at kids" framing combined with "driver gripping wheel".** Kling resolves the conflict by rotating the driver 180° (unsafe-driving render). If you need to show kids reacting in the back, use one of:
+    - Wide EXTERIOR side shot of the rocking vehicle (driver visible in profile through driver-side window facing forward)
+    - Front-view interior with all chars facing camera/forward
+    - REAR-of-cabin shot looking AT the kids (driver out of frame entirely)
+    Add to the prompt: `Mama is NEVER turned backward, ALWAYS facing forward, eyes on the road ahead through the windshield.` (memory: `lesson_kling_ghost_anatomy_ep10.md`)
+5f. **When characters HOLD an object AND DANCE, lock both hands on the object and dance lower-body + head ONLY.** ep10 clip C ("Burgers in the Car") rendered each girl with THREE arms because the prompt asked them to hold milkshakes AND swing arms / point fingers. Kling spawned an extra arm pair. Fix:
+    - Lock hands: "ONE hand around the bottom of the cup and the OTHER hand around the top of the cup, cup held at chest height the entire time"
+    - Strict anatomy: "EXACTLY 2 ARMS, EXACTLY 2 HANDS — both hands ALWAYS occupied with [object]"
+    - Dance moves: hip bops, knee bends, head bobs, "step in" interactions (no "swing arms", no "point fingers", no "hands on hips")
+    - Negative-prompt: `three arms, third arm, extra arm, extra hand, floating hand, four arms, anatomy error, free arm swinging while holding cup, cup levitating, hand pointing while also holding cup`
+    (memory: `lesson_kling_ghost_anatomy_ep10.md`)
 6. **No "music sting" / "music swell" / "tender swell" / "cheerful music" phrases.** Music is Suno-mixed in assemble. Kling clip prompts contain ONLY dialogue + ambient (footsteps, door, instrument whirr, car ambience).
 7. **English text anchor + Cyrillic-etc. negative** if any visible printed text appears in the shot.
 8. **Every clip needs ≥1 explicit `Name: "dialogue"` line**, otherwise Native Audio renders gibberish.
@@ -293,37 +328,75 @@ Mirror ep07's structure. The description file gets chapter timestamps starting a
 
 Plus `Skills sneaking in this episode:` block listing 2–4 educational beats. Plus 8–12 hashtags.
 
-## Step 8 — Hand-off report
+## Step 8 — Hand-off report (NEW pipeline post-ep08)
 
-When everything is on disk and the sanity check passes, print a single chat block:
+When everything is on disk and the sanity check passes, print a single chat block. The pipeline is now orchestrated, not per-clip:
 
 ```
-✅ ep<NN> spec ready — N clips, ~credits cr, runtime ~M:SS
+✅ ep<NN> spec ready — N clips + M music videos, ~credits cr, runtime ~M:SS
 
-NEW bound elements to generate via Nano Banana (paste these to user):
-  • <tag>   ← assets/scenes/<file>.png        (refs: <photo or "invented">)
-  ...
+NEW bound elements (generate via Nano Banana — both scripts already
+extended with the catalog entries during spec drafting):
+  [scene] @<tag>            → assets/scenes/<file>.png    (refs: <photos or invented>)
+  [prop ] @<tag>            → assets/scenes/<file>.png
 
-Suno tracks needed:
-  • <name>.mp3  (~Ns, used over clips X-Y) — "<mood>"
+Suno songs needed (lyrics drafted at assets/music/lyrics/):
+  • <name>.mp3              (~Ns, block-id used over Render X) — "<mood>"
 
-NEXT COMMANDS (run in order):
-  1. python3 saraandeva/content/generateScenes.py --scene <new-scene-id>     # for each new scene
-  2. python3 saraandeva/content/generateProps.py --prop <new-prop-id>        # for each new prop
-  3. # Pick best variants in assets/scenes/, copy <id>_v1.png → <id>.png
-  4. # Per clip — uploads any new bound element this clip needs:
-     for n in $(seq 1 N); do
-       node /Volumes/Samsung500/goreadling/content/saraandeva/uploadEp08Elements.mjs \\
-         /Volumes/Samsung500/goreadling-production/saraandeva/content/episodes/ep<NN>/$n.json
-       node /Volumes/Samsung500/goreadling/.claude/skills/saraandeva-episode/scripts/submitOmniClip.mjs \\
-         /Volumes/Samsung500/goreadling-production/saraandeva/content/episodes/ep<NN>/$n.json
-     done
-  5. # After all renders complete:
-  6. node .claude/skills/saraandeva-episode/scripts/downloadAllClips.mjs ...
-  7. # ffmpeg-mix Suno tracks per memory rule #25
-  8. node .claude/skills/saraandeva-episode/scripts/assembleEpisode.mjs ep<NN>
-  9. node .claude/skills/saraandeva-episode/scripts/uploadEpisodeToSaraAndEva.mjs <mp4>
+NEXT COMMANDS — single-pipeline run (no per-step asking):
+
+  # 1. Generate the new scene/prop PNGs (Nano Banana, ~30-60s each)
+  for s in <new-scene-ids>; do python3 content/generateScenes.py --scene $s; done
+  for p in <new-prop-ids>;  do python3 content/generateProps.py  --prop  $p --variants 3; done
+  # auto-pick v1 for each prop:
+  for p in <new-prop-ids>; do cp assets/scenes/${p}_v1.png assets/scenes/${p}.png; done
+
+  # 2. Generate Suno songs from lyric .md files (parallel-safe)
+  node .claude/skills/saraandeva-episode/scripts/sunoSongs.mjs --all
+
+  # 3. Library upload + clip submission (the orchestrator)
+  #    addMissingElements scans Kling library, uploads only missing.
+  #    submitEpisode chains addMissingElements then submits each clip.
+  #    --include-music + --only= controls which music-video specs go to Kling
+  #    (typically only B/C-style episode-specific solos — A is reused dance footage)
+  node .claude/skills/saraandeva-episode/scripts/submitEpisode.mjs --episode=<NN> --include-music --only=<comma-separated clip nums + render letters that need Kling rendering>
+
+  # 4. Wait for renders. Then download (writes 1.mp4 … N.mp4 into clips/)
+  node .claude/skills/saraandeva-episode/scripts/downloadOmniByPrompt.mjs \\
+       content/episodes/ep<NN> season_01/episode_<NN>/clips
+
+  # 5. (Optional) frame audit — sample-based, can auto-pass at scale
+  node .claude/skills/saraandeva-episode/scripts/frameAudit.mjs \\
+       season_01/episode_<NN>/clips
+
+  # 6. Build music-video segments. Use existing dance footage in
+  #    assets/video/ where possible (zero Kling cost) — only render new on
+  #    Kling for episode-specific solos (B/C). For each music block:
+  node .../loopVideoWithSong.mjs <video> <song.mp3> music_clip/<blockId>.mp4 \\
+       --duration=<60|30> [--audio-start=<sec>]
+
+  # 7. Drop music videos into clips/ at decimal slots (assemble picks them up)
+  cp music_clip/<blockId>.mp4 season_01/episode_<NN>/clips/<N.5>.mp4
+
+  # 8. Assemble — accepts decimal-numbered files, sorts by parseFloat
+  node .claude/skills/saraandeva-episode/scripts/assembleEpisode.mjs \\
+       season_01/episode_<NN>/ep<NN>_v1.mp4 \\
+       --clips-dir season_01/episode_<NN>/clips \\
+       --intro-dir season_01/intro --outro-dir season_01/OUTRO
+
+  # 9. Thumbnail — extract frame from clip 5 or 6 (both characters in scene),
+  #    add yellow Impact text overlay via Pillow. See lesson_episode_thumbnail_recipe.md.
+
+  # 10. Short — vertical 1080×1920 with designed pastel-gradient bg + 1080×1280
+  #     dance-footage region + persistent title at top + handle at bottom.
+  #     See lesson_youtube_short_design.md.
+
+  # 11. Upload main + short, with thumbnail
+  node .../uploadEpisodeToSaraAndEva.mjs <mp4> --title "..." \\
+       --description-file <txt> --tags-file <txt> --thumbnail <jpg> --privacy unlisted
 ```
+
+**Single-command target** (future): `node releaseEpisode.mjs --episode=<NN>` chains everything from spec → uploaded UNLISTED. User reviews in Studio and flips PUBLIC. Not yet built — TODO when sprint cadence demands it.
 
 ## What this skill does NOT do
 

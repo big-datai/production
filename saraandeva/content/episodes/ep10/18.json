@@ -1,0 +1,27 @@
+{
+  "episode": 10,
+  "beat": 20,
+  "clip": 18,
+  "title": "Weber drive-in arrival",
+  "mode": "omni",
+  "durationSec": 10,
+  "quality": "720p",
+  "nativeAudio": true,
+  "expectedCredits": 90,
+  "subjects": [
+    "jeep-wrangler"
+  ],
+  "scene": "weber-drive-in",
+  "boundElements": [
+    {
+      "tag": "jeep-wrangler",
+      "source": "library"
+    },
+    {
+      "tag": "weber-drive-in",
+      "source": "library"
+    }
+  ],
+  "prompt": "Wide drone-style establishing shot from above and to the side. The black @jeep-wrangler already pulled forward into a parking slot at @weber-drive-in — an orange wood-paneled walk-up burger storefront with white pillars, a low awning, and a clearly readable 'DRIVE-IN' sign in vintage neon-style block letters above the order counter. The Jeep's license plate 'SARA AND EVA' is clearly visible on the rear bumper. Bright sunny afternoon, blue sky with a few cotton clouds, asphalt parking lot with painted parking-line stripes. NO HUMAN CHARACTERS in frame yet — just the Jeep parked at the drive-in. From inside the Jeep, faint off-camera kid voice: Eva (excited, off-camera, almost yelling): \"FOOD! REAL FOOD!\" Sara (off-camera): \"It SMELLS like burgers!\" The Jeep's engine cuts out.",
+  "negativePrompt": "duplicate character, twin, clone, two of the same, mirrored figure, second father, second mother, two Papa, two Mama, identical adults, people, person, child, children, kids, adult, family, sister, sara, eva, mama, papa, customer, employee, carhop yet, stranger, crowd, second jeep, two jeeps, identical vehicles, mirror reflection of jeep, ghost figure, shadow of person, other parked cars filled with people, oncoming traffic, drive-thru queue"
+}

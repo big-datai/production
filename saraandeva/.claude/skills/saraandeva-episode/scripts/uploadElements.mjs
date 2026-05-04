@@ -186,54 +186,82 @@ if (toCreate.length === 0) {
   process.exit(0);
 }
 
-// ─── Phase 2b: per-element create flow (codegen 2026-05-02) ────────────────
+// ─── Phase 2b: per-element create flow (real codegen 2026-05-03) ───────────
+// From a true Playwright codegen recording. Uses /user-assets/materials
+// (not /omni/new) and triggers the Create Element dialog via the
+// kwai-video-interactive widget. The CSS-module class has a hash suffix
+// (e.g. `_kwai-player-video-interactive_5ef20_11`) that may change between
+// Kling deploys — we use substring match for stability.
 let ok = 0, fail = 0;
 for (let i = 0; i < toCreate.length; i++) {
   const t = toCreate[i];
   console.log(`\n[${String(i + 1).padStart(2, "0")}/${toCreate.length}] @${t.tag}  ← ${path.basename(t.file)}`);
   try {
-    // 1. Primary upload (top-level Image/Video upload button)
-    await page.getByRole("button", { name: "Image/Video" }).setInputFiles(t.file);
-    await page.waitForTimeout(2000);
-    console.log("   ✓ primary uploaded");
+    // 1. Navigate to the Materials page
+    await page.goto("https://kling.ai/app/user-assets/materials?ac=1", { waitUntil: "domcontentloaded" });
+    await page.waitForTimeout(2500);
 
-    // 2. Open subject panel → History → Add Image
-    await page.locator(".subject-item").first().click();
-    await page.getByRole("button", { name: "History" }).click();
-    await page.getByLabel("History").getByText("Add Image").click();
+    // 2. Click Principal Assets (best-effort — only on first iteration usually)
+    try {
+      await page.getByText("Principal Assets").first().click({ timeout: 3000 });
+      await page.waitForTimeout(800);
+    } catch {}
 
-    // 3. Switch to Uploads tab and pick the most recent (just-uploaded) image
-    await page.getByText("Uploads").click();
-    await page.waitForTimeout(500);
-    await page.locator(".image-item-mask").first().click();
-    await page.getByRole("button", { name: "Confirm" }).click();
-    console.log("   ✓ picked from Uploads");
+    // 3. Click the kwai-video-interactive widget — opens the create-context menu.
+    //    Use substring match to survive CSS-module hash changes.
+    const trigger = page.locator('[class*="kwai-player-video-interactive"]').first();
+    await trigger.waitFor({ state: "visible", timeout: 15000 });
+    await trigger.click();
+    await page.waitForTimeout(700);
 
-    // 4. Name the element
-    const nameBox = page.getByRole("textbox", { name: "Enter Name" });
+    // 4. Click "Add Image" menuitem from the popup
+    await page.getByRole("menuitem", { name: /^Add Image$/ }).click({ timeout: 8000 });
+    await page.waitForTimeout(1200);
+
+    // 5. setInputFiles to the LAST <input type=file> that just appeared in
+    //    the Create Element dialog (this is the primary image upload)
+    let primaryInputs = await page.$$('input[type="file"]');
+    if (primaryInputs.length === 0) throw new Error("no <input type=file> after Add Image click");
+    await primaryInputs[primaryInputs.length - 1].setInputFiles(t.file);
+    console.log("   → primary file submitted, waiting 3s for upload...");
+    await page.waitForTimeout(3000);
+
+    // 6. Fill the element name (Enter Name textbox)
+    const nameBox = page.getByRole("textbox", { name: /^Enter Name$/ });
+    await nameBox.waitFor({ state: "visible", timeout: 10000 });
     await nameBox.click();
+    await nameBox.press("ControlOrMeta+a");
     await nameBox.fill(t.tag);
     console.log(`   ✓ named "${t.tag}"`);
 
-    // 5. Secondary reference upload (same file → consistent style)
+    // 7. Open + upload secondary reference (same .secondary-reference path)
     await page.locator(
       ".secondary-reference > .upload > div > .el-upload > .el-upload-dragger > .upload-content > svg"
     ).click();
+    await page.waitForTimeout(500);
     await page.locator(".secondary-reference > .upload > div > .el-upload").setInputFiles(t.file);
-    await page.waitForTimeout(2000);
-    console.log("   ✓ secondary reference uploaded");
+    await page.waitForTimeout(3000);
+    console.log("   ✓ secondary uploaded");
 
-    // 6. Auto × 2 (style sliders default to Auto)
-    const autoBtn = page.getByRole("button", { name: "Auto" });
-    await autoBtn.click();
-    await autoBtn.click();
+    // 8. Auto-description (best-effort)
+    await page.getByRole("button", { name: /^Auto$/i }).click().catch(() => {});
+    await page.waitForTimeout(300);
 
-    // 7. Generate (footer button)
-    await page.getByRole("contentinfo").getByRole("button", { name: "Generate" }).click();
+    // 9. Generate (no contentinfo wrapper in this codegen)
+    await page.getByRole("button", { name: /^Generate$/i }).click();
     console.log("   ✓ Generate clicked");
 
-    // 8. Wait for the element panel to settle before next element
-    await page.waitForTimeout(3500);
+    // 10. Let Kling finalize the create. Watch for the dialog to close
+    //     (Enter Name textbox detaches when dialog dismisses).
+    await page.waitForFunction(
+      () => {
+        const el = document.querySelector('input[placeholder="Enter Name"], [aria-label="Enter Name"]');
+        return !el || !el.offsetParent; // null OR not visible
+      },
+      null,
+      { timeout: 60000 }
+    ).catch(() => {});
+    console.log(`   ✅ ${t.tag} created`);
     ok++;
   } catch (err) {
     console.log(`   ❌ ${err.message}`);

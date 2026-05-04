@@ -154,5 +154,9 @@ if (stillMissing.length > 0) {
 
 console.log(`\n📤 Phase 2: upload to Kling library`);
 const uploadScript = path.join(PROJECT_ROOT, ".claude", "skills", "saraandeva-episode", "scripts", "uploadElements.mjs");
-const res = spawnSync("node", [uploadScript, epPath], { stdio: "inherit", cwd: PROJECT_ROOT });
+// Pass via --episode= so uploadElements parses the episode JSON's
+// newBoundElements field. (Positional path expects a manifest array, not
+// an episode JSON — passing epPath directly fails with `manifest.map is
+// not a function`.)
+const res = spawnSync("node", [uploadScript, `--episode=${episode}`], { stdio: "inherit", cwd: PROJECT_ROOT });
 process.exit(res.status ?? 1);

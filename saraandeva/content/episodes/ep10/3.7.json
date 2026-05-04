@@ -1,0 +1,20 @@
+{
+  "episode": 10,
+  "beat": "3.7",
+  "clip": "3.7",
+  "title": "Papa plays soccer with Eva at the YMCA",
+  "mode": "omni",
+  "durationSec": 15,
+  "quality": "720p",
+  "nativeAudio": true,
+  "expectedCredits": 135,
+  "subjects": ["Papa", "Eva"],
+  "scene": "ymca-gym",
+  "boundElements": [
+    { "tag": "Papa", "source": "library" },
+    { "tag": "Eva", "source": "library" },
+    { "tag": "ymca-gym", "source": "library" }
+  ],
+  "prompt": "Wide low-angle cinematic shot inside @ymca-gym — polished blonde-wood gym floor with painted court lines, bright fluorescent overhead light, basketball hoop visible on the back wall. @Papa already on the LEFT side of the gym floor, knees bent in a mock-goalie stance, big playful grin, arms spread wide. @Eva already on the RIGHT side opposite him, foot drawn back behind a white-and-black soccer ball, tongue poking out in concentration, curly blonde hair with rainbow bow. (BEAT 1 — 0-4s) Papa (cheerfully, waving hands): \"Come on champ — KICK IT TO ME!\" Eva winds up dramatically and kicks the ball — it rolls a few feet wobbling toward Papa. Papa dramatically dives sideways pretending to miss, lands gently on his side. Papa (groaning theatrically): \"OH NOOOOO! Goal!\" Eva (jumping up, fists in the air, victory squeal): \"YESSS! ONE NOTHING!\" (BEAT 2 — 4-9s) Papa rolls onto his back laughing, then pops up onto his feet. Papa (now coaching seriously, dribbling another ball back): \"Okay okay — your turn to be GOALIE!\" They swap positions. Eva runs to the LEFT side and spreads her tiny arms wide in a mini-goalie stance, super serious face. Papa winds up his own kick, gentle and slow. (BEAT 3 — 9-15s) Papa pretend-kicks DRAMATICALLY in slow motion, the ball rolls slowly toward Eva. Eva theatrically dives sideways, catches the ball with both hands wrapped around it. Eva (rolling onto her back holding the ball above her, triumphant): \"BLOCKED! TINY MESSI VS BIG MESSI!\" Papa (hands on hips, beaming): \"You're a CHAMPION, sweet pea!\"",
+  "negativePrompt": "duplicate character, twin, clone, two of the same, mirrored figure, second father, second mother, two Papa, two Mama, identical adults, extra people, third child, second sister, second sara, second eva, two eva, duplicate eva, mirror reflection, family members in the background, additional children, extra child in background, second blonde child, ghost figure, shadow of person, strangers, crowd, group of people, other faces, background people, friends, neighbors, mama in this clip, sara in this clip, other kids playing, other adults"
+}

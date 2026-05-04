@@ -1,0 +1,22 @@
+{
+  "episode": 10,
+  "beat": 6,
+  "clip": 5,
+  "title": "Driveway packing — Sara and Eva swap items",
+  "mode": "omni",
+  "durationSec": 10,
+  "quality": "720p",
+  "nativeAudio": true,
+  "expectedCredits": 90,
+  "subjects": ["Mama", "Sara", "Eva"],
+  "scene": "driveway",
+  "boundElements": [
+    { "tag": "Mama", "source": "library" },
+    { "tag": "Sara", "source": "library" },
+    { "tag": "Eva", "source": "library" },
+    { "tag": "driveway", "source": "library" },
+    { "tag": "jeep-wrangler", "source": "library" }
+  ],
+  "prompt": "Mid-wide shot on @driveway, sunny morning. The black @jeep-wrangler is already parked with the rear tailgate down, license plate reading 'SARA AND EVA' visible on the rear bumper. @Mama already at the open tailgate of the Jeep, lifting a small blue cooler into the cargo area. @Sara already standing at the rear driver-side door, clutching a white-and-black soccer ball with both hands, proud. @Eva already next to her, holding a pink tennis racket up like a trophy, a tiny smirk on her face. Mama (lifting the cooler in, glancing at the kids): \"Got snacks, sunscreen, and a road map. Anyone seen the GPS?\" Sara (raising the soccer ball): \"I got this for my sister!\" Eva (raising the tennis racket): \"And I'M bringing this... just in case soccer's NOT easy.\" Sara (smug): \"I KNEW you'd say that.\"",
+  "negativePrompt": "duplicate character, twin, clone, two of the same, mirrored figure, second father, second mother, two Papa, two Mama, identical adults, extra people, third child, second sister, second sara, second eva, two eva, duplicate eva, mirror reflection, family members in the background, additional children, extra child in background, second blonde child, ghost figure, shadow of person, strangers, crowd, group of people, other faces, background people, friends, neighbors"
+}

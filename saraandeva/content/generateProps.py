@@ -161,6 +161,58 @@ PROPS = {
             "trademarks from the photo."
         ),
     },
+
+    # ─── ep09 (Costco coffee quest) ──────────────────────────────────────
+    "eva_heart_mug": {
+        "label": "Hand-painted ceramic heart mug (Eva's YMCA craft)",
+        "refs": [],
+        "description": (
+            "A SINGLE small white ceramic COFFEE MUG, displayed at a "
+            "slight three-quarter angle so we see the front and the "
+            "handle. EXTERIOR: hand-painted by a five-year-old — small "
+            "bright pink HEARTS scattered across the front of the mug, "
+            "a few wobbly pink heart-doodles, child-painted with visible "
+            "brush-stroke imperfection (the hearts are charming and "
+            "slightly uneven, NOT machine-printed). One heart on the "
+            "front-center is bigger than the others. The handle is "
+            "white. Small daubs of pink paint visible on the rim, very "
+            "fresh, slightly tacky-looking. Inside the mug: empty, plain "
+            "white ceramic interior. PALETTE: bright bubblegum pink "
+            "hearts, pure white ceramic body. Centered in the frame on "
+            "a soft off-white / pale-cream neutral backdrop with a "
+            "gentle drop shadow underneath. Lighting: soft top-key with "
+            "a fill, even studio-product feel. Pixar 3D render, premium "
+            "ceramic materials with a subtle satin glaze. NO text on "
+            "the mug, NO logos, NO watermark."
+        ),
+    },
+
+    "empty_coffee_bag": {
+        "label": "Empty 'MAMA'S BREW' coffee bag (HOOK prop)",
+        "refs": [],
+        "description": (
+            "A SINGLE empty COFFEE BAG, ground-coffee size (about 12 oz), "
+            "deflated and open at the top, propped at a three-quarter "
+            "angle so we read the FRONT label clearly. PALETTE: rich "
+            "warm brown kraft-paper bag with a cream-colored printed "
+            "label on the front. LABEL DESIGN: a cheerful illustrated "
+            "steaming coffee MUG icon centered, and above it the words "
+            "'MAMA'S BREW' in large bold printed Roman letters; below "
+            "the mug icon, smaller printed Roman letters: 'WHOLE BEAN "
+            "COFFEE'; at the bottom of the label a tiny printed "
+            "'EMPTY :(' sticker added in a thinner font. English text "
+            "only, every word fully legible and correctly spelled, no "
+            "foreign characters, no garbled letters. The bag is clearly "
+            "EMPTY — top is rolled open, sides slightly collapsed, a "
+            "lone coffee bean visible at the bottom of the open mouth. "
+            "Centered in the frame on a soft off-white / pale-cream "
+            "neutral backdrop with a gentle drop shadow underneath. "
+            "Lighting: soft top-key with a fill, even studio-product "
+            "feel. Pixar 3D render, premium kraft-paper material with "
+            "subtle texture, a faint shimmer on the foil-lined opening. "
+            "NO real-world brand marks, NO watermark."
+        ),
+    },
 }
 
 
@@ -181,8 +233,10 @@ CRITICAL: This is a PROP, not a scene — frame is roughly SQUARE (1:1), the pro
 The output MUST be unmistakably Pixar 3D CG — physically-based premium materials, soft storybook-warm color, cartoon-chunky stylized proportions. NOT photorealistic, NOT 2D anime, NOT flat cel-shading.""".strip()
 
 
-def generate_variant(prop_id: str, variant: int, keys: list, force: bool) -> Path:
-    out = OUTPUT_DIR / f"{prop_id}_v{variant}.png"
+def generate_variant(prop_id: str, variant: int, total_variants: int, keys: list, force: bool) -> Path:
+    # When the user only asked for 1 variant, write directly to <id>.png.
+    # No intermediate _v1 file means no manual variant-pick step downstream.
+    out = OUTPUT_DIR / (f"{prop_id}.png" if total_variants == 1 else f"{prop_id}_v{variant}.png")
     if out.exists() and not force:
         print(f"⏭️  cached: {out.name}")
         return out
@@ -194,7 +248,7 @@ def generate_variant(prop_id: str, variant: int, keys: list, force: bool) -> Pat
     refs = refs[:gs.MAX_REFS]
     style_refs = [sr for sr in gs.STYLE_ANCHOR_REFS if sr.exists()]
     prompt = build_prop_prompt(prop_id)
-    print(f"🎨 {prop_id}_v{variant} ({PROPS[prop_id]['label']})  layout={len(refs)} style={len(style_refs)}")
+    print(f"🎨 {out.stem} ({PROPS[prop_id]['label']})  layout={len(refs)} style={len(style_refs)}")
     t0 = time.time()
     data = gs.call_gemini(prompt, refs, style_refs, keys)
     out.write_bytes(data)
@@ -228,7 +282,7 @@ def main() -> None:
             print(f"⚠️  unknown prop: {pid}")
             continue
         for v in range(1, args.variants + 1):
-            generate_variant(pid, v, keys, args.force)
+            generate_variant(pid, v, args.variants, keys, args.force)
 
 
 if __name__ == "__main__":

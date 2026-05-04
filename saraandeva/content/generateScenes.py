@@ -571,6 +571,414 @@ SCENES = {
             "and other locked scenes."
         ),
     },
+
+    # ─── ep09 (Costco coffee quest) ──────────────────────────────────────
+    "ymca_gym": {
+        "label": "YMCA gym — treadmill row",
+        "refs": [],
+        "description": (
+            "A bright friendly community-YMCA cardio gym, mid-morning. "
+            "Long row of treadmills along the LEFT wall, weight machines "
+            "and free-weight rack along the RIGHT wall. Polished blonde-"
+            "wood floor. White walls with a YMCA-style triangle logo on "
+            "the back wall in soft red and blue (NO real-world brand "
+            "marks). A wall-mounted analog CLOCK above the treadmill row "
+            "is clearly readable. Tall windows along the back let in "
+            "soft morning light. Empty of people. Wide establishing "
+            "shot from the gym entrance looking down the treadmill row. "
+            "Cinematic Pixar rendering, clean, well-lit, friendly-"
+            "community-center feel — NOT a hardcore fitness gym. NO "
+            "PEOPLE in frame. NO foreign characters, NO garbled text."
+        ),
+    },
+
+    "ymca_craft_room": {
+        "label": "YMCA kids' craft room — sunny tables",
+        "refs": [],
+        "description": (
+            "A sunlit YMCA children's CRAFT ROOM, mid-morning. Two long "
+            "low art tables in the CENTER with paint-splattered surfaces "
+            "and small plastic kid-chairs, scattered tubes of acrylic "
+            "paint, brushes in mason jars, and an open box of plain "
+            "white ceramic mugs ready for painting. WALLS: cheerful "
+            "kids' artwork pinned up — handprint paintings, rainbow "
+            "drawings, and a big colorful banner that reads 'KIDS CRAFT' "
+            "in bright printed Roman letters (English text only, no "
+            "garbled characters). LEFT side: a low shelf with cubbies "
+            "of art supplies. RIGHT side: a sink with a paper-towel "
+            "dispenser. CEILING: warm pendant lights. Tall window in "
+            "the back letting in soft golden morning light. Empty of "
+            "people. Wide establishing shot from the doorway. Cinematic "
+            "Pixar rendering, warm, joyful, kid-friendly, slight clutter "
+            "of creative chaos. NO PEOPLE in frame."
+        ),
+    },
+
+    "costco_entrance": {
+        "label": "Costco entrance — warehouse cathedral interior",
+        "refs": [
+            "/Volumes/Samsung500/goreadling-production/saraandeva/assets/photos/costco/costco.jpeg",
+            "/Volumes/Samsung500/goreadling-production/saraandeva/assets/photos/costco/family selfy.jpeg",
+        ],
+        "description": (
+            "The interior entrance area of a big-box warehouse store "
+            "(Costco-style, but NO real brand marks or logos). Match "
+            "the layout from the reference photos: enormous warehouse "
+            "ceiling with exposed steel trusses high overhead, polished "
+            "concrete floor, bright fluorescent overhead lighting, "
+            "TOWERING shelves stretching back into the deep distance "
+            "with palettes of bulk goods. FOREGROUND: a wide aisle just "
+            "past the entry checkpoint, a long row of stacked oversized "
+            "shopping carts on the LEFT, a tall warehouse pillar on the "
+            "RIGHT with a generic 'WELCOME' banner in bright printed "
+            "Roman letters (English text only, no garbled characters). "
+            "Soft warm overhead light pools on the floor. The end of "
+            "the aisle visible far back. Wide establishing shot from "
+            "just inside the entrance looking toward the back of the "
+            "store. Cinematic Pixar render, warmly lit, lived-in "
+            "warehouse-cathedral feel. NO PEOPLE in frame."
+        ),
+    },
+
+    "costco_aisle": {
+        "label": "Costco wide warehouse aisle — sample/coffee zone",
+        "refs": [
+            "/Volumes/Samsung500/goreadling-production/saraandeva/assets/photos/costco/sara loves more cheese.jpeg",
+            "/Volumes/Samsung500/goreadling-production/saraandeva/assets/photos/costco/eva sample mac and chease.jpeg",
+        ],
+        "description": (
+            "A wide warehouse-store aisle (Costco-style, NO real brand "
+            "marks) at adult/kid eye-level perspective. Match the look "
+            "from the reference photos. TOWERING industrial shelves on "
+            "BOTH sides of the aisle stretch up at least three pallets "
+            "high, stacked with palettes of bulk goods (cereal boxes, "
+            "paper-towel rolls, jugs, snack bags) — readable as bulk "
+            "but generic packaging (NO real brand marks, NO foreign "
+            "characters). FOREGROUND CENTER: a small SAMPLE STATION "
+            "TABLE — a folding table with a clean white tablecloth, a "
+            "small toaster oven and a tray of tiny paper sample cups. "
+            "BACKGROUND: aisle stretches to the back wall. Polished "
+            "concrete floor. Bright fluorescent lighting overhead with "
+            "slight industrial warmth. Wide establishing shot from "
+            "kid-eye level looking down the aisle. Cinematic Pixar "
+            "render, clean, lived-in warehouse feel. NO PEOPLE in "
+            "frame."
+        ),
+    },
+
+    "costco_food_court": {
+        "label": "Costco food court — tables + cafe counter",
+        "refs": [
+            "/Volumes/Samsung500/goreadling-production/saraandeva/assets/photos/costco/pizza.jpeg",
+            "/Volumes/Samsung500/goreadling-production/saraandeva/assets/photos/costco/sara loves pizza.jpeg",
+        ],
+        "description": (
+            "A warehouse-store food court (Costco-style, NO real brand "
+            "marks). Match the layout from the reference photos. RIGHT "
+            "side: a long stainless-steel cafe counter with a generic "
+            "menu board above (printed Roman block letters listing PIZZA "
+            "/ HOT DOG / ICE CREAM / DRINK in bright primary colors — "
+            "English text only, every word fully legible, no garbled "
+            "characters). Behind the counter, a soft glow of warm "
+            "kitchen light. CENTER and LEFT: an open seating area with "
+            "rows of round-top high tables and matching tall stools, "
+            "polished concrete floor, a few napkin dispensers and "
+            "ketchup-pumps on the tables. CEILING: high warehouse trusses "
+            "with bright but warm overhead lighting. Tall windows on "
+            "the LEFT wall let in late-morning light. Wide establishing "
+            "shot from the seating area looking at the cafe counter. "
+            "Cinematic Pixar render, clean, friendly, warm. NO PEOPLE "
+            "in frame."
+        ),
+    },
+
+    # ─── ep10 (Soccer & Magic Sandy Forest) ─────────────────────────────
+    "jeep_wrangler": {
+        "label": "Black Jeep Wrangler exterior on sandy forest road (license plate: SARA AND EVA)",
+        "refs": [
+            "/Volumes/Samsung500/goreadling-production/saraandeva/assets/photos/soccer_majic_forest_burger/sara and eva on the roof.JPG",
+            "/Volumes/Samsung500/goreadling-production/saraandeva/assets/photos/soccer_majic_forest_burger/mama and girls.JPG",
+            "/Volumes/Samsung500/goreadling-production/saraandeva/assets/photos/soccer_majic_forest_burger/97810E28-BB1F-4BAC-A201-67F373892A63.JPG",
+        ],
+        "description": (
+            "A modern BLACK Jeep Wrangler four-door (open-top hardtop "
+            "removed style — exposed roll cage visible on top), parked on "
+            "a sandy pine-forest road. KEY DETAILS: matte-black body, "
+            "round black headlights, chunky off-road tires with deep "
+            "tread, a SPARE TIRE mounted on the rear tailgate with two "
+            "small yellow rectangular bumper-stickers on it. The REAR "
+            "LICENSE PLATE prominently shows the printed Roman text "
+            "'SARA AND EVA' in clean black letters on a white plate "
+            "(English text only, fully legible, no garbled characters, "
+            "no other plate text). Side-step running boards. The Jeep "
+            "sits on a packed-sand forest track. SETTING: tall slender "
+            "pine trunks all around, dappled sunlight through the "
+            "canopy, mossy banks, a softly out-of-focus sandy pine "
+            "forest receding behind the vehicle. NO PEOPLE in frame "
+            "yet — the canonical 'family adventure jeep' element shown "
+            "from the rear-three-quarter angle so the plate, spare "
+            "tire, and forest setting all read clearly. Slight "
+            "stylization drift from the photo references. Pixar "
+            "feature-render quality."
+        ),
+    },
+
+    "jeep_interior": {
+        "label": "Black Jeep Wrangler interior — driver-and-back-row cabin",
+        "refs": [],
+        "description": (
+            "Interior cabin of a modern BLACK Jeep Wrangler four-door — "
+            "matte-black plastic dashboard with chunky round air vents, "
+            "a small touchscreen infotainment unit, a sturdy steering "
+            "wheel with the small Jeep grille emblem on the horn (no "
+            "real brand wordmark), beige-grey vinyl seats with stitched "
+            "panels. FRONT ROW: visible empty driver seat (LEFT) and "
+            "passenger seat (RIGHT). REAR ROW: two child booster seats "
+            "in colorful kid-friendly fabric — a pink booster on the "
+            "RIGHT and a purple booster on the LEFT, both with their "
+            "harness straps unbuckled and dangling. WINDOWS: clear "
+            "side windows with chunky black door frames. THROUGH the "
+            "windshield ahead: a soft pine-forest sandy road with "
+            "dappled light. CEILING: exposed roll-cage bars overhead. "
+            "Lived-in family-vehicle feel: a small toy on the floor "
+            "between the boosters, a half-empty plastic water bottle "
+            "in a cup-holder, a paper map folded on the center console. "
+            "Soft warm afternoon light through the windows. NO PEOPLE "
+            "in frame — the canonical empty cabin reference. Pixar "
+            "feature-render quality."
+        ),
+    },
+
+    "wawa_interior": {
+        "label": "Wawa-style convenience store interior — coffee bar + snack wall",
+        "refs": [
+            "/Volumes/Samsung500/goreadling-production/saraandeva/assets/photos/soccer_majic_forest_burger/sara and eva getting wawa snacks.JPG",
+            "/Volumes/Samsung500/goreadling-production/saraandeva/assets/photos/soccer_majic_forest_burger/wawa stop.JPG",
+        ],
+        "description": (
+            "The interior of a bright, clean American gas-station "
+            "convenience store (Wawa-style, but NO real brand marks "
+            "or logos). Match the layout from the reference photos. "
+            "LEFT side of the frame: a long stainless-steel COFFEE BAR "
+            "with a row of tall stainless coffee decanters (one labeled "
+            "'REGULAR', one 'DECAF', one 'BOLD' in bright printed Roman "
+            "block letters — English text only, fully legible, no "
+            "garbled characters), a small milk-and-cream dispenser, "
+            "stacks of paper cups in three sizes, sweetener packets in "
+            "a basket. RIGHT side of the frame: a tall WALL OF "
+            "REFRIGERATED CASES filled with colorful drink bottles, "
+            "fruit cups, yogurt parfaits, and a tall purple BLUEBERRY "
+            "SHAKE bottle prominently visible at kid-eye-level. BELOW "
+            "the cooler: low aisle shelves stocked with snack bags and "
+            "candy. FLOOR: warm beige speckled-tile flooring. CEILING: "
+            "warm overhead fluorescent panels. A few small generic 'COLD "
+            "DRINKS' and 'COFFEE' signs in printed Roman letters. Wide "
+            "establishing shot from the front-counter area looking at "
+            "both walls. Cinematic Pixar render, friendly, well-lit, "
+            "lived-in convenience-store warmth. NO PEOPLE in frame."
+        ),
+    },
+
+    "wawa_snacks": {
+        "label": "Wawa snacks — mango cup + blueberry shake props on counter",
+        "refs": [],
+        "description": (
+            "A close-up still-life prop reference: a small white "
+            "convenience-store counter with two snack items side-by-"
+            "side. ON THE LEFT: a tall clear plastic CUP filled with "
+            "diced golden MANGO chunks, juice glistening at the bottom, "
+            "a small wooden compostable fork sticking out the top, the "
+            "cup labeled with a tiny printed Roman-letter sticker "
+            "reading 'MANGO' (English only, no garbled text). ON THE "
+            "RIGHT: a tall purple plastic CUP filled with a thick "
+            "violet-purple BLUEBERRY MILKSHAKE, a tower of whipped "
+            "cream piled on top with a tiny dot of fresh blueberry on "
+            "the cream, a wide BLUE STRAW poked through the lid, the "
+            "cup labeled with a tiny printed Roman-letter sticker "
+            "reading 'BLUEBERRY SHAKE' (English only, no garbled text). "
+            "Both items are kid-sized, cartoon-chunky proportions, "
+            "softened edges. BACKGROUND: softly out-of-focus "
+            "convenience-store counter and a hint of refrigerated "
+            "cooler behind. NO PEOPLE in frame — these are just the "
+            "two prop items so they can be composited into a kid's "
+            "hands later. Pixar feature-render quality, warm "
+            "appetizing food-styling lighting."
+        ),
+    },
+
+    "magic_forest_sandy": {
+        "label": "Magic sandy pine forest — adventure road through tall trees",
+        "refs": [
+            "/Volumes/Samsung500/goreadling-production/saraandeva/assets/photos/soccer_majic_forest_burger/driving through majic forest.jpeg",
+            "/Volumes/Samsung500/goreadling-production/saraandeva/assets/photos/soccer_majic_forest_burger/mama and girls.JPG",
+        ],
+        "description": (
+            "A magical sandy PINE FOREST in mid-afternoon — the kind of "
+            "Mid-Atlantic Pine-Barrens landscape where the ground is "
+            "actual SANDY-BEACH-LIKE pale tan sand mixed with pine "
+            "needles. KEY FEATURES: tall slender pine trunks rising "
+            "straight up like columns on both sides of a winding "
+            "single-track sandy road, the trees spaced just enough to "
+            "let SHAFTS of warm DAPPLED golden sunlight pour down "
+            "through the high canopy creating bright pools on the "
+            "sand. The road itself is CHURNED-UP soft sand with tire "
+            "ruts winding into the deep middle distance. UNDERSTORY: "
+            "low scrubby ferns, mossy fallen logs, a few patches of "
+            "wildflowers in soft purple and white, occasional larger "
+            "fallen branches. A SUBTLE MAGICAL ATMOSPHERE: soft "
+            "floating pollen motes catching the sunbeams, a hint of "
+            "a faint blue-pink mist in the deepest distance, a couple "
+            "of glowing fireflies blinking softly even in daylight. "
+            "Cheerful adventure mood — absolutely NOT scary or dark. "
+            "EMPTY of people and vehicles — the canonical 'we're "
+            "in the magic forest' establishing background. Pixar "
+            "feature-render quality, warm storybook lighting."
+        ),
+    },
+
+    "pink_creature_tree": {
+        "label": "Pine tree with a tall pink-painted hollow opening (magic-creature home)",
+        "refs": [
+            "/Volumes/Samsung500/goreadling-production/saraandeva/assets/photos/soccer_majic_forest_burger/a pink home of majic creature.jpeg",
+        ],
+        "description": (
+            "A TALL HERO PINE TREE in a sandy forest clearing — match "
+            "the EXACT key feature from the reference photo: a TALL "
+            "narrow HOLLOW OPENING in the trunk, roughly waist-to-"
+            "shoulder height on the trunk, the INSIDE of the hollow "
+            "is painted a CLEAR SOFT PINK / coral pink color (NOT "
+            "natural wood color, NOT brown — unmistakably PINK on "
+            "first glance), as if a magical creature has painted the "
+            "inside of its little tree-cave home. The hollow shape is "
+            "tall and slightly oval, like a tiny doorway. From "
+            "INSIDE the hollow, a soft SUBTLE PINK GLOW emanates "
+            "outward as if a tiny magic light burns deep inside. "
+            "The rest of the tree trunk: rough natural pine bark, "
+            "slightly weathered. SURROUNDINGS: a small clearing of "
+            "the same sandy pine-forest setting, a few smaller pines "
+            "around it, soft moss at the base, dappled sunlight "
+            "through the canopy. A few GLOWING FIREFLIES drift near "
+            "the pink hollow as if going in and out. EMPTY of people "
+            "or visible creatures — just the magical tree as a "
+            "canonical bound element. Pixar feature-render quality, "
+            "magical storybook atmosphere, soft warm pink light. The "
+            "PINK HOLLOW must be the unmistakable focal point — "
+            "centered in the frame at hero scale."
+        ),
+    },
+
+    "magic_deer": {
+        "label": "Ancient magic deer — stag with glowing antlers",
+        "refs": [],
+        "description": (
+            "An ANCIENT MAGIC DEER — a single majestic STAG standing "
+            "stock-still in a sandy pine forest. KEY DETAILS: large "
+            "noble silhouette, OVERSIZED branching antlers (10+ "
+            "points, sweeping high above the head, slightly larger-"
+            "than-realistic in cartoon-stylized proportion), a soft "
+            "FAINT BLUE-WHITE GLOW emanates from the very tips of the "
+            "antlers — subtle, mystical, NOT cartoon-bright. Coat: "
+            "warm tan-brown with a creamy underside, a few faint "
+            "white spots on the flanks suggesting agelessness. Calm, "
+            "intelligent dark eyes meeting the camera directly with a "
+            "wise unhurried gaze. Ears flicked up, head turned three-"
+            "quarters toward camera. Standing on the sandy forest "
+            "floor with one hoof slightly raised mid-step. SUBTLE "
+            "MAGICAL TOUCHES: a few floating pollen motes around the "
+            "antlers, a hint of soft mist drifting at hoof level. "
+            "BACKGROUND: tall pine trunks softly out of focus, dappled "
+            "sunlight. Cinematic mood: magical, calm, a friendly "
+            "guide-spirit — NOT scary. EMPTY of people. The canonical "
+            "magic-deer bound element. Pixar feature-render quality, "
+            "soft golden hour light."
+        ),
+    },
+
+    "forest_pond": {
+        "label": "Magic forest pond — fish swimming downstream",
+        "refs": [],
+        "description": (
+            "A small calm WOODLAND POND nestled in a sandy pine "
+            "forest. KEY FEATURES: a roughly oval pond about 20 feet "
+            "across, MOSSY GREEN BANKS with soft ferns and small "
+            "wildflowers along the edges, a few smooth flat stepping "
+            "stones at the shoreline. The water is CLEAR and gently "
+            "REFLECTIVE, picking up the dappled green-and-gold canopy "
+            "above. KEY DETAIL: a SCHOOL OF SMALL SILVER FISH visible "
+            "in the water, swimming in a clean LINEAR FORMATION from "
+            "the foreground toward the far bank — like a living arrow "
+            "pointing the way DOWNSTREAM. The water gently ripples "
+            "where the fish move. Tall pine trunks frame both sides "
+            "of the pond, sandy banks visible at the near edge. "
+            "Floating pollen motes in the air, a hint of subtle "
+            "magical mist at the water's surface in the deep "
+            "distance. SOFT WARM lighting — late afternoon golden "
+            "hour, light pouring through the trees. EMPTY of people "
+            "and other animals. The canonical 'magic pond that shows "
+            "the way out' bound element. Pixar feature-render "
+            "quality, calm magical mood."
+        ),
+    },
+
+    "weber_drive_in": {
+        "label": "Weber Drive-In — orange-paneled walk-up burger storefront",
+        "refs": [
+            "/Volumes/Samsung500/goreadling-production/saraandeva/assets/photos/soccer_majic_forest_burger/webers drive in.JPG",
+            "/Volumes/Samsung500/goreadling-production/saraandeva/assets/photos/soccer_majic_forest_burger/after forest stopped to eat in a special old burger place.JPG",
+        ],
+        "description": (
+            "A vintage drive-in burger restaurant exterior — match "
+            "the layout from the reference photos. KEY FEATURES: a "
+            "single-story rectangular storefront with BURNT-ORANGE "
+            "WOOD-PANELED siding (vertical wood planks stained warm "
+            "orange-red), three slim WHITE COLUMNS supporting a low "
+            "shingle awning that runs across the front of the "
+            "building. Below the awning: a covered walk-up ORDER "
+            "COUNTER with a small order window and a wooden serving "
+            "shelf. ABOVE THE COUNTER: a vintage neon-style sign in "
+            "stylized retro Roman letters reading clearly 'DRIVE-IN' "
+            "(English only, fully legible block letters in a "
+            "1960s-style font, no garbled characters). FOREGROUND: a "
+            "smooth asphalt parking lot with painted PARKING-SLOT "
+            "STRIPES (white painted lines defining individual car "
+            "slots), bright sunny daylight, a couple of empty parking "
+            "slots visible in the foreground. SKY: clear blue with a "
+            "few white cotton clouds. NO PEOPLE in frame. NO real-"
+            "world brand marks. Wide establishing shot from across the "
+            "lot looking at the storefront. Cinematic Pixar render — "
+            "warm nostalgic vintage burger-joint mood, slight retro "
+            "Americana atmosphere."
+        ),
+    },
+
+    "weber_tray": {
+        "label": "Drive-in food tray clipped to a car window — milkshakes + burgers",
+        "refs": [],
+        "description": (
+            "A close-up prop reference: a vintage drive-in metal FOOD "
+            "TRAY with a clamp/hook on one side that allows it to "
+            "attach to a partially rolled-down car door window. The "
+            "tray is rectangular with a slight raised lip around the "
+            "edge, finished in painted cream-white enamel with a "
+            "single small printed 'DRIVE-IN' logo decal in the corner "
+            "(printed Roman letters, English only, fully legible). "
+            "ON THE TRAY: TWO TALL MILKSHAKES — one PINK STRAWBERRY "
+            "shake with a tower of whipped cream and a maraschino "
+            "cherry on top, one CHOCOLATE BROWN shake with whipped "
+            "cream and a swirl of chocolate sauce, both in vintage "
+            "fluted glass shake-cups with wide STRIPED red-and-white "
+            "paper straws. BESIDE THE SHAKES: TWO PAPER-WRAPPED "
+            "BURGERS in slightly crumpled wax paper printed with a "
+            "tiny 'DRIVE-IN' wordmark, plus a paper sleeve of GOLDEN "
+            "FRENCH FRIES standing upright. The tray is shown clipped "
+            "onto the open window frame of a black Jeep door — the "
+            "Jeep's chunky black door frame visible at the edge of "
+            "the prop reference. Bright sunny lighting from the "
+            "side. NO PEOPLE in frame. The canonical drive-in food-"
+            "tray prop. Pixar feature-render quality, mouth-watering "
+            "vintage Americana food styling."
+        ),
+    },
 }
 
 

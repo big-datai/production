@@ -1,0 +1,27 @@
+{
+  "episode": 10,
+  "beat": 17,
+  "clip": 15,
+  "title": "Spotting the ancient magic deer",
+  "mode": "omni",
+  "durationSec": 10,
+  "quality": "720p",
+  "nativeAudio": true,
+  "expectedCredits": 90,
+  "subjects": [
+    "magic-deer"
+  ],
+  "scene": "magic-forest-sandy",
+  "boundElements": [
+    {
+      "tag": "magic-deer",
+      "source": "library"
+    },
+    {
+      "tag": "magic-forest-sandy",
+      "source": "library"
+    }
+  ],
+  "prompt": "Wide reverse-POV shot — the camera is positioned looking from the Jeep's roof outward into @magic-forest-sandy. Tall pine trunks frame the shot. In the middle of the composition, between two large pine trunks at mid-distance, the @magic-deer stands stock-still — an ancient stag with oversized branching antlers, faintly glowing soft blue at the antler tips. The deer's head is turned directly toward camera, calm dark eyes meeting the lens. A few floating pollen motes drift in the dappled forest light. The deer is utterly still — only the ears flick once. NO HUMAN CHARACTERS in frame. From off-camera (a faint awed whisper, voice unattributed): \"...woah.\"",
+  "negativePrompt": "duplicate character, twin, clone, two of the same, mirrored figure, second father, second mother, two Papa, two Mama, identical adults, people, person, child, children, kids, adult, family, sister, sara, eva, mama, papa, hiker, hunter, ranger, stranger, crowd, second deer, two deer, multiple deer, extra animal, mirror reflection, ghost figure, shadow of person, doppelganger, twin"
+}

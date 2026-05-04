@@ -1,0 +1,21 @@
+{
+  "episode": 10,
+  "beat": 11,
+  "clip": 10,
+  "title": "The pink creature tree — Sara points",
+  "mode": "omni",
+  "durationSec": 10,
+  "quality": "720p",
+  "nativeAudio": true,
+  "expectedCredits": 90,
+  "subjects": ["Sara", "Eva"],
+  "scene": "pink-creature-tree",
+  "boundElements": [
+    { "tag": "Sara", "source": "library" },
+    { "tag": "Eva", "source": "library" },
+    { "tag": "pink-creature-tree", "source": "library" },
+    { "tag": "magic-forest-sandy", "source": "library" }
+  ],
+  "prompt": "Mid-shot from the LEFT side of a black Jeep already stopped in @magic-forest-sandy. @Sara already leaning out the rear right passenger window, eyes wide, arm extended pointing past the camera. @Eva already squashed in next to her at the same window, mouth a perfect 'O', both hands cupped around her mouth in awed silence. THROUGH the window perspective: a tall pine tree in the middle distance with a tall PINK-painted hollow opening in its trunk — the @pink-creature-tree, glowing soft pink from inside, a tiny doorway-shape hollow at its base. Sara (urgent whisper, pointing): \"MAMA, LOOK! A magic creature lives in there!\" Eva (cupping her mouth, hushed whisper): \"Maybe they're... HIDING from us!\" Sara (whispering back): \"Don't scare them...\"",
+  "negativePrompt": "duplicate character, twin, clone, two of the same, mirrored figure, second father, second mother, two Papa, two Mama, identical adults, extra people, third child, second sister, second sara, second eva, two eva, duplicate eva, mirror reflection, family members in the background, additional children, extra child in background, second blonde child, ghost figure, shadow of person, strangers, crowd, group of people, other faces, background people, friends, neighbors, hikers, other people in the woods"
+}

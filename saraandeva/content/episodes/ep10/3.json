@@ -1,0 +1,20 @@
+{
+  "episode": 10,
+  "beat": 3,
+  "clip": 3,
+  "title": "Signup desk — Mama signs Eva up for soccer",
+  "mode": "omni",
+  "durationSec": 10,
+  "quality": "720p",
+  "nativeAudio": true,
+  "expectedCredits": 90,
+  "subjects": ["Mama", "Eva"],
+  "scene": "ymca-gym",
+  "boundElements": [
+    { "tag": "Mama", "source": "library" },
+    { "tag": "Eva", "source": "library" },
+    { "tag": "ymca-gym", "source": "library" }
+  ],
+  "prompt": "Mid-shot near the entrance of @ymca-gym, a small wooden front desk with a clipboard and pen on top. @Mama already standing at the desk holding a clipboard, pen poised over the signup sheet. @Eva already next to the desk on tiptoe, beaming up at her, hands clasped together with excited anticipation. Mama (looking up from the clipboard, gentle smile): \"Tuesdays and Thursdays. Two whole hours. Are you SURE about this, sweet pea?\" Eva (vibrating with joy, jumping in place once): \"BEST. DAY. EVER!\" Mama (shaking her head fondly, signing the sheet with a flourish): \"Okay. You're officially a soccer player.\"",
+  "negativePrompt": "duplicate character, twin, clone, two of the same, mirrored figure, second father, second mother, two Papa, two Mama, identical adults, extra people, third child, second sister, second sara, second eva, two eva, duplicate eva, mirror reflection, family members in the background, additional children, extra child in background, second blonde child, ghost figure, shadow of person, strangers, crowd, group of people, other faces, background people, friends, neighbors"
+}

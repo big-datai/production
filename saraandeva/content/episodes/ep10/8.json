@@ -1,0 +1,21 @@
+{
+  "episode": 10,
+  "beat": 9,
+  "clip": 8,
+  "title": "Mango cup + 'YAMMY BLUBERY SHAKE!'",
+  "mode": "omni",
+  "durationSec": 10,
+  "quality": "720p",
+  "nativeAudio": true,
+  "expectedCredits": 90,
+  "subjects": ["Sara", "Eva"],
+  "scene": "wawa-interior",
+  "boundElements": [
+    { "tag": "Sara", "source": "library" },
+    { "tag": "Eva", "source": "library" },
+    { "tag": "wawa-interior", "source": "library" },
+    { "tag": "wawa-snacks", "source": "library" }
+  ],
+  "prompt": "Tight close-up at the front counter of @wawa-interior, blurred convenience-store aisle behind. @Sara already on the LEFT holding a clear plastic mango cup with diced golden mango pieces, a small wooden fork sticking out the top. @Eva already on the RIGHT holding a tall purple plastic blueberry shake cup with whipped cream piled on top and a wide blue straw, both hands wrapped around it like a trophy. The @wawa-snacks props are clearly visible in their hands. Eva (chest puffed huge, lifting the shake cup high above her head): \"YAMMY BLUBERY SHAKE!\" Sara (gentle correction, half-laughing): \"It's YUM-my BLUE-berry, silly.\" Eva (lowering the cup to take a HUGE slurp through the straw, cheeks puffing): \"Blubery.\" Sara (rolls eyes affectionately, then pokes her mango cup with the fork).",
+  "negativePrompt": "duplicate character, twin, clone, two of the same, mirrored figure, second father, second mother, two Papa, two Mama, identical adults, extra people, third child, second sister, second sara, second eva, two eva, duplicate eva, mirror reflection, family members in the background, additional children, extra child in background, second blonde child, ghost figure, shadow of person, strangers, crowd, group of people, other faces, background people, friends, neighbors"
+}

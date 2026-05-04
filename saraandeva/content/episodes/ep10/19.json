@@ -1,0 +1,21 @@
+{
+  "episode": 10,
+  "beat": 22,
+  "clip": 19,
+  "title": "Roller-skate carhop delivers the tray",
+  "mode": "omni",
+  "durationSec": 10,
+  "quality": "720p",
+  "nativeAudio": true,
+  "expectedCredits": 90,
+  "subjects": ["Sara", "Eva"],
+  "scene": "weber-drive-in",
+  "boundElements": [
+    { "tag": "Sara", "source": "library" },
+    { "tag": "Eva", "source": "library" },
+    { "tag": "weber-drive-in", "source": "library" },
+    { "tag": "weber-tray", "source": "library" }
+  ],
+  "prompt": "Mid-shot from outside the Jeep's rear-passenger window. @Sara already inside the Jeep at the right-rear window, hands pressed flat against the glass, wide huge smile. @Eva already inside next to her sister at the same window, mouth a perfect 'O' of excitement. A young teen carhop (a single anonymous teenager wearing a paper hat, a striped vintage shirt, and white roller skates — NOT a member of the family, generic skater carhop) glides up on roller skates from the right side, balancing the @weber-tray with both hands and clipping it onto the open Jeep window frame in front of the kids. The tray holds two tall milkshakes (one strawberry pink, one chocolate brown), two paper-wrapped burgers, and a paper sleeve of golden fries. The orange-paneled @weber-drive-in storefront is in the background. Sara (huge eyes, leaning out): \"BURGERS in the CAR?!\" Eva (clutching her own face with both hands): \"BEST. DAY. EVER!\" Carhop (cheery, brief): \"Two cheese, two shakes — enjoy!\" The carhop skates off-frame.",
+  "negativePrompt": "duplicate character, twin, clone, two carhops, second carhop, two of the same, mirrored figure, second father, second mother, two Papa, two Mama, identical adults, extra people, third child, second sister, second sara, second eva, two eva, duplicate eva, mirror reflection, family members in the background, additional children, extra child in background, second blonde child, ghost figure, shadow of person, strangers in background, crowd, group of people, other faces, friends, neighbors, customers in line, queue, second jeep"
+}

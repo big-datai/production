@@ -48,24 +48,63 @@ else {
   process.exit(1);
 }
 
+// Auto-consolidate: if the flat ep<NN>.json is missing but the per-clip
+// directory ep<NN>/ exists with episode.json + numeric/letter clip JSONs,
+// build the flat file in-memory and write it. Post-ep10 fix: previously
+// you had to manually run a Python consolidator before submitEpisode could
+// see the per-clip layout.
 if (!fs.existsSync(epPath)) {
-  console.error(`❌ episode JSON not found: ${epPath}`);
-  process.exit(1);
+  const dirCandidate = epPath.replace(/\.json$/, "");
+  const epManifest = path.join(dirCandidate, "episode.json");
+  if (fs.existsSync(epManifest) && fs.statSync(dirCandidate).isDirectory()) {
+    console.log(`ℹ flat ${path.basename(epPath)} missing — auto-consolidating from ${path.basename(dirCandidate)}/`);
+    const manifest = JSON.parse(fs.readFileSync(epManifest, "utf8"));
+    const numClips = [], lettClips = [];
+    for (const f of fs.readdirSync(dirCandidate)) {
+      if (!/^(\d+|[A-Z])\.json$/.test(f)) continue;
+      const spec = JSON.parse(fs.readFileSync(path.join(dirCandidate, f), "utf8"));
+      const stem = f.replace(/\.json$/, "");
+      if (/^\d+$/.test(stem)) numClips.push(spec);
+      else lettClips.push(spec);
+    }
+    numClips.sort((a, b) => Number(a.clip) - Number(b.clip));
+    lettClips.sort((a, b) => String(a.clip).localeCompare(String(b.clip)));
+    manifest.clips = numClips;
+    manifest.musicVideos = lettClips;
+    fs.writeFileSync(epPath, JSON.stringify(manifest, null, 2));
+    console.log(`   wrote ${path.basename(epPath)} (${numClips.length} clips + ${lettClips.length} music videos)`);
+  } else {
+    console.error(`❌ episode JSON not found: ${epPath}`);
+    console.error(`   (also checked for per-clip layout at ${dirCandidate}/episode.json — not found)`);
+    process.exit(1);
+  }
 }
 const ep = JSON.parse(fs.readFileSync(epPath, "utf8"));
 
-// Build clip list — episode.clips[] (consolidated form) preferred,
-// else fall back to ep<NN>/<n>.json files in the per-clip folder.
+// Build clip list — episode.clips[] AND episode.musicVideos[] (both
+// arrays in the consolidated form), else fall back to per-clip JSON files
+// (numeric AND letter-named like A.json, B.json) in ep<NN>/.
+// Bug fixed post-ep09: --include-music --only=B did nothing because the
+// loader only read ep.clips, never ep.musicVideos.
 let clips = [];
-if (Array.isArray(ep.clips) && ep.clips.length > 0) {
-  clips = ep.clips.map(c => ({ source: "embedded", spec: c, label: String(c.clip ?? c.clipNumber ?? "?") }));
+if (Array.isArray(ep.clips) || Array.isArray(ep.musicVideos)) {
+  for (const c of (ep.clips ?? [])) clips.push({ source: "embedded", spec: c, label: String(c.clip ?? c.clipNumber ?? "?") });
+  for (const c of (ep.musicVideos ?? [])) clips.push({ source: "embedded", spec: c, label: String(c.clip ?? "?") });
 } else {
   const dir = epPath.replace(/\.json$/, "");
   if (fs.existsSync(dir) && fs.statSync(dir).isDirectory()) {
-    clips = fs.readdirSync(dir)
-      .filter(f => /^\d+\.json$/.test(f))
-      .sort((a, b) => parseInt(a) - parseInt(b))
-      .map(f => ({ source: "file", file: path.join(dir, f), label: f.replace(/\.json$/, "") }));
+    const allJsons = fs.readdirSync(dir)
+      .filter(f => /^(\d+|[A-Z])\.json$/.test(f))
+      .sort((a, b) => {
+        // Numeric first (1, 2, ..., 20), then letters (A, B, C)
+        const aNum = /^\d+$/.test(a.replace(/\.json$/, ""));
+        const bNum = /^\d+$/.test(b.replace(/\.json$/, ""));
+        if (aNum && !bNum) return -1;
+        if (!aNum && bNum) return 1;
+        if (aNum && bNum) return parseInt(a) - parseInt(b);
+        return a.localeCompare(b);
+      });
+    clips = allJsons.map(f => ({ source: "file", file: path.join(dir, f), label: f.replace(/\.json$/, "") }));
   }
 }
 

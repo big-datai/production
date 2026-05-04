@@ -1,0 +1,31 @@
+{
+  "episode": 10,
+  "beat": 18,
+  "clip": 16,
+  "title": "Following the magic deer through the forest",
+  "mode": "omni",
+  "durationSec": 10,
+  "quality": "720p",
+  "nativeAudio": true,
+  "expectedCredits": 90,
+  "subjects": [
+    "magic-deer"
+  ],
+  "scene": "magic-forest-sandy",
+  "boundElements": [
+    {
+      "tag": "magic-deer",
+      "source": "library"
+    },
+    {
+      "tag": "jeep-wrangler",
+      "source": "library"
+    },
+    {
+      "tag": "magic-forest-sandy",
+      "source": "library"
+    }
+  ],
+  "prompt": "Wide tracking shot from BEHIND, low angle along the sandy forest road in @magic-forest-sandy. The @magic-deer in the FOREGROUND-CENTER of the frame, walking calmly forward with its head held high, antlers glowing faintly blue. Following at a respectful walking-pace distance, the black @jeep-wrangler crawls slowly along the same sandy track, license plate 'SARA AND EVA' visible on the rear bumper. Tall pine trunks line both sides of the road, dappled sunlight pooling on the sand. The deer occasionally glances back toward the Jeep then keeps walking, leading the way. NO HUMANS visible in frame — kids and Mama silhouettes barely glimpsable through the windshield far back. From inside the Jeep, faint off-camera voices: Eva (whispered awe): \"It's MAGIC.\" Sara (whispered): \"It KNOWS the way out.\"",
+  "negativePrompt": "duplicate character, twin, clone, two of the same, mirrored figure, second father, second mother, two Papa, two Mama, identical adults, people in foreground, child outside vehicle, adult outside vehicle, kids on the road, hiker, hunter, ranger, second deer, two deer, multiple deer, mirror reflection of deer, mama mama, two mama, two papa, identical adults, extra people, family members in the background, ghost figure, shadow of person, strangers, crowd, group of people, doppelganger, twin"
+}

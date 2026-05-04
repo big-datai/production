@@ -1,0 +1,35 @@
+{
+  "episode": 10,
+  "beat": "music-video-B",
+  "clip": "B",
+  "title": "MUSIC VIDEO RENDER B — Eva solo slow-mo wonder at the pink-creature tree",
+  "mode": "omni",
+  "durationSec": 10,
+  "quality": "720p",
+  "nativeAudio": true,
+  "expectedCredits": 90,
+  "subjects": ["Eva"],
+  "scene": "(designed slow-mo backdrop with pink-creature-tree)",
+  "boundElements": [
+    { "tag": "Eva", "source": "library" },
+    { "tag": "pink-creature-tree", "source": "library" }
+  ],
+  "reuseAsset": true,
+  "reuseAssetNote": "ONE 10s slow-mo render, paired with Suno song 'Pink Tree Whisper.mp3' via loopVideoWithSong.mjs to fill the 60s music block.",
+  "musicVideoBlock": true,
+  "loopExpansion": {
+    "iterations": 6,
+    "xfadeDuration": 0.3,
+    "outputDurationSec": 58
+  },
+  "usedUnderSongs": [
+    {
+      "song": "assets/music/Pink Tree Whisper.mp3",
+      "blockDurationSec": 60,
+      "trimStart": 0,
+      "placementClipNumber": "12music"
+    }
+  ],
+  "prompt": "Wide slow-motion music-video shot — soft pastel-pink and lavender gradient backdrop, glowing pollen motes and floating fireflies drifting slowly through the frame. The @pink-creature-tree stands centered in the BACKGROUND — a tall pine trunk with a tall PINK-painted hollow opening in its trunk, the hollow glowing soft pink from inside. NO scene clutter, NO room, NO furniture. @Eva alone in the FOREGROUND-CENTER, arms slowly raised in wonder, head tilted back to look up at the tree, eyes huge and shining. Eva slowly turns in place, her dress and hair drifting in slow-motion as if underwater. Eva extends a single hand slowly toward the pink hollow, palm open in greeting. A single firefly slowly drifts down and lands on her fingertip. Eva smiles softly, eyes huge with awe. The shot is in heavy slow-motion throughout — every gesture takes 2-3x normal time. Movements are LOOPABLE — clean cycle: stand → arms up → turn → reach → firefly lands → smile → return to start. Camera locked, head-on, slow gentle dolly-in. Eva does NOT speak, does NOT sing, does NOT lip-sync — only quiet wonder, occasionally smiling. No audible speech, no music — silent slow-mo render.",
+  "negativePrompt": "duplicate character, twin, clone, two of the same, mirrored figure, second father, second mother, two Papa, two Mama, identical adults, extra people, third child, second sister, second sara, second eva, two eva, duplicate eva, mirror reflection, family members in the background, additional children, second child, sara in this scene, mama in this scene, papa in this scene, ghost figure, shadow of person, strangers, crowd, group of people, other faces, background people, real magic creature, fairy in frame, woodland sprite figure, lip-sync to specific syllables, audible music, audible singing words, fast motion, jump cuts"
+}

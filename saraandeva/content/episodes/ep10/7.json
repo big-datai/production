@@ -1,0 +1,20 @@
+{
+  "episode": 10,
+  "beat": 8,
+  "clip": 7,
+  "title": "Wawa stop — Mama coffee, kids snacks",
+  "mode": "omni",
+  "durationSec": 10,
+  "quality": "720p",
+  "nativeAudio": true,
+  "expectedCredits": 90,
+  "subjects": ["Sara", "Eva"],
+  "scene": "wawa-interior",
+  "boundElements": [
+    { "tag": "Sara", "source": "library" },
+    { "tag": "Eva", "source": "library" },
+    { "tag": "wawa-interior", "source": "library" }
+  ],
+  "prompt": "Mid-shot inside @wawa-interior in front of the colorful snack-and-drink wall (rows of refrigerated cases with bright drink bottles and snack bags). EXACTLY TWO CHILDREN in frame — no other people anywhere, no adults, no third child. @Sara on the LEFT FOREGROUND, brown ponytail, pointing up at a fruit-cup label on the cooler. @Eva on the RIGHT FOREGROUND, curly blonde with rainbow bow, pointing at a tall purple shake bottle in the cooler at her eye level. The two kids are clearly the only people in the frame. NO Mama in frame, NO Papa in frame, NO third child, NO phantom kid. Sara (pointing at a fruit cup): \"Mango cup!\" Eva (pointing at the shake, wiggling): \"Bluebery shake!\" Sara (correcting, gentle): \"It's BLUE-berry, silly.\" Eva (already not listening, fixated on the shake): \"Mmmmm.\" From off-camera, an unseen Mama's voice: \"Get whatever you want, adventurers — long drive ahead.\"",
+  "negativePrompt": "duplicate character, twin, clone, two of the same, mirrored figure, second father, second mother, two Papa, two Mama, identical adults, mama in frame, papa in frame, adult in frame, third child, third kid, second sister, second sara, second eva, two eva, two sara, duplicate eva, three children, three kids, additional girl, extra girl, extra child, extra kid, mirror reflection, family members in the background, additional children, extra child in background, second blonde child, partial face peeking out, half face at edge, ghost figure, shadow of person, strangers, crowd, group of people, other faces, background people, friends, neighbors, store employee, customer in frame"
+}

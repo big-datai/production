@@ -54,13 +54,15 @@ const FORBIDDEN_PROMPT_PHRASES = [
   /\bgroup of\b/i, /\bcrowd\b/i, /\bfamily of\b/i,
   /\benters\b/i, /\barriving\b/i, /\bmirror(ed)? figure\b/i,
   // Motion-toward verbs spawn duplicates: Kling renders both the moving
-  // character AND a destination/origin instance. See memory: lesson_kling_omni_pipeline_fixes
-  // and the ep08 clip-1 / clip-4 incident (2026-05-02). Use static placement instead.
+  // character AND a destination/origin instance. See memory: lesson_kling_omni_pipeline_fixes,
+  // lesson_kling_motion_verbs_duplicate. Use static placement instead.
+  // Tightened post-ep09 to also catch `walks up` (without "to") and to NOT
+  // false-positive on `head in her hands` (anatomy).
   /\bwalks?\s+in\b/i, /\bwalking\s+in\b/i,
-  /\bwalks?\s+(toward|up to|over to|into)\b/i, /\bwalking\s+(toward|up to|over to|into)\b/i,
+  /\bwalks?\s+(up|toward|up to|over to|into)\b/i, /\bwalking\s+(up|toward|up to|over to|into)\b/i,
   /\bapproach(es|ing)\b/i,
   /\bmoves?\s+to(ward)?\b/i, /\bmoving\s+to(ward)?\b/i,
-  /\bheads?\s+(in|to|toward|over)\b/i, /\bheading\s+(in|to|toward|over)\b/i,
+  /\bhead(s|ing|ed)?\s+(into|to|toward|over\s+to)\b/i,
 ];
 
 // ─── REQUIRED NEGATIVE PROMPT (Omni duplicate-character defense) ────────────
@@ -180,12 +182,15 @@ if (trailingTagSpam) {
 
 // Enforce required negative-prompt terms (defense against Kling rendering
 // the same character twice in wide shots — first observed in Ep 3 dry run).
+// Post-ep10: AUTO-PREPEND missing terms instead of hard-failing. Reason: 5/23
+// ep10 clips silently failed because customized negativePrompts dropped the
+// standard list. Auto-prepending a known-safe defense list is harmless and
+// removes a re-edit + re-submit cycle from every episode.
 const negLower = (spec.negativePrompt || "").toLowerCase();
 const missingNeg = REQUIRED_NEGATIVE_TERMS.filter(t => !negLower.includes(t.toLowerCase()));
 if (missingNeg.length > 0) {
-  console.error(`❌ negativePrompt missing required terms: ${missingNeg.join(", ")}`);
-  console.error(`   Append these to spec.negativePrompt to defend against duplicate-character renders.`);
-  process.exit(1);
+  console.warn(`⚠ negativePrompt missing ${missingNeg.length} required terms — auto-prepending: ${missingNeg.join(", ")}`);
+  spec.negativePrompt = missingNeg.join(", ") + (spec.negativePrompt ? ", " + spec.negativePrompt : "");
 }
 
 // Library name verification — catch the "Joe rendered as Max" class of bug

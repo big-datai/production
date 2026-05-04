@@ -1,0 +1,21 @@
+{
+  "episode": 10,
+  "beat": 7,
+  "clip": 6,
+  "title": "Pulling out for the magic forest — Jeep cabin chatter",
+  "mode": "omni",
+  "durationSec": 10,
+  "quality": "720p",
+  "nativeAudio": true,
+  "expectedCredits": 90,
+  "subjects": ["Mama", "Sara", "Eva"],
+  "scene": "jeep-interior",
+  "boundElements": [
+    { "tag": "Mama", "source": "library" },
+    { "tag": "Sara", "source": "library" },
+    { "tag": "Eva", "source": "library" },
+    { "tag": "jeep-interior", "source": "library" }
+  ],
+  "prompt": "Over-the-shoulder shot inside @jeep-interior — view from the back-row footwell looking forward through the windshield. @Mama already in the driver seat (LEFT-FRONT), both hands on the steering wheel, glancing in the rearview mirror with a warm smile. @Sara already buckled in the rear right seat, leaning forward eagerly, hands gripping the seatbelt. @Eva already buckled in the rear left seat next to her sister, bouncing in her booster, knees tucked. Mama (glancing in the rearview mirror): \"Okay! Magic Forest, here we come!\" Sara (excited, eyes huge): \"Will there be REAL magic creatures?\" Eva (bouncing harder): \"Hide-and-seek MAGIC creatures! That's the BEST kind!\" Mama (laughing softly): \"Eyes on the trees, ladies.\" The Jeep rolls forward and out of the driveway.",
+  "negativePrompt": "duplicate character, twin, clone, two of the same, mirrored figure, second father, second mother, two Papa, two Mama, identical adults, extra people, third child, second sister, second sara, second eva, two eva, duplicate eva, mirror reflection, family members in the background, additional children, extra child in background, second blonde child, ghost figure, shadow of person, strangers, crowd, group of people, other faces, background people, friends, neighbors"
+}

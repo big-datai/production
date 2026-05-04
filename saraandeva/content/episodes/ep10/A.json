@@ -1,0 +1,35 @@
+{
+  "episode": 10,
+  "beat": "music-video-A",
+  "clip": "A",
+  "title": "MUSIC VIDEO RENDER A — Sara+Eva soccer-fever duo dance",
+  "mode": "omni",
+  "durationSec": 10,
+  "quality": "720p",
+  "nativeAudio": true,
+  "expectedCredits": 90,
+  "subjects": ["Sara", "Eva"],
+  "scene": "(designed studio backdrop)",
+  "boundElements": [
+    { "tag": "Sara", "source": "library" },
+    { "tag": "Eva", "source": "library" }
+  ],
+  "reuseAsset": true,
+  "reuseAssetNote": "ONE 10s render, paired with Suno song 'Kick the Ball.mp3' via loopVideoWithSong.mjs to fill the 60s music block.",
+  "musicVideoBlock": true,
+  "loopExpansion": {
+    "iterations": 6,
+    "xfadeDuration": 0.3,
+    "outputDurationSec": 58
+  },
+  "usedUnderSongs": [
+    {
+      "song": "assets/music/Kick the Ball.mp3",
+      "blockDurationSec": 60,
+      "trimStart": 0,
+      "placementClipNumber": "4music"
+    }
+  ],
+  "prompt": "Wide front-facing music-video shot — soft pastel sky-blue/grass-green gradient backdrop with a HUGE stylized RAINBOW arching across the upper half of the frame and CONFETTI shaped like tiny soccer balls and white goal-net diamonds raining continuously down. NO scene, NO room, NO furniture, NO logos, NO real text. @Sara on the LEFT and @Eva on the RIGHT stand side-by-side, grinning huge, bopping in rhythm. Sara mimes a small soccer-kick with her right foot in the air on beat 1. Eva mimes a small soccer-kick with her left foot on beat 2. Sara claps over her head. Eva claps over her head. Sara pumps her fist in the air. Eva pumps her fist in the air. Sara spins once on the spot. Eva spins once on the spot. Both return to start position grinning. Movements are RHYTHMIC and LOOPABLE — clean cycle: kick → kick → clap → clap → fist → fist → spin → spin → return. Camera locked, head-on, kid-eye-level. Bright cheerful party lighting. Sara and Eva hum and sing along generically — no specific dialogue, no lip-sync to any words. The shot is designed to LOOP cleanly: Sara and Eva return to the same side-by-side starting pose at second 0 and second 10. Rainbow arches and confetti continuously rain down. No audible speech, no music — silent render.",
+  "negativePrompt": "duplicate character, twin, clone, two of the same, mirrored figure, second father, second mother, two Papa, two Mama, identical adults, extra people, third child, second sister, second sara, second eva, two eva, duplicate eva, mirror reflection, family members, strangers, crowd, group of people, other faces, background people, friends, neighbors, specific dialogue words, lip-sync to specific syllables, audible music, audible singing words, real soccer field, real goal posts in background, real stadium"
+}

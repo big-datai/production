@@ -1,0 +1,20 @@
+{
+  "episode": 10,
+  "beat": 1,
+  "clip": 1,
+  "title": "HOOK — Eva's tennis-soccer zinger",
+  "mode": "omni",
+  "durationSec": 10,
+  "quality": "720p",
+  "nativeAudio": true,
+  "expectedCredits": 90,
+  "subjects": ["Sara", "Eva"],
+  "scene": "kitchen-morning",
+  "boundElements": [
+    { "tag": "Sara", "source": "library" },
+    { "tag": "Eva", "source": "library" },
+    { "tag": "kitchen-morning", "source": "library" }
+  ],
+  "prompt": "Wide kitchen shot in @kitchen-morning, soft warm morning light from the back window. @Sara on the LEFT already at the kitchen island, holding a tennis racket upright with a serious focused face, hair in a neat ponytail. @Eva on the RIGHT already at the kitchen table, a soccer ball tucked proudly under her arm, grinning ear-to-ear, chest puffed up. Eva (proud, free hand pointing emphatically at the ball under her arm): \"Soccer is SO much easier than tennis. You just have to KICK THE BALL!\" Sara (one eyebrow raised, slow careful tone): \"...You THINK you can just kick a ball?\" Eva (chest puffed even bigger, totally confident): \"I KNOW I can!\"",
+  "negativePrompt": "duplicate character, twin, clone, two of the same, mirrored figure, second father, second mother, two Papa, two Mama, identical adults, extra people, third child, second sister, second sara, second eva, two eva, duplicate eva, mirror reflection, family members in the background, additional children, extra child in background, second blonde child, ghost figure, shadow of person, strangers, crowd, group of people, other faces, background people, friends, neighbors"
+}

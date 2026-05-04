@@ -1,0 +1,22 @@
+{
+  "episode": 10,
+  "beat": 13,
+  "clip": 12,
+  "title": "Bumpy wave road + strange noises",
+  "mode": "omni",
+  "durationSec": 10,
+  "quality": "720p",
+  "nativeAudio": true,
+  "expectedCredits": 90,
+  "subjects": ["Mama", "Sara", "Eva"],
+  "scene": "jeep-interior",
+  "boundElements": [
+    { "tag": "Mama", "source": "library" },
+    { "tag": "Sara", "source": "library" },
+    { "tag": "Eva", "source": "library" },
+    { "tag": "jeep-interior", "source": "library" },
+    { "tag": "magic-forest-sandy", "source": "library" }
+  ],
+  "prompt": "Wide exterior tracking shot from outside the LEFT side of the @jeep-interior view — actually a side-on cinematic angle of the Jeep rolling along a sandy bumpy track in @magic-forest-sandy. The camera follows the Jeep from outside as it visibly ROCKS side-to-side over wave-like sandy ruts. Through the open windows three faces are clearly visible from the side: @Mama in the driver seat (LEFT) BOTH HANDS on the steering wheel, head facing FORWARD looking at the road ahead through the windshield, big delighted laugh — Mama is NEVER turned backward, ALWAYS facing forward. Behind Mama in the rear-left seat: @Eva curly blonde with rainbow bow, hand cupped to her ear, eyes huge, leaning toward the side window. Behind the empty front passenger seat in the rear-right: @Sara brown ponytail, gripping her seatbelt, hair bouncing. The Jeep tilts side-to-side as it rolls over big sandy bumps. Eva (wide-eyed, hand at ear): \"...did you HEAR that?!\" Sara: \"It sounded like... GIGGLES!\" Mama (eyes on the road ahead, smiling huge): \"Hold on tight! The road is WAVY!\"",
+  "negativePrompt": "duplicate character, twin, clone, two of the same, mirrored figure, second father, second mother, two Papa, two Mama, identical adults, extra people, third child, second sister, second sara, second eva, two eva, duplicate eva, mirror reflection, family members in the background, additional children, extra child in background, second blonde child, ghost figure, shadow of person, strangers, crowd, group of people, other faces, background people, friends, neighbors, third row passenger"
+}

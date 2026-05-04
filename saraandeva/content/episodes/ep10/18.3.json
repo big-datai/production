@@ -1,0 +1,22 @@
+{
+  "episode": 10,
+  "beat": "18.3",
+  "clip": "18.3",
+  "title": "Tag around the Jeep at Weber's while waiting for burgers",
+  "mode": "omni",
+  "durationSec": 15,
+  "quality": "720p",
+  "nativeAudio": true,
+  "expectedCredits": 135,
+  "subjects": ["Papa", "Sara", "Eva"],
+  "scene": "weber-drive-in",
+  "boundElements": [
+    { "tag": "Papa", "source": "library" },
+    { "tag": "Sara", "source": "library" },
+    { "tag": "Eva", "source": "library" },
+    { "tag": "weber-drive-in", "source": "library" },
+    { "tag": "jeep-wrangler", "source": "library" }
+  ],
+  "prompt": "Wide cinematic mid-low shot in the asphalt parking lot of @weber-drive-in. The black @jeep-wrangler is already parked in a slot mid-frame, license plate 'SARA AND EVA' visible on the rear bumper, the orange wood-paneled drive-in storefront with the 'DRIVE-IN' sign in the background. @Papa already mid-stride on the LEFT side of the Jeep, arms outstretched in a playful tickle-monster pose, big silly open-mouthed grin. @Sara already on the FAR-RIGHT of the frame, mid-run on the asphalt around the FRONT of the Jeep, ponytail flying, mouth open in a delighted laugh. @Eva already in the FOREGROUND-CENTER, mid-leap across the frame, both arms up, curly blonde hair bouncing, squealing with joy. The 3 figures are spread across the wide composition with the Jeep between them — playing the tickle-monster game around the parked vehicle. (BEAT 1 — 0-5s) Papa (booming playful voice): \"GET BACK HERE! I'M THE TICKLE-MONSTER!\" Sara (squealing, looking back over shoulder mid-run): \"NEVER!\" Eva (gleeful shriek): \"BURGERS GIVE YOU SUPERPOWERS!\" Papa (pretending to stomp): \"GROOOOOAARGH!\" (BEAT 2 — 5-10s) The game continues — Papa lunges to one side, Sara ducks under his arm and circles to the BACK of the Jeep, Eva zigzags around the FRONT. Papa changes direction dramatically with comic exaggeration, throwing his arms up in mock-defeat. Papa (panting, hands on knees): \"You two are TOO FAST!\" Sara (now safely on top of the Jeep hood, hands on hips, grinning): \"BURGER POWER!\" (BEAT 3 — 10-15s) Eva tip-toes silently behind Papa from the LEFT side of the Jeep, then taps his back. Eva (squealing): \"YOU'RE IT!\" Then Eva sprints away laughing. Papa straightens up, big grin, points at Eva playfully. Papa (shaking finger, mock-threatening): \"OH it's ON now!\" He starts a slow-motion silly stomp after Eva, arms stretched out monster-style. All three burst out laughing.",
+  "negativePrompt": "duplicate character, twin, clone, two of the same, mirrored figure, second father, second mother, two Papa, two Mama, identical adults, extra people, fourth person, third child, second sister, second sara, second eva, two eva, duplicate eva, mirror reflection, family members in the background, additional children, extra child in background, second blonde child, ghost figure, shadow of person, strangers in parking lot, other customers, other families, crowd, group of people, other faces, background people, friends, neighbors, mama in frame, second jeep, identical vehicle, other parked car with people inside, carhop in this clip"
+}

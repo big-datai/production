@@ -1,0 +1,198 @@
+{
+  "episode": 10,
+  "title": "Sara, Eva & The Magic Sandy Forest!",
+  "logline": "Eva swears soccer is easier than tennis (you just kick the ball!). The family signs Eva up at the YMCA, then road-trips through a sandy magic forest to a 50s-style drive-in burger spot. They stop at Wawa for snacks, spot a pink-hollow magic-creature tree, get rocked by a wave-bumpy road, and then get LOST. The girls climb on the Jeep roof and spot an ancient glowing magic deer who leads them past a pond full of fish out of the forest. They arrive at Weber Drive-In where a roller-skating carhop delivers burgers and shakes through the car window. Tag: Eva pivots to wanting tennis tomorrow — calling next week's adventure.",
+  "formulaReference": "Bluey-style 'kid-led adventure with discovery' family episode — confident-kid hook → activity signup → scenic detour with snack stop → wonder/awe (pink tree, hidden creatures) → mild crisis (lost) → kid-led pivot (roof + magic deer) → resolution (pond + fish out) → reward (drive-in food) → cliffhanger.",
+  "mode": "omni",
+  "durationTotal": "~7:41 (20 normal × 10s = 200s + A 60s + B 60s + C 90s + intro 31s + outro 20s)",
+  "expectedCreditsTotal": 2070,
+  "expectedCreditsBreakdown": "20 normal clips × 90 cr = 1800 + 3 render specs (A,B,C) × 90 cr = 270 → 2070 cr base; +25% buffer ≈ 2588 cr realistic ceiling. NOTE: above ep09's 1980 base by 90 cr (one extra music render with native audio on, per fix to lesson_kling_omni_pipeline_fixes ep09 B-render note).",
+  "newBoundElements": [
+    {
+      "tag": "jeep-wrangler",
+      "source": "library",
+      "asset": "assets/scenes/jeep_wrangler.png",
+      "purpose": "Black Jeep Wrangler exterior on sandy forest road — beats 5, 9, 14, 16, 18; license plate reads 'SARA AND EVA'"
+    },
+    {
+      "tag": "jeep-interior",
+      "source": "library",
+      "asset": "assets/scenes/jeep_interior.png",
+      "purpose": "Jeep cabin view with kid car seats — beats 6, 12, 13, 20"
+    },
+    {
+      "tag": "wawa-interior",
+      "source": "library",
+      "asset": "assets/scenes/wawa_interior.png",
+      "purpose": "Wawa convenience-store interior with snack-wall + coffee bar — beats 7, 8"
+    },
+    {
+      "tag": "wawa-snacks",
+      "source": "library",
+      "asset": "assets/scenes/wawa_snacks.png",
+      "purpose": "Mango cup + blueberry shake props side-by-side on counter — beat 8 prop reference"
+    },
+    {
+      "tag": "magic-forest-sandy",
+      "source": "library",
+      "asset": "assets/scenes/magic_forest_sandy.png",
+      "purpose": "Sandy NJ-Pinelands-style pine forest, dappled light — beats 9, 11, 12, 14, 15, 16"
+    },
+    {
+      "tag": "pink-creature-tree",
+      "source": "library",
+      "asset": "assets/scenes/pink_creature_tree.png",
+      "purpose": "Pine tree with a tall PINK-painted hollow opening (fairy-creature door) — beat 10, render B"
+    },
+    {
+      "tag": "magic-deer",
+      "source": "library",
+      "asset": "assets/scenes/magic_deer.png",
+      "purpose": "Ancient stag with oversized antlers and faint blue-glow aura — beats 15, 16, 17"
+    },
+    {
+      "tag": "forest-pond",
+      "source": "library",
+      "asset": "assets/scenes/forest_pond.png",
+      "purpose": "Woodland pond with fish ripples and mossy banks — beat 17"
+    },
+    {
+      "tag": "weber-drive-in",
+      "source": "library",
+      "asset": "assets/scenes/weber_drive_in.png",
+      "purpose": "Orange wood-paneled walk-up drive-in storefront with white columns and 'DRIVE-IN' sign — beats 18, 19"
+    },
+    {
+      "tag": "weber-tray",
+      "source": "library",
+      "asset": "assets/scenes/weber_tray.png",
+      "purpose": "Drive-in food tray clipped to a Jeep window with two milkshakes + burgers — beats 19, 20"
+    }
+  ],
+  "reusedBoundElements": [
+    "Mama, Papa, Sara, Eva — character avatars",
+    "kitchen-morning — beat 1",
+    "ymca-gym — beats 2, 3, 4, render A backdrop reference",
+    "driveway — beat 5"
+  ],
+  "scenes": [
+    "kitchen-morning",
+    "ymca-gym",
+    "driveway",
+    "jeep-wrangler",
+    "jeep-interior",
+    "wawa-interior",
+    "magic-forest-sandy",
+    "pink-creature-tree",
+    "forest-pond",
+    "weber-drive-in"
+  ],
+  "cast": [
+    "Sara",
+    "Eva",
+    "Mama",
+    "Papa"
+  ],
+  "reuse": {
+    "intro": {
+      "source": "season_01/intro/",
+      "clips": [
+        "intro_song.mp4"
+      ],
+      "totalDuration": "~31s",
+      "playOrder": "Theme song"
+    },
+    "outro": {
+      "source": "season_01/OUTRO/",
+      "clips": [
+        "17.mp4",
+        "18.mp4",
+        "0_song.mp4"
+      ],
+      "totalDuration": "~20s",
+      "note": "0_song.mp4 sorts last via parseInt-Infinity hack — keep (memory rule #23)"
+    }
+  },
+  "music": {
+    "policy": "ALL music is Suno — Kling renders dialogue + ambient ONLY. No music phrases inside any clip prompt (memory rule #24).",
+    "musicVideoBlocks": [
+      {
+        "blockId": "4music",
+        "song": "assets/music/Kick the Ball.mp3",
+        "trimStart": 0,
+        "blockDurationSec": 60,
+        "render": "A",
+        "renderSpec": "content/episodes/ep10/A.json",
+        "placement": "between clip 4 (Eva first kick) and clip 5 (driveway packing) — soccer-fever duo dance",
+        "mood": "Upbeat soccer cheer — both girls hyped about Eva's grand plan"
+      },
+      {
+        "blockId": "12music",
+        "song": "assets/music/Pink Tree Whisper.mp3",
+        "trimStart": 0,
+        "blockDurationSec": 60,
+        "render": "B",
+        "renderSpec": "content/episodes/ep10/B.json",
+        "placement": "between clip 12 (bumpy noises) and clip 13 (lost) — slow-mo Eva wonder at the pink-hollow tree",
+        "mood": "Soft awe and discovery — quiet wonder, magic creatures hiding"
+      },
+      {
+        "blockId": "20music",
+        "song": "assets/music/Burgers in the Car.mp3",
+        "trimStart": 0,
+        "blockDurationSec": 90,
+        "render": "C",
+        "renderSpec": "content/episodes/ep10/C.json",
+        "placement": "between clip 18 (Weber arrival) and clip 19 (carhop delivery) — 50s sock-hop duo dance with shakes/burgers",
+        "mood": "Classic 50s drive-in joy — duo dance celebration"
+      }
+    ],
+    "renders": {
+      "A": "content/episodes/ep10/A.json — Sara+Eva duo, soccer-fever pastel-rainbow backdrop",
+      "B": "content/episodes/ep10/B.json — Eva solo slow-mo, pastel-pink/lavender forest-glow backdrop",
+      "C": "content/episodes/ep10/C.json — Sara+Eva duo, 50s drive-in checkerboard backdrop with shakes/burgers"
+    },
+    "mixRecipe": "[1:a]atrim=start=X:duration=N,asetpts=PTS-STARTPTS,volume=0.30[bg]; [0:a]volume=1.4[fg]; [fg][bg]amix=inputs=2:duration=first:dropout_transition=0[a]",
+    "loopRecipe": "node loopVideoWithSong.mjs <render>.mp4 <song>.mp3 <Nmusic>.mp4 --duration=N"
+  },
+  "arc": [
+    { "beat": 1, "name": "HOOK — Eva's tennis-soccer zinger", "purpose": "Eva declares soccer is easier. Confident-kid hook.", "clips": [1] },
+    { "beat": 2, "name": "YMCA gym — Eva tries soccer", "purpose": "Eva already on the gym floor with a ball; Sara watches.", "clips": [2] },
+    { "beat": 3, "name": "Signup desk", "purpose": "Mama signs Eva up. Eva grinning.", "clips": [3] },
+    { "beat": 4, "name": "Eva's first big kick", "purpose": "Eva kicks ball — flies high. Sara: 'See? Easy!' tag.", "clips": [4] },
+    { "beat": 5, "name": "🎵 MUSIC VIDEO A — Kick the Ball (60s)", "purpose": "Render A under 'Kick the Ball' — duo dance high-energy soccer fever.", "clips": ["A→4music"] },
+    { "beat": 6, "name": "Driveway packing", "purpose": "Mama loading cooler. Sara now has the soccer ball; Eva brings tennis racket 'just in case' (callback reversal).", "clips": [5] },
+    { "beat": 7, "name": "Pulling out of the driveway", "purpose": "Jeep cabin — Mama at wheel, kids buckled, all excited about magic-forest adventure.", "clips": [6] },
+    { "beat": 8, "name": "Wawa coffee + snacks", "purpose": "Mama at coffee bar, kids at snack wall.", "clips": [7] },
+    { "beat": 9, "name": "Mango + blueberry shake", "purpose": "Sara holds mango cup. Eva 'YAMMY BLUBERY SHAKE!' Sara correction.", "clips": [8] },
+    { "beat": 10, "name": "Entering magic forest", "purpose": "Jeep on sandy forest road, towering pines. Excited adventure mood.", "clips": [9] },
+    { "beat": 11, "name": "The pink creature tree", "purpose": "Sara sees pink-hollow tree. 'A magic creature lives there!'", "clips": [10] },
+    { "beat": 12, "name": "Family forest selfie (4 chars, tight framing)", "purpose": "Papa selfie-style framing with Mama+Sara+Eva squished in. License plate visible behind reads SARA AND EVA.", "clips": [11] },
+    { "beat": 13, "name": "Bumpy wave road + strange noises", "purpose": "Jeep rocks on bumps. Eva hand cupped to ear: 'Did you hear that?!' Adventure-excited not scared.", "clips": [12] },
+    { "beat": 14, "name": "🎵 MUSIC VIDEO B — Pink Tree Whisper (60s slow-mo)", "purpose": "Render B under 'Pink Tree Whisper' — Eva solo wonder at the pink-hollow tree.", "clips": ["B→12music"] },
+    { "beat": 15, "name": "LOST — Mama checks phone", "purpose": "Jeep stopped. Mama looks at phone confused. No panic — adventure mood.", "clips": [13] },
+    { "beat": 16, "name": "Girls on the roof", "purpose": "Sara + Eva on Jeep hood, hands shielding eyes, scanning forest.", "clips": [14] },
+    { "beat": 17, "name": "Spotting the magic deer", "purpose": "Reverse POV: ancient glowing magic deer between trees.", "clips": [15] },
+    { "beat": 18, "name": "Following the deer", "purpose": "Jeep creeping slowly behind deer through trees.", "clips": [16] },
+    { "beat": 19, "name": "Pond + fish (deer leads)", "purpose": "Deer reaches pond. Fish swim downstream pointing the way out.", "clips": [17] },
+    { "beat": 20, "name": "Weber arrival", "purpose": "Jeep pulls into orange-paneled drive-in lot. Wide.", "clips": [18] },
+    { "beat": 21, "name": "🎵 MUSIC VIDEO C — Burgers in the Car (90s)", "purpose": "Render C under 'Burgers in the Car' — duo dance 50s sock-hop with shakes/burgers.", "clips": ["C→20music"] },
+    { "beat": 22, "name": "Roller-skate carhop delivers", "purpose": "Carhop on skates clips tray onto Jeep window. Sara: 'Burgers in the CAR?!' Eva: 'Best day EVER!'", "clips": [19] },
+    { "beat": 23, "name": "CLIFFHANGER — Eva pivots to tennis", "purpose": "Family eats off tray. Eva: 'Soccer practice TOMORROW?' Sara: 'YEP. And we're bringing TENNIS rackets too — just in case!' Setup for next ep.", "clips": [20] },
+    { "beat": 24, "name": "OUTRO (reused)", "purpose": "Subscribe pair from season_01/OUTRO/ — 17.mp4 → 18.mp4 → 0_song.mp4 last.", "clips": ["reused"] }
+  ],
+  "rules": {
+    "maxBoundPerClip": 7,
+    "maxTagMentionsPerCharacter": 1,
+    "klingPromptMustNotContain": [
+      "music sting", "music swell", "tender swell", "cheerful music",
+      "comedic music", "playful music", "heartfelt music", "music cue",
+      "score swell", "background music"
+    ],
+    "klingPromptMustNotContainReason": "All music is Suno-mixed in assemble (memory rule #24).",
+    "motionTowardForbidden": "No 'walks in/toward', 'approaches', 'moves to(ward)', 'heads to/in', 'walks up' — these spawn duplicates when another character is anchored. Use static placement only. (memory: lesson_kling_motion_verbs_duplicate.md)",
+    "max3ForegroundChars": "Hard cap 3 foreground-anchored characters per clip. CLIP 11 IS THE EXPLICIT EXCEPTION — user-approved 4-character close-up selfie framing (zero BG space for ghosts to spawn).",
+    "negativePromptRequired": "duplicate character, twin, clone, two of the same, mirrored figure, second father, second mother, two Papa, two Mama, identical adults, extra people, third child, second sister, second sara, second eva, two eva, duplicate eva, mirror reflection, family members in the background, additional children, extra child in background, second blonde child, ghost figure, shadow of person",
+    "characterNamesInDialogue": "Drop the bound character's name from other characters' dialogue (memory: rule from ep01)."
+  }
+}

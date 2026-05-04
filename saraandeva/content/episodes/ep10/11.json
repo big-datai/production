@@ -1,0 +1,23 @@
+{
+  "episode": 10,
+  "beat": 12,
+  "clip": 11,
+  "title": "Family forest selfie (4 chars, tight close-up framing)",
+  "mode": "omni",
+  "durationSec": 10,
+  "quality": "720p",
+  "nativeAudio": true,
+  "expectedCredits": 90,
+  "subjects": ["Mama", "Papa", "Sara", "Eva"],
+  "scene": "magic-forest-sandy",
+  "boundElements": [
+    { "tag": "Mama", "source": "library" },
+    { "tag": "Papa", "source": "library" },
+    { "tag": "Sara", "source": "library" },
+    { "tag": "Eva", "source": "library" },
+    { "tag": "magic-forest-sandy", "source": "library" },
+    { "tag": "jeep-wrangler", "source": "library" }
+  ],
+  "prompt": "EXTREME close-up selfie — 4 FACES ONLY in the frame and absolutely nothing else visible behind them. The composition is so tight the frame contains exactly 4 face-portraits and they fill 100% of the visible space. POSITIONS — strictly anchored, NO additional people anywhere: @Papa's face fills the LOWER-RIGHT QUADRANT (closest to the lens, slightly larger as the selfie-arm holder, big toothy grin, beard, glasses). @Mama's face fills the LOWER-LEFT QUADRANT (squished against Papa's shoulder, beaming, blonde hair). @Sara's face fills the UPPER-LEFT QUADRANT (curly chestnut hair fluffing in from the top-left, eyes wide with joy, freckles). @Eva's face fills the UPPER-RIGHT QUADRANT (curly blonde with rainbow bow, tongue stuck out playfully, eyes squeezed shut in laughter). The 4 heads are pressed shoulder-to-shoulder leaving zero gap between them and zero background visible. Just barely glimpsable at the absolute corner edges of the frame, between hair strands: the black @jeep-wrangler tailgate with license plate 'SARA AND EVA' visible behind Papa's shoulder, and a hint of pine trunks of @magic-forest-sandy at the very edges. The faces are SO LARGE that the Jeep and forest are mostly OBSCURED by hair and shoulders. ONLY 4 PEOPLE — exactly 1 dad, exactly 1 mom, exactly 2 kids (one with chestnut curly hair, one with blonde curly hair and rainbow bow). NO fifth child, NO fifth face, NO partial face peeking from anywhere. Papa (grinning huge): \"MAGIC FOREST FAMILY SELFIE!\" Mama: \"Get the trees in!\" Sara: \"SMILE!\" Eva (tongue out): \"BUUUUUR!\"",
+  "negativePrompt": "duplicate character, twin, clone, two of the same, mirrored figure, second father, second mother, two Papa, two Mama, identical adults, fifth person, fifth face, fifth head, sixth person, third child, third kid, third sister, second sister, second sara, second eva, two eva, duplicate eva, three children, three kids, two blonde girls, two curly haired girls, additional girl, extra girl, extra child, extra kid, extra small child, mirror reflection, family members in the background, additional children, extra child in background, second blonde child, partial face peeking out, half face at edge, ghost figure, shadow of person, strangers behind them, crowd, group of people, other faces, background people, friends, neighbors, photographer in frame, hand of a fifth person, extra arm, extra hands, partial extra face at edge of frame, child between mama and papa, small face in the back, child poking out from behind"
+}

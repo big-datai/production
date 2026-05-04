@@ -1,0 +1,36 @@
+{
+  "episode": 10,
+  "beat": 16,
+  "clip": 14,
+  "title": "Girls on the Jeep roof — scanning the forest",
+  "mode": "omni",
+  "durationSec": 10,
+  "quality": "720p",
+  "nativeAudio": true,
+  "expectedCredits": 90,
+  "subjects": [
+    "Sara",
+    "Eva"
+  ],
+  "scene": "magic-forest-sandy",
+  "boundElements": [
+    {
+      "tag": "Sara",
+      "source": "library"
+    },
+    {
+      "tag": "Eva",
+      "source": "library"
+    },
+    {
+      "tag": "jeep-wrangler",
+      "source": "library"
+    },
+    {
+      "tag": "magic-forest-sandy",
+      "source": "library"
+    }
+  ],
+  "prompt": "Wide low-angle shot — the black @jeep-wrangler already parked still in @magic-forest-sandy, license plate reading 'SARA AND EVA' visible on the rear bumper. @Sara already SITTING on the Jeep's hood near the windshield on the LEFT side, both hands cupped above her brow like a sea-captain scanning the horizon. @Eva already SITTING on the hood on the RIGHT side next to her sister, mirroring the hand-shielding pose. Towering pine trunks of the forest surround the Jeep. Sara (hand to forehead, looking off to the right): \"I see... TREES.\" Eva (hand to forehead, looking off to the left): \"I see... MORE trees.\" (pause) Sara (suddenly leaning forward): \"Wait... SOMETHING is moving in there!\" Eva freezes, leans forward too, eyes huge.",
+  "negativePrompt": "duplicate character, twin, clone, two of the same, mirrored figure, second father, second mother, two Papa, two Mama, identical adults, duplicate character, twin, clone, two of the same, mirrored figure, second sister, second sara, second eva, two eva, duplicate eva, mirror reflection, family members in the background, additional children, extra child in background, second blonde child, ghost figure, shadow of person, strangers, crowd, group of people, other faces, background people, friends, neighbors, hikers, third child on the jeep, person in the woods, adult in the background"
+}

@@ -1,0 +1,35 @@
+{
+  "episode": 10,
+  "beat": "music-video-C",
+  "clip": "C",
+  "title": "MUSIC VIDEO RENDER C — Sara+Eva 50s sock-hop drive-in dance",
+  "mode": "omni",
+  "durationSec": 10,
+  "quality": "720p",
+  "nativeAudio": true,
+  "expectedCredits": 90,
+  "subjects": ["Sara", "Eva"],
+  "scene": "(designed 50s drive-in backdrop)",
+  "boundElements": [
+    { "tag": "Sara", "source": "library" },
+    { "tag": "Eva", "source": "library" }
+  ],
+  "reuseAsset": true,
+  "reuseAssetNote": "ONE 10s render, paired with Suno song 'Burgers in the Car.mp3' via loopVideoWithSong.mjs to fill the 90s music block.",
+  "musicVideoBlock": true,
+  "loopExpansion": {
+    "iterations": 9,
+    "xfadeDuration": 0.3,
+    "outputDurationSec": 88
+  },
+  "usedUnderSongs": [
+    {
+      "song": "assets/music/Burgers in the Car.mp3",
+      "blockDurationSec": 90,
+      "trimStart": 0,
+      "placementClipNumber": "20music"
+    }
+  ],
+  "prompt": "Wide front-facing music-video shot — designed retro 1950s drive-in diner backdrop. FLOOR: classic black-and-white checkerboard tile pattern. WALL: mid-century turquoise and cream gradient with tiny twinkling neon-style stars and a stylized neon 'DRIVE-IN' sign glowing in the upper-right. Two tall red-vinyl diner stools just visible at the edges (no chars on them). NO scene clutter, NO real logos, NO real text other than 'DRIVE-IN'. @Sara on the LEFT — both hands holding a tall pink strawberry milkshake with whipped cream, ONE hand wrapped around the bottom of the cup and the OTHER hand wrapped around the top of the cup, the cup held at chest height the entire time. @Eva on the RIGHT — both hands holding a tall purple blueberry milkshake, ONE hand around the bottom of the cup and the OTHER hand around the top, cup held at chest height. STRICT ANATOMY: each girl has EXACTLY 2 ARMS, EXACTLY 2 HANDS — both hands ALWAYS occupied with the milkshake. NO third arm, NO extra hand, NO floating hand. Both grin huge. The dance is LOWER-BODY and HEAD only — arms STAY on the milkshake throughout: bop right hip, bop left hip, knees bend slightly on each beat, head bobs side-to-side with the bop, both girls take a small step toward each other and lean in to clink milkshake rims once at center, then step back. Movements are RHYTHMIC and LOOPABLE — clean cycle: hip-bop-right → hip-bop-left → step-in-and-clink → step-back → repeat. Camera locked, head-on, kid-eye-level. Bright cheerful diner lighting with a touch of warm neon glow. Sara and Eva hum and sing along generically — no specific dialogue, no lip-sync to any words. The shot is designed to LOOP cleanly. No audible speech, no music — silent render.",
+  "negativePrompt": "duplicate character, twin, clone, two of the same, mirrored figure, three arms, third arm, extra arm, extra hand, floating hand, third hand, four arms, six arms, extra limbs, anatomy error, free arm swinging while holding cup, hand without arm, arm without body, duplicate limb, second father, second mother, two Papa, two Mama, identical adults, extra people, third child, second sister, second sara, second eva, two eva, duplicate eva, mirror reflection, family members, strangers, crowd, group of people, other faces, background people, friends, neighbors, specific dialogue words, lip-sync to specific syllables, audible music, audible singing words, customers in booths, employees in frame, carhop in frame, real diner photo realism, milkshake floating in air, cup levitating, hand pointing while also holding cup"
+}

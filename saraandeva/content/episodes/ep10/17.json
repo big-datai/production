@@ -1,0 +1,27 @@
+{
+  "episode": 10,
+  "beat": 19,
+  "clip": 17,
+  "title": "Pond + fish — the deer points the way out",
+  "mode": "omni",
+  "durationSec": 10,
+  "quality": "720p",
+  "nativeAudio": true,
+  "expectedCredits": 90,
+  "subjects": [
+    "magic-deer"
+  ],
+  "scene": "forest-pond",
+  "boundElements": [
+    {
+      "tag": "forest-pond",
+      "source": "library"
+    },
+    {
+      "tag": "magic-deer",
+      "source": "library"
+    }
+  ],
+  "prompt": "Wide hero shot at the edge of @forest-pond — a calm woodland pond with mossy banks, ripples gently spreading across the still water. The @magic-deer stands on the LEFT bank, head bowed gracefully toward the water as if drinking, antlers glowing faintly blue. In the water itself: a clean line of small silver fish swim from foreground toward the far bank in clear formation, like an arrow pointing the way DOWNSTREAM out of the woods. Soft golden light filters through the canopy, glinting on the water. NO HUMAN CHARACTERS in frame. The deer lifts its head, looks once toward camera, then dips it back to the water. The fish keep moving. From off-camera, faint kid voices in awe: Sara (off-camera whisper): \"...the FISH are showing us the way.\" Eva (off-camera whisper): \"FOLLOW the fish!\"",
+  "negativePrompt": "duplicate character, twin, clone, two of the same, mirrored figure, second father, second mother, two Papa, two Mama, identical adults, people, person, child, children, kids, adult, family, sister, sara, eva, mama, papa, hiker, hunter, ranger, stranger, crowd, second deer, two deer, multiple deer, extra animal, mirror reflection of deer, ghost figure, shadow of person, doppelganger, twin, swimmer, kayaker, boat, paddler"
+}

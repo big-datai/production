@@ -1,0 +1,21 @@
+{
+  "episode": 10,
+  "beat": "17.5",
+  "clip": "17.5",
+  "title": "Who's hungry? — Papa asks, kids cheer, drive to eat",
+  "mode": "omni",
+  "durationSec": 10,
+  "quality": "720p",
+  "nativeAudio": true,
+  "expectedCredits": 90,
+  "subjects": ["Papa", "Sara", "Eva"],
+  "scene": "jeep-interior",
+  "boundElements": [
+    { "tag": "Papa", "source": "library" },
+    { "tag": "Sara", "source": "library" },
+    { "tag": "Eva", "source": "library" },
+    { "tag": "jeep-interior", "source": "library" }
+  ],
+  "prompt": "Front-cabin shot inside @jeep-interior — view through the open windshield from outside-front looking IN. Sunny daylight outside (the family has just left the magic forest, this is now a normal paved road, bright clear sky, regular trees beyond). @Papa already in the passenger seat (RIGHT-FRONT of frame), facing FORWARD through the windshield, big delighted grin, mouth moving as he speaks. @Sara already visible in the rear right seat behind Papa, hand raised high in the air with a huge smile. @Eva already visible in the rear left seat, bouncing in her booster, both arms up, mouth wide open in a joyful shout. Mama is at the wheel (LEFT-FRONT of frame, partially out of the frame edge, only a hint of her blonde ponytail visible — NOT a bound character, no full face visible). Papa is NEVER turned backward, ALWAYS facing forward. Papa (eyes facing forward, big grin): \"Okay adventurers — WHO is hungry?\" Sara (hand raised high, big smile): \"MEEEEEEEEEEEE!\" Eva (bouncing, both arms up): \"MEMEMEMEMEMEMEEEE!\" Papa (laughing): \"Then let's find some FOOD!\" Sara: \"BURGERS!\" Eva: \"AND FRIES!\"",
+  "negativePrompt": "duplicate character, twin, clone, two of the same, mirrored figure, second father, second mother, two Papa, two Mama, identical adults, extra people, third child, second sister, second sara, second eva, two eva, duplicate eva, mirror reflection, family members in the background, additional children, extra child in background, second blonde child, ghost figure, shadow of person, strangers, crowd, group of people, other faces, background people, friends, neighbors, papa turned backward, papa looking back at kids, driver looking back, mama in passenger seat, second adult in passenger seat, mama duplicate, blonde woman in passenger seat instead of papa, partial face peeking out, half face at edge"
+}

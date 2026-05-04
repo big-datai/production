@@ -1,0 +1,21 @@
+{
+  "episode": 10,
+  "beat": 15,
+  "clip": 13,
+  "title": "LOST — Mama checks her phone",
+  "mode": "omni",
+  "durationSec": 10,
+  "quality": "720p",
+  "nativeAudio": true,
+  "expectedCredits": 90,
+  "subjects": ["Mama", "Papa"],
+  "scene": "jeep-interior",
+  "boundElements": [
+    { "tag": "Mama", "source": "library" },
+    { "tag": "Papa", "source": "library" },
+    { "tag": "jeep-interior", "source": "library" },
+    { "tag": "magic-forest-sandy", "source": "library" }
+  ],
+  "prompt": "Wide front-row interior shot of @jeep-interior — the Jeep is already stopped on a sandy fork in the road. EXACTLY TWO ADULTS in the front seats, no kids visible (kids off-camera in the back). @Mama in the driver seat on the LEFT, blonde ponytail, both hands holding her phone in front of her, brow furrowed, the phone screen showing zero signal bars and a spinning loading icon. @Papa in the passenger seat on the RIGHT, beard and glasses, leaning over slightly to peek at Mama's phone screen, eyebrows up in mild concern. Through the windshield ahead: @magic-forest-sandy stretches in two directions, identical-looking pine trunks fading into the distance — no clear right answer. Mama (poking at the phone, eyebrow raised): \"...no service? In the MIDDLE of nowhere?\" Papa (squinting at the phone, then up at the road): \"...are we lost?\" Mama (wry smile, quiet): \"...a little. Don't tell the kids. Yet.\" Papa (grinning): \"My lips are sealed.\"",
+  "negativePrompt": "duplicate character, twin, clone, two of the same, mirrored figure, second father, second mother, two Papa, two Mama, identical adults, three adults, extra adult in middle, child, kids, sister, sara, eva, mirror reflection, family members in the background, additional children, ghost figure, shadow of person, strangers, crowd, group of people, other faces, background people, friends, neighbors, third row passenger, second mama in passenger seat, mama duplicate in passenger seat, blonde woman in passenger seat instead of papa"
+}

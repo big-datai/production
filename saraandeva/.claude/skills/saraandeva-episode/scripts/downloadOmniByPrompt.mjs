@@ -66,9 +66,19 @@ fs.mkdirSync(outDir, { recursive: true });
 // Load every numeric .json file from spec_dir. Index by `clip` field.
 const specs = {};
 for (const f of fs.readdirSync(specDir)) {
-  if (!/^\d+\.json$/.test(f)) continue;
+  // Accept numeric clip files (1.json, 2.json, ...) AND letter-named
+  // music-video specs (A.json, B.json, C.json) AND decimal-numbered
+  // insert-clips (3.7.json, 4.5.json, 17.5.json — used for transition
+  // beats and music-video segments inserted between numeric clips).
+  // Bug fixes: post-ep10 added decimal acceptance after 4 add-on
+  // transition clips were silently dropped.
+  if (!/^(\d+(\.\d+)?|[A-Z])\.json$/.test(f)) continue;
   const spec = JSON.parse(fs.readFileSync(path.join(specDir, f), "utf8"));
-  if (typeof spec.clip !== "number" || typeof spec.prompt !== "string") {
+  // Accept numeric clips (1, 2, ...) AND letter-named music-video clips
+  // (A, B, C). Both produce <clip>.mp4 outputs. Bug fixed post-ep09:
+  // letter-clip music videos were silently skipped because the type check
+  // required `typeof spec.clip === "number"`.
+  if ((typeof spec.clip !== "number" && typeof spec.clip !== "string") || typeof spec.prompt !== "string") {
     console.warn(`⚠ ${f}: missing clip/prompt — skipping`);
     continue;
   }

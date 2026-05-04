@@ -1,0 +1,20 @@
+{
+  "episode": 10,
+  "beat": 2,
+  "clip": 2,
+  "title": "YMCA gym — Eva tries soccer for the first time",
+  "mode": "omni",
+  "durationSec": 10,
+  "quality": "720p",
+  "nativeAudio": true,
+  "expectedCredits": 90,
+  "subjects": ["Sara", "Eva"],
+  "scene": "ymca-gym",
+  "boundElements": [
+    { "tag": "Sara", "source": "library" },
+    { "tag": "Eva", "source": "library" },
+    { "tag": "ymca-gym", "source": "library" }
+  ],
+  "prompt": "Wide indoor shot in @ymca-gym — polished blonde-wood gym floor with painted court lines (red dots, green dots, black). Bright fluorescent overhead light. @Eva already mid-floor on the LEFT-CENTER with a white-and-black soccer ball at her feet, dribbling awkwardly, tongue poking out in concentration. @Sara already on the RIGHT-FOREGROUND, arms crossed, watching with one skeptical eyebrow raised. Eva (tongue out, focused, whispering to herself): \"...okay... easy easy easy...\" Sara (deadpan, dry): \"Dribbling. That IS a foot skill.\" Eva winds up, kicks — the ball rolls only two feet then stops. Eva (recovering, hands on hips): \"I'm WARMING UP.\"",
+  "negativePrompt": "duplicate character, twin, clone, two of the same, mirrored figure, second father, second mother, two Papa, two Mama, identical adults, extra people, third child, second sister, second sara, second eva, two eva, duplicate eva, mirror reflection, family members in the background, additional children, extra child in background, second blonde child, ghost figure, shadow of person, strangers, crowd, group of people, other faces, background people, friends, neighbors"
+}

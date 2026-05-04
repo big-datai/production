@@ -1,0 +1,22 @@
+{
+  "episode": 10,
+  "beat": 23,
+  "clip": 20,
+  "title": "CLIFFHANGER — Eva pivots to tennis tomorrow",
+  "mode": "omni",
+  "durationSec": 10,
+  "quality": "720p",
+  "nativeAudio": true,
+  "expectedCredits": 90,
+  "subjects": ["Mama", "Sara", "Eva"],
+  "scene": "jeep-interior",
+  "boundElements": [
+    { "tag": "Mama", "source": "library" },
+    { "tag": "Sara", "source": "library" },
+    { "tag": "Eva", "source": "library" },
+    { "tag": "jeep-interior", "source": "library" },
+    { "tag": "weber-tray", "source": "library" }
+  ],
+  "prompt": "Mid-shot inside @jeep-interior, golden afternoon sunlight through the windows. @Mama already in the driver seat (LEFT-FRONT) holding a paper-wrapped burger to her mouth, taking a bite, eyes closed in bliss. @Sara already in the rear right seat, sipping a tall pink strawberry milkshake through a wide blue straw, cheeks puffed. @Eva already in the rear left seat, mid-bite into a smaller burger, ketchup smudged on her cheek. The @weber-tray is clipped to the driver's side window frame holding the rest of the food. Eva (mouth full, muffled, ketchup on her cheek): \"...so... soccer practice TOMORROW?\" Sara (lowering her shake, smug smirk): \"YEP. And we're bringing TENNIS rackets too — just in case!\" Mama (mid-chew, looking back in the mirror): \"Or maybe pickleball next week?\" Eva (mouth wide open, burger forgotten): \"WHAT IS PICKLEBALL?!\" Sara cracks up laughing.",
+  "negativePrompt": "duplicate character, twin, clone, two of the same, mirrored figure, second father, second mother, two Papa, two Mama, identical adults, extra people, third child, second sister, second sara, second eva, two eva, duplicate eva, mirror reflection, family members in the background, additional children, extra child in background, second blonde child, ghost figure, shadow of person, strangers, crowd, group of people, other faces, background people, friends, neighbors, third row passenger, papa in this clip"
+}

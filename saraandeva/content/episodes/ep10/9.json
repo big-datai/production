@@ -1,0 +1,22 @@
+{
+  "episode": 10,
+  "beat": 10,
+  "clip": 9,
+  "title": "Entering the magic forest — sandy road and tall pines",
+  "mode": "omni",
+  "durationSec": 10,
+  "quality": "720p",
+  "nativeAudio": true,
+  "expectedCredits": 90,
+  "subjects": ["Mama", "Sara", "Eva"],
+  "scene": "magic-forest-sandy",
+  "boundElements": [
+    { "tag": "Mama", "source": "library" },
+    { "tag": "Sara", "source": "library" },
+    { "tag": "Eva", "source": "library" },
+    { "tag": "jeep-wrangler", "source": "library" },
+    { "tag": "magic-forest-sandy", "source": "library" }
+  ],
+  "prompt": "Wide cinematic tracking shot — exterior view of the black @jeep-wrangler already mid-frame, rolling slowly along a sandy pine-forest road in @magic-forest-sandy, license plate reading 'SARA AND EVA' visible on the rear bumper. Towering pine trees on both sides, dappled golden sunlight streaming through the canopy. Through the open windows: @Mama at the wheel small in frame, @Sara visible in the right rear window leaning forward in awe, @Eva visible in the left rear window with both hands pressed against the glass, mouth open in wonder. The kids' voices float out the windows. Eva (faintly, through the open window): \"WOW look at all the TREES!\" Sara (leaning further forward): \"Sandy ground! Like a beach in the woods!\" Mama (calling back, warm): \"This place is MAGICAL, isn't it?\"",
+  "negativePrompt": "duplicate character, twin, clone, two of the same, mirrored figure, second father, second mother, two Papa, two Mama, identical adults, extra people, third child, second sister, second sara, second eva, two eva, duplicate eva, mirror reflection, family members in the background, additional children, extra child in background, second blonde child, ghost figure, shadow of person, strangers, crowd, group of people, other faces, background people, friends, neighbors, hikers, joggers, other vehicles, oncoming traffic"
+}
