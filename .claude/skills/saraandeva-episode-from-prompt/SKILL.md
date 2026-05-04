@@ -342,7 +342,41 @@ node saraandeva/.claude/skills/saraandeva-episode/scripts/validateEpisode.mjs --
 
 Verifies clip count vs spec • no numeric sequence gaps • each music-video block has a duration-matching segment • intro/outro present • final mp4 in 6–10 min range • thumbnail exists • description + tags exist • tags ≤ 500 chars.
 
-Exit 0 means safe to upload. **Do not call `uploadEpisodeToSaraAndEva.mjs` until this passes.**
+Exit 0 means safe to upload. **Do not call `uploadEpisodeToSaraAndEva.mjs` until this passes.** (Note: `uploadEpisodeToSaraAndEva.mjs` already invokes this validator as a hard precondition, so it's enforced even if you forget — but running it explicitly first lets you fix things without touching the upload script.)
+
+---
+
+## ⚡ One-command production (post-ep10)
+
+Steps 4 → 7.7 are wrapped by **`produceEpisode.mjs`** — the central orchestrator that chains every post-render phase fail-fast. After Kling renders are done, ONE command takes you from clips on Kling's CDN to UNLISTED on YouTube:
+
+```bash
+node saraandeva/.claude/skills/saraandeva-episode/scripts/produceEpisode.mjs \
+  --episode 10 --title "Magic Forest!"
+```
+
+It runs (each phase aborts on error):
+1. `downloadOmniByPrompt.mjs` — fetch all rendered clips
+2. `loopVideoWithSong.mjs` for each `musicVideoBlock` → `<N>.5.mp4` segments
+3. `assembleEpisode.mjs` → auto-versioned `ep<NN>_v<next>.mp4`
+4. `generateThumbnail.mjs` (default hero clip 14)
+5. `generateShort.mjs` (default source: highest `.5` segment)
+6. `validateEpisode.mjs` (errors abort upload)
+7. `uploadEpisodeToSaraAndEva.mjs` (UNLISTED, Made-for-Kids)
+
+Flags: `--start-from N` (resume after phase), `--stop-after N` (preview-only), `--no-upload` (alias for `--stop-after 6`), `--hero-clip N`, `--short-source NN.5.mp4`, `--privacy public|unlisted|private`, `--skip-validation`.
+
+**Pre-render side**: `submitEpisode.mjs --episode <NN> --include-music` does Phase 0 (validateClipCasting) + Phase 1 (addMissingElements) + Phase 2 (submit each clip to Kling). Wait ~30-60 min for renders, then call `produceEpisode.mjs`.
+
+So the **complete pipeline** is two commands separated by render-wait time:
+
+```
+1) submitEpisode  --episode NN --include-music
+   ⏳ wait ~30-60 min for Kling
+2) produceEpisode --episode NN --title "..."
+```
+
+Both commands enforce their own validators internally, so misuse is hard.
 
 ## Step 8 — Hand-off report (NEW pipeline post-ep08)
 
