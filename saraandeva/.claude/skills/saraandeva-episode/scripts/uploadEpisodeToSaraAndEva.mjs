@@ -108,6 +108,26 @@ async function getOAuthClient() {
 }
 
 async function main() {
+  // HARD precondition (post-ep10): validate the assembled episode before
+  // spending the YouTube upload quota + minutes. Catches missing thumbnail,
+  // tags > 500 chars, music-segment duration mismatch, sequence gaps.
+  // Override with --skip-validation if you must (don't).
+  const skipValidation = argv.includes('--skip-validation');
+  if (!skipValidation) {
+    const m = videoPath.match(/episode_(\d+)\//);
+    if (m) {
+      const epNum = Number(m[1]);
+      const validator = path.join(path.dirname(new URL(import.meta.url).pathname), 'validateEpisode.mjs');
+      console.log(`\n🩺 Pre-upload validation — validateEpisode --episode=${epNum}`);
+      const { spawnSync } = await import('node:child_process');
+      const v = spawnSync('node', [validator, `--episode=${epNum}`], { stdio: 'inherit' });
+      if (v.status === 1) {
+        console.error(`\n❌ validateEpisode found errors. Fix the deliverables or pass --skip-validation. Aborting upload.`);
+        process.exit(1);
+      }
+    }
+  }
+
   const auth = await getOAuthClient();
   const youtube = google.youtube({ version: 'v3', auth });
 

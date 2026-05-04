@@ -125,6 +125,29 @@ console.log(`📋 ${path.basename(epPath)}`);
 console.log(`   total clips: ${clips.length}`);
 console.log(`   to submit:   ${filtered.length}${includeMusic ? "" : " (music-video specs excluded — pass --include-music to include)"}`);
 console.log(`   prereq:      ${skipPrereq ? "skipped (--skip-prereq)" : "addMissingElements.mjs will run first"}`);
+// ─── Phase 0: clip-casting validator ───────────────────────────────────────
+// HARD precondition (post-ep10). Catches ghost-prone specs, motion-toward
+// verbs, missing required negatives, 4+ char clips needing Nano Banana, etc.
+// BEFORE we spend a single Kling credit. Runs even on --dry-run so you can
+// validate at draft time without a submission. Override with --skip-validation
+// if you must (don't).
+const skipValidation = flags["skip-validation"] === "true";
+if (!skipValidation) {
+  const epDir = epPath.replace(/\.json$/, "");
+  if (fs.existsSync(epDir) && fs.statSync(epDir).isDirectory()) {
+    console.log(`\n═══════════════════════════════════════════════════════════════`);
+    console.log(`▶  PHASE 0 — validateClipCasting (pre-submit lint)`);
+    console.log(`═══════════════════════════════════════════════════════════════`);
+    const v = spawnSync("node", [path.join(SCRIPTS_DIR, "validateClipCasting.mjs"), epDir], {
+      stdio: "inherit", cwd: PROJECT_ROOT,
+    });
+    if (v.status === 1) {
+      console.error(`\n❌ validateClipCasting found errors. Fix the spec or pass --skip-validation. Aborting before Kling.`);
+      process.exit(1);
+    }
+  }
+}
+
 if (dryRun) {
   console.log(`\n[dry-run] clips: ${filtered.map(c => c.label).join(", ")}`);
   process.exit(0);
