@@ -276,41 +276,29 @@ These come from memory `lesson_kling_omni_pipeline_fixes.md`. The submit script 
 
 ## Step 6 — Sanity-check before saving
 
-Run this Python check on the drafted clip JSONs (mirrors what's in ep08's QA):
+Run the canonical clip-casting validator (post-ep10 — replaces the inline Python that lived here through ep09):
 
-```python
-import json, re, sys
-from pathlib import Path
-EP = Path("saraandeva/content/episodes/ep<NN>")
-MUSIC_BAD = re.compile(r"\b(music sting|music swell|tender swell|cheerful music|comedic music|playful music|heartfelt music|music cue|score swell|background music)\b", re.I)
-GROUP_NOUNS = re.compile(r"\b(everyone|the family|the kids|both girls|both sisters|the sisters|the children)\b", re.I)
-TAG_RE = re.compile(r"@([A-Za-z][A-Za-z0-9-]*)")
-errors = []
-for f in sorted(EP.glob("[0-9]*.json"), key=lambda p: int(p.stem)):
-    s = json.loads(f.read_text()); p = s["prompt"]; b = [e["tag"] for e in s["boundElements"]]
-    if len(b) > 7: errors.append(f"{f.name}: bound {len(b)}>7")
-    counts = {}
-    for t in TAG_RE.findall(p): counts[t] = counts.get(t,0)+1
-    for t,c in counts.items():
-        if c>1: errors.append(f"{f.name}: @{t}×{c}")
-    for tag in b:
-        if tag not in counts: errors.append(f"{f.name}: bound {tag} missing @ in prompt")
-    if MUSIC_BAD.search(p): errors.append(f"{f.name}: music phrase")
-    if GROUP_NOUNS.search(p): errors.append(f"{f.name}: group noun")
-    chars = {x for x in b if x[:1].isupper()}
-    for sp,line in re.findall(r"(@?\w+)[^\"]*?:\s*\"([^\"]+)\"", p):
-        sp = sp.lstrip("@")
-        if sp in chars:
-            for o in chars - {sp}:
-                if re.search(rf"\b{o}\b", line): errors.append(f"{f.name}: {sp} says {o} in dialogue")
-    if s.get("durationSec")!=10 or s.get("quality")!="720p" or s.get("mode")!="omni" or not s.get("nativeAudio") or s.get("expectedCredits")!=90:
-        errors.append(f"{f.name}: pipeline-param drift")
-print(f"errors: {len(errors)}")
-for e in errors: print(" ✗", e)
-sys.exit(1 if errors else 0)
+```bash
+node saraandeva/.claude/skills/saraandeva-episode/scripts/validateClipCasting.mjs --episode=<NN>
 ```
 
-If errors > 0, fix the prompts and re-check. **Don't hand off to the user with errors.**
+The script enforces every hard rule above and the post-ep10 traps:
+- `boundElements` length 1–7 + each `@Tag` exactly once + every declared tag `@`-mentioned
+- `durationSec ∈ {5,10,15}`, `mode === "omni"`
+- Forbidden phrases: motion-toward verbs, group-of, race/chase, music-sting
+- Required negative-prompt terms (else: warning + auto-prepend at submit)
+- Character names in another character's dialogue (warning)
+- **4+ char clips** → recommends Nano Banana group-shot via `generateGroupShot.py`
+- **looking-back-at-kids + driver framing** → 180-turn trap
+- **holding object + free-arm-dance** → 3-arm anatomy trap
+
+Exit 0 = clean, 1 = errors (must fix), 2 = warnings only with `--strict`.
+
+**Don't hand off to the user with errors.** If there are warnings, evaluate each and either fix or accept.
+
+## Step 6.5 — Group-shot pre-render for 4+ char clips
+
+If `validateClipCasting` flagged any clip as a Nano Banana candidate (4+ characters bound), run the suggested command to lock the composition as a still image BEFORE Kling renders the video. Pick the cleanest of 3 candidates (~$0.03, 90s) and update the clip spec to reference the group shot as a `source: "upload"` boundElement (or upload it to Kling library and bind by name). See `lesson_nano_banana_group_shot.md`.
 
 ## Step 7 — Write `season_01/episode_<NN>/` metadata
 
@@ -327,6 +315,34 @@ Mirror ep07's structure. The description file gets chapter timestamps starting a
 ```
 
 Plus `Skills sneaking in this episode:` block listing 2–4 educational beats. Plus 8–12 hashtags.
+
+**IMPORTANT — keep `ep<NN>_tags.txt` ≤ 500 chars total.** YouTube rejects uploads with "invalid video keywords" above that. ep10 first upload failed at 916 chars; trimmed to 282 worked. (memory: `lesson_ep10_pipeline_script_fixes.md`)
+
+## Step 7.5 — Generate thumbnail + vertical short (post-render, pre-upload)
+
+Once `assembleEpisode.mjs` produces `ep<NN>_v1.mp4` and the audit pass is clean, run the codified packaging scripts:
+
+```bash
+node saraandeva/.claude/skills/saraandeva-episode/scripts/generateThumbnail.mjs \
+  --episode <NN> --title "TITLE!" [--hero 14] [--time 3.0]
+
+node saraandeva/.claude/skills/saraandeva-episode/scripts/generateShort.mjs \
+  --episode <NN> --title "Sara & Eva: <Name>!" [--source 18.5.mp4] [--duration 60]
+```
+
+`generateThumbnail` defaults to clip 14 hero @ 3.0s with Impact-yellow + black-stroke + Gaussian shadow. `generateShort` defaults to the closing music-video segment (18.5.mp4) on a pastel pink→lavender 1080×1920 BG with the video center-cropped to 1080×1280.
+
+## Step 7.7 — Pre-upload validation
+
+Last gate before YouTube. Catches the "you forgot the thumbnail" / "tags too long" / "music segment duration mismatch" class of bugs:
+
+```bash
+node saraandeva/.claude/skills/saraandeva-episode/scripts/validateEpisode.mjs --episode <NN>
+```
+
+Verifies clip count vs spec • no numeric sequence gaps • each music-video block has a duration-matching segment • intro/outro present • final mp4 in 6–10 min range • thumbnail exists • description + tags exist • tags ≤ 500 chars.
+
+Exit 0 means safe to upload. **Do not call `uploadEpisodeToSaraAndEva.mjs` until this passes.**
 
 ## Step 8 — Hand-off report (NEW pipeline post-ep08)
 
