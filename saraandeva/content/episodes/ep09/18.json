@@ -1,0 +1,32 @@
+{
+  "episode": 9,
+  "beat": 21,
+  "clip": 18,
+  "title": "EVA FEEDS PAPA ICE CREAM",
+  "mode": "omni",
+  "durationSec": 10,
+  "quality": "720p",
+  "nativeAudio": true,
+  "expectedCredits": 90,
+  "subjects": [
+    "Eva",
+    "Papa"
+  ],
+  "scene": "costco-food-court",
+  "boundElements": [
+    {
+      "tag": "Eva",
+      "source": "library"
+    },
+    {
+      "tag": "Papa",
+      "source": "library"
+    },
+    {
+      "tag": "costco-food-court",
+      "source": "library"
+    }
+  ],
+  "prompt": "Tight close-up in @costco-food-court. @Eva on the LEFT lifts a strawberry-vanilla ice cream cone toward @Papa on the RIGHT, who has his eyes closed and mouth open like a baby bird. Eva grins HUGE, tip of tongue poking out in concentration. Eva (giggling): \"OPEN bigger, Papa!\" Papa (mumbled, mouth still open): \"Mmmf.\" Eva (touching ice cream to his mouth): \"Did you LIKE it?\" Papa (eyes open, dramatic chef's kiss): \"Mwah. PERFECT.\"",
+  "negativePrompt": "duplicate character, twin, clone, two of the same, mirrored figure, second father, second mother, two Papa, two Mama, identical adults, extra people, third child, second sister, second sara, second eva, two eva, duplicate eva, mirror reflection, crowd of shoppers, multiple Costco staff, multiple sample-lady"
+}

@@ -1,0 +1,32 @@
+{
+  "episode": 9,
+  "beat": 23,
+  "clip": 20,
+  "title": "CLIFFHANGER — kids dump the coffee",
+  "mode": "omni",
+  "durationSec": 10,
+  "quality": "720p",
+  "nativeAudio": true,
+  "expectedCredits": 90,
+  "subjects": [
+    "Sara",
+    "Eva"
+  ],
+  "scene": "kitchen",
+  "boundElements": [
+    {
+      "tag": "Sara",
+      "source": "library"
+    },
+    {
+      "tag": "Eva",
+      "source": "library"
+    },
+    {
+      "tag": "kitchen",
+      "source": "library"
+    }
+  ],
+  "prompt": "Tight shot in @kitchen, soft afternoon light. @Sara on the LEFT and @Eva on the RIGHT stand at the kitchen counter beside an open coffee canister filled with fresh beans. They look at each other, then conspiratorially at the canister. Sara (whispered, devious): \"Should we?\" Eva (whispered back, slow nod): \"...all of it.\" They both grip the canister and CAREFULLY tip it into the trash bin. End frame: Sara and Eva exchanging a small mischievous fist-bump over the empty canister. Sara (quietly): \"See you next Tuesday, Mama.\"",
+  "negativePrompt": "duplicate character, twin, clone, two of the same, mirrored figure, second father, second mother, two Papa, two Mama, identical adults, extra people, third child, second sister, second sara, second eva, two eva, duplicate eva, mirror reflection, family members, strangers, crowd, group of people, other faces, background people, friends, neighbors"
+}

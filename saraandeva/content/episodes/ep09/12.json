@@ -1,0 +1,42 @@
+{
+  "episode": 9,
+  "beat": 13,
+  "clip": 12,
+  "title": "EMPTY COFFEE SHELF — crisis",
+  "mode": "omni",
+  "durationSec": 10,
+  "quality": "720p",
+  "nativeAudio": true,
+  "expectedCredits": 90,
+  "subjects": [
+    "Mama",
+    "Sara",
+    "Eva",
+    "Papa"
+  ],
+  "scene": "costco-aisle",
+  "boundElements": [
+    {
+      "tag": "Mama",
+      "source": "library"
+    },
+    {
+      "tag": "Sara",
+      "source": "library"
+    },
+    {
+      "tag": "Eva",
+      "source": "library"
+    },
+    {
+      "tag": "Papa",
+      "source": "library"
+    },
+    {
+      "tag": "costco-aisle",
+      "source": "library"
+    }
+  ],
+  "prompt": "Wide shot in @costco-aisle on the coffee aisle — towering shelves, but the entire mid-section is BARE, just empty wire shelving. @Mama in the CENTER stands frozen in front of the empty shelf, shopping cart abandoned beside her. @Sara on the LEFT stares up at the empty shelves, @Eva on the RIGHT beside Sara, @Papa just behind Mama. Mama (quiet, stunned, voice flat): \"...no.\" Mama (slowly raising one hand to the empty shelf): \"...no.\" Sara (small voice): \"...oh no.\" Eva (whispered): \"Is it... gone?\" Papa (gently): \"...hon?\"",
+  "negativePrompt": "duplicate character, twin, clone, two of the same, mirrored figure, second father, second mother, two Papa, two Mama, identical adults, extra people, third child, second sister, second sara, second eva, two eva, duplicate eva, mirror reflection, crowd of shoppers, multiple Costco staff, multiple sample-lady"
+}

@@ -1,0 +1,1207 @@
+{
+  "episode": 10,
+  "title": "Sara, Eva & The Magic Sandy Forest!",
+  "logline": "Eva swears soccer is easier than tennis (you just kick the ball!). The family signs Eva up at the YMCA, then road-trips through a sandy magic forest to a 50s-style drive-in burger spot. They stop at Wawa for snacks, spot a pink-hollow magic-creature tree, get rocked by a wave-bumpy road, and then get LOST. The girls climb on the Jeep roof and spot an ancient glowing magic deer who leads them past a pond full of fish out of the forest. They arrive at Weber Drive-In where a roller-skating carhop delivers burgers and shakes through the car window. Tag: Eva pivots to wanting tennis tomorrow — calling next week's adventure.",
+  "formulaReference": "Bluey-style 'kid-led adventure with discovery' family episode — confident-kid hook → activity signup → scenic detour with snack stop → wonder/awe (pink tree, hidden creatures) → mild crisis (lost) → kid-led pivot (roof + magic deer) → resolution (pond + fish out) → reward (drive-in food) → cliffhanger.",
+  "mode": "omni",
+  "durationTotal": "~7:41 (20 normal × 10s = 200s + A 60s + B 60s + C 90s + intro 31s + outro 20s)",
+  "expectedCreditsTotal": 2070,
+  "expectedCreditsBreakdown": "20 normal clips × 90 cr = 1800 + 3 render specs (A,B,C) × 90 cr = 270 → 2070 cr base; +25% buffer ≈ 2588 cr realistic ceiling. NOTE: above ep09's 1980 base by 90 cr (one extra music render with native audio on, per fix to lesson_kling_omni_pipeline_fixes ep09 B-render note).",
+  "newBoundElements": [
+    {
+      "tag": "jeep-wrangler",
+      "source": "library",
+      "asset": "assets/scenes/jeep_wrangler.png",
+      "purpose": "Black Jeep Wrangler exterior on sandy forest road — beats 5, 9, 14, 16, 18; license plate reads 'SARA AND EVA'"
+    },
+    {
+      "tag": "jeep-interior",
+      "source": "library",
+      "asset": "assets/scenes/jeep_interior.png",
+      "purpose": "Jeep cabin view with kid car seats — beats 6, 12, 13, 20"
+    },
+    {
+      "tag": "wawa-interior",
+      "source": "library",
+      "asset": "assets/scenes/wawa_interior.png",
+      "purpose": "Wawa convenience-store interior with snack-wall + coffee bar — beats 7, 8"
+    },
+    {
+      "tag": "wawa-snacks",
+      "source": "library",
+      "asset": "assets/scenes/wawa_snacks.png",
+      "purpose": "Mango cup + blueberry shake props side-by-side on counter — beat 8 prop reference"
+    },
+    {
+      "tag": "magic-forest-sandy",
+      "source": "library",
+      "asset": "assets/scenes/magic_forest_sandy.png",
+      "purpose": "Sandy NJ-Pinelands-style pine forest, dappled light — beats 9, 11, 12, 14, 15, 16"
+    },
+    {
+      "tag": "pink-creature-tree",
+      "source": "library",
+      "asset": "assets/scenes/pink_creature_tree.png",
+      "purpose": "Pine tree with a tall PINK-painted hollow opening (fairy-creature door) — beat 10, render B"
+    },
+    {
+      "tag": "magic-deer",
+      "source": "library",
+      "asset": "assets/scenes/magic_deer.png",
+      "purpose": "Ancient stag with oversized antlers and faint blue-glow aura — beats 15, 16, 17"
+    },
+    {
+      "tag": "forest-pond",
+      "source": "library",
+      "asset": "assets/scenes/forest_pond.png",
+      "purpose": "Woodland pond with fish ripples and mossy banks — beat 17"
+    },
+    {
+      "tag": "weber-drive-in",
+      "source": "library",
+      "asset": "assets/scenes/weber_drive_in.png",
+      "purpose": "Orange wood-paneled walk-up drive-in storefront with white columns and 'DRIVE-IN' sign — beats 18, 19"
+    },
+    {
+      "tag": "weber-tray",
+      "source": "library",
+      "asset": "assets/scenes/weber_tray.png",
+      "purpose": "Drive-in food tray clipped to a Jeep window with two milkshakes + burgers — beats 19, 20"
+    }
+  ],
+  "reusedBoundElements": [
+    "Mama, Papa, Sara, Eva — character avatars",
+    "kitchen-morning — beat 1",
+    "ymca-gym — beats 2, 3, 4, render A backdrop reference",
+    "driveway — beat 5"
+  ],
+  "scenes": [
+    "kitchen-morning",
+    "ymca-gym",
+    "driveway",
+    "jeep-wrangler",
+    "jeep-interior",
+    "wawa-interior",
+    "magic-forest-sandy",
+    "pink-creature-tree",
+    "forest-pond",
+    "weber-drive-in"
+  ],
+  "cast": [
+    "Sara",
+    "Eva",
+    "Mama",
+    "Papa"
+  ],
+  "reuse": {
+    "intro": {
+      "source": "season_01/intro/",
+      "clips": [
+        "intro_song.mp4"
+      ],
+      "totalDuration": "~31s",
+      "playOrder": "Theme song"
+    },
+    "outro": {
+      "source": "season_01/OUTRO/",
+      "clips": [
+        "17.mp4",
+        "18.mp4",
+        "0_song.mp4"
+      ],
+      "totalDuration": "~20s",
+      "note": "0_song.mp4 sorts last via parseInt-Infinity hack — keep (memory rule #23)"
+    }
+  },
+  "music": {
+    "policy": "ALL music is Suno — Kling renders dialogue + ambient ONLY. No music phrases inside any clip prompt (memory rule #24).",
+    "musicVideoBlocks": [
+      {
+        "blockId": "4music",
+        "song": "assets/music/Kick the Ball.mp3",
+        "trimStart": 0,
+        "blockDurationSec": 60,
+        "render": "A",
+        "renderSpec": "content/episodes/ep10/A.json",
+        "placement": "between clip 4 (Eva first kick) and clip 5 (driveway packing) — soccer-fever duo dance",
+        "mood": "Upbeat soccer cheer — both girls hyped about Eva's grand plan"
+      },
+      {
+        "blockId": "12music",
+        "song": "assets/music/Pink Tree Whisper.mp3",
+        "trimStart": 0,
+        "blockDurationSec": 60,
+        "render": "B",
+        "renderSpec": "content/episodes/ep10/B.json",
+        "placement": "between clip 12 (bumpy noises) and clip 13 (lost) — slow-mo Eva wonder at the pink-hollow tree",
+        "mood": "Soft awe and discovery — quiet wonder, magic creatures hiding"
+      },
+      {
+        "blockId": "20music",
+        "song": "assets/music/Burgers in the Car.mp3",
+        "trimStart": 0,
+        "blockDurationSec": 90,
+        "render": "C",
+        "renderSpec": "content/episodes/ep10/C.json",
+        "placement": "between clip 18 (Weber arrival) and clip 19 (carhop delivery) — 50s sock-hop duo dance with shakes/burgers",
+        "mood": "Classic 50s drive-in joy — duo dance celebration"
+      }
+    ],
+    "renders": {
+      "A": "content/episodes/ep10/A.json — Sara+Eva duo, soccer-fever pastel-rainbow backdrop",
+      "B": "content/episodes/ep10/B.json — Eva solo slow-mo, pastel-pink/lavender forest-glow backdrop",
+      "C": "content/episodes/ep10/C.json — Sara+Eva duo, 50s drive-in checkerboard backdrop with shakes/burgers"
+    },
+    "mixRecipe": "[1:a]atrim=start=X:duration=N,asetpts=PTS-STARTPTS,volume=0.30[bg]; [0:a]volume=1.4[fg]; [fg][bg]amix=inputs=2:duration=first:dropout_transition=0[a]",
+    "loopRecipe": "node loopVideoWithSong.mjs <render>.mp4 <song>.mp3 <Nmusic>.mp4 --duration=N"
+  },
+  "arc": [
+    {
+      "beat": 1,
+      "name": "HOOK — Eva's tennis-soccer zinger",
+      "purpose": "Eva declares soccer is easier. Confident-kid hook.",
+      "clips": [
+        1
+      ]
+    },
+    {
+      "beat": 2,
+      "name": "YMCA gym — Eva tries soccer",
+      "purpose": "Eva already on the gym floor with a ball; Sara watches.",
+      "clips": [
+        2
+      ]
+    },
+    {
+      "beat": 3,
+      "name": "Signup desk",
+      "purpose": "Mama signs Eva up. Eva grinning.",
+      "clips": [
+        3
+      ]
+    },
+    {
+      "beat": 4,
+      "name": "Eva's first big kick",
+      "purpose": "Eva kicks ball — flies high. Sara: 'See? Easy!' tag.",
+      "clips": [
+        4
+      ]
+    },
+    {
+      "beat": 5,
+      "name": "🎵 MUSIC VIDEO A — Kick the Ball (60s)",
+      "purpose": "Render A under 'Kick the Ball' — duo dance high-energy soccer fever.",
+      "clips": [
+        "A→4music"
+      ]
+    },
+    {
+      "beat": 6,
+      "name": "Driveway packing",
+      "purpose": "Mama loading cooler. Sara now has the soccer ball; Eva brings tennis racket 'just in case' (callback reversal).",
+      "clips": [
+        5
+      ]
+    },
+    {
+      "beat": 7,
+      "name": "Pulling out of the driveway",
+      "purpose": "Jeep cabin — Mama at wheel, kids buckled, all excited about magic-forest adventure.",
+      "clips": [
+        6
+      ]
+    },
+    {
+      "beat": 8,
+      "name": "Wawa coffee + snacks",
+      "purpose": "Mama at coffee bar, kids at snack wall.",
+      "clips": [
+        7
+      ]
+    },
+    {
+      "beat": 9,
+      "name": "Mango + blueberry shake",
+      "purpose": "Sara holds mango cup. Eva 'YAMMY BLUBERY SHAKE!' Sara correction.",
+      "clips": [
+        8
+      ]
+    },
+    {
+      "beat": 10,
+      "name": "Entering magic forest",
+      "purpose": "Jeep on sandy forest road, towering pines. Excited adventure mood.",
+      "clips": [
+        9
+      ]
+    },
+    {
+      "beat": 11,
+      "name": "The pink creature tree",
+      "purpose": "Sara sees pink-hollow tree. 'A magic creature lives there!'",
+      "clips": [
+        10
+      ]
+    },
+    {
+      "beat": 12,
+      "name": "Family forest selfie (4 chars, tight framing)",
+      "purpose": "Papa selfie-style framing with Mama+Sara+Eva squished in. License plate visible behind reads SARA AND EVA.",
+      "clips": [
+        11
+      ]
+    },
+    {
+      "beat": 13,
+      "name": "Bumpy wave road + strange noises",
+      "purpose": "Jeep rocks on bumps. Eva hand cupped to ear: 'Did you hear that?!' Adventure-excited not scared.",
+      "clips": [
+        12
+      ]
+    },
+    {
+      "beat": 14,
+      "name": "🎵 MUSIC VIDEO B — Pink Tree Whisper (60s slow-mo)",
+      "purpose": "Render B under 'Pink Tree Whisper' — Eva solo wonder at the pink-hollow tree.",
+      "clips": [
+        "B→12music"
+      ]
+    },
+    {
+      "beat": 15,
+      "name": "LOST — Mama checks phone",
+      "purpose": "Jeep stopped. Mama looks at phone confused. No panic — adventure mood.",
+      "clips": [
+        13
+      ]
+    },
+    {
+      "beat": 16,
+      "name": "Girls on the roof",
+      "purpose": "Sara + Eva on Jeep hood, hands shielding eyes, scanning forest.",
+      "clips": [
+        14
+      ]
+    },
+    {
+      "beat": 17,
+      "name": "Spotting the magic deer",
+      "purpose": "Reverse POV: ancient glowing magic deer between trees.",
+      "clips": [
+        15
+      ]
+    },
+    {
+      "beat": 18,
+      "name": "Following the deer",
+      "purpose": "Jeep creeping slowly behind deer through trees.",
+      "clips": [
+        16
+      ]
+    },
+    {
+      "beat": 19,
+      "name": "Pond + fish (deer leads)",
+      "purpose": "Deer reaches pond. Fish swim downstream pointing the way out.",
+      "clips": [
+        17
+      ]
+    },
+    {
+      "beat": 20,
+      "name": "Weber arrival",
+      "purpose": "Jeep pulls into orange-paneled drive-in lot. Wide.",
+      "clips": [
+        18
+      ]
+    },
+    {
+      "beat": 21,
+      "name": "🎵 MUSIC VIDEO C — Burgers in the Car (90s)",
+      "purpose": "Render C under 'Burgers in the Car' — duo dance 50s sock-hop with shakes/burgers.",
+      "clips": [
+        "C→20music"
+      ]
+    },
+    {
+      "beat": 22,
+      "name": "Roller-skate carhop delivers",
+      "purpose": "Carhop on skates clips tray onto Jeep window. Sara: 'Burgers in the CAR?!' Eva: 'Best day EVER!'",
+      "clips": [
+        19
+      ]
+    },
+    {
+      "beat": 23,
+      "name": "CLIFFHANGER — Eva pivots to tennis",
+      "purpose": "Family eats off tray. Eva: 'Soccer practice TOMORROW?' Sara: 'YEP. And we're bringing TENNIS rackets too — just in case!' Setup for next ep.",
+      "clips": [
+        20
+      ]
+    },
+    {
+      "beat": 24,
+      "name": "OUTRO (reused)",
+      "purpose": "Subscribe pair from season_01/OUTRO/ — 17.mp4 → 18.mp4 → 0_song.mp4 last.",
+      "clips": [
+        "reused"
+      ]
+    }
+  ],
+  "rules": {
+    "maxBoundPerClip": 7,
+    "maxTagMentionsPerCharacter": 1,
+    "klingPromptMustNotContain": [
+      "music sting",
+      "music swell",
+      "tender swell",
+      "cheerful music",
+      "comedic music",
+      "playful music",
+      "heartfelt music",
+      "music cue",
+      "score swell",
+      "background music"
+    ],
+    "klingPromptMustNotContainReason": "All music is Suno-mixed in assemble (memory rule #24).",
+    "motionTowardForbidden": "No 'walks in/toward', 'approaches', 'moves to(ward)', 'heads to/in', 'walks up' — these spawn duplicates when another character is anchored. Use static placement only. (memory: lesson_kling_motion_verbs_duplicate.md)",
+    "max3ForegroundChars": "Hard cap 3 foreground-anchored characters per clip. CLIP 11 IS THE EXPLICIT EXCEPTION — user-approved 4-character close-up selfie framing (zero BG space for ghosts to spawn).",
+    "negativePromptRequired": "duplicate character, twin, clone, two of the same, mirrored figure, second father, second mother, two Papa, two Mama, identical adults, extra people, third child, second sister, second sara, second eva, two eva, duplicate eva, mirror reflection, family members in the background, additional children, extra child in background, second blonde child, ghost figure, shadow of person",
+    "characterNamesInDialogue": "Drop the bound character's name from other characters' dialogue (memory: rule from ep01)."
+  },
+  "clips": [
+    {
+      "episode": 10,
+      "beat": 1,
+      "clip": 1,
+      "title": "HOOK — Eva's tennis-soccer zinger",
+      "mode": "omni",
+      "durationSec": 10,
+      "quality": "720p",
+      "nativeAudio": true,
+      "expectedCredits": 90,
+      "subjects": [
+        "Sara",
+        "Eva"
+      ],
+      "scene": "kitchen-morning",
+      "boundElements": [
+        {
+          "tag": "Sara",
+          "source": "library"
+        },
+        {
+          "tag": "Eva",
+          "source": "library"
+        },
+        {
+          "tag": "kitchen-morning",
+          "source": "library"
+        }
+      ],
+      "prompt": "Wide kitchen shot in @kitchen-morning, soft warm morning light from the back window. @Sara on the LEFT already at the kitchen island, holding a tennis racket upright with a serious focused face, hair in a neat ponytail. @Eva on the RIGHT already at the kitchen table, a soccer ball tucked proudly under her arm, grinning ear-to-ear, chest puffed up. Eva (proud, free hand pointing emphatically at the ball under her arm): \"Soccer is SO much easier than tennis. You just have to KICK THE BALL!\" Sara (one eyebrow raised, slow careful tone): \"...You THINK you can just kick a ball?\" Eva (chest puffed even bigger, totally confident): \"I KNOW I can!\"",
+      "negativePrompt": "duplicate character, twin, clone, two of the same, mirrored figure, second father, second mother, two Papa, two Mama, identical adults, extra people, third child, second sister, second sara, second eva, two eva, duplicate eva, mirror reflection, family members in the background, additional children, extra child in background, second blonde child, ghost figure, shadow of person, strangers, crowd, group of people, other faces, background people, friends, neighbors"
+    },
+    {
+      "episode": 10,
+      "beat": 2,
+      "clip": 2,
+      "title": "YMCA gym — Eva tries soccer for the first time",
+      "mode": "omni",
+      "durationSec": 10,
+      "quality": "720p",
+      "nativeAudio": true,
+      "expectedCredits": 90,
+      "subjects": [
+        "Sara",
+        "Eva"
+      ],
+      "scene": "ymca-gym",
+      "boundElements": [
+        {
+          "tag": "Sara",
+          "source": "library"
+        },
+        {
+          "tag": "Eva",
+          "source": "library"
+        },
+        {
+          "tag": "ymca-gym",
+          "source": "library"
+        }
+      ],
+      "prompt": "Wide indoor shot in @ymca-gym — polished blonde-wood gym floor with painted court lines (red dots, green dots, black). Bright fluorescent overhead light. @Eva already mid-floor on the LEFT-CENTER with a white-and-black soccer ball at her feet, dribbling awkwardly, tongue poking out in concentration. @Sara already on the RIGHT-FOREGROUND, arms crossed, watching with one skeptical eyebrow raised. Eva (tongue out, focused, whispering to herself): \"...okay... easy easy easy...\" Sara (deadpan, dry): \"Dribbling. That IS a foot skill.\" Eva winds up, kicks — the ball rolls only two feet then stops. Eva (recovering, hands on hips): \"I'm WARMING UP.\"",
+      "negativePrompt": "duplicate character, twin, clone, two of the same, mirrored figure, second father, second mother, two Papa, two Mama, identical adults, extra people, third child, second sister, second sara, second eva, two eva, duplicate eva, mirror reflection, family members in the background, additional children, extra child in background, second blonde child, ghost figure, shadow of person, strangers, crowd, group of people, other faces, background people, friends, neighbors"
+    },
+    {
+      "episode": 10,
+      "beat": 3,
+      "clip": 3,
+      "title": "Signup desk — Mama signs Eva up for soccer",
+      "mode": "omni",
+      "durationSec": 10,
+      "quality": "720p",
+      "nativeAudio": true,
+      "expectedCredits": 90,
+      "subjects": [
+        "Mama",
+        "Eva"
+      ],
+      "scene": "ymca-gym",
+      "boundElements": [
+        {
+          "tag": "Mama",
+          "source": "library"
+        },
+        {
+          "tag": "Eva",
+          "source": "library"
+        },
+        {
+          "tag": "ymca-gym",
+          "source": "library"
+        }
+      ],
+      "prompt": "Mid-shot near the entrance of @ymca-gym, a small wooden front desk with a clipboard and pen on top. @Mama already standing at the desk holding a clipboard, pen poised over the signup sheet. @Eva already next to the desk on tiptoe, beaming up at her, hands clasped together with excited anticipation. Mama (looking up from the clipboard, gentle smile): \"Tuesdays and Thursdays. Two whole hours. Are you SURE about this, sweet pea?\" Eva (vibrating with joy, jumping in place once): \"BEST. DAY. EVER!\" Mama (shaking her head fondly, signing the sheet with a flourish): \"Okay. You're officially a soccer player.\"",
+      "negativePrompt": "duplicate character, twin, clone, two of the same, mirrored figure, second father, second mother, two Papa, two Mama, identical adults, extra people, third child, second sister, second sara, second eva, two eva, duplicate eva, mirror reflection, family members in the background, additional children, extra child in background, second blonde child, ghost figure, shadow of person, strangers, crowd, group of people, other faces, background people, friends, neighbors"
+    },
+    {
+      "episode": 10,
+      "beat": 4,
+      "clip": 4,
+      "title": "Eva's first big kick — ball flies high",
+      "mode": "omni",
+      "durationSec": 10,
+      "quality": "720p",
+      "nativeAudio": true,
+      "expectedCredits": 90,
+      "subjects": [
+        "Sara",
+        "Eva"
+      ],
+      "scene": "ymca-gym",
+      "boundElements": [
+        {
+          "tag": "Sara",
+          "source": "library"
+        },
+        {
+          "tag": "Eva",
+          "source": "library"
+        },
+        {
+          "tag": "ymca-gym",
+          "source": "library"
+        }
+      ],
+      "prompt": "Wide gym shot in @ymca-gym, the basketball hoop visible high on the back wall. @Eva already on the CENTER-RIGHT of the gym floor, foot drawn back behind a soccer ball, eyes locked, tongue out. @Sara already on the LEFT in the foreground, arms crossed, watching skeptically. Eva swings her leg forward and KICKS the ball — the ball flies HIGH up in the air, almost reaching the ceiling, both watch it arc upward. Eva (eyes huge, hands on her hips, very proud): \"SEE? EASY!\" Sara (still tracking the ball way up there, deadpan): \"...that's the basketball hoop you just hit.\" The ball drops back down and bounces.",
+      "negativePrompt": "duplicate character, twin, clone, two of the same, mirrored figure, second father, second mother, two Papa, two Mama, identical adults, extra people, third child, second sister, second sara, second eva, two eva, duplicate eva, mirror reflection, family members in the background, additional children, extra child in background, second blonde child, ghost figure, shadow of person, strangers, crowd, group of people, other faces, background people, friends, neighbors"
+    },
+    {
+      "episode": 10,
+      "beat": 6,
+      "clip": 5,
+      "title": "Driveway packing — Sara and Eva swap items",
+      "mode": "omni",
+      "durationSec": 10,
+      "quality": "720p",
+      "nativeAudio": true,
+      "expectedCredits": 90,
+      "subjects": [
+        "Mama",
+        "Sara",
+        "Eva"
+      ],
+      "scene": "driveway",
+      "boundElements": [
+        {
+          "tag": "Mama",
+          "source": "library"
+        },
+        {
+          "tag": "Sara",
+          "source": "library"
+        },
+        {
+          "tag": "Eva",
+          "source": "library"
+        },
+        {
+          "tag": "driveway",
+          "source": "library"
+        },
+        {
+          "tag": "jeep-wrangler",
+          "source": "library"
+        }
+      ],
+      "prompt": "Mid-wide shot on @driveway, sunny morning. The black @jeep-wrangler is already parked with the rear tailgate down, license plate reading 'SARA AND EVA' visible on the rear bumper. @Mama already at the open tailgate of the Jeep, lifting a small blue cooler into the cargo area. @Sara already standing at the rear driver-side door, clutching a white-and-black soccer ball with both hands, proud. @Eva already next to her, holding a pink tennis racket up like a trophy, a tiny smirk on her face. Mama (lifting the cooler in, glancing at the kids): \"Got snacks, sunscreen, and a road map. Anyone seen the GPS?\" Sara (raising the soccer ball): \"I got this for my sister!\" Eva (raising the tennis racket): \"And I'M bringing this... just in case soccer's NOT easy.\" Sara (smug): \"I KNEW you'd say that.\"",
+      "negativePrompt": "duplicate character, twin, clone, two of the same, mirrored figure, second father, second mother, two Papa, two Mama, identical adults, extra people, third child, second sister, second sara, second eva, two eva, duplicate eva, mirror reflection, family members in the background, additional children, extra child in background, second blonde child, ghost figure, shadow of person, strangers, crowd, group of people, other faces, background people, friends, neighbors"
+    },
+    {
+      "episode": 10,
+      "beat": 7,
+      "clip": 6,
+      "title": "Pulling out for the magic forest — Jeep cabin chatter",
+      "mode": "omni",
+      "durationSec": 10,
+      "quality": "720p",
+      "nativeAudio": true,
+      "expectedCredits": 90,
+      "subjects": [
+        "Mama",
+        "Sara",
+        "Eva"
+      ],
+      "scene": "jeep-interior",
+      "boundElements": [
+        {
+          "tag": "Mama",
+          "source": "library"
+        },
+        {
+          "tag": "Sara",
+          "source": "library"
+        },
+        {
+          "tag": "Eva",
+          "source": "library"
+        },
+        {
+          "tag": "jeep-interior",
+          "source": "library"
+        }
+      ],
+      "prompt": "Over-the-shoulder shot inside @jeep-interior — view from the back-row footwell looking forward through the windshield. @Mama already in the driver seat (LEFT-FRONT), both hands on the steering wheel, glancing in the rearview mirror with a warm smile. @Sara already buckled in the rear right seat, leaning forward eagerly, hands gripping the seatbelt. @Eva already buckled in the rear left seat next to her sister, bouncing in her booster, knees tucked. Mama (glancing in the rearview mirror): \"Okay! Magic Forest, here we come!\" Sara (excited, eyes huge): \"Will there be REAL magic creatures?\" Eva (bouncing harder): \"Hide-and-seek MAGIC creatures! That's the BEST kind!\" Mama (laughing softly): \"Eyes on the trees, ladies.\" The Jeep rolls forward and out of the driveway.",
+      "negativePrompt": "duplicate character, twin, clone, two of the same, mirrored figure, second father, second mother, two Papa, two Mama, identical adults, extra people, third child, second sister, second sara, second eva, two eva, duplicate eva, mirror reflection, family members in the background, additional children, extra child in background, second blonde child, ghost figure, shadow of person, strangers, crowd, group of people, other faces, background people, friends, neighbors"
+    },
+    {
+      "episode": 10,
+      "beat": 8,
+      "clip": 7,
+      "title": "Wawa stop — Mama coffee, kids snacks",
+      "mode": "omni",
+      "durationSec": 10,
+      "quality": "720p",
+      "nativeAudio": true,
+      "expectedCredits": 90,
+      "subjects": [
+        "Mama",
+        "Sara",
+        "Eva"
+      ],
+      "scene": "wawa-interior",
+      "boundElements": [
+        {
+          "tag": "Mama",
+          "source": "library"
+        },
+        {
+          "tag": "Sara",
+          "source": "library"
+        },
+        {
+          "tag": "Eva",
+          "source": "library"
+        },
+        {
+          "tag": "wawa-interior",
+          "source": "library"
+        }
+      ],
+      "prompt": "Wide split shot inside @wawa-interior — colorful snack-and-drink wall lined with refrigerated cases on the RIGHT, coffee bar with a row of decanters and a stainless milk dispenser on the LEFT. @Mama already at the coffee bar on the LEFT, holding a steaming paper cup with both hands, eyes closed in pure bliss as she takes the first sip. @Sara already in the FOREGROUND-RIGHT in front of the snack wall, pointing up at a row of fruit cups. @Eva already next to her sister, pointing at a tall purple shake in the cooler. Mama (eyes still closed, deep happy sigh): \"Mmmm. ROAD coffee.\" Sara (pointing): \"Mango cup.\" Eva (pointing harder, wiggling): \"Bluebery shake!\" Mama (eyes opening): \"Get whatever you want, adventurers — long drive ahead.\"",
+      "negativePrompt": "duplicate character, twin, clone, two of the same, mirrored figure, second father, second mother, two Papa, two Mama, identical adults, extra people, third child, second sister, second sara, second eva, two eva, duplicate eva, mirror reflection, family members in the background, additional children, extra child in background, second blonde child, ghost figure, shadow of person, strangers, crowd, group of people, other faces, background people, friends, neighbors"
+    },
+    {
+      "episode": 10,
+      "beat": 9,
+      "clip": 8,
+      "title": "Mango cup + 'YAMMY BLUBERY SHAKE!'",
+      "mode": "omni",
+      "durationSec": 10,
+      "quality": "720p",
+      "nativeAudio": true,
+      "expectedCredits": 90,
+      "subjects": [
+        "Sara",
+        "Eva"
+      ],
+      "scene": "wawa-interior",
+      "boundElements": [
+        {
+          "tag": "Sara",
+          "source": "library"
+        },
+        {
+          "tag": "Eva",
+          "source": "library"
+        },
+        {
+          "tag": "wawa-interior",
+          "source": "library"
+        },
+        {
+          "tag": "wawa-snacks",
+          "source": "library"
+        }
+      ],
+      "prompt": "Tight close-up at the front counter of @wawa-interior, blurred convenience-store aisle behind. @Sara already on the LEFT holding a clear plastic mango cup with diced golden mango pieces, a small wooden fork sticking out the top. @Eva already on the RIGHT holding a tall purple plastic blueberry shake cup with whipped cream piled on top and a wide blue straw, both hands wrapped around it like a trophy. The @wawa-snacks props are clearly visible in their hands. Eva (chest puffed huge, lifting the shake cup high above her head): \"YAMMY BLUBERY SHAKE!\" Sara (gentle correction, half-laughing): \"It's YUM-my BLUE-berry, silly.\" Eva (lowering the cup to take a HUGE slurp through the straw, cheeks puffing): \"Blubery.\" Sara (rolls eyes affectionately, then pokes her mango cup with the fork).",
+      "negativePrompt": "duplicate character, twin, clone, two of the same, mirrored figure, second father, second mother, two Papa, two Mama, identical adults, extra people, third child, second sister, second sara, second eva, two eva, duplicate eva, mirror reflection, family members in the background, additional children, extra child in background, second blonde child, ghost figure, shadow of person, strangers, crowd, group of people, other faces, background people, friends, neighbors"
+    },
+    {
+      "episode": 10,
+      "beat": 10,
+      "clip": 9,
+      "title": "Entering the magic forest — sandy road and tall pines",
+      "mode": "omni",
+      "durationSec": 10,
+      "quality": "720p",
+      "nativeAudio": true,
+      "expectedCredits": 90,
+      "subjects": [
+        "Mama",
+        "Sara",
+        "Eva"
+      ],
+      "scene": "magic-forest-sandy",
+      "boundElements": [
+        {
+          "tag": "Mama",
+          "source": "library"
+        },
+        {
+          "tag": "Sara",
+          "source": "library"
+        },
+        {
+          "tag": "Eva",
+          "source": "library"
+        },
+        {
+          "tag": "jeep-wrangler",
+          "source": "library"
+        },
+        {
+          "tag": "magic-forest-sandy",
+          "source": "library"
+        }
+      ],
+      "prompt": "Wide cinematic tracking shot — exterior view of the black @jeep-wrangler already mid-frame, rolling slowly along a sandy pine-forest road in @magic-forest-sandy, license plate reading 'SARA AND EVA' visible on the rear bumper. Towering pine trees on both sides, dappled golden sunlight streaming through the canopy. Through the open windows: @Mama at the wheel small in frame, @Sara visible in the right rear window leaning forward in awe, @Eva visible in the left rear window with both hands pressed against the glass, mouth open in wonder. The kids' voices float out the windows. Eva (faintly, through the open window): \"WOW look at all the TREES!\" Sara (leaning further forward): \"Sandy ground! Like a beach in the woods!\" Mama (calling back, warm): \"This place is MAGICAL, isn't it?\"",
+      "negativePrompt": "duplicate character, twin, clone, two of the same, mirrored figure, second father, second mother, two Papa, two Mama, identical adults, extra people, third child, second sister, second sara, second eva, two eva, duplicate eva, mirror reflection, family members in the background, additional children, extra child in background, second blonde child, ghost figure, shadow of person, strangers, crowd, group of people, other faces, background people, friends, neighbors, hikers, joggers, other vehicles, oncoming traffic"
+    },
+    {
+      "episode": 10,
+      "beat": 11,
+      "clip": 10,
+      "title": "The pink creature tree — Sara points",
+      "mode": "omni",
+      "durationSec": 10,
+      "quality": "720p",
+      "nativeAudio": true,
+      "expectedCredits": 90,
+      "subjects": [
+        "Sara",
+        "Eva"
+      ],
+      "scene": "pink-creature-tree",
+      "boundElements": [
+        {
+          "tag": "Sara",
+          "source": "library"
+        },
+        {
+          "tag": "Eva",
+          "source": "library"
+        },
+        {
+          "tag": "pink-creature-tree",
+          "source": "library"
+        },
+        {
+          "tag": "magic-forest-sandy",
+          "source": "library"
+        }
+      ],
+      "prompt": "Mid-shot from the LEFT side of a black Jeep already stopped in @magic-forest-sandy. @Sara already leaning out the rear right passenger window, eyes wide, arm extended pointing past the camera. @Eva already squashed in next to her at the same window, mouth a perfect 'O', both hands cupped around her mouth in awed silence. THROUGH the window perspective: a tall pine tree in the middle distance with a tall PINK-painted hollow opening in its trunk — the @pink-creature-tree, glowing soft pink from inside, a tiny doorway-shape hollow at its base. Sara (urgent whisper, pointing): \"MAMA, LOOK! A magic creature lives in there!\" Eva (cupping her mouth, hushed whisper): \"Maybe they're... HIDING from us!\" Sara (whispering back): \"Don't scare them...\"",
+      "negativePrompt": "duplicate character, twin, clone, two of the same, mirrored figure, second father, second mother, two Papa, two Mama, identical adults, extra people, third child, second sister, second sara, second eva, two eva, duplicate eva, mirror reflection, family members in the background, additional children, extra child in background, second blonde child, ghost figure, shadow of person, strangers, crowd, group of people, other faces, background people, friends, neighbors, hikers, other people in the woods"
+    },
+    {
+      "episode": 10,
+      "beat": 12,
+      "clip": 11,
+      "title": "Family forest selfie (4 chars, tight close-up framing)",
+      "mode": "omni",
+      "durationSec": 10,
+      "quality": "720p",
+      "nativeAudio": true,
+      "expectedCredits": 90,
+      "subjects": [
+        "Mama",
+        "Papa",
+        "Sara",
+        "Eva"
+      ],
+      "scene": "magic-forest-sandy",
+      "boundElements": [
+        {
+          "tag": "Mama",
+          "source": "library"
+        },
+        {
+          "tag": "Papa",
+          "source": "library"
+        },
+        {
+          "tag": "Sara",
+          "source": "library"
+        },
+        {
+          "tag": "Eva",
+          "source": "library"
+        },
+        {
+          "tag": "magic-forest-sandy",
+          "source": "library"
+        },
+        {
+          "tag": "jeep-wrangler",
+          "source": "library"
+        }
+      ],
+      "prompt": "Tight selfie-camera close-up — extreme close framing where 4 faces fill almost the entire frame and there is essentially no background space visible. @Papa holds the phone selfie-style at arm's length, his face fills the LOWER-RIGHT QUADRANT closest to the camera lens, big toothy grin. @Mama's face is squished in next to his on the LOWER-LEFT, beaming. @Sara's face is squished in above and between them, her curly blonde hair fluffing into frame. @Eva's face is in the UPPER-RIGHT corner, tongue stuck out, eyes squeezed shut in laughter. Behind the four squished faces, just barely visible at the very back edges of the frame: the black @jeep-wrangler with its license plate clearly readable as 'SARA AND EVA', and behind that a hint of @magic-forest-sandy — pine trunks. The four heads are pressed so tightly together they leave no empty space anywhere in the frame. Papa (holding the phone, grinning huge): \"MAGIC FOREST FAMILY SELFIE!\" Mama: \"Get the trees in!\" Sara (squishing in tighter): \"Smile EVERYONE!\" Eva (huge silly grin, tongue out): \"BUUUUUUUUUR!\"",
+      "negativePrompt": "duplicate character, twin, clone, two of the same, mirrored figure, second father, second mother, two Papa, two Mama, identical adults, extra people, fifth person, fifth face, third child, second sister, second sara, second eva, two eva, duplicate eva, mirror reflection, family members in the background, additional children, extra child in background, second blonde child, ghost figure, shadow of person, strangers behind them, crowd, group of people, other faces, background people, friends, neighbors, photographer in frame, hand of a fifth person, extra arm, extra hands, partial extra face at edge of frame"
+    },
+    {
+      "episode": 10,
+      "beat": 13,
+      "clip": 12,
+      "title": "Bumpy wave road + strange noises",
+      "mode": "omni",
+      "durationSec": 10,
+      "quality": "720p",
+      "nativeAudio": true,
+      "expectedCredits": 90,
+      "subjects": [
+        "Mama",
+        "Sara",
+        "Eva"
+      ],
+      "scene": "jeep-interior",
+      "boundElements": [
+        {
+          "tag": "Mama",
+          "source": "library"
+        },
+        {
+          "tag": "Sara",
+          "source": "library"
+        },
+        {
+          "tag": "Eva",
+          "source": "library"
+        },
+        {
+          "tag": "jeep-interior",
+          "source": "library"
+        },
+        {
+          "tag": "magic-forest-sandy",
+          "source": "library"
+        }
+      ],
+      "prompt": "Over-the-shoulder shot inside @jeep-interior — view from between the front seats looking back at the kids. Through the side windows: blurred pine trunks and dappled forest light of @magic-forest-sandy whipping by. The whole Jeep cabin visibly ROCKS side-to-side as the Jeep crosses a bumpy stretch of sandy ruts. @Mama already in the driver seat (visible at left edge), gripping the steering wheel with a delighted laugh. @Eva already in the rear left, hand cupped to her ear, eyes huge. @Sara already in the rear right, gripping her seatbelt, hair bouncing with each bump. Eva (wide-eyed, hand at her ear, urgent whisper): \"...did you HEAR that?!\" Sara (eyes huge): \"It sounded like... GIGGLES!\" Mama (gripping the wheel, smiling huge): \"Hold on tight! The road is WAVY!\" The Jeep rocks side-to-side dramatically, kids bouncing happily in their seats.",
+      "negativePrompt": "duplicate character, twin, clone, two of the same, mirrored figure, second father, second mother, two Papa, two Mama, identical adults, extra people, third child, second sister, second sara, second eva, two eva, duplicate eva, mirror reflection, family members in the background, additional children, extra child in background, second blonde child, ghost figure, shadow of person, strangers, crowd, group of people, other faces, background people, friends, neighbors, third row passenger"
+    },
+    {
+      "episode": 10,
+      "beat": 15,
+      "clip": 13,
+      "title": "LOST — Mama checks her phone",
+      "mode": "omni",
+      "durationSec": 10,
+      "quality": "720p",
+      "nativeAudio": true,
+      "expectedCredits": 90,
+      "subjects": [
+        "Mama"
+      ],
+      "scene": "jeep-interior",
+      "boundElements": [
+        {
+          "tag": "Mama",
+          "source": "library"
+        },
+        {
+          "tag": "jeep-interior",
+          "source": "library"
+        },
+        {
+          "tag": "magic-forest-sandy",
+          "source": "library"
+        }
+      ],
+      "prompt": "Tight close-up profile inside @jeep-interior — the Jeep is already stopped on a sandy fork in the road. @Mama already in the driver seat alone, staring down at her phone screen, brow furrowed. The phone screen visible in her hand shows zero signal bars and a spinning loading icon. Through the windshield ahead: @magic-forest-sandy stretches out in two directions, identical-looking pine trunks vanishing into the distance — no clear right answer. Mama (poking at the phone screen, one eyebrow raised): \"...no service? In the MIDDLE of nowhere?\" (a small pause, she looks up at the forking road through the windshield, then back at the phone) Mama (quiet, mostly to herself, with a wry smile): \"...okay. We're a little LOST. Don't tell the kids. Yet.\"",
+      "negativePrompt": "duplicate character, twin, clone, two of the same, mirrored figure, second father, second mother, two Papa, two Mama, identical adults, extra people, child, kids, sister, sara, eva, mirror reflection, family members in the background, additional children, ghost figure, shadow of person, strangers, crowd, group of people, other faces, background people, friends, neighbors, passenger, second adult"
+    },
+    {
+      "episode": 10,
+      "beat": 16,
+      "clip": 14,
+      "title": "Girls on the Jeep roof — scanning the forest",
+      "mode": "omni",
+      "durationSec": 10,
+      "quality": "720p",
+      "nativeAudio": true,
+      "expectedCredits": 90,
+      "subjects": [
+        "Sara",
+        "Eva"
+      ],
+      "scene": "magic-forest-sandy",
+      "boundElements": [
+        {
+          "tag": "Sara",
+          "source": "library"
+        },
+        {
+          "tag": "Eva",
+          "source": "library"
+        },
+        {
+          "tag": "jeep-wrangler",
+          "source": "library"
+        },
+        {
+          "tag": "magic-forest-sandy",
+          "source": "library"
+        }
+      ],
+      "prompt": "Wide low-angle shot — the black @jeep-wrangler already parked still in @magic-forest-sandy, license plate reading 'SARA AND EVA' visible on the rear bumper. @Sara already SITTING on the Jeep's hood near the windshield on the LEFT side, both hands cupped above her brow like a sea-captain scanning the horizon. @Eva already SITTING on the hood on the RIGHT side next to her sister, mirroring the hand-shielding pose. Towering pine trunks of the forest surround the Jeep. Sara (hand to forehead, looking off to the right): \"I see... TREES.\" Eva (hand to forehead, looking off to the left): \"I see... MORE trees.\" (pause) Sara (suddenly leaning forward): \"Wait... SOMETHING is moving in there!\" Eva freezes, leans forward too, eyes huge.",
+      "negativePrompt": "duplicate character, twin, clone, two of the same, mirrored figure, second father, second mother, two Papa, two Mama, identical adults, duplicate character, twin, clone, two of the same, mirrored figure, second sister, second sara, second eva, two eva, duplicate eva, mirror reflection, family members in the background, additional children, extra child in background, second blonde child, ghost figure, shadow of person, strangers, crowd, group of people, other faces, background people, friends, neighbors, hikers, third child on the jeep, person in the woods, adult in the background"
+    },
+    {
+      "episode": 10,
+      "beat": 17,
+      "clip": 15,
+      "title": "Spotting the ancient magic deer",
+      "mode": "omni",
+      "durationSec": 10,
+      "quality": "720p",
+      "nativeAudio": true,
+      "expectedCredits": 90,
+      "subjects": [
+        "magic-deer"
+      ],
+      "scene": "magic-forest-sandy",
+      "boundElements": [
+        {
+          "tag": "magic-deer",
+          "source": "library"
+        },
+        {
+          "tag": "magic-forest-sandy",
+          "source": "library"
+        }
+      ],
+      "prompt": "Wide reverse-POV shot — the camera is positioned looking from the Jeep's roof outward into @magic-forest-sandy. Tall pine trunks frame the shot. In the middle of the composition, between two large pine trunks at mid-distance, the @magic-deer stands stock-still — an ancient stag with oversized branching antlers, faintly glowing soft blue at the antler tips. The deer's head is turned directly toward camera, calm dark eyes meeting the lens. A few floating pollen motes drift in the dappled forest light. The deer is utterly still — only the ears flick once. NO HUMAN CHARACTERS in frame. From off-camera (a faint awed whisper, voice unattributed): \"...woah.\"",
+      "negativePrompt": "duplicate character, twin, clone, two of the same, mirrored figure, second father, second mother, two Papa, two Mama, identical adults, people, person, child, children, kids, adult, family, sister, sara, eva, mama, papa, hiker, hunter, ranger, stranger, crowd, second deer, two deer, multiple deer, extra animal, mirror reflection, ghost figure, shadow of person, doppelganger, twin"
+    },
+    {
+      "episode": 10,
+      "beat": 18,
+      "clip": 16,
+      "title": "Following the magic deer through the forest",
+      "mode": "omni",
+      "durationSec": 10,
+      "quality": "720p",
+      "nativeAudio": true,
+      "expectedCredits": 90,
+      "subjects": [
+        "magic-deer"
+      ],
+      "scene": "magic-forest-sandy",
+      "boundElements": [
+        {
+          "tag": "magic-deer",
+          "source": "library"
+        },
+        {
+          "tag": "jeep-wrangler",
+          "source": "library"
+        },
+        {
+          "tag": "magic-forest-sandy",
+          "source": "library"
+        }
+      ],
+      "prompt": "Wide tracking shot from BEHIND, low angle along the sandy forest road in @magic-forest-sandy. The @magic-deer in the FOREGROUND-CENTER of the frame, walking calmly forward with its head held high, antlers glowing faintly blue. Following at a respectful walking-pace distance, the black @jeep-wrangler crawls slowly along the same sandy track, license plate 'SARA AND EVA' visible on the rear bumper. Tall pine trunks line both sides of the road, dappled sunlight pooling on the sand. The deer occasionally glances back toward the Jeep then keeps walking, leading the way. NO HUMANS visible in frame — kids and Mama silhouettes barely glimpsable through the windshield far back. From inside the Jeep, faint off-camera voices: Eva (whispered awe): \"It's MAGIC.\" Sara (whispered): \"It KNOWS the way out.\"",
+      "negativePrompt": "duplicate character, twin, clone, two of the same, mirrored figure, second father, second mother, two Papa, two Mama, identical adults, people in foreground, child outside vehicle, adult outside vehicle, kids on the road, hiker, hunter, ranger, second deer, two deer, multiple deer, mirror reflection of deer, mama mama, two mama, two papa, identical adults, extra people, family members in the background, ghost figure, shadow of person, strangers, crowd, group of people, doppelganger, twin"
+    },
+    {
+      "episode": 10,
+      "beat": 19,
+      "clip": 17,
+      "title": "Pond + fish — the deer points the way out",
+      "mode": "omni",
+      "durationSec": 10,
+      "quality": "720p",
+      "nativeAudio": true,
+      "expectedCredits": 90,
+      "subjects": [
+        "magic-deer"
+      ],
+      "scene": "forest-pond",
+      "boundElements": [
+        {
+          "tag": "forest-pond",
+          "source": "library"
+        },
+        {
+          "tag": "magic-deer",
+          "source": "library"
+        }
+      ],
+      "prompt": "Wide hero shot at the edge of @forest-pond — a calm woodland pond with mossy banks, ripples gently spreading across the still water. The @magic-deer stands on the LEFT bank, head bowed gracefully toward the water as if drinking, antlers glowing faintly blue. In the water itself: a clean line of small silver fish swim from foreground toward the far bank in clear formation, like an arrow pointing the way DOWNSTREAM out of the woods. Soft golden light filters through the canopy, glinting on the water. NO HUMAN CHARACTERS in frame. The deer lifts its head, looks once toward camera, then dips it back to the water. The fish keep moving. From off-camera, faint kid voices in awe: Sara (off-camera whisper): \"...the FISH are showing us the way.\" Eva (off-camera whisper): \"FOLLOW the fish!\"",
+      "negativePrompt": "duplicate character, twin, clone, two of the same, mirrored figure, second father, second mother, two Papa, two Mama, identical adults, people, person, child, children, kids, adult, family, sister, sara, eva, mama, papa, hiker, hunter, ranger, stranger, crowd, second deer, two deer, multiple deer, extra animal, mirror reflection of deer, ghost figure, shadow of person, doppelganger, twin, swimmer, kayaker, boat, paddler"
+    },
+    {
+      "episode": 10,
+      "beat": 20,
+      "clip": 18,
+      "title": "Weber drive-in arrival",
+      "mode": "omni",
+      "durationSec": 10,
+      "quality": "720p",
+      "nativeAudio": true,
+      "expectedCredits": 90,
+      "subjects": [
+        "jeep-wrangler"
+      ],
+      "scene": "weber-drive-in",
+      "boundElements": [
+        {
+          "tag": "jeep-wrangler",
+          "source": "library"
+        },
+        {
+          "tag": "weber-drive-in",
+          "source": "library"
+        }
+      ],
+      "prompt": "Wide drone-style establishing shot from above and to the side. The black @jeep-wrangler already pulled forward into a parking slot at @weber-drive-in — an orange wood-paneled walk-up burger storefront with white pillars, a low awning, and a clearly readable 'DRIVE-IN' sign in vintage neon-style block letters above the order counter. The Jeep's license plate 'SARA AND EVA' is clearly visible on the rear bumper. Bright sunny afternoon, blue sky with a few cotton clouds, asphalt parking lot with painted parking-line stripes. NO HUMAN CHARACTERS in frame yet — just the Jeep parked at the drive-in. From inside the Jeep, faint off-camera kid voice: Eva (excited, off-camera, almost yelling): \"FOOD! REAL FOOD!\" Sara (off-camera): \"It SMELLS like burgers!\" The Jeep's engine cuts out.",
+      "negativePrompt": "duplicate character, twin, clone, two of the same, mirrored figure, second father, second mother, two Papa, two Mama, identical adults, people, person, child, children, kids, adult, family, sister, sara, eva, mama, papa, customer, employee, carhop yet, stranger, crowd, second jeep, two jeeps, identical vehicles, mirror reflection of jeep, ghost figure, shadow of person, other parked cars filled with people, oncoming traffic, drive-thru queue"
+    },
+    {
+      "episode": 10,
+      "beat": 22,
+      "clip": 19,
+      "title": "Roller-skate carhop delivers the tray",
+      "mode": "omni",
+      "durationSec": 10,
+      "quality": "720p",
+      "nativeAudio": true,
+      "expectedCredits": 90,
+      "subjects": [
+        "Sara",
+        "Eva"
+      ],
+      "scene": "weber-drive-in",
+      "boundElements": [
+        {
+          "tag": "Sara",
+          "source": "library"
+        },
+        {
+          "tag": "Eva",
+          "source": "library"
+        },
+        {
+          "tag": "weber-drive-in",
+          "source": "library"
+        },
+        {
+          "tag": "weber-tray",
+          "source": "library"
+        }
+      ],
+      "prompt": "Mid-shot from outside the Jeep's rear-passenger window. @Sara already inside the Jeep at the right-rear window, hands pressed flat against the glass, wide huge smile. @Eva already inside next to her sister at the same window, mouth a perfect 'O' of excitement. A young teen carhop (a single anonymous teenager wearing a paper hat, a striped vintage shirt, and white roller skates — NOT a member of the family, generic skater carhop) glides up on roller skates from the right side, balancing the @weber-tray with both hands and clipping it onto the open Jeep window frame in front of the kids. The tray holds two tall milkshakes (one strawberry pink, one chocolate brown), two paper-wrapped burgers, and a paper sleeve of golden fries. The orange-paneled @weber-drive-in storefront is in the background. Sara (huge eyes, leaning out): \"BURGERS in the CAR?!\" Eva (clutching her own face with both hands): \"BEST. DAY. EVER!\" Carhop (cheery, brief): \"Two cheese, two shakes — enjoy!\" The carhop skates off-frame.",
+      "negativePrompt": "duplicate character, twin, clone, two carhops, second carhop, two of the same, mirrored figure, second father, second mother, two Papa, two Mama, identical adults, extra people, third child, second sister, second sara, second eva, two eva, duplicate eva, mirror reflection, family members in the background, additional children, extra child in background, second blonde child, ghost figure, shadow of person, strangers in background, crowd, group of people, other faces, friends, neighbors, customers in line, queue, second jeep"
+    },
+    {
+      "episode": 10,
+      "beat": 23,
+      "clip": 20,
+      "title": "CLIFFHANGER — Eva pivots to tennis tomorrow",
+      "mode": "omni",
+      "durationSec": 10,
+      "quality": "720p",
+      "nativeAudio": true,
+      "expectedCredits": 90,
+      "subjects": [
+        "Mama",
+        "Sara",
+        "Eva"
+      ],
+      "scene": "jeep-interior",
+      "boundElements": [
+        {
+          "tag": "Mama",
+          "source": "library"
+        },
+        {
+          "tag": "Sara",
+          "source": "library"
+        },
+        {
+          "tag": "Eva",
+          "source": "library"
+        },
+        {
+          "tag": "jeep-interior",
+          "source": "library"
+        },
+        {
+          "tag": "weber-tray",
+          "source": "library"
+        }
+      ],
+      "prompt": "Mid-shot inside @jeep-interior, golden afternoon sunlight through the windows. @Mama already in the driver seat (LEFT-FRONT) holding a paper-wrapped burger to her mouth, taking a bite, eyes closed in bliss. @Sara already in the rear right seat, sipping a tall pink strawberry milkshake through a wide blue straw, cheeks puffed. @Eva already in the rear left seat, mid-bite into a smaller burger, ketchup smudged on her cheek. The @weber-tray is clipped to the driver's side window frame holding the rest of the food. Eva (mouth full, muffled, ketchup on her cheek): \"...so... soccer practice TOMORROW?\" Sara (lowering her shake, smug smirk): \"YEP. And we're bringing TENNIS rackets too — just in case!\" Mama (mid-chew, looking back in the mirror): \"Or maybe pickleball next week?\" Eva (mouth wide open, burger forgotten): \"WHAT IS PICKLEBALL?!\" Sara cracks up laughing.",
+      "negativePrompt": "duplicate character, twin, clone, two of the same, mirrored figure, second father, second mother, two Papa, two Mama, identical adults, extra people, third child, second sister, second sara, second eva, two eva, duplicate eva, mirror reflection, family members in the background, additional children, extra child in background, second blonde child, ghost figure, shadow of person, strangers, crowd, group of people, other faces, background people, friends, neighbors, third row passenger, papa in this clip"
+    }
+  ],
+  "musicVideos": [
+    {
+      "episode": 10,
+      "beat": "music-video-A",
+      "clip": "A",
+      "title": "MUSIC VIDEO RENDER A — Sara+Eva soccer-fever duo dance",
+      "mode": "omni",
+      "durationSec": 10,
+      "quality": "720p",
+      "nativeAudio": true,
+      "expectedCredits": 90,
+      "subjects": [
+        "Sara",
+        "Eva"
+      ],
+      "scene": "(designed studio backdrop)",
+      "boundElements": [
+        {
+          "tag": "Sara",
+          "source": "library"
+        },
+        {
+          "tag": "Eva",
+          "source": "library"
+        }
+      ],
+      "reuseAsset": true,
+      "reuseAssetNote": "ONE 10s render, paired with Suno song 'Kick the Ball.mp3' via loopVideoWithSong.mjs to fill the 60s music block.",
+      "musicVideoBlock": true,
+      "loopExpansion": {
+        "iterations": 6,
+        "xfadeDuration": 0.3,
+        "outputDurationSec": 58
+      },
+      "usedUnderSongs": [
+        {
+          "song": "assets/music/Kick the Ball.mp3",
+          "blockDurationSec": 60,
+          "trimStart": 0,
+          "placementClipNumber": "4music"
+        }
+      ],
+      "prompt": "Wide front-facing music-video shot — soft pastel sky-blue/grass-green gradient backdrop with a HUGE stylized RAINBOW arching across the upper half of the frame and CONFETTI shaped like tiny soccer balls and white goal-net diamonds raining continuously down. NO scene, NO room, NO furniture, NO logos, NO real text. @Sara on the LEFT and @Eva on the RIGHT stand side-by-side, grinning huge, bopping in rhythm. Sara mimes a small soccer-kick with her right foot in the air on beat 1. Eva mimes a small soccer-kick with her left foot on beat 2. Sara claps over her head. Eva claps over her head. Sara pumps her fist in the air. Eva pumps her fist in the air. Sara spins once on the spot. Eva spins once on the spot. Both return to start position grinning. Movements are RHYTHMIC and LOOPABLE — clean cycle: kick → kick → clap → clap → fist → fist → spin → spin → return. Camera locked, head-on, kid-eye-level. Bright cheerful party lighting. Sara and Eva hum and sing along generically — no specific dialogue, no lip-sync to any words. The shot is designed to LOOP cleanly: Sara and Eva return to the same side-by-side starting pose at second 0 and second 10. Rainbow arches and confetti continuously rain down. No audible speech, no music — silent render.",
+      "negativePrompt": "duplicate character, twin, clone, two of the same, mirrored figure, second father, second mother, two Papa, two Mama, identical adults, extra people, third child, second sister, second sara, second eva, two eva, duplicate eva, mirror reflection, family members, strangers, crowd, group of people, other faces, background people, friends, neighbors, specific dialogue words, lip-sync to specific syllables, audible music, audible singing words, real soccer field, real goal posts in background, real stadium"
+    },
+    {
+      "episode": 10,
+      "beat": "music-video-B",
+      "clip": "B",
+      "title": "MUSIC VIDEO RENDER B — Eva solo slow-mo wonder at the pink-creature tree",
+      "mode": "omni",
+      "durationSec": 10,
+      "quality": "720p",
+      "nativeAudio": true,
+      "expectedCredits": 90,
+      "subjects": [
+        "Eva"
+      ],
+      "scene": "(designed slow-mo backdrop with pink-creature-tree)",
+      "boundElements": [
+        {
+          "tag": "Eva",
+          "source": "library"
+        },
+        {
+          "tag": "pink-creature-tree",
+          "source": "library"
+        }
+      ],
+      "reuseAsset": true,
+      "reuseAssetNote": "ONE 10s slow-mo render, paired with Suno song 'Pink Tree Whisper.mp3' via loopVideoWithSong.mjs to fill the 60s music block.",
+      "musicVideoBlock": true,
+      "loopExpansion": {
+        "iterations": 6,
+        "xfadeDuration": 0.3,
+        "outputDurationSec": 58
+      },
+      "usedUnderSongs": [
+        {
+          "song": "assets/music/Pink Tree Whisper.mp3",
+          "blockDurationSec": 60,
+          "trimStart": 0,
+          "placementClipNumber": "12music"
+        }
+      ],
+      "prompt": "Wide slow-motion music-video shot — soft pastel-pink and lavender gradient backdrop, glowing pollen motes and floating fireflies drifting slowly through the frame. The @pink-creature-tree stands centered in the BACKGROUND — a tall pine trunk with a tall PINK-painted hollow opening in its trunk, the hollow glowing soft pink from inside. NO scene clutter, NO room, NO furniture. @Eva alone in the FOREGROUND-CENTER, arms slowly raised in wonder, head tilted back to look up at the tree, eyes huge and shining. Eva slowly turns in place, her dress and hair drifting in slow-motion as if underwater. Eva extends a single hand slowly toward the pink hollow, palm open in greeting. A single firefly slowly drifts down and lands on her fingertip. Eva smiles softly, eyes huge with awe. The shot is in heavy slow-motion throughout — every gesture takes 2-3x normal time. Movements are LOOPABLE — clean cycle: stand → arms up → turn → reach → firefly lands → smile → return to start. Camera locked, head-on, slow gentle dolly-in. Eva does NOT speak, does NOT sing, does NOT lip-sync — only quiet wonder, occasionally smiling. No audible speech, no music — silent slow-mo render.",
+      "negativePrompt": "duplicate character, twin, clone, two of the same, mirrored figure, second father, second mother, two Papa, two Mama, identical adults, extra people, third child, second sister, second sara, second eva, two eva, duplicate eva, mirror reflection, family members in the background, additional children, second child, sara in this scene, mama in this scene, papa in this scene, ghost figure, shadow of person, strangers, crowd, group of people, other faces, background people, real magic creature, fairy in frame, woodland sprite figure, lip-sync to specific syllables, audible music, audible singing words, fast motion, jump cuts"
+    },
+    {
+      "episode": 10,
+      "beat": "music-video-C",
+      "clip": "C",
+      "title": "MUSIC VIDEO RENDER C — Sara+Eva 50s sock-hop drive-in dance",
+      "mode": "omni",
+      "durationSec": 10,
+      "quality": "720p",
+      "nativeAudio": true,
+      "expectedCredits": 90,
+      "subjects": [
+        "Sara",
+        "Eva"
+      ],
+      "scene": "(designed 50s drive-in backdrop)",
+      "boundElements": [
+        {
+          "tag": "Sara",
+          "source": "library"
+        },
+        {
+          "tag": "Eva",
+          "source": "library"
+        }
+      ],
+      "reuseAsset": true,
+      "reuseAssetNote": "ONE 10s render, paired with Suno song 'Burgers in the Car.mp3' via loopVideoWithSong.mjs to fill the 90s music block.",
+      "musicVideoBlock": true,
+      "loopExpansion": {
+        "iterations": 9,
+        "xfadeDuration": 0.3,
+        "outputDurationSec": 88
+      },
+      "usedUnderSongs": [
+        {
+          "song": "assets/music/Burgers in the Car.mp3",
+          "blockDurationSec": 90,
+          "trimStart": 0,
+          "placementClipNumber": "20music"
+        }
+      ],
+      "prompt": "Wide front-facing music-video shot — designed retro 1950s drive-in diner backdrop. FLOOR: classic black-and-white checkerboard tile pattern. WALL: mid-century turquoise and cream gradient with tiny twinkling neon-style stars and a stylized neon 'DRIVE-IN' sign glowing in the upper-right. Two tall red-vinyl diner stools just visible at the edges (no chars on them). NO scene clutter, NO real logos, NO real text other than 'DRIVE-IN'. @Sara on the LEFT holds a tall pink strawberry milkshake with whipped cream. @Eva on the RIGHT holds a tall purple blueberry milkshake. Both grin huge. They perform a choreographed 50s sock-hop loop: bop right hip, bop left hip, twist (hands on hips, feet swivel right then left), milkshake-cheers (both raise their cups and clink them once at center), point fingers down to the floor on alternating beats, swing arms back and forth, return to start. Movements are RHYTHMIC and LOOPABLE — clean cycle: bop → twist → cheers → point → swing → return. Camera locked, head-on, kid-eye-level. Bright cheerful diner lighting with a touch of warm neon glow. Sara and Eva hum and sing along generically — no specific dialogue, no lip-sync to any words. The shot is designed to LOOP cleanly. No audible speech, no music — silent render.",
+      "negativePrompt": "duplicate character, twin, clone, two of the same, mirrored figure, second father, second mother, two Papa, two Mama, identical adults, extra people, third child, second sister, second sara, second eva, two eva, duplicate eva, mirror reflection, family members, strangers, crowd, group of people, other faces, background people, friends, neighbors, specific dialogue words, lip-sync to specific syllables, audible music, audible singing words, customers in booths, employees in frame, carhop in frame, real diner photo realism"
+    }
+  ]
+}

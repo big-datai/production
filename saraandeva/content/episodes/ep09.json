@@ -1,0 +1,1162 @@
+{
+  "episode": 9,
+  "title": "The Great Costco Coffee Quest!",
+  "logline": "Mama wakes up to an empty coffee bag. The family detours through the YMCA (Eva paints a heart-mug at the craft room) before reaching Costco — only to find the coffee aisle BARE. Mama freezes in horror; Eva asks what an empty shelf MEANS; Sara remembers the painted mug and rallies a cafe-rescue. Mama gets her coffee in Eva's hand-painted heart-mug, feeds her family at the food court (Eva feeds Papa ice cream), and they leave with a mountain of coffee. Tag: the kids quietly dump the home coffee canister into the trash to ensure another Costco trip next week. Setting up a recurring season arc.",
+  "formulaReference": "Bluey-style 'parent-quest-with-kid-rescue' family episode — empty-coffee hook → YMCA detour with payoff prop → Costco crisis → emotional pivot → kid-led heart solution → comedic reward → cliffhanger setup for next ep.",
+  "mode": "omni",
+  "durationTotal": "~6:51 (20 normal × 10s + 3 music-video blocks of 60+30+60s + intro 31s + outro 20s)",
+  "expectedCreditsTotal": 1980,
+  "expectedCreditsBreakdown": "20 normal clips × 90 cr = 1800 + 3 render specs (A,B,C) × 60 cr = 180 → 1980 cr base; +25% buffer ≈ 2475 cr realistic ceiling",
+  "newBoundElements": [
+    {
+      "tag": "ymca-gym",
+      "source": "library",
+      "asset": "assets/scenes/ymca_gym.png",
+      "purpose": "YMCA gym with treadmills/weights — beats 4, 6"
+    },
+    {
+      "tag": "ymca-craft-room",
+      "source": "library",
+      "asset": "assets/scenes/ymca_craft_room.png",
+      "purpose": "Sunny YMCA kid craft room — beat 5 (Eva paints the heart mug)"
+    },
+    {
+      "tag": "costco-entrance",
+      "source": "library",
+      "asset": "assets/scenes/costco_entrance.png",
+      "purpose": "Costco warehouse-cathedral entry shot — beats 8, 22"
+    },
+    {
+      "tag": "costco-aisle",
+      "source": "library",
+      "asset": "assets/scenes/costco_aisle.png",
+      "purpose": "Wide warehouse aisle for sample-gauntlet + empty-coffee-shelf — beats 9-15"
+    },
+    {
+      "tag": "costco-food-court",
+      "source": "library",
+      "asset": "assets/scenes/costco_food_court.png",
+      "purpose": "Costco food court tables + cafe counter — beats 16, 17, 19, 21"
+    },
+    {
+      "tag": "eva-heart-mug",
+      "source": "library",
+      "asset": "assets/scenes/eva_heart_mug.png",
+      "purpose": "Small white ceramic mug with hand-painted pink hearts — beats 5, 15, 16, 17"
+    },
+    {
+      "tag": "empty-coffee-bag",
+      "source": "library",
+      "asset": "assets/scenes/empty_coffee_bag.png",
+      "purpose": "Empty 'MAMA'S BREW' coffee bag — beat 1 (HOOK)"
+    }
+  ],
+  "scenes": [
+    "kitchen",
+    "ymca-gym",
+    "ymca-craft-room",
+    "tesla-interior",
+    "costco-entrance",
+    "costco-aisle",
+    "costco-food-court"
+  ],
+  "cast": [
+    "Sara",
+    "Eva",
+    "Mama",
+    "Papa"
+  ],
+  "reuse": {
+    "intro": {
+      "source": "season_01/intro/",
+      "clips": [
+        "intro_song.mp4"
+      ],
+      "totalDuration": "~31s",
+      "playOrder": "Theme song"
+    },
+    "outro": {
+      "source": "season_01/OUTRO/",
+      "clips": [
+        "17.mp4",
+        "18.mp4",
+        "0_song.mp4"
+      ],
+      "totalDuration": "~20s",
+      "note": "0_song.mp4 sorts last via parseInt-Infinity hack — keep (memory rule #23)"
+    }
+  },
+  "music": {
+    "policy": "ALL music is Suno — Kling renders dialogue + ambient ONLY. No music phrases inside any clip prompt (memory rule #24).",
+    "musicVideoBlocks": [
+      {
+        "blockId": "7music",
+        "song": "assets/music/Costco Day Out.mp3",
+        "trimStart": 0,
+        "blockDurationSec": 60,
+        "render": "A",
+        "renderSpec": "content/episodes/ep09/A.json",
+        "placement": "between clip 6 (YMCA exit) and clip 7 (Costco entrance) — Tesla cruise duo dance",
+        "mood": "Upbeat road-trip — both girls hyped about Costco"
+      },
+      {
+        "blockId": "16music",
+        "song": "assets/music/Mama Mug.mp3",
+        "trimStart": 0,
+        "blockDurationSec": 30,
+        "render": "B",
+        "renderSpec": "content/episodes/ep09/B.json",
+        "placement": "after clip 16 (delivery) — heart-line slow-mo of Mama sipping the special coffee in Eva's painted mug",
+        "mood": "Tender heart line — quiet, full-hearted"
+      },
+      {
+        "blockId": "20music",
+        "song": "assets/music/I Love Costco.mp3",
+        "trimStart": 0,
+        "blockDurationSec": 60,
+        "render": "C",
+        "renderSpec": "content/episodes/ep09/C.json",
+        "placement": "after clip 17 (food court eating) — duo party dance with food props celebrating the rescue",
+        "mood": "Upbeat celebration — kids' victory party"
+      }
+    ],
+    "renders": {
+      "A": "content/episodes/ep09/A.json — Sara+Eva duo, neutral pastel rainbow backdrop (REUSED FROM EP08 STYLE)",
+      "B": "content/episodes/ep09/B.json — Mama solo slow-mo, peach pastel backdrop, ep09-specific heart moment",
+      "C": "content/episodes/ep09/C.json — Sara+Eva duo with food-court icons backdrop, ep09-specific"
+    },
+    "mixRecipe": "[1:a]atrim=start=X:duration=N,asetpts=PTS-STARTPTS,volume=0.30[bg]; [0:a]volume=1.4[fg]; [fg][bg]amix=inputs=2:duration=first:dropout_transition=0[a]",
+    "loopRecipe": "node loopVideoWithSong.mjs <render>.mp4 <song>.mp3 <Nmusic>.mp4 --duration=N"
+  },
+  "arc": [
+    {
+      "beat": 1,
+      "name": "HOOK — empty coffee bag",
+      "purpose": "Mama discovers the bag is empty. Quest activated.",
+      "clips": [
+        1
+      ]
+    },
+    {
+      "beat": 2,
+      "name": "KIDS EXCITED",
+      "purpose": "Tonal contrast — kids are thrilled, Mama is dying.",
+      "clips": [
+        2
+      ]
+    },
+    {
+      "beat": 3,
+      "name": "PAPA — YMCA FIRST",
+      "purpose": "Obstacle. Papa enforces the family commitment.",
+      "clips": [
+        3
+      ]
+    },
+    {
+      "beat": 4,
+      "name": "YMCA GYM",
+      "purpose": "Mama suffering through her workout, watching the clock.",
+      "clips": [
+        4
+      ]
+    },
+    {
+      "beat": 5,
+      "name": "YMCA CRAFT — Chekhov's mug",
+      "purpose": "Eva paints the heart-mug. Sara helps. Setup payoff for beat 15+.",
+      "clips": [
+        5
+      ]
+    },
+    {
+      "beat": 6,
+      "name": "YMCA EXIT — Papa whisper",
+      "purpose": "Comedy — Mama is hollow. Papa drives.",
+      "clips": [
+        6
+      ]
+    },
+    {
+      "beat": 7,
+      "name": "🎵 MUSIC VIDEO 1 — Tesla cruise (60s)",
+      "purpose": "Render A under 'Costco Day Out' — duo dance high-energy.",
+      "clips": [
+        "A→7music"
+      ]
+    },
+    {
+      "beat": 8,
+      "name": "COSTCO ENTRANCE",
+      "purpose": "Reveal of the warehouse cathedral. Mama eyes lock on coffee aisle.",
+      "clips": [
+        7
+      ]
+    },
+    {
+      "beat": 9,
+      "name": "STANDOFF",
+      "purpose": "Kid priorities vs. Mama priority. Mama wins.",
+      "clips": [
+        8
+      ]
+    },
+    {
+      "beat": 10,
+      "name": "SAMPLE 1 — Eva spicy",
+      "purpose": "Physical comedy — Eva's red-face polite-suffering.",
+      "clips": [
+        9
+      ]
+    },
+    {
+      "beat": 11,
+      "name": "SAMPLE 2 — Sara repeat",
+      "purpose": "Running joke — Sara's 4th visit, sample lady glares.",
+      "clips": [
+        10
+      ]
+    },
+    {
+      "beat": 12,
+      "name": "PAPA SAMPLE GAFFE",
+      "purpose": "Adult chuckle — Papa takes someone else's sample.",
+      "clips": [
+        11
+      ]
+    },
+    {
+      "beat": 13,
+      "name": "EMPTY COFFEE SHELF — crisis",
+      "purpose": "The shelf is bare. Mama freezes. Crisis.",
+      "clips": [
+        12
+      ]
+    },
+    {
+      "beat": 14,
+      "name": "EVA'S QUESTION",
+      "purpose": "Heart hook — Eva asks the unanswerable question.",
+      "clips": [
+        13
+      ]
+    },
+    {
+      "beat": 15,
+      "name": "SARA'S PLAN — heart mug",
+      "purpose": "Payoff — Sara remembers the YMCA mug.",
+      "clips": [
+        14
+      ]
+    },
+    {
+      "beat": 16,
+      "name": "CAFE ORDER",
+      "purpose": "Comedy — kids order the BIGGEST coffee with EXTRA whip.",
+      "clips": [
+        15
+      ]
+    },
+    {
+      "beat": 17,
+      "name": "DELIVERY — Eva: 'I made the cup'",
+      "purpose": "Heart line — Eva delivers the painted mug.",
+      "clips": [
+        16
+      ]
+    },
+    {
+      "beat": 18,
+      "name": "🎵 MUSIC VIDEO 3 — Mama Mug heart slow-mo (30s)",
+      "purpose": "Render B under 'Mama Mug' — tender heart-line slow-mo.",
+      "clips": [
+        "B→16music"
+      ]
+    },
+    {
+      "beat": 19,
+      "name": "FOOD COURT EATING",
+      "purpose": "Reward — pizza/hot dog/ice cream chaos joy.",
+      "clips": [
+        17
+      ]
+    },
+    {
+      "beat": 20,
+      "name": "🎵 MUSIC VIDEO 2 — Food court party (60s)",
+      "purpose": "Render C under 'I Love Costco' — duo dance with food props.",
+      "clips": [
+        "C→20music"
+      ]
+    },
+    {
+      "beat": 21,
+      "name": "EVA FEEDS PAPA ICE CREAM",
+      "purpose": "Recreate the real photo — adorable.",
+      "clips": [
+        18
+      ]
+    },
+    {
+      "beat": 22,
+      "name": "EXIT — 'next week?'",
+      "purpose": "Echo + setup of recurring arc.",
+      "clips": [
+        19
+      ]
+    },
+    {
+      "beat": 23,
+      "name": "CLIFFHANGER — kids dump the coffee",
+      "purpose": "Setup ep10 — kids manipulating Mama's coffee supply.",
+      "clips": [
+        20
+      ]
+    },
+    {
+      "beat": 24,
+      "name": "OUTRO (reused)",
+      "purpose": "Subscribe pair from season_01/OUTRO/ — 17.mp4 → 18.mp4 → 0_song.mp4 last.",
+      "clips": [
+        "reused"
+      ]
+    }
+  ],
+  "rules": {
+    "maxBoundPerClip": 7,
+    "maxTagMentionsPerCharacter": 1,
+    "klingPromptMustNotContain": [
+      "music sting",
+      "music swell",
+      "tender swell",
+      "cheerful music",
+      "comedic music",
+      "playful music",
+      "heartfelt music",
+      "music cue",
+      "score swell",
+      "background music"
+    ],
+    "klingPromptMustNotContainReason": "All music is Suno-mixed in assemble (memory rule #24).",
+    "motionTowardForbidden": "No 'walks in/toward', 'approaches', 'moves to(ward)', 'heads to/in' — these spawn duplicates when another character is anchored. Use static placement only. (memory: lesson_kling_motion_verbs_duplicate.md, post-ep08)",
+    "negativePromptRequired": "duplicate character, twin, clone, two of the same, mirrored figure, second father, second mother, two Papa, two Mama, identical adults, extra people, third child, second sister, second sara, second eva, two eva, duplicate eva, mirror reflection",
+    "characterNamesInDialogue": "Drop the bound character's name from other characters' dialogue (rule from ep01 — speaking a bound name spawns an extra of that character)."
+  },
+  "clips": [
+    {
+      "episode": 9,
+      "beat": 1,
+      "clip": 1,
+      "title": "HOOK — empty coffee bag",
+      "mode": "omni",
+      "durationSec": 10,
+      "quality": "720p",
+      "nativeAudio": true,
+      "expectedCredits": 90,
+      "subjects": [
+        "Mama",
+        "Sara"
+      ],
+      "scene": "kitchen",
+      "boundElements": [
+        {
+          "tag": "Mama",
+          "source": "library"
+        },
+        {
+          "tag": "Sara",
+          "source": "library"
+        },
+        {
+          "tag": "kitchen",
+          "source": "library"
+        },
+        {
+          "tag": "empty-coffee-bag",
+          "source": "library"
+        }
+      ],
+      "prompt": "Tight shot in @kitchen, soft morning light from the window. @Mama on the LEFT stands at the counter holding @empty-coffee-bag upside down — a sad puff of coffee dust falls onto the granite. Mama's face freezes mid-yawn into wide-eyed silent horror. @Sara on the RIGHT sits at the kitchen island in pajamas, mid-bite of toast, sees the look. Sara (eyebrow raised, careful): \"...Mama? Are you okay?\" Mama (slow, voice cracking, eyes locked forward): \"We have to go.\" Sara (toast paused, alarmed): \"Where?\" Mama (whispered): \"...COSTCO.\"",
+      "negativePrompt": "duplicate character, twin, clone, two of the same, mirrored figure, second father, second mother, two Papa, two Mama, identical adults, extra people, third child, second sister, second sara, second eva, two eva, duplicate eva, mirror reflection, family members, strangers, crowd, group of people, other faces, background people, friends, neighbors"
+    },
+    {
+      "episode": 9,
+      "beat": 2,
+      "clip": 2,
+      "title": "KIDS EXCITED",
+      "mode": "omni",
+      "durationSec": 10,
+      "quality": "720p",
+      "nativeAudio": true,
+      "expectedCredits": 90,
+      "subjects": [
+        "Sara",
+        "Eva"
+      ],
+      "scene": "kitchen",
+      "boundElements": [
+        {
+          "tag": "Sara",
+          "source": "library"
+        },
+        {
+          "tag": "Eva",
+          "source": "library"
+        },
+        {
+          "tag": "kitchen",
+          "source": "library"
+        }
+      ],
+      "prompt": "Wide shot in @kitchen. @Sara on the LEFT spins around at the kitchen island, eyes lighting up. @Eva on the RIGHT pops up from behind the couch like a meerkat, blanket still on her head. Sara (gasping, hands to mouth): \"ICE CREAM?!\" Eva (shouting joyfully): \"FREE SAMPLES!\" Sara (already counting on her fingers): \"Vanilla AND strawberry?!\" Eva (jumping in place): \"I GET HOT DOG!\"",
+      "negativePrompt": "duplicate character, twin, clone, two of the same, mirrored figure, second father, second mother, two Papa, two Mama, identical adults, extra people, third child, second sister, second sara, second eva, two eva, duplicate eva, mirror reflection, family members, strangers, crowd, group of people, other faces, background people, friends, neighbors"
+    },
+    {
+      "episode": 9,
+      "beat": 3,
+      "clip": 3,
+      "title": "PAPA — YMCA FIRST",
+      "mode": "omni",
+      "durationSec": 10,
+      "quality": "720p",
+      "nativeAudio": true,
+      "expectedCredits": 90,
+      "subjects": [
+        "Papa",
+        "Mama"
+      ],
+      "scene": "kitchen",
+      "boundElements": [
+        {
+          "tag": "Papa",
+          "source": "library"
+        },
+        {
+          "tag": "Mama",
+          "source": "library"
+        },
+        {
+          "tag": "kitchen",
+          "source": "library"
+        }
+      ],
+      "prompt": "Medium shot in @kitchen. @Papa on the LEFT stands by the fridge holding a gym bag, smiling kindly but firm. @Mama on the RIGHT clutches the empty coffee bag like a lifeline, eye twitching. Papa (gentle, holding the bag up): \"Honey... we promised the YMCA first.\" Mama (eye twitch worsens): \"...how long is the workout.\" Papa: \"Forty-five minutes.\" Mama (deep breath, jaw tight): \"Fine. But we're not stopping for ANYTHING else.\"",
+      "negativePrompt": "duplicate character, twin, clone, two of the same, mirrored figure, second father, second mother, two Papa, two Mama, identical adults, extra people, third child, second sister, second sara, second eva, two eva, duplicate eva, mirror reflection, family members, strangers, crowd, group of people, other faces, background people, friends, neighbors"
+    },
+    {
+      "episode": 9,
+      "beat": 4,
+      "clip": 4,
+      "title": "YMCA GYM — Mama on treadmill",
+      "mode": "omni",
+      "durationSec": 10,
+      "quality": "720p",
+      "nativeAudio": true,
+      "expectedCredits": 90,
+      "subjects": [
+        "Mama"
+      ],
+      "scene": "ymca-gym",
+      "boundElements": [
+        {
+          "tag": "Mama",
+          "source": "library"
+        },
+        {
+          "tag": "ymca-gym",
+          "source": "library"
+        }
+      ],
+      "prompt": "Wide shot in @ymca-gym, fluorescent overhead lighting, rows of treadmills. @Mama in the CENTER runs on a treadmill in workout gear, ponytail bouncing, but her face is EXHAUSTED — eyes glazed, staring at the wall clock visible above the treadmill. The clock reads 9:47. Sweat drips. Mama (panting, talking to herself): \"Twelve minutes... twelve minutes... twelve minutes till coffee...\" Solo shot — only Mama in frame, no other gym members visible.",
+      "negativePrompt": "duplicate character, twin, clone, two of the same, mirrored figure, second father, second mother, two Papa, two Mama, identical adults, extra people, third child, second sister, second sara, second eva, two eva, duplicate eva, mirror reflection, family members, strangers, crowd, group of people, other faces, background people, friends, neighbors"
+    },
+    {
+      "episode": 9,
+      "beat": 5,
+      "clip": 5,
+      "title": "YMCA CRAFT — Eva paints heart mug",
+      "mode": "omni",
+      "durationSec": 10,
+      "quality": "720p",
+      "nativeAudio": true,
+      "expectedCredits": 90,
+      "subjects": [
+        "Eva",
+        "Sara"
+      ],
+      "scene": "ymca-craft-room",
+      "boundElements": [
+        {
+          "tag": "Eva",
+          "source": "library"
+        },
+        {
+          "tag": "Sara",
+          "source": "library"
+        },
+        {
+          "tag": "ymca-craft-room",
+          "source": "library"
+        },
+        {
+          "tag": "eva-heart-mug",
+          "source": "library"
+        }
+      ],
+      "prompt": "Wide shot in @ymca-craft-room, sunny crafting room with art on the walls. @Eva on the LEFT sits at a paint-splattered table holding @eva-heart-mug, painting tiny pink hearts onto the white ceramic with the tip of her tongue poking out in concentration. @Sara on the RIGHT sits beside her, gently steadying the mug. Sara (proud, soft): \"That one's for Mama, right?\" Eva (without looking up, dead serious): \"It has to be PERFECT. Mama drinks coffee out of it.\" Sara (smiling): \"She's gonna love it.\"",
+      "negativePrompt": "duplicate character, twin, clone, two of the same, mirrored figure, second father, second mother, two Papa, two Mama, identical adults, extra people, third child, second sister, second sara, second eva, two eva, duplicate eva, mirror reflection, family members, strangers, crowd, group of people, other faces, background people, friends, neighbors"
+    },
+    {
+      "episode": 9,
+      "beat": 6,
+      "clip": 6,
+      "title": "YMCA EXIT — Papa whispers",
+      "mode": "omni",
+      "durationSec": 10,
+      "quality": "720p",
+      "nativeAudio": true,
+      "expectedCredits": 90,
+      "subjects": [
+        "Mama",
+        "Papa"
+      ],
+      "scene": "ymca-gym",
+      "boundElements": [
+        {
+          "tag": "Mama",
+          "source": "library"
+        },
+        {
+          "tag": "Papa",
+          "source": "library"
+        },
+        {
+          "tag": "ymca-gym",
+          "source": "library"
+        }
+      ],
+      "prompt": "Medium shot in @ymca-gym entrance area. @Mama on the LEFT stands by the door looking HOLLOW-eyed, towel around her neck, hair frizzy. @Papa on the RIGHT stands right next to her, gym bag over his shoulder. Papa (low whisper, concerned): \"How long since your last cup?\" Mama (slow, distant, staring into space): \"Don't ask me that.\" Papa (carefully): \"...should I drive?\" Mama (deadly serious, finally looking at him): \"Yes.\"",
+      "negativePrompt": "duplicate character, twin, clone, two of the same, mirrored figure, second father, second mother, two Papa, two Mama, identical adults, extra people, third child, second sister, second sara, second eva, two eva, duplicate eva, mirror reflection, family members, strangers, crowd, group of people, other faces, background people, friends, neighbors"
+    },
+    {
+      "episode": 9,
+      "beat": 8,
+      "clip": 7,
+      "title": "COSTCO ENTRANCE — eyes lock on coffee",
+      "mode": "omni",
+      "durationSec": 10,
+      "quality": "720p",
+      "nativeAudio": true,
+      "expectedCredits": 90,
+      "subjects": [
+        "Mama",
+        "Papa",
+        "Sara",
+        "Eva"
+      ],
+      "scene": "costco-entrance",
+      "boundElements": [
+        {
+          "tag": "Mama",
+          "source": "library"
+        },
+        {
+          "tag": "Papa",
+          "source": "library"
+        },
+        {
+          "tag": "Sara",
+          "source": "library"
+        },
+        {
+          "tag": "Eva",
+          "source": "library"
+        },
+        {
+          "tag": "costco-entrance",
+          "source": "library"
+        }
+      ],
+      "prompt": "Wide reveal shot in @costco-entrance, the cathedral-warehouse, towering shelves stretching back, shopping carts lined up. @Papa on the LEFT pushes a cart, @Sara beside him excitedly bouncing, @Eva on the RIGHT clutching a small backpack to her chest, @Mama in the FOREGROUND just stepped through the doors and FROZEN — eyes laser-locked on the coffee aisle visible in the deep distance. Mama (whispered, intense): \"There. I see it.\" Sara (pointing the opposite direction): \"MAMA the food court is OVER THERE!\" Mama (without breaking gaze): \"I am aware.\"",
+      "negativePrompt": "duplicate character, twin, clone, two of the same, mirrored figure, second father, second mother, two Papa, two Mama, identical adults, extra people, third child, second sister, second sara, second eva, two eva, duplicate eva, mirror reflection, crowd of shoppers, multiple Costco staff, multiple sample-lady"
+    },
+    {
+      "episode": 9,
+      "beat": 9,
+      "clip": 8,
+      "title": "STANDOFF — competing priorities",
+      "mode": "omni",
+      "durationSec": 10,
+      "quality": "720p",
+      "nativeAudio": true,
+      "expectedCredits": 90,
+      "subjects": [
+        "Sara",
+        "Eva",
+        "Papa",
+        "Mama"
+      ],
+      "scene": "costco-aisle",
+      "boundElements": [
+        {
+          "tag": "Sara",
+          "source": "library"
+        },
+        {
+          "tag": "Eva",
+          "source": "library"
+        },
+        {
+          "tag": "Papa",
+          "source": "library"
+        },
+        {
+          "tag": "Mama",
+          "source": "library"
+        },
+        {
+          "tag": "costco-aisle",
+          "source": "library"
+        }
+      ],
+      "prompt": "Medium wide shot in @costco-aisle. @Sara on the LEFT clutches her hands together, big eyes. @Eva on the RIGHT is beside Sara mirroring the puppy face. @Papa in the BACKGROUND grins. @Mama in the FOREGROUND CENTER stands her ground, arms crossed, finger pointed firmly toward the coffee aisle. Sara (sweetly): \"Pleeease can we get ice cream FIRST?\" Eva (hopeful): \"And hot dog?!\" Papa (stage-whisper, conspiratorial): \"...pizza?\" Mama (zero patience): \"Coffee. FIRST. Then everything else.\" Eva (small disappointed): \"...okay.\"",
+      "negativePrompt": "duplicate character, twin, clone, two of the same, mirrored figure, second father, second mother, two Papa, two Mama, identical adults, extra people, third child, second sister, second sara, second eva, two eva, duplicate eva, mirror reflection, crowd of shoppers, multiple Costco staff, multiple sample-lady"
+    },
+    {
+      "episode": 9,
+      "beat": 10,
+      "clip": 9,
+      "title": "SAMPLE 1 — Eva spicy face",
+      "mode": "omni",
+      "durationSec": 10,
+      "quality": "720p",
+      "nativeAudio": true,
+      "expectedCredits": 90,
+      "subjects": [
+        "Eva"
+      ],
+      "scene": "costco-aisle",
+      "boundElements": [
+        {
+          "tag": "Eva",
+          "source": "library"
+        },
+        {
+          "tag": "costco-aisle",
+          "source": "library"
+        }
+      ],
+      "prompt": "Tight close-up in @costco-aisle on @Eva's face. She holds a tiny paper sample cup near her mouth, just took a bite. A beat. Her cheeks flush ENGINE RED, eyes water, nostrils flare, mouth pinched closed in polite forced-smile horror. Eva (squeaky strangled voice): \"...mmm. Yummy.\" Eva (small whimper): \"...water.\" Eva (one tear escaping): \"...so spicy.\" Solo shot — only Eva's face and shoulders visible, no other people, no other faces.",
+      "negativePrompt": "duplicate character, twin, clone, two of the same, mirrored figure, second father, second mother, two Papa, two Mama, identical adults, extra people, third child, second sister, second sara, second eva, two eva, duplicate eva, mirror reflection, family members, strangers, crowd, group of people, other faces, background people, friends, neighbors, crowd of shoppers, multiple Costco staff, multiple sample-lady"
+    },
+    {
+      "episode": 9,
+      "beat": 11,
+      "clip": 10,
+      "title": "SAMPLE 2 — Sara repeat offender",
+      "mode": "omni",
+      "durationSec": 10,
+      "quality": "720p",
+      "nativeAudio": true,
+      "expectedCredits": 90,
+      "subjects": [
+        "Sara"
+      ],
+      "scene": "costco-aisle",
+      "boundElements": [
+        {
+          "tag": "Sara",
+          "source": "library"
+        },
+        {
+          "tag": "costco-aisle",
+          "source": "library"
+        }
+      ],
+      "prompt": "Medium shot in @costco-aisle. @Sara on the CENTER stands at a sample station holding her FOURTH tiny paper cup, beaming, mid-chew of cheese. The sample lady's hand is visible at the edge of frame, mid-crossed-arms, eyes squinted (off-frame face). Sara (chewing, oblivious, delighted): \"Mmmmm! What kind is THIS one?\" Sara (hopeful, leaning in): \"...could I try ONE more?\" Sara (innocent): \"It's for my SISTER.\" Solo shot of Sara — no full face of the sample lady visible, only her crossed forearms.",
+      "negativePrompt": "duplicate character, twin, clone, two of the same, mirrored figure, second father, second mother, two Papa, two Mama, identical adults, extra people, third child, second sister, second sara, second eva, two eva, duplicate eva, mirror reflection, family members, strangers, crowd, group of people, other faces, background people, friends, neighbors, crowd of shoppers, multiple Costco staff, multiple sample-lady"
+    },
+    {
+      "episode": 9,
+      "beat": 12,
+      "clip": 11,
+      "title": "PAPA SAMPLE GAFFE",
+      "mode": "omni",
+      "durationSec": 10,
+      "quality": "720p",
+      "nativeAudio": true,
+      "expectedCredits": 90,
+      "subjects": [
+        "Papa"
+      ],
+      "scene": "costco-aisle",
+      "boundElements": [
+        {
+          "tag": "Papa",
+          "source": "library"
+        },
+        {
+          "tag": "costco-aisle",
+          "source": "library"
+        }
+      ],
+      "prompt": "Medium shot in @costco-aisle. @Papa on the CENTER stands by a sample station holding a tiny cup, mid-bite, smiling. Behind him, an unhappy older shopper's hand reaches into frame for the same sample tray (only the hand visible). Papa (chewing, oblivious): \"Mmm, this is GOOD.\" Papa (notices the hand, pretends not to): \"...oh.\" Papa (slowly stepping aside, total dad-deadpan to camera): \"I think that one was for someone else.\" Solo shot — only Papa's face and shoulders, no other faces visible.",
+      "negativePrompt": "duplicate character, twin, clone, two of the same, mirrored figure, second father, second mother, two Papa, two Mama, identical adults, extra people, third child, second sister, second sara, second eva, two eva, duplicate eva, mirror reflection, family members, strangers, crowd, group of people, other faces, background people, friends, neighbors, crowd of shoppers, multiple Costco staff, multiple sample-lady"
+    },
+    {
+      "episode": 9,
+      "beat": 13,
+      "clip": 12,
+      "title": "EMPTY COFFEE SHELF — crisis",
+      "mode": "omni",
+      "durationSec": 10,
+      "quality": "720p",
+      "nativeAudio": true,
+      "expectedCredits": 90,
+      "subjects": [
+        "Mama",
+        "Sara",
+        "Eva",
+        "Papa"
+      ],
+      "scene": "costco-aisle",
+      "boundElements": [
+        {
+          "tag": "Mama",
+          "source": "library"
+        },
+        {
+          "tag": "Sara",
+          "source": "library"
+        },
+        {
+          "tag": "Eva",
+          "source": "library"
+        },
+        {
+          "tag": "Papa",
+          "source": "library"
+        },
+        {
+          "tag": "costco-aisle",
+          "source": "library"
+        }
+      ],
+      "prompt": "Wide shot in @costco-aisle on the coffee aisle — towering shelves, but the entire mid-section is BARE, just empty wire shelving. @Mama in the CENTER stands frozen in front of the empty shelf, shopping cart abandoned beside her. @Sara on the LEFT stares up at the empty shelves, @Eva on the RIGHT beside Sara, @Papa just behind Mama. Mama (quiet, stunned, voice flat): \"...no.\" Mama (slowly raising one hand to the empty shelf): \"...no.\" Sara (small voice): \"...oh no.\" Eva (whispered): \"Is it... gone?\" Papa (gently): \"...hon?\"",
+      "negativePrompt": "duplicate character, twin, clone, two of the same, mirrored figure, second father, second mother, two Papa, two Mama, identical adults, extra people, third child, second sister, second sara, second eva, two eva, duplicate eva, mirror reflection, crowd of shoppers, multiple Costco staff, multiple sample-lady"
+    },
+    {
+      "episode": 9,
+      "beat": 14,
+      "clip": 13,
+      "title": "EVA'S QUESTION — heart hook",
+      "mode": "omni",
+      "durationSec": 10,
+      "quality": "720p",
+      "nativeAudio": true,
+      "expectedCredits": 90,
+      "subjects": [
+        "Eva",
+        "Mama"
+      ],
+      "scene": "costco-aisle",
+      "boundElements": [
+        {
+          "tag": "Eva",
+          "source": "library"
+        },
+        {
+          "tag": "Mama",
+          "source": "library"
+        },
+        {
+          "tag": "costco-aisle",
+          "source": "library"
+        }
+      ],
+      "prompt": "Medium close-up in @costco-aisle. @Eva on the LEFT looks UP at @Mama on the RIGHT, eyes huge, holding the small backpack to her chest. The empty coffee shelf is in soft focus behind them. Eva (small careful voice): \"Mama... what does it mean when the shelf is empty?\" Mama (slow, looking down at Eva, finally smiling tiny tired): \"It means... we need an alternative, sweetheart.\" Eva (nodding seriously): \"...okay.\"",
+      "negativePrompt": "duplicate character, twin, clone, two of the same, mirrored figure, second father, second mother, two Papa, two Mama, identical adults, extra people, third child, second sister, second sara, second eva, two eva, duplicate eva, mirror reflection"
+    },
+    {
+      "episode": 9,
+      "beat": 15,
+      "clip": 14,
+      "title": "SARA'S PLAN — pulls heart mug",
+      "mode": "omni",
+      "durationSec": 10,
+      "quality": "720p",
+      "nativeAudio": true,
+      "expectedCredits": 90,
+      "subjects": [
+        "Sara",
+        "Eva"
+      ],
+      "scene": "costco-aisle",
+      "boundElements": [
+        {
+          "tag": "Sara",
+          "source": "library"
+        },
+        {
+          "tag": "Eva",
+          "source": "library"
+        },
+        {
+          "tag": "eva-heart-mug",
+          "source": "library"
+        },
+        {
+          "tag": "costco-aisle",
+          "source": "library"
+        }
+      ],
+      "prompt": "Medium shot in @costco-aisle. @Sara on the LEFT crouches down beside @Eva on the RIGHT, who unzips her small backpack and pulls out @eva-heart-mug — Eva's freshly-painted ceramic mug with pink hearts, still slightly tacky. The empty coffee aisle visible behind them. Sara (eyes lighting up, gripping the mug): \"Eva. EVA. I have a PLAN.\" Eva (eyes widening in matching hope): \"...the cafe?\" Sara (nodding hard): \"The cafe.\"",
+      "negativePrompt": "duplicate character, twin, clone, two of the same, mirrored figure, second father, second mother, two Papa, two Mama, identical adults, extra people, third child, second sister, second sara, second eva, two eva, duplicate eva, mirror reflection"
+    },
+    {
+      "episode": 9,
+      "beat": 16,
+      "clip": 15,
+      "title": "CAFE ORDER — biggest coffee",
+      "mode": "omni",
+      "durationSec": 10,
+      "quality": "720p",
+      "nativeAudio": true,
+      "expectedCredits": 90,
+      "subjects": [
+        "Sara",
+        "Eva"
+      ],
+      "scene": "costco-food-court",
+      "boundElements": [
+        {
+          "tag": "Sara",
+          "source": "library"
+        },
+        {
+          "tag": "Eva",
+          "source": "library"
+        },
+        {
+          "tag": "costco-food-court",
+          "source": "library"
+        }
+      ],
+      "prompt": "Medium shot in @costco-food-court. @Sara on the LEFT stands on tiptoes at the cafe counter, chin barely clearing it, holding up two fingers. @Eva on the RIGHT is beside her holding the small painted mug carefully with both hands, deadly serious face. Sara (loud, confident, to the off-frame barista): \"I'd like the BIGGEST coffee you have, please. With EXTRA whipped cream.\" Eva (nodding once): \"It's for our mom. She has a SHELF EMERGENCY.\" Sara (helpful clarification): \"Coffee shelf.\"",
+      "negativePrompt": "duplicate character, twin, clone, two of the same, mirrored figure, second father, second mother, two Papa, two Mama, identical adults, extra people, third child, second sister, second sara, second eva, two eva, duplicate eva, mirror reflection, crowd of shoppers, multiple Costco staff, multiple sample-lady"
+    },
+    {
+      "episode": 9,
+      "beat": 17,
+      "clip": 16,
+      "title": "DELIVERY — Eva: 'I made the cup'",
+      "mode": "omni",
+      "durationSec": 10,
+      "quality": "720p",
+      "nativeAudio": true,
+      "expectedCredits": 90,
+      "subjects": [
+        "Mama",
+        "Sara",
+        "Eva"
+      ],
+      "scene": "costco-food-court",
+      "boundElements": [
+        {
+          "tag": "Mama",
+          "source": "library"
+        },
+        {
+          "tag": "Sara",
+          "source": "library"
+        },
+        {
+          "tag": "Eva",
+          "source": "library"
+        },
+        {
+          "tag": "eva-heart-mug",
+          "source": "library"
+        },
+        {
+          "tag": "costco-food-court",
+          "source": "library"
+        }
+      ],
+      "prompt": "Medium shot in @costco-food-court. @Mama on the RIGHT sits slumped at a food court table, face buried in her palms. @Sara on the LEFT stands right beside the table holding the painted @eva-heart-mug full of steaming coffee with a mountain of whipped cream. @Eva is beside Sara holding extra napkins like a tiny waiter. Sara (placing it gently in front of Mama): \"Mama. We made you a NEW shelf.\" Eva (pointing at the mug, beaming): \"It's special. I PAINTED the cup.\" Mama (looking up slowly, eyes filling): \"...you guys.\"",
+      "negativePrompt": "duplicate character, twin, clone, two of the same, mirrored figure, second father, second mother, two Papa, two Mama, identical adults, extra people, third child, second sister, second sara, second eva, two eva, duplicate eva, mirror reflection, crowd of shoppers, multiple Costco staff, multiple sample-lady"
+    },
+    {
+      "episode": 9,
+      "beat": 19,
+      "clip": 17,
+      "title": "FOOD COURT EATING — chaos joy",
+      "mode": "omni",
+      "durationSec": 10,
+      "quality": "720p",
+      "nativeAudio": true,
+      "expectedCredits": 90,
+      "subjects": [
+        "Sara",
+        "Eva",
+        "Papa"
+      ],
+      "scene": "costco-food-court",
+      "boundElements": [
+        {
+          "tag": "Sara",
+          "source": "library"
+        },
+        {
+          "tag": "Eva",
+          "source": "library"
+        },
+        {
+          "tag": "Papa",
+          "source": "library"
+        },
+        {
+          "tag": "costco-food-court",
+          "source": "library"
+        }
+      ],
+      "prompt": "Wide shot in @costco-food-court. @Sara on the LEFT eats a giant slice of pizza with two hands, cheese stretching. @Eva on the RIGHT bites into a hot dog so big it covers half her face. @Papa in the CENTER background holds a vanilla-and-strawberry ice cream sundae like a trophy. Sara (mouth full): \"BEST. DAY. EVER.\" Eva (mouth full, muffled): \"MMMFFFFF.\" Papa (raising the ice cream): \"I went BIG.\"",
+      "negativePrompt": "duplicate character, twin, clone, two of the same, mirrored figure, second father, second mother, two Papa, two Mama, identical adults, extra people, third child, second sister, second sara, second eva, two eva, duplicate eva, mirror reflection, crowd of shoppers, multiple Costco staff, multiple sample-lady"
+    },
+    {
+      "episode": 9,
+      "beat": 21,
+      "clip": 18,
+      "title": "EVA FEEDS PAPA ICE CREAM",
+      "mode": "omni",
+      "durationSec": 10,
+      "quality": "720p",
+      "nativeAudio": true,
+      "expectedCredits": 90,
+      "subjects": [
+        "Eva",
+        "Papa"
+      ],
+      "scene": "costco-food-court",
+      "boundElements": [
+        {
+          "tag": "Eva",
+          "source": "library"
+        },
+        {
+          "tag": "Papa",
+          "source": "library"
+        },
+        {
+          "tag": "costco-food-court",
+          "source": "library"
+        }
+      ],
+      "prompt": "Tight close-up in @costco-food-court. @Eva on the LEFT lifts a strawberry-vanilla ice cream cone toward @Papa on the RIGHT, who has his eyes closed and mouth open like a baby bird. Eva grins HUGE, tip of tongue poking out in concentration. Eva (giggling): \"OPEN bigger, Papa!\" Papa (mumbled, mouth still open): \"Mmmf.\" Eva (touching ice cream to his mouth): \"Did you LIKE it?\" Papa (eyes open, dramatic chef's kiss): \"Mwah. PERFECT.\"",
+      "negativePrompt": "duplicate character, twin, clone, two of the same, mirrored figure, second father, second mother, two Papa, two Mama, identical adults, extra people, third child, second sister, second sara, second eva, two eva, duplicate eva, mirror reflection, crowd of shoppers, multiple Costco staff, multiple sample-lady"
+    },
+    {
+      "episode": 9,
+      "beat": 22,
+      "clip": 19,
+      "title": "EXIT — 'next week?'",
+      "mode": "omni",
+      "durationSec": 10,
+      "quality": "720p",
+      "nativeAudio": true,
+      "expectedCredits": 90,
+      "subjects": [
+        "Eva",
+        "Mama",
+        "Sara",
+        "Papa"
+      ],
+      "scene": "costco-entrance",
+      "boundElements": [
+        {
+          "tag": "Eva",
+          "source": "library"
+        },
+        {
+          "tag": "Mama",
+          "source": "library"
+        },
+        {
+          "tag": "Sara",
+          "source": "library"
+        },
+        {
+          "tag": "Papa",
+          "source": "library"
+        },
+        {
+          "tag": "costco-entrance",
+          "source": "library"
+        }
+      ],
+      "prompt": "Wide shot in the parking lot just outside @costco-entrance, golden afternoon light. @Mama in the FRONT pushes a cart heaped with a mountain of coffee bags, smiling tiredly, a few steps from the front bumper of the parked Tesla. @Sara on the LEFT and @Eva on the RIGHT stand on either side of the cart, each licking a strawberry-vanilla ice cream cone. @Papa in the BACKGROUND stands behind, holding two more coffee bags. Eva (mid-lick, hopeful): \"Mama? Can we come back NEXT WEEK?\" Mama (laughing, exhausted, content): \"Only if I run out of coffee again.\" Sara (immediate, suspicious): \"...we'll see about that.\"",
+      "negativePrompt": "duplicate character, twin, clone, two of the same, mirrored figure, second father, second mother, two Papa, two Mama, identical adults, extra people, third child, second sister, second sara, second eva, two eva, duplicate eva, mirror reflection, crowd of shoppers, multiple Costco staff, multiple sample-lady"
+    },
+    {
+      "episode": 9,
+      "beat": 23,
+      "clip": 20,
+      "title": "CLIFFHANGER — kids dump the coffee",
+      "mode": "omni",
+      "durationSec": 10,
+      "quality": "720p",
+      "nativeAudio": true,
+      "expectedCredits": 90,
+      "subjects": [
+        "Sara",
+        "Eva"
+      ],
+      "scene": "kitchen",
+      "boundElements": [
+        {
+          "tag": "Sara",
+          "source": "library"
+        },
+        {
+          "tag": "Eva",
+          "source": "library"
+        },
+        {
+          "tag": "kitchen",
+          "source": "library"
+        }
+      ],
+      "prompt": "Tight shot in @kitchen, soft afternoon light. @Sara on the LEFT and @Eva on the RIGHT stand at the kitchen counter beside an open coffee canister filled with fresh beans. They look at each other, then conspiratorially at the canister. Sara (whispered, devious): \"Should we?\" Eva (whispered back, slow nod): \"...all of it.\" They both grip the canister and CAREFULLY tip it into the trash bin. End frame: Sara and Eva exchanging a small mischievous fist-bump over the empty canister. Sara (quietly): \"See you next Tuesday, Mama.\"",
+      "negativePrompt": "duplicate character, twin, clone, two of the same, mirrored figure, second father, second mother, two Papa, two Mama, identical adults, extra people, third child, second sister, second sara, second eva, two eva, duplicate eva, mirror reflection, family members, strangers, crowd, group of people, other faces, background people, friends, neighbors"
+    }
+  ],
+  "musicVideos": [
+    {
+      "episode": 9,
+      "beat": "music-video-A",
+      "clip": "A",
+      "title": "MUSIC VIDEO RENDER A — Sara+Eva duo Tesla-cruise dance",
+      "mode": "omni",
+      "durationSec": 10,
+      "quality": "720p",
+      "nativeAudio": false,
+      "expectedCredits": 60,
+      "subjects": [
+        "Sara",
+        "Eva"
+      ],
+      "scene": "(designed studio backdrop)",
+      "boundElements": [
+        {
+          "tag": "Sara",
+          "source": "library"
+        },
+        {
+          "tag": "Eva",
+          "source": "library"
+        }
+      ],
+      "reuseAsset": true,
+      "reuseAssetNote": "ONE 10s render, paired with Suno song via loopVideoWithSong.mjs to fill the music block duration.",
+      "musicVideoBlock": true,
+      "loopExpansion": {
+        "iterations": 6,
+        "xfadeDuration": 0.3,
+        "outputDurationSec": 58
+      },
+      "usedUnderSongs": [
+        {
+          "song": "assets/music/Costco Day Out.mp3",
+          "blockDurationSec": 60,
+          "trimStart": 0,
+          "placementClipNumber": "7music"
+        }
+      ],
+      "prompt": "Wide front-facing music-video shot — soft pastel gradient backdrop (sky-blue fading to soft mint) with a HUGE stylized RAINBOW arching across the upper half of the frame and CONFETTI flowing continuously down. NO scene, NO room, NO furniture, NO logos, NO text. @Sara on the LEFT and @Eva on the RIGHT stand side-by-side, grinning huge, bopping in rhythm. Sara claps on the beat. Eva spins on the spot then claps too. Sara leans left, Eva leans right. Sara pumps her fist up, Eva pumps her fist up. Sara spins once, Eva spins once. Both return to start position. Movements are RHYTHMIC and LOOPABLE — clean cycle: bop → clap → lean → fist-pump → spin → return. Camera locked, head-on, kid-eye-level. Bright cheerful party lighting. Sara and Eva hum and sing along generically — no specific dialogue, no lip-sync to any words. The shot is designed to LOOP cleanly: Sara and Eva return to the same side-by-side starting pose at second 0 and second 10. Rainbow arches and confetti continuously rain down. No audible speech, no music — silent render.",
+      "negativePrompt": "duplicate character, twin, clone, two of the same, mirrored figure, second father, second mother, two Papa, two Mama, identical adults, extra people, third child, second sister, second sara, second eva, two eva, duplicate eva, mirror reflection, family members, strangers, crowd, group of people, other faces, background people, friends, neighbors, specific dialogue words, lip-sync to specific syllables, audible music, audible singing words"
+    },
+    {
+      "episode": 9,
+      "beat": "music-video-B",
+      "clip": "B",
+      "title": "MUSIC VIDEO RENDER B — Mama heart slow-mo coffee sip",
+      "mode": "omni",
+      "durationSec": 10,
+      "quality": "720p",
+      "nativeAudio": false,
+      "expectedCredits": 60,
+      "subjects": [
+        "Mama"
+      ],
+      "scene": "(designed studio backdrop)",
+      "boundElements": [
+        {
+          "tag": "Mama",
+          "source": "library"
+        }
+      ],
+      "reuseAsset": true,
+      "reuseAssetNote": "ONE 10s render, paired with Suno song via loopVideoWithSong.mjs to fill the music block duration.",
+      "musicVideoBlock": true,
+      "loopExpansion": {
+        "iterations": 6,
+        "xfadeDuration": 0.3,
+        "outputDurationSec": 58
+      },
+      "usedUnderSongs": [
+        {
+          "song": "assets/music/Mama Mug.mp3",
+          "blockDurationSec": 30,
+          "trimStart": 0,
+          "placementClipNumber": "16music"
+        }
+      ],
+      "prompt": "Slow-motion tight shot — soft pastel gradient backdrop (warm peach fading to soft cream), neutral. NO scene, NO furniture, NO Costco. @Mama in the CENTER, slow-motion, holds a small ceramic mug painted with pink hearts up to her lips, eyes closed, takes a slow blissful sip. A single tear glistens at the corner of her eye. She lowers the mug, opens her eyes, smiles a quiet, exhausted, full-hearted smile to the off-frame kids. Movements are TENDER and LOOPABLE: lift mug → sip → close eyes → smile → lower mug → look forward → return. Slow orbiting camera at adult-eye-level. Soft golden lighting. Solo shot — only Mama visible, no other people, no other faces, no dialogue (heart-beat moment), no audible speech, no audible music — silent render. The shot is designed to LOOP cleanly: Mama returns to the same mug-up-to-lips pose at second 0 and second 10.",
+      "negativePrompt": "duplicate character, twin, clone, two of the same, mirrored figure, second father, second mother, two Papa, two Mama, identical adults, extra people, third child, second sister, second sara, second eva, two eva, duplicate eva, mirror reflection, family members, strangers, crowd, group of people, other faces, background people, friends, neighbors, specific dialogue words, lip-sync to specific syllables, audible music, audible singing words"
+    },
+    {
+      "episode": 9,
+      "beat": "music-video-C",
+      "clip": "C",
+      "title": "MUSIC VIDEO RENDER C — Sara+Eva food court party dance",
+      "mode": "omni",
+      "durationSec": 10,
+      "quality": "720p",
+      "nativeAudio": false,
+      "expectedCredits": 60,
+      "subjects": [
+        "Sara",
+        "Eva"
+      ],
+      "scene": "(designed studio backdrop)",
+      "boundElements": [
+        {
+          "tag": "Sara",
+          "source": "library"
+        },
+        {
+          "tag": "Eva",
+          "source": "library"
+        }
+      ],
+      "reuseAsset": true,
+      "reuseAssetNote": "ONE 10s render, paired with Suno song via loopVideoWithSong.mjs to fill the music block duration.",
+      "musicVideoBlock": true,
+      "loopExpansion": {
+        "iterations": 6,
+        "xfadeDuration": 0.3,
+        "outputDurationSec": 58
+      },
+      "usedUnderSongs": [
+        {
+          "song": "assets/music/I Love Costco.mp3",
+          "blockDurationSec": 60,
+          "trimStart": 0,
+          "placementClipNumber": "20music"
+        }
+      ],
+      "prompt": "Wide front-facing music-video shot — soft pastel gradient backdrop (sky-blue to soft yellow) with floating cartoon food-court icons (pizza slice, hot dog, ice cream cone, soda cup) gently drifting through the frame. NO scene, NO room. @Sara on the LEFT and @Eva on the RIGHT stand side-by-side, beaming, bopping in rhythm. Sara holds a slice of pizza like a microphone, Eva holds an ice cream cone like a baton. Sara waves the pizza, Eva waves the cone. Sara spins, Eva spins. Sara cone-clinks Eva's cone, Eva pizza-clinks Sara's pizza. Both jump on the beat. Both return to start. Movements are RHYTHMIC and LOOPABLE — clean cycle: wave → clink → spin → jump → return. Camera locked, head-on, kid-eye-level. Bright cheerful party lighting. Sara and Eva hum and sing along generically — no specific dialogue, no lip-sync. Designed to LOOP cleanly: same pose at second 0 and second 10. No audible speech, no music — silent render.",
+      "negativePrompt": "duplicate character, twin, clone, two of the same, mirrored figure, second father, second mother, two Papa, two Mama, identical adults, extra people, third child, second sister, second sara, second eva, two eva, duplicate eva, mirror reflection, family members, strangers, crowd, group of people, other faces, background people, friends, neighbors, specific dialogue words, lip-sync to specific syllables, audible music, audible singing words"
+    }
+  ]
+}

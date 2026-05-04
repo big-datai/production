@@ -1,0 +1,32 @@
+{
+  "episode": 9,
+  "beat": 3,
+  "clip": 3,
+  "title": "PAPA — YMCA FIRST",
+  "mode": "omni",
+  "durationSec": 10,
+  "quality": "720p",
+  "nativeAudio": true,
+  "expectedCredits": 90,
+  "subjects": [
+    "Papa",
+    "Mama"
+  ],
+  "scene": "kitchen",
+  "boundElements": [
+    {
+      "tag": "Papa",
+      "source": "library"
+    },
+    {
+      "tag": "Mama",
+      "source": "library"
+    },
+    {
+      "tag": "kitchen",
+      "source": "library"
+    }
+  ],
+  "prompt": "Medium shot in @kitchen. @Papa on the LEFT stands by the fridge holding a gym bag, smiling kindly but firm. @Mama on the RIGHT clutches the empty coffee bag like a lifeline, eye twitching. Papa (gentle, holding the bag up): \"Honey... we promised the YMCA first.\" Mama (eye twitch worsens): \"...how long is the workout.\" Papa: \"Forty-five minutes.\" Mama (deep breath, jaw tight): \"Fine. But we're not stopping for ANYTHING else.\"",
+  "negativePrompt": "duplicate character, twin, clone, two of the same, mirrored figure, second father, second mother, two Papa, two Mama, identical adults, extra people, third child, second sister, second sara, second eva, two eva, duplicate eva, mirror reflection, family members, strangers, crowd, group of people, other faces, background people, friends, neighbors"
+}

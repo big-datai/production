@@ -1,0 +1,27 @@
+{
+  "episode": 9,
+  "beat": 4,
+  "clip": 4,
+  "title": "YMCA GYM — Mama on treadmill",
+  "mode": "omni",
+  "durationSec": 10,
+  "quality": "720p",
+  "nativeAudio": true,
+  "expectedCredits": 90,
+  "subjects": [
+    "Mama"
+  ],
+  "scene": "ymca-gym",
+  "boundElements": [
+    {
+      "tag": "Mama",
+      "source": "library"
+    },
+    {
+      "tag": "ymca-gym",
+      "source": "library"
+    }
+  ],
+  "prompt": "Wide shot in @ymca-gym, fluorescent overhead lighting, rows of treadmills. @Mama in the CENTER runs on a treadmill in workout gear, ponytail bouncing, but her face is EXHAUSTED — eyes glazed, staring at the wall clock visible above the treadmill. The clock reads 9:47. Sweat drips. Mama (panting, talking to herself): \"Twelve minutes... twelve minutes... twelve minutes till coffee...\" Solo shot — only Mama in frame, no other gym members visible.",
+  "negativePrompt": "duplicate character, twin, clone, two of the same, mirrored figure, second father, second mother, two Papa, two Mama, identical adults, extra people, third child, second sister, second sara, second eva, two eva, duplicate eva, mirror reflection, family members, strangers, crowd, group of people, other faces, background people, friends, neighbors"
+}

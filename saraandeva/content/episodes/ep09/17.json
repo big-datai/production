@@ -1,0 +1,37 @@
+{
+  "episode": 9,
+  "beat": 19,
+  "clip": 17,
+  "title": "FOOD COURT EATING — chaos joy",
+  "mode": "omni",
+  "durationSec": 10,
+  "quality": "720p",
+  "nativeAudio": true,
+  "expectedCredits": 90,
+  "subjects": [
+    "Sara",
+    "Eva",
+    "Papa"
+  ],
+  "scene": "costco-food-court",
+  "boundElements": [
+    {
+      "tag": "Sara",
+      "source": "library"
+    },
+    {
+      "tag": "Eva",
+      "source": "library"
+    },
+    {
+      "tag": "Papa",
+      "source": "library"
+    },
+    {
+      "tag": "costco-food-court",
+      "source": "library"
+    }
+  ],
+  "prompt": "Wide shot in @costco-food-court. @Sara on the LEFT eats a giant slice of pizza with two hands, cheese stretching. @Eva on the RIGHT bites into a hot dog so big it covers half her face. @Papa in the CENTER background holds a vanilla-and-strawberry ice cream sundae like a trophy. Sara (mouth full): \"BEST. DAY. EVER.\" Eva (mouth full, muffled): \"MMMFFFFF.\" Papa (raising the ice cream): \"I went BIG.\"",
+  "negativePrompt": "duplicate character, twin, clone, two of the same, mirrored figure, second father, second mother, two Papa, two Mama, identical adults, extra people, third child, second sister, second sara, second eva, two eva, duplicate eva, mirror reflection, crowd of shoppers, multiple Costco staff, multiple sample-lady"
+}

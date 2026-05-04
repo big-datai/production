@@ -1,0 +1,32 @@
+{
+  "episode": 9,
+  "beat": 6,
+  "clip": 6,
+  "title": "YMCA EXIT — Papa whispers",
+  "mode": "omni",
+  "durationSec": 10,
+  "quality": "720p",
+  "nativeAudio": true,
+  "expectedCredits": 90,
+  "subjects": [
+    "Mama",
+    "Papa"
+  ],
+  "scene": "ymca-gym",
+  "boundElements": [
+    {
+      "tag": "Mama",
+      "source": "library"
+    },
+    {
+      "tag": "Papa",
+      "source": "library"
+    },
+    {
+      "tag": "ymca-gym",
+      "source": "library"
+    }
+  ],
+  "prompt": "Medium shot in @ymca-gym entrance area. @Mama on the LEFT stands by the door looking HOLLOW-eyed, towel around her neck, hair frizzy. @Papa on the RIGHT stands right next to her, gym bag over his shoulder. Papa (low whisper, concerned): \"How long since your last cup?\" Mama (slow, distant, staring into space): \"Don't ask me that.\" Papa (carefully): \"...should I drive?\" Mama (deadly serious, finally looking at him): \"Yes.\"",
+  "negativePrompt": "duplicate character, twin, clone, two of the same, mirrored figure, second father, second mother, two Papa, two Mama, identical adults, extra people, third child, second sister, second sara, second eva, two eva, duplicate eva, mirror reflection, family members, strangers, crowd, group of people, other faces, background people, friends, neighbors"
+}

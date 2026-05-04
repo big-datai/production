@@ -1,0 +1,42 @@
+{
+  "episode": 9,
+  "beat": 8,
+  "clip": 7,
+  "title": "COSTCO ENTRANCE — eyes lock on coffee",
+  "mode": "omni",
+  "durationSec": 10,
+  "quality": "720p",
+  "nativeAudio": true,
+  "expectedCredits": 90,
+  "subjects": [
+    "Mama",
+    "Papa",
+    "Sara",
+    "Eva"
+  ],
+  "scene": "costco-entrance",
+  "boundElements": [
+    {
+      "tag": "Mama",
+      "source": "library"
+    },
+    {
+      "tag": "Papa",
+      "source": "library"
+    },
+    {
+      "tag": "Sara",
+      "source": "library"
+    },
+    {
+      "tag": "Eva",
+      "source": "library"
+    },
+    {
+      "tag": "costco-entrance",
+      "source": "library"
+    }
+  ],
+  "prompt": "Wide reveal shot in @costco-entrance, the cathedral-warehouse, towering shelves stretching back, shopping carts lined up. @Papa on the LEFT pushes a cart, @Sara beside him excitedly bouncing, @Eva on the RIGHT clutching a small backpack to her chest, @Mama in the FOREGROUND just stepped through the doors and FROZEN — eyes laser-locked on the coffee aisle visible in the deep distance. Mama (whispered, intense): \"There. I see it.\" Sara (pointing the opposite direction): \"MAMA the food court is OVER THERE!\" Mama (without breaking gaze): \"I am aware.\"",
+  "negativePrompt": "duplicate character, twin, clone, two of the same, mirrored figure, second father, second mother, two Papa, two Mama, identical adults, extra people, third child, second sister, second sara, second eva, two eva, duplicate eva, mirror reflection, crowd of shoppers, multiple Costco staff, multiple sample-lady"
+}

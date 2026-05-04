@@ -1,0 +1,36 @@
+{
+  "episode": 9,
+  "beat": 15,
+  "clip": 14,
+  "title": "SARA'S PLAN — pulls heart mug",
+  "mode": "omni",
+  "durationSec": 10,
+  "quality": "720p",
+  "nativeAudio": true,
+  "expectedCredits": 90,
+  "subjects": [
+    "Sara",
+    "Eva"
+  ],
+  "scene": "costco-aisle",
+  "boundElements": [
+    {
+      "tag": "Sara",
+      "source": "library"
+    },
+    {
+      "tag": "Eva",
+      "source": "library"
+    },
+    {
+      "tag": "eva-heart-mug",
+      "source": "library"
+    },
+    {
+      "tag": "costco-aisle",
+      "source": "library"
+    }
+  ],
+  "prompt": "Medium shot in @costco-aisle. @Sara on the LEFT crouches down beside @Eva on the RIGHT, who unzips her small backpack and pulls out @eva-heart-mug — Eva's freshly-painted ceramic mug with pink hearts, still slightly tacky. The empty coffee aisle visible behind them. Sara (eyes lighting up, gripping the mug): \"Eva. EVA. I have a PLAN.\" Eva (eyes widening in matching hope): \"...the cafe?\" Sara (nodding hard): \"The cafe.\"",
+  "negativePrompt": "duplicate character, twin, clone, two of the same, mirrored figure, second father, second mother, two Papa, two Mama, identical adults, extra people, third child, second sister, second sara, second eva, two eva, duplicate eva, mirror reflection"
+}

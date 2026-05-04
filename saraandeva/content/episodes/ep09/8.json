@@ -1,0 +1,42 @@
+{
+  "episode": 9,
+  "beat": 9,
+  "clip": 8,
+  "title": "STANDOFF — competing priorities",
+  "mode": "omni",
+  "durationSec": 10,
+  "quality": "720p",
+  "nativeAudio": true,
+  "expectedCredits": 90,
+  "subjects": [
+    "Sara",
+    "Eva",
+    "Papa",
+    "Mama"
+  ],
+  "scene": "costco-aisle",
+  "boundElements": [
+    {
+      "tag": "Sara",
+      "source": "library"
+    },
+    {
+      "tag": "Eva",
+      "source": "library"
+    },
+    {
+      "tag": "Papa",
+      "source": "library"
+    },
+    {
+      "tag": "Mama",
+      "source": "library"
+    },
+    {
+      "tag": "costco-aisle",
+      "source": "library"
+    }
+  ],
+  "prompt": "Medium wide shot in @costco-aisle. @Sara on the LEFT clutches her hands together, big eyes. @Eva on the RIGHT is beside Sara mirroring the puppy face. @Papa in the BACKGROUND grins. @Mama in the FOREGROUND CENTER stands her ground, arms crossed, finger pointed firmly toward the coffee aisle. Sara (sweetly): \"Pleeease can we get ice cream FIRST?\" Eva (hopeful): \"And hot dog?!\" Papa (stage-whisper, conspiratorial): \"...pizza?\" Mama (zero patience): \"Coffee. FIRST. Then everything else.\" Eva (small disappointed): \"...okay.\"",
+  "negativePrompt": "duplicate character, twin, clone, two of the same, mirrored figure, second father, second mother, two Papa, two Mama, identical adults, extra people, third child, second sister, second sara, second eva, two eva, duplicate eva, mirror reflection, crowd of shoppers, multiple Costco staff, multiple sample-lady"
+}

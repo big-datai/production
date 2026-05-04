@@ -1,0 +1,32 @@
+{
+  "episode": 9,
+  "beat": 14,
+  "clip": 13,
+  "title": "EVA'S QUESTION — heart hook",
+  "mode": "omni",
+  "durationSec": 10,
+  "quality": "720p",
+  "nativeAudio": true,
+  "expectedCredits": 90,
+  "subjects": [
+    "Eva",
+    "Mama"
+  ],
+  "scene": "costco-aisle",
+  "boundElements": [
+    {
+      "tag": "Eva",
+      "source": "library"
+    },
+    {
+      "tag": "Mama",
+      "source": "library"
+    },
+    {
+      "tag": "costco-aisle",
+      "source": "library"
+    }
+  ],
+  "prompt": "Medium close-up in @costco-aisle. @Eva on the LEFT looks UP at @Mama on the RIGHT, eyes huge, holding the small backpack to her chest. The empty coffee shelf is in soft focus behind them. Eva (small careful voice): \"Mama... what does it mean when the shelf is empty?\" Mama (slow, looking down at Eva, finally smiling tiny tired): \"It means... we need an alternative, sweetheart.\" Eva (nodding seriously): \"...okay.\"",
+  "negativePrompt": "duplicate character, twin, clone, two of the same, mirrored figure, second father, second mother, two Papa, two Mama, identical adults, extra people, third child, second sister, second sara, second eva, two eva, duplicate eva, mirror reflection"
+}

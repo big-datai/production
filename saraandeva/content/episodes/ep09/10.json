@@ -1,0 +1,27 @@
+{
+  "episode": 9,
+  "beat": 11,
+  "clip": 10,
+  "title": "SAMPLE 2 — Sara repeat offender",
+  "mode": "omni",
+  "durationSec": 10,
+  "quality": "720p",
+  "nativeAudio": true,
+  "expectedCredits": 90,
+  "subjects": [
+    "Sara"
+  ],
+  "scene": "costco-aisle",
+  "boundElements": [
+    {
+      "tag": "Sara",
+      "source": "library"
+    },
+    {
+      "tag": "costco-aisle",
+      "source": "library"
+    }
+  ],
+  "prompt": "Medium shot in @costco-aisle. @Sara on the CENTER stands at a sample station holding her FOURTH tiny paper cup, beaming, mid-chew of cheese. The sample lady's hand is visible at the edge of frame, mid-crossed-arms, eyes squinted (off-frame face). Sara (chewing, oblivious, delighted): \"Mmmmm! What kind is THIS one?\" Sara (hopeful, leaning in): \"...could I try ONE more?\" Sara (innocent): \"It's for my SISTER.\" Solo shot of Sara — no full face of the sample lady visible, only her crossed forearms.",
+  "negativePrompt": "duplicate character, twin, clone, two of the same, mirrored figure, second father, second mother, two Papa, two Mama, identical adults, extra people, third child, second sister, second sara, second eva, two eva, duplicate eva, mirror reflection, family members, strangers, crowd, group of people, other faces, background people, friends, neighbors, crowd of shoppers, multiple Costco staff, multiple sample-lady"
+}

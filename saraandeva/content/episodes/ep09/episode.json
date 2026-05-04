@@ -1,0 +1,345 @@
+{
+  "episode": 9,
+  "title": "The Great Costco Coffee Quest!",
+  "logline": "Mama wakes up to an empty coffee bag. The family detours through the YMCA (Eva paints a heart-mug at the craft room) before reaching Costco — only to find the coffee aisle BARE. Mama freezes in horror; Eva asks what an empty shelf MEANS; Sara remembers the painted mug and rallies a cafe-rescue. Mama gets her coffee in Eva's hand-painted heart-mug, feeds her family at the food court (Eva feeds Papa ice cream), and they leave with a mountain of coffee. Tag: the kids quietly dump the home coffee canister into the trash to ensure another Costco trip next week. Setting up a recurring season arc.",
+  "formulaReference": "Bluey-style 'parent-quest-with-kid-rescue' family episode — empty-coffee hook → YMCA detour with payoff prop → Costco crisis → emotional pivot → kid-led heart solution → comedic reward → cliffhanger setup for next ep.",
+  "mode": "omni",
+  "durationTotal": "~6:51 (20 normal × 10s + 3 music-video blocks of 60+30+60s + intro 31s + outro 20s)",
+  "expectedCreditsTotal": 1980,
+  "expectedCreditsBreakdown": "20 normal clips × 90 cr = 1800 + 3 render specs (A,B,C) × 60 cr = 180 → 1980 cr base; +25% buffer ≈ 2475 cr realistic ceiling",
+  "newBoundElements": [
+    {
+      "tag": "ymca-gym",
+      "source": "library",
+      "asset": "assets/scenes/ymca_gym.png",
+      "purpose": "YMCA gym with treadmills/weights — beats 4, 6"
+    },
+    {
+      "tag": "ymca-craft-room",
+      "source": "library",
+      "asset": "assets/scenes/ymca_craft_room.png",
+      "purpose": "Sunny YMCA kid craft room — beat 5 (Eva paints the heart mug)"
+    },
+    {
+      "tag": "costco-entrance",
+      "source": "library",
+      "asset": "assets/scenes/costco_entrance.png",
+      "purpose": "Costco warehouse-cathedral entry shot — beats 8, 22"
+    },
+    {
+      "tag": "costco-aisle",
+      "source": "library",
+      "asset": "assets/scenes/costco_aisle.png",
+      "purpose": "Wide warehouse aisle for sample-gauntlet + empty-coffee-shelf — beats 9-15"
+    },
+    {
+      "tag": "costco-food-court",
+      "source": "library",
+      "asset": "assets/scenes/costco_food_court.png",
+      "purpose": "Costco food court tables + cafe counter — beats 16, 17, 19, 21"
+    },
+    {
+      "tag": "eva-heart-mug",
+      "source": "library",
+      "asset": "assets/scenes/eva_heart_mug.png",
+      "purpose": "Small white ceramic mug with hand-painted pink hearts — beats 5, 15, 16, 17"
+    },
+    {
+      "tag": "empty-coffee-bag",
+      "source": "library",
+      "asset": "assets/scenes/empty_coffee_bag.png",
+      "purpose": "Empty 'MAMA'S BREW' coffee bag — beat 1 (HOOK)"
+    }
+  ],
+  "scenes": [
+    "kitchen",
+    "ymca-gym",
+    "ymca-craft-room",
+    "tesla-interior",
+    "costco-entrance",
+    "costco-aisle",
+    "costco-food-court"
+  ],
+  "cast": [
+    "Sara",
+    "Eva",
+    "Mama",
+    "Papa"
+  ],
+  "reuse": {
+    "intro": {
+      "source": "season_01/intro/",
+      "clips": [
+        "intro_song.mp4"
+      ],
+      "totalDuration": "~31s",
+      "playOrder": "Theme song"
+    },
+    "outro": {
+      "source": "season_01/OUTRO/",
+      "clips": [
+        "17.mp4",
+        "18.mp4",
+        "0_song.mp4"
+      ],
+      "totalDuration": "~20s",
+      "note": "0_song.mp4 sorts last via parseInt-Infinity hack — keep (memory rule #23)"
+    }
+  },
+  "music": {
+    "policy": "ALL music is Suno — Kling renders dialogue + ambient ONLY. No music phrases inside any clip prompt (memory rule #24).",
+    "musicVideoBlocks": [
+      {
+        "blockId": "7music",
+        "song": "assets/music/Costco Day Out.mp3",
+        "trimStart": 0,
+        "blockDurationSec": 60,
+        "render": "A",
+        "renderSpec": "content/episodes/ep09/A.json",
+        "placement": "between clip 6 (YMCA exit) and clip 7 (Costco entrance) — Tesla cruise duo dance",
+        "mood": "Upbeat road-trip — both girls hyped about Costco"
+      },
+      {
+        "blockId": "16music",
+        "song": "assets/music/Mama Mug.mp3",
+        "trimStart": 0,
+        "blockDurationSec": 30,
+        "render": "B",
+        "renderSpec": "content/episodes/ep09/B.json",
+        "placement": "after clip 16 (delivery) — heart-line slow-mo of Mama sipping the special coffee in Eva's painted mug",
+        "mood": "Tender heart line — quiet, full-hearted"
+      },
+      {
+        "blockId": "20music",
+        "song": "assets/music/I Love Costco.mp3",
+        "trimStart": 0,
+        "blockDurationSec": 60,
+        "render": "C",
+        "renderSpec": "content/episodes/ep09/C.json",
+        "placement": "after clip 17 (food court eating) — duo party dance with food props celebrating the rescue",
+        "mood": "Upbeat celebration — kids' victory party"
+      }
+    ],
+    "renders": {
+      "A": "content/episodes/ep09/A.json — Sara+Eva duo, neutral pastel rainbow backdrop (REUSED FROM EP08 STYLE)",
+      "B": "content/episodes/ep09/B.json — Mama solo slow-mo, peach pastel backdrop, ep09-specific heart moment",
+      "C": "content/episodes/ep09/C.json — Sara+Eva duo with food-court icons backdrop, ep09-specific"
+    },
+    "mixRecipe": "[1:a]atrim=start=X:duration=N,asetpts=PTS-STARTPTS,volume=0.30[bg]; [0:a]volume=1.4[fg]; [fg][bg]amix=inputs=2:duration=first:dropout_transition=0[a]",
+    "loopRecipe": "node loopVideoWithSong.mjs <render>.mp4 <song>.mp3 <Nmusic>.mp4 --duration=N"
+  },
+  "arc": [
+    {
+      "beat": 1,
+      "name": "HOOK — empty coffee bag",
+      "purpose": "Mama discovers the bag is empty. Quest activated.",
+      "clips": [
+        1
+      ]
+    },
+    {
+      "beat": 2,
+      "name": "KIDS EXCITED",
+      "purpose": "Tonal contrast — kids are thrilled, Mama is dying.",
+      "clips": [
+        2
+      ]
+    },
+    {
+      "beat": 3,
+      "name": "PAPA — YMCA FIRST",
+      "purpose": "Obstacle. Papa enforces the family commitment.",
+      "clips": [
+        3
+      ]
+    },
+    {
+      "beat": 4,
+      "name": "YMCA GYM",
+      "purpose": "Mama suffering through her workout, watching the clock.",
+      "clips": [
+        4
+      ]
+    },
+    {
+      "beat": 5,
+      "name": "YMCA CRAFT — Chekhov's mug",
+      "purpose": "Eva paints the heart-mug. Sara helps. Setup payoff for beat 15+.",
+      "clips": [
+        5
+      ]
+    },
+    {
+      "beat": 6,
+      "name": "YMCA EXIT — Papa whisper",
+      "purpose": "Comedy — Mama is hollow. Papa drives.",
+      "clips": [
+        6
+      ]
+    },
+    {
+      "beat": 7,
+      "name": "🎵 MUSIC VIDEO 1 — Tesla cruise (60s)",
+      "purpose": "Render A under 'Costco Day Out' — duo dance high-energy.",
+      "clips": [
+        "A→7music"
+      ]
+    },
+    {
+      "beat": 8,
+      "name": "COSTCO ENTRANCE",
+      "purpose": "Reveal of the warehouse cathedral. Mama eyes lock on coffee aisle.",
+      "clips": [
+        7
+      ]
+    },
+    {
+      "beat": 9,
+      "name": "STANDOFF",
+      "purpose": "Kid priorities vs. Mama priority. Mama wins.",
+      "clips": [
+        8
+      ]
+    },
+    {
+      "beat": 10,
+      "name": "SAMPLE 1 — Eva spicy",
+      "purpose": "Physical comedy — Eva's red-face polite-suffering.",
+      "clips": [
+        9
+      ]
+    },
+    {
+      "beat": 11,
+      "name": "SAMPLE 2 — Sara repeat",
+      "purpose": "Running joke — Sara's 4th visit, sample lady glares.",
+      "clips": [
+        10
+      ]
+    },
+    {
+      "beat": 12,
+      "name": "PAPA SAMPLE GAFFE",
+      "purpose": "Adult chuckle — Papa takes someone else's sample.",
+      "clips": [
+        11
+      ]
+    },
+    {
+      "beat": 13,
+      "name": "EMPTY COFFEE SHELF — crisis",
+      "purpose": "The shelf is bare. Mama freezes. Crisis.",
+      "clips": [
+        12
+      ]
+    },
+    {
+      "beat": 14,
+      "name": "EVA'S QUESTION",
+      "purpose": "Heart hook — Eva asks the unanswerable question.",
+      "clips": [
+        13
+      ]
+    },
+    {
+      "beat": 15,
+      "name": "SARA'S PLAN — heart mug",
+      "purpose": "Payoff — Sara remembers the YMCA mug.",
+      "clips": [
+        14
+      ]
+    },
+    {
+      "beat": 16,
+      "name": "CAFE ORDER",
+      "purpose": "Comedy — kids order the BIGGEST coffee with EXTRA whip.",
+      "clips": [
+        15
+      ]
+    },
+    {
+      "beat": 17,
+      "name": "DELIVERY — Eva: 'I made the cup'",
+      "purpose": "Heart line — Eva delivers the painted mug.",
+      "clips": [
+        16
+      ]
+    },
+    {
+      "beat": 18,
+      "name": "🎵 MUSIC VIDEO 3 — Mama Mug heart slow-mo (30s)",
+      "purpose": "Render B under 'Mama Mug' — tender heart-line slow-mo.",
+      "clips": [
+        "B→16music"
+      ]
+    },
+    {
+      "beat": 19,
+      "name": "FOOD COURT EATING",
+      "purpose": "Reward — pizza/hot dog/ice cream chaos joy.",
+      "clips": [
+        17
+      ]
+    },
+    {
+      "beat": 20,
+      "name": "🎵 MUSIC VIDEO 2 — Food court party (60s)",
+      "purpose": "Render C under 'I Love Costco' — duo dance with food props.",
+      "clips": [
+        "C→20music"
+      ]
+    },
+    {
+      "beat": 21,
+      "name": "EVA FEEDS PAPA ICE CREAM",
+      "purpose": "Recreate the real photo — adorable.",
+      "clips": [
+        18
+      ]
+    },
+    {
+      "beat": 22,
+      "name": "EXIT — 'next week?'",
+      "purpose": "Echo + setup of recurring arc.",
+      "clips": [
+        19
+      ]
+    },
+    {
+      "beat": 23,
+      "name": "CLIFFHANGER — kids dump the coffee",
+      "purpose": "Setup ep10 — kids manipulating Mama's coffee supply.",
+      "clips": [
+        20
+      ]
+    },
+    {
+      "beat": 24,
+      "name": "OUTRO (reused)",
+      "purpose": "Subscribe pair from season_01/OUTRO/ — 17.mp4 → 18.mp4 → 0_song.mp4 last.",
+      "clips": [
+        "reused"
+      ]
+    }
+  ],
+  "rules": {
+    "maxBoundPerClip": 7,
+    "maxTagMentionsPerCharacter": 1,
+    "klingPromptMustNotContain": [
+      "music sting",
+      "music swell",
+      "tender swell",
+      "cheerful music",
+      "comedic music",
+      "playful music",
+      "heartfelt music",
+      "music cue",
+      "score swell",
+      "background music"
+    ],
+    "klingPromptMustNotContainReason": "All music is Suno-mixed in assemble (memory rule #24).",
+    "motionTowardForbidden": "No 'walks in/toward', 'approaches', 'moves to(ward)', 'heads to/in' — these spawn duplicates when another character is anchored. Use static placement only. (memory: lesson_kling_motion_verbs_duplicate.md, post-ep08)",
+    "negativePromptRequired": "duplicate character, twin, clone, two of the same, mirrored figure, second father, second mother, two Papa, two Mama, identical adults, extra people, third child, second sister, second sara, second eva, two eva, duplicate eva, mirror reflection",
+    "characterNamesInDialogue": "Drop the bound character's name from other characters' dialogue (rule from ep01 — speaking a bound name spawns an extra of that character)."
+  }
+}

@@ -1,0 +1,36 @@
+{
+  "episode": 9,
+  "beat": 1,
+  "clip": 1,
+  "title": "HOOK — empty coffee bag",
+  "mode": "omni",
+  "durationSec": 10,
+  "quality": "720p",
+  "nativeAudio": true,
+  "expectedCredits": 90,
+  "subjects": [
+    "Mama",
+    "Sara"
+  ],
+  "scene": "kitchen",
+  "boundElements": [
+    {
+      "tag": "Mama",
+      "source": "library"
+    },
+    {
+      "tag": "Sara",
+      "source": "library"
+    },
+    {
+      "tag": "kitchen",
+      "source": "library"
+    },
+    {
+      "tag": "empty-coffee-bag",
+      "source": "library"
+    }
+  ],
+  "prompt": "Tight shot in @kitchen, soft morning light from the window. @Mama on the LEFT stands at the counter holding @empty-coffee-bag upside down — a sad puff of coffee dust falls onto the granite. Mama's face freezes mid-yawn into wide-eyed silent horror. @Sara on the RIGHT sits at the kitchen island in pajamas, mid-bite of toast, sees the look. Sara (eyebrow raised, careful): \"...Mama? Are you okay?\" Mama (slow, voice cracking, eyes locked forward): \"We have to go.\" Sara (toast paused, alarmed): \"Where?\" Mama (whispered): \"...COSTCO.\"",
+  "negativePrompt": "duplicate character, twin, clone, two of the same, mirrored figure, second father, second mother, two Papa, two Mama, identical adults, extra people, third child, second sister, second sara, second eva, two eva, duplicate eva, mirror reflection, family members, strangers, crowd, group of people, other faces, background people, friends, neighbors"
+}

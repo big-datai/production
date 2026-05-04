@@ -1,0 +1,37 @@
+{
+  "episode": 9,
+  "beat": 22,
+  "clip": 19,
+  "title": "EXIT — 'next week?'",
+  "mode": "omni",
+  "durationSec": 10,
+  "quality": "720p",
+  "nativeAudio": true,
+  "expectedCredits": 90,
+  "subjects": [
+    "Eva",
+    "Mama",
+    "Sara"
+  ],
+  "scene": "costco-entrance",
+  "boundElements": [
+    {
+      "tag": "Eva",
+      "source": "library"
+    },
+    {
+      "tag": "Mama",
+      "source": "library"
+    },
+    {
+      "tag": "Sara",
+      "source": "library"
+    },
+    {
+      "tag": "costco-entrance",
+      "source": "library"
+    }
+  ],
+  "prompt": "Wide shot in the parking lot just outside @costco-entrance, golden afternoon light, polished concrete and a few empty parked cars in the deep distance. @Mama in the CENTER pushes a cart heaped with a mountain of coffee bags, smiling tiredly. @Sara on the LEFT and @Eva on the RIGHT stand right beside the cart, each licking a strawberry-vanilla ice cream cone. NO other people anywhere in frame, completely empty parking lot otherwise. Eva (mid-lick, hopeful): \"Mama? Can we come back NEXT WEEK?\" Mama (laughing, exhausted, content): \"Only if I run out of coffee again.\" Sara (immediate, suspicious): \"...we'll see about that.\"",
+  "negativePrompt": "duplicate character, twin, clone, two of the same, two sara, duplicate sara, second sara, two saras, twin sara, two girls who look alike, two blonde girls, second blonde child, two children with same hair, mirrored figure, second father, second mother, two Papa, two Mama, identical adults, extra people, third child, second sister, second eva, two eva, duplicate eva, mirror reflection, second blonde sister, two of sara, crowd of shoppers, multiple Costco staff, multiple sample-lady, family members in the background"
+}

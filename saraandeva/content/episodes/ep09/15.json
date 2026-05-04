@@ -1,0 +1,32 @@
+{
+  "episode": 9,
+  "beat": 16,
+  "clip": 15,
+  "title": "CAFE ORDER — biggest coffee",
+  "mode": "omni",
+  "durationSec": 10,
+  "quality": "720p",
+  "nativeAudio": true,
+  "expectedCredits": 90,
+  "subjects": [
+    "Sara",
+    "Eva"
+  ],
+  "scene": "costco-food-court",
+  "boundElements": [
+    {
+      "tag": "Sara",
+      "source": "library"
+    },
+    {
+      "tag": "Eva",
+      "source": "library"
+    },
+    {
+      "tag": "costco-food-court",
+      "source": "library"
+    }
+  ],
+  "prompt": "Medium shot in @costco-food-court. @Sara on the LEFT stands on tiptoes at the cafe counter, chin barely clearing it, holding up two fingers. @Eva on the RIGHT is beside her holding the small painted mug carefully with both hands, deadly serious face. Sara (loud, confident, to the off-frame barista): \"I'd like the BIGGEST coffee you have, please. With EXTRA whipped cream.\" Eva (nodding once): \"It's for our mom. She has a SHELF EMERGENCY.\" Sara (helpful clarification): \"Coffee shelf.\"",
+  "negativePrompt": "duplicate character, twin, clone, two of the same, mirrored figure, second father, second mother, two Papa, two Mama, identical adults, extra people, third child, second sister, second sara, second eva, two eva, duplicate eva, mirror reflection, crowd of shoppers, multiple Costco staff, multiple sample-lady"
+}

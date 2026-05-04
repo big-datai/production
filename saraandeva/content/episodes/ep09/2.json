@@ -1,0 +1,32 @@
+{
+  "episode": 9,
+  "beat": 2,
+  "clip": 2,
+  "title": "KIDS EXCITED",
+  "mode": "omni",
+  "durationSec": 10,
+  "quality": "720p",
+  "nativeAudio": true,
+  "expectedCredits": 90,
+  "subjects": [
+    "Sara",
+    "Eva"
+  ],
+  "scene": "kitchen",
+  "boundElements": [
+    {
+      "tag": "Sara",
+      "source": "library"
+    },
+    {
+      "tag": "Eva",
+      "source": "library"
+    },
+    {
+      "tag": "kitchen",
+      "source": "library"
+    }
+  ],
+  "prompt": "Wide shot in @kitchen. @Sara on the LEFT spins around at the kitchen island, eyes lighting up. @Eva on the RIGHT pops up from behind the couch like a meerkat, blanket still on her head. Sara (gasping, hands to mouth): \"ICE CREAM?!\" Eva (shouting joyfully): \"FREE SAMPLES!\" Sara (already counting on her fingers): \"Vanilla AND strawberry?!\" Eva (jumping in place): \"I GET HOT DOG!\"",
+  "negativePrompt": "duplicate character, twin, clone, two of the same, mirrored figure, second father, second mother, two Papa, two Mama, identical adults, extra people, third child, second sister, second sara, second eva, two eva, duplicate eva, mirror reflection, family members, strangers, crowd, group of people, other faces, background people, friends, neighbors"
+}

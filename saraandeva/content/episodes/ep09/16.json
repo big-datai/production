@@ -1,0 +1,41 @@
+{
+  "episode": 9,
+  "beat": 17,
+  "clip": 16,
+  "title": "DELIVERY — Eva: 'I made the cup'",
+  "mode": "omni",
+  "durationSec": 10,
+  "quality": "720p",
+  "nativeAudio": true,
+  "expectedCredits": 90,
+  "subjects": [
+    "Mama",
+    "Sara",
+    "Eva"
+  ],
+  "scene": "costco-food-court",
+  "boundElements": [
+    {
+      "tag": "Mama",
+      "source": "library"
+    },
+    {
+      "tag": "Sara",
+      "source": "library"
+    },
+    {
+      "tag": "Eva",
+      "source": "library"
+    },
+    {
+      "tag": "eva-heart-mug",
+      "source": "library"
+    },
+    {
+      "tag": "costco-food-court",
+      "source": "library"
+    }
+  ],
+  "prompt": "Medium shot in @costco-food-court. @Mama on the RIGHT sits slumped at a food court table, face buried in her palms. @Sara on the LEFT stands right beside the table holding the painted @eva-heart-mug full of steaming coffee with a mountain of whipped cream. @Eva is beside Sara holding extra napkins like a tiny waiter. Sara (placing it gently in front of Mama): \"Mama. We made you a NEW shelf.\" Eva (pointing at the mug, beaming): \"It's special. I PAINTED the cup.\" Mama (looking up slowly, eyes filling): \"...you guys.\"",
+  "negativePrompt": "duplicate character, twin, clone, two of the same, mirrored figure, second father, second mother, two Papa, two Mama, identical adults, extra people, third child, second sister, second sara, second eva, two eva, duplicate eva, mirror reflection, crowd of shoppers, multiple Costco staff, multiple sample-lady"
+}

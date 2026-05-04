@@ -1,0 +1,27 @@
+{
+  "episode": 9,
+  "beat": 12,
+  "clip": 11,
+  "title": "PAPA SAMPLE GAFFE",
+  "mode": "omni",
+  "durationSec": 10,
+  "quality": "720p",
+  "nativeAudio": true,
+  "expectedCredits": 90,
+  "subjects": [
+    "Papa"
+  ],
+  "scene": "costco-aisle",
+  "boundElements": [
+    {
+      "tag": "Papa",
+      "source": "library"
+    },
+    {
+      "tag": "costco-aisle",
+      "source": "library"
+    }
+  ],
+  "prompt": "Medium shot in @costco-aisle. @Papa on the CENTER stands by a sample station holding a tiny cup, mid-bite, smiling. Behind him, an unhappy older shopper's hand reaches into frame for the same sample tray (only the hand visible). Papa (chewing, oblivious): \"Mmm, this is GOOD.\" Papa (notices the hand, pretends not to): \"...oh.\" Papa (slowly stepping aside, total dad-deadpan to camera): \"I think that one was for someone else.\" Solo shot — only Papa's face and shoulders, no other faces visible.",
+  "negativePrompt": "duplicate character, twin, clone, two of the same, mirrored figure, second father, second mother, two Papa, two Mama, identical adults, extra people, third child, second sister, second sara, second eva, two eva, duplicate eva, mirror reflection, family members, strangers, crowd, group of people, other faces, background people, friends, neighbors, crowd of shoppers, multiple Costco staff, multiple sample-lady"
+}

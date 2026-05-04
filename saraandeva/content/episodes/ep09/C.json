@@ -1,0 +1,44 @@
+{
+  "episode": 9,
+  "beat": "music-video-C",
+  "clip": "C",
+  "title": "MUSIC VIDEO RENDER C — Sara+Eva food court party dance",
+  "mode": "omni",
+  "durationSec": 10,
+  "quality": "720p",
+  "nativeAudio": false,
+  "expectedCredits": 60,
+  "subjects": [
+    "Sara",
+    "Eva"
+  ],
+  "scene": "(designed studio backdrop)",
+  "boundElements": [
+    {
+      "tag": "Sara",
+      "source": "library"
+    },
+    {
+      "tag": "Eva",
+      "source": "library"
+    }
+  ],
+  "reuseAsset": true,
+  "reuseAssetNote": "ONE 10s render, paired with Suno song via loopVideoWithSong.mjs to fill the music block duration.",
+  "musicVideoBlock": true,
+  "loopExpansion": {
+    "iterations": 6,
+    "xfadeDuration": 0.3,
+    "outputDurationSec": 58
+  },
+  "usedUnderSongs": [
+    {
+      "song": "assets/music/I Love Costco.mp3",
+      "blockDurationSec": 60,
+      "trimStart": 0,
+      "placementClipNumber": "20music"
+    }
+  ],
+  "prompt": "Wide front-facing music-video shot — soft pastel gradient backdrop (sky-blue to soft yellow) with floating cartoon food-court icons (pizza slice, hot dog, ice cream cone, soda cup) gently drifting through the frame. NO scene, NO room. @Sara on the LEFT and @Eva on the RIGHT stand side-by-side, beaming, bopping in rhythm. Sara holds a slice of pizza like a microphone, Eva holds an ice cream cone like a baton. Sara waves the pizza, Eva waves the cone. Sara spins, Eva spins. Sara cone-clinks Eva's cone, Eva pizza-clinks Sara's pizza. Both jump on the beat. Both return to start. Movements are RHYTHMIC and LOOPABLE — clean cycle: wave → clink → spin → jump → return. Camera locked, head-on, kid-eye-level. Bright cheerful party lighting. Sara and Eva hum and sing along generically — no specific dialogue, no lip-sync. Designed to LOOP cleanly: same pose at second 0 and second 10. No audible speech, no music — silent render.",
+  "negativePrompt": "duplicate character, twin, clone, two of the same, mirrored figure, second father, second mother, two Papa, two Mama, identical adults, extra people, third child, second sister, second sara, second eva, two eva, duplicate eva, mirror reflection, family members, strangers, crowd, group of people, other faces, background people, friends, neighbors, specific dialogue words, lip-sync to specific syllables, audible music, audible singing words"
+}

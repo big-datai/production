@@ -1,0 +1,36 @@
+{
+  "episode": 9,
+  "beat": 5,
+  "clip": 5,
+  "title": "YMCA CRAFT — Eva paints heart mug",
+  "mode": "omni",
+  "durationSec": 10,
+  "quality": "720p",
+  "nativeAudio": true,
+  "expectedCredits": 90,
+  "subjects": [
+    "Eva",
+    "Sara"
+  ],
+  "scene": "ymca-craft-room",
+  "boundElements": [
+    {
+      "tag": "Eva",
+      "source": "library"
+    },
+    {
+      "tag": "Sara",
+      "source": "library"
+    },
+    {
+      "tag": "ymca-craft-room",
+      "source": "library"
+    },
+    {
+      "tag": "eva-heart-mug",
+      "source": "library"
+    }
+  ],
+  "prompt": "Wide shot in @ymca-craft-room, sunny crafting room with art on the walls. @Eva on the LEFT sits at a paint-splattered table holding @eva-heart-mug, painting tiny pink hearts onto the white ceramic with the tip of her tongue poking out in concentration. @Sara on the RIGHT sits beside her, gently steadying the mug. Sara (proud, soft): \"That one's for Mama, right?\" Eva (without looking up, dead serious): \"It has to be PERFECT. Mama drinks coffee out of it.\" Sara (smiling): \"She's gonna love it.\"",
+  "negativePrompt": "duplicate character, twin, clone, two of the same, mirrored figure, second father, second mother, two Papa, two Mama, identical adults, extra people, third child, second sister, second sara, second eva, two eva, duplicate eva, mirror reflection, family members, strangers, crowd, group of people, other faces, background people, friends, neighbors"
+}
