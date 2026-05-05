@@ -159,9 +159,16 @@ const MULTI_POSITION_PATH_TRAP = (prompt) => {
     const charPositions = new Set();
     for (const sentence of prompt.match(sentenceRe) || []) {
       const lc = sentence.toLowerCase();
-      // SKIP "POSITION LOCK" preamble sentences — they re-mention every
-      // character to explain the rule, not to describe paths.
+      // SKIP "POSITION LOCK" preamble sentences (rule explanation).
       if (lc.includes("position lock")) continue;
+      // SKIP multi-character setup sentences ("Papa at FRONT, Sara at LEFT
+      // window, Eva at RIGHT window") — those distribute positions across
+      // 2+ chars, not giving any single char multiple positions. Only
+      // count sentences that name THIS char (and at most one other for
+      // dialogue context).
+      const allCharNames = ["papa", "sara", "eva", "mama", "isabel", "leo", "joe", "ginger"];
+      const namedInSentence = allCharNames.filter(n => new RegExp(`\\b@?${n}\\b`).test(lc));
+      if (namedInSentence.length > 1) continue;
       const charRe = new RegExp(`\\b@?${char.toLowerCase()}\\b`);
       if (!charRe.test(lc)) continue;
       for (const { name, re } of POSITION_PATTERNS) {
