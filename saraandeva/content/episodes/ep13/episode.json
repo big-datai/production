@@ -12,19 +12,19 @@
       "tag": "playground-park",
       "source": "library",
       "asset": "assets/scenes/playground_park.png",
-      "purpose": "Public neighborhood playground — wooden tower with tube-slide + slide ladder, swing-set off to the side, mulch ground, tree-shaded green-park surroundings. Used in clips 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, music-video A render."
+      "purpose": "Public neighborhood playground — wooden tower with tube slide + slide ladder, swing-set off to the side, mulch ground, tree-shaded green-park surroundings. Used in clips 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, music-video A render."
     },
     {
-      "tag": "tower-house",
+      "tag": "playground-tower-hou",
       "source": "library",
       "asset": "assets/scenes/playground_tower_house.png",
-      "purpose": "Close-up of the playground tower platform with closed-sided panel walls + a clear window opening on each side + the tube-slide entrance opening on the front. Looks like a 'little house' big enough for two kids inside. Used in clips 5, 6, 7, music-video A."
+      "purpose": "Close-up of the playground tower platform with closed-sided panel walls + a clear window opening on each side + the tube slide entrance opening on the front. Looks like a 'little house' big enough for two kids inside. Used in clips 5, 6, 7, music-video A."
     },
     {
-      "tag": "tube-slide",
+      "tag": "playground-tube-slid",
       "source": "library",
       "asset": "assets/scenes/playground_tube_slide.png",
-      "purpose": "Close-up of the brown/tan curving tube-slide attached to the tower. Open end at the bottom, dark inside the tube. Used in clips 6 (Papa stuck mid-tube), 7 (Papa pops out the bottom)."
+      "purpose": "Close-up of the brown/tan curving tube slide attached to the tower. Open end at the bottom, dark inside the tube. Used in clips 6 (Papa stuck mid-tube), 7 (Papa pops out the bottom)."
     },
     {
       "tag": "playground-swings",
@@ -94,7 +94,7 @@
   ],
   "scenes": [
     "playground-park",
-    "tower-house",
+    "playground-tower-hou",
     "tennis-court"
   ],
   "cast": [
@@ -167,7 +167,7 @@
     { "beat": 4, "name": "AUDIENCE-ASK — Sara to camera", "purpose": "Sara turns to camera with wide grin: 'Wanna see Daddy be the TAG-MONSTER?!' Friend-to-friend energy.", "clips": [4] },
     { "beat": 5, "name": "Kids in the tower-house — sing-taunt", "purpose": "Sara + Eva already inside the playground tower platform with windows on each side. Sister duet sing-taunt: 'YOU CAN'T GET US!' Setup for the music video.", "clips": [5] },
     { "beat": 6, "name": "🎵 MUSIC VIDEO A — 'Little Pigs Let Me Come In!' (120s)", "purpose": "Render A under 'Little Pigs Let Me Come In' — Papa-as-silly-wolf walks around tower-house knocking + huffing-puffing, kids refuse from windows + slide out + run away. 15s render looped 8× to fill 2 min Suno song.", "clips": ["A→5music"] },
-    { "beat": 7, "name": "PARENT-ACTIVITY (15s) — Papa stuck in tube slide", "purpose": "Papa tries the tube-slide as 'wolf entrance' to chase the pigs — gets stuck mid-slide. 3-beat structure: enters → half-stuck wiggling → kids cheer-taunt 'YOU'RE IT!' (Locked positions: Papa stays mid-tube, kids stay at the bottom.)", "clips": [6] },
+    { "beat": 7, "name": "PARENT-ACTIVITY (15s) — Papa stuck in tube slide", "purpose": "Papa tries the tube slide as 'wolf entrance' to chase the pigs — gets stuck mid-slide. 3-beat structure: enters → half-stuck wiggling → kids cheer-taunt 'YOU'RE IT!' (Locked positions: Papa stays mid-tube, kids stay at the bottom.)", "clips": [6] },
     { "beat": 8, "name": "Papa pops free — Eva: 'Daddy push me on the swing!'", "purpose": "Papa wiggles out of the bottom of the slide with goofy face. Eva runs over, swing setup line.", "clips": [7] },
     { "beat": 9, "name": "Papa pushes Eva on the swing", "purpose": "Papa already at Eva's back at the swing, gentle pushes. Sara already grinning a few feet to the side. 10s clip.", "clips": [8] },
     { "beat": 10, "name": "🎵 MUSIC VIDEO B — 'Push Me Higher!' (60s)", "purpose": "Render B under 'Push Me Higher' — Eva solo slow-mo on the swing, golden-hour glow. 10s slow-mo render looped 6× to fill 60s.", "clips": ["B→8music"] },
