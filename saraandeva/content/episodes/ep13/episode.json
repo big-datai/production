@@ -15,13 +15,13 @@
       "purpose": "Public neighborhood playground — wooden tower with tube-slide + slide ladder, swing-set off to the side, mulch ground, tree-shaded green-park surroundings. Used in clips 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, music-video A render."
     },
     {
-      "tag": "playground-tower-house",
+      "tag": "tower-house",
       "source": "library",
       "asset": "assets/scenes/playground_tower_house.png",
       "purpose": "Close-up of the playground tower platform with closed-sided panel walls + a clear window opening on each side + the tube-slide entrance opening on the front. Looks like a 'little house' big enough for two kids inside. Used in clips 5, 6, 7, music-video A."
     },
     {
-      "tag": "playground-tube-slide",
+      "tag": "tube-slide",
       "source": "library",
       "asset": "assets/scenes/playground_tube_slide.png",
       "purpose": "Close-up of the brown/tan curving tube-slide attached to the tower. Open end at the bottom, dark inside the tube. Used in clips 6 (Papa stuck mid-tube), 7 (Papa pops out the bottom)."
@@ -94,7 +94,7 @@
   ],
   "scenes": [
     "playground-park",
-    "playground-tower-house",
+    "tower-house",
     "tennis-court"
   ],
   "cast": [
