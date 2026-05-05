@@ -11,7 +11,7 @@
   "subjects": ["Sara", "Eva", "Papa", "Isabel", "Leo"],
   "scene": "tennis-court",
   "boundElements": [
-    { "tag": "everyones-it-still", "source": "upload" },
+    { "tag": "everyones-it-still", "source": "library" },
     { "tag": "tennis-court", "source": "library" }
   ],
   "preRenderRequired": {

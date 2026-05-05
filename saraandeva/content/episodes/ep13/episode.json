@@ -41,31 +41,31 @@
     {
       "tag": "pink-scooter",
       "source": "library",
-      "asset": "assets/props/pink_scooter.png",
+      "asset": "assets/scenes/pink_scooter.png",
       "purpose": "Sara's pink-frame kick-scooter — three-wheel kid scooter with handlebar, pink + purple accents. Used in clips 9, 10, 11, 12."
     },
     {
       "tag": "teal-scooter",
       "source": "library",
-      "asset": "assets/props/teal_scooter.png",
+      "asset": "assets/scenes/teal_scooter.png",
       "purpose": "Eva's teal-frame kick-scooter — three-wheel kid scooter with handlebar, teal + green accents. Used in clips 9, 10, 11, 12."
     },
     {
       "tag": "pink-helmet",
       "source": "library",
-      "asset": "assets/props/pink_helmet.png",
+      "asset": "assets/scenes/pink_helmet.png",
       "purpose": "Sara's pink kid-bike helmet with chin-strap. Used in clips 11, 12, 13, 14, 15, 16, 17 (helmets stay on through tennis-court sequence)."
     },
     {
       "tag": "teal-helmet",
       "source": "library",
-      "asset": "assets/props/teal_helmet.png",
+      "asset": "assets/scenes/teal_helmet.png",
       "purpose": "Eva's teal kid-bike helmet with chin-strap. Used in clips 11, 12, 13, 14, 15, 16, 17."
     },
     {
       "tag": "tennis-ball",
       "source": "library",
-      "asset": "assets/props/tennis_ball.png",
+      "asset": "assets/scenes/tennis_ball.png",
       "purpose": "Soft yellow kid-tennis-ball (no red — defensive against any blood-render trap). Used in clips 13, 14, 15, 16, 17."
     },
     {
@@ -82,8 +82,8 @@
     },
     {
       "tag": "everyones-it-still",
-      "source": "upload",
-      "asset": "assets/scenes/everyones_it_group_still.png",
+      "source": "library",
+      "asset": "assets/scenes/group_everyones_it_still.png",
       "purpose": "Nano Banana group-shot pre-render: 8 characters frozen in a friendship-tag pose at the tennis court. Sara + Eva + Papa + Isabel + Leo + 3 unnamed friend-kids. Used as the image-to-video reference for clip 17 climax + music-video C. PRE-RENDER REQUIRED via `generateGroupShot.py everyones_it_group_still --chars sara,eva,papa,isabel,leo --extras 3 --pose 'group-tag freeze-frame, hands raised, all on the tennis court, 8 figures in semicircle' --scene tennis-court --n 3` — pick the cleanest, then upload to Kling library as a single bound element."
     }
   ],
