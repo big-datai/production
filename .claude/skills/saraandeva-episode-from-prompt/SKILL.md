@@ -359,6 +359,37 @@ Plus `Skills sneaking in this episode:` block listing 2–4 educational beats. P
 
 **IMPORTANT — keep `ep<NN>_tags.txt` ≤ 500 chars total.** YouTube rejects uploads with "invalid video keywords" above that. ep10 first upload failed at 916 chars; trimmed to 282 worked. (memory: `lesson_ep10_pipeline_script_fixes.md`)
 
+### Step 7a — Google Ads policy compliance (HARD RULES — title, description, tags)
+
+ALL written metadata (title, description, short description, tags) **MUST** pass Google Ads Editorial Policy or the videos cannot be promoted. ep10 + ep11 originally shipped with descriptions that broke EVERY rule below — fixed retroactively. New episodes must comply from day 1. (memory: `reference_youtube_promo_data_may2026.md`, `reference_google_ads_setup.md`)
+
+**Lint-blocked at upload via `validateEpisode.mjs` (post-ep11 fix). Hard-fail on:**
+
+1. **Consecutive emojis** — `🌲✨` / `🐭🍔🐶` / `🌭🍔` / `🦌💫`. Single emoji separated by text is FINE. Two-or-more in a row = REJECTED. Use ONE emoji per section break, never two adjacent.
+2. **Repeated punctuation** — `!!`, `??`, `?!`, `...`. Single `!` per phrase, single `?` per phrase. NO ellipsis.
+3. **ALL CAPS gimmick words (4+ chars)** — words like `KICK`, `PINK`, `WHOLE`, `SLOWEST`, `EVERYTHING`, `FIRED`, `OKAYEST` rendered ALL-CAPS for emphasis. Whitelist of accepted brand/acronym CAPS: `YMCA`, `BBQ`, `USA`, `CEO`, `FAQ`, `OK`, `TV`, `DIY`, `USB`, `MP3`, `MP4`, `ABC`, `PB&J`. To emphasize, use *italic in your head* — write the word in normal case. Save ALL CAPS for direct kid-shouts in dialogue ("YOU'RE IT!") within the spec, never in the description.
+4. **Long parentheticals (>15 chars between parens)** — `(Sharing Is Caring!)`, `(World's Okayest Dad)`, `(yes, the apron that says X)`. Replace with em-dash `—` or split into two sentences.
+5. **Bullet symbol `•`** — Google flags as "non-standard symbol". Use `-` instead.
+6. **Tags total ≤ 500 chars** — already in Step 7.
+
+**Title-specific (the YouTube-Studio video title that becomes the ad headline):**
+
+- ✅ Compliant pattern (mirrors ep04 winning pattern): `Sara and Eva — Ep <N>: <Hook>!` (single em-dash, single `!`, ≤ 50 chars, optional ONE emoji at start or after `!`)
+- ❌ NEVER: emojis-consecutive, ALL CAPS gimmick words, parentheticals with comma-lists.
+- Example bad: `Sara & Eva: Magic Forest! 🌲✨ (Soccer with Dad, Wawa Snacks, Magic Deer & Drive-In Burgers)` — 4 violations.
+- Example good: `Sara and Eva — Ep 10: The Magic Forest!` — 38 chars, single em-dash, single `!`, zero emojis.
+
+**Description structure:**
+
+- Opening line: ONE emoji + title — `🎬 Sara and Eva — Ep <N>: <Hook>!`
+- Synopsis paragraphs: plain text. Use em-dashes / new sentences instead of parens.
+- Music block: lead with `🎵`, list songs with `-` bullets.
+- Story-line bullet markers: lead with ONE emoji per line — `🌟 Pixar-style cartoon adventure for kids ages 3 and up`.
+- Hashtag line: 8-12 hashtags, no spaces, single line at the end.
+- ZERO consecutive emojis ANYWHERE.
+
+**Run `validateEpisode --episode=<NN>` before upload — it hard-fails on any of the above and lists violations specifically.**
+
 ## Step 7.5 — Generate thumbnail + vertical short (post-render, pre-upload)
 
 Once `assembleEpisode.mjs` produces `ep<NN>_v1.mp4` and the audit pass is clean, run the codified packaging scripts:

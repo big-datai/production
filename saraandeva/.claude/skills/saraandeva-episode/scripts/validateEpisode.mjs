@@ -171,6 +171,39 @@ if (!fs.existsSync(shortPath)) {
   warnings++;
 }
 
+// 7. Google Ads policy compliance — title, description, tags.
+// Post-ep11 user feedback: every video had emojis-consecutive / multi-! / ALL CAPS
+// gimmicks / parentheticals — none promotable on Google Ads. Hard-fail any of:
+//   - consecutive emojis (🌲✨)
+//   - repeated punctuation (!! / ?? / ...)
+//   - ALL CAPS gimmick words (4+ chars; whitelist common acronyms YMCA, BBQ, etc.)
+//   - long parentheticals (>15 chars between parens)
+//   - bullet symbols (•) — Google flags as non-standard
+//   - tags > 500 chars (already checked above; metadata function adds it for shorts too)
+const EMOJI_RE = /[\u{1F300}-\u{1F9FF}\u{2600}-\u{27BF}\u{1F600}-\u{1F64F}]/u;
+const ALL_CAPS_WHITELIST = new Set(["YMCA", "BBQ", "USA", "USA!", "CEO", "FAQ", "OK", "OK!", "TV", "DIY", "USB", "MP3", "MP4", "ABC", "ABC!", "PB&J", "DIY!"]);
+function checkMetadataCompliance(filePath, kind) {
+  if (!fs.existsSync(filePath)) return;
+  const t = fs.readFileSync(filePath, "utf8");
+  const issues = [];
+  const emojiPair = new RegExp(`(${EMOJI_RE.source})\\s*(${EMOJI_RE.source})`, "u");
+  if (emojiPair.test(t)) issues.push(`consecutive emojis (e.g. 🌲✨) violate Google Ads "repeated symbols" rule`);
+  if (/[!?]{2,}|\.{3,}/.test(t)) issues.push(`repeated punctuation (!! / ?? / ...) violates Google Ads "consecutive symbols" rule`);
+  const capsWords = (t.match(/\b[A-Z]{4,}\b/g) || []).filter(w => !ALL_CAPS_WHITELIST.has(w));
+  if (capsWords.length > 0) issues.push(`ALL CAPS gimmick words [${capsWords.slice(0, 5).join(", ")}] — Google Ads "gimmicky caps" rule (whitelist: ${[...ALL_CAPS_WHITELIST].slice(0,8).join(", ")}…)`);
+  if (/\([^()\n]{15,}\)/.test(t)) issues.push(`long parenthetical (>15 chars) violates Google Ads "gimmicky" rule — drop the parens, use em-dash or new sentence`);
+  if (t.includes("•")) issues.push(`bullet symbol "•" — Google Ads flags as non-standard. Use "-" instead.`);
+  if (kind === "tags" && t.length > 500) issues.push(`tags total ${t.length} chars > 500 limit (rejects upload)`);
+  if (issues.length > 0) {
+    issues.forEach(i => errs.push(`${path.basename(filePath)}: ${i}`));
+    errors += issues.length;
+  }
+}
+checkMetadataCompliance(path.join(deliverDir, `ep${epPad}_description.txt`), "description");
+checkMetadataCompliance(path.join(deliverDir, `ep${epPad}_tags.txt`), "tags");
+checkMetadataCompliance(path.join(deliverDir, `ep${epPad}_short_description.txt`), "description");
+checkMetadataCompliance(path.join(deliverDir, `ep${epPad}_short_tags.txt`), "tags");
+
 // ─── Report ─────────────────────────────────────────────────────────────
 console.log("");
 for (const e of errs) console.log(`  ❌ ${e}`);
