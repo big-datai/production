@@ -49,9 +49,16 @@ from pathlib import Path
 
 # ───────────────────────── Paths & Constants ──────────────────────────
 
-ROOT = Path(__file__).resolve().parents[2]  # /Volumes/Samsung500/goreadling
+ROOT = Path(__file__).resolve().parents[2]  # /Volumes/Samsung500/goreadling-production
 ENV_FILE = ROOT / ".env.local"
-OUTPUT_DIR = ROOT / "assets" / "characters" / "saraandeva"
+# Canonical character avatars live inside the saraandeva project, not the
+# parent goreadling-production root. The earlier path
+# (ROOT/"assets"/"characters"/"saraandeva") was a project-split holdover —
+# every existing avatar (sara, eva, mama, papa, joe, ginger, ...) lives at
+# saraandeva/assets/characters/. Match that so new characters land in the
+# right place by default. (Bug found post-ep13 Isabel + Leo gen.)
+SARAANDEVA_DIR = ROOT / "saraandeva"
+OUTPUT_DIR = SARAANDEVA_DIR / "assets" / "characters"
 OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
 
 MODEL = "gemini-3-pro-image-preview"  # Nano Banana Pro
