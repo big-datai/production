@@ -64,6 +64,37 @@ If the user provides a paragraph-length story idea, treat that as the spec input
 
 **Output:** `saraandeva/content/episodes/ep<NN>/` populated with `episode.json` + N clip JSONs + A/B/C music-video specs.
 
+### 🎯 Per-clip binding decision tree (post-ep13 — APPLY UPFRONT, not as recovery)
+
+Pick the binding pattern BEFORE drafting the prompt. Choosing wrong here is the #1 cause of duplicate-character re-renders.
+
+| Clip composition | Pattern | Binding | Prompt style |
+|---|---|---|---|
+| 1 char | **A** | `[@CharName]` | Minimal — focus on action/dialogue |
+| 2 chars w/ DISTINCT visual anchors (color helmet, prop, separation) | **B** | `[@C1, @C2, @scene]` | Mention each anchor explicitly |
+| 2 sisters (Sara+Eva) WITHOUT distinct anchors | **E** | `[@group-still]` only | Motion-only — describe what CHANGES per beat |
+| 3+ chars OR complex staging | **E** | `[@group-still]` only | Motion-only |
+| Char moves through 3+ NAMED positions (LEFT/RIGHT/BACK/FRONT) | ❌ **REDESIGN** | n/a | Lock to ONE position; show beats via gesture only |
+
+**Pattern E motion-only template:**
+```
+Composition anchored by @<group-still>. Animate the still gently — only <character>'s
+arm gestures and facial expression change. POSITION LOCK throughout entire {N}s.
+Exactly {COUNT} people in the frame, no extras.
+
+(BEAT 1, 0–5s) <action>. <Char>: "<dialogue>"
+(BEAT 2, 5–10s) <action>. <Char>: "<dialogue>"
+
+[NO position labels. NO character appearance details. NO scene re-description.
+The still IS the composition.]
+```
+
+**Why this matters (cost data from ep13):**
+- Wrong pattern → 50%+ duplicate-character render rate → re-submission cost ~135 cr per clip
+- ep13 ran 1980 cr base + 675 cr in iterations = 2655 cr (35% overage) because 4 clips picked wrong patterns initially
+- Lint rules (8d, 8e, 8f) HARD-BLOCK common mistakes (multi-position-path, sister-pair similarity, prompt over-describe)
+- Memory: `lesson_kling_prompt_anatomy.md` has the full GOOD vs BAD prompt analysis with examples.
+
 ---
 
 ## PHASE B — Generate scene/element PNGs
@@ -121,35 +152,41 @@ See ep13's `Little Pigs Let Me Come In.md` / `Push Me Higher.md` / `Everyones IT
 
 ## 🛑 USER HANDOFF #1 — Manual upload + Suno generation
 
-**FIRST — auto-open Suno + every lyric file** (memory: `feedback_auto_open_suno.md` — user flagged 2026-05-04). Run BEFORE printing the chat message so they pop up while user is still reading:
+**FIRST — auto-open Suno + Kling library + every lyric file** (memory: `feedback_auto_open_suno.md` — user flagged 2026-05-04). Run BEFORE printing the chat message so everything pops up while user is still reading:
 
 ```bash
 open "https://suno.com/create"
+open "https://kling.ai/app/user-assets/principal/elements"
 for md in saraandeva/assets/music/lyrics/<Song1>.md saraandeva/assets/music/lyrics/<Song2>.md; do
   open -t "$md"
 done
 ```
 
-THEN print a single-block hand-off message to the user. List exactly:
+THEN print a single-block hand-off message to the user. Critical reminders:
 
-1. **PNGs to upload to Kling library** (each named with HYPHENS, lowercase to match spec tags):
+1. **PNGs to upload to Kling library**. Show a TABLE with both name + path:
    ```
-   • jeep-wrangler        ← assets/scenes/jeep_wrangler.png
-   • magic-forest-sandy   ← assets/scenes/magic_forest_sandy.png
+   | Kling element name        | PNG file path                                   | Char count |
+   |---------------------------|-------------------------------------------------|------------|
+   | playground-park           | assets/scenes/playground_park.png               | 15         |
+   | ep<NN>-clipX-group        | assets/scenes/group_ep<NN>_clipX_<id>.png       | <=20  ⚠   |
+   ```
+   - **Kling has a ~20-char limit on element names** (post-ep13 lesson). Truncated names like `playground-tower-hou` (20) are fine; longer ones get chopped. Verify char count.
+   - **Include any Nano Banana group stills** for Pattern E clips (3+ char clips). User uploads these the same way as scenes/props.
+   - **If Kling name doesn't match the spec's `@-tag` exactly**, lint will fail and submit will fail.
+
+2. **Suno lyrics to paste + generate** (opened in editor + suno.com/create open):
+   ```
+   • Kick the Ball       ← assets/music/lyrics/Kick the Ball.md
+   • Pink Tree Whisper   ← assets/music/lyrics/Pink Tree Whisper.md
    • ...
    ```
-
-2. **Suno lyrics to paste + generate** (already opened in editor + suno.com/create open in browser):
-   ```
-   • Kick the Ball         ← assets/music/lyrics/Kick the Ball.md
-   • Pink Tree Whisper     ← assets/music/lyrics/Pink Tree Whisper.md
-   • ...
-   ```
-   Tell user to save mp3s to `assets/music/<Song Name>.mp3` (matching the lyric .md filename).
+   - **Paste BOTH blocks** — the lyric .md has a 📋 LYRICS code block AND a 🎨 STYLES code block (≤1000 chars). Lyrics → Suno's "Lyrics" field; Styles → Suno's "Styles" field.
+   - **Save mp3s with the EXACT canonical filename** that matches the lyric .md. Suno auto-titles songs from the chorus, but `assets/music/<Song Name>.mp3` MUST match the lyric filename for the assemble script to find it. Post-ep13 lesson: don't accept Suno's auto-title as the filename.
 
 3. **Then ping me with "go"** to start Phase D.
 
-**Why manual:** Kling element-creation UI is unstable (memory: `lesson_kling_library_upload_unstable.md`); Suno automation is fragile (memory: `lesson_suno_song_automation.md`). Manual is the proven reliable path.
+**Why manual:** Kling element-creation UI is unstable for automation (memory: `lesson_kling_library_upload_unstable.md`); Suno automation is fragile (memory: `lesson_suno_song_automation.md`). Manual is the proven reliable path. The official `klingai-dev/klingai` ClawHub skill provides API access — see "Future migrations" section.
 
 ---
 
@@ -163,13 +200,18 @@ node saraandeva/.claude/skills/saraandeva-episode/scripts/submitEpisode.mjs \
 ```
 
 Internally runs:
-1. **Phase 0** — `validateClipCasting.mjs` (hard precondition; aborts on errors)
-2. **Phase 1** — `addMissingElements.mjs` (sanity-check that every bound element has a PNG locally)
+1. **Phase 0** — `validateClipCasting.mjs` (hard precondition; aborts on errors). Includes lint rules 8d (multi-position-path), 8e (sister-pair similarity), 8f (prompt over-describe with group still).
+2. **Phase 1** — `addMissingElements.mjs` (sanity-check that every bound element has a PNG locally + paths match `episode.json.newBoundElements`).
 3. **Phase 2** — `submitOmniClip.mjs` for each numeric clip + each `musicVideoBlock` (A/B/C). Each submission costs 90 cr (10s) or 135 cr (15s parent-activity).
 
-Total cost expected: ~2000-2500 cr. Runtime ~10-20 min (Kling submit-per-clip is sequential).
+Total cost expected: ~2000-2500 cr base; realistic ceiling 2700 cr if 1-2 clips need v2 iteration. Runtime ~10-20 min (Kling submit-per-clip is sequential — Chrome port 9222 shared).
 
-**Output:** All clips queued at Kling. Receipt printed to stdout with task IDs.
+**Pre-submit gotchas (post-ep13):**
+- **`asset:` paths in `episode.json.newBoundElements` MUST match where Nano Banana actually wrote the PNG.** `generateScenes.py` writes to `assets/scenes/`, `generateProps.py` writes to `assets/scenes/` (NOT `assets/props/`), `generateGroupShot.py` prepends `group_` to filename. Mismatch = `addMissingElements` errors out.
+- **Don't re-fire submitOmniClip for the same prompt within 5 min.** Chrome timeouts cause silent retries; previous submission may have already cost 90 cr. Check Kling Works tab before re-submitting.
+- **2 sequential uploads ok, 3+ Kling UI stalls.** When auto-uploading Nano Banana stills via `source: "upload"`, Kling's "Add from Element Library" button times out after ~2 sequential calls. Fall back: ask user to drag-drop the still manually + change spec to `source: "library"`.
+
+**Output:** All clips queued at Kling. Receipt printed to stdout with task IDs. ANY clip that didn't queue is logged — re-submit only those, not the whole episode.
 
 ---
 
@@ -213,6 +255,46 @@ Useful flags:
 
 ---
 
+## When v1 has duplicate-character renders — re-render playbook
+
+If 1-3 clips render with extras / dups / wrong staging (post-ep13 reality):
+
+### 1. Diagnose the failure pattern (look at extracted frames)
+
+| Symptom | Likely cause | Fix |
+|---|---|---|
+| 2 Saras OR 2 Evas in frame | Sister-pair similarity (Pattern C w/o anchor) | Switch to Pattern E: Nano Banana group still + motion-only prompt |
+| 4+ Papas in frame, character "moving around" | Multi-position-path (3+ named positions for one char) | REDESIGN: lock to 1 position, beats = gestures only |
+| Composition wrong but characters right | Pattern D conflict (group still + scene + prompt re-description) | Drop the scene binding, drop position labels in prompt; Pattern E motion-only |
+| Wrong character appearance (Papa doesn't look like Papa) | Group still bound w/o canonical avatar; Kling drifted from canonical | Either: (a) bind canonical `@Papa` only + scene + minimal prompt, OR (b) regen Nano Banana still with sharper canonical-avatar reference |
+
+### 2. Re-render only the affected clips (NOT the whole episode)
+
+```bash
+node saraandeva/.claude/skills/saraandeva-episode/scripts/submitOmniClip.mjs \
+  content/episodes/ep<NN>/<clip>.json
+```
+
+**Cost:** ~90 cr per re-render (135 if 15s parent-activity).
+
+### 3. After re-render, re-download + re-assemble
+
+```bash
+node saraandeva/.claude/skills/saraandeva-episode/scripts/downloadOmniByPrompt.mjs \
+  content/episodes/ep<NN> season_01/episode_<NN>/clips
+node saraandeva/.claude/skills/saraandeva-episode/scripts/produceEpisode.mjs \
+  --episode <NN> --start-from 2  # skip download if already done
+```
+
+**Watchout: matcher swaps.** `downloadOmniByPrompt` matches Kling renders to clip slots by prompt-text similarity. If two clips have near-identical prompt structures (e.g. both starting with "Composition anchored by @ep<NN>-clip*-group"), the matcher CAN swap their files. Make each clip's prompt distinctive (specific dialogue, named actions). When swap happens, manually rename `clips/<wrong-N>.mp4` → `clips/<right-N>.mp4`.
+
+### 4. Cost recovery rule of thumb
+
+- 1-2 dup-clips → re-render same day, ~180-270 cr extra. Acceptable.
+- 3+ dup-clips → suspect a systemic spec issue (used Pattern C/D throughout?). Audit + bulk-redesign before re-submitting.
+
+---
+
 ## RESULT — hand back to user
 
 When Phase E completes, print:
@@ -232,11 +314,18 @@ User reviews in Studio and flips privacy to PUBLIC manually (or re-runs Phase E 
 
 ## Cost / runtime envelope
 
-Based on ep08-ep10 production:
-- **Cost**: ~2000-2600 cr (~$12-15) per episode at 18-22 clips + 3 music-video specs
-- **Runtime active**: ~40 min (user upload+Suno) + ~20 min (script execution Phases A-D) + ~20 min (Phase E)
-- **Runtime unattended**: ~30-60 min (Kling render gap between D and E)
-- **Abort threshold**: > 2200 cr base cost — review the spec for excessive char-count or unnecessary 4-char clips
+Based on ep08-ep13 production:
+- **Cost (clean run)**: ~1800-2200 cr ($10-13) per episode at 18-22 clips + 2-3 music videos
+- **Cost (with 1-3 v2 clip re-renders)**: 2200-2700 cr ($13-16). ep13 hit 2655 cr from binding-pattern mistakes.
+- **Runtime active**: ~30-40 min (user upload+Suno) + ~15-20 min (script Phases A-D) + ~10-15 min (Phase E)
+- **Runtime unattended**: ~5-30 min (Kling render gap between D and E — much faster lately)
+- **Abort threshold**: > 2700 cr — at that point, redesign rather than keep re-rendering
+
+**Cost-saving rules locked in post-ep13:**
+- Apply Pattern E binding decision tree UPFRONT (not as recovery) → avoids most v2 iterations
+- Don't re-fire same submitOmniClip within 5 min → idempotency check missing in script, do it manually
+- Run `validateClipCasting --episode=<NN>` before EVERY submit, not just first time → catches lint regressions
+- Open Kling Works tab before any re-download → confirms render landed before invoking matcher
 
 ---
 
@@ -262,14 +351,30 @@ The scripts directory at `saraandeva/.claude/skills/saraandeva-episode/scripts/`
 ## Memory files this skill relies on
 
 When starting a new episode, the most relevant memory files (auto-loaded):
-- `lesson_kling_omni_pipeline_fixes.md` — 30 hard rules
+- **`lesson_kling_prompt_anatomy.md` ⭐ POST-EP13** — Pattern E vs A/B/C/D, motion-only template, GOOD vs BAD prompt examples, decision tree
+- **`lesson_kling_position_lock.md` ⭐ POST-EP11/13** — same-char-multiple-positions trap (Lesson #11)
+- `lesson_kling_omni_pipeline_fixes.md` — 30 hard rules (foundational)
 - `lesson_kling_ghost_anatomy_ep10.md` — ghost / driver-180 / 3-arm anatomy traps
 - `lesson_nano_banana_group_shot.md` — 4+ char workflow
 - `lesson_papa_play_scene_per_episode.md` — gender-coded parent-activity rule
 - `lesson_kling_library_upload_unstable.md` — why Phase B/handoff is manual
 - `lesson_suno_song_automation.md` — why Suno generation is manual
+- `lesson_no_red_splatter_kids_show.md` — red-near-face = blood render
+- `lesson_kids_show_comedy_intensity.md` — no apoplectic / thundering / pet-airborne
+- `lesson_fourth_wall_audience_engagement.md` — 2-4 camera-asks per ep, final cliffhanger MUST be camera-ask
 - `reference_kids_youtube_trends_2026.md` — ep11-20 backlog + viral formulas
 - `feedback_run_pipeline_dont_ask.md` — when user says "produce ep<NN>", run end-to-end without per-step confirmation
+- `feedback_auto_open_suno.md` — auto-open Suno + lyric files at handoff
+- `feedback_single_version_props.md` — generate one PNG per scene/prop, no `_v1/_v2` variants
+
+---
+
+## Future migrations (deferred to ep14+)
+
+- **Replace Playwright submitOmniClip.mjs with `klingai-dev/klingai` ClawHub skill** — official Kling AI CLI/HTTP-API skill (`openclaw skills install klingai`). Eliminates Chrome timeouts, enables parallel submissions (ep13 submit phase: 15 min → 5 min), API-managed element CRUD (no manual Kling library drag-drop for new chars). Migration plan documented in conversation 2026-05-05.
+- **Submit-idempotency cache** — prompt-hash dedup with 5-min TTL in `submitOmniClip.mjs` to prevent accidental double-spend.
+- **Lint rule 8g** — flag clips with prompts starting with the same 50 chars (matcher-similarity risk that swaps file slots in `downloadOmniByPrompt`).
+- **End-screen automation** — YouTube Data API `videos.update` to add end screens pointing to next-episode in Season 1 playlist (saves manual Studio work per episode).
 
 ---
 

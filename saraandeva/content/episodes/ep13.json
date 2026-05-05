@@ -1,0 +1,1227 @@
+{
+  "episode": 13,
+  "title": "Sara and Eva — Ep 13: The Big Tag Game at the Playground!",
+  "logline": "Family playground day with Daddy. Tag-monster game on the grass, Three Little Pigs role-play around the playground tower-house (Daddy is the silly Big Bad Wolf, kids are the giggly pigs who refuse to let him in), Daddy gets stuck in the tube slide trying to chase them. Scooter escape to the tennis court. Then Isabel (kindergarten) and her 3-year-old brother Leo arrive — 'Can we play?' — and a big group tag game with all 8 of them seals brand-new friendships. Cliffhanger camera-ask: did YOU make new friends today?",
+  "formulaReference": "Bluey-style 'playground friendship-making + classic-tale role-play + Papa-active play' — high-retention combo. Three Little Pigs role-play (literacy bonus + repeatable refrain). Multi-location pivot (playground → scooters → tennis court). Friendship-arc payoff (Isabel + Leo introduced as recurring characters for future episodes — Bluey's Indy/Honey pattern).",
+  "mode": "omni",
+  "durationTotal": "~7:56 (17 normal × 10s = 170s + 1 × 15s = 15s + A 120s + B 60s + C 60s + intro 31s + outro 20s)",
+  "expectedCreditsTotal": 1980,
+  "expectedCreditsBreakdown": "17 normal clips × 90 cr = 1530 + 1 parent-activity 15s × 135 cr = 135 + 1 music-video 15s render (A) × 135 cr = 135 + 2 music-video 10s renders (B,C) × 90 cr = 180 → 1980 cr base; +25% buffer ≈ 2475 cr realistic ceiling. Right at the 2200 abort threshold — acceptable per ep10/ep12 precedent because the 3 music videos materially extend runtime + provide top-retention moments.",
+  "newBoundElements": [
+    {
+      "tag": "playground-park",
+      "source": "library",
+      "asset": "assets/scenes/playground_park.png",
+      "purpose": "Public neighborhood playground — wooden tower with tube slide + slide ladder, swing-set off to the side, mulch ground, tree-shaded green-park surroundings. Used in clips 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, music-video A render."
+    },
+    {
+      "tag": "playground-tower-hou",
+      "source": "library",
+      "asset": "assets/scenes/playground_tower_house.png",
+      "purpose": "Close-up of the playground tower platform with closed-sided panel walls + a clear window opening on each side + the tube slide entrance opening on the front. Looks like a 'little house' big enough for two kids inside. Used in clips 5, 6, 7, music-video A."
+    },
+    {
+      "tag": "playground-tube-slid",
+      "source": "library",
+      "asset": "assets/scenes/playground_tube_slide.png",
+      "purpose": "Close-up of the brown/tan curving tube slide attached to the tower. Open end at the bottom, dark inside the tube. Used in clips 6 (Papa stuck mid-tube), 7 (Papa pops out the bottom)."
+    },
+    {
+      "tag": "playground-swings",
+      "source": "library",
+      "asset": "assets/scenes/playground_swings.png",
+      "purpose": "Close-up of a pair of green-frame playground swings with rubber kid-seats, golden-hour light. Used in clips 7, 8, music-video B (Eva swing slow-mo)."
+    },
+    {
+      "tag": "tennis-court",
+      "source": "library",
+      "asset": "assets/scenes/tennis_court.png",
+      "purpose": "Outdoor green tennis court with white painted lines + low net, chain-link fence around perimeter, suburban neighborhood backdrop. Used in clips 12, 13, 14, 15, 16, 17, music-video C."
+    },
+    {
+      "tag": "pink-scooter",
+      "source": "library",
+      "asset": "assets/scenes/pink_scooter.png",
+      "purpose": "Sara's pink-frame kick-scooter — three-wheel kid scooter with handlebar, pink + purple accents. Used in clips 9, 10, 11, 12."
+    },
+    {
+      "tag": "teal-scooter",
+      "source": "library",
+      "asset": "assets/scenes/teal_scooter.png",
+      "purpose": "Eva's teal-frame kick-scooter — three-wheel kid scooter with handlebar, teal + green accents. Used in clips 9, 10, 11, 12."
+    },
+    {
+      "tag": "pink-helmet",
+      "source": "library",
+      "asset": "assets/scenes/pink_helmet.png",
+      "purpose": "Sara's pink kid-bike helmet with chin-strap. Used in clips 11, 12, 13, 14, 15, 16, 17 (helmets stay on through tennis-court sequence)."
+    },
+    {
+      "tag": "teal-helmet",
+      "source": "library",
+      "asset": "assets/scenes/teal_helmet.png",
+      "purpose": "Eva's teal kid-bike helmet with chin-strap. Used in clips 11, 12, 13, 14, 15, 16, 17."
+    },
+    {
+      "tag": "tennis-ball",
+      "source": "library",
+      "asset": "assets/scenes/tennis_ball.png",
+      "purpose": "Soft yellow kid-tennis-ball (no red — defensive against any blood-render trap). Used in clips 13, 14, 15, 16, 17."
+    },
+    {
+      "tag": "Isabel",
+      "source": "library",
+      "asset": "assets/characters/isabel_front.png",
+      "purpose": "Kindergartener girl (~5yo) — Isabel. New recurring character. Curly brunette hair to differentiate visually from blonde Sara/Eva. Used in clips 14, 15, 16, 17, music-video C."
+    },
+    {
+      "tag": "Leo",
+      "source": "library",
+      "asset": "assets/characters/leo_front.png",
+      "purpose": "3-year-old boy — Isabel's little brother. New recurring character. Short brown hair, smaller stature than Sara/Eva. Used in clips 14, 16, 17, music-video C."
+    },
+    {
+      "tag": "everyones-it-still",
+      "source": "upload",
+      "asset": "assets/scenes/group_everyones_it_still.png",
+      "purpose": "Nano Banana group-shot pre-render: 8 characters frozen in a friendship-tag pose at the tennis court. Sara + Eva + Papa + Isabel + Leo + 3 unnamed friend-kids. Used as the image-to-video reference for clip 17 climax + music-video C. PRE-RENDER REQUIRED via `generateGroupShot.py everyones_it_group_still --chars sara,eva,papa,isabel,leo --extras 3 --pose 'group-tag freeze-frame, hands raised, all on the tennis court, 8 figures in semicircle' --scene tennis-court --n 3` — pick the cleanest, then upload to Kling library as a single bound element."
+    }
+  ],
+  "reusedBoundElements": [
+    "Sara, Eva, Papa — character avatars",
+    "playground-park reused across many clips",
+    "tennis-court reused across the friend-making arc"
+  ],
+  "scenes": [
+    "playground-park",
+    "playground-tower-hou",
+    "tennis-court"
+  ],
+  "cast": [
+    "Sara",
+    "Eva",
+    "Papa",
+    "Isabel",
+    "Leo"
+  ],
+  "reuse": {
+    "intro": {
+      "source": "season_01/intro/",
+      "clips": [
+        "intro_song.mp4"
+      ],
+      "totalDuration": "~31s",
+      "playOrder": "Theme song"
+    },
+    "outro": {
+      "source": "season_01/OUTRO/",
+      "clips": [
+        "17.mp4",
+        "18.mp4",
+        "0_song.mp4"
+      ],
+      "totalDuration": "~20s",
+      "note": "0_song.mp4 sorts last via parseInt-Infinity hack — keep (memory rule #23)"
+    }
+  },
+  "music": {
+    "policy": "ALL music is Suno — Kling renders dialogue + ambient ONLY. No music phrases inside any clip prompt (memory rule #24).",
+    "musicVideoBlocks": [
+      {
+        "blockId": "5music",
+        "song": "assets/music/Little Pigs Let Me Come In.mp3",
+        "trimStart": 0,
+        "blockDurationSec": 120,
+        "render": "A",
+        "renderSpec": "content/episodes/ep13/A.json",
+        "placement": "between clip 5 (kids in tower-house, taunt) and clip 6 (Papa stuck in tube slide) — Three Little Pigs role-play around the tower. Papa-as-silly-wolf walks around the tower-house knocking + huff-puffing, kids refuse from the windows + slide out + run away. 15s render looped 8× to fill 120s of Suno song.",
+        "mood": "Doo-wop kids fairy-tale comedy — warm cartoon-wolf Papa + giggly little-girl pig sisters, Tex Avery / Looney Tunes friendly-wolf energy, ~135 BPM"
+      },
+      {
+        "blockId": "8music",
+        "song": "assets/music/Push Me Higher.mp3",
+        "trimStart": 0,
+        "blockDurationSec": 60,
+        "render": "B",
+        "renderSpec": "content/episodes/ep13/B.json",
+        "placement": "between clip 8 (Papa pushes Eva on swing 10s) and clip 9 (Sara: Race! scooter grab) — Eva slow-motion swing wonder beat, golden-hour glow. 10s slow-mo render looped 6× to fill 60s.",
+        "mood": "Soft pastel-Pixar wonder ballad — dreamy lullaby with glockenspiel + airy strings, like Pink Tree Whisper (ep10)"
+      },
+      {
+        "blockId": "17music",
+        "song": "assets/music/Everyones IT.mp3",
+        "trimStart": 0,
+        "blockDurationSec": 60,
+        "render": "C",
+        "renderSpec": "content/episodes/ep13/C.json",
+        "placement": "between clip 17 (group tag begins, all 8 chars) and clip 18 (cliffhanger camera-ask) — Nano Banana 8-character group-tag pre-render, Kling animates the cheer + tag motion. 10s render looped 6× to fill 60s.",
+        "mood": "Bouncy kid-pop friendship anthem — mixed kid chorus, ukulele hand-claps, warm dad backing, ~140 BPM"
+      }
+    ],
+    "renders": {
+      "A": "content/episodes/ep13/A.json — Papa-as-wolf walks around the playground tower-house, kids visible at tower windows, 15s render looped 8× to fill 120s",
+      "B": "content/episodes/ep13/B.json — Eva slow-mo on swing, golden-hour glow, 10s slow-mo render looped 6× to fill 60s",
+      "C": "content/episodes/ep13/C.json — 8-character group-tag at tennis court (Nano Banana pre-rendered still → Kling image-to-video), 10s render looped 6× to fill 60s"
+    },
+    "mixRecipe": "[1:a]atrim=start=X:duration=N,asetpts=PTS-STARTPTS,volume=0.30[bg]; [0:a]volume=1.4[fg]; [fg][bg]amix=inputs=2:duration=first:dropout_transition=0[a]",
+    "loopRecipe": "node loopVideoWithSong.mjs <render>.mp4 <song>.mp3 <Nmusic>.mp4 --duration=N"
+  },
+  "arc": [
+    {
+      "beat": 1,
+      "name": "HOOK — playground arrival",
+      "purpose": "Family rolls up to the neighborhood park playground, scooters in tow. Establishes setting + energy.",
+      "clips": [
+        1
+      ]
+    },
+    {
+      "beat": 2,
+      "name": "Eva: 'Daddy play TAG!'",
+      "purpose": "Eva instigates a tag game on the grass next to the playground.",
+      "clips": [
+        2
+      ]
+    },
+    {
+      "beat": 3,
+      "name": "Papa silly tag-monster (locked positions)",
+      "purpose": "Papa drops to hands-and-knees as the silly tag-monster. Locked positions per Lesson #11 — only Papa's torso moves.",
+      "clips": [
+        3
+      ]
+    },
+    {
+      "beat": 4,
+      "name": "AUDIENCE-ASK — Sara to camera",
+      "purpose": "Sara turns to camera with wide grin: 'Wanna see Daddy be the TAG-MONSTER?!' Friend-to-friend energy.",
+      "clips": [
+        4
+      ]
+    },
+    {
+      "beat": 5,
+      "name": "Kids in the tower-house — sing-taunt",
+      "purpose": "Sara + Eva already inside the playground tower platform with windows on each side. Sister duet sing-taunt: 'YOU CAN'T GET US!' Setup for the music video.",
+      "clips": [
+        5
+      ]
+    },
+    {
+      "beat": 6,
+      "name": "🎵 MUSIC VIDEO A — 'Little Pigs Let Me Come In!' (120s)",
+      "purpose": "Render A under 'Little Pigs Let Me Come In' — Papa-as-silly-wolf walks around tower-house knocking + huffing-puffing, kids refuse from windows + slide out + run away. 15s render looped 8× to fill 2 min Suno song.",
+      "clips": [
+        "A→5music"
+      ]
+    },
+    {
+      "beat": 7,
+      "name": "PARENT-ACTIVITY (15s) — Papa stuck in tube slide",
+      "purpose": "Papa tries the tube slide as 'wolf entrance' to chase the pigs — gets stuck mid-slide. 3-beat structure: enters → half-stuck wiggling → kids cheer-taunt 'YOU'RE IT!' (Locked positions: Papa stays mid-tube, kids stay at the bottom.)",
+      "clips": [
+        6
+      ]
+    },
+    {
+      "beat": 8,
+      "name": "Papa pops free — Eva: 'Daddy push me on the swing!'",
+      "purpose": "Papa wiggles out of the bottom of the slide with goofy face. Eva runs over, swing setup line.",
+      "clips": [
+        7
+      ]
+    },
+    {
+      "beat": 9,
+      "name": "Papa pushes Eva on the swing",
+      "purpose": "Papa already at Eva's back at the swing, gentle pushes. Sara already grinning a few feet to the side. 10s clip.",
+      "clips": [
+        8
+      ]
+    },
+    {
+      "beat": 10,
+      "name": "🎵 MUSIC VIDEO B — 'Push Me Higher!' (60s)",
+      "purpose": "Render B under 'Push Me Higher' — Eva solo slow-mo on the swing, golden-hour glow. 10s slow-mo render looped 6× to fill 60s.",
+      "clips": [
+        "B→8music"
+      ]
+    },
+    {
+      "beat": 11,
+      "name": "Sara: 'Race you, Eva!' — scooter grab",
+      "purpose": "Sara scoops up the pink scooter, Eva the teal scooter. Sister duo scooter-up.",
+      "clips": [
+        9
+      ]
+    },
+    {
+      "beat": 12,
+      "name": "Papa: 'WAIT — snacks!' comic chase",
+      "purpose": "Papa realizes the kids are taking off — gentle comic dad-jog after them. Pure visual comedy.",
+      "clips": [
+        10
+      ]
+    },
+    {
+      "beat": 13,
+      "name": "AUDIENCE-ASK — Sara to camera, scootering",
+      "purpose": "Sara turns to camera while gentle-rolling on her scooter: 'Can YOU keep up with us?!' Camera-ask + transition.",
+      "clips": [
+        11
+      ]
+    },
+    {
+      "beat": 14,
+      "name": "Tennis-court arrival, helmets on",
+      "purpose": "Sara + Eva arrive at the tennis court, helmets buckled, scooters parked at the fence.",
+      "clips": [
+        12
+      ]
+    },
+    {
+      "beat": 15,
+      "name": "Sister tennis-ball pass",
+      "purpose": "Sara + Eva pass a soft yellow tennis ball back and forth between them on the green tennis court.",
+      "clips": [
+        13
+      ]
+    },
+    {
+      "beat": 16,
+      "name": "Isabel + Leo arrive at the fence",
+      "purpose": "Isabel (kindergartener girl) + Leo (3yo brother) appear at the chain-link fence, peeking through. 'Hi! Can we play?' First time these new bound characters appear.",
+      "clips": [
+        14
+      ]
+    },
+    {
+      "beat": 17,
+      "name": "AUDIENCE-ASK — Sara to camera",
+      "purpose": "Sara turns to camera with kind warm wonder: 'Should we say YES?!' Camera-ask + the friendship-decision moment.",
+      "clips": [
+        15
+      ]
+    },
+    {
+      "beat": 18,
+      "name": "'YES! Come play!' — kids enter, tag begins",
+      "purpose": "Sara + Eva wave Isabel + Leo onto the court. Group tag begins with all 4 kids.",
+      "clips": [
+        16
+      ]
+    },
+    {
+      "beat": 19,
+      "name": "GROUP TAG climax (Nano Banana 8-char pre-render)",
+      "purpose": "Sara + Eva + Papa + Isabel + Leo + 3 unnamed friend-kids ALL playing tag together on the tennis court. Pre-rendered as a Nano Banana group still first, then Kling animates the cheer + tag motion. (Hard memory rule 5d — 4+ char clips REQUIRE pre-render.)",
+      "clips": [
+        17
+      ]
+    },
+    {
+      "beat": 20,
+      "name": "🎵 MUSIC VIDEO C — 'Everyone's IT!' (60s)",
+      "purpose": "Render C under 'Everyone's IT' — friendship-celebration loop. 10s 8-char render looped 6× to fill 60s.",
+      "clips": [
+        "C→17music"
+      ]
+    },
+    {
+      "beat": 21,
+      "name": "CLIFFHANGER + AUDIENCE-ASK — 'Did YOU make new friends today?'",
+      "purpose": "Final camera-ask cliffhanger. Sara + Eva at the tennis court fence with Isabel + Leo softly visible behind: 'Did YOU make new friends today? Where should we play tomorrow?!' Both girls hold the warm look at camera. Cut to outro.",
+      "clips": [
+        18
+      ]
+    },
+    {
+      "beat": 22,
+      "name": "OUTRO (reused)",
+      "purpose": "Subscribe pair from season_01/OUTRO/ — 17.mp4 → 18.mp4 → 0_song.mp4 last.",
+      "clips": [
+        "reused"
+      ]
+    }
+  ],
+  "audienceEngagement": {
+    "rule": "memory: lesson_fourth_wall_audience_engagement.md — 2-4 fourth-wall direct-to-camera 'ask the kid' beats per episode; final cliffhanger MUST be a camera-ask",
+    "beats": [
+      {
+        "clip": 4,
+        "type": "camera-ask",
+        "character": "Sara",
+        "line": "Wanna see Daddy be the TAG-MONSTER?!"
+      },
+      {
+        "clip": 11,
+        "type": "camera-ask",
+        "character": "Sara",
+        "line": "Can YOU keep up with us?!"
+      },
+      {
+        "clip": 15,
+        "type": "camera-ask",
+        "character": "Sara",
+        "line": "Should we say YES?!"
+      },
+      {
+        "clip": 18,
+        "type": "camera-ask + cliffhanger",
+        "character": "Sara + Eva",
+        "line": "Did YOU make new friends today? Where should we play tomorrow?!"
+      }
+    ],
+    "totalQuestions": 4,
+    "cap": 4,
+    "withinCap": true
+  },
+  "newCharactersIntro": {
+    "Isabel": "First episode introducing Isabel (kindergartener girl, ~5yo). Designed as recurring character — Bluey's Indy/Honey pattern. Future episodes can re-use her in playground/library/birthday-party settings.",
+    "Leo": "First episode introducing Leo (Isabel's little brother, 3yo). Recurring character. Toddler energy, simpler dialogue."
+  },
+  "rules": {
+    "maxBoundPerClip": 7,
+    "maxTagMentionsPerCharacter": 1,
+    "klingPromptMustNotContain": [
+      "music sting",
+      "music swell",
+      "tender swell",
+      "cheerful music",
+      "comedic music",
+      "playful music",
+      "heartfelt music",
+      "music cue",
+      "score swell",
+      "background music"
+    ],
+    "klingPromptMustNotContainReason": "All music is Suno-mixed in assemble (memory rule #24).",
+    "motionTowardForbidden": "No 'walks in/toward', 'approaches', 'moves to(ward)', 'heads to/in', 'walks up' — Use static placement only. (memory: lesson_kling_motion_verbs_duplicate.md)",
+    "max3ForegroundChars": "Hard cap 3 foreground-anchored characters per clip. Clip 14 (Sara+Eva+Isabel+Leo) and clip 17 (8 chars) trigger the Nano Banana group-shot pre-render rule.",
+    "negativePromptRequired": "duplicate character, twin, clone, two of the same, mirrored figure, second father, second mother, two Papa, two Mama, identical adults, extra people, third child, second sister, second sara, second eva, two eva, duplicate eva, mirror reflection, family members in the background, additional children, extra child in background, ghost figure, shadow of person",
+    "characterNamesInDialogue": "Drop the bound character's name from other characters' dialogue (memory: rule from ep01).",
+    "noRedSplatterNearFace": "memory: lesson_no_red_splatter_kids_show.md — no 'red liquid', 'splash', 'splatter' near face/mouth in any clip prompt. Tennis ball is YELLOW (defensive choice).",
+    "noKlingHorrorIntensity": "memory: lesson_kids_show_comedy_intensity.md — Papa-as-wolf is WARM CARTOON SILLY, NEVER scary or growly. No 'thundering', 'apoplectic', 'rage', 'leaves tremble'. No pets airborne — n/a here, no pets in this episode.",
+    "positionLockRequired": "memory: lesson_kling_position_lock.md (post-ep11 v7) — every multi-beat clip with multiple characters MUST have a POSITION LOCK paragraph. Only ONE character may transition pose per clip; all others static. Especially critical for clip 6 (Papa stuck in slide) and music-video A (Papa walking around tower)."
+  },
+  "clips": [
+    {
+      "episode": 13,
+      "beat": 1,
+      "clip": 1,
+      "title": "HOOK — playground arrival",
+      "mode": "omni",
+      "durationSec": 10,
+      "quality": "720p",
+      "nativeAudio": true,
+      "expectedCredits": 90,
+      "subjects": [
+        "Papa",
+        "Sara",
+        "Eva"
+      ],
+      "scene": "playground-park",
+      "boundElements": [
+        {
+          "tag": "Papa",
+          "source": "library"
+        },
+        {
+          "tag": "Sara",
+          "source": "library"
+        },
+        {
+          "tag": "Eva",
+          "source": "library"
+        },
+        {
+          "tag": "playground-park",
+          "source": "library"
+        }
+      ],
+      "prompt": "Wide cinematic kid-show family-comedy shot at @playground-park — sunny tree-shaded green park, mulch ground, wooden tower-house playground with tube slide softly visible BACKGROUND-RIGHT, swing-set softly visible BACKGROUND-LEFT, soft warm afternoon light. @Papa already CENTER-FRAME standing on the mulch ground with both feet planted on the mulch, warm crinkled-eye dad-smile, both hands relaxed at his sides. Papa has exactly two arms and two hands visible. @Sara already CENTER-LEFT standing on the mulch right beside Papa with both feet planted, ponytail with bow, beaming with cheerful excited kid energy, both hands softly clasped at her chest. Sara has exactly two arms and two hands visible. @Eva already CENTER-RIGHT standing on the mulch right beside Papa with both feet planted, curly blonde hair with rainbow bow, beaming with cheerful excited kid energy, both hands softly clasped at her chest. Eva has exactly two arms and two hands visible. The mulch ground stays plain clean throughout — no marks, no debris, no other people on the playground. (BEAT 1 — 0-5s) All three look out at the playground with cheerful warm smiles. Papa (warm cheerful dad-voice): \"Welcome to the play-PARK!\" Sara (cheerful kid-voice, beaming): \"PLAYGROUND DAY!\" (BEAT 2 — 5-10s) Eva (cheerful giggle, hands still clasped at chest): \"Slide! Swings! Tree-house!\" Papa (warm chuckle, eyes crinkled): \"First one to the slide!\" Calm cheerful warm kid-show family ambiance throughout. STRICT ANATOMY: Papa has exactly two arms and two hands at all times. Sara has exactly two arms and two hands at all times. Eva has exactly two arms and two hands at all times. Each character stays grounded with both feet on the mulch throughout — no leaping, no jumping. The mulch and playground stay plain clean — no marks, no red, no debris.",
+      "negativePrompt": "duplicate character, twin, clone, two of the same, mirrored figure, second father, two Papa, identical adults, second mother, two Mama, mama in this clip, mama visible, dog visible, joe visible, ginger visible, third child, second sister, second sara, second eva, two eva, duplicate eva, three girls, four kids, second blonde child, fourth child, fifth child, additional children, extra child in background, ghost figure, ghost kid, ghost children, shadow children, shadow of person, mirrored children, mirror reflection, family members in the background, strangers, crowd, group of people, other faces, background people, friends, neighbors, other kids on playground, other parents, three arms, third arm, extra arm, extra hand, floating hand, anatomy error, sara has three hands, eva has three hands, papa has three hands, scary face, frightening expression, horror lighting, papa thundering shout, papa apoplectic, papa rage face, intense yelling, blood, red liquid, red splatter, red stain, gore, injury, scary, violent, distressing, sara airborne, eva airborne, papa airborne, sara leaping, eva leaping, hard fall, hard impact, painful fall, environmental shake, motion lines, action lines, dust trails, speed lines, broken playground equipment, slide collapsing, swing falling"
+    },
+    {
+      "episode": 13,
+      "beat": 2,
+      "clip": 2,
+      "title": "Eva: 'Daddy play TAG!'",
+      "mode": "omni",
+      "durationSec": 10,
+      "quality": "720p",
+      "nativeAudio": true,
+      "expectedCredits": 90,
+      "subjects": [
+        "Sara",
+        "Eva"
+      ],
+      "scene": "playground-park",
+      "boundElements": [
+        {
+          "tag": "Sara",
+          "source": "library"
+        },
+        {
+          "tag": "Eva",
+          "source": "library"
+        },
+        {
+          "tag": "playground-park",
+          "source": "library"
+        }
+      ],
+      "prompt": "Mid-shot at @playground-park — soft mulch ground in foreground, green grass + playground equipment softly visible BACKGROUND. @Sara already CENTER-LEFT standing on the mulch with both feet planted, ponytail with bow, both hands cupped softly beside her mouth in a 'calling out' gesture, beaming with cheerful playful kid energy. Sara has exactly two arms and two hands visible. @Eva already CENTER-RIGHT standing on the mulch right next to Sara with both feet planted, curly blonde hair with rainbow bow, both arms held out wide in an excited welcoming gesture, beaming brightly. Eva has exactly two arms and two hands visible. (BEAT 1 — 0-5s) Eva bounces softly in place, both feet still planted, calling out cheerfully toward off-screen Papa. Eva (cheerful sing-song call to off-screen Papa): \"Daddy! Daddy let's play TAG!\" (BEAT 2 — 5-10s) Sara turns toward Eva with a delighted grin, both hands still cupped at her mouth. Sara (cheerful kid-voice, sing-song): \"You can't catch us, Daddy!\" Both girls giggle softly together, still grounded with feet on the mulch. Calm cheerful warm kid-show family ambiance throughout. STRICT ANATOMY: Sara has exactly two arms and two hands at all times — both cupped at mouth. Eva has exactly two arms and two hands at all times — both held out wide. Both girls stay grounded with both feet on the mulch throughout — no leaping, no jumping, no running off. The mulch and playground stay plain clean — no marks, no red, no debris.",
+      "negativePrompt": "duplicate character, twin, clone, two of the same, mirrored figure, second mother, two Mama, mama in this clip, mama visible, second father, two Papa, papa visible on screen, dog visible, joe visible, ginger visible, third child, second sister, second sara, second eva, two eva, duplicate eva, three girls, four kids, second blonde child, fourth child, additional children, extra child in background, ghost figure, ghost kid, shadow children, shadow of person, mirrored children, mirror reflection, family members in the background, strangers, crowd, group of people, other faces, background people, friends, neighbors, other kids on playground, three arms, third arm, extra arm, extra hand, floating hand, anatomy error, sara has three hands, eva has three hands, scary face, frightening expression, horror lighting, blood, red liquid, red splatter, gore, injury, scary, violent, distressing, sara airborne, eva airborne, sara leaping, eva leaping, sara running off, eva running off, hard fall, hard impact, environmental shake, motion lines, action lines"
+    },
+    {
+      "episode": 13,
+      "beat": 3,
+      "clip": 3,
+      "title": "Papa silly tag-monster — locked positions",
+      "mode": "omni",
+      "durationSec": 10,
+      "quality": "720p",
+      "nativeAudio": true,
+      "expectedCredits": 90,
+      "subjects": [
+        "Papa",
+        "Sara",
+        "Eva"
+      ],
+      "scene": "playground-park",
+      "boundElements": [
+        {
+          "tag": "Papa",
+          "source": "library"
+        },
+        {
+          "tag": "Sara",
+          "source": "library"
+        },
+        {
+          "tag": "Eva",
+          "source": "library"
+        },
+        {
+          "tag": "playground-park",
+          "source": "library"
+        }
+      ],
+      "prompt": "Wide cinematic kid-show family comedy shot at @playground-park — green grass area beside the playground equipment, soft mulch transition zone, soft warm afternoon light. POSITION LOCK — every character stays in their EXACT same physical spot from second 0 through second 10. Only Papa's playful arm + finger wiggle motion changes between beats. Sara and Eva DO NOT move, DO NOT change spots, DO NOT cross the frame. Exactly THREE people in the entire frame: one Papa, one Sara, one Eva. @Papa already CENTER-FRAME on hands and knees in the soft grass in a goofy playful 'silly tag-monster' crouch pose — both palms gently planted on the grass, both knees on the grass, big silly warm dad-grin, eyes crinkled with cheer. Papa has exactly two arms and two hands visible at all times — palms on grass throughout. The grass stays plain green clean throughout. @Sara already on the LEFT side of the frame about three steps from Papa, standing on the grass with both feet planted, knees softly bent in a low playful dodge stance, both arms held softly out wide for balance, mouth open in a delighted warm giggle. Sara has exactly two arms and two hands visible at all times — held out for balance. Sara stays in this exact spot throughout the entire 10s. @Eva already on the RIGHT side of the frame about three steps from Papa on the opposite side from Sara, standing on the grass with both feet planted, hands softly clapping with excitement at her chest height, curly blonde hair with rainbow bow bouncing softly. Eva has exactly two arms and two hands visible at all times — clapping at chest height. Eva stays in this exact spot throughout the entire 10s. (BEAT 1 — 0-5s) Papa stays on hands-and-knees and gently wiggles his fingers playfully on the grass like a friendly cartoon-monster. Sara stays in her dodge stance laughing. Eva stays in her clapping spot bouncing softly. Papa (warm cheerful sing-song silly tag-monster voice, soft and playful, NOT scary, NOT shouting): \"Tag-monster's coming for ya!\" (BEAT 2 — 5-10s) Papa stays in hands-and-knees pose, slowly wiggles his shoulders side-to-side in place. Sara giggles helplessly in her dodge stance, both arms still out for balance. Eva claps both hands faster in her exact spot, both feet still planted. Sara (cheerful warm giggle, still in her stance): \"You can't catch us!\" Eva (cheerful giggle, still clapping in place): \"Too quick!\" Papa (warm sing-song from his crouch): \"Too quick! TOO quick for the silly-monster!\" Cheerful warm kid-show family-comedy lighting throughout. STRICT ANATOMY: Papa has exactly two arms and two hands at all times — both palms planted on grass. Sara has exactly two arms and two hands at all times. Eva has exactly two arms and two hands at all times. Papa stays on hands-and-knees throughout with all four limbs in contact with the grass — no lunging, no diving, no leaping, no tackling. Each girl stays grounded with both feet planted on the grass throughout — no leaping, no jumping, no running.",
+      "negativePrompt": "duplicate character, twin, clone, two of the same, mirrored figure, second father, two Papa, identical adults, second mother, two Mama, mama in this clip, mama visible, dog visible, joe visible, ginger visible, third child, second sister, second sara, second eva, two eva, duplicate eva, three girls, four kids, second blonde child, fourth child, fifth child, additional children, extra child in background, ghost figure, ghost kid, ghost children, shadow children, shadow of person, mirrored children, mirror reflection, family members in the background, strangers, crowd, group of people, other faces, background people, friends, neighbors, other kids on playground, three arms, third arm, extra arm, extra hand, floating hand, anatomy error, sara has three hands, eva has three hands, papa has three hands, scary face, frightening expression, horror lighting, scary monster, real monster, monstrous teeth, fangs, claws, papa angry, papa thundering shout, papa apoplectic, papa rage face, intense yelling, blood, red liquid, red splatter, red stain, gore, injury, scary, violent, distressing, sara airborne, eva airborne, papa airborne, sara leaping, eva leaping, papa leaping, papa diving, papa lunging, papa pouncing, papa tackling, papa crashing onto kids, kid being grabbed forcefully, hard fall, hard impact, painful fall, environmental shake, motion lines, action lines, dust trails, speed lines"
+    },
+    {
+      "episode": 13,
+      "beat": 4,
+      "clip": 4,
+      "title": "AUDIENCE-ASK — Sara: 'Wanna see Daddy be the TAG-MONSTER?!'",
+      "mode": "omni",
+      "durationSec": 10,
+      "quality": "720p",
+      "nativeAudio": true,
+      "expectedCredits": 90,
+      "subjects": [
+        "Sara"
+      ],
+      "scene": "playground-park",
+      "boundElements": [
+        {
+          "tag": "Sara",
+          "source": "library"
+        },
+        {
+          "tag": "playground-park",
+          "source": "library"
+        }
+      ],
+      "prompt": "Tight friendly close-up at @playground-park — soft green grass under foot, playground equipment softly visible BACKGROUND-OUT-OF-FOCUS. @Sara already CENTER-FRAME standing on the grass with both feet planted, ponytail with bow, big warm friend-to-friend grin, head turned DIRECTLY toward the camera with bright sparkle in her eyes. Sara has exactly two arms and two hands visible — both softly clasped together at her chest in a warm friendly 'come-here-to-me' kind gesture. (BEAT 1 — 0-5s) Sara holds her warm look at the camera, leaning gently toward camera with friend-to-friend conspiratorial sparkle. Sara (warm friend-to-friend voice, eyes shining at camera): \"Hey kids! Wanna see Daddy be the TAG-MONSTER?!\" She holds the friendly look at the camera waiting cheerfully for the kid watching at home to call out a guess. (BEAT 2 — 5-10s) Sara cups one hand softly around her mouth in a playful conspiratorial whisper-toward-camera gesture, eyes still on camera. Sara (cheerful warm whisper to camera, still beaming): \"Daddy is SO silly when he plays tag! You'll see!\" She gives a warm wink at the camera and beams. Calm cheerful warm kid-show family ambiance throughout. STRICT ANATOMY: Sara has exactly two arms and two hands at all times. Sara stays grounded with both feet on the grass throughout — no leaping, no jumping. The grass stays plain green clean — no marks, no red, no debris.",
+      "negativePrompt": "duplicate character, twin, clone, two of the same, mirrored figure, second sister, second sara, two sara, duplicate sara, identical girls, second mother, two Mama, mama in this clip, mama visible, second father, two Papa, papa in this clip, papa visible, dog visible, joe visible, ginger visible, eva in this clip, eva visible, third child, second eva, two eva, duplicate eva, second blonde child, fourth child, additional children, extra child in background, ghost figure, ghost kid, shadow children, shadow of person, mirrored children, mirror reflection, family members in the background, strangers, crowd, group of people, other faces, background people, friends, neighbors, three arms, third arm, extra arm, extra hand, floating hand, anatomy error, sara has three hands, sara not looking at camera, sara looking away from camera, scary face, frightening expression, horror lighting, blood, red liquid, red splatter, gore, injury, scary, violent, distressing, sara airborne, sara leaping, hard fall, hard impact, environmental shake, motion lines, action lines"
+    },
+    {
+      "episode": 13,
+      "beat": 5,
+      "clip": 5,
+      "title": "Kids in tower-house — sing-taunt 'YOU CAN'T GET US!'",
+      "mode": "omni",
+      "durationSec": 10,
+      "quality": "720p",
+      "nativeAudio": true,
+      "expectedCredits": 90,
+      "subjects": [
+        "Sara",
+        "Eva"
+      ],
+      "scene": "playground-tower-hou",
+      "boundElements": [
+        {
+          "tag": "Sara",
+          "source": "library"
+        },
+        {
+          "tag": "Eva",
+          "source": "library"
+        },
+        {
+          "tag": "playground-tower-hou",
+          "source": "library"
+        }
+      ],
+      "prompt": "Wide cinematic shot at @playground-tower-hou — wooden tower platform with closed-side panel walls and clear window openings on each side, mulch ground softly visible at the bottom of the frame. POSITION LOCK — Sara stays inside the tower at the LEFT window throughout. Eva stays inside the tower at the RIGHT window throughout. Neither girl moves, climbs, or changes window position at any point in the clip. Exactly TWO girls in the frame. @Sara already inside the tower-house leaning forward at the LEFT window opening, ponytail with bow softly visible, both hands gripping the window frame edges. Sara has exactly two arms and two hands visible — both gripping the window frame. Sara stays at this exact window throughout the entire 10s. @Eva already inside the tower-house leaning forward at the RIGHT window opening, curly blonde hair with rainbow bow softly visible, both hands gripping the window frame edges. Eva has exactly two arms and two hands visible — both gripping the window frame. Eva stays at this exact window throughout the entire 10s. The tower walls stay plain clean — no marks, no graffiti, no red anywhere. (BEAT 1 — 0-5s) Sara peeks her head out of her window, beaming at the camera with a sing-songy taunt-grin. Sara (cheerful sing-song taunt, warm and playful): \"You can't get us, Daddy!\" Eva pops her head out of her own window, joining the taunt. Eva (cheerful sing-song taunt): \"You can't get us!\" (BEAT 2 — 5-10s) Both girls together in unison from their separate windows, sing-songy: \"You can't get us! You can't get us!\" Both giggling helplessly from their locked positions at the windows. Cheerful warm kid-show comedy ambiance throughout. STRICT ANATOMY: Sara has exactly two arms and two hands at all times — both on the window frame. Eva has exactly two arms and two hands at all times — both on the window frame. Both girls stay inside the tower at their assigned windows — no leaning out far, no climbing out, no falling.",
+      "negativePrompt": "duplicate character, twin, clone, two of the same, mirrored figure, second mother, two Mama, mama in this clip, mama visible, second father, two Papa, papa in this clip, papa visible on screen, dog visible, joe visible, ginger visible, third child, second sister, second sara, second eva, two eva, duplicate eva, three girls, four kids, second blonde child, fourth child, fifth child, additional children, extra child in background, ghost figure, ghost kid, ghost children, shadow children, shadow of person, mirrored children, mirror reflection, sara at two windows, eva at two windows, sara duplicating, eva duplicating, family members in the background, strangers, crowd, group of people, other faces, background people, friends, neighbors, three arms, third arm, extra arm, extra hand, floating hand, anatomy error, sara has three hands, eva has three hands, scary face, frightening expression, horror lighting, blood, red liquid, red splatter, gore, injury, scary, violent, distressing, sara falling out of window, eva falling out of window, sara climbing out, eva climbing out, sara airborne, eva airborne, hard fall, hard impact, broken playground equipment, environmental shake, motion lines, action lines, dramatic shouting, intense yelling"
+    },
+    {
+      "episode": 13,
+      "beat": 7,
+      "clip": 6,
+      "title": "PARENT-ACTIVITY (15s) — Papa stuck in tube slide, kids cheer 'YOU'RE IT!'",
+      "mode": "omni",
+      "durationSec": 15,
+      "quality": "720p",
+      "nativeAudio": true,
+      "expectedCredits": 135,
+      "subjects": [
+        "Papa",
+        "Sara",
+        "Eva"
+      ],
+      "scene": "playground-tube-slid",
+      "boundElements": [
+        {
+          "tag": "Papa",
+          "source": "library"
+        },
+        {
+          "tag": "Sara",
+          "source": "library"
+        },
+        {
+          "tag": "Eva",
+          "source": "library"
+        },
+        {
+          "tag": "playground-tube-slid",
+          "source": "library"
+        }
+      ],
+      "prompt": "Wide cinematic kid-show family-comedy shot at @playground-tube-slid — soft mulch ground at the bottom of the frame, brown/tan curving tube slide tunnel visible CENTER-FRAME with its opening at the bottom. POSITION LOCK — Papa stays half-in / half-out of the bottom of the tube slide throughout the entire 15s, his head and shoulders softly visible at the slide opening, his lower body inside the tube. Papa does NOT move forward or backward through the slide, does NOT pop out, does NOT slide back up. Sara and Eva stay in their exact spots at the bottom of the slide throughout. Exactly THREE people in the entire frame: one Papa, one Sara, one Eva. @Papa already half-stuck mid-tube at the bottom opening of the slide — his head, shoulders, and arms softly visible peeking out of the slide opening, the rest of his body inside the tube. Papa has exactly two arms and two hands visible — both palms softly pressed against the inside of the tube wall, comically wedged. Big silly warm dad-grin with goofy 'oops I'm too big' expression, eyes crinkled with cheerful defeat. NOT scared, NOT distressed, comically resigned. Papa stays in this exact stuck position throughout the entire 15s. @Sara already standing on the mulch on the LEFT side of the slide opening with both feet planted, ponytail with bow, both hands cupped softly beside her mouth in a cheerful taunt gesture. Sara has exactly two arms and two hands visible — both cupped at mouth. Sara stays at this exact spot throughout. @Eva already standing on the mulch on the RIGHT side of the slide opening with both feet planted right next to Sara on the same side, curly blonde hair with rainbow bow, both hands clapping softly with delight at her chest. Eva has exactly two arms and two hands visible — both clapping at chest. Eva stays at this exact spot throughout. The mulch and slide stay plain clean — no marks, no red, no debris. (BEAT 1 — 0-5s) Papa wiggles his shoulders gently in his stuck position, big silly defeated grin. Papa (warm cheerful muffled silly-wolf voice from his stuck spot): \"Awwww! The wolf got STUCK!\" Sara giggles helplessly, both hands still cupped at her mouth. Eva claps faster in her exact spot. (BEAT 2 — 5-10s) Sara cheers from her exact spot, both hands still cupped at mouth. Sara (cheerful sing-song taunt, soft and playful): \"You're IT, silly wolf!\" Eva joins in, both hands still clapping in place. Eva (cheerful sing-song taunt, beaming): \"You're IT! You're IT!\" Papa waggles his shoulders gently, still half-stuck. (BEAT 3 — 10-15s) Both girls together from their exact spots, sing-songy taunt in unison: \"You're IT, silly wolf-y! YOU'RE IT!\" Papa lets out a warm cheerful chuckle from his stuck position, eyes still crinkled with playful defeat. Papa (warm warm muffled chuckle): \"Aww, you piggies are TOO clever!\" All three giggling warmly. Cheerful warm kid-show family-comedy lighting throughout. STRICT ANATOMY: Papa has exactly two arms and two hands at all times — both palms inside the tube. Sara has exactly two arms and two hands at all times — both cupped at her mouth. Eva has exactly two arms and two hands at all times — both clapping at her chest. Papa stays half-stuck in the slide tube throughout the entire 15s — no popping out, no sliding back up, no climbing free. Each girl stays grounded with both feet on the mulch throughout — no leaping, no jumping, no climbing on Papa. NO scary face on Papa — comically defeated and silly throughout, never distressed.",
+      "negativePrompt": "duplicate character, twin, clone, two of the same, mirrored figure, second father, two Papa, identical adults, second mother, two Mama, mama in this clip, mama visible, dog visible, joe visible, ginger visible, third child, second sister, second sara, second eva, two eva, duplicate eva, three girls, four kids, second blonde child, fourth child, fifth child, additional children, extra child in background, ghost figure, ghost kid, ghost children, shadow children, shadow of person, mirrored children, mirror reflection, family members in the background, strangers, crowd, group of people, other faces, background people, friends, neighbors, other kids on playground, three arms, third arm, extra arm, extra hand, floating hand, anatomy error, sara has three hands, eva has three hands, papa has three hands, scary face, frightening expression, horror lighting, papa scared, papa distressed, papa panicking, papa trapped scary, claustrophobic, dark slide tunnel, papa angry, papa thundering shout, papa apoplectic, papa rage face, intense yelling, painful expression, hurt face, blood, red liquid, red splatter, gore, injury, wound, bleeding, scary, violent, distressing, sara airborne, eva airborne, papa airborne, papa flying through slide, papa launching out, sara leaping, eva leaping, sara climbing on papa, eva climbing on papa, hard fall, hard impact, painful fall, slide collapsing, slide breaking, environmental shake, motion lines, action lines, dust trails, speed lines"
+    },
+    {
+      "episode": 13,
+      "beat": 8,
+      "clip": 7,
+      "title": "Papa pops free — Eva: 'Daddy push me on the swing!'",
+      "mode": "omni",
+      "durationSec": 10,
+      "quality": "720p",
+      "nativeAudio": true,
+      "expectedCredits": 90,
+      "subjects": [
+        "Papa",
+        "Eva"
+      ],
+      "scene": "playground-park",
+      "boundElements": [
+        {
+          "tag": "Papa",
+          "source": "library"
+        },
+        {
+          "tag": "Eva",
+          "source": "library"
+        },
+        {
+          "tag": "playground-park",
+          "source": "library"
+        }
+      ],
+      "prompt": "Mid-shot at @playground-park — soft mulch ground, playground swing-set softly visible BACKGROUND-LEFT, soft warm afternoon light. @Papa already CENTER-LEFT standing on the mulch with both feet planted, just-freed-from-the-slide goofy expression, both hands gently brushing mulch off his shoulders, warm crinkled-eye dad-smile. Papa has exactly two arms and two hands visible. @Eva already CENTER-RIGHT standing on the mulch right next to Papa with both feet planted, curly blonde hair with rainbow bow, both hands softly clasped together at her chest in a cute pleading gesture, eyes huge and shining with cheerful kid wonder. Eva has exactly two arms and two hands visible. (BEAT 1 — 0-5s) Papa softly chuckles, gently brushes one shoulder with one hand then the other shoulder with the other hand, warm dad-laugh. Papa (warm cheerful chuckle): \"That slide was TOO small for the wolf-Daddy!\" (BEAT 2 — 5-10s) Eva tugs softly at her own clasped hands, beaming with kid pleading-cuteness. Eva (cheerful pleading kid-voice, warm and bright): \"Daddy! Daddy, push me on the SWING! Pleeeeaase?\" Papa (warm cheerful chuckle, looking down at Eva fondly): \"To the SWING-set!\" Calm cheerful warm kid-show family ambiance throughout. STRICT ANATOMY: Papa has exactly two arms and two hands at all times. Eva has exactly two arms and two hands at all times — both clasped at her chest in pleading gesture. Both stay grounded with both feet on the mulch throughout — no leaping, no jumping, no walking off-frame. The mulch and playground stay plain clean — no marks, no red, no debris.",
+      "negativePrompt": "duplicate character, twin, clone, two of the same, mirrored figure, second father, two Papa, identical adults, second mother, two Mama, mama in this clip, mama visible, dog visible, joe visible, ginger visible, third child, second sister, sara in this clip, sara visible, second eva, two eva, duplicate eva, second blonde child, additional children, extra child in background, ghost figure, ghost kid, shadow children, shadow of person, mirrored children, mirror reflection, family members in the background, strangers, crowd, group of people, other faces, background people, friends, neighbors, other kids on playground, three arms, third arm, extra arm, extra hand, floating hand, anatomy error, eva has three hands, papa has three hands, scary face, frightening expression, horror lighting, papa thundering shout, papa apoplectic, papa rage face, intense yelling, blood, red liquid, red splatter, red stain, gore, injury, wound, scary, violent, distressing, eva airborne, eva leaping, papa airborne, papa leaping, papa walking toward, papa walking off, papa walks toward swing, hard fall, hard impact, painful fall, environmental shake, motion lines, action lines, dust trails"
+    },
+    {
+      "episode": 13,
+      "beat": 9,
+      "clip": 8,
+      "title": "Papa pushes Eva on the swing (Sara watching)",
+      "mode": "omni",
+      "durationSec": 10,
+      "quality": "720p",
+      "nativeAudio": true,
+      "expectedCredits": 90,
+      "subjects": [
+        "Papa",
+        "Sara",
+        "Eva"
+      ],
+      "scene": "playground-swings",
+      "boundElements": [
+        {
+          "tag": "Papa",
+          "source": "library"
+        },
+        {
+          "tag": "Sara",
+          "source": "library"
+        },
+        {
+          "tag": "Eva",
+          "source": "library"
+        },
+        {
+          "tag": "playground-swings",
+          "source": "library"
+        }
+      ],
+      "prompt": "Mid-side cinematic shot of @playground-swings — green-frame swing-set with rubber kid-seats, mulch ground, soft warm golden-hour light. POSITION LOCK — Eva stays seated on the swing throughout. Papa stays at Eva's back at the swing throughout. Sara stays at the side throughout. Only the swing's gentle pendulum motion changes between beats. Exactly THREE people in the frame. @Eva already softly seated on the swing with both hands gripping the swing chains at chest height, curly blonde hair with rainbow bow, both feet softly hanging slightly above the mulch, beaming with cheerful kid joy. Eva has exactly two arms and two hands visible — both on the swing chains. Eva stays seated on the swing throughout the entire 10s — never lets go, never falls off. @Papa already standing on the mulch directly behind the swing with both feet planted, both hands gently placed on the back of the swing seat at hip height, ready to push softly. Papa has exactly two arms and two hands visible — both on the back of the swing seat. Papa stays at this exact spot behind the swing throughout. @Sara already standing on the mulch on the LEFT side of the swing-set about three steps away with both feet planted, ponytail with bow, both hands cupped softly at her cheeks in a delighted spectator pose, beaming with sister joy. Sara has exactly two arms and two hands visible — both at her cheeks. Sara stays at this exact spot throughout the entire 10s. The mulch and swing stay plain clean — no marks, no red, no debris. (BEAT 1 — 0-5s) Papa gently gives Eva a soft, low push on the swing — Eva rises a small comfortable arc forward then gently swings back. Eva (cheerful sing-song joy, both hands still on chains): \"Wheeee! Daddy!\" Papa (warm cheerful dad-voice from behind): \"Hold on tight, little astronaut!\" (BEAT 2 — 5-10s) Eva swings forward and back again in a gentle continuous motion. Sara watches happily from her exact spot, both hands still at her cheeks. Sara (warm sister-cheering): \"Higher, sister! Higher!\" Eva (laughing in mid-swing, both hands gripping chains): \"Higher, Daddy, higher pleeeeease!\" Papa (warm chuckling): \"Coming up!\" Cheerful warm kid-show golden-hour lighting throughout. STRICT ANATOMY: Eva has exactly two arms and two hands at all times — both gripping the swing chains. Papa has exactly two arms and two hands at all times — both on the swing seat back. Sara has exactly two arms and two hands at all times — both at her cheeks. Eva stays seated on the swing throughout — never lets go, never falls. Papa stays at Eva's back throughout. Sara stays at her exact spot throughout. The swing motion is GENTLE and SAFE — no high arcs, no flipping, no spinning, no chains breaking.",
+      "negativePrompt": "duplicate character, twin, clone, two of the same, mirrored figure, second father, two Papa, identical adults, second mother, two Mama, mama in this clip, mama visible, dog visible, joe visible, ginger visible, third child, second sister, second sara, second eva, two eva, duplicate eva, three girls, four kids, second blonde child, fourth child, additional children, extra child in background, ghost figure, ghost kid, ghost children, shadow children, shadow of person, mirrored children, mirror reflection, family members in the background, strangers, crowd, group of people, other faces, background people, friends, neighbors, other kids on swings, three arms, third arm, extra arm, extra hand, floating hand, anatomy error, sara has three hands, eva has three hands, papa has three hands, eva letting go of chains, eva falling off swing, eva airborne off swing, swing chains breaking, swing falling, swing collapsing, scary face, frightening expression, horror lighting, papa angry, papa pushing too hard, papa thundering shout, intense yelling, blood, red liquid, red splatter, gore, injury, wound, scary, violent, distressing, sara airborne, sara leaping, eva flying off swing, papa airborne, hard fall, hard impact, painful fall, environmental shake, motion lines, action lines, dramatic high arc, swing flipping over the bar, eva spinning"
+    },
+    {
+      "episode": 13,
+      "beat": 11,
+      "clip": 9,
+      "title": "Sara: 'Race you, Eva!' — scooter grab",
+      "mode": "omni",
+      "durationSec": 10,
+      "quality": "720p",
+      "nativeAudio": true,
+      "expectedCredits": 90,
+      "subjects": [
+        "Sara",
+        "Eva"
+      ],
+      "scene": "playground-park",
+      "boundElements": [
+        {
+          "tag": "Sara",
+          "source": "library"
+        },
+        {
+          "tag": "Eva",
+          "source": "library"
+        },
+        {
+          "tag": "playground-park",
+          "source": "library"
+        },
+        {
+          "tag": "pink-scooter",
+          "source": "library"
+        },
+        {
+          "tag": "teal-scooter",
+          "source": "library"
+        }
+      ],
+      "prompt": "Mid-wide shot at @playground-park — soft mulch transitioning to paved sidewalk, soft warm afternoon light. @Sara already CENTER-LEFT standing on the sidewalk with both feet planted, ponytail with bow, both hands gripping the handlebars of @pink-scooter beside her, beaming with cheerful kid energy. Sara has exactly two arms and two hands visible — both on the scooter handlebars. The pink scooter stays parked beside Sara, both her hands gripping it at handlebar height. @Eva already CENTER-RIGHT standing on the sidewalk right next to Sara with both feet planted, curly blonde hair with rainbow bow, both hands gripping the handlebars of @teal-scooter beside her, beaming with cheerful kid energy. Eva has exactly two arms and two hands visible — both on the scooter handlebars. The teal scooter stays parked beside Eva, both her hands gripping it at handlebar height. (BEAT 1 — 0-5s) Sara turns her head softly toward Eva with a cheerful determined kid-grin, both hands still on her scooter handlebars. Sara (cheerful sing-song kid-voice): \"Hop on the scooter, sister! Let's ZOOM to the court!\" (BEAT 2 — 5-10s) Eva turns her head softly toward Sara with an excited delighted grin, both hands still on her scooter handlebars. Eva (cheerful giggle, hands still on handlebars): \"Last one there is a silly-fish, sister!\" Both girls stay grounded with both feet on the sidewalk, both hands still on their respective scooters. Calm cheerful warm kid-show ambiance throughout. STRICT ANATOMY: Sara has exactly two arms and two hands at all times — both gripping pink scooter handlebars. Eva has exactly two arms and two hands at all times — both gripping teal scooter handlebars. Both girls stay grounded with both feet on the sidewalk throughout — no leaping, no jumping, no kicking off the scooter to ride yet (clip ends with both girls stationary on the sidewalk).",
+      "negativePrompt": "duplicate character, twin, clone, two of the same, mirrored figure, second mother, two Mama, mama in this clip, mama visible, second father, two Papa, papa in this clip, papa visible, dog visible, joe visible, ginger visible, third child, second sister, second sara, second eva, two eva, duplicate eva, three girls, four kids, second blonde child, fourth child, additional children, extra child in background, ghost figure, ghost kid, shadow children, shadow of person, mirrored children, mirror reflection, family members in the background, strangers, crowd, group of people, other faces, background people, friends, neighbors, three arms, third arm, extra arm, extra hand, floating hand, anatomy error, sara has three hands, eva has three hands, scooter levitating, free arm swinging while holding scooter, scary face, frightening expression, horror lighting, blood, red liquid, red splatter, gore, injury, scary, violent, distressing, sara airborne, eva airborne, sara leaping, eva leaping, sara crashing scooter, eva crashing scooter, scooter falling over, hard fall, hard impact, painful fall, environmental shake, motion lines, action lines, dust trails, speed lines, sara running off, eva running off"
+    },
+    {
+      "episode": 13,
+      "beat": 12,
+      "clip": 10,
+      "title": "Papa: 'WAIT — snacks!' comic dad-jog",
+      "mode": "omni",
+      "durationSec": 10,
+      "quality": "720p",
+      "nativeAudio": true,
+      "expectedCredits": 90,
+      "subjects": [
+        "Papa"
+      ],
+      "scene": "playground-park",
+      "boundElements": [
+        {
+          "tag": "Papa",
+          "source": "library"
+        },
+        {
+          "tag": "playground-park",
+          "source": "library"
+        }
+      ],
+      "prompt": "Wide shot at @playground-park — playground equipment softly visible BACKGROUND, paved sidewalk in foreground, soft warm afternoon light. @Papa already CENTER-FRAME standing in place on the sidewalk with both feet planted, just realizing his daughters have taken off on their scooters, theatrical wide-eyed dad-expression with cheerful warm comedic surprise. Papa has exactly two arms and two hands visible — both raised softly in a 'wait!' gesture, palms open, at chest height. The sidewalk and playground stay plain clean throughout. (BEAT 1 — 0-5s) Papa's eyes go wide with cheerful comedic dad-realization — mouth open in a soft 'O' of warm surprise, both hands still raised softly at chest height. Papa (warm cheerful playful dad-call, NOT panicked, NOT scared, theatrical comedy): \"Wait, wait, WAIT! What about the snacks?!\" (BEAT 2 — 5-10s) Papa softly bounces in place on his feet (gentle in-place bounce, not running off), both hands now softly cupped around his mouth like a megaphone. Papa (warm cheerful playful sing-song call): \"Hold up! Daddy's coming, slow down a little, Daddy's got SNACKS!\" Soft cheerful kid-show comedy ambiance throughout. STRICT ANATOMY: Papa has exactly two arms and two hands at all times. Papa stays grounded with both feet on the sidewalk throughout — no running off-frame, no leaping, no chasing. The bounce-in-place is gentle and comedic.",
+      "negativePrompt": "duplicate character, twin, clone, two of the same, mirrored figure, second father, two Papa, identical adults, second mother, two Mama, mama in this clip, mama visible, dog visible, joe visible, ginger visible, sara in this clip, sara visible, eva in this clip, eva visible, third child, additional children, extra child in background, ghost figure, ghost adult, shadow of person, mirrored adult, mirror reflection, family members in the background, strangers, crowd, group of people, other faces, background people, friends, neighbors, other parents, other adults, three arms, third arm, extra arm, extra hand, floating hand, anatomy error, papa has three hands, scary face, frightening expression, horror lighting, papa thundering shout, papa apoplectic, papa rage face, papa angry, papa panicked, papa scared, papa distressed, intense yelling, blood, red liquid, red splatter, gore, injury, scary, violent, distressing, papa airborne, papa launching, papa flying, papa leaping, papa diving, papa walks toward, papa walks off, papa running off, papa heads to, papa heads off, papa chasing forward, hard fall, hard impact, painful fall, environmental shake, motion lines, action lines, dust trails, speed lines"
+    },
+    {
+      "episode": 13,
+      "beat": 13,
+      "clip": 11,
+      "title": "AUDIENCE-ASK — Sara on scooter: 'Can YOU keep up with us?!'",
+      "mode": "omni",
+      "durationSec": 10,
+      "quality": "720p",
+      "nativeAudio": true,
+      "expectedCredits": 90,
+      "subjects": [
+        "Sara",
+        "Eva"
+      ],
+      "scene": "playground-park",
+      "boundElements": [
+        {
+          "tag": "Sara",
+          "source": "library"
+        },
+        {
+          "tag": "Eva",
+          "source": "library"
+        },
+        {
+          "tag": "pink-scooter",
+          "source": "library"
+        },
+        {
+          "tag": "teal-scooter",
+          "source": "library"
+        },
+        {
+          "tag": "pink-helmet",
+          "source": "library"
+        },
+        {
+          "tag": "teal-helmet",
+          "source": "library"
+        }
+      ],
+      "prompt": "Mid-shot of paved sidewalk path leading away from the playground — soft trees + grass on either side, soft warm afternoon light. POSITION LOCK — Sara stays in her exact spot on the LEFT side of the sidewalk throughout. Eva stays in her exact spot on the RIGHT side of the sidewalk throughout. Neither girl rolls forward or back — both are softly stationary on their scooters with one foot on the deck and one foot softly placed on the sidewalk for balance. @Sara already CENTER-LEFT softly standing on the sidewalk with one foot on her @pink-scooter deck and the other foot planted softly on the sidewalk for balance, ponytail with bow visible under @pink-helmet (helmet buckled), both hands gripping the scooter handlebars firmly. Sara has exactly two arms and two hands visible — both on handlebars. Sara stays in this exact spot throughout the entire 10s. @Eva already CENTER-RIGHT softly standing on the sidewalk right next to Sara with one foot on her @teal-scooter deck and the other foot planted softly on the sidewalk for balance, curly blonde hair softly visible under @teal-helmet (helmet buckled), both hands gripping the scooter handlebars firmly. Eva has exactly two arms and two hands visible — both on handlebars. Eva stays in this exact spot throughout the entire 10s. (BEAT 1 — 0-5s) Sara turns her head DIRECTLY toward the camera with a bright friend-to-friend cheerful sparkle in her eyes, both hands still on the scooter handlebars. Sara (cheerful warm friend-to-friend voice, eyes shining at camera): \"Hey kids! Can YOU keep up with us?!\" She holds the friendly look at the camera for two full beats. (BEAT 2 — 5-10s) Eva grins beside Sara, also turning her head softly toward camera with a cheerful giggle, both hands still on her own handlebars. Eva (cheerful warm giggle to camera): \"Catch us at the tennis court!\" Both girls stay in their exact spots on the sidewalk, scooters parked under them. Calm cheerful warm kid-show ambiance throughout. STRICT ANATOMY: Sara has exactly two arms and two hands at all times — both on pink scooter handlebars. Eva has exactly two arms and two hands at all times — both on teal scooter handlebars. Both girls stay grounded with one foot on the scooter and one foot softly planted on the sidewalk throughout — no rolling motion, no leaping, no falling, no scooter crashing.",
+      "negativePrompt": "duplicate character, twin, clone, two of the same, mirrored figure, second mother, two Mama, mama in this clip, mama visible, second father, two Papa, papa in this clip, papa visible, dog visible, joe visible, ginger visible, third child, second sister, second sara, second eva, two eva, duplicate eva, three girls, four kids, second blonde child, fourth child, additional children, extra child in background, ghost figure, ghost kid, shadow children, shadow of person, mirrored children, mirror reflection, family members in the background, strangers, crowd, group of people, other faces, background people, friends, neighbors, three arms, third arm, extra arm, extra hand, floating hand, anatomy error, sara has three hands, eva has three hands, sara not looking at camera, sara looking away from camera, scooter levitating, free arm swinging while holding scooter, scary face, frightening expression, horror lighting, blood, red liquid, red splatter, gore, injury, scary, violent, distressing, sara airborne, eva airborne, sara leaping, eva leaping, sara crashing scooter, eva crashing scooter, scooter falling over, helmet falling off, helmet flying off, hard fall, hard impact, painful fall, environmental shake, motion lines, action lines, dust trails, speed lines"
+    },
+    {
+      "episode": 13,
+      "beat": 14,
+      "clip": 12,
+      "title": "Tennis-court arrival, helmets on",
+      "mode": "omni",
+      "durationSec": 10,
+      "quality": "720p",
+      "nativeAudio": true,
+      "expectedCredits": 90,
+      "subjects": [
+        "Sara",
+        "Eva"
+      ],
+      "scene": "tennis-court",
+      "boundElements": [
+        {
+          "tag": "Sara",
+          "source": "library"
+        },
+        {
+          "tag": "Eva",
+          "source": "library"
+        },
+        {
+          "tag": "tennis-court",
+          "source": "library"
+        },
+        {
+          "tag": "pink-helmet",
+          "source": "library"
+        },
+        {
+          "tag": "teal-helmet",
+          "source": "library"
+        }
+      ],
+      "prompt": "Wide cinematic shot of @tennis-court — outdoor green tennis court with white painted lines, low net softly visible BACKGROUND, chain-link fence around perimeter, soft warm afternoon light. POSITION LOCK — Sara stays standing on the LEFT side of the court throughout. Eva stays standing on the RIGHT side of the court throughout, opposite to Sara. Neither girl moves across the court. @Sara already CENTER-LEFT standing on the green court surface with both feet planted, ponytail with bow visible under @pink-helmet (helmet buckled), both hands softly clasped at her chest in a 'we're HERE!' arrival pose, beaming with cheerful kid energy. Sara has exactly two arms and two hands visible — both clasped at chest. Sara stays at this exact spot throughout the entire 10s. @Eva already CENTER-RIGHT standing on the green court surface a few steps from Sara with both feet planted, curly blonde hair softly visible under @teal-helmet (helmet buckled), both hands softly raised in cheerful celebration at chest height. Eva has exactly two arms and two hands visible — both raised at chest. Eva stays at this exact spot throughout the entire 10s. (BEAT 1 — 0-5s) Sara looks around the court with cheerful kid-wonder, helmet still on, both hands still clasped at her chest. Sara (cheerful warm kid-voice): \"We MADE it!\" (BEAT 2 — 5-10s) Eva claps her hands together softly with delight, both hands still up at her chest. Eva (cheerful giggle, beaming): \"We zoomed all the way! Even with helmets!\" Both girls grin together, helmets still on, both stationary on the court. Calm cheerful warm kid-show ambiance throughout. STRICT ANATOMY: Sara has exactly two arms and two hands at all times — both clasped at chest. Eva has exactly two arms and two hands at all times — both at chest. Both girls stay grounded with both feet planted on the green tennis court throughout — no leaping, no jumping, no running. Helmets stay buckled and on heads throughout. The tennis court stays plain clean — no marks, no red, no debris.",
+      "negativePrompt": "duplicate character, twin, clone, two of the same, mirrored figure, second mother, two Mama, mama in this clip, mama visible, second father, two Papa, papa in this clip, papa visible, dog visible, joe visible, ginger visible, third child, second sister, second sara, second eva, two eva, duplicate eva, three girls, four kids, second blonde child, fourth child, additional children, extra child in background, ghost figure, ghost kid, shadow children, shadow of person, mirrored children, mirror reflection, family members in the background, strangers, crowd, group of people, other faces, background people, friends, neighbors, other tennis players, other kids on court, three arms, third arm, extra arm, extra hand, floating hand, anatomy error, sara has three hands, eva has three hands, helmet falling off, helmet flying off, scooters on court, scooters visible, scary face, frightening expression, horror lighting, blood, red liquid, red splatter, gore, injury, scary, violent, distressing, sara airborne, eva airborne, sara leaping, eva leaping, hard fall, hard impact, painful fall, environmental shake, motion lines, action lines"
+    },
+    {
+      "episode": 13,
+      "beat": 15,
+      "clip": 13,
+      "title": "Sister tennis-ball pass",
+      "mode": "omni",
+      "durationSec": 10,
+      "quality": "720p",
+      "nativeAudio": true,
+      "expectedCredits": 90,
+      "subjects": [
+        "Sara",
+        "Eva"
+      ],
+      "scene": "tennis-court",
+      "boundElements": [
+        {
+          "tag": "Sara",
+          "source": "library"
+        },
+        {
+          "tag": "Eva",
+          "source": "library"
+        },
+        {
+          "tag": "tennis-court",
+          "source": "library"
+        },
+        {
+          "tag": "tennis-ball",
+          "source": "library"
+        },
+        {
+          "tag": "pink-helmet",
+          "source": "library"
+        },
+        {
+          "tag": "teal-helmet",
+          "source": "library"
+        }
+      ],
+      "prompt": "Wide shot of @tennis-court — green court with white lines, low net softly visible BACKGROUND, chain-link fence, soft warm afternoon light. POSITION LOCK — Sara stays in her exact spot on the LEFT side of the court throughout. Eva stays in her exact spot on the RIGHT side of the court throughout, about 6 feet apart from Sara. Neither girl crosses the court — only the tennis ball travels between them. @Sara already CENTER-LEFT standing on the green court surface with both feet planted, ponytail with bow under @pink-helmet (buckled), holding the soft yellow @tennis-ball gently in her right hand at chest height in a 'about to roll' pose. Sara has exactly two arms and two hands visible — right hand on ball, left hand softly at her side. Sara stays at this exact spot throughout the entire 10s. @Eva already CENTER-RIGHT standing on the green court surface about 6 feet from Sara with both feet planted, curly blonde hair under @teal-helmet (buckled), both hands cupped softly together in front of her at hip height in a 'ready to catch' pose. Eva has exactly two arms and two hands visible — both cupped together. Eva stays at this exact spot throughout the entire 10s. (BEAT 1 — 0-5s) Sara softly tosses the soft yellow tennis ball with a gentle underhand motion in a low arc toward Eva. The ball travels in a gentle arc from Sara's right hand toward Eva. Sara (cheerful kid-voice, warm and bright): \"Catch it, Eva!\" (BEAT 2 — 5-10s) Eva gently catches the ball with both her cupped hands at hip height, beaming with delighted kid pride. Eva (cheerful giggle, both hands now around the ball): \"Caught it! My turn!\" Both girls stay in their exact spots, ball now in Eva's hands. Calm cheerful warm kid-show ambiance throughout. STRICT ANATOMY: Sara has exactly two arms and two hands at all times — right hand on ball (until release), left at side. Eva has exactly two arms and two hands at all times — both cupped together. Both girls stay grounded with both feet on the court throughout — no leaping, no jumping, no running across the court. Helmets stay buckled. Ball is plain SOFT YELLOW — no other color, no red, no marks. The tennis court stays plain clean.",
+      "negativePrompt": "duplicate character, twin, clone, two of the same, mirrored figure, second mother, two Mama, mama in this clip, mama visible, second father, two Papa, papa in this clip, papa visible, dog visible, joe visible, ginger visible, third child, second sister, second sara, second eva, two eva, duplicate eva, three girls, four kids, second blonde child, fourth child, additional children, extra child in background, ghost figure, ghost kid, shadow children, shadow of person, mirrored children, mirror reflection, family members in the background, strangers, crowd, group of people, other faces, background people, friends, neighbors, other tennis players, three arms, third arm, extra arm, extra hand, floating hand, anatomy error, sara has three hands, eva has three hands, helmet falling off, scary face, frightening expression, horror lighting, blood, red liquid, red splatter, red ball, red tennis ball, ball as red, gore, injury, scary, violent, distressing, sara airborne, eva airborne, sara leaping, eva leaping, sara running across court, eva running across court, sara crossing to eva, eva crossing to sara, hard fall, hard impact, painful fall, ball flying out of frame, ball hitting face, environmental shake, motion lines, action lines"
+    },
+    {
+      "episode": 13,
+      "beat": 16,
+      "clip": 14,
+      "title": "Isabel + Leo arrive at the fence — 'Can we play?'",
+      "mode": "omni",
+      "durationSec": 10,
+      "quality": "720p",
+      "nativeAudio": true,
+      "expectedCredits": 90,
+      "subjects": [
+        "Sara",
+        "Eva",
+        "Isabel",
+        "Leo"
+      ],
+      "scene": "tennis-court",
+      "boundElements": [
+        {
+          "tag": "Sara",
+          "source": "library"
+        },
+        {
+          "tag": "Eva",
+          "source": "library"
+        },
+        {
+          "tag": "Isabel",
+          "source": "library"
+        },
+        {
+          "tag": "Leo",
+          "source": "library"
+        },
+        {
+          "tag": "tennis-court",
+          "source": "library"
+        },
+        {
+          "tag": "pink-helmet",
+          "source": "library"
+        },
+        {
+          "tag": "teal-helmet",
+          "source": "library"
+        }
+      ],
+      "prompt": "Wide shot of @tennis-court — green court inside, chain-link fence in CENTER-FRAME with two new kids visible OUTSIDE the fence in BACKGROUND, soft warm afternoon light. POSITION LOCK — every character stays in their EXACT same physical spot from second 0 through second 10. Exactly FOUR kids in the entire frame: one Sara, one Eva, one Isabel, one Leo. NO additional kids visible. NOTE: This is a 4-character clip — Nano Banana group-shot pre-render strongly recommended via `python3 content/generateGroupShot.py ep13_clip14_meet_isabel_leo --chars sara,eva,isabel,leo --pose 'sara and eva on green tennis court inside fence, isabel and leo standing softly outside fence on grass side, all four smiling, fence between them' --scene tennis-court --n 3` then upload as scene reference. @Sara already CENTER-LEFT-INSIDE-FENCE standing on the green tennis court with both feet planted, ponytail under @pink-helmet (buckled), both hands relaxed at her sides, surprised warm wonder face turned softly toward the fence. Sara has exactly two arms and two hands visible. @Eva already CENTER-RIGHT-INSIDE-FENCE standing on the green tennis court right next to Sara with both feet planted, curly blonde hair under @teal-helmet (buckled), both hands softly clasped at her chest, surprised warm wonder face also turned toward the fence. Eva has exactly two arms and two hands visible. @Isabel already FAR-LEFT-OUTSIDE-FENCE standing on the grass softly outside the chain-link fence with both feet planted, kindergartener girl with curly brunette hair, kind shy smile, both hands gripping the chain-link fence at chest height in a 'peeking through' gesture. Isabel has exactly two arms and two hands visible. @Leo already FAR-RIGHT-OUTSIDE-FENCE standing on the grass softly outside the chain-link fence right next to Isabel with both feet planted, 3-year-old toddler boy with short brown hair, big shy curious eyes, both hands holding onto the fence at his chest height. Leo has exactly two arms and two hands visible. (BEAT 1 — 0-5s) Sara and Eva stay in their exact spots inside the fence, looking softly toward Isabel and Leo with kind wonder. Isabel waves one hand softly through the fence. Isabel (kind kindergartener voice, warm and shy): \"Hi! We saw you playing! Can we play too?\" (BEAT 2 — 5-10s) Leo waves one hand shyly beside Isabel. Leo (small toddler voice, sweet and shy): \"Pweeeease?\" Sara and Eva exchange a warm sister-look. Cheerful warm kid-show family ambiance throughout. STRICT ANATOMY: Each character has exactly two arms and two hands at all times. Sara stays at her exact spot inside the fence. Eva stays at her exact spot inside the fence. Isabel stays at her exact spot outside the fence. Leo stays at his exact spot outside the fence. The fence stays between them throughout. No character climbs the fence, no character moves through the fence, no character moves their position.",
+      "negativePrompt": "duplicate character, twin, clone, two of the same, mirrored figure, second mother, two Mama, mama in this clip, mama visible, second father, two Papa, papa in this clip, papa visible, dog visible, joe visible, ginger visible, fifth child, sixth child, additional children, extra child in background, second sara, second eva, two eva, duplicate eva, second isabel, two isabel, duplicate isabel, second leo, two leo, duplicate leo, second blonde child, fourth child, fifth child, ghost figure, ghost kid, ghost children, shadow children, shadow of person, mirrored children, mirror reflection, family members in the background, strangers, crowd, group of people, other faces, background people, friends, neighbors, other kids on court, other kids on grass, three arms, third arm, extra arm, extra hand, floating hand, anatomy error, sara has three hands, eva has three hands, isabel has three hands, leo has three hands, helmet falling off, scary face, frightening expression, horror lighting, blood, red liquid, red splatter, gore, injury, scary, violent, distressing, sara airborne, eva airborne, isabel airborne, leo airborne, isabel climbing fence, leo climbing fence, sara crossing to fence, eva crossing to fence, hard fall, hard impact, environmental shake, motion lines, action lines, fence falling, fence broken"
+    },
+    {
+      "episode": 13,
+      "beat": 17,
+      "clip": 15,
+      "title": "AUDIENCE-ASK — Sara: 'Should we say YES?!'",
+      "mode": "omni",
+      "durationSec": 10,
+      "quality": "720p",
+      "nativeAudio": true,
+      "expectedCredits": 90,
+      "subjects": [
+        "Sara"
+      ],
+      "scene": "tennis-court",
+      "boundElements": [
+        {
+          "tag": "Sara",
+          "source": "library"
+        },
+        {
+          "tag": "tennis-court",
+          "source": "library"
+        },
+        {
+          "tag": "pink-helmet",
+          "source": "library"
+        }
+      ],
+      "prompt": "Tight friendly close-up at @tennis-court — green court surface softly visible, chain-link fence softly out-of-focus in BACKGROUND, soft warm afternoon light. @Sara already CENTER-FRAME standing on the green court with both feet planted, ponytail with bow softly visible under @pink-helmet (buckled), big warm friend-to-friend grin, head turned DIRECTLY toward the camera with bright cheerful sparkle in her eyes. Sara has exactly two arms and two hands visible — both softly clasped together at her chest in a warm friendly 'come closer to me' kind gesture. (BEAT 1 — 0-5s) Sara holds her warm look at the camera, leaning gently toward camera with friend-to-friend conspiratorial wonder-sparkle. Sara (warm friend-to-friend voice, eyes shining at camera, soft and kind): \"There are kids who want to play with us! Should we say YES?!\" She holds the friendly look at the camera waiting cheerfully for the kid watching at home to call out an answer. (BEAT 2 — 5-10s) Sara cups one hand softly to her ear in a 'I'm listening' gesture toward the camera, the other hand still on her chest, beaming with kind warm encouragement. Sara (cheerful warm sing-song to camera): \"What do YOU say? YES?!\" She gives a warm wink at the camera. Calm cheerful warm kid-show family ambiance throughout. STRICT ANATOMY: Sara has exactly two arms and two hands at all times. Sara stays grounded with both feet on the green court throughout — no leaping, no jumping. Helmet stays buckled. The court stays plain clean — no marks, no red, no debris.",
+      "negativePrompt": "duplicate character, twin, clone, two of the same, mirrored figure, second sister, second sara, two sara, duplicate sara, identical girls, second mother, two Mama, mama in this clip, mama visible, second father, two Papa, papa in this clip, papa visible, dog visible, joe visible, ginger visible, eva in this clip, eva visible, isabel in this clip, isabel visible, leo in this clip, leo visible, third child, additional children, extra child in background, ghost figure, ghost kid, shadow children, shadow of person, mirrored children, mirror reflection, family members in the background, strangers, crowd, group of people, other faces, background people, friends, neighbors, three arms, third arm, extra arm, extra hand, floating hand, anatomy error, sara has three hands, sara not looking at camera, sara looking away from camera, helmet falling off, scary face, frightening expression, horror lighting, blood, red liquid, red splatter, gore, injury, scary, violent, distressing, sara airborne, sara leaping, hard fall, hard impact, environmental shake, motion lines, action lines"
+    },
+    {
+      "episode": 13,
+      "beat": 18,
+      "clip": 16,
+      "title": "'YES! Come play!' — kids enter, group tag begins",
+      "mode": "omni",
+      "durationSec": 10,
+      "quality": "720p",
+      "nativeAudio": true,
+      "expectedCredits": 90,
+      "subjects": [
+        "Sara",
+        "Eva",
+        "Isabel"
+      ],
+      "scene": "tennis-court",
+      "boundElements": [
+        {
+          "tag": "Sara",
+          "source": "library"
+        },
+        {
+          "tag": "Eva",
+          "source": "library"
+        },
+        {
+          "tag": "Isabel",
+          "source": "library"
+        },
+        {
+          "tag": "tennis-court",
+          "source": "library"
+        },
+        {
+          "tag": "pink-helmet",
+          "source": "library"
+        },
+        {
+          "tag": "teal-helmet",
+          "source": "library"
+        }
+      ],
+      "prompt": "Wide shot of @tennis-court — green court with white lines, chain-link fence softly visible BACKGROUND, soft warm afternoon light. POSITION LOCK — every character stays in their EXACT same physical spot from second 0 through second 10. Exactly THREE kids in the entire frame: one Sara, one Eva, one Isabel. (Leo is NOT in this clip — he stays just outside the frame with Papa, off-screen.) @Sara already CENTER-LEFT standing on the green court with both feet planted, ponytail with bow under @pink-helmet (buckled), both arms held out wide in a warm welcoming 'come on in' gesture, beaming with cheerful kid joy. Sara has exactly two arms and two hands visible — both held out wide. Sara stays at this exact spot throughout. @Eva already CENTER-RIGHT standing on the green court with both feet planted next to Sara, curly blonde hair under @teal-helmet (buckled), both hands cupped softly at her mouth in a cheerful 'come on!' shout-gesture, beaming brightly. Eva has exactly two arms and two hands visible — both cupped at mouth. Eva stays at this exact spot throughout. @Isabel already FAR-RIGHT standing on the green court a few steps from Eva with both feet planted (already on the court — she has come through the fence gate which is off-frame), kindergartener girl with curly brunette hair, kind shy smile, both hands clasped together at her chest in a delighted 'oh thank you!' gesture. Isabel has exactly two arms and two hands visible — both clasped at chest. Isabel stays at this exact spot throughout. (BEAT 1 — 0-5s) Sara waves both her open hands warmly in welcome from her exact spot. Sara (warm cheerful kid-voice, sing-song bright): \"YES! Come play with us!\" Eva, hands still cupped at her mouth, calls out cheerfully. Eva (cheerful sing-song call): \"We have a tennis ball! Catch it with us!\" (BEAT 2 — 5-10s) Isabel beams brightly from her exact spot, both hands still clasped at her chest. Isabel (kind kindergartener voice, warm and shy with delight): \"Yay! Thank you! What do we play first?\" Sara (cheerful kid-voice, both hands still wide): \"TAG! Everyone's IT!\" Calm cheerful warm kid-show family ambiance throughout. STRICT ANATOMY: Sara has exactly two arms and two hands at all times — both held out wide. Eva has exactly two arms and two hands at all times — both cupped at mouth. Isabel has exactly two arms and two hands at all times — both clasped at chest. Each girl stays grounded with both feet on the green court throughout — no leaping, no jumping, no running. Helmets stay buckled.",
+      "negativePrompt": "duplicate character, twin, clone, two of the same, mirrored figure, second mother, two Mama, mama in this clip, mama visible, second father, two Papa, papa in this clip, papa visible, dog visible, joe visible, ginger visible, leo visible on screen, leo in frame, fourth child, fifth child, second sara, two sara, duplicate sara, second eva, two eva, duplicate eva, second isabel, two isabel, duplicate isabel, second blonde child, additional children, extra child in background, ghost figure, ghost kid, ghost children, shadow children, shadow of person, mirrored children, mirror reflection, family members in the background, strangers, crowd, group of people, other faces, background people, friends, neighbors, other kids on court, three arms, third arm, extra arm, extra hand, floating hand, anatomy error, sara has three hands, eva has three hands, isabel has three hands, helmet falling off, scary face, frightening expression, horror lighting, blood, red liquid, red splatter, gore, injury, scary, violent, distressing, sara airborne, eva airborne, isabel airborne, sara leaping, eva leaping, isabel leaping, hard fall, hard impact, environmental shake, motion lines, action lines"
+    },
+    {
+      "episode": 13,
+      "beat": 19,
+      "clip": 17,
+      "title": "GROUP TAG climax — 8-character friendship-tag (Nano Banana pre-render)",
+      "mode": "omni",
+      "durationSec": 10,
+      "quality": "720p",
+      "nativeAudio": true,
+      "expectedCredits": 90,
+      "subjects": [
+        "Sara",
+        "Eva",
+        "Papa",
+        "Isabel",
+        "Leo"
+      ],
+      "scene": "tennis-court",
+      "boundElements": [
+        {
+          "tag": "everyones-it-still",
+          "source": "upload"
+        },
+        {
+          "tag": "tennis-court",
+          "source": "library"
+        }
+      ],
+      "preRenderRequired": {
+        "tool": "generateGroupShot.py",
+        "command": "python3 content/generateGroupShot.py everyones_it_group_still --chars sara,eva,papa,isabel,leo --extras 3 --pose 'group-tag freeze-frame on green tennis court, 8 figures arranged in soft semicircle: papa center on hands and knees as silly tag-monster, sara left of papa hands raised cheering, eva right of papa hands clapping, isabel kneeling left foreground touching the ground (it!), leo standing right foreground with both hands raised, 3 unnamed friend-kids in midground at various happy poses, all wearing kid clothes, helmets visible on sara and eva, all on green court, soft warm afternoon light, all smiling' --scene tennis-court --n 3"
+      },
+      "preRenderNote": "Pick the cleanest of 3 candidates, then upload to Kling library as 'everyones-it-still'. This locks the 8-character composition before Kling video animation — eliminates ghost extras + count drift. memory: lesson_nano_banana_group_shot.md",
+      "prompt": "Wide cinematic kid-show friendship-tag freeze-frame at @tennis-court — green court with white lines softly visible UNDERNEATH, soft warm afternoon light. The composition is anchored by the @everyones-it-still pre-rendered group shot (5 characters in a soft semicircle). The Kling animation gently brings the still to life — characters smile and wave warmly, hands held up, gentle in-place sway, NO walking, NO running, NO position changes. POSITION LOCK — every character stays in their EXACT same spot from the source still. Only soft sways, smiles, gentle hand-waves change between beats. Exactly FIVE people in the entire frame, matching the still: Isabel (kneeling foreground LEFT touching the ground as the 'it' tagger, brunette curls), Sara (CENTER-LEFT standing with pink helmet on + both hands raised cheering), Papa (CENTER on hands-and-knees as the silly tag-monster, big warm grin), Eva (CENTER-RIGHT standing with teal helmet on + both hands clapping), Leo (standing foreground RIGHT next to Eva, both arms raised softly, tiny dinosaur figurine in left hand). NO additional kids appear, NO extras spawn. (BEAT 1 — 0-5s) The whole group sways gently in unison from their exact frozen poses, smiling warmly at each other. Soft cheerful kid-laughter ambiance. (BEAT 2 — 5-10s) The whole group raises one hand together in a soft cheerful unison wave at the camera (or each other), smiles widening. All eight kids and Papa sharing a cheerful warm friendship-celebration moment together. STRICT ANATOMY: each character has exactly two arms and two hands at all times. Each character stays in their EXACT same physical spot from the still — no walking, no running, no leaping, no climbing on each other. Papa stays on hands-and-knees in his tag-monster pose. The tennis court stays plain clean — no marks, no red, no debris. NO scary faces, NO crashing, NO falling. Pure friendship-celebration warmth.",
+      "negativePrompt": "duplicate character, twin, clone, two of the same, mirrored figure, second father, two Papa, identical adults, second mother, two Mama, mama in this clip, mama visible, dog visible, joe visible, ginger visible, ninth child, tenth child, additional children beyond 5 named + 3 friends, extra child in background, second sara, second eva, second isabel, second leo, two sara, two eva, two isabel, two leo, duplicate sara, duplicate eva, duplicate isabel, duplicate leo, fourth named child, fifth named child, more friend kids, ghost figure, ghost kid, ghost children, ghost extra, shadow children, shadow of person, mirrored children, mirror reflection, family members in the background, strangers behind kids, crowd in background, group of people additional, other faces, background people additional, friends additional, neighbors, other tennis players, three arms, third arm, extra arm, extra hand, floating hand, anatomy error, characters merging, characters overlapping faces, scary face, frightening expression, horror lighting, papa angry, papa thundering shout, papa apoplectic, papa rage face, papa scary monster, kids scared, kid distressed, kid crying, blood, red liquid, red splatter, gore, injury, wound, scary, violent, distressing, characters airborne, characters leaping, characters jumping, characters running across court, characters climbing on papa, characters tackling, hard fall, hard impact, painful fall, environmental shake, motion lines, action lines, dust trails, speed lines, characters walking out of frame"
+    },
+    {
+      "episode": 13,
+      "beat": 21,
+      "clip": 18,
+      "title": "CLIFFHANGER + AUDIENCE-ASK — 'Did YOU make new friends today?'",
+      "mode": "omni",
+      "durationSec": 10,
+      "quality": "720p",
+      "nativeAudio": true,
+      "expectedCredits": 90,
+      "subjects": [
+        "Sara",
+        "Eva"
+      ],
+      "scene": "tennis-court",
+      "boundElements": [
+        {
+          "tag": "Sara",
+          "source": "library"
+        },
+        {
+          "tag": "Eva",
+          "source": "library"
+        },
+        {
+          "tag": "tennis-court",
+          "source": "library"
+        },
+        {
+          "tag": "pink-helmet",
+          "source": "library"
+        },
+        {
+          "tag": "teal-helmet",
+          "source": "library"
+        }
+      ],
+      "prompt": "Tight head-on close-up at @tennis-court — chain-link fence softly visible BACKGROUND-OUT-OF-FOCUS, golden-hour warm light bathing the scene. POSITION LOCK — Sara stays in her exact spot CENTER-LEFT throughout. Eva stays in her exact spot CENTER-RIGHT throughout. Neither girl moves. Exactly TWO girls in the entire frame. @Sara already CENTER-LEFT FOREGROUND standing on the green court with both feet planted, ponytail with bow softly visible under @pink-helmet (buckled), warm friend-to-friend smile, head turned DIRECTLY toward the camera with bright cheerful sparkle in her eyes. Sara has exactly two arms and two hands visible — both softly clasped together at her chest in a warm 'goodbye for now' wave-pose. Sara stays at this exact spot throughout. @Eva already CENTER-RIGHT FOREGROUND standing on the green court right next to Sara with both feet planted, curly blonde hair softly visible under @teal-helmet (buckled), warm friend-to-friend smile, also turned DIRECTLY toward the camera. Eva has exactly two arms and two hands visible — both held softly up in a cheerful warm 'wave goodbye' gesture. Eva stays at this exact spot throughout. (BEAT 1 — 0-5s) Sara holds her warm look at the camera with a friend-to-friend cheerful sparkle. Sara (warm friend-to-friend voice, eyes shining at camera): \"Did YOU make new friends today?\" She holds the friendly look at the camera for a full beat. (BEAT 2 — 5-10s) Eva softly leans in beside Sara still in her exact spot, also looking directly at camera with warm cheerful eyes. Eva (warm cheerful kid-voice, friend-to-friend): \"Where should we play TOMORROW?\" Both girls hold their warm look at the camera together waiting cheerfully for the kid watching at home to answer out loud. Both wave a soft warm goodbye-for-now wave. Calm cheerful warm kid-show family ambiance throughout. STRICT ANATOMY: Sara has exactly two arms and two hands at all times — both clasped at chest. Eva has exactly two arms and two hands at all times — both held up in wave gesture. Both girls stay grounded with both feet on the green court throughout — no leaping, no jumping. Helmets stay buckled. The court stays plain clean.",
+      "negativePrompt": "duplicate character, twin, clone, two of the same, mirrored figure, second mother, two Mama, mama in this clip, mama visible, second father, two Papa, papa in this clip, papa visible, dog visible, joe visible, ginger visible, isabel in this clip, isabel visible, leo in this clip, leo visible, third child, second sister, second sara, second eva, two eva, duplicate eva, three girls, four kids, second blonde child, fourth child, additional children, extra child in background, ghost figure, ghost kid, shadow children, shadow of person, mirrored children, mirror reflection, family members in the background, strangers, crowd, group of people, other faces, background people, friends behind, neighbors, three arms, third arm, extra arm, extra hand, floating hand, anatomy error, sara has three hands, eva has three hands, sara not looking at camera, sara looking away from camera, eva not looking at camera, eva looking away from camera, helmet falling off, scary face, frightening expression, horror lighting, blood, red liquid, red splatter, gore, injury, scary, violent, distressing, sara airborne, eva airborne, hard fall, hard impact, environmental shake, motion lines, action lines"
+    }
+  ],
+  "musicVideos": [
+    {
+      "episode": 13,
+      "beat": "music-video-A",
+      "clip": "A",
+      "title": "MUSIC VIDEO RENDER A — Papa-as-wolf walks around the tower-house (Three Little Pigs)",
+      "mode": "omni",
+      "durationSec": 15,
+      "quality": "720p",
+      "nativeAudio": true,
+      "expectedCredits": 135,
+      "subjects": [
+        "Papa",
+        "Sara",
+        "Eva"
+      ],
+      "scene": "playground-tower-hou",
+      "boundElements": [
+        {
+          "tag": "Papa",
+          "source": "library"
+        },
+        {
+          "tag": "Sara",
+          "source": "library"
+        },
+        {
+          "tag": "Eva",
+          "source": "library"
+        },
+        {
+          "tag": "playground-tower-hou",
+          "source": "library"
+        }
+      ],
+      "reuseAsset": true,
+      "reuseAssetNote": "ONE 15s render of Papa-as-cartoon-wolf softly walking around the tower-house, paired with Suno song 'Little Pigs Let Me Come In.mp3' via loopVideoWithSong.mjs (looped 8× with crossfade to fill the 120s music block). Loop choreography: smooth continuous walk, kids visible at windows the whole time.",
+      "musicVideoBlock": true,
+      "loopExpansion": {
+        "iterations": 8,
+        "xfadeDuration": 0.3,
+        "outputDurationSec": 118
+      },
+      "usedUnderSongs": [
+        {
+          "song": "assets/music/Little Pigs Let Me Come In.mp3",
+          "blockDurationSec": 120,
+          "trimStart": 0,
+          "placementClipNumber": "5music"
+        }
+      ],
+      "prompt": "Wide cinematic kid-show family-comedy shot at @playground-tower-hou — wooden tower platform with closed-side panel walls + clear window openings, soft mulch ground at the bottom of the frame, soft warm afternoon light. POSITION LOCK — Sara stays inside the tower at the LEFT window throughout. Eva stays inside the tower at the RIGHT window throughout. Neither girl moves, climbs out, or falls. ONLY Papa moves — Papa paces in a SMOOTH CONTINUOUS slow circle around the tower-house perimeter, not teleporting between sides. Papa starts at the LEFT side of the tower at second 0, paces gently around to the BACK of the tower by second 5, paces gently around to the RIGHT side by second 10, paces gently around to the FRONT by second 15. ONE single continuous walk, no jumping between positions. @Papa already on the LEFT side of the tower-house at second 0 standing on the mulch with both feet planted, pacing in a continuous smooth slow circle around the tower over the 15 seconds, dressed in a goofy soft costume-y wolf-ear headband (NOT a scary wolf costume — just plain headband with soft floppy fabric ears). Papa has exactly two arms and two hands visible at all times — gently raised in playful 'wolf' wiggle-fingers near his cheeks. Papa's expression is warm + comedic + theatrical, NEVER scary, NEVER growly. Big silly warm dad-grin throughout. @Sara already inside the tower-house at the LEFT window opening — her head + shoulders softly visible peeking out, ponytail with bow, both hands gripping the window frame. Sara has exactly two arms and two hands visible — both on the window frame. Sara stays at her exact window throughout. @Eva already inside the tower-house at the RIGHT window opening — her head + shoulders softly visible peeking out, curly blonde hair with rainbow bow, both hands gripping the window frame. Eva has exactly two arms and two hands visible — both on the window frame. Eva stays at her exact window throughout. Soft cartoon hot-dog-shape confetti or pastel-cloud confetti drifts gently down through the frame in soft sock-hop atmosphere. The mulch and tower stay plain clean — no marks, no red, no debris. Papa knocks softly at each tower side as he passes — gentle 'knock-knock' on the wood — and silently mouths the wolf-words from the Suno song (no specific dialogue lip-sync). Kids playfully shake their heads NO at each window as Papa passes them. Camera locked, head-on / slight side angle. Bright cheerful warm afternoon lighting. The three of them act out the Three Little Pigs role-play silently — generic happy/cheeky/silly mouth movements, no specific lip-sync. Designed to LOOP cleanly: Papa returns to his original LEFT-side starting position at second 15. No audible speech, no music — silent render. STRICT ANATOMY: Papa has exactly two arms and two hands at all times. Sara has exactly two arms and two hands at all times — both gripping window frame. Eva has exactly two arms and two hands at all times — both gripping window frame. Papa stays grounded with both feet on the mulch throughout — never leaves the ground, never climbs on the tower, never rushes. Both girls stay safely inside their tower windows throughout — no climbing out, no falling. NO scary wolf face, NO growl, NO dark lighting — pure cheerful kid-show comedy.",
+      "negativePrompt": "duplicate character, twin, clone, two of the same, mirrored figure, second father, two Papa, identical adults, second mother, two Mama, mama in this clip, mama visible, dog visible, joe visible, ginger visible, third child, second sister, second sara, second eva, two eva, duplicate eva, three girls, four kids, second blonde child, fourth child, fifth child, additional children, extra child in background, ghost figure, ghost kid, ghost children, shadow children, shadow of person, mirrored children, mirror reflection, family members in the background, strangers, crowd, group of people, other faces, background people, friends, neighbors, other kids on playground, real beach photo realism, real ocean, scene clutter, logos, real text, real signage, three arms, third arm, extra arm, extra hand, floating hand, anatomy error, sara has three hands, eva has three hands, papa has three hands, scary wolf face, scary cartoon wolf, growling wolf, wolf fangs, wolf claws, real wolf, dark fur, hairy wolf body, full wolf costume, wolf paws on hands, papa scary face, papa angry, papa thundering, papa apoplectic, papa rage face, intense yelling, papa actually catching kids, kid being grabbed, kid being pulled out of tower, blood, red liquid, red splatter, red stain, gore, injury, wound, scary, violent, distressing, sara falling out of window, eva falling out of window, sara climbing out, eva climbing out, papa airborne, papa launching, papa leaping, papa flying, papa diving, papa jumping at tower, hard fall, hard impact, painful fall, tower collapsing, tower falling, environmental shake, motion lines, action lines, dust trails, speed lines, dramatic shouting, specific dialogue words, lip-sync to specific syllables, audible music, audible singing words"
+    },
+    {
+      "episode": 13,
+      "beat": "music-video-B",
+      "clip": "B",
+      "title": "MUSIC VIDEO RENDER B — Eva slow-mo on the swing (Push Me Higher)",
+      "mode": "omni",
+      "durationSec": 10,
+      "quality": "720p",
+      "nativeAudio": true,
+      "expectedCredits": 90,
+      "subjects": [
+        "Eva"
+      ],
+      "scene": "playground-swings",
+      "boundElements": [
+        {
+          "tag": "Eva",
+          "source": "library"
+        },
+        {
+          "tag": "playground-swings",
+          "source": "library"
+        }
+      ],
+      "reuseAsset": true,
+      "reuseAssetNote": "ONE 10s slow-motion render of Eva on the swing, paired with Suno song 'Push Me Higher.mp3' via loopVideoWithSong.mjs (looped 6× with crossfade to fill 60s).",
+      "musicVideoBlock": true,
+      "loopExpansion": {
+        "iterations": 6,
+        "xfadeDuration": 0.3,
+        "outputDurationSec": 58
+      },
+      "usedUnderSongs": [
+        {
+          "song": "assets/music/Push Me Higher.mp3",
+          "blockDurationSec": 60,
+          "trimStart": 0,
+          "placementClipNumber": "8music"
+        }
+      ],
+      "prompt": "Wide slow-motion music-video shot of @playground-swings — green-frame swing-set with rubber kid-seats, mulch ground softly visible, soft golden-hour light bathing the scene with warm orange-pink glow, twinkly soft pollen motes drifting slowly through the frame. NO real ocean, NO scene clutter, NO logos, NO real text. POSITION LOCK — Eva stays softly seated on the swing throughout the entire 10s. Eva does NOT let go, does NOT fall off, does NOT change positions. Only the swing's slow-motion gentle pendulum motion changes between beats. @Eva already CENTER-FRAME softly seated on the swing with both hands gripping the swing chains at chest height, curly blonde hair with rainbow bow flowing gently in slow motion, both feet softly hanging in the air, eyes huge with cheerful kid wonder, big warm beaming smile. Eva has exactly two arms and two hands visible at all times — both on the swing chains. (BEAT 1 — 0-5s) Eva swings forward in a gentle slow-motion arc — hair flowing slowly back, big wonder-smile, eyes wide with awe, both hands gripping chains. (BEAT 2 — 5-10s) Eva swings gently back — hair flowing slowly forward, eyes still wide with awe, soft warm wonder-smile. The motion is SLOW, SOFT, DREAMY throughout — like flying gently through golden-hour magic. Camera locked, side angle, kid-eye-level. Soft warm dreamy lighting, glittering pollen-motes drifting. Designed to LOOP cleanly: Eva returns to identical mid-arc pose at second 0 and second 10. No audible speech, no music — silent render. STRICT ANATOMY: Eva has exactly two arms and two hands at all times — both gripping swing chains. Eva stays seated on the swing throughout — never lets go, never falls. The swing motion is GENTLE and SLOW — no high arcs, no flipping, no spinning, no chains breaking. The mulch and swing stay plain clean.",
+      "negativePrompt": "duplicate character, twin, clone, two of the same, mirrored figure, second sister, sara in this clip, sara visible, second eva, two eva, duplicate eva, three girls, four kids, second mother, mama in this clip, second father, papa in this clip, papa visible, dog visible, joe visible, ginger visible, isabel visible, leo visible, additional children, extra child in background, second blonde child, ghost figure, ghost kid, ghost children, shadow children, shadow of person, mirrored children, mirror reflection, family members in the background, strangers, crowd, group of people, other faces, background people, friends, neighbors, other kids on swings, real ocean, real beach scene, scene clutter, logos, real text, real signage, three arms, third arm, extra arm, extra hand, floating hand, anatomy error, eva has three hands, eva letting go of chains, eva falling off swing, eva airborne off swing, swing chains breaking, swing falling, swing collapsing, scary face, frightening expression, horror lighting, blood, red liquid, red splatter, gore, injury, scary, violent, distressing, eva flying off swing, eva mid-air separated from swing, eva launched, hard fall, hard impact, painful fall, environmental shake, motion lines, action lines, dramatic high arc, swing flipping over the bar, eva spinning, eva upside-down, specific dialogue words, lip-sync to specific syllables, audible music, audible singing words"
+    },
+    {
+      "episode": 13,
+      "beat": "music-video-C",
+      "clip": "C",
+      "title": "MUSIC VIDEO RENDER C — 8-character group-tag celebration (Everyone's IT)",
+      "mode": "omni",
+      "durationSec": 10,
+      "quality": "720p",
+      "nativeAudio": true,
+      "expectedCredits": 90,
+      "subjects": [
+        "Sara",
+        "Eva",
+        "Papa",
+        "Isabel",
+        "Leo"
+      ],
+      "scene": "tennis-court",
+      "boundElements": [
+        {
+          "tag": "everyones-it-still",
+          "source": "upload"
+        },
+        {
+          "tag": "tennis-court",
+          "source": "library"
+        }
+      ],
+      "preRenderRequired": {
+        "tool": "generateGroupShot.py",
+        "command": "python3 content/generateGroupShot.py everyones_it_group_still --chars sara,eva,papa,isabel,leo --extras 3 --pose 'group-tag freeze-frame on green tennis court, 8 figures arranged in cheerful semicircle: papa CENTER on hands and knees as silly tag-monster grin big, sara LEFT of papa hands raised cheering helmet on, eva RIGHT of papa hands clapping helmet on, isabel KNEELING-LEFT-FOREGROUND touching ground (it!), leo STANDING-RIGHT-FOREGROUND both hands raised, 3 unnamed friend-kids in midground at various happy poses (one on left waving, one center between sara and eva clapping, one on right giggling), all on green court with white lines, all smiling, soft warm afternoon light, no other people' --scene tennis-court --n 3"
+      },
+      "preRenderNote": "Same Nano Banana group-shot as clip 17 (re-uses the same locked composition for visual consistency). The 8-char count is hard-locked by the still — Kling animates from it, doesn't introduce new characters.",
+      "reuseAsset": true,
+      "reuseAssetNote": "ONE 10s render of the 8-character group-tag scene animating gently from the Nano Banana still, paired with Suno song 'Everyones IT.mp3' via loopVideoWithSong.mjs (looped 6× to fill 60s).",
+      "musicVideoBlock": true,
+      "loopExpansion": {
+        "iterations": 6,
+        "xfadeDuration": 0.3,
+        "outputDurationSec": 58
+      },
+      "usedUnderSongs": [
+        {
+          "song": "assets/music/Everyones IT.mp3",
+          "blockDurationSec": 60,
+          "trimStart": 0,
+          "placementClipNumber": "17music"
+        }
+      ],
+      "prompt": "Wide cinematic kid-show friendship-celebration shot at @tennis-court — green court with white lines, soft warm afternoon light. The composition is anchored by the @everyones-it-still pre-rendered group shot (5 characters in a cheerful semicircle, all locked in place). Kling gently animates the still — characters smile widely, sway softly in unison, raise hands in cheer, NO walking, NO running, NO position changes. POSITION LOCK — every character stays in their EXACT same spot from the source still throughout the entire 10s. Only soft sway + smile + cheer-wave changes. Exactly FIVE people in the entire frame, matching the still: Isabel (kneeling LEFT-FOREGROUND on green court, brunette curls), Sara (CENTER-LEFT standing with pink helmet, both hands raised cheering), Papa (CENTER on hands-and-knees as silly tag-monster, big warm dad-grin), Eva (CENTER-RIGHT standing with teal helmet, both hands clapping), Leo (RIGHT-FOREGROUND standing next to Eva, both arms raised, tiny dinosaur in left hand). NO additional kids appear, NO extras spawn. (BEAT 1 — 0-5s) The whole group sways gently in unison from their exact frozen poses, smiles widening warmly. (BEAT 2 — 5-10s) The whole group raises one hand together in a soft cheerful unison wave at the camera, smiles peaking. Pure friendship-celebration warmth. Soft cheerful kid-laughter ambiance. Designed to LOOP cleanly: every character returns to identical starting pose at second 0 and second 10. No audible speech, no music — silent render. STRICT ANATOMY: each character has exactly two arms and two hands at all times. Each character stays in their EXACT same physical spot from the still — no walking, no running, no leaping, no climbing on each other. Papa stays on hands-and-knees in his tag-monster pose throughout, never leaves the ground, never lunges. The tennis court stays plain clean.",
+      "negativePrompt": "duplicate character, twin, clone, two of the same, mirrored figure, second father, two Papa, identical adults, second mother, two Mama, mama in this clip, mama visible, dog visible, joe visible, ginger visible, ninth child, tenth child, eleventh child, additional children beyond 5 named + 3 friends, extra child in background, second sara, second eva, second isabel, second leo, two sara, two eva, two isabel, two leo, duplicate sara, duplicate eva, duplicate isabel, duplicate leo, more friend kids, ghost figure, ghost kid, ghost children, ghost extra, shadow children, shadow of person, mirrored children, mirror reflection, family members in the background, strangers behind kids, crowd in background, additional group of people, other faces additional, background people additional, other tennis players, real ocean, real beach scene, scene clutter, logos, real text, three arms, third arm, extra arm, extra hand, floating hand, anatomy error, characters merging, characters overlapping faces, scary face, frightening expression, horror lighting, papa angry, papa thundering shout, papa apoplectic, papa rage face, papa scary monster, kids scared, kid distressed, kid crying, blood, red liquid, red splatter, gore, injury, wound, scary, violent, distressing, characters airborne, characters leaping, characters jumping, characters running across court, characters climbing on papa, characters tackling, hard fall, hard impact, painful fall, environmental shake, motion lines, action lines, dust trails, speed lines, characters walking out of frame, papa leaving the ground, specific dialogue words, lip-sync to specific syllables, audible music, audible singing words"
+    }
+  ]
+}
