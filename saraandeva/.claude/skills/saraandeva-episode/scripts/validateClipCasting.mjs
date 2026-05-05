@@ -125,6 +125,82 @@ const POSITION_LOCK_TRAP = (prompt) => {
   return null;
 };
 
+// Post-ep13 — MULTI-POSITION-PATH TRAP. Even with a "smooth continuous walk"
+// disclaimer, describing the SAME @Char at 3+ named positions across beats
+// (e.g. "Papa starts at the LEFT, paces to the BACK by sec 5, paces to the
+// RIGHT by sec 10, paces to the FRONT by sec 15") makes Kling anchor multiple
+// instances of that character — one at each named position. ep13 music-video
+// A burned 135 cr on this exact mistake (Papa pacing around tower-house →
+// rendered with multiple Papas + duplicate kids at the windows). Memory:
+// lesson_kling_position_lock.md (extended).
+//
+// Detection: count distinct named POSITION TOKENS (LEFT/RIGHT/CENTER/BACK/
+// FRONT/CORNER) within the beat-block describing one character's path.
+// 3+ distinct tokens for the SAME char = HARD ERROR.
+const MULTI_POSITION_PATH_TRAP = (prompt) => {
+  // Genuine multi-position-along-path patterns. Tuned to AVOID false-positives
+  // on CENTER-LEFT / CENTER-RIGHT anchor labels (those are single-position
+  // staging, not a character moving). Dedup by the matched position name so
+  // "left side" repeated 5× counts once.
+  const POSITION_PATTERNS = [
+    { name: "LEFT side", re: /\bleft side\b/ },
+    { name: "RIGHT side", re: /\bright side\b/ },
+    { name: "BACK of the [structure]", re: /\bback of the (?:tower|house|playground|yard|court|stage|car|jeep)\b/ },
+    { name: "FRONT of the [structure]", re: /\bfront of the (?:tower|house|playground|yard|court|stage|car|jeep)\b/ },
+    { name: "LEFT window", re: /\bleft window\b/ },
+    { name: "RIGHT window", re: /\bright window\b/ },
+    { name: "BACK window", re: /\bback window\b/ },
+    { name: "LEFT corner", re: /\bleft corner\b/ },
+    { name: "RIGHT corner", re: /\bright corner\b/ },
+    { name: "FAR corner", re: /\bfar corner\b/ },
+  ];
+  for (const char of ["Papa", "Sara", "Eva", "Mama", "Joe", "Ginger", "Isabel", "Leo"]) {
+    const sentenceRe = /[^.]+\./g;
+    const charPositions = new Set();
+    for (const sentence of prompt.match(sentenceRe) || []) {
+      const lc = sentence.toLowerCase();
+      // SKIP "POSITION LOCK" preamble sentences — they re-mention every
+      // character to explain the rule, not to describe paths.
+      if (lc.includes("position lock")) continue;
+      const charRe = new RegExp(`\\b@?${char.toLowerCase()}\\b`);
+      if (!charRe.test(lc)) continue;
+      for (const { name, re } of POSITION_PATTERNS) {
+        if (re.test(lc)) charPositions.add(name);
+      }
+    }
+    if (charPositions.size >= 3) return { char, positions: [...charPositions] };
+  }
+  return null;
+};
+
+// Post-ep13 — SISTER-PAIR SIMILAR-POSE RISK. When Sara + Eva are co-bound
+// AND both are described with structurally-similar pose phrases ("both hands
+// X at her Y") AND no distinct color-anchored objects (helmet/scooter/ball),
+// Kling can't reliably differentiate the two blonde sisters — sometimes
+// renders 2 Evas instead of 1 Sara + 1 Eva, or vice versa. ep13 clips 1, 12,
+// 16 all hit this. Mitigation: Nano Banana group-shot pre-render to lock
+// the composition before Kling animation. Recommendation level WARNING (not
+// hard-error) since some clips ship clean with subtle differentiators.
+const SISTER_PAIR_SIMILAR_POSE_RISK = (prompt, tags) => {
+  const hasSara = tags.some(t => /^sara$/i.test(t));
+  const hasEva = tags.some(t => /^eva$/i.test(t));
+  if (!hasSara || !hasEva) return false;
+  // Look for matching gesture verbs applied to BOTH girls
+  const saraGesture = (prompt.match(/Sara has[^.]*?both hands? (\w+)/i) || prompt.match(/@?Sara[^.]*?both hands? (\w+)/i) || [])[1];
+  const evaGesture = (prompt.match(/Eva has[^.]*?both hands? (\w+)/i) || prompt.match(/@?Eva[^.]*?both hands? (\w+)/i) || [])[1];
+  if (!saraGesture || !evaGesture) return false;
+  // If both gestures share a stem (clasped/raised/cupped/held/at), or are
+  // identical, that's the risky pattern. Distinct gestures with a held-object
+  // anchor (scooter, ball, bucket) are safer.
+  const distinctObjectAnchored = /\b(scooter|helmet on|tennis ball|bucket|book|toy|microphone)\b/i.test(prompt);
+  if (distinctObjectAnchored) return false;
+  if (saraGesture.toLowerCase() === evaGesture.toLowerCase()) return { saraGesture, evaGesture };
+  // Same root verb (e.g. "clasped" + "clasped" or "raised" + "raised")
+  const rootMatch = saraGesture.replace(/(ed|ing|s)$/, "") === evaGesture.replace(/(ed|ing|s)$/, "");
+  if (rootMatch) return { saraGesture, evaGesture };
+  return false;
+};
+
 // ─── Load all per-clip JSONs ────────────────────────────────────────────────
 const clips = [];
 for (const f of fs.readdirSync(epDir).sort()) {
@@ -229,6 +305,29 @@ for (const { file, spec } of clips) {
   const lockTrapChar = POSITION_LOCK_TRAP(prompt);
   if (lockTrapChar) {
     issues.push(`@${lockTrapChar} described in TWO different distance-positions across beats (FAR-language + CLOSE-language) — Kling will render BOTH states simultaneously, spawning a duplicate ${lockTrapChar} and ghost extras. Lock @${lockTrapChar} to ONE physical position from second 0 to second N; only ONE character per clip may transition pose. Add a "POSITION LOCK" paragraph to the prompt explicitly. memory: lesson_kling_position_lock.md`);
+  }
+
+  // 8d. Multi-position-path trap (post-ep13 music-video A — Lesson #11
+  //     extension). Describing the same @Char at 3+ NAMED POSITIONS across
+  //     beats (LEFT, BACK, RIGHT, FRONT) causes Kling to render multiple
+  //     instances of that character — one at each named position. ep13 MV-A
+  //     burned 135 cr ("Papa paces around tower" → multiple Papas at each
+  //     side). HARD ERROR. Fix: lock the moving character to ONE named
+  //     position; show beat-by-beat motion only as in-place gesture changes.
+  const pathTrap = MULTI_POSITION_PATH_TRAP(prompt);
+  if (pathTrap) {
+    issues.push(`@${pathTrap.char} described at ${pathTrap.positions.length} named positions (${pathTrap.positions.join(", ")}) — Kling will spawn one instance per named position even with "smooth continuous walk" disclaimer. Lock @${pathTrap.char} to ONE named position; show beat changes as in-place gesture/expression only. memory: lesson_kling_position_lock.md`);
+  }
+
+  // 8e. Sister-pair similar-pose risk (post-ep13 clips 1, 12, 16). When Sara
+  //     + Eva are co-bound AND both have structurally-similar pose phrases
+  //     AND no distinct held-object anchor, Kling sometimes renders 2 Evas
+  //     instead of 1 Sara + 1 Eva. WARNING level — recommends Nano Banana
+  //     group-shot pre-render. Memory: lesson_kling_position_lock.md
+  //     (extended for sister-similarity).
+  const sisterRisk = SISTER_PAIR_SIMILAR_POSE_RISK(prompt, tags);
+  if (sisterRisk) {
+    warns.push(`Sara + Eva both described with similar pose ("${sisterRisk.saraGesture}" / "${sisterRisk.evaGesture}") and no distinct color-anchored object — recommend Nano Banana group-shot pre-render via generateGroupShot.py. Sister-pair Kling render risk (post-ep13). memory: lesson_kling_position_lock.md`);
   }
 
   // 9. Group-noun check (rule #5) — only flag when the group noun is the SUBJECT
