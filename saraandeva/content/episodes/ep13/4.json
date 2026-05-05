@@ -1,0 +1,19 @@
+{
+  "episode": 13,
+  "beat": 4,
+  "clip": 4,
+  "title": "AUDIENCE-ASK — Sara: 'Wanna see Daddy be the TAG-MONSTER?!'",
+  "mode": "omni",
+  "durationSec": 10,
+  "quality": "720p",
+  "nativeAudio": true,
+  "expectedCredits": 90,
+  "subjects": ["Sara"],
+  "scene": "playground-park",
+  "boundElements": [
+    { "tag": "Sara", "source": "library" },
+    { "tag": "playground-park", "source": "library" }
+  ],
+  "prompt": "Tight friendly close-up at @playground-park — soft green grass under foot, playground equipment softly visible BACKGROUND-OUT-OF-FOCUS. @Sara already CENTER-FRAME standing on the grass with both feet planted, ponytail with bow, big warm friend-to-friend grin, head turned DIRECTLY toward the camera with bright sparkle in her eyes. Sara has exactly two arms and two hands visible — both softly clasped together at her chest in a warm friendly 'come-here-to-me' kind gesture. (BEAT 1 — 0-5s) Sara holds her warm look at the camera, leaning gently toward camera with friend-to-friend conspiratorial sparkle. Sara (warm friend-to-friend voice, eyes shining at camera): \"Hey kids! Wanna see Daddy be the TAG-MONSTER?!\" She holds the friendly look at the camera waiting cheerfully for the kid watching at home to call out a guess. (BEAT 2 — 5-10s) Sara cups one hand softly around her mouth in a playful conspiratorial whisper-toward-camera gesture, eyes still on camera. Sara (cheerful warm whisper to camera, still beaming): \"Daddy is SO silly when he plays tag! You'll see!\" She gives a warm wink at the camera and beams. Calm cheerful warm kid-show family ambiance throughout. STRICT ANATOMY: Sara has exactly two arms and two hands at all times. Sara stays grounded with both feet on the grass throughout — no leaping, no jumping. The grass stays plain green clean — no marks, no red, no debris.",
+  "negativePrompt": "duplicate character, twin, clone, two of the same, mirrored figure, second sister, second sara, two sara, duplicate sara, identical girls, second mother, two Mama, mama in this clip, mama visible, second father, two Papa, papa in this clip, papa visible, dog visible, joe visible, ginger visible, eva in this clip, eva visible, third child, second eva, two eva, duplicate eva, second blonde child, fourth child, additional children, extra child in background, ghost figure, ghost kid, shadow children, shadow of person, mirrored children, mirror reflection, family members in the background, strangers, crowd, group of people, other faces, background people, friends, neighbors, three arms, third arm, extra arm, extra hand, floating hand, anatomy error, sara has three hands, sara not looking at camera, sara looking away from camera, scary face, frightening expression, horror lighting, blood, red liquid, red splatter, gore, injury, scary, violent, distressing, sara airborne, sara leaping, hard fall, hard impact, environmental shake, motion lines, action lines"
+}

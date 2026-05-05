@@ -1,0 +1,20 @@
+{
+  "episode": 13,
+  "beat": 2,
+  "clip": 2,
+  "title": "Eva: 'Daddy play TAG!'",
+  "mode": "omni",
+  "durationSec": 10,
+  "quality": "720p",
+  "nativeAudio": true,
+  "expectedCredits": 90,
+  "subjects": ["Sara", "Eva"],
+  "scene": "playground-park",
+  "boundElements": [
+    { "tag": "Sara", "source": "library" },
+    { "tag": "Eva", "source": "library" },
+    { "tag": "playground-park", "source": "library" }
+  ],
+  "prompt": "Mid-shot at @playground-park — soft mulch ground in foreground, green grass + playground equipment softly visible BACKGROUND. @Sara already CENTER-LEFT standing on the mulch with both feet planted, ponytail with bow, both hands cupped softly beside her mouth in a 'calling out' gesture, beaming with cheerful playful kid energy. Sara has exactly two arms and two hands visible. @Eva already CENTER-RIGHT standing on the mulch right next to Sara with both feet planted, curly blonde hair with rainbow bow, both arms held out wide in an excited welcoming gesture, beaming brightly. Eva has exactly two arms and two hands visible. (BEAT 1 — 0-5s) Eva bounces softly in place, both feet still planted, calling out cheerfully toward off-screen Papa. Eva (cheerful sing-song call to off-screen Papa): \"Daddy! Daddy let's play TAG!\" (BEAT 2 — 5-10s) Sara turns toward Eva with a delighted grin, both hands still cupped at her mouth. Sara (cheerful kid-voice, sing-song): \"You can't catch us, Daddy!\" Both girls giggle softly together, still grounded with feet on the mulch. Calm cheerful warm kid-show family ambiance throughout. STRICT ANATOMY: Sara has exactly two arms and two hands at all times — both cupped at mouth. Eva has exactly two arms and two hands at all times — both held out wide. Both girls stay grounded with both feet on the mulch throughout — no leaping, no jumping, no running off. The mulch and playground stay plain clean — no marks, no red, no debris.",
+  "negativePrompt": "duplicate character, twin, clone, two of the same, mirrored figure, second mother, two Mama, mama in this clip, mama visible, second father, two Papa, papa visible on screen, dog visible, joe visible, ginger visible, third child, second sister, second sara, second eva, two eva, duplicate eva, three girls, four kids, second blonde child, fourth child, additional children, extra child in background, ghost figure, ghost kid, shadow children, shadow of person, mirrored children, mirror reflection, family members in the background, strangers, crowd, group of people, other faces, background people, friends, neighbors, other kids on playground, three arms, third arm, extra arm, extra hand, floating hand, anatomy error, sara has three hands, eva has three hands, scary face, frightening expression, horror lighting, blood, red liquid, red splatter, gore, injury, scary, violent, distressing, sara airborne, eva airborne, sara leaping, eva leaping, sara running off, eva running off, hard fall, hard impact, environmental shake, motion lines, action lines"
+}

@@ -1,0 +1,20 @@
+{
+  "episode": 13,
+  "beat": 8,
+  "clip": 7,
+  "title": "Papa pops free — Eva: 'Daddy push me on the swing!'",
+  "mode": "omni",
+  "durationSec": 10,
+  "quality": "720p",
+  "nativeAudio": true,
+  "expectedCredits": 90,
+  "subjects": ["Papa", "Eva"],
+  "scene": "playground-park",
+  "boundElements": [
+    { "tag": "Papa", "source": "library" },
+    { "tag": "Eva", "source": "library" },
+    { "tag": "playground-park", "source": "library" }
+  ],
+  "prompt": "Mid-shot at @playground-park — soft mulch ground, playground swing-set softly visible BACKGROUND-LEFT, soft warm afternoon light. @Papa already CENTER-LEFT standing on the mulch with both feet planted, just-freed-from-the-slide goofy expression, both hands gently brushing mulch off his shoulders, warm crinkled-eye dad-smile. Papa has exactly two arms and two hands visible. @Eva already CENTER-RIGHT standing on the mulch right next to Papa with both feet planted, curly blonde hair with rainbow bow, both hands softly clasped together at her chest in a cute pleading gesture, eyes huge and shining with cheerful kid wonder. Eva has exactly two arms and two hands visible. (BEAT 1 — 0-5s) Papa softly chuckles, gently brushes one shoulder with one hand then the other shoulder with the other hand, warm dad-laugh. Papa (warm cheerful chuckle): \"That slide was TOO small for the wolf-Daddy!\" (BEAT 2 — 5-10s) Eva tugs softly at her own clasped hands, beaming with kid pleading-cuteness. Eva (cheerful pleading kid-voice, warm and bright): \"Daddy! Daddy, push me on the SWING! Pleeeeaase?\" Papa (warm cheerful chuckle, looking down at Eva fondly): \"To the SWING-set!\" Calm cheerful warm kid-show family ambiance throughout. STRICT ANATOMY: Papa has exactly two arms and two hands at all times. Eva has exactly two arms and two hands at all times — both clasped at her chest in pleading gesture. Both stay grounded with both feet on the mulch throughout — no leaping, no jumping, no walking off-frame. The mulch and playground stay plain clean — no marks, no red, no debris.",
+  "negativePrompt": "duplicate character, twin, clone, two of the same, mirrored figure, second father, two Papa, identical adults, second mother, two Mama, mama in this clip, mama visible, dog visible, joe visible, ginger visible, third child, second sister, sara in this clip, sara visible, second eva, two eva, duplicate eva, second blonde child, additional children, extra child in background, ghost figure, ghost kid, shadow children, shadow of person, mirrored children, mirror reflection, family members in the background, strangers, crowd, group of people, other faces, background people, friends, neighbors, other kids on playground, three arms, third arm, extra arm, extra hand, floating hand, anatomy error, eva has three hands, papa has three hands, scary face, frightening expression, horror lighting, papa thundering shout, papa apoplectic, papa rage face, intense yelling, blood, red liquid, red splatter, red stain, gore, injury, wound, scary, violent, distressing, eva airborne, eva leaping, papa airborne, papa leaping, papa walking toward, papa walking off, papa walks toward swing, hard fall, hard impact, painful fall, environmental shake, motion lines, action lines, dust trails"
+}

@@ -1,0 +1,220 @@
+{
+  "episode": 13,
+  "title": "Sara and Eva — Ep 13: The Big Tag Game at the Playground!",
+  "logline": "Family playground day with Daddy. Tag-monster game on the grass, Three Little Pigs role-play around the playground tower-house (Daddy is the silly Big Bad Wolf, kids are the giggly pigs who refuse to let him in), Daddy gets stuck in the tube slide trying to chase them. Scooter escape to the tennis court. Then Isabel (kindergarten) and her 3-year-old brother Leo arrive — 'Can we play?' — and a big group tag game with all 8 of them seals brand-new friendships. Cliffhanger camera-ask: did YOU make new friends today?",
+  "formulaReference": "Bluey-style 'playground friendship-making + classic-tale role-play + Papa-active play' — high-retention combo. Three Little Pigs role-play (literacy bonus + repeatable refrain). Multi-location pivot (playground → scooters → tennis court). Friendship-arc payoff (Isabel + Leo introduced as recurring characters for future episodes — Bluey's Indy/Honey pattern).",
+  "mode": "omni",
+  "durationTotal": "~7:56 (17 normal × 10s = 170s + 1 × 15s = 15s + A 120s + B 60s + C 60s + intro 31s + outro 20s)",
+  "expectedCreditsTotal": 1980,
+  "expectedCreditsBreakdown": "17 normal clips × 90 cr = 1530 + 1 parent-activity 15s × 135 cr = 135 + 1 music-video 15s render (A) × 135 cr = 135 + 2 music-video 10s renders (B,C) × 90 cr = 180 → 1980 cr base; +25% buffer ≈ 2475 cr realistic ceiling. Right at the 2200 abort threshold — acceptable per ep10/ep12 precedent because the 3 music videos materially extend runtime + provide top-retention moments.",
+  "newBoundElements": [
+    {
+      "tag": "playground-park",
+      "source": "library",
+      "asset": "assets/scenes/playground_park.png",
+      "purpose": "Public neighborhood playground — wooden tower with tube-slide + slide ladder, swing-set off to the side, mulch ground, tree-shaded green-park surroundings. Used in clips 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, music-video A render."
+    },
+    {
+      "tag": "playground-tower-house",
+      "source": "library",
+      "asset": "assets/scenes/playground_tower_house.png",
+      "purpose": "Close-up of the playground tower platform with closed-sided panel walls + a clear window opening on each side + the tube-slide entrance opening on the front. Looks like a 'little house' big enough for two kids inside. Used in clips 5, 6, 7, music-video A."
+    },
+    {
+      "tag": "playground-tube-slide",
+      "source": "library",
+      "asset": "assets/scenes/playground_tube_slide.png",
+      "purpose": "Close-up of the brown/tan curving tube-slide attached to the tower. Open end at the bottom, dark inside the tube. Used in clips 6 (Papa stuck mid-tube), 7 (Papa pops out the bottom)."
+    },
+    {
+      "tag": "playground-swings",
+      "source": "library",
+      "asset": "assets/scenes/playground_swings.png",
+      "purpose": "Close-up of a pair of green-frame playground swings with rubber kid-seats, golden-hour light. Used in clips 7, 8, music-video B (Eva swing slow-mo)."
+    },
+    {
+      "tag": "tennis-court",
+      "source": "library",
+      "asset": "assets/scenes/tennis_court.png",
+      "purpose": "Outdoor green tennis court with white painted lines + low net, chain-link fence around perimeter, suburban neighborhood backdrop. Used in clips 12, 13, 14, 15, 16, 17, music-video C."
+    },
+    {
+      "tag": "pink-scooter",
+      "source": "library",
+      "asset": "assets/props/pink_scooter.png",
+      "purpose": "Sara's pink-frame kick-scooter — three-wheel kid scooter with handlebar, pink + purple accents. Used in clips 9, 10, 11, 12."
+    },
+    {
+      "tag": "teal-scooter",
+      "source": "library",
+      "asset": "assets/props/teal_scooter.png",
+      "purpose": "Eva's teal-frame kick-scooter — three-wheel kid scooter with handlebar, teal + green accents. Used in clips 9, 10, 11, 12."
+    },
+    {
+      "tag": "pink-helmet",
+      "source": "library",
+      "asset": "assets/props/pink_helmet.png",
+      "purpose": "Sara's pink kid-bike helmet with chin-strap. Used in clips 11, 12, 13, 14, 15, 16, 17 (helmets stay on through tennis-court sequence)."
+    },
+    {
+      "tag": "teal-helmet",
+      "source": "library",
+      "asset": "assets/props/teal_helmet.png",
+      "purpose": "Eva's teal kid-bike helmet with chin-strap. Used in clips 11, 12, 13, 14, 15, 16, 17."
+    },
+    {
+      "tag": "tennis-ball",
+      "source": "library",
+      "asset": "assets/props/tennis_ball.png",
+      "purpose": "Soft yellow kid-tennis-ball (no red — defensive against any blood-render trap). Used in clips 13, 14, 15, 16, 17."
+    },
+    {
+      "tag": "Isabel",
+      "source": "library",
+      "asset": "assets/characters/isabel_front.png",
+      "purpose": "Kindergartener girl (~5yo) — Isabel. New recurring character. Curly brunette hair to differentiate visually from blonde Sara/Eva. Used in clips 14, 15, 16, 17, music-video C."
+    },
+    {
+      "tag": "Leo",
+      "source": "library",
+      "asset": "assets/characters/leo_front.png",
+      "purpose": "3-year-old boy — Isabel's little brother. New recurring character. Short brown hair, smaller stature than Sara/Eva. Used in clips 14, 16, 17, music-video C."
+    },
+    {
+      "tag": "everyones-it-still",
+      "source": "upload",
+      "asset": "assets/scenes/everyones_it_group_still.png",
+      "purpose": "Nano Banana group-shot pre-render: 8 characters frozen in a friendship-tag pose at the tennis court. Sara + Eva + Papa + Isabel + Leo + 3 unnamed friend-kids. Used as the image-to-video reference for clip 17 climax + music-video C. PRE-RENDER REQUIRED via `generateGroupShot.py everyones_it_group_still --chars sara,eva,papa,isabel,leo --extras 3 --pose 'group-tag freeze-frame, hands raised, all on the tennis court, 8 figures in semicircle' --scene tennis-court --n 3` — pick the cleanest, then upload to Kling library as a single bound element."
+    }
+  ],
+  "reusedBoundElements": [
+    "Sara, Eva, Papa — character avatars",
+    "playground-park reused across many clips",
+    "tennis-court reused across the friend-making arc"
+  ],
+  "scenes": [
+    "playground-park",
+    "playground-tower-house",
+    "tennis-court"
+  ],
+  "cast": [
+    "Sara",
+    "Eva",
+    "Papa",
+    "Isabel",
+    "Leo"
+  ],
+  "reuse": {
+    "intro": {
+      "source": "season_01/intro/",
+      "clips": ["intro_song.mp4"],
+      "totalDuration": "~31s",
+      "playOrder": "Theme song"
+    },
+    "outro": {
+      "source": "season_01/OUTRO/",
+      "clips": ["17.mp4", "18.mp4", "0_song.mp4"],
+      "totalDuration": "~20s",
+      "note": "0_song.mp4 sorts last via parseInt-Infinity hack — keep (memory rule #23)"
+    }
+  },
+  "music": {
+    "policy": "ALL music is Suno — Kling renders dialogue + ambient ONLY. No music phrases inside any clip prompt (memory rule #24).",
+    "musicVideoBlocks": [
+      {
+        "blockId": "5music",
+        "song": "assets/music/Little Pigs Let Me Come In.mp3",
+        "trimStart": 0,
+        "blockDurationSec": 120,
+        "render": "A",
+        "renderSpec": "content/episodes/ep13/A.json",
+        "placement": "between clip 5 (kids in tower-house, taunt) and clip 6 (Papa stuck in tube slide) — Three Little Pigs role-play around the tower. Papa-as-silly-wolf walks around the tower-house knocking + huff-puffing, kids refuse from the windows + slide out + run away. 15s render looped 8× to fill 120s of Suno song.",
+        "mood": "Doo-wop kids fairy-tale comedy — warm cartoon-wolf Papa + giggly little-girl pig sisters, Tex Avery / Looney Tunes friendly-wolf energy, ~135 BPM"
+      },
+      {
+        "blockId": "8music",
+        "song": "assets/music/Push Me Higher.mp3",
+        "trimStart": 0,
+        "blockDurationSec": 60,
+        "render": "B",
+        "renderSpec": "content/episodes/ep13/B.json",
+        "placement": "between clip 8 (Papa pushes Eva on swing 10s) and clip 9 (Sara: Race! scooter grab) — Eva slow-motion swing wonder beat, golden-hour glow. 10s slow-mo render looped 6× to fill 60s.",
+        "mood": "Soft pastel-Pixar wonder ballad — dreamy lullaby with glockenspiel + airy strings, like Pink Tree Whisper (ep10)"
+      },
+      {
+        "blockId": "17music",
+        "song": "assets/music/Everyones IT.mp3",
+        "trimStart": 0,
+        "blockDurationSec": 60,
+        "render": "C",
+        "renderSpec": "content/episodes/ep13/C.json",
+        "placement": "between clip 17 (group tag begins, all 8 chars) and clip 18 (cliffhanger camera-ask) — Nano Banana 8-character group-tag pre-render, Kling animates the cheer + tag motion. 10s render looped 6× to fill 60s.",
+        "mood": "Bouncy kid-pop friendship anthem — mixed kid chorus, ukulele hand-claps, warm dad backing, ~140 BPM"
+      }
+    ],
+    "renders": {
+      "A": "content/episodes/ep13/A.json — Papa-as-wolf walks around the playground tower-house, kids visible at tower windows, 15s render looped 8× to fill 120s",
+      "B": "content/episodes/ep13/B.json — Eva slow-mo on swing, golden-hour glow, 10s slow-mo render looped 6× to fill 60s",
+      "C": "content/episodes/ep13/C.json — 8-character group-tag at tennis court (Nano Banana pre-rendered still → Kling image-to-video), 10s render looped 6× to fill 60s"
+    },
+    "mixRecipe": "[1:a]atrim=start=X:duration=N,asetpts=PTS-STARTPTS,volume=0.30[bg]; [0:a]volume=1.4[fg]; [fg][bg]amix=inputs=2:duration=first:dropout_transition=0[a]",
+    "loopRecipe": "node loopVideoWithSong.mjs <render>.mp4 <song>.mp3 <Nmusic>.mp4 --duration=N"
+  },
+  "arc": [
+    { "beat": 1, "name": "HOOK — playground arrival", "purpose": "Family rolls up to the neighborhood park playground, scooters in tow. Establishes setting + energy.", "clips": [1] },
+    { "beat": 2, "name": "Eva: 'Daddy play TAG!'", "purpose": "Eva instigates a tag game on the grass next to the playground.", "clips": [2] },
+    { "beat": 3, "name": "Papa silly tag-monster (locked positions)", "purpose": "Papa drops to hands-and-knees as the silly tag-monster. Locked positions per Lesson #11 — only Papa's torso moves.", "clips": [3] },
+    { "beat": 4, "name": "AUDIENCE-ASK — Sara to camera", "purpose": "Sara turns to camera with wide grin: 'Wanna see Daddy be the TAG-MONSTER?!' Friend-to-friend energy.", "clips": [4] },
+    { "beat": 5, "name": "Kids in the tower-house — sing-taunt", "purpose": "Sara + Eva already inside the playground tower platform with windows on each side. Sister duet sing-taunt: 'YOU CAN'T GET US!' Setup for the music video.", "clips": [5] },
+    { "beat": 6, "name": "🎵 MUSIC VIDEO A — 'Little Pigs Let Me Come In!' (120s)", "purpose": "Render A under 'Little Pigs Let Me Come In' — Papa-as-silly-wolf walks around tower-house knocking + huffing-puffing, kids refuse from windows + slide out + run away. 15s render looped 8× to fill 2 min Suno song.", "clips": ["A→5music"] },
+    { "beat": 7, "name": "PARENT-ACTIVITY (15s) — Papa stuck in tube slide", "purpose": "Papa tries the tube-slide as 'wolf entrance' to chase the pigs — gets stuck mid-slide. 3-beat structure: enters → half-stuck wiggling → kids cheer-taunt 'YOU'RE IT!' (Locked positions: Papa stays mid-tube, kids stay at the bottom.)", "clips": [6] },
+    { "beat": 8, "name": "Papa pops free — Eva: 'Daddy push me on the swing!'", "purpose": "Papa wiggles out of the bottom of the slide with goofy face. Eva runs over, swing setup line.", "clips": [7] },
+    { "beat": 9, "name": "Papa pushes Eva on the swing", "purpose": "Papa already at Eva's back at the swing, gentle pushes. Sara already grinning a few feet to the side. 10s clip.", "clips": [8] },
+    { "beat": 10, "name": "🎵 MUSIC VIDEO B — 'Push Me Higher!' (60s)", "purpose": "Render B under 'Push Me Higher' — Eva solo slow-mo on the swing, golden-hour glow. 10s slow-mo render looped 6× to fill 60s.", "clips": ["B→8music"] },
+    { "beat": 11, "name": "Sara: 'Race you, Eva!' — scooter grab", "purpose": "Sara scoops up the pink scooter, Eva the teal scooter. Sister duo scooter-up.", "clips": [9] },
+    { "beat": 12, "name": "Papa: 'WAIT — snacks!' comic chase", "purpose": "Papa realizes the kids are taking off — gentle comic dad-jog after them. Pure visual comedy.", "clips": [10] },
+    { "beat": 13, "name": "AUDIENCE-ASK — Sara to camera, scootering", "purpose": "Sara turns to camera while gentle-rolling on her scooter: 'Can YOU keep up with us?!' Camera-ask + transition.", "clips": [11] },
+    { "beat": 14, "name": "Tennis-court arrival, helmets on", "purpose": "Sara + Eva arrive at the tennis court, helmets buckled, scooters parked at the fence.", "clips": [12] },
+    { "beat": 15, "name": "Sister tennis-ball pass", "purpose": "Sara + Eva pass a soft yellow tennis ball back and forth between them on the green tennis court.", "clips": [13] },
+    { "beat": 16, "name": "Isabel + Leo arrive at the fence", "purpose": "Isabel (kindergartener girl) + Leo (3yo brother) appear at the chain-link fence, peeking through. 'Hi! Can we play?' First time these new bound characters appear.", "clips": [14] },
+    { "beat": 17, "name": "AUDIENCE-ASK — Sara to camera", "purpose": "Sara turns to camera with kind warm wonder: 'Should we say YES?!' Camera-ask + the friendship-decision moment.", "clips": [15] },
+    { "beat": 18, "name": "'YES! Come play!' — kids enter, tag begins", "purpose": "Sara + Eva wave Isabel + Leo onto the court. Group tag begins with all 4 kids.", "clips": [16] },
+    { "beat": 19, "name": "GROUP TAG climax (Nano Banana 8-char pre-render)", "purpose": "Sara + Eva + Papa + Isabel + Leo + 3 unnamed friend-kids ALL playing tag together on the tennis court. Pre-rendered as a Nano Banana group still first, then Kling animates the cheer + tag motion. (Hard memory rule 5d — 4+ char clips REQUIRE pre-render.)", "clips": [17] },
+    { "beat": 20, "name": "🎵 MUSIC VIDEO C — 'Everyone's IT!' (60s)", "purpose": "Render C under 'Everyone's IT' — friendship-celebration loop. 10s 8-char render looped 6× to fill 60s.", "clips": ["C→17music"] },
+    { "beat": 21, "name": "CLIFFHANGER + AUDIENCE-ASK — 'Did YOU make new friends today?'", "purpose": "Final camera-ask cliffhanger. Sara + Eva at the tennis court fence with Isabel + Leo softly visible behind: 'Did YOU make new friends today? Where should we play tomorrow?!' Both girls hold the warm look at camera. Cut to outro.", "clips": [18] },
+    { "beat": 22, "name": "OUTRO (reused)", "purpose": "Subscribe pair from season_01/OUTRO/ — 17.mp4 → 18.mp4 → 0_song.mp4 last.", "clips": ["reused"] }
+  ],
+  "audienceEngagement": {
+    "rule": "memory: lesson_fourth_wall_audience_engagement.md — 2-4 fourth-wall direct-to-camera 'ask the kid' beats per episode; final cliffhanger MUST be a camera-ask",
+    "beats": [
+      { "clip": 4, "type": "camera-ask", "character": "Sara", "line": "Wanna see Daddy be the TAG-MONSTER?!" },
+      { "clip": 11, "type": "camera-ask", "character": "Sara", "line": "Can YOU keep up with us?!" },
+      { "clip": 15, "type": "camera-ask", "character": "Sara", "line": "Should we say YES?!" },
+      { "clip": 18, "type": "camera-ask + cliffhanger", "character": "Sara + Eva", "line": "Did YOU make new friends today? Where should we play tomorrow?!" }
+    ],
+    "totalQuestions": 4,
+    "cap": 4,
+    "withinCap": true
+  },
+  "newCharactersIntro": {
+    "Isabel": "First episode introducing Isabel (kindergartener girl, ~5yo). Designed as recurring character — Bluey's Indy/Honey pattern. Future episodes can re-use her in playground/library/birthday-party settings.",
+    "Leo": "First episode introducing Leo (Isabel's little brother, 3yo). Recurring character. Toddler energy, simpler dialogue."
+  },
+  "rules": {
+    "maxBoundPerClip": 7,
+    "maxTagMentionsPerCharacter": 1,
+    "klingPromptMustNotContain": [
+      "music sting", "music swell", "tender swell", "cheerful music",
+      "comedic music", "playful music", "heartfelt music", "music cue",
+      "score swell", "background music"
+    ],
+    "klingPromptMustNotContainReason": "All music is Suno-mixed in assemble (memory rule #24).",
+    "motionTowardForbidden": "No 'walks in/toward', 'approaches', 'moves to(ward)', 'heads to/in', 'walks up' — Use static placement only. (memory: lesson_kling_motion_verbs_duplicate.md)",
+    "max3ForegroundChars": "Hard cap 3 foreground-anchored characters per clip. Clip 14 (Sara+Eva+Isabel+Leo) and clip 17 (8 chars) trigger the Nano Banana group-shot pre-render rule.",
+    "negativePromptRequired": "duplicate character, twin, clone, two of the same, mirrored figure, second father, second mother, two Papa, two Mama, identical adults, extra people, third child, second sister, second sara, second eva, two eva, duplicate eva, mirror reflection, family members in the background, additional children, extra child in background, ghost figure, shadow of person",
+    "characterNamesInDialogue": "Drop the bound character's name from other characters' dialogue (memory: rule from ep01).",
+    "noRedSplatterNearFace": "memory: lesson_no_red_splatter_kids_show.md — no 'red liquid', 'splash', 'splatter' near face/mouth in any clip prompt. Tennis ball is YELLOW (defensive choice).",
+    "noKlingHorrorIntensity": "memory: lesson_kids_show_comedy_intensity.md — Papa-as-wolf is WARM CARTOON SILLY, NEVER scary or growly. No 'thundering', 'apoplectic', 'rage', 'leaves tremble'. No pets airborne — n/a here, no pets in this episode.",
+    "positionLockRequired": "memory: lesson_kling_position_lock.md (post-ep11 v7) — every multi-beat clip with multiple characters MUST have a POSITION LOCK paragraph. Only ONE character may transition pose per clip; all others static. Especially critical for clip 6 (Papa stuck in slide) and music-video A (Papa walking around tower)."
+  }
+}

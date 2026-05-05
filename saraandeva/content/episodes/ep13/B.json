@@ -1,0 +1,35 @@
+{
+  "episode": 13,
+  "beat": "music-video-B",
+  "clip": "B",
+  "title": "MUSIC VIDEO RENDER B — Eva slow-mo on the swing (Push Me Higher)",
+  "mode": "omni",
+  "durationSec": 10,
+  "quality": "720p",
+  "nativeAudio": true,
+  "expectedCredits": 90,
+  "subjects": ["Eva"],
+  "scene": "playground-swings",
+  "boundElements": [
+    { "tag": "Eva", "source": "library" },
+    { "tag": "playground-swings", "source": "library" }
+  ],
+  "reuseAsset": true,
+  "reuseAssetNote": "ONE 10s slow-motion render of Eva on the swing, paired with Suno song 'Push Me Higher.mp3' via loopVideoWithSong.mjs (looped 6× with crossfade to fill 60s).",
+  "musicVideoBlock": true,
+  "loopExpansion": {
+    "iterations": 6,
+    "xfadeDuration": 0.3,
+    "outputDurationSec": 58
+  },
+  "usedUnderSongs": [
+    {
+      "song": "assets/music/Push Me Higher.mp3",
+      "blockDurationSec": 60,
+      "trimStart": 0,
+      "placementClipNumber": "8music"
+    }
+  ],
+  "prompt": "Wide slow-motion music-video shot of @playground-swings — green-frame swing-set with rubber kid-seats, mulch ground softly visible, soft golden-hour light bathing the scene with warm orange-pink glow, twinkly soft pollen motes drifting slowly through the frame. NO real ocean, NO scene clutter, NO logos, NO real text. POSITION LOCK — Eva stays softly seated on the swing throughout the entire 10s. Eva does NOT let go, does NOT fall off, does NOT change positions. Only the swing's slow-motion gentle pendulum motion changes between beats. @Eva already CENTER-FRAME softly seated on the swing with both hands gripping the swing chains at chest height, curly blonde hair with rainbow bow flowing gently in slow motion, both feet softly hanging in the air, eyes huge with cheerful kid wonder, big warm beaming smile. Eva has exactly two arms and two hands visible at all times — both on the swing chains. (BEAT 1 — 0-5s) Eva swings forward in a gentle slow-motion arc — hair flowing slowly back, big wonder-smile, eyes wide with awe, both hands gripping chains. (BEAT 2 — 5-10s) Eva swings gently back — hair flowing slowly forward, eyes still wide with awe, soft warm wonder-smile. The motion is SLOW, SOFT, DREAMY throughout — like flying gently through golden-hour magic. Camera locked, side angle, kid-eye-level. Soft warm dreamy lighting, glittering pollen-motes drifting. Designed to LOOP cleanly: Eva returns to identical mid-arc pose at second 0 and second 10. No audible speech, no music — silent render. STRICT ANATOMY: Eva has exactly two arms and two hands at all times — both gripping swing chains. Eva stays seated on the swing throughout — never lets go, never falls. The swing motion is GENTLE and SLOW — no high arcs, no flipping, no spinning, no chains breaking. The mulch and swing stay plain clean.",
+  "negativePrompt": "duplicate character, twin, clone, two of the same, mirrored figure, second sister, sara in this clip, sara visible, second eva, two eva, duplicate eva, three girls, four kids, second mother, mama in this clip, second father, papa in this clip, papa visible, dog visible, joe visible, ginger visible, isabel visible, leo visible, additional children, extra child in background, second blonde child, ghost figure, ghost kid, ghost children, shadow children, shadow of person, mirrored children, mirror reflection, family members in the background, strangers, crowd, group of people, other faces, background people, friends, neighbors, other kids on swings, real ocean, real beach scene, scene clutter, logos, real text, real signage, three arms, third arm, extra arm, extra hand, floating hand, anatomy error, eva has three hands, eva letting go of chains, eva falling off swing, eva airborne off swing, swing chains breaking, swing falling, swing collapsing, scary face, frightening expression, horror lighting, blood, red liquid, red splatter, gore, injury, scary, violent, distressing, eva flying off swing, eva mid-air separated from swing, eva launched, hard fall, hard impact, painful fall, environmental shake, motion lines, action lines, dramatic high arc, swing flipping over the bar, eva spinning, eva upside-down, specific dialogue words, lip-sync to specific syllables, audible music, audible singing words"
+}

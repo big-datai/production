@@ -1,0 +1,21 @@
+{
+  "episode": 13,
+  "beat": 1,
+  "clip": 1,
+  "title": "HOOK — playground arrival",
+  "mode": "omni",
+  "durationSec": 10,
+  "quality": "720p",
+  "nativeAudio": true,
+  "expectedCredits": 90,
+  "subjects": ["Papa", "Sara", "Eva"],
+  "scene": "playground-park",
+  "boundElements": [
+    { "tag": "Papa", "source": "library" },
+    { "tag": "Sara", "source": "library" },
+    { "tag": "Eva", "source": "library" },
+    { "tag": "playground-park", "source": "library" }
+  ],
+  "prompt": "Wide cinematic kid-show family-comedy shot at @playground-park — sunny tree-shaded green park, mulch ground, wooden tower-house playground with tube slide softly visible BACKGROUND-RIGHT, swing-set softly visible BACKGROUND-LEFT, soft warm afternoon light. @Papa already CENTER-FRAME standing on the mulch ground with both feet planted on the mulch, warm crinkled-eye dad-smile, both hands relaxed at his sides. Papa has exactly two arms and two hands visible. @Sara already CENTER-LEFT standing on the mulch right beside Papa with both feet planted, ponytail with bow, beaming with cheerful excited kid energy, both hands softly clasped at her chest. Sara has exactly two arms and two hands visible. @Eva already CENTER-RIGHT standing on the mulch right beside Papa with both feet planted, curly blonde hair with rainbow bow, beaming with cheerful excited kid energy, both hands softly clasped at her chest. Eva has exactly two arms and two hands visible. The mulch ground stays plain clean throughout — no marks, no debris, no other people on the playground. (BEAT 1 — 0-5s) All three look out at the playground with cheerful warm smiles. Papa (warm cheerful dad-voice): \"Welcome to the play-PARK!\" Sara (cheerful kid-voice, beaming): \"PLAYGROUND DAY!\" (BEAT 2 — 5-10s) Eva (cheerful giggle, hands still clasped at chest): \"Slide! Swings! Tree-house!\" Papa (warm chuckle, eyes crinkled): \"First one to the slide!\" Calm cheerful warm kid-show family ambiance throughout. STRICT ANATOMY: Papa has exactly two arms and two hands at all times. Sara has exactly two arms and two hands at all times. Eva has exactly two arms and two hands at all times. Each character stays grounded with both feet on the mulch throughout — no leaping, no jumping. The mulch and playground stay plain clean — no marks, no red, no debris.",
+  "negativePrompt": "duplicate character, twin, clone, two of the same, mirrored figure, second father, two Papa, identical adults, second mother, two Mama, mama in this clip, mama visible, dog visible, joe visible, ginger visible, third child, second sister, second sara, second eva, two eva, duplicate eva, three girls, four kids, second blonde child, fourth child, fifth child, additional children, extra child in background, ghost figure, ghost kid, ghost children, shadow children, shadow of person, mirrored children, mirror reflection, family members in the background, strangers, crowd, group of people, other faces, background people, friends, neighbors, other kids on playground, other parents, three arms, third arm, extra arm, extra hand, floating hand, anatomy error, sara has three hands, eva has three hands, papa has three hands, scary face, frightening expression, horror lighting, papa thundering shout, papa apoplectic, papa rage face, intense yelling, blood, red liquid, red splatter, red stain, gore, injury, scary, violent, distressing, sara airborne, eva airborne, papa airborne, sara leaping, eva leaping, hard fall, hard impact, painful fall, environmental shake, motion lines, action lines, dust trails, speed lines, broken playground equipment, slide collapsing, swing falling"
+}

@@ -1,0 +1,24 @@
+{
+  "episode": 13,
+  "beat": 16,
+  "clip": 14,
+  "title": "Isabel + Leo arrive at the fence — 'Can we play?'",
+  "mode": "omni",
+  "durationSec": 10,
+  "quality": "720p",
+  "nativeAudio": true,
+  "expectedCredits": 90,
+  "subjects": ["Sara", "Eva", "Isabel", "Leo"],
+  "scene": "tennis-court",
+  "boundElements": [
+    { "tag": "Sara", "source": "library" },
+    { "tag": "Eva", "source": "library" },
+    { "tag": "Isabel", "source": "library" },
+    { "tag": "Leo", "source": "library" },
+    { "tag": "tennis-court", "source": "library" },
+    { "tag": "pink-helmet", "source": "library" },
+    { "tag": "teal-helmet", "source": "library" }
+  ],
+  "prompt": "Wide shot of @tennis-court — green court inside, chain-link fence in CENTER-FRAME with two new kids visible OUTSIDE the fence in BACKGROUND, soft warm afternoon light. POSITION LOCK — every character stays in their EXACT same physical spot from second 0 through second 10. Exactly FOUR kids in the entire frame: one Sara, one Eva, one Isabel, one Leo. NO additional kids visible. NOTE: This is a 4-character clip — Nano Banana group-shot pre-render strongly recommended via `python3 content/generateGroupShot.py ep13_clip14_meet_isabel_leo --chars sara,eva,isabel,leo --pose 'sara and eva on green tennis court inside fence, isabel and leo standing softly outside fence on grass side, all four smiling, fence between them' --scene tennis-court --n 3` then upload as scene reference. @Sara already CENTER-LEFT-INSIDE-FENCE standing on the green tennis court with both feet planted, ponytail under @pink-helmet (buckled), both hands relaxed at her sides, surprised warm wonder face turned softly toward the fence. Sara has exactly two arms and two hands visible. @Eva already CENTER-RIGHT-INSIDE-FENCE standing on the green tennis court right next to Sara with both feet planted, curly blonde hair under @teal-helmet (buckled), both hands softly clasped at her chest, surprised warm wonder face also turned toward the fence. Eva has exactly two arms and two hands visible. @Isabel already FAR-LEFT-OUTSIDE-FENCE standing on the grass softly outside the chain-link fence with both feet planted, kindergartener girl with curly brunette hair, kind shy smile, both hands gripping the chain-link fence at chest height in a 'peeking through' gesture. Isabel has exactly two arms and two hands visible. @Leo already FAR-RIGHT-OUTSIDE-FENCE standing on the grass softly outside the chain-link fence right next to Isabel with both feet planted, 3-year-old toddler boy with short brown hair, big shy curious eyes, both hands holding onto the fence at his chest height. Leo has exactly two arms and two hands visible. (BEAT 1 — 0-5s) Sara and Eva stay in their exact spots inside the fence, looking softly toward Isabel and Leo with kind wonder. Isabel waves one hand softly through the fence. Isabel (kind kindergartener voice, warm and shy): \"Hi! We saw you playing! Can we play too?\" (BEAT 2 — 5-10s) Leo waves one hand shyly beside Isabel. Leo (small toddler voice, sweet and shy): \"Pweeeease?\" Sara and Eva exchange a warm sister-look. Cheerful warm kid-show family ambiance throughout. STRICT ANATOMY: Each character has exactly two arms and two hands at all times. Sara stays at her exact spot inside the fence. Eva stays at her exact spot inside the fence. Isabel stays at her exact spot outside the fence. Leo stays at his exact spot outside the fence. The fence stays between them throughout. No character climbs the fence, no character moves through the fence, no character moves their position.",
+  "negativePrompt": "duplicate character, twin, clone, two of the same, mirrored figure, second mother, two Mama, mama in this clip, mama visible, second father, two Papa, papa in this clip, papa visible, dog visible, joe visible, ginger visible, fifth child, sixth child, additional children, extra child in background, second sara, second eva, two eva, duplicate eva, second isabel, two isabel, duplicate isabel, second leo, two leo, duplicate leo, second blonde child, fourth child, fifth child, ghost figure, ghost kid, ghost children, shadow children, shadow of person, mirrored children, mirror reflection, family members in the background, strangers, crowd, group of people, other faces, background people, friends, neighbors, other kids on court, other kids on grass, three arms, third arm, extra arm, extra hand, floating hand, anatomy error, sara has three hands, eva has three hands, isabel has three hands, leo has three hands, helmet falling off, scary face, frightening expression, horror lighting, blood, red liquid, red splatter, gore, injury, scary, violent, distressing, sara airborne, eva airborne, isabel airborne, leo airborne, isabel climbing fence, leo climbing fence, sara crossing to fence, eva crossing to fence, hard fall, hard impact, environmental shake, motion lines, action lines, fence falling, fence broken"
+}

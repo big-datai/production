@@ -1,0 +1,19 @@
+{
+  "episode": 13,
+  "beat": 12,
+  "clip": 10,
+  "title": "Papa: 'WAIT — snacks!' comic dad-jog",
+  "mode": "omni",
+  "durationSec": 10,
+  "quality": "720p",
+  "nativeAudio": true,
+  "expectedCredits": 90,
+  "subjects": ["Papa"],
+  "scene": "playground-park",
+  "boundElements": [
+    { "tag": "Papa", "source": "library" },
+    { "tag": "playground-park", "source": "library" }
+  ],
+  "prompt": "Wide shot at @playground-park — playground equipment softly visible BACKGROUND, paved sidewalk in foreground, soft warm afternoon light. @Papa already CENTER-FRAME standing in place on the sidewalk with both feet planted, just realizing his daughters have taken off on their scooters, theatrical wide-eyed dad-expression with cheerful warm comedic surprise. Papa has exactly two arms and two hands visible — both raised softly in a 'wait!' gesture, palms open, at chest height. The sidewalk and playground stay plain clean throughout. (BEAT 1 — 0-5s) Papa's eyes go wide with cheerful comedic dad-realization — mouth open in a soft 'O' of warm surprise, both hands still raised softly at chest height. Papa (warm cheerful playful dad-call, NOT panicked, NOT scared, theatrical comedy): \"Wait, wait, WAIT! What about the snacks?!\" (BEAT 2 — 5-10s) Papa softly bounces in place on his feet (gentle in-place bounce, not running off), both hands now softly cupped around his mouth like a megaphone. Papa (warm cheerful playful sing-song call): \"Hold up! Daddy's coming, slow down a little, Daddy's got SNACKS!\" Soft cheerful kid-show comedy ambiance throughout. STRICT ANATOMY: Papa has exactly two arms and two hands at all times. Papa stays grounded with both feet on the sidewalk throughout — no running off-frame, no leaping, no chasing. The bounce-in-place is gentle and comedic.",
+  "negativePrompt": "duplicate character, twin, clone, two of the same, mirrored figure, second father, two Papa, identical adults, second mother, two Mama, mama in this clip, mama visible, dog visible, joe visible, ginger visible, sara in this clip, sara visible, eva in this clip, eva visible, third child, additional children, extra child in background, ghost figure, ghost adult, shadow of person, mirrored adult, mirror reflection, family members in the background, strangers, crowd, group of people, other faces, background people, friends, neighbors, other parents, other adults, three arms, third arm, extra arm, extra hand, floating hand, anatomy error, papa has three hands, scary face, frightening expression, horror lighting, papa thundering shout, papa apoplectic, papa rage face, papa angry, papa panicked, papa scared, papa distressed, intense yelling, blood, red liquid, red splatter, gore, injury, scary, violent, distressing, papa airborne, papa launching, papa flying, papa leaping, papa diving, papa walks toward, papa walks off, papa running off, papa heads to, papa heads off, papa chasing forward, hard fall, hard impact, painful fall, environmental shake, motion lines, action lines, dust trails, speed lines"
+}

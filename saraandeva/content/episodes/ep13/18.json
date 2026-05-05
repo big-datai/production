@@ -1,0 +1,22 @@
+{
+  "episode": 13,
+  "beat": 21,
+  "clip": 18,
+  "title": "CLIFFHANGER + AUDIENCE-ASK — 'Did YOU make new friends today?'",
+  "mode": "omni",
+  "durationSec": 10,
+  "quality": "720p",
+  "nativeAudio": true,
+  "expectedCredits": 90,
+  "subjects": ["Sara", "Eva"],
+  "scene": "tennis-court",
+  "boundElements": [
+    { "tag": "Sara", "source": "library" },
+    { "tag": "Eva", "source": "library" },
+    { "tag": "tennis-court", "source": "library" },
+    { "tag": "pink-helmet", "source": "library" },
+    { "tag": "teal-helmet", "source": "library" }
+  ],
+  "prompt": "Tight head-on close-up at @tennis-court — chain-link fence softly visible BACKGROUND-OUT-OF-FOCUS, golden-hour warm light bathing the scene. POSITION LOCK — Sara stays in her exact spot CENTER-LEFT throughout. Eva stays in her exact spot CENTER-RIGHT throughout. Neither girl moves. Exactly TWO girls in the entire frame. @Sara already CENTER-LEFT FOREGROUND standing on the green court with both feet planted, ponytail with bow softly visible under @pink-helmet (buckled), warm friend-to-friend smile, head turned DIRECTLY toward the camera with bright cheerful sparkle in her eyes. Sara has exactly two arms and two hands visible — both softly clasped together at her chest in a warm 'goodbye for now' wave-pose. Sara stays at this exact spot throughout. @Eva already CENTER-RIGHT FOREGROUND standing on the green court right next to Sara with both feet planted, curly blonde hair softly visible under @teal-helmet (buckled), warm friend-to-friend smile, also turned DIRECTLY toward the camera. Eva has exactly two arms and two hands visible — both held softly up in a cheerful warm 'wave goodbye' gesture. Eva stays at this exact spot throughout. (BEAT 1 — 0-5s) Sara holds her warm look at the camera with a friend-to-friend cheerful sparkle. Sara (warm friend-to-friend voice, eyes shining at camera): \"Did YOU make new friends today?\" She holds the friendly look at the camera for a full beat. (BEAT 2 — 5-10s) Eva softly leans in beside Sara still in her exact spot, also looking directly at camera with warm cheerful eyes. Eva (warm cheerful kid-voice, friend-to-friend): \"Where should we play TOMORROW?\" Both girls hold their warm look at the camera together waiting cheerfully for the kid watching at home to answer out loud. Both wave a soft warm goodbye-for-now wave. Calm cheerful warm kid-show family ambiance throughout. STRICT ANATOMY: Sara has exactly two arms and two hands at all times — both clasped at chest. Eva has exactly two arms and two hands at all times — both held up in wave gesture. Both girls stay grounded with both feet on the green court throughout — no leaping, no jumping. Helmets stay buckled. The court stays plain clean.",
+  "negativePrompt": "duplicate character, twin, clone, two of the same, mirrored figure, second mother, two Mama, mama in this clip, mama visible, second father, two Papa, papa in this clip, papa visible, dog visible, joe visible, ginger visible, isabel in this clip, isabel visible, leo in this clip, leo visible, third child, second sister, second sara, second eva, two eva, duplicate eva, three girls, four kids, second blonde child, fourth child, additional children, extra child in background, ghost figure, ghost kid, shadow children, shadow of person, mirrored children, mirror reflection, family members in the background, strangers, crowd, group of people, other faces, background people, friends behind, neighbors, three arms, third arm, extra arm, extra hand, floating hand, anatomy error, sara has three hands, eva has three hands, sara not looking at camera, sara looking away from camera, eva not looking at camera, eva looking away from camera, helmet falling off, scary face, frightening expression, horror lighting, blood, red liquid, red splatter, gore, injury, scary, violent, distressing, sara airborne, eva airborne, hard fall, hard impact, environmental shake, motion lines, action lines"
+}

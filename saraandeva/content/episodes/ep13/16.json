@@ -1,0 +1,23 @@
+{
+  "episode": 13,
+  "beat": 18,
+  "clip": 16,
+  "title": "'YES! Come play!' — kids enter, group tag begins",
+  "mode": "omni",
+  "durationSec": 10,
+  "quality": "720p",
+  "nativeAudio": true,
+  "expectedCredits": 90,
+  "subjects": ["Sara", "Eva", "Isabel"],
+  "scene": "tennis-court",
+  "boundElements": [
+    { "tag": "Sara", "source": "library" },
+    { "tag": "Eva", "source": "library" },
+    { "tag": "Isabel", "source": "library" },
+    { "tag": "tennis-court", "source": "library" },
+    { "tag": "pink-helmet", "source": "library" },
+    { "tag": "teal-helmet", "source": "library" }
+  ],
+  "prompt": "Wide shot of @tennis-court — green court with white lines, chain-link fence softly visible BACKGROUND, soft warm afternoon light. POSITION LOCK — every character stays in their EXACT same physical spot from second 0 through second 10. Exactly THREE kids in the entire frame: one Sara, one Eva, one Isabel. (Leo is NOT in this clip — he stays just outside the frame with Papa, off-screen.) @Sara already CENTER-LEFT standing on the green court with both feet planted, ponytail with bow under @pink-helmet (buckled), both arms held out wide in a warm welcoming 'come on in' gesture, beaming with cheerful kid joy. Sara has exactly two arms and two hands visible — both held out wide. Sara stays at this exact spot throughout. @Eva already CENTER-RIGHT standing on the green court with both feet planted next to Sara, curly blonde hair under @teal-helmet (buckled), both hands cupped softly at her mouth in a cheerful 'come on!' shout-gesture, beaming brightly. Eva has exactly two arms and two hands visible — both cupped at mouth. Eva stays at this exact spot throughout. @Isabel already FAR-RIGHT standing on the green court a few steps from Eva with both feet planted (already on the court — she has come through the fence gate which is off-frame), kindergartener girl with curly brunette hair, kind shy smile, both hands clasped together at her chest in a delighted 'oh thank you!' gesture. Isabel has exactly two arms and two hands visible — both clasped at chest. Isabel stays at this exact spot throughout. (BEAT 1 — 0-5s) Sara waves both her open hands warmly in welcome from her exact spot. Sara (warm cheerful kid-voice, sing-song bright): \"YES! Come play with us!\" Eva, hands still cupped at her mouth, calls out cheerfully. Eva (cheerful sing-song call): \"We have a tennis ball! Catch it with us!\" (BEAT 2 — 5-10s) Isabel beams brightly from her exact spot, both hands still clasped at her chest. Isabel (kind kindergartener voice, warm and shy with delight): \"Yay! Thank you! What do we play first?\" Sara (cheerful kid-voice, both hands still wide): \"TAG! Everyone's IT!\" Calm cheerful warm kid-show family ambiance throughout. STRICT ANATOMY: Sara has exactly two arms and two hands at all times — both held out wide. Eva has exactly two arms and two hands at all times — both cupped at mouth. Isabel has exactly two arms and two hands at all times — both clasped at chest. Each girl stays grounded with both feet on the green court throughout — no leaping, no jumping, no running. Helmets stay buckled.",
+  "negativePrompt": "duplicate character, twin, clone, two of the same, mirrored figure, second mother, two Mama, mama in this clip, mama visible, second father, two Papa, papa in this clip, papa visible, dog visible, joe visible, ginger visible, leo visible on screen, leo in frame, fourth child, fifth child, second sara, two sara, duplicate sara, second eva, two eva, duplicate eva, second isabel, two isabel, duplicate isabel, second blonde child, additional children, extra child in background, ghost figure, ghost kid, ghost children, shadow children, shadow of person, mirrored children, mirror reflection, family members in the background, strangers, crowd, group of people, other faces, background people, friends, neighbors, other kids on court, three arms, third arm, extra arm, extra hand, floating hand, anatomy error, sara has three hands, eva has three hands, isabel has three hands, helmet falling off, scary face, frightening expression, horror lighting, blood, red liquid, red splatter, gore, injury, scary, violent, distressing, sara airborne, eva airborne, isabel airborne, sara leaping, eva leaping, isabel leaping, hard fall, hard impact, environmental shake, motion lines, action lines"
+}

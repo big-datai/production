@@ -1,0 +1,23 @@
+{
+  "episode": 13,
+  "beat": 15,
+  "clip": 13,
+  "title": "Sister tennis-ball pass",
+  "mode": "omni",
+  "durationSec": 10,
+  "quality": "720p",
+  "nativeAudio": true,
+  "expectedCredits": 90,
+  "subjects": ["Sara", "Eva"],
+  "scene": "tennis-court",
+  "boundElements": [
+    { "tag": "Sara", "source": "library" },
+    { "tag": "Eva", "source": "library" },
+    { "tag": "tennis-court", "source": "library" },
+    { "tag": "tennis-ball", "source": "library" },
+    { "tag": "pink-helmet", "source": "library" },
+    { "tag": "teal-helmet", "source": "library" }
+  ],
+  "prompt": "Wide shot of @tennis-court — green court with white lines, low net softly visible BACKGROUND, chain-link fence, soft warm afternoon light. POSITION LOCK — Sara stays in her exact spot on the LEFT side of the court throughout. Eva stays in her exact spot on the RIGHT side of the court throughout, about 6 feet apart from Sara. Neither girl crosses the court — only the tennis ball travels between them. @Sara already CENTER-LEFT standing on the green court surface with both feet planted, ponytail with bow under @pink-helmet (buckled), holding the soft yellow @tennis-ball gently in her right hand at chest height in a 'about to roll' pose. Sara has exactly two arms and two hands visible — right hand on ball, left hand softly at her side. Sara stays at this exact spot throughout the entire 10s. @Eva already CENTER-RIGHT standing on the green court surface about 6 feet from Sara with both feet planted, curly blonde hair under @teal-helmet (buckled), both hands cupped softly together in front of her at hip height in a 'ready to catch' pose. Eva has exactly two arms and two hands visible — both cupped together. Eva stays at this exact spot throughout the entire 10s. (BEAT 1 — 0-5s) Sara softly tosses the soft yellow tennis ball with a gentle underhand motion in a low arc toward Eva. The ball travels in a gentle arc from Sara's right hand toward Eva. Sara (cheerful kid-voice, warm and bright): \"Catch it, Eva!\" (BEAT 2 — 5-10s) Eva gently catches the ball with both her cupped hands at hip height, beaming with delighted kid pride. Eva (cheerful giggle, both hands now around the ball): \"Caught it! My turn!\" Both girls stay in their exact spots, ball now in Eva's hands. Calm cheerful warm kid-show ambiance throughout. STRICT ANATOMY: Sara has exactly two arms and two hands at all times — right hand on ball (until release), left at side. Eva has exactly two arms and two hands at all times — both cupped together. Both girls stay grounded with both feet on the court throughout — no leaping, no jumping, no running across the court. Helmets stay buckled. Ball is plain SOFT YELLOW — no other color, no red, no marks. The tennis court stays plain clean.",
+  "negativePrompt": "duplicate character, twin, clone, two of the same, mirrored figure, second mother, two Mama, mama in this clip, mama visible, second father, two Papa, papa in this clip, papa visible, dog visible, joe visible, ginger visible, third child, second sister, second sara, second eva, two eva, duplicate eva, three girls, four kids, second blonde child, fourth child, additional children, extra child in background, ghost figure, ghost kid, shadow children, shadow of person, mirrored children, mirror reflection, family members in the background, strangers, crowd, group of people, other faces, background people, friends, neighbors, other tennis players, three arms, third arm, extra arm, extra hand, floating hand, anatomy error, sara has three hands, eva has three hands, helmet falling off, scary face, frightening expression, horror lighting, blood, red liquid, red splatter, red ball, red tennis ball, ball as red, gore, injury, scary, violent, distressing, sara airborne, eva airborne, sara leaping, eva leaping, sara running across court, eva running across court, sara crossing to eva, eva crossing to sara, hard fall, hard impact, painful fall, ball flying out of frame, ball hitting face, environmental shake, motion lines, action lines"
+}

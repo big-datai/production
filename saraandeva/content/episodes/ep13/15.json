@@ -1,0 +1,20 @@
+{
+  "episode": 13,
+  "beat": 17,
+  "clip": 15,
+  "title": "AUDIENCE-ASK — Sara: 'Should we say YES?!'",
+  "mode": "omni",
+  "durationSec": 10,
+  "quality": "720p",
+  "nativeAudio": true,
+  "expectedCredits": 90,
+  "subjects": ["Sara"],
+  "scene": "tennis-court",
+  "boundElements": [
+    { "tag": "Sara", "source": "library" },
+    { "tag": "tennis-court", "source": "library" },
+    { "tag": "pink-helmet", "source": "library" }
+  ],
+  "prompt": "Tight friendly close-up at @tennis-court — green court surface softly visible, chain-link fence softly out-of-focus in BACKGROUND, soft warm afternoon light. @Sara already CENTER-FRAME standing on the green court with both feet planted, ponytail with bow softly visible under @pink-helmet (buckled), big warm friend-to-friend grin, head turned DIRECTLY toward the camera with bright cheerful sparkle in her eyes. Sara has exactly two arms and two hands visible — both softly clasped together at her chest in a warm friendly 'come closer to me' kind gesture. (BEAT 1 — 0-5s) Sara holds her warm look at the camera, leaning gently toward camera with friend-to-friend conspiratorial wonder-sparkle. Sara (warm friend-to-friend voice, eyes shining at camera, soft and kind): \"There are kids who want to play with us! Should we say YES?!\" She holds the friendly look at the camera waiting cheerfully for the kid watching at home to call out an answer. (BEAT 2 — 5-10s) Sara cups one hand softly to her ear in a 'I'm listening' gesture toward the camera, the other hand still on her chest, beaming with kind warm encouragement. Sara (cheerful warm sing-song to camera): \"What do YOU say? YES?!\" She gives a warm wink at the camera. Calm cheerful warm kid-show family ambiance throughout. STRICT ANATOMY: Sara has exactly two arms and two hands at all times. Sara stays grounded with both feet on the green court throughout — no leaping, no jumping. Helmet stays buckled. The court stays plain clean — no marks, no red, no debris.",
+  "negativePrompt": "duplicate character, twin, clone, two of the same, mirrored figure, second sister, second sara, two sara, duplicate sara, identical girls, second mother, two Mama, mama in this clip, mama visible, second father, two Papa, papa in this clip, papa visible, dog visible, joe visible, ginger visible, eva in this clip, eva visible, isabel in this clip, isabel visible, leo in this clip, leo visible, third child, additional children, extra child in background, ghost figure, ghost kid, shadow children, shadow of person, mirrored children, mirror reflection, family members in the background, strangers, crowd, group of people, other faces, background people, friends, neighbors, three arms, third arm, extra arm, extra hand, floating hand, anatomy error, sara has three hands, sara not looking at camera, sara looking away from camera, helmet falling off, scary face, frightening expression, horror lighting, blood, red liquid, red splatter, gore, injury, scary, violent, distressing, sara airborne, sara leaping, hard fall, hard impact, environmental shake, motion lines, action lines"
+}

@@ -1,0 +1,23 @@
+{
+  "episode": 13,
+  "beat": 13,
+  "clip": 11,
+  "title": "AUDIENCE-ASK — Sara on scooter: 'Can YOU keep up with us?!'",
+  "mode": "omni",
+  "durationSec": 10,
+  "quality": "720p",
+  "nativeAudio": true,
+  "expectedCredits": 90,
+  "subjects": ["Sara", "Eva"],
+  "scene": "playground-park",
+  "boundElements": [
+    { "tag": "Sara", "source": "library" },
+    { "tag": "Eva", "source": "library" },
+    { "tag": "pink-scooter", "source": "library" },
+    { "tag": "teal-scooter", "source": "library" },
+    { "tag": "pink-helmet", "source": "library" },
+    { "tag": "teal-helmet", "source": "library" }
+  ],
+  "prompt": "Mid-shot of paved sidewalk path leading away from the playground — soft trees + grass on either side, soft warm afternoon light. POSITION LOCK — Sara stays in her exact spot on the LEFT side of the sidewalk throughout. Eva stays in her exact spot on the RIGHT side of the sidewalk throughout. Neither girl rolls forward or back — both are softly stationary on their scooters with one foot on the deck and one foot softly placed on the sidewalk for balance. @Sara already CENTER-LEFT softly standing on the sidewalk with one foot on her @pink-scooter deck and the other foot planted softly on the sidewalk for balance, ponytail with bow visible under @pink-helmet (helmet buckled), both hands gripping the scooter handlebars firmly. Sara has exactly two arms and two hands visible — both on handlebars. Sara stays in this exact spot throughout the entire 10s. @Eva already CENTER-RIGHT softly standing on the sidewalk right next to Sara with one foot on her @teal-scooter deck and the other foot planted softly on the sidewalk for balance, curly blonde hair softly visible under @teal-helmet (helmet buckled), both hands gripping the scooter handlebars firmly. Eva has exactly two arms and two hands visible — both on handlebars. Eva stays in this exact spot throughout the entire 10s. (BEAT 1 — 0-5s) Sara turns her head DIRECTLY toward the camera with a bright friend-to-friend cheerful sparkle in her eyes, both hands still on the scooter handlebars. Sara (cheerful warm friend-to-friend voice, eyes shining at camera): \"Hey kids! Can YOU keep up with us?!\" She holds the friendly look at the camera for two full beats. (BEAT 2 — 5-10s) Eva grins beside Sara, also turning her head softly toward camera with a cheerful giggle, both hands still on her own handlebars. Eva (cheerful warm giggle to camera): \"Catch us at the tennis court!\" Both girls stay in their exact spots on the sidewalk, scooters parked under them. Calm cheerful warm kid-show ambiance throughout. STRICT ANATOMY: Sara has exactly two arms and two hands at all times — both on pink scooter handlebars. Eva has exactly two arms and two hands at all times — both on teal scooter handlebars. Both girls stay grounded with one foot on the scooter and one foot softly planted on the sidewalk throughout — no rolling motion, no leaping, no falling, no scooter crashing.",
+  "negativePrompt": "duplicate character, twin, clone, two of the same, mirrored figure, second mother, two Mama, mama in this clip, mama visible, second father, two Papa, papa in this clip, papa visible, dog visible, joe visible, ginger visible, third child, second sister, second sara, second eva, two eva, duplicate eva, three girls, four kids, second blonde child, fourth child, additional children, extra child in background, ghost figure, ghost kid, shadow children, shadow of person, mirrored children, mirror reflection, family members in the background, strangers, crowd, group of people, other faces, background people, friends, neighbors, three arms, third arm, extra arm, extra hand, floating hand, anatomy error, sara has three hands, eva has three hands, sara not looking at camera, sara looking away from camera, scooter levitating, free arm swinging while holding scooter, scary face, frightening expression, horror lighting, blood, red liquid, red splatter, gore, injury, scary, violent, distressing, sara airborne, eva airborne, sara leaping, eva leaping, sara crashing scooter, eva crashing scooter, scooter falling over, helmet falling off, helmet flying off, hard fall, hard impact, painful fall, environmental shake, motion lines, action lines, dust trails, speed lines"
+}

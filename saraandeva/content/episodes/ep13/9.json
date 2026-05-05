@@ -1,0 +1,22 @@
+{
+  "episode": 13,
+  "beat": 11,
+  "clip": 9,
+  "title": "Sara: 'Race you, Eva!' — scooter grab",
+  "mode": "omni",
+  "durationSec": 10,
+  "quality": "720p",
+  "nativeAudio": true,
+  "expectedCredits": 90,
+  "subjects": ["Sara", "Eva"],
+  "scene": "playground-park",
+  "boundElements": [
+    { "tag": "Sara", "source": "library" },
+    { "tag": "Eva", "source": "library" },
+    { "tag": "playground-park", "source": "library" },
+    { "tag": "pink-scooter", "source": "library" },
+    { "tag": "teal-scooter", "source": "library" }
+  ],
+  "prompt": "Mid-wide shot at @playground-park — soft mulch transitioning to paved sidewalk, soft warm afternoon light. @Sara already CENTER-LEFT standing on the sidewalk with both feet planted, ponytail with bow, both hands gripping the handlebars of @pink-scooter beside her, beaming with cheerful kid energy. Sara has exactly two arms and two hands visible — both on the scooter handlebars. The pink scooter stays parked beside Sara, both her hands gripping it at handlebar height. @Eva already CENTER-RIGHT standing on the sidewalk right next to Sara with both feet planted, curly blonde hair with rainbow bow, both hands gripping the handlebars of @teal-scooter beside her, beaming with cheerful kid energy. Eva has exactly two arms and two hands visible — both on the scooter handlebars. The teal scooter stays parked beside Eva, both her hands gripping it at handlebar height. (BEAT 1 — 0-5s) Sara turns her head softly toward Eva with a cheerful determined kid-grin, both hands still on her scooter handlebars. Sara (cheerful sing-song kid-voice): \"Hop on the scooter, sister! Let's ZOOM to the court!\" (BEAT 2 — 5-10s) Eva turns her head softly toward Sara with an excited delighted grin, both hands still on her scooter handlebars. Eva (cheerful giggle, hands still on handlebars): \"Last one there is a silly-fish, sister!\" Both girls stay grounded with both feet on the sidewalk, both hands still on their respective scooters. Calm cheerful warm kid-show ambiance throughout. STRICT ANATOMY: Sara has exactly two arms and two hands at all times — both gripping pink scooter handlebars. Eva has exactly two arms and two hands at all times — both gripping teal scooter handlebars. Both girls stay grounded with both feet on the sidewalk throughout — no leaping, no jumping, no kicking off the scooter to ride yet (clip ends with both girls stationary on the sidewalk).",
+  "negativePrompt": "duplicate character, twin, clone, two of the same, mirrored figure, second mother, two Mama, mama in this clip, mama visible, second father, two Papa, papa in this clip, papa visible, dog visible, joe visible, ginger visible, third child, second sister, second sara, second eva, two eva, duplicate eva, three girls, four kids, second blonde child, fourth child, additional children, extra child in background, ghost figure, ghost kid, shadow children, shadow of person, mirrored children, mirror reflection, family members in the background, strangers, crowd, group of people, other faces, background people, friends, neighbors, three arms, third arm, extra arm, extra hand, floating hand, anatomy error, sara has three hands, eva has three hands, scooter levitating, free arm swinging while holding scooter, scary face, frightening expression, horror lighting, blood, red liquid, red splatter, gore, injury, scary, violent, distressing, sara airborne, eva airborne, sara leaping, eva leaping, sara crashing scooter, eva crashing scooter, scooter falling over, hard fall, hard impact, painful fall, environmental shake, motion lines, action lines, dust trails, speed lines, sara running off, eva running off"
+}
