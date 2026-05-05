@@ -4,10 +4,10 @@
   "clip": "A",
   "title": "MUSIC VIDEO RENDER A — Three Little Pigs (Papa LOCKED at FRONT, visible huff-puff, v2)",
   "mode": "omni",
-  "durationSec": 15,
+  "durationSec": 10,
   "quality": "720p",
   "nativeAudio": true,
-  "expectedCredits": 135,
+  "expectedCredits": 90,
   "subjects": ["Papa", "Sara", "Eva"],
   "scene": "playground-tower-hou",
   "boundElements": [
@@ -17,7 +17,7 @@
   "reuseAssetNote": "ONE 15s render of Papa-as-cartoon-wolf LOCKED at the FRONT of the tower-house (Sara peeking from LEFT window, Eva peeking from RIGHT window). Looped 6× with crossfade to fill the 90s music block (75% of original 120s, per user feedback). Loop choreography: in-place wolf wiggle → cheek-puff → gentle blow → defeated slump → repeat.",
   "musicVideoBlock": true,
   "loopExpansion": {
-    "iterations": 6,
+    "iterations": 9,
     "xfadeDuration": 0.3,
     "outputDurationSec": 88
   },
