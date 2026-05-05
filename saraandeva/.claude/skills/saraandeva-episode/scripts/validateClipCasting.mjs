@@ -97,6 +97,34 @@ const TRAP_OBJECT_HOLD_ARM_SWING = [
   // Detect when prompt mentions holding a cup/shake/cone AND free-arm verbs
 ];
 
+// Post-ep11 v7 — POSITION-LOCK TRAP (Lesson #11). Describing the SAME @Char in
+// two DIFFERENT physical positions across beats (e.g. "kneeling 3 feet away"
+// beat 1 → "snuggled at shoulder" beat 3) makes Kling render BOTH states
+// simultaneously. Result: duplicate character + ghost extras. ep11 clip 15
+// burned 135 cr on a "two-Evas + ghost-girl" render before this was understood.
+// Fix: lock all but ONE character (the moving one) to a single position for
+// the entire clip. Memory: lesson_kling_position_lock.md
+//
+// Detection heuristic: same @Char anchored with "already" twice in the same
+// prompt, where one anchor uses FAR-distance language and another uses
+// CLOSE-contact language. False positives are unlikely because both bucket
+// vocabularies are quite specific to physical staging.
+const POSITION_LOCK_TRAP = (prompt) => {
+  for (const char of ["Papa", "Sara", "Eva", "Mama", "Joe", "Ginger", "Grandma"]) {
+    const re = new RegExp(`@?${char}\\s+already\\s+([^.]{20,250})`, "gi");
+    const positions = [...prompt.matchAll(re)].map(m => m[1].toLowerCase());
+    if (positions.length < 2) continue;
+    const hasFar = positions.some(p =>
+      /\b(?:(?:\d+|one|two|three|four|five|six|seven|eight|nine|ten)\s*(?:feet|ft|meters?|m)\s+(?:away|from|apart|back|over)|few\s+feet|a\s+few\s+feet|across\s+the|opposite\s+side|other\s+side|far\s+side|edge\s+of|on\s+the\s+(?:left|right)\s+side\s+of\s+the\s+yard)\b/.test(p)
+    );
+    const hasClose = positions.some(p =>
+      /\b(snuggled\s+(in\s+)?close|pressed\s+(in\s+)?(close\s+)?against|right\s+next\s+to|cuddled\s+(in\s+)?close|wrapped\s+around\s+his|wrapped\s+around\s+her|hugging\s+(his|her)\s+(arm|shoulder|leg)|leaning\s+(on|against)\s+(his|her)\s+(arm|shoulder|chest))\b/.test(p)
+    );
+    if (hasFar && hasClose) return char;
+  }
+  return null;
+};
+
 // ─── Load all per-clip JSONs ────────────────────────────────────────────────
 const clips = [];
 for (const f of fs.readdirSync(epDir).sort()) {
@@ -191,6 +219,16 @@ for (const { file, spec } of clips) {
   //     because gore in a kids show is a publish-blocker.
   if (TRAP_RED_LIQUID_NEAR_FACE(prompt)) {
     issues.push(`red-liquid splatter co-occurs with face/apron/chest mention — Kling renders red splatter as BLOOD in a kids show, regardless of what the prompt calls it. Use sealed-intact packets, recolor to non-red (purple/blue/yellow), or remove face/apron-front from the splatter zone. memory: lesson_no_red_splatter_kids_show.md`);
+  }
+
+  // 8c. Position-lock trap (post-ep11 v7 clip 15 — Lesson #11). Describing the
+  //     same @Char in TWO different physical positions across beats causes Kling
+  //     to render BOTH states simultaneously → duplicate character + ghost
+  //     extras. ep11 clip 15 burned 135 cr on a "two-Evas + ghost-girl" render.
+  //     Memory: lesson_kling_position_lock.md. HARD ERROR — cost is non-trivial.
+  const lockTrapChar = POSITION_LOCK_TRAP(prompt);
+  if (lockTrapChar) {
+    issues.push(`@${lockTrapChar} described in TWO different distance-positions across beats (FAR-language + CLOSE-language) — Kling will render BOTH states simultaneously, spawning a duplicate ${lockTrapChar} and ghost extras. Lock @${lockTrapChar} to ONE physical position from second 0 to second N; only ONE character per clip may transition pose. Add a "POSITION LOCK" paragraph to the prompt explicitly. memory: lesson_kling_position_lock.md`);
   }
 
   // 9. Group-noun check (rule #5) — only flag when the group noun is the SUBJECT

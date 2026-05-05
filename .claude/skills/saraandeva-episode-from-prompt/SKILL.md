@@ -301,6 +301,14 @@ These come from memory `lesson_kling_omni_pipeline_fixes.md`. The submit script 
       2. **Sealed packets stay sealed**: `Eva trips on a sealed-intact ketchup packet on the ground — the packet stays whole, no liquid escapes`.
       3. **Move the red away from faces**: `a single ketchup-packet sits unopened on the picnic table 6 feet away from anyone, no spilling`.
       4. Add to negative prompt: `red liquid on face, blood, blood splatter, gore, red drip on chin, red splash on apron`.
+5i. **POSITION LOCK — same character may NOT be described in two different physical positions across beats.** ep11 v7 clip 15 cost 135 cr on a "two-Evas + ghost-girl" render before this was understood. Describing Sara as "kneeling 3 feet away" in beat 1 and "snuggled at Papa's shoulder" in beat 3 makes Kling render BOTH states simultaneously → duplicate character + ghost extras. (memory: `lesson_kling_position_lock.md`, lint-blocked in both `validateClipCasting.mjs` HARD ERROR and `submitOmniClip.mjs` HARD BLOCK)
+    - **THE RULE**: in any multi-beat clip, only **ONE** character may transition pose (e.g. Papa: standing → belly-down). All other characters are **STATIC** from second 0 to second N — same physical spot, same body orientation, same hand positions throughout. Anatomy locks ("exactly two arms") do NOT substitute for position lock.
+    - **Add this paragraph to every parent-activity / multi-beat prompt** (replace `<Moving>` and `<Static1/2>` with actual char names, replace N with character count):
+      ```
+      POSITION LOCK — every character stays in their EXACT same physical spot from second 0 through second 15. Only @<Moving>'s torso/expression changes between beats. @<Static1> and @<Static2> DO NOT move, DO NOT change spots, DO NOT stand up, DO NOT crawl, DO NOT shift positions at any point in the entire 15s clip. There are exactly N people in the entire frame: ...
+      ```
+    - **Detection heuristic** (also enforced by lint): any single `@Char already <description>` mention that uses FAR-distance language (`X feet away`, `across the`, `opposite side`, `other side`, `edge of`) AND a different mention with CLOSE-contact language (`snuggled close`, `pressed against`, `right next to`, `wrapped around his arm`, `leaning on his shoulder`) within the same prompt = **HARD ERROR**.
+    - **WORKING FIX from ep11 v7 keeper**: Papa starts kneeling between Sara and Eva who are already snuggled at his shoulders. Beat 1 = Papa kneels (girls already hugging). Beat 2 = Papa transitions to belly-down (girls stay locked). Beat 3 = girls "tighten their hold" (still in same positions, just hand pressure changes). Render came back clean — 1 Papa, 1 Sara, 1 Eva.
     - Dance moves: hip bops, knee bends, head bobs, "step in" interactions (no "swing arms", no "point fingers", no "hands on hips")
     - Negative-prompt: `three arms, third arm, extra arm, extra hand, floating hand, four arms, anatomy error, free arm swinging while holding cup, cup levitating, hand pointing while also holding cup`
     (memory: `lesson_kling_ghost_anatomy_ep10.md`)
@@ -332,6 +340,8 @@ The script enforces every hard rule above and the post-ep10 traps:
 - **4+ char clips** → recommends Nano Banana group-shot via `generateGroupShot.py`
 - **looking-back-at-kids + driver framing** → 180-turn trap
 - **holding object + free-arm-dance** → 3-arm anatomy trap
+- **red-liquid splatter co-occurs with face/apron/chest** → BLOOD render trap (post-ep11 clip 15)
+- **same `@Char` in FAR-position + CLOSE-position across beats** → POSITION-LOCK trap (post-ep11 v7 clip 15) — duplicate-character + ghost-extras render
 
 Exit 0 = clean, 1 = errors (must fix), 2 = warnings only with `--strict`.
 

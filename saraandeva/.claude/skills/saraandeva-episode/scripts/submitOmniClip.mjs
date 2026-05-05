@@ -89,6 +89,32 @@ const FORBIDDEN_PROMPT_PHRASES = [
   /\b(?:squirt|splash|splatter|spray|drip|drizzle|spurt|gush|smear|stain)\w*\s+\w*\s*(?:red|crimson|scarlet|bright[- ]?red|blood[- ]?red)\b/i,
 ];
 
+// ─── Post-ep11 v7: POSITION-LOCK TRAP (Lesson #11) ─────────────────────────
+// Describing the SAME @Char in two DIFFERENT physical positions across beats
+// (e.g. "kneeling 3 feet away" beat 1 → "snuggled at shoulder" beat 3) makes
+// Kling render BOTH states simultaneously → duplicate character + ghost
+// extras. ep11 clip 15 burned 135 cr on a "two-Evas + ghost-girl" render
+// before this was understood. Memory: lesson_kling_position_lock.md
+//
+// Detection: same @Char anchored with "already" twice in the same prompt,
+// where one anchor uses FAR-distance language and another uses CLOSE-contact
+// language. Returns the offending character name or null.
+function POSITION_LOCK_TRAP(prompt) {
+  for (const char of ["Papa", "Sara", "Eva", "Mama", "Joe", "Ginger", "Grandma"]) {
+    const re = new RegExp(`@?${char}\\s+already\\s+([^.]{20,250})`, "gi");
+    const positions = [...prompt.matchAll(re)].map(m => m[1].toLowerCase());
+    if (positions.length < 2) continue;
+    const hasFar = positions.some(p =>
+      /\b(?:(?:\d+|one|two|three|four|five|six|seven|eight|nine|ten)\s*(?:feet|ft|meters?|m)\s+(?:away|from|apart|back|over)|few\s+feet|a\s+few\s+feet|across\s+the|opposite\s+side|other\s+side|far\s+side|edge\s+of|on\s+the\s+(?:left|right)\s+side\s+of\s+the\s+yard)\b/.test(p)
+    );
+    const hasClose = positions.some(p =>
+      /\b(snuggled\s+(in\s+)?close|pressed\s+(in\s+)?(close\s+)?against|right\s+next\s+to|cuddled\s+(in\s+)?close|wrapped\s+around\s+his|wrapped\s+around\s+her|hugging\s+(his|her)\s+(arm|shoulder|leg)|leaning\s+(on|against)\s+(his|her)\s+(arm|shoulder|chest))\b/.test(p)
+    );
+    if (hasFar && hasClose) return char;
+  }
+  return null;
+}
+
 // ─── REQUIRED NEGATIVE PROMPT (Omni duplicate-character defense) ────────────
 // Lesson from Ep 3 first test (2026-04-27): single bound character can render
 // twice in wide shots. Force every Omni spec to include these.
@@ -135,6 +161,17 @@ for (const re of FORBIDDEN_PROMPT_PHRASES) {
     console.error(`❌ prompt contains forbidden phrase ${re}. Edit the spec.`);
     process.exit(1);
   }
+}
+
+// Lesson #11 — position-lock trap (multi-pattern co-occurrence, can't be a regex)
+const positionLockChar = POSITION_LOCK_TRAP(spec.prompt);
+if (positionLockChar) {
+  console.error(`❌ POSITION-LOCK TRAP — @${positionLockChar} described in TWO different distance-positions across beats.`);
+  console.error(`   Kling will render BOTH states simultaneously, spawning a duplicate ${positionLockChar} + ghost extras.`);
+  console.error(`   Lock @${positionLockChar} to ONE physical position from second 0 to second N.`);
+  console.error(`   Only ONE character per clip may transition pose. Add a "POSITION LOCK" paragraph to the prompt explicitly.`);
+  console.error(`   memory: lesson_kling_position_lock.md`);
+  process.exit(1);
 }
 
 // Verify all @-tags reference declared boundElements
