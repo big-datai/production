@@ -278,6 +278,103 @@ PROPS = {
             "marks, NO text on the platter, NO watermark."
         ),
     },
+    # ─── ep13 (Playground Tag Game) props ──────────────────────────────
+    "pink_scooter": {
+        "label": "Sara's pink kick-scooter (ep13)",
+        "refs": [],
+        "description": (
+            "A SINGLE 3-WHEEL KID KICK-SCOOTER for a 5-year-old, "
+            "presented like a clean catalog product shot. FRAME: "
+            "bright cheerful HOT-PINK with subtle PURPLE accents. "
+            "Curved T-bar HANDLEBAR at the top with chunky soft-rubber "
+            "PINK GRIPS, two rounded white-and-pink decorative tassels "
+            "hanging from the handlebar ends. Vertical pink stem. "
+            "Wide flat black SCOOTER DECK with a non-slip grip surface "
+            "(narrow purple stripe down the middle). Three wheels: "
+            "TWO chunky black rubber wheels with PINK plastic hubs at "
+            "the front (for stability), ONE black wheel with pink hub "
+            "at the back. Small REAR FOOT-BRAKE softly visible. The "
+            "scooter stands on its three wheels at a slight 3/4 angle "
+            "to the camera. Centered on a soft pale-cream neutral "
+            "backdrop with a gentle drop shadow. Pixar 3D render, "
+            "kid-friendly toy aesthetic. NO PEOPLE, NO HANDS, NO "
+            "BRAND TEXT, NO logos, NO watermark."
+        ),
+    },
+    "teal_scooter": {
+        "label": "Eva's teal kick-scooter (ep13)",
+        "refs": [],
+        "description": (
+            "A SINGLE 3-WHEEL KID KICK-SCOOTER for a 3-year-old, "
+            "matching the pink_scooter's silhouette and quality but in "
+            "a different palette. FRAME: cheerful TEAL-AQUAMARINE with "
+            "subtle GREEN accents. Curved T-bar HANDLEBAR with chunky "
+            "soft-rubber TEAL GRIPS. Vertical teal stem. Wide flat "
+            "black SCOOTER DECK with a narrow GREEN stripe down the "
+            "middle. Three wheels: TWO chunky black rubber wheels with "
+            "TEAL plastic hubs at the front, ONE black wheel with teal "
+            "hub at the back. Small rear foot-brake. Slightly smaller "
+            "overall than the pink scooter (scaled for a younger kid). "
+            "3/4 angle to camera. Soft pale-cream neutral backdrop, "
+            "gentle drop shadow. Pixar 3D render, kid-friendly toy "
+            "aesthetic. NO PEOPLE, NO HANDS, NO BRAND TEXT, NO logos."
+        ),
+    },
+    "pink_helmet": {
+        "label": "Sara's pink kid-bike helmet (ep13)",
+        "refs": [],
+        "description": (
+            "A SINGLE KID BICYCLE/SCOOTER HELMET sized for a 5-year-old, "
+            "displayed at a slight 3/4 angle to camera. SHELL: glossy "
+            "BRIGHT-PINK with a few subtle white star or heart "
+            "accent decals on the sides (cheerful kid-style). Standard "
+            "kid-helmet shape: rounded outer dome with vent slots "
+            "(small dark openings on top and sides), white interior "
+            "padding visible inside. Buckled CHIN STRAP softly visible "
+            "looped under, in coordinating black soft webbing with a "
+            "white plastic Y-buckle. Small white kid-friendly retention "
+            "wheel at the back for size adjustment. Centered on a soft "
+            "pale-cream neutral backdrop with gentle drop shadow. "
+            "Pixar 3D render. NO PEOPLE, NO HEADS, NO BRAND TEXT, NO "
+            "logos."
+        ),
+    },
+    "teal_helmet": {
+        "label": "Eva's teal kid-bike helmet (ep13)",
+        "refs": [],
+        "description": (
+            "A SINGLE KID BICYCLE/SCOOTER HELMET sized for a 3-year-old, "
+            "matching the pink_helmet's silhouette and quality but in a "
+            "different palette. SHELL: glossy TEAL-AQUAMARINE with a "
+            "few subtle white star or rainbow accent decals (cheerful "
+            "kid-style). Same kid-helmet shape with vent slots, white "
+            "interior padding, buckled black chin strap with white "
+            "plastic Y-buckle, small white retention wheel at the back. "
+            "Slightly smaller overall than the pink helmet. 3/4 angle "
+            "to camera. Soft pale-cream neutral backdrop, gentle drop "
+            "shadow. Pixar 3D render. NO PEOPLE, NO HEADS, NO BRAND "
+            "TEXT, NO logos."
+        ),
+    },
+    "tennis_ball": {
+        "label": "Soft yellow kid-tennis-ball (ep13)",
+        "refs": [],
+        "description": (
+            "A SINGLE TENNIS BALL — bright soft cheerful YELLOW (the "
+            "classic tennis-ball yellow-green, no other color), "
+            "about the size of a kid's palm. Round, slightly fuzzy "
+            "felt-tex surface (subtle brushed-fiber Pixar shading "
+            "rather than hyperreal), a single CURVED WHITE SEAM "
+            "running around it in the classic tennis-ball figure-8 "
+            "pattern. Centered in the frame at a slight 3/4 angle so "
+            "the seam is visible as a soft curve. Soft pale-cream "
+            "neutral backdrop with gentle drop shadow. Pixar 3D "
+            "render, friendly kid-toy aesthetic. ABSOLUTELY NO RED, "
+            "NO ORANGE — pure cheerful yellow only (defensive against "
+            "any blood-render trap when ball is held near a face). "
+            "NO PEOPLE, NO HANDS, NO BRAND TEXT, NO logos."
+        ),
+    },
 }
 
 

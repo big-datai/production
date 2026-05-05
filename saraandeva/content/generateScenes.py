@@ -1238,6 +1238,111 @@ SCENES = {
             "kid-craft magical adventure-planning mood."
         ),
     },
+    # ─── ep13 (The Big Tag Game at the Playground) ──────────────────────
+    "playground_park": {
+        "label": "Neighborhood park playground (ep13) — wooden tower with tube slide + swings",
+        "refs": [],
+        "description": (
+            "A cheerful neighborhood park playground in Pixar style. Wooden "
+            "playground TOWER STRUCTURE center-frame with a tan/light-brown "
+            "PLATFORM at top (the 'tower-house' with closed-side panel walls "
+            "and clear window openings on each side, kid-sized), a brown "
+            "CURVING TUBE SLIDE attached to the front of the tower, a "
+            "secondary open straight slide on the right, climbing-frame "
+            "ladder rungs on the back. Soft warm BROWN MULCH ground cover "
+            "under the play equipment. To the LEFT of the tower a green-"
+            "frame SWING-SET with two black rubber kid-seat swings "
+            "hanging from chains. Wide open green-grass lawn beyond the "
+            "play area, a few mature shade trees in the background "
+            "(soft maple/oak silhouettes), a hint of suburban houses "
+            "softly visible far behind the trees. Warm sunny afternoon, "
+            "blue sky with a few cotton clouds, soft golden-hour lighting. "
+            "Empty of people, ready for the characters. Pixar 3D feature-"
+            "render quality. NO PEOPLE. NO PETS."
+        ),
+    },
+    "playground_tower_house": {
+        "label": "Playground tower platform close-up (ep13 Three Little Pigs role-play setting)",
+        "refs": [],
+        "description": (
+            "Close-up Pixar-style shot of a wooden playground TOWER PLATFORM "
+            "— elevated about four feet off the ground on tan-brown wooden "
+            "support posts. The platform has CLOSED-SIDE PANEL WALLS on "
+            "three sides (kid-sized, about three-and-a-half feet tall, "
+            "painted soft tan-brown matching the tower) with a CLEAR "
+            "RECTANGULAR WINDOW OPENING cut into each side wall (just big "
+            "enough for two kids to peek out side-by-side). Front of the "
+            "platform has a TUBE-SLIDE OPENING (round dark tunnel mouth) "
+            "with a small handrail above it. The roof of the platform is "
+            "a slight peaked tan-brown shingled cap, giving it the "
+            "feeling of a 'little house in the trees'. Tan-brown wooden "
+            "STAIR-LADDER on the back leading up to the platform. SETTING: "
+            "framed against soft maple/oak trees and brown mulch ground "
+            "below, soft warm afternoon light. The platform reads "
+            "unmistakably as 'a kid-sized house in the playground' to a "
+            "4-year-old. Pixar 3D feature-render quality. NO PEOPLE. "
+            "NO PETS."
+        ),
+    },
+    "playground_tube_slide": {
+        "label": "Playground tube slide close-up (ep13 — Papa stuck in slide gag)",
+        "refs": [],
+        "description": (
+            "Pixar-style close-up of a brown/tan CURVING TUBE SLIDE on a "
+            "neighborhood playground. The slide is a smooth round plastic "
+            "tunnel, tan-brown matte finish, gently curving from upper-left "
+            "(slide entrance softly visible at top) down to a wide round "
+            "OPEN MOUTH at the bottom-right where a kid would emerge. "
+            "Dark interior visible inside the tube. Tan-brown wooden "
+            "support posts visible behind the slide. SETTING: brown mulch "
+            "ground softly visible beneath the slide opening, sunny "
+            "afternoon light. The slide is empty (no kids inside, no "
+            "people emerging), ready as the canonical reference for "
+            "clip 6 where Papa gets comically stuck mid-tube. Pixar 3D "
+            "render. NO PEOPLE. NO PETS."
+        ),
+    },
+    "playground_swings": {
+        "label": "Playground swing set close-up (ep13 — Push Me Higher!)",
+        "refs": [],
+        "description": (
+            "Pixar-style close-up of a green-frame PLAYGROUND SWING-SET. "
+            "Sturdy GREEN PAINTED METAL FRAME forming an A-shape on each "
+            "side, top crossbar. From the crossbar hang TWO swing seats "
+            "by black chains: each seat is a cheerful black RUBBER KID-"
+            "SEAT (the soft strappy kind, not the bucket toddler kind) "
+            "with chunky chains. Soft warm GOLDEN-HOUR LIGHT bathes the "
+            "swings — long warm shadows on the brown mulch ground "
+            "beneath, soft sun-flare hints in the corners of the frame. "
+            "Background: soft trees softly out-of-focus, a hint of the "
+            "playground tower softly visible far-LEFT. The swing-seat is "
+            "empty, gently swaying to a stop. Ready as the canonical "
+            "reference for clip 8 + music-video B (Eva on the swing). "
+            "Pixar 3D feature-render quality, dreamy magical-hour mood. "
+            "NO PEOPLE. NO PETS."
+        ),
+    },
+    "tennis_court": {
+        "label": "Outdoor tennis court (ep13 — friend-making + group tag)",
+        "refs": [],
+        "description": (
+            "Pixar-style outdoor TENNIS COURT — green painted asphalt "
+            "surface with crisp WHITE PAINTED LINES (singles + doubles "
+            "lines, baseline, service boxes, center service line), "
+            "stylized but accurate. A LOW NET stretched across the "
+            "center (white tape top, dark green mesh below, black "
+            "support poles on each side). CHAIN-LINK FENCE around the "
+            "perimeter (about eight feet tall, soft galvanized-silver "
+            "wire-mesh look, mostly transparent so the court feels open). "
+            "BACKGROUND beyond the fence: soft suburban houses with "
+            "stone-and-brick facades softly visible (matches IMG_7480 / "
+            "IMG_7484 reference photos), a few trees, soft warm "
+            "afternoon light. The court is empty (no players, no balls "
+            "yet) — clean canonical setting for the friend-making arc. "
+            "Pixar 3D feature-render quality, cheerful suburban kid-"
+            "friendly atmosphere. NO PEOPLE. NO PETS."
+        ),
+    },
 }
 
 

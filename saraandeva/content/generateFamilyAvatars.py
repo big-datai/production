@@ -440,6 +440,87 @@ CHARACTERS = {
             "Looking slightly up toward the camera."
         ),
     },
+    # ─── ep13 — Isabel + Leo (recurring playground friends) ──────────────
+    "isabel": {
+        "name": "Isabel",
+        "role": (
+            "Kindergartener girl (~5 years old) — recurring friend character "
+            "introduced in ep13 at the playground. Same age as Sara so they "
+            "bond instantly. Has a 3-year-old little brother (Leo). Kind, "
+            "shy at first, warm and giggly once she gets comfortable. "
+            "Designed as a Bluey's-Indy/Honey-style recurring side character "
+            "for future episodes (library, birthday party, school playground)."
+        ),
+        "look": (
+            "Friendly kindergartener girl, ~5 years old, average kid-height. "
+            "VISUAL DIFFERENTIATION FROM SARA AND EVA: noticeably curly "
+            "BRUNETTE HAIR (dark warm-brown with cinnamon highlights), "
+            "shoulder-length soft springy curls — distinctly different from "
+            "Sara's straight blonde ponytail and Eva's curly blonde. WARM "
+            "MEDIUM-OLIVE SKIN tone (slightly deeper than Sara/Eva for visual "
+            "contrast). Big bright HAZEL-BROWN eyes, long dark lashes, soft "
+            "round cheeks with a sprinkle of light freckles across the nose. "
+            "Wide warm shy smile that grows into an open giggling smile when "
+            "she's comfortable. Looks like she could be Sara's kindergarten "
+            "best friend."
+        ),
+        "wardrobe": (
+            "A cheerful sunny YELLOW T-SHIRT with a small embroidered DAISY "
+            "or RAINBOW patch on the chest (subtle, no real-brand text). "
+            "Soft DENIM SHORTS with a tiny rolled cuff. White LOW-TOP "
+            "SNEAKERS with cheerful magenta-pink LACES + matching pink-and-"
+            "white SOCKS folded just over the sneaker. A small CORAL-PINK "
+            "scrunchie around her wrist (kid-style accessory). NO HELMET, "
+            "NO BACKPACK in the canonical avatar pose."
+        ),
+        "pose": (
+            "Stands cheerfully facing the camera with both feet flat on the "
+            "ground, weight slightly on her left foot, both arms relaxed at "
+            "her sides with hands visible. Warm shy-but-friendly smile, "
+            "head tilted very slightly to the side in a kind-curious pose. "
+            "Comfortable kindergartener stance — she's on her playground."
+        ),
+    },
+    "leo": {
+        "name": "Leo",
+        "role": (
+            "3-year-old boy — Isabel's little brother. Recurring friend "
+            "character introduced in ep13 at the playground. Sweet shy "
+            "toddler energy, simple short dialogue, tags along with his "
+            "big sister Isabel. Same recurring-character potential as "
+            "Isabel for future episodes."
+        ),
+        "look": (
+            "Sweet 3-year-old boy, smaller than Sara/Eva (toddler-height "
+            "stature, big-toddler proportions — slightly chunky baby-fat "
+            "cheeks, round tummy in t-shirt). VISUAL DIFFERENTIATION: short "
+            "brown shaggy mop-cut HAIR (matches his sister Isabel's brunette "
+            "tone but BOY-style short). WARM MEDIUM-OLIVE SKIN matching his "
+            "sister. Big bright HAZEL-BROWN eyes (matching Isabel — they're "
+            "siblings), super-long lashes, super-round soft cheeks (toddler "
+            "chub), one small dimple on the left cheek when he smiles. "
+            "Reads UNAMBIGUOUSLY as 'a 3-year-old toddler boy' next to Sara "
+            "and Eva — clearly younger, smaller, sweeter."
+        ),
+        "wardrobe": (
+            "A cheerful CYAN-BLUE T-SHIRT with a small cartoon DINOSAUR "
+            "graphic on the chest (silhouette T-rex in a soft white outline, "
+            "no real-brand text). Soft NAVY-BLUE STRETCH SHORTS with an "
+            "elastic waistband (toddler-comfort cut). White VELCRO-STRAP "
+            "TODDLER SNEAKERS in white with a navy-blue stripe + matching "
+            "white socks. A tiny soft-rubber DINOSAUR FIGURINE clutched "
+            "in his left hand (his comfort toy — small enough to be a "
+            "thumb-sized cartoon dino). NO HELMET in the canonical avatar."
+        ),
+        "pose": (
+            "Stands cheerfully facing the camera with both feet flat on "
+            "the ground in his velcro sneakers, both arms relaxed at his "
+            "sides, his left hand softly clutching his tiny dinosaur "
+            "figurine. Sweet shy-but-curious toddler smile, head tilted "
+            "very slightly toward the camera. Toddler-confidence pose — "
+            "he knows he's adorable."
+        ),
+    },
 }
 
 # ───────────────────────── Env / API Keys ──────────────────────────
