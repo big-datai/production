@@ -1,0 +1,36 @@
+{
+  "episode": 11,
+  "beat": "music-video-E",
+  "clip": "E",
+  "title": "MUSIC VIDEO RENDER E — Ginger + Joe hot-dog heist duet (Two Dogs One Dream)",
+  "mode": "omni",
+  "durationSec": 10,
+  "quality": "720p",
+  "nativeAudio": true,
+  "expectedCredits": 90,
+  "subjects": ["Ginger", "Joe"],
+  "scene": "backyard",
+  "boundElements": [
+    { "tag": "Ginger", "source": "library" },
+    { "tag": "Joe", "source": "library" },
+    { "tag": "backyard", "source": "library" }
+  ],
+  "reuseAsset": true,
+  "reuseAssetNote": "ONE 10s render, paired with Suno song 'Two Dogs One Dream.mp3' via loopVideoWithSong.mjs to fill the 60s music block. Loop choreography is rhythmic doo-wop dog dance with hot-dog props on the ground.",
+  "musicVideoBlock": true,
+  "loopExpansion": {
+    "iterations": 6,
+    "xfadeDuration": 0.3,
+    "outputDurationSec": 58
+  },
+  "usedUnderSongs": [
+    {
+      "song": "assets/music/Two Dogs One Dream.mp3",
+      "blockDurationSec": 60,
+      "trimStart": 0,
+      "placementClipNumber": "Emusic"
+    }
+  ],
+  "prompt": "Wide cinematic doo-wop comedy shot in @backyard — green grass, leafy backyard tree, black iron fence, sunny afternoon. A small pile of three plump cartoon HOT DOGS in buns sits on the grass FOREGROUND-CENTER like loot. @Ginger (small Jack Russell with a red collar) already standing on the LEFT of the hot-dog pile, ALL FOUR PAWS firmly planted on the green grass throughout the entire clip. @Joe (fluffy Pomeranian with a blue collar) already standing on the RIGHT of the hot-dog pile, ALL FOUR PAWS firmly planted on the green grass throughout the entire clip. Both dogs face the camera at slight angles, mouths open in cheerful doo-wop sing-along expression — but their mouths stay EMPTY (no hot dogs in mouths, no holding objects with mouths). STRICT ANATOMY: each dog has EXACTLY 4 PAWS firmly in contact with the ground at all times. Both dogs perform a synchronized loop-clean doo-wop dance: gentle head-bob to the left, gentle head-bob to the right, tail-wag right, tail-wag left, both lift their FRONT-RIGHT paw briefly and tap the ground, both lift their FRONT-LEFT paw briefly and tap the ground, then return to standing facing the camera. The hot-dog pile stays put on the grass between them — the dogs do NOT pick them up, do NOT chew them, do NOT touch them with their mouths during the loop. Background atmosphere: sparse cartoon HOT-DOG-shape confetti drifts gently down through the frame, soft sock-hop atmosphere. Movements are RHYTHMIC and LOOPABLE — clean cycle: head-bob → head-bob → tail-wag → tail-wag → paw-tap → paw-tap → return. Camera locked, head-on, dog-eye-level low angle. Bright cheerful summer afternoon lighting. The two dogs hum and sing along generically — generic happy dog-vocalization mouth movements, no specific lip-sync to specific words. Designed to LOOP cleanly: both dogs return to identical starting pose at second 0 and second 10. No audible speech, no music — silent render. The grass remains VISUALLY CLEAN throughout — no marks, no spills, no stains, no red anywhere.",
+  "negativePrompt": "duplicate character, twin, clone, two of the same, mirrored figure, second dog, two ginger, two joe, identical dogs, mirror reflection, ghost dog, shadow dog, third dog, fourth dog, extra dog, multiple jack russells, multiple pomeranians, family members, strangers, crowd, group of people, other faces, background people, friends, neighbors, papa in this clip, mama in this clip, sara in this clip, eva in this clip, child in this clip, kid in this clip, three arms, third arm, extra arm, extra hand, floating hand, anatomy error, specific dialogue words, lip-sync to specific syllables, audible music, audible singing words, real backyard photo realism, dog airborne, dog leaping, dog launching, dog flying, dog jumping, paws off the ground, dog mid-air, hot dog in mouth, dog chewing, dog eating, dog biting, holding hot dog with mouth, blood, blood splatter, red liquid, red splatter, gore, injury, scary, violent"
+}

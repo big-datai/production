@@ -4,9 +4,9 @@
   "logline": "Papa fires up the grill on a sunny Saturday in his 'WORLD'S OKAYEST DAD' apron. Sara helps with buns, Eva carries ketchup-packets like a tiny waitress. The instant Papa steps inside to answer the doorbell, Joe (the Pomeranian) pulls off the slowest, most magnificent slow-motion food heist in dog history — and Papa returns convinced he must have DAYDREAMED the whole cookout. The girls (and the kid watching) know exactly where the burgers went. Cliffhanger: Joe locks eyes with the camera while Papa fires up grill round 3. What's tomorrow's meal? PANCAKES?!",
   "formulaReference": "Bluey-style 'family chaos comedy + dog-thief gag' — confident-Papa setup → fourth-wall conspiracy with viewer (kids see what Papa doesn't) → slow-mo musical heist centerpiece → gaslit-Papa confusion → girls-as-witnesses reveal → physical-comedy outburst → reconciliation → cliffhanger that sets up ep12 (pancakes). Sequel-tier callback to ep04 'Joe's Secret Stash' (channel #1 hero @ 16.8k views, 2× next).",
   "mode": "omni",
-  "durationTotal": "~5:11 (14 normal × 10s = 140s + 2 × 15s = 30s + A 60s + B 30s + intro 31s + outro 20s)",
-  "expectedCreditsTotal": 1710,
-  "expectedCreditsBreakdown": "14 normal clips × 90 cr = 1260 + 2 parent-activity 15s clips × 135 cr = 270 + 2 render specs (A,B) × 90 cr = 180 → 1710 cr base; +25% buffer ≈ 2138 cr realistic ceiling. Comfortably under 2200 abort threshold.",
+  "durationTotal": "~6:11 (14 normal × 10s = 140s + 2 × 15s = 30s + A 20s + E 60s + B 30s + intro 31s + outro 20s)",
+  "expectedCreditsTotal": 1800,
+  "expectedCreditsBreakdown": "14 normal clips × 90 cr = 1260 + 2 parent-activity 15s clips × 135 cr = 270 + 3 render specs (A,B,E) × 90 cr = 270 → 1800 cr base; +25% buffer ≈ 2250 cr realistic ceiling. Right at 2200 abort threshold — keeper run actual cost was 2385 cr (pre-hardening retry overhead) per retrospective_ep11_lessons.md.",
   "newBoundElements": [
     {
       "tag": "backyard-grill-area",
@@ -76,19 +76,30 @@
         "mood": "Comically epic slow-motion crime — bass-heavy surf-rock with jazz-flute flourishes, the canine equivalent of an Ocean's Eleven montage"
       },
       {
+        "blockId": "11music",
+        "song": "assets/music/Two Dogs One Dream.mp3",
+        "trimStart": 0,
+        "blockDurationSec": 60,
+        "render": "E",
+        "renderSpec": "content/episodes/ep11/E.json",
+        "placement": "between clip 11 (Joe in bush corner — evidence reveal) and clip 12 (Eva: 'Should we tell Papa?') — Ginger (cartoon GIRL-DOG, sassy + yappy) + Joe (cartoon BOY-DOG, floofy + doofy) doo-wop celebration of the heist BEFORE Papa finds out. Loop a 10s render via loopVideoWithSong.mjs to fill 60s.",
+        "mood": "Doo-wop kids comedy / sock-hop dog-duet vaudeville — cartoon GIRL-DOG (Ginger, higher) + BOY-DOG (Joe, lower) call-and-response, Tex Avery / Looney Tunes energy, ~135 BPM"
+      },
+      {
         "blockId": "15music",
         "song": "assets/music/World's Okayest Dad.mp3",
         "trimStart": 0,
         "blockDurationSec": 30,
         "render": "B",
         "renderSpec": "content/episodes/ep11/B.json",
-        "placement": "between clip 15 (parent-activity tackle-hug in grass) and clip 16 (cliffhanger) — Papa-Sara-Eva sock-hop celebration around the grill, apron flapping",
+        "placement": "between clip 15 (parent-activity cuddle-hug in grass) and clip 16 (cliffhanger) — Papa-Sara-Eva sock-hop celebration around the grill, apron flapping",
         "mood": "Goofy dad-rock celebration — upbeat 50s rock-and-roll, hand-claps, cheerful brass, kids cheering 'GO PAPA GO!'"
       }
     ],
     "renders": {
       "A": "content/episodes/ep11/A.json — Joe solo slow-mo heist, designed-grill backdrop, 60s loop. Joe is the SOLO STAR of this music video.",
-      "B": "content/episodes/ep11/B.json — Sara+Eva+Papa trio dance, designed-cookout backdrop with apron + grill smoke, 30s loop"
+      "B": "content/episodes/ep11/B.json — Sara+Eva+Papa trio dance, designed-cookout backdrop with apron + grill smoke, 30s loop",
+      "E": "content/episodes/ep11/E.json — Ginger + Joe doo-wop dog-duet celebration, designed-backyard backdrop with hot-dog props on grass, 10s loop expanded to 60s. Companion piece to render A."
     },
     "mixRecipe": "[1:a]atrim=start=X:duration=N,asetpts=PTS-STARTPTS,volume=0.30[bg]; [0:a]volume=1.4[fg]; [fg][bg]amix=inputs=2:duration=first:dropout_transition=0[a]",
     "loopRecipe": "node loopVideoWithSong.mjs <render>.mp4 <song>.mp3 <Nmusic>.mp4 --duration=N"
@@ -106,7 +117,8 @@
     { "beat": 10, "name": "Mama returns — confusion deepens", "purpose": "Mama walks back out, sees Papa cooking AGAIN, confused: '...weren't you just here?' Papa shrugs helplessly.", "clips": [9] },
     { "beat": 11, "name": "AUDIENCE-ASK — Cut to girls collapsed laughing", "purpose": "Sara + Eva collapsed in grass dying laughing, hands on tummies. Sara turns to camera: 'Kids — did YOU see where the FIRST burgers went?!' Massive curiosity-gap payoff (audience knows, Papa doesn't).", "clips": [10] },
     { "beat": 12, "name": "Joe in the bush corner — evidence!", "purpose": "Joe in the corner of the yard, hot dog hanging from his snout, ketchup smeared all over his fluffy face. Reveal of where the burgers went.", "clips": [11] },
-    { "beat": 13, "name": "AUDIENCE-ASK — Eva: should we tell Papa?", "purpose": "Eva pops up in grass, finger to her lips, looking at camera with naughty grin: 'Should we tell Papa?' (beat — Sara nods solemnly) Eva (yells): 'PAPA — LOOK!'", "clips": [12] },
+    { "beat": 12.5, "name": "🎵 MUSIC VIDEO E — Two Dogs One Dream (60s)", "purpose": "Ginger (cartoon GIRL-DOG) + Joe (cartoon BOY-DOG) doo-wop heist-celebration dog-duet — sock-hop choreography in grass with hot-dog props on the ground. Companion piece to render A. Render E under 'Two Dogs One Dream'.", "clips": ["E→11music"] },
+    { "beat": 13, "name": "AUDIENCE-ASK — Eva: should we tell Papa?", "purpose": "Eva pops up in grass, finger to her lips, looking at camera with naughty grin: 'Should we tell Papa?' (beat — Sara nods solemnly) Eva (cheerful sing-song call): 'Paaa-paaaa! Loooo-ooooook!'", "clips": [12] },
     { "beat": 14, "name": "Papa sees the burger graveyard", "purpose": "Papa turns at Eva's yell, follows her pointing finger, JAW DROPS as he spots Joe and the empty platter / empty wrappers. Apoplectic recognition.", "clips": [13] },
     { "beat": 15, "name": "JOOOOE! — mmf?", "purpose": "Papa: 'JOOOOE!' Joe (mouth full of hot dog, innocent eyes): 'mmf?'", "clips": [14] },
     { "beat": 16, "name": "PARENT-ACTIVITY 2 (15s) — Lunge, slip, tackle-hug", "purpose": "Papa lunges (off-frame at Joe), slips on a ketchup-packet, face-plants in the grass with theatrical 'ARGH!', Sara + Eva pile-tackle-hug Papa giggling. 3-beat structure. (Joe NOT bound here — clip is 3-foreground-char to avoid ghost trap.)", "clips": [15] },
