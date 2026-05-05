@@ -77,6 +77,16 @@ const REQUIRED_NEG_TERMS = [
   "mirrored figure", "second father", "second mother",
   "two Papa", "two Mama", "identical adults",
 ];
+
+// Post-ep13 — UNIVERSAL ANTI-MORPH NEGATIVES (synthesis from Kling community
+// prompt-anatomy guides, Dec 2025–Feb 2026). These address frame-to-frame
+// inconsistency, anatomy warping, and stray ghost faces — a separate failure
+// class from character-duplicate spawning. Adding them costs 0 cr (text-only)
+// and is universally beneficial. Memory: lesson_kling_continuity_locks.md
+const REQUIRED_ANTI_MORPH_NEG_TERMS = [
+  "morphing", "flickering", "disfigured", "distorted",
+  "extra face", "unstable motion",
+];
 const MUSIC_STING_PHRASES = [
   "music sting", "music swell", "tender swell", "cheerful music",
   "comedic music", "playful music", "heartfelt music", "music cue",
@@ -211,6 +221,38 @@ const PROMPT_OVERDESCRIBE_RISK = (prompt, tags) => {
 // 16 all hit this. Mitigation: Nano Banana group-shot pre-render to lock
 // the composition before Kling animation. Recommendation level WARNING (not
 // hard-error) since some clips ship clean with subtle differentiators.
+// Post-ep11 (lesson_kids_show_comedy_intensity.md) + post-ep13 Kling-community
+// guide synthesis — INTENSITY-OVERSHOOT TRAP. Aggressive intensity language
+// in a kids-show prompt makes Kling render horror lighting / morphing / scary
+// faces regardless of context. ep11 clip 14 (Mama-rage frustration scene)
+// burned 180 cr re-rendering after "thundering shout" + "leaves tremble" got
+// rendered as actual horror. Use restrained verbs ("subtle", "slow", "micro",
+// "calm sigh", "comic gasp", "soft tone") instead.
+//
+// Distinct from FORBIDDEN_PHRASES (which targets motion-toward verbs that
+// duplicate the character) — this is about EMOTIONAL INTENSITY language
+// causing morph/horror rendering.
+//
+// Patterns are tuned to require a body-context anchor where ambiguous
+// (e.g. "snap" alone is fine for finger-snapping but "snaps his head"
+// is the head-snap motion that morphs).
+const INTENSITY_OVERSHOOT_PATTERNS = [
+  { name: "thundering",                 re: /\bthundering\b/i },
+  { name: "apoplectic",                 re: /\bapoplectic\b/i },
+  { name: "rage face / raging",         re: /\brage\s+face\b|\braging\b/i },
+  { name: "fury / furious",             re: /\bfur(?:ious|y)\b/i },
+  { name: "violent / violently",        re: /\bviolent(?:ly)?\b/i },
+  { name: "explosive / explosively",    re: /\bexplosive(?:ly)?\b/i },
+  { name: "snap [head|body|neck]",      re: /\bsnap(?:s|ping|ped)?\s+(?:his|her|their)\s+(?:head|body|neck)\b/i },
+  { name: "lunge [at|toward|forward]",  re: /\blunges?\s+(?:at|toward|forward)\b/i },
+  { name: "slam [into|onto|down]",      re: /\bslams?\s+(?:into|onto|down)\b/i },
+  { name: "abrupt[ly] [body verb]",     re: /\babrupt(?:ly)?\s+(?:jump|stop|turn|run|push|throw|spin)\b/i },
+  { name: "thunderous [voice|shout]",   re: /\bthunderous\s+(?:voice|shout|tone|roar)\b/i },
+  { name: "shriek / shrieking",         re: /\bshriek(?:s|ing|ed)?\b/i },
+];
+const INTENSITY_OVERSHOOT_TRAP = (prompt) =>
+  INTENSITY_OVERSHOOT_PATTERNS.filter(({ re }) => re.test(prompt)).map(p => p.name);
+
 const SISTER_PAIR_SIMILAR_POSE_RISK = (prompt, tags) => {
   const hasSara = tags.some(t => /^sara$/i.test(t));
   const hasEva = tags.some(t => /^eva$/i.test(t));
@@ -368,6 +410,25 @@ for (const { file, spec } of clips) {
   const overdescribeCount = PROMPT_OVERDESCRIBE_RISK(prompt, tags);
   if (overdescribeCount) {
     issues.push(`group-still anchor + ${overdescribeCount} POSITION_LABELS (CENTER-LEFT / FAR-RIGHT / LEFT WINDOW / etc.) in prompt — when a *-group or *-still PNG is the bound anchor, the prompt MUST be motion-only. Re-describing the composition fights the still and spawns duplicates. Strip position labels from the prompt; describe only beat-by-beat motion + dialogue. memory: lesson_kling_position_lock.md (post-ep13 v2)`);
+  }
+
+  // 8g. Universal anti-morph negative-prompt completeness (post-ep13 synthesis
+  //     from Kling community prompt-anatomy guides). Adding these costs zero
+  //     credits and addresses frame-to-frame inconsistency / anatomy warping
+  //     that don't fit the duplicate-character bucket. WARNING.
+  const missingMorph = REQUIRED_ANTI_MORPH_NEG_TERMS.filter(t => !negPrompt.includes(t.toLowerCase()));
+  if (missingMorph.length > 0) {
+    warns.push(`negativePrompt missing ${missingMorph.length} anti-morph term(s): ${missingMorph.join(", ")}. Recommended addition (zero cost, frame-consistency benefit). memory: lesson_kling_continuity_locks.md`);
+  }
+
+  // 8h. Intensity-overshoot trap (post-ep11 lesson_kids_show_comedy_intensity.md
+  //     + post-ep13 Kling-community-guide synthesis). Aggressive intensity
+  //     vocabulary in a kids-show prompt → Kling renders horror lighting /
+  //     scary face / morphing. ep11 clip 14 burned 180 cr on this. WARNING
+  //     so author can re-phrase before submitting.
+  const overshootHits = INTENSITY_OVERSHOOT_TRAP(prompt);
+  if (overshootHits.length > 0) {
+    warns.push(`intensity-overshoot vocabulary detected (${overshootHits.length}): ${overshootHits.join(", ")} — kids-show Kling renders these as horror lighting / scary face / body-morph. Use restrained alternatives ("subtle", "slow", "micro", "calm sigh", "comic gasp", "soft tone"). memory: lesson_kids_show_comedy_intensity.md + lesson_kling_continuity_locks.md`);
   }
 
   // 9. Group-noun check (rule #5) — only flag when the group noun is the SUBJECT

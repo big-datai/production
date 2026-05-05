@@ -219,7 +219,7 @@ Use the ep07 shape exactly. Required keys:
       "music cue", "score swell", "background music"
     ],
     "klingPromptMustNotContainReason": "All music is Suno-mixed in assemble. Memory rule #24.",
-    "negativePromptRequired": "duplicate character, twin, clone, two of the same, mirrored figure, second father, second mother, two Papa, two Mama, identical adults, extra people, third child, second sister, second sara, second eva, two eva, duplicate eva, mirror reflection",
+    "negativePromptRequired": "duplicate character, twin, clone, two of the same, mirrored figure, second father, second mother, two Papa, two Mama, identical adults, extra people, third child, second sister, second sara, second eva, two eva, duplicate eva, mirror reflection, morphing, flickering, disfigured, distorted, extra face, unstable motion",
     "englishTextAnchor": "When the prompt has visible text, append: 'English text only, large clear printed Roman alphabet, NO foreign characters' and add 'Cyrillic, Chinese characters, Korean, Japanese, Arabic, garbled letters, misspelled, scrambled letters' to negative.",
     "characterNamesInDialogue": "Drop the bound character's name from other characters' dialogue.",
     "audienceEngagementMin": "≥2 fourth-wall direct-to-camera 'ask the kid' beats per episode (final cliffhanger is one). memory: lesson_fourth_wall_audience_engagement.md"
@@ -318,10 +318,20 @@ These come from memory `lesson_kling_omni_pipeline_fixes.md`. The submit script 
 9. **Prompt skeleton:** `[Shot type] in @Scene[, optional camera/light]. @Character on the LEFT/RIGHT/CENTER [verb + object]. Character (delivery cue): "dialogue." …`
 10. **Negative prompt baseline** — concatenate clip-specific extras after this:
     ```
-    duplicate character, twin, clone, two of the same, mirrored figure, second father, second mother, two Papa, two Mama, identical adults, extra people, third child, second sister, second sara, second eva, two eva, duplicate eva, mirror reflection
+    duplicate character, twin, clone, two of the same, mirrored figure, second father, second mother, two Papa, two Mama, identical adults, extra people, third child, second sister, second sara, second eva, two eva, duplicate eva, mirror reflection, morphing, flickering, disfigured, distorted, extra face, unstable motion
     ```
     Solo shots: also add `family members, strangers, crowd, group of people, other faces, background people, friends, neighbors`.
     Dentist/medical: also add `full dentist body, dentist face, multiple dentists, second dentist, second nurse, multiple gloved hands`.
+
+    **The 6 anti-morph tail-terms** (`morphing, flickering, disfigured, distorted, extra face, unstable motion`) were added post-ep13 from Kling community prompt-anatomy guides. They address frame-to-frame inconsistency, anatomy warping, and ghost faces — a separate failure class from character-duplicate spawning. Cost is zero (text-only) and benefit is universal. Lint rule 8g (WARNING) flags missing terms. Memory: `lesson_kling_continuity_locks.md`.
+
+5j. **Continuity-lock vocabulary + intensity tone-down (post-ep13 research synthesis).** Two complementary patterns from Kling community guides — one POSITIVE (what to preserve), one NEGATIVE (what to soften):
+    - **Positive continuity locks** — phrases that anchor character likeness across the clip. Use 1–2 in any 2+ char clip with bound character avatars (NOT in Pattern E motion-only prompts where the still does this work):
+      `preserve silhouette` · `maintain proportions` · `keep colors consistent` · `preserve facial features` · `maintain scale` · `helmet stays on throughout` · `same wardrobe end-to-end`.
+      These tell Kling what NOT to drift between frames. They pair naturally with `POSITION LOCK` (which handles staging) — together they cover staging + likeness.
+    - **Intensity tone-down** — kid-show comedy must avoid horror-tier intensifiers. Lint rule 8h (WARNING) flags these:
+      `thundering`, `apoplectic`, `rage face`/`raging`, `furious`/`fury`, `violent(ly)`, `explosive(ly)`, `snap his head`, `lunges at`, `slams into`, `abrupt(ly) jump/turn/spin`, `thunderous voice`, `shriek(ing)`.
+      Replace with: `calm sigh`, `comic gasp`, `subtle`, `slow`, `micro [movement]`, `soft tone`, `gentle`, `playful`, `theatrical "OH NOOOO!"`. Memory: `lesson_kling_continuity_locks.md` + `lesson_kids_show_comedy_intensity.md`.
 
 ## Step 6 — Sanity-check before saving
 
@@ -342,6 +352,11 @@ The script enforces every hard rule above and the post-ep10 traps:
 - **holding object + free-arm-dance** → 3-arm anatomy trap
 - **red-liquid splatter co-occurs with face/apron/chest** → BLOOD render trap (post-ep11 clip 15)
 - **same `@Char` in FAR-position + CLOSE-position across beats** → POSITION-LOCK trap (post-ep11 v7 clip 15) — duplicate-character + ghost-extras render
+- **same `@Char` at 3+ NAMED positions** (LEFT/RIGHT/BACK/FRONT/etc.) across beats → MULTI_POSITION_PATH_TRAP (post-ep13 MV-A) — multiple instances spawn at each named position. HARD ERROR.
+- **Sara + Eva co-bound with structurally-similar pose phrases + no distinct held-object anchor** → SISTER_PAIR_SIMILAR_POSE_RISK (post-ep13). WARNING + Nano Banana group-shot recommendation.
+- **`*-group` / `*-still` bound element + 3+ POSITION_LABELS in prompt** → PROMPT_OVERDESCRIBE_RISK (post-ep13 v2). HARD ERROR — describe motion only when group still is anchored (Pattern E).
+- **negativePrompt missing anti-morph terms** (`morphing, flickering, disfigured, distorted, extra face, unstable motion`) → rule 8g WARNING (post-ep13).
+- **intensity-overshoot vocabulary** (`thundering`, `apoplectic`, `violent`, `lunges at`, `slams into`, etc.) → rule 8h WARNING (post-ep11 + ep13). Suggest restrained alternatives.
 
 Exit 0 = clean, 1 = errors (must fix), 2 = warnings only with `--strict`.
 
