@@ -55,6 +55,36 @@
       "source": "library",
       "asset": "assets/scenes/beach_playground.png",
       "purpose": "Wooden beach playground with red curly tube-slide, blue climbing-tower with rope ladder, two swings, sandy ground, palm tree, ocean visible in the background. Used in MV-D 'Can't Catch Us!' Papa-tag music video."
+    },
+    {
+      "tag": "ep12-c1-hook",
+      "source": "library",
+      "asset": "assets/scenes/group_ep12_clip1_hook.png",
+      "purpose": "Pattern E group still — Mama+Sara+Eva on beach-shore, all standing with props (bag/bucket-shovel/float-ring). Anchors clip 1 motion-only animation."
+    },
+    {
+      "tag": "ep12-c12-base",
+      "source": "library",
+      "asset": "assets/scenes/group_ep12_clip12_research_base.png",
+      "purpose": "Pattern E group still — Papa crouched arms-wide + Sara+Eva kneeling at his sides on beach-shore. Anchors clip 12 motion-only animation."
+    },
+    {
+      "tag": "ep12-c13-build",
+      "source": "library",
+      "asset": "assets/scenes/group_ep12_clip13_sandcastle.png",
+      "purpose": "Pattern E group still — Papa+Sara+Eva all kneeling around partly-built sandcastle. Anchors clip 13 (15s parent-activity) motion-only animation."
+    },
+    {
+      "tag": "ep12-c15-sunset",
+      "source": "library",
+      "asset": "assets/scenes/group_ep12_clip15_sunset_walk.png",
+      "purpose": "Pattern E group still — Papa+Sara+Eva walking together holding hands at sunset. Anchors clip 15 sunset-walk camera-ask animation."
+    },
+    {
+      "tag": "ep12-cD-tag",
+      "source": "library",
+      "asset": "assets/scenes/group_ep12_clipD_playground_tag.png",
+      "purpose": "Pattern E group still — Papa stuck at slide bottom + Sara+Eva on climbing tower. Anchors music-video D loop-clean tag-game animation."
     }
   ],
   "reusedBoundElements": [
@@ -147,37 +177,218 @@
     "loopRecipe": "node loopVideoWithSong.mjs <render>.mp4 <song>.mp3 <Nmusic>.mp4 --duration=N"
   },
   "arc": [
-    { "beat": 1, "name": "HOOK — beach arrival", "purpose": "Family unloads beach gear, sun is bright, kids are pumped. Establishes today's setting + energy.", "clips": [1] },
-    { "beat": 1.5, "name": "🎵 MUSIC VIDEO D — Can't Catch Us! Papa-tag at the beach playground (60s)", "purpose": "Render D under 'Can't Catch Us!' — kids burst onto the beach playground first thing, Papa chasing them in playful tag-game. Sara+Eva dance-and-run on the equipment singing 'You're IT! Can't catch us!' Papa attempts to slide down the curly tube-slide but is TOO BIG, gets stuck and pretends to be a stuck-monster. Pure visual comedy + Papa-active play. (memory: lesson_papa_play_scene_per_episode.md — strengthened post-ep11; this is the 2nd Papa-active beat in ep12 alongside clip 13's sandcastle.)", "clips": ["D→1music"] },
-    { "beat": 2, "name": "Setup — Sara digs, Papa+Eva enter surf", "purpose": "Sara starts sandcastle on the dry sand. Papa wades into the surf with Eva perched on his shoulders, both grinning at the waves.", "clips": [2] },
-    { "beat": 3, "name": "Eva spots the glitter", "purpose": "From Papa's shoulders, Eva sees something shiny in the wet sand at the tide line. She points urgently.", "clips": [3] },
-    { "beat": 4, "name": "AUDIENCE-ASK — Eva picks up the bottle", "purpose": "Eva placed back on sand, runs to the spot, picks up a tiny glowing aqua-blue glass bottle. Camera-ask: 'Did YOU see what Eva just found?!'", "clips": [4] },
-    { "beat": 5, "name": "Stuck cap — Sara joins", "purpose": "Sara joins. Both girls struggle with the cork stopper, comically twist and pull together.", "clips": [5] },
-    { "beat": 6, "name": "Note inside!", "purpose": "Pop! Cork comes out. A tiny rolled paper slides into Sara's palm. Both girls gasp.", "clips": [6] },
-    { "beat": 7, "name": "AUDIENCE-ASK — Eva reads halting", "purpose": "Eva sounds out the note slowly: 'I am... STUCK... on... a... fa-RA-way... ISLAND... please come find me!' Sara to camera: 'WHO do YOU think wrote this?!'", "clips": [7] },
-    { "beat": 8, "name": "GINGER REVEAL", "purpose": "Sara turns the paper over. Bottom corner: '— GINGER' with a tiny pawprint. SARA'S EYES GO HUGE. 'GINGER! From the magic forest!' (ep10 callback)", "clips": [8] },
-    { "beat": 9, "name": "Sara runs bottle to Mama", "purpose": "Sara sprints across the beach to Mama on the beach blanket, breathless: 'MAMA! LOOK!'", "clips": [9] },
-    { "beat": 10, "name": "Eva runs note to Papa", "purpose": "Eva sprints to Papa at the edge of surf, holding the unrolled note up: 'PAPA! GINGER NEEDS US!'", "clips": [10] },
-    { "beat": 11, "name": "Mama + Papa read together", "purpose": "Mama and Papa stand together, the bottle in Mama's hand and the note in Papa's. They exchange a look. Mama: 'A magic-forest fox stuck on an island... we need a plan.'", "clips": [11] },
-    { "beat": 12, "name": "🎵 MUSIC VIDEO B — Magic Bottle Whisper (60s)", "purpose": "Render B under 'Magic Bottle Whisper' — Eva solo slow-mo wonder at the glowing bottle, designed teal-pink backdrop with floating bubbles. The reveal-magic moment.", "clips": ["B→11music"] },
-    { "beat": 13, "name": "Papa: RESEARCH BASE!", "purpose": "Papa stands up, sand on his knees, eyes lit up: 'You know what every rescue mission needs? A RESEARCH BASE!' He grabs a bucket and a shovel.", "clips": [12] },
-    { "beat": 14, "name": "PARENT-ACTIVITY (15s) — Sandcastle build", "purpose": "Papa + Sara + Eva building the enormous sandcastle research base. 3-beat structure: BEAT 1 digging the moat, BEAT 2 Eva pours bucket of water on Papa's head (peak silly), BEAT 3 all three plant a twig-flag reading 'RESCUE' on top.", "clips": [13] },
-    { "beat": 15, "name": "Finished base reveal + SARA: phase 1 done", "purpose": "Wide shot: enormous sandcastle research base with moat + RESCUE flag, three figures standing proudly. Sara: 'Phase ONE — done. Phase TWO — the BOAT!'", "clips": [14] },
-    { "beat": 16, "name": "🎵 MUSIC VIDEO A — Sandy Toes (60s)", "purpose": "Render A under 'Sandy Toes' — Sara+Eva duo dance with bucket-and-shovel props on beach-pastel backdrop with seashell confetti. Celebration of finished research base.", "clips": ["A→13music"] },
-    { "beat": 17, "name": "AUDIENCE-ASK — Sunset walk", "purpose": "Three silhouettes walk along the wet shore at golden hour, holding hands. Sara to camera: 'Where do YOU think Ginger's island is?'", "clips": [15] },
-    { "beat": 18, "name": "Sara's notebook — rescue plan map", "purpose": "Close-up: Sara's hands on the open notebook on her lap. She writes 'MAGIC FOREST RESCUE PLAN' across the top, then sketches the bottle, an island shape, a dotted-line route, and an X.", "clips": [16] },
-    { "beat": 19, "name": "Eva peeks: tomorrow we build a boat?", "purpose": "Eva pokes her head over Sara's shoulder, big eyes: 'Tomorrow we build a boat?' Sara nods, still drawing: 'Yep. Tomorrow we... start.'", "clips": [17] },
-    { "beat": 20, "name": "🎵 MUSIC VIDEO C — Tomorrows Adventure (60s)", "purpose": "Render C under 'Tomorrow's Adventure' — Sara+Eva twilight duo on sunset-gradient backdrop, holding the notebook + a tiny flashlight. Dreamy wonder before the cliffhanger.", "clips": ["C→17music"] },
-    { "beat": 21, "name": "CLIFFHANGER + CAMERA-ASK — Will YOU help us?", "purpose": "Final camera-ask cliffhanger. Sara holds the open notebook page up to camera. Sara: 'Will YOU help us find Ginger?' Eva (leaning in beside her): 'What kind of BOAT should we build?!' Both lean toward camera, eyes huge. Cut to black.", "clips": [18] },
-    { "beat": 22, "name": "OUTRO (reused)", "purpose": "Subscribe pair from season_01/OUTRO/ — 17.mp4 → 18.mp4 → 0_song.mp4 last.", "clips": ["reused"] }
+    {
+      "beat": 1,
+      "name": "HOOK — beach arrival",
+      "purpose": "Family unloads beach gear, sun is bright, kids are pumped. Establishes today's setting + energy.",
+      "clips": [
+        1
+      ]
+    },
+    {
+      "beat": 1.5,
+      "name": "🎵 MUSIC VIDEO D — Can't Catch Us! Papa-tag at the beach playground (60s)",
+      "purpose": "Render D under 'Can't Catch Us!' — kids burst onto the beach playground first thing, Papa chasing them in playful tag-game. Sara+Eva dance-and-run on the equipment singing 'You're IT! Can't catch us!' Papa attempts to slide down the curly tube-slide but is TOO BIG, gets stuck and pretends to be a stuck-monster. Pure visual comedy + Papa-active play. (memory: lesson_papa_play_scene_per_episode.md — strengthened post-ep11; this is the 2nd Papa-active beat in ep12 alongside clip 13's sandcastle.)",
+      "clips": [
+        "D→1music"
+      ]
+    },
+    {
+      "beat": 2,
+      "name": "Setup — Sara digs, Papa+Eva enter surf",
+      "purpose": "Sara starts sandcastle on the dry sand. Papa wades into the surf with Eva perched on his shoulders, both grinning at the waves.",
+      "clips": [
+        2
+      ]
+    },
+    {
+      "beat": 3,
+      "name": "Eva spots the glitter",
+      "purpose": "From Papa's shoulders, Eva sees something shiny in the wet sand at the tide line. She points urgently.",
+      "clips": [
+        3
+      ]
+    },
+    {
+      "beat": 4,
+      "name": "AUDIENCE-ASK — Eva picks up the bottle",
+      "purpose": "Eva placed back on sand, runs to the spot, picks up a tiny glowing aqua-blue glass bottle. Camera-ask: 'Did YOU see what Eva just found?!'",
+      "clips": [
+        4
+      ]
+    },
+    {
+      "beat": 5,
+      "name": "Stuck cap — Sara joins",
+      "purpose": "Sara joins. Both girls struggle with the cork stopper, comically twist and pull together.",
+      "clips": [
+        5
+      ]
+    },
+    {
+      "beat": 6,
+      "name": "Note inside!",
+      "purpose": "Pop! Cork comes out. A tiny rolled paper slides into Sara's palm. Both girls gasp.",
+      "clips": [
+        6
+      ]
+    },
+    {
+      "beat": 7,
+      "name": "AUDIENCE-ASK — Eva reads halting",
+      "purpose": "Eva sounds out the note slowly: 'I am... STUCK... on... a... fa-RA-way... ISLAND... please come find me!' Sara to camera: 'WHO do YOU think wrote this?!'",
+      "clips": [
+        7
+      ]
+    },
+    {
+      "beat": 8,
+      "name": "GINGER REVEAL",
+      "purpose": "Sara turns the paper over. Bottom corner: '— GINGER' with a tiny pawprint. SARA'S EYES GO HUGE. 'GINGER! From the magic forest!' (ep10 callback)",
+      "clips": [
+        8
+      ]
+    },
+    {
+      "beat": 9,
+      "name": "Sara runs bottle to Mama",
+      "purpose": "Sara sprints across the beach to Mama on the beach blanket, breathless: 'MAMA! LOOK!'",
+      "clips": [
+        9
+      ]
+    },
+    {
+      "beat": 10,
+      "name": "Eva runs note to Papa",
+      "purpose": "Eva sprints to Papa at the edge of surf, holding the unrolled note up: 'PAPA! GINGER NEEDS US!'",
+      "clips": [
+        10
+      ]
+    },
+    {
+      "beat": 11,
+      "name": "Mama + Papa read together",
+      "purpose": "Mama and Papa stand together, the bottle in Mama's hand and the note in Papa's. They exchange a look. Mama: 'A magic-forest fox stuck on an island... we need a plan.'",
+      "clips": [
+        11
+      ]
+    },
+    {
+      "beat": 12,
+      "name": "🎵 MUSIC VIDEO B — Magic Bottle Whisper (60s)",
+      "purpose": "Render B under 'Magic Bottle Whisper' — Eva solo slow-mo wonder at the glowing bottle, designed teal-pink backdrop with floating bubbles. The reveal-magic moment.",
+      "clips": [
+        "B→11music"
+      ]
+    },
+    {
+      "beat": 13,
+      "name": "Papa: RESEARCH BASE!",
+      "purpose": "Papa stands up, sand on his knees, eyes lit up: 'You know what every rescue mission needs? A RESEARCH BASE!' He grabs a bucket and a shovel.",
+      "clips": [
+        12
+      ]
+    },
+    {
+      "beat": 14,
+      "name": "PARENT-ACTIVITY (15s) — Sandcastle build",
+      "purpose": "Papa + Sara + Eva building the enormous sandcastle research base. 3-beat structure: BEAT 1 digging the moat, BEAT 2 Eva pours bucket of water on Papa's head (peak silly), BEAT 3 all three plant a twig-flag reading 'RESCUE' on top.",
+      "clips": [
+        13
+      ]
+    },
+    {
+      "beat": 15,
+      "name": "Finished base reveal + SARA: phase 1 done",
+      "purpose": "Wide shot: enormous sandcastle research base with moat + RESCUE flag, three figures standing proudly. Sara: 'Phase ONE — done. Phase TWO — the BOAT!'",
+      "clips": [
+        14
+      ]
+    },
+    {
+      "beat": 16,
+      "name": "🎵 MUSIC VIDEO A — Sandy Toes (60s)",
+      "purpose": "Render A under 'Sandy Toes' — Sara+Eva duo dance with bucket-and-shovel props on beach-pastel backdrop with seashell confetti. Celebration of finished research base.",
+      "clips": [
+        "A→13music"
+      ]
+    },
+    {
+      "beat": 17,
+      "name": "AUDIENCE-ASK — Sunset walk",
+      "purpose": "Three silhouettes walk along the wet shore at golden hour, holding hands. Sara to camera: 'Where do YOU think Ginger's island is?'",
+      "clips": [
+        15
+      ]
+    },
+    {
+      "beat": 18,
+      "name": "Sara's notebook — rescue plan map",
+      "purpose": "Close-up: Sara's hands on the open notebook on her lap. She writes 'MAGIC FOREST RESCUE PLAN' across the top, then sketches the bottle, an island shape, a dotted-line route, and an X.",
+      "clips": [
+        16
+      ]
+    },
+    {
+      "beat": 19,
+      "name": "Eva peeks: tomorrow we build a boat?",
+      "purpose": "Eva pokes her head over Sara's shoulder, big eyes: 'Tomorrow we build a boat?' Sara nods, still drawing: 'Yep. Tomorrow we... start.'",
+      "clips": [
+        17
+      ]
+    },
+    {
+      "beat": 20,
+      "name": "🎵 MUSIC VIDEO C — Tomorrows Adventure (60s)",
+      "purpose": "Render C under 'Tomorrow's Adventure' — Sara+Eva twilight duo on sunset-gradient backdrop, holding the notebook + a tiny flashlight. Dreamy wonder before the cliffhanger.",
+      "clips": [
+        "C→17music"
+      ]
+    },
+    {
+      "beat": 21,
+      "name": "CLIFFHANGER + CAMERA-ASK — Will YOU help us?",
+      "purpose": "Final camera-ask cliffhanger. Sara holds the open notebook page up to camera. Sara: 'Will YOU help us find Ginger?' Eva (leaning in beside her): 'What kind of BOAT should we build?!' Both lean toward camera, eyes huge. Cut to black.",
+      "clips": [
+        18
+      ]
+    },
+    {
+      "beat": 22,
+      "name": "OUTRO (reused)",
+      "purpose": "Subscribe pair from season_01/OUTRO/ — 17.mp4 → 18.mp4 → 0_song.mp4 last.",
+      "clips": [
+        "reused"
+      ]
+    }
   ],
   "audienceEngagement": {
     "rule": "memory: lesson_fourth_wall_audience_engagement.md — 2-4 fourth-wall direct-to-camera 'ask the kid' beats per episode; final cliffhanger MUST be a camera-ask",
     "beats": [
-      { "clip": 4, "type": "camera-ask", "character": "Sara", "line": "Did YOU see what Eva just found?!" },
-      { "clip": 7, "type": "camera-ask", "character": "Sara", "line": "WHO do YOU think wrote this?!" },
-      { "clip": 15, "type": "camera-ask", "character": "Sara", "line": "Where do YOU think Ginger's island is?" },
-      { "clip": 18, "type": "camera-ask + cliffhanger", "character": "Sara + Eva", "line": "Will YOU help us find Ginger? What kind of BOAT should we build?!" }
+      {
+        "clip": 4,
+        "type": "camera-ask",
+        "character": "Sara",
+        "line": "Did YOU see what Eva just found?!"
+      },
+      {
+        "clip": 7,
+        "type": "camera-ask",
+        "character": "Sara",
+        "line": "WHO do YOU think wrote this?!"
+      },
+      {
+        "clip": 15,
+        "type": "camera-ask",
+        "character": "Sara",
+        "line": "Where do YOU think Ginger's island is?"
+      },
+      {
+        "clip": 18,
+        "type": "camera-ask + cliffhanger",
+        "character": "Sara + Eva",
+        "line": "Will YOU help us find Ginger? What kind of BOAT should we build?!"
+      }
     ]
   },
   "crossEpisodeArc": {
@@ -190,9 +401,16 @@
     "maxBoundPerClip": 7,
     "maxTagMentionsPerCharacter": 1,
     "klingPromptMustNotContain": [
-      "music sting", "music swell", "tender swell", "cheerful music",
-      "comedic music", "playful music", "heartfelt music", "music cue",
-      "score swell", "background music"
+      "music sting",
+      "music swell",
+      "tender swell",
+      "cheerful music",
+      "comedic music",
+      "playful music",
+      "heartfelt music",
+      "music cue",
+      "score swell",
+      "background music"
     ],
     "klingPromptMustNotContainReason": "All music is Suno-mixed in assemble (memory rule #24).",
     "motionTowardForbidden": "No 'walks in/toward', 'approaches', 'moves to(ward)', 'heads to/in', 'walks up' — Use static placement only. (memory: lesson_kling_motion_verbs_duplicate.md)",
