@@ -63,6 +63,30 @@ const FORBIDDEN_PROMPT_PHRASES = [
   /\bapproach(es|ing)\b/i,
   /\bmoves?\s+to(ward)?\b/i, /\bmoving\s+to(ward)?\b/i,
   /\bhead(s|ing|ed)?\s+(into|to|toward|over\s+to)\b/i,
+  /\bruns?\s+in\b/i, /\brunning\s+in\b/i,
+  /\bruns?\s+(up|toward|up to|over to|into)\b/i, /\brunning\s+(up|toward|up to|over to|into)\b/i,
+  /\bruns?\s+over\b/i, /\brunning\s+over\b/i,
+  // ─── Post-ep11: kid-show comedy intensity (memory: lesson_kids_show_comedy_intensity.md)
+  // ep11 clip 14 cost 180 cr in re-renders — Kling rendered "apoplectic" and
+  // "thundering shout" as horror. Use "calm sigh", "comic gasp", soft tones.
+  /\bapoplectic\b/i,
+  /\bthundering\s+(shout|voice|roar|yell|bellow)\b/i,
+  /\brage\s+face\b/i, /\benraged\b/i, /\bfurious\s+face\b/i,
+  /\bscreaming\s+at\b/i, /\bbellowing\s+at\b/i,
+  /\bleaves\s+tremble\b/i, /\bground\s+shakes\b/i, /\bwindow(s)?\s+rattle\b/i,
+  // ─── Post-ep11: pet-airborne trap (memory: lesson_kids_show_comedy_intensity.md)
+  // Joe / Ginger should stay on the ground. "leaping onto", "airborne", "flying
+  // through" = horror-tier in a kid show.
+  /\bairborne\b/i,
+  /\bleaps?\s+(off|onto|over|through|across)\b/i, /\bleaping\s+(off|onto|over|through|across)\b/i,
+  /\bflying\s+(through|across|over|onto)\b/i,
+  /\blaunches?\s+(itself|himself|herself|onto|off|over|into)\b/i, /\blaunching\s+(itself|himself|herself|onto|off|over|into)\b/i,
+  // ─── Post-ep11: red-splatter near body (memory: lesson_no_red_splatter_kids_show.md)
+  // ep11 clip 15 cost 135 cr — ketchup "splatter" rendered as blood regardless.
+  // Hard-block any combo of red/crimson/scarlet/blood-red + splatter-verb. Use
+  // sealed-intact packets or recolor to non-red (purple, blue, yellow).
+  /\b(?:red|crimson|scarlet|bright[- ]?red|blood[- ]?red)\s+\w*\s*(?:squirt|splash|splatter|spray|drip|drizzle|spurt|gush|burst|smear|stain)\w*\b/i,
+  /\b(?:squirt|splash|splatter|spray|drip|drizzle|spurt|gush|smear|stain)\w*\s+\w*\s*(?:red|crimson|scarlet|bright[- ]?red|blood[- ]?red)\b/i,
 ];
 
 // ─── REQUIRED NEGATIVE PROMPT (Omni duplicate-character defense) ────────────
@@ -182,14 +206,16 @@ if (trailingTagSpam) {
 
 // Enforce required negative-prompt terms (defense against Kling rendering
 // the same character twice in wide shots — first observed in Ep 3 dry run).
-// Post-ep10: AUTO-PREPEND missing terms instead of hard-failing. Reason: 5/23
-// ep10 clips silently failed because customized negativePrompts dropped the
-// standard list. Auto-prepending a known-safe defense list is harmless and
-// removes a re-edit + re-submit cycle from every episode.
+// Post-ep10: AUTO-PREPEND missing terms instead of hard-failing.
+// Post-ep11: LOUDER warning (3 lines visible in chat) — silent auto-prepend was
+// removing friction that previously forced authors to re-read the spec. ep11
+// shipped weak negatives that contributed to ghost-character renders.
 const negLower = (spec.negativePrompt || "").toLowerCase();
 const missingNeg = REQUIRED_NEGATIVE_TERMS.filter(t => !negLower.includes(t.toLowerCase()));
 if (missingNeg.length > 0) {
-  console.warn(`⚠ negativePrompt missing ${missingNeg.length} required terms — auto-prepending: ${missingNeg.join(", ")}`);
+  console.warn(`\n⚠⚠⚠ negativePrompt is MISSING ${missingNeg.length}/${REQUIRED_NEGATIVE_TERMS.length} required defensive terms.`);
+  console.warn(`     Missing: ${missingNeg.join(", ")}`);
+  console.warn(`     Auto-prepending — but you should re-read the spec and add explicit clip-specific negatives too.\n`);
   spec.negativePrompt = missingNeg.join(", ") + (spec.negativePrompt ? ", " + spec.negativePrompt : "");
 }
 

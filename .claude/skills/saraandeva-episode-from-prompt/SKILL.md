@@ -65,8 +65,8 @@ Episodes are FOR KIDS but they live or die by adult-watchable moments. Bake thes
 - **Emotional pivot in act 2** — every episode needs a moment where the kid character almost loses (Eva tripping, Sara about to cry, the gas-mask doubt). Without the pivot, the resolution carries no weight.
 - **Cliffhanger every act, not just the end** — beat ends should resolve THIS thing while exposing the NEXT thing. e.g. "tray flies — Eva crying" resolves into "Sara's eyes light up: I have a PLAN!" — a pivot that's also a cliffhanger.
 - **Final-beat tag must SET UP the next episode.** Always. The last 10s should make the kid want next week's video. ep07 → "Father's Day?!"  ep08 → "I'm starting to brush NOW."  This is the strongest retention lever the show has.
-- **At LEAST one parent-with-girls activity scene per episode, rendered at 15s (not the default 10s).** This is a top-three retention driver for the @SaraAndEva audience — kid-with-parent activity content is exceptionally catchy (the "Nastia + dad" / dad-tickle-monster genre). **Activity assignment is gender-coded for character consistency** (per user, ep10 review):
-    - **PAPA + girls = ACTIVE / OUTDOOR / SPORTS**: tickle-monster tag, jogging together, skiing, bike riding, scooter riding, playing on a playground, push-on-swing, soccer one-on-one, tennis, basketball, catch, frisbee, pool splash fight, piggy-back rides, daddy-daughter dance, building a fort, hike, beach day. (Most episodes — Papa's signature dynamic.)
+- **PAPA-PLAYS-WITH-GIRLS scene REQUIRED in EVERY episode, 15s (not 10s) — hard rule, no exceptions.** Strengthened post-ep11 (user: "dad play with girls each episode"). This is the single highest-retention beat type for @SaraAndEva — kid-with-parent active-play content is exceptionally catchy (the "Nastia + dad" / dad-tickle-monster genre). Mama-cooking-with-girls is an optional bonus that does NOT substitute for Papa-active. (memory: `lesson_papa_play_scene_per_episode.md`)
+    - **PAPA + girls = ACTIVE / OUTDOOR / SPORTS** (mandatory every ep): tickle-monster tag, jogging together, skiing, bike riding, scooter riding, playing on a playground, push-on-swing, soccer one-on-one, tennis, basketball, catch, frisbee, pool splash fight, piggy-back rides, daddy-daughter dance, building a fort, hike, beach day, snow play, trampoline, dance party, backyard obstacle course. **Pick a fresh activity each ep — never repeat the last 2 episodes' activity.**
     - **MAMA + girls = COOKING / BAKING / DOMESTIC**: making pancakes, baking cookies, decorating cupcakes, prepping pizza dough, mixing smoothies, packing lunches together, gardening, painting nails, doing hair. (Episodes that have a kitchen or home setting can substitute Mama-cooking for Papa-sports as the play-scene anchor.)
     - **EITHER PARENT + girls = READING**: bedtime story, reading on the couch, library trip. Use as a calming closer or a transition beat.
     - ep10 added: Papa-Eva soccer mini-match (3.7) + tag-around-the-Jeep at Weber's (18.3) — both Papa-active. Future episodes should rotate which parent gets the play scene.
@@ -78,6 +78,35 @@ Episodes are FOR KIDS but they live or die by adult-watchable moments. Bake thes
 If the drafted arc has 3+ beats in a row that feel "and then…" instead of "and so…/but…", rewrite. Story flows on `but` and `therefore`, never `and`. (South Park rule.)
 
 Comedy density target: **one funny line every 20–25 seconds**. Track this. If you've written 4 clips of pure setup with no laugh, insert a comedic beat (a sister bicker, a Papa one-liner, a Ginger reaction shot).
+
+## Step 2.55 — Fourth-wall audience-engagement beats (post-ep11 hard rule)
+
+Every episode MUST include **2–4 direct-to-camera "ask the kid" beats**. A character looks INTO the camera lens and asks the watching kid a question they can answer OUT LOUD. This is the single biggest passive-engagement → active-engagement lever — Bluey, Dora, Like Nastya, Vlad & Niki all use it constantly. (memory: `lesson_fourth_wall_audience_engagement.md`)
+
+**Where to place them** (spread across the episode at curiosity-gap moments, never bunched):
+
+1. **After the inciting weird thing** — character looks at camera in shock/confusion: *"Kids — did YOU see where the hot dogs went?!"* / *"Wait — was that a magic deer or did I imagine it?"*
+2. **At a confusion / mystery point** — Papa or kid looks at camera: *"Did I cook anything today? Or did I just DREAM it?"* / *"Where do you think Joe hid them?"*
+3. **Before a key reveal** — Sara or Eva turns to camera with finger to lips: *"Shhh — should we tell Papa?"* / *"Don't tell Mama what we just saw!"*
+4. **At the cliffhanger (REQUIRED)** — character looks at camera: *"What do YOU think we should make tomorrow?"* / *"What would YOU have done?"* — the FINAL clip's cliffhanger MUST be a camera-ask. Closes with "what happens next?" energy that drives playlist watch-through.
+
+**Rendering cue inside the prompt:**
+
+```
+Eva looks DIRECTLY at the camera, eyes wide, finger pointing past the lens:
+Eva (to viewer): "Kids — did YOU see where the hot dogs went?!"
+```
+
+Or:
+
+```
+Papa scratches his head, then turns to face the camera with a baffled look:
+Papa (to camera, confused): "Did I cook anything today? Or did I just DREAM the whole thing?"
+```
+
+The framing cue `(to camera)` / `(to viewer)` / `direct camera look` tells Kling to break the fourth wall.
+
+**Cap at 4 per episode.** 5+ dilutes the trick. A typical 16-clip episode lands 3 camera-asks evenly: ~clip 6, ~clip 11, final cliffhanger.
 
 ## Step 2.6 — Plan music-video loop blocks (cost + runtime multiplier)
 
@@ -192,7 +221,8 @@ Use the ep07 shape exactly. Required keys:
     "klingPromptMustNotContainReason": "All music is Suno-mixed in assemble. Memory rule #24.",
     "negativePromptRequired": "duplicate character, twin, clone, two of the same, mirrored figure, second father, second mother, two Papa, two Mama, identical adults, extra people, third child, second sister, second sara, second eva, two eva, duplicate eva, mirror reflection",
     "englishTextAnchor": "When the prompt has visible text, append: 'English text only, large clear printed Roman alphabet, NO foreign characters' and add 'Cyrillic, Chinese characters, Korean, Japanese, Arabic, garbled letters, misspelled, scrambled letters' to negative.",
-    "characterNamesInDialogue": "Drop the bound character's name from other characters' dialogue."
+    "characterNamesInDialogue": "Drop the bound character's name from other characters' dialogue.",
+    "audienceEngagementMin": "≥2 fourth-wall direct-to-camera 'ask the kid' beats per episode (final cliffhanger is one). memory: lesson_fourth_wall_audience_engagement.md"
   }
 }
 ```
@@ -260,6 +290,17 @@ These come from memory `lesson_kling_omni_pipeline_fixes.md`. The submit script 
 5f. **When characters HOLD an object AND DANCE, lock both hands on the object and dance lower-body + head ONLY.** ep10 clip C ("Burgers in the Car") rendered each girl with THREE arms because the prompt asked them to hold milkshakes AND swing arms / point fingers. Kling spawned an extra arm pair. Fix:
     - Lock hands: "ONE hand around the bottom of the cup and the OTHER hand around the top of the cup, cup held at chest height the entire time"
     - Strict anatomy: "EXACTLY 2 ARMS, EXACTLY 2 HANDS — both hands ALWAYS occupied with [object]"
+5g. **Kid-show comedy intensity — never write horror-tier words for an adult emotion.** ep11 clip 14 cost 180 cr in re-renders because "apoplectic", "thundering shout", "rage face" rendered as actual horror — Papa's face contorted, leaves trembling, dark sky. (memory: `lesson_kids_show_comedy_intensity.md`)
+    - **BANNED words (lint-blocked in `submitOmniClip.mjs`)**: `apoplectic`, `thundering shout/voice/roar`, `rage face`, `enraged`, `furious face`, `screaming at`, `bellowing at`, `leaves tremble`, `ground shakes`, `windows rattle`.
+    - **REPLACEMENTS**: For Papa-discovers-disaster moments use **comic gasp**, **calm sigh**, **eyebrows shoot up**, **slow blink**, **double-take**, **mouth a small 'O'**, **scratches head, perplexed**. For yelling, use **booming silly voice**, **mock-monster groan**, **theatrical "OH NOOOO!"**.
+    - **PETS NEVER GO AIRBORNE** (memory: `lesson_kids_show_comedy_intensity.md`). ep11 had Joe "leaping onto the table" — rendered as flying-attack-dog. BANNED: `airborne`, `leaps onto/over/through`, `flying through`, `launches onto`. Always pin pets with explicit phrasing: **"all four paws on the ground"** OR **"sitting calmly"** OR **"head poking out of the bushes"** OR **"slowly creeping along the ground"**.
+5h. **Red liquid never near a face / mouth / chin / apron-front in a kids show.** ep11 clip 15 cost 135 cr — "ketchup splatter on his face" rendered as blood regardless of what the prompt CALLED it. (memory: `lesson_no_red_splatter_kids_show.md`)
+    - **BANNED combos (lint-blocked)**: `red/crimson/scarlet/blood-red` near `splatter/splash/spray/drip/drizzle/spurt/gush/burst/smear/stain` near body parts.
+    - **FIXES**:
+      1. **Recolor**: use **purple** (blueberry), **yellow** (mustard), **brown** (chocolate), **white** (whipped cream) — anything but red.
+      2. **Sealed packets stay sealed**: `Eva trips on a sealed-intact ketchup packet on the ground — the packet stays whole, no liquid escapes`.
+      3. **Move the red away from faces**: `a single ketchup-packet sits unopened on the picnic table 6 feet away from anyone, no spilling`.
+      4. Add to negative prompt: `red liquid on face, blood, blood splatter, gore, red drip on chin, red splash on apron`.
     - Dance moves: hip bops, knee bends, head bobs, "step in" interactions (no "swing arms", no "point fingers", no "hands on hips")
     - Negative-prompt: `three arms, third arm, extra arm, extra hand, floating hand, four arms, anatomy error, free arm swinging while holding cup, cup levitating, hand pointing while also holding cup`
     (memory: `lesson_kling_ghost_anatomy_ep10.md`)
@@ -397,9 +438,8 @@ NEXT COMMANDS — single-pipeline run (no per-step asking):
 
   # 1. Generate the new scene/prop PNGs (Nano Banana, ~30-60s each)
   for s in <new-scene-ids>; do python3 content/generateScenes.py --scene $s; done
-  for p in <new-prop-ids>;  do python3 content/generateProps.py  --prop  $p --variants 3; done
-  # auto-pick v1 for each prop:
-  for p in <new-prop-ids>; do cp assets/scenes/${p}_v1.png assets/scenes/${p}.png; done
+  for p in <new-prop-ids>;  do python3 content/generateProps.py  --prop  $p; done
+  # (default --variants 1 writes directly to <prop>.png — no manual pick needed)
 
   # 2. Generate Suno songs from lyric .md files (parallel-safe)
   node .claude/skills/saraandeva-episode/scripts/sunoSongs.mjs --all

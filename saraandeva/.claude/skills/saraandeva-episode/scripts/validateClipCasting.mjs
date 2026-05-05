@@ -50,7 +50,28 @@ const FORBIDDEN_PHRASES = [
   /\bapproach(es|ing)\b/i,
   /\bmoves?\s+to(ward)?\b/i, /\bmoving\s+to(ward)?\b/i,
   /\bhead(s|ing|ed)?\s+(into|to|toward|over\s+to)\b/i,
+  // Post-ep11: "running in from" / "runs in" / "runs over" — motion-toward variants that
+  // ep11 clip 15 (parent-activity tackle-hug) used and which spawned ghost extras.
+  /\bruns?\s+in\b/i, /\brunning\s+in\b/i,
+  /\bruns?\s+in\s+from\b/i, /\brunning\s+in\s+from\b/i,
+  /\bruns?\s+(up|toward|up to|over to|into)\b/i, /\brunning\s+(up|toward|up to|over to|into)\b/i,
+  /\bruns?\s+over\b/i, /\brunning\s+over\b/i,
 ];
+
+// Post-ep11: kids-show blood-trap. Bright-red liquid near a character's FACE / MOUTH /
+// CHIN / NECK / APRON-FRONT renders as blood regardless of what the prompt CALLS it
+// (ketchup, jam, paint…). ep11 clip 15 cost 135 cr to re-render after rendering as gore.
+// Memory: lesson_no_red_splatter_kids_show.md
+//
+// Loose co-occurrence check: red+splatter-verb anywhere AND any body/clothing reference
+// anywhere in the prompt. False positives are fine — the warning is non-blocking and
+// prompts the author to re-read the visual, which is exactly the right reflex.
+const TRAP_RED_LIQUID_NEAR_FACE = (prompt) => {
+  const splatterRe = /\b(?:red|crimson|scarlet|bright[- ]?red|blood[- ]?red)\b[^.]*\b(?:squirt|squirts|squirting|splash|splashes|splashing|splatter|splatters|splattering|spray|sprays|spraying|drip|drips|dripping|drizzle|drizzling|spurt|spurting|gush|gushing|burst|bursting|smear|smears|smeared|stain|stains|stained|spilling)\b/i;
+  const splatterRe2 = /\b(?:squirt|squirts|squirting|splash|splashes|splashing|splatter|splatters|splattering|spray|sprays|spraying|drip|drips|dripping|spurt|spurting|gush|gushing)\b[^.]*\b(?:red|crimson|scarlet|bright[- ]?red|blood[- ]?red)\b/i;
+  const bodyOrApronRe = /\b(?:face|mouth|lip|lips|chin|neck|teeth|cheek|cheeks|nose|forehead|apron|chest|shirt|collar)\b/i;
+  return (splatterRe.test(prompt) || splatterRe2.test(prompt)) && bodyOrApronRe.test(prompt);
+};
 const REQUIRED_NEG_TERMS = [
   "duplicate character", "twin", "clone", "two of the same",
   "mirrored figure", "second father", "second mother",
@@ -163,6 +184,13 @@ for (const { file, spec } of clips) {
   const freeArmDance = /\b(swing(s|ing)? arms?|arms? (raised|in the air|swinging)|point(s|ing)? fingers?|hands? on hips)\b/i.test(prompt);
   if (holdsObject && freeArmDance) {
     issues.push(`holding-object + free-arm-dance combo (3rd-arm anatomy bug, post-ep10 clip C). Lock both hands on object, dance lower-body + head only.`);
+  }
+
+  // 8b. Red-liquid-near-face trap (post-ep11 clip 15 — Kling renders red splatter as blood
+  //     regardless of intent. Memory: lesson_no_red_splatter_kids_show.md). HARD ERROR
+  //     because gore in a kids show is a publish-blocker.
+  if (TRAP_RED_LIQUID_NEAR_FACE(prompt)) {
+    issues.push(`red-liquid splatter co-occurs with face/apron/chest mention — Kling renders red splatter as BLOOD in a kids show, regardless of what the prompt calls it. Use sealed-intact packets, recolor to non-red (purple/blue/yellow), or remove face/apron-front from the splatter zone. memory: lesson_no_red_splatter_kids_show.md`);
   }
 
   // 9. Group-noun check (rule #5) — only flag when the group noun is the SUBJECT
