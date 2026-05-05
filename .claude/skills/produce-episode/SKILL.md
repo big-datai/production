@@ -99,12 +99,23 @@ For each `musicVideoBlock` in `episode.json`, write a lyric markdown file:
 saraandeva/assets/music/lyrics/<Song Name>.md
 ```
 
-Use the canonical structure (see ep10's `Kick the Ball.md` / `Pink Tree Whisper.md` / `Burgers in the Car.md` for examples):
-- **Genre / Tempo / Mood / Voicing / Length target**
-- **Verse / Chorus / Bridge** with explicit `(BEAT)` markers and call-and-response between sister voices
-- **Notes for Suno** at the bottom (instrumentation guidance, no autotune, doo-wop pastiche, etc.)
+**Suno has TWO separate input fields** (post-ep13 user feedback) — split the markdown into two paste-ready code blocks so the user can copy each into the right place:
 
-**Output:** 2-3 lyric .md files ready for the user to paste.
+1. **📋 LYRICS** block — goes into Suno's "Lyrics" field. Verse / Chorus / Bridge with explicit beat markers (e.g. `[Verse 1 — Eva, dreamy wonder]`) and call-and-response cues between voices. Plain readable lyrics — no instrumentation tags here.
+
+2. **🎨 STYLES** block — goes into Suno's "Styles" field, **HARD-CAPPED at 1000 characters** (Suno truncates beyond that). This is the genre / tempo / voicing / instrumentation tag-paragraph. Pack it dense:
+   - Genre + tempo + mood + length target
+   - Voicing (with any GENDER LOCKS for character-specific voices, e.g. "WARM CARTOON WOLF (Papa) — silly Goofy/Looney-Tunes friendly-wolf, NEVER scary or growly; plus GIGGLY LITTLE-GIRL PIG SISTERS (Sara + Eva)")
+   - Instrumentation list (lead, rhythm, percussion, FX layered)
+   - Tonal references to other songs in the series ("Tonal reference: Pink Tree Whisper from ep10")
+   - AVOID list (autotune, trap drums, scary growly voices, EDM, etc.)
+   - **Verify char count ≤ 1000** before saving — `${#styles_block}` in shell or `len(styles_block)` in python.
+
+3. **How to use** section at the bottom (1 short paragraph) — paste-and-go instructions for the user.
+
+See ep13's `Little Pigs Let Me Come In.md` / `Push Me Higher.md` / `Everyones IT.md` for the canonical two-block format. Earlier episodes (ep10–ep12) have the single-block format and should be migrated whenever the songs are regenerated.
+
+**Output:** 2–4 lyric .md files ready for the user to paste, each with a verified-under-1000-chars STYLES block.
 
 ---
 
