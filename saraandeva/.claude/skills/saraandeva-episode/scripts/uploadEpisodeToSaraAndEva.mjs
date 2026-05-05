@@ -25,7 +25,20 @@ import readline from 'node:readline';
 import { google } from 'googleapis';
 import { OAuth2Client } from 'google-auth-library';
 
-const SCOPES = ['https://www.googleapis.com/auth/youtube.upload'];
+// Scopes — full YouTube permission set so we never have to do another
+// OAuth scope-upgrade dance. Covers: upload, manage playlists, manage
+// captions/comments, channel admin, analytics (incl. monetary), partner
+// rights. Re-auth fires on first run after this commit (cached token
+// lacks the wider scopes).
+const SCOPES = [
+  'https://www.googleapis.com/auth/youtube',
+  'https://www.googleapis.com/auth/youtube.upload',
+  'https://www.googleapis.com/auth/youtube.readonly',
+  'https://www.googleapis.com/auth/youtube.force-ssl',
+  'https://www.googleapis.com/auth/yt-analytics.readonly',
+  'https://www.googleapis.com/auth/yt-analytics-monetary.readonly',
+  'https://www.googleapis.com/auth/youtubepartner',
+];
 const ROOT = '/Volumes/Samsung500/goreadling';
 const CREDENTIALS_PATH = path.join(ROOT, 'credentials-saraandeva.json');
 const TOKEN_PATH = path.join(ROOT, 'token-saraandeva.json');
@@ -43,6 +56,18 @@ const descFile = argFlag('description-file');
 const tagsFile = argFlag('tags-file');
 const thumbnailPath = argFlag('thumbnail');
 const privacy = argFlag('privacy') || 'unlisted';
+// Playlist auto-add — strategy work post-ep11 v7. Adding every uploaded
+// episode to a single "Season 1" playlist makes YouTube's autoplay sidebar
+// chain episodes in order, which is the biggest unlock for cross-episode
+// retention on a young channel (per kid-show YouTube best-practice review).
+//
+// Default: the live "Season 1" playlist. Override with --playlist-id <PL...>
+// or skip entirely with --no-playlist.
+const SEASON_1_PLAYLIST_ID = 'PLMLz_1vaheL70se8M2xV0vQttiZlIJJ6f';
+const playlistIdFlag = argFlag('playlist-id') || SEASON_1_PLAYLIST_ID;
+const playlistName = argFlag('playlist-name')
+  || 'Sara and Eva 🌟 Season 1 — Real Sisters, Real Puppies, Real Adventures';
+const skipPlaylistAdd = argv.includes('--no-playlist');
 
 const tags = tagsFile && fs.existsSync(tagsFile)
   ? fs.readFileSync(tagsFile, 'utf8').split('\n').map(s => s.trim()).filter(Boolean)
@@ -85,16 +110,26 @@ async function getOAuthClient() {
 
   if (fs.existsSync(TOKEN_PATH)) {
     const tok = JSON.parse(fs.readFileSync(TOKEN_PATH, 'utf8'));
-    oauth.setCredentials(tok);
-    return oauth;
+    // Scope-upgrade detection: if the cached token doesn't include every scope
+    // we now require, force re-auth. This handles the post-ep11 v7 upgrade
+    // from `youtube.upload` only → adding `youtube` (for playlist writes).
+    const tokenScopes = (tok.scope || '').split(' ').filter(Boolean);
+    const missing = SCOPES.filter(s => !tokenScopes.includes(s));
+    if (missing.length === 0) {
+      oauth.setCredentials(tok);
+      return oauth;
+    }
+    console.log(`\n🔐 OAuth scope upgrade required.`);
+    console.log(`   Cached token is missing: ${missing.join(', ')}`);
+    console.log(`   Re-authenticating with the full scope set...\n`);
   }
 
-  // First-time OAuth: print URL, user opens, pastes code back
-  const authUrl = oauth.generateAuthUrl({ access_type: 'offline', scope: SCOPES });
-  console.log('\n🔐 First-time auth for the SaraAndEva channel.');
-  console.log('1) Open this URL in a browser logged into the SaraAndEva Google account:');
+  // Re-auth path (also first-time path): print URL, user opens, pastes code back
+  const authUrl = oauth.generateAuthUrl({ access_type: 'offline', prompt: 'consent', scope: SCOPES });
+  console.log(`\n🔐 OAuth for the SaraAndEva channel — full scope set.`);
+  console.log(`1) Open this URL in a browser logged into the SaraAndEva Google account:`);
   console.log(`\n   ${authUrl}\n`);
-  console.log('2) Authorize, copy the code from the redirect URL, paste here.');
+  console.log(`2) Authorize, copy the code from the redirect URL, paste here.`);
 
   const rl = readline.createInterface({ input: process.stdin, output: process.stdout });
   const code = await new Promise(resolve => rl.question('\nPaste the authorization code: ', resolve));
@@ -103,8 +138,67 @@ async function getOAuthClient() {
   const { tokens } = await oauth.getToken(code.trim());
   oauth.setCredentials(tokens);
   fs.writeFileSync(TOKEN_PATH, JSON.stringify(tokens, null, 2));
-  console.log(`✓ Saved token to ${TOKEN_PATH}`);
+  console.log(`✓ Saved token (with new scope) to ${TOKEN_PATH}`);
   return oauth;
+}
+
+/**
+ * Resolve the playlist ID from a name. Pages through `playlists.list?mine=true`
+ * (max 50 per page) to handle channels with many playlists. Match is case-
+ * insensitive and trims whitespace + emoji-rendering quirks.
+ */
+async function findPlaylistIdByName(youtube, name) {
+  const wantTitle = name.trim().toLowerCase();
+  let pageToken = undefined;
+  for (let page = 0; page < 10; page++) {
+    const res = await youtube.playlists.list({
+      part: ['snippet'],
+      mine: true,
+      maxResults: 50,
+      pageToken,
+    });
+    for (const pl of res.data.items || []) {
+      if ((pl.snippet?.title || '').trim().toLowerCase() === wantTitle) return pl.id;
+    }
+    pageToken = res.data.nextPageToken;
+    if (!pageToken) break;
+  }
+  return null;
+}
+
+/**
+ * Add an uploaded video to a playlist. Idempotent — silently no-ops if the
+ * video is already in the playlist (paginates through to check). Failures
+ * are warnings (don't block the upload from completing).
+ */
+async function addVideoToPlaylist(youtube, videoId, playlistId) {
+  // Idempotency: scan playlist for this videoId before inserting.
+  let pageToken = undefined;
+  for (let page = 0; page < 20; page++) {
+    const res = await youtube.playlistItems.list({
+      part: ['snippet'],
+      playlistId,
+      maxResults: 50,
+      pageToken,
+    });
+    for (const item of res.data.items || []) {
+      if (item.snippet?.resourceId?.videoId === videoId) {
+        console.log(`   Playlist: already in playlist (skipping add)`);
+        return;
+      }
+    }
+    pageToken = res.data.nextPageToken;
+    if (!pageToken) break;
+  }
+  await youtube.playlistItems.insert({
+    part: ['snippet'],
+    requestBody: {
+      snippet: {
+        playlistId,
+        resourceId: { kind: 'youtube#video', videoId },
+      },
+    },
+  });
 }
 
 async function main() {
@@ -183,6 +277,36 @@ async function main() {
       }
     }
   }
+  // Playlist auto-add — Season 1 series binding. This is the single biggest
+  // unlock for cross-episode retention on @SaraAndEva — videos in the same
+  // playlist auto-chain in the YouTube "Up Next" sidebar.
+  if (!skipPlaylistAdd) {
+    try {
+      let playlistId = playlistIdFlag;
+      if (!playlistId) {
+        playlistId = await findPlaylistIdByName(youtube, playlistName);
+      }
+      if (!playlistId) {
+        console.warn(`\n⚠ Playlist not found by name: "${playlistName}"`);
+        console.warn(`   Pass --playlist-id <PL...> directly, or --no-playlist to skip.`);
+      } else {
+        await addVideoToPlaylist(youtube, videoId, playlistId);
+        console.log(`   Playlist: ✓ added to "${playlistName}"`);
+        console.log(`   ${`https://youtube.com/playlist?list=${playlistId}`}`);
+      }
+    } catch (err) {
+      // Don't block on playlist failure — upload itself succeeded. Most
+      // common failure: 403 because the cached token still has only the
+      // youtube.upload scope. Fix is to delete the token and re-run (the
+      // scope-upgrade path in getOAuthClient will fire next time).
+      console.warn(`\n⚠ Playlist add failed: ${err.message}`);
+      if (err.message?.includes('403') || err.message?.includes('insufficientPermissions')) {
+        console.warn(`   Likely a scope issue. Delete ${TOKEN_PATH} and re-run`);
+        console.warn(`   to re-authorize with the full scope set.`);
+      }
+    }
+  }
+
   if (privacy === 'unlisted') {
     console.log(`\n📋 Status: UNLISTED — review the video in YouTube Studio.`);
     console.log(`   When ready, flip privacy to PUBLIC in the Studio editor.`);
