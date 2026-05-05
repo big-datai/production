@@ -226,6 +226,32 @@ for (const { file, spec } of clips) {
   }
 }
 
+// ─── Episode-level check: fourth-wall camera-asks ──────────────────────────
+// Memory: lesson_fourth_wall_audience_engagement.md — every ep needs 2-4
+// direct-to-camera "ask the kid" beats; final cliffhanger MUST be a camera-ask.
+// Scan all clip prompts for camera-ask phrases. ep11 retro flagged this as an
+// open follow-up; landing it now.
+const cameraAskRe = /(?:to camera|at the camera|directly (?:to|at|into|toward) the camera|toward the lens|directly into the lens|hold(?:s)?[^.]*up to (?:the )?camera|asks? the (?:viewer|audience|kids?))/i;
+const cameraAskFiles = clips
+  .filter(({ spec }) => cameraAskRe.test(spec.prompt || ""))
+  .map(({ file }) => file);
+const numericClipFiles = clips.map(({ file }) => file).filter(f => /^\d+(\.\d+)?\.json$/.test(f));
+if (numericClipFiles.length > 0) {
+  if (cameraAskFiles.length < 2) {
+    console.log("");
+    console.log(`⚠ Episode-level: only ${cameraAskFiles.length} fourth-wall camera-ask beat(s) detected. Need 2-4 per episode.`);
+    console.log(`   memory: lesson_fourth_wall_audience_engagement.md — direct-to-camera "ask the kid" beats are a top retention driver.`);
+    warnings++;
+  }
+  const lastClip = numericClipFiles.sort((a, b) => Number(a.replace(/\.json$/, "")) - Number(b.replace(/\.json$/, ""))).pop();
+  if (!cameraAskFiles.includes(lastClip)) {
+    console.log("");
+    console.log(`⚠ Episode-level: final clip ${lastClip} appears to lack a camera-ask cliffhanger. Final beat MUST address the audience.`);
+    console.log(`   memory: lesson_fourth_wall_audience_engagement.md — closing camera-ask is non-negotiable.`);
+    warnings++;
+  }
+}
+
 // ─── Final summary ─────────────────────────────────────────────────────────
 console.log("");
 console.log(`📊 Summary: ${clips.length} clips · ${errors} errors · ${warnings} warnings`);

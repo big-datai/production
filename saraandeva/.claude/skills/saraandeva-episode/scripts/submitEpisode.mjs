@@ -53,30 +53,49 @@ else {
 // build the flat file in-memory and write it. Post-ep10 fix: previously
 // you had to manually run a Python consolidator before submitEpisode could
 // see the per-clip layout.
-if (!fs.existsSync(epPath)) {
-  const dirCandidate = epPath.replace(/\.json$/, "");
+// Auto-consolidate (post-ep10) + auto-RE-consolidate when per-clip dir is
+// newer than the flat file (post-ep11 retro: "delete consolidated json before
+// adding new clip" gotcha). If ep<NN>/ mtime > ep<NN>.json mtime → rebuild.
+function buildFlatFromDir(dirCandidate, flatPath) {
   const epManifest = path.join(dirCandidate, "episode.json");
-  if (fs.existsSync(epManifest) && fs.statSync(dirCandidate).isDirectory()) {
-    console.log(`ℹ flat ${path.basename(epPath)} missing — auto-consolidating from ${path.basename(dirCandidate)}/`);
-    const manifest = JSON.parse(fs.readFileSync(epManifest, "utf8"));
-    const numClips = [], lettClips = [];
-    for (const f of fs.readdirSync(dirCandidate)) {
-      if (!/^(\d+|[A-Z])\.json$/.test(f)) continue;
-      const spec = JSON.parse(fs.readFileSync(path.join(dirCandidate, f), "utf8"));
-      const stem = f.replace(/\.json$/, "");
-      if (/^\d+$/.test(stem)) numClips.push(spec);
-      else lettClips.push(spec);
-    }
-    numClips.sort((a, b) => Number(a.clip) - Number(b.clip));
-    lettClips.sort((a, b) => String(a.clip).localeCompare(String(b.clip)));
-    manifest.clips = numClips;
-    manifest.musicVideos = lettClips;
-    fs.writeFileSync(epPath, JSON.stringify(manifest, null, 2));
-    console.log(`   wrote ${path.basename(epPath)} (${numClips.length} clips + ${lettClips.length} music videos)`);
-  } else {
+  if (!fs.existsSync(epManifest) || !fs.statSync(dirCandidate).isDirectory()) return false;
+  console.log(`ℹ ${fs.existsSync(flatPath) ? "Re-consolidating" : "Auto-consolidating"} ${path.basename(flatPath)} from ${path.basename(dirCandidate)}/`);
+  const manifest = JSON.parse(fs.readFileSync(epManifest, "utf8"));
+  const numClips = [], lettClips = [];
+  for (const f of fs.readdirSync(dirCandidate)) {
+    if (!/^(\d+(\.\d+)?|[A-Z])\.json$/.test(f)) continue;
+    const spec = JSON.parse(fs.readFileSync(path.join(dirCandidate, f), "utf8"));
+    const stem = f.replace(/\.json$/, "");
+    if (/^\d+(\.\d+)?$/.test(stem)) numClips.push(spec);
+    else lettClips.push(spec);
+  }
+  numClips.sort((a, b) => Number(a.clip) - Number(b.clip));
+  lettClips.sort((a, b) => String(a.clip).localeCompare(String(b.clip)));
+  manifest.clips = numClips;
+  manifest.musicVideos = lettClips;
+  fs.writeFileSync(flatPath, JSON.stringify(manifest, null, 2));
+  console.log(`   wrote ${path.basename(flatPath)} (${numClips.length} clips + ${lettClips.length} music videos)`);
+  return true;
+}
+const dirCandidate = epPath.replace(/\.json$/, "");
+if (!fs.existsSync(epPath)) {
+  if (!buildFlatFromDir(dirCandidate, epPath)) {
     console.error(`❌ episode JSON not found: ${epPath}`);
     console.error(`   (also checked for per-clip layout at ${dirCandidate}/episode.json — not found)`);
     process.exit(1);
+  }
+} else if (fs.existsSync(dirCandidate) && fs.statSync(dirCandidate).isDirectory()) {
+  // Re-consolidate if any per-clip JSON or episode.json is newer than the flat.
+  // (post-ep11 retro fix: previously you had to delete the flat file manually
+  // when adding a new clip mid-episode.)
+  const flatMtime = fs.statSync(epPath).mtimeMs;
+  const newest = fs.readdirSync(dirCandidate)
+    .filter(f => /^(\d+(\.\d+)?|[A-Z])\.json$/.test(f) || f === "episode.json")
+    .map(f => fs.statSync(path.join(dirCandidate, f)).mtimeMs)
+    .reduce((a, b) => Math.max(a, b), 0);
+  if (newest > flatMtime) {
+    console.log(`ℹ ${path.basename(dirCandidate)}/ has newer files than flat ${path.basename(epPath)} (Δ ${((newest - flatMtime) / 1000).toFixed(1)}s) — re-consolidating.`);
+    buildFlatFromDir(dirCandidate, epPath);
   }
 }
 const ep = JSON.parse(fs.readFileSync(epPath, "utf8"));
@@ -94,7 +113,7 @@ if (Array.isArray(ep.clips) || Array.isArray(ep.musicVideos)) {
   const dir = epPath.replace(/\.json$/, "");
   if (fs.existsSync(dir) && fs.statSync(dir).isDirectory()) {
     const allJsons = fs.readdirSync(dir)
-      .filter(f => /^(\d+|[A-Z])\.json$/.test(f))
+      .filter(f => /^(\d+(\.\d+)?|[A-Z])\.json$/.test(f))
       .sort((a, b) => {
         // Numeric first (1, 2, ..., 20), then letters (A, B, C)
         const aNum = /^\d+$/.test(a.replace(/\.json$/, ""));
