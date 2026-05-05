@@ -8,14 +8,29 @@
   "quality": "720p",
   "nativeAudio": true,
   "expectedCredits": 90,
-  "subjects": ["Papa", "Eva"],
+  "subjects": [
+    "Papa",
+    "Eva"
+  ],
   "scene": "beach-shore",
   "boundElements": [
-    { "tag": "Papa", "source": "library" },
-    { "tag": "Eva", "source": "library" },
-    { "tag": "beach-shore", "source": "library" },
-    { "tag": "rescue-note", "source": "library" }
+    {
+      "tag": "Papa",
+      "source": "library"
+    },
+    {
+      "tag": "Eva",
+      "source": "library"
+    },
+    {
+      "tag": "beach-shore",
+      "source": "library"
+    },
+    {
+      "tag": "rescue-note",
+      "source": "library"
+    }
   ],
-  "prompt": "Mid-shot at the gentle calm surf line of @beach-shore. @Papa already CENTER-LEFT standing ankle-deep in the gentle calm surf with both feet planted firmly on the sandy seabed, hands relaxed at his sides, gently looking out at the horizon. Papa has exactly two arms and two hands visible. @Eva already standing on the dry sand on the RIGHT a few feet from Papa with both feet planted on the sand, holding the unrolled @rescue-note up over her head with both hands like a happy victory flag. Curly blonde hair with rainbow bow. Eva has exactly two arms and two hands visible. (BEAT 1 — 0-5s) Eva (cheerful warm joyful sing-song call, big smile, NOT scary, NOT angry): \"Daddy! Daddy LOOK! Ginger needs us!\" Papa turns gently with a surprised warm dad-smile, knee-deep in the calm surf. (BEAT 2 — 5-10s) Papa (warm curious dad-tone): \"Ginger needs us? Show me, little explorer.\" Papa gently lifts both hands toward Eva in a 'come here let me see' gesture, still standing in the calm gentle surf with both feet on the sandy seabed. Eva keeps the note held up softly with both hands. The water around Papa's legs stays calm and gentle. STRICT ANATOMY: Papa has exactly two arms and two hands at all times. Eva has exactly two arms and two hands at all times, both holding the note up. Papa stays grounded in the gentle calm surf with both feet on the sandy seabed throughout. Eva stays grounded with both feet on the dry sand throughout. The sand and water stay plain clean — no marks, no red, no debris.",
-  "negativePrompt": "duplicate character, twin, clone, two of the same, mirrored figure, second father, two Papa, identical adults, second mother, two Mama, mama in this clip, mama visible, dog visible, joe visible, ginger visible, third child, second sister, sara in this clip, sara visible, second eva, two eva, duplicate eva, second blonde child, additional children, extra child in background, ghost figure, ghost kid, ghost children, shadow children, shadow of person, mirrored children, mirror reflection, family members in the background, strangers, crowd, group of people, other faces, background people, friends, neighbors, other beachgoers, three arms, third arm, extra arm, extra hand, floating hand, anatomy error, eva has three hands, papa has three hands, scary face, frightening expression, horror lighting, papa thundering shout, papa apoplectic, papa rage face, intense yelling, blood, red liquid, red splatter, red stain, gore, injury, scary, violent, distressing, eva airborne, eva leaping, eva mid-air, papa airborne, papa launching, papa diving, hard fall, hard impact, painful fall, dangerous surf, big crashing waves, stormy water, scary ocean, ocean monster, environmental shake, motion lines, action lines, dust trails, speed lines"
+  "prompt": "Mid-shot at the gentle calm surf line of @beach-shore. @Papa already CENTER-LEFT standing ankle-deep in the gentle calm surf with both feet planted firmly on the sandy seabed, hands relaxed at his sides, gently looking out at the horizon. Papa has exactly two arms and two hands visible. @Eva already standing on the dry sand on the RIGHT a few feet from Papa with both feet planted on the sand, holding the unrolled @rescue-note up over her head with both hands like a happy victory flag. Curly blonde hair with rainbow bow. Eva has exactly two arms and two hands visible. (BEAT 1 — 0-5s) Eva (cheerful warm joyful sing-song call, big smile, NOT scary, NOT angry): \"Daddy! Daddy LOOK! Ginger needs us!\" Papa turns gently with a surprised warm dad-smile, knee-deep in the calm surf. (BEAT 2 — 5-10s) Papa (warm curious dad-tone): \"Ginger needs us? Show me, little explorer.\" Papa gently lifts both hands toward Eva in a 'come here let me see' gesture, still standing in the calm gentle surf with both feet on the sandy seabed. Eva keeps the note held up softly with both hands. The water around Papa's legs stays calm and gentle. Preserve each character's silhouette and proportions throughout — no morphing of facial features, no shifting of hair or wardrobe, no color drift on clothing or skin tone. Keep all character bodies stable, consistent in scale, and locked to the same outfit and hairstyle from second 0 through the final second. STRICT ANATOMY: Papa has exactly two arms and two hands at all times. Eva has exactly two arms and two hands at all times, both holding the note up. Papa stays grounded in the gentle calm surf with both feet on the sandy seabed throughout. Eva stays grounded with both feet on the dry sand throughout. The sand and water stay plain clean — no marks, no red, no debris.",
+  "negativePrompt": "duplicate character, twin, clone, two of the same, mirrored figure, second father, two Papa, identical adults, second mother, two Mama, mama in this clip, mama visible, dog visible, joe visible, ginger visible, third child, second sister, sara in this clip, sara visible, second eva, two eva, duplicate eva, second blonde child, additional children, extra child in background, ghost figure, ghost kid, ghost children, shadow children, shadow of person, mirrored children, mirror reflection, family members in the background, strangers, crowd, group of people, other faces, background people, friends, neighbors, other beachgoers, three arms, third arm, extra arm, extra hand, floating hand, anatomy error, eva has three hands, papa has three hands, scary face, frightening expression, horror lighting, papa thundering shout, papa apoplectic, papa rage face, intense yelling, blood, red liquid, red splatter, red stain, gore, injury, scary, violent, distressing, eva airborne, eva leaping, eva mid-air, papa airborne, papa launching, papa diving, hard fall, hard impact, painful fall, dangerous surf, big crashing waves, stormy water, scary ocean, ocean monster, environmental shake, motion lines, action lines, dust trails, speed lines, morphing, flickering, disfigured, distorted, extra face, unstable motion"
 }

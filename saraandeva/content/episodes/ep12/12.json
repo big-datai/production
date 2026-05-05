@@ -8,14 +8,30 @@
   "quality": "720p",
   "nativeAudio": true,
   "expectedCredits": 90,
-  "subjects": ["Papa", "Sara", "Eva"],
+  "subjects": [
+    "Papa",
+    "Sara",
+    "Eva"
+  ],
   "scene": "beach-shore",
   "boundElements": [
-    { "tag": "Papa", "source": "library" },
-    { "tag": "Sara", "source": "library" },
-    { "tag": "Eva", "source": "library" },
-    { "tag": "beach-shore", "source": "library" }
+    {
+      "tag": "Papa",
+      "source": "library"
+    },
+    {
+      "tag": "Sara",
+      "source": "library"
+    },
+    {
+      "tag": "Eva",
+      "source": "library"
+    },
+    {
+      "tag": "beach-shore",
+      "source": "library"
+    }
   ],
-  "prompt": "Wide mid-shot on the dry golden sand of @beach-shore. @Papa already CENTER-FRAME crouched gently on one knee in the sand with both arms relaxed at his sides, eyes lit up with cheerful warm dad-energy. Papa has exactly two arms and two hands visible. @Sara already on his LEFT kneeling softly on the sand close to Papa, ponytail with bow, hands clasped softly in her lap, leaning in close. Sara has exactly two arms and two hands visible. @Eva already on his RIGHT kneeling softly on the sand close to Papa, curly blonde hair with rainbow bow, hands clasped softly in her lap, leaning in close. Eva has exactly two arms and two hands visible. (BEAT 1 — 0-5s) Papa gently spreads both arms out wide in a friendly dad-gesture like he's drawing a giant invisible castle in the air. Papa (cheerful warm theatrical dad-voice): \"You know what every rescue mission needs? A RE-SEARCH. BASE!\" (BEAT 2 — 5-10s) Sara (eyes huge, mouth open in cheerful awe): \"A research BASE?!\" Eva (nodding fast, beaming bright): \"Like real explorers!\" Papa (warm cheerful nod): \"Bucket. Shovel. Let's GO.\" Calm cheerful kid-show family energy throughout — no shouting, no scary intensity. STRICT ANATOMY: Papa has exactly two arms and two hands at all times. Sara has exactly two arms and two hands at all times. Eva has exactly two arms and two hands at all times. Papa stays in his crouched-on-one-knee position throughout. Both girls stay kneeling softly on the sand throughout — no leaping, no jumping. The sand stays plain clean golden sand — no marks, no red, no debris.",
-  "negativePrompt": "duplicate character, twin, clone, two of the same, mirrored figure, second father, two Papa, identical adults, second mother, two Mama, mama in this clip, mama visible, dog visible, joe visible, ginger visible, third child, second sister, second sara, second eva, two eva, duplicate eva, three girls, four kids, second blonde child, fourth child, fifth child, additional children, extra child in background, ghost figure, ghost kid, ghost children, shadow children, shadow of person, mirrored children, mirror reflection, family members in the background, strangers, crowd, group of people, other faces, background people, friends, neighbors, other beachgoers, three arms, third arm, extra arm, extra hand, floating hand, anatomy error, sara has three hands, eva has three hands, papa has three hands, scary face, frightening expression, horror lighting, papa thundering shout, papa apoplectic, papa rage face, intense yelling, blood, red liquid, red splatter, red stain, gore, injury, scary, violent, distressing, sara airborne, eva airborne, papa airborne, hard fall, hard impact, painful fall, environmental shake, motion lines, action lines"
+  "prompt": "Wide mid-shot on the dry golden sand of @beach-shore. There are EXACTLY 3 people in the entire frame — no extra adults, no extra children, no background figures, no ghost extras. @Papa already CENTER-FRAME crouched gently on one knee in the sand with both arms relaxed at his sides, eyes lit up with cheerful warm dad-energy. Papa has exactly two arms and two hands visible. @Sara already on his LEFT kneeling softly on the sand close to Papa, ponytail with bow, hands clasped softly in her lap, leaning in close. Sara has exactly two arms and two hands visible. @Eva already on his RIGHT kneeling softly on the sand close to Papa, curly blonde hair with rainbow bow, hands clasped softly in her lap, leaning in close. Eva has exactly two arms and two hands visible. (BEAT 1 — 0-5s) Papa gently spreads both arms out wide in a friendly dad-gesture like he's drawing a giant invisible castle in the air. Papa (cheerful warm theatrical dad-voice): \"You know what every rescue mission needs? A RE-SEARCH. BASE!\" (BEAT 2 — 5-10s) Sara (eyes huge, mouth open in cheerful awe): \"A research BASE?!\" Eva (nodding fast, beaming bright): \"Like real explorers!\" Papa (warm cheerful nod): \"Bucket. Shovel. Let's GO.\" Calm cheerful kid-show family energy throughout — no shouting, no scary intensity. Preserve each character's silhouette and proportions throughout — no morphing of facial features, no shifting of hair or wardrobe, no color drift on clothing or skin tone. Keep all character bodies stable, consistent in scale, and locked to the same outfit and hairstyle from second 0 through the final second. STRICT ANATOMY: Papa has exactly two arms and two hands at all times. Sara has exactly two arms and two hands at all times. Eva has exactly two arms and two hands at all times. Papa stays in his crouched-on-one-knee position throughout. Both girls stay kneeling softly on the sand throughout — no leaping, no jumping. The sand stays plain clean golden sand — no marks, no red, no debris.",
+  "negativePrompt": "duplicate character, twin, clone, two of the same, mirrored figure, second father, two Papa, identical adults, second mother, two Mama, mama in this clip, mama visible, dog visible, joe visible, ginger visible, third child, second sister, second sara, second eva, two eva, duplicate eva, three girls, four kids, second blonde child, fourth child, fifth child, additional children, extra child in background, ghost figure, ghost kid, ghost children, shadow children, shadow of person, mirrored children, mirror reflection, family members in the background, strangers, crowd, group of people, other faces, background people, friends, neighbors, other beachgoers, three arms, third arm, extra arm, extra hand, floating hand, anatomy error, sara has three hands, eva has three hands, papa has three hands, scary face, frightening expression, horror lighting, papa thundering shout, papa apoplectic, papa rage face, intense yelling, blood, red liquid, red splatter, red stain, gore, injury, scary, violent, distressing, sara airborne, eva airborne, papa airborne, hard fall, hard impact, painful fall, environmental shake, motion lines, action lines, morphing, flickering, disfigured, distorted, extra face, unstable motion"
 }

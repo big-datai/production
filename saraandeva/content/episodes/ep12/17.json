@@ -8,14 +8,29 @@
   "quality": "720p",
   "nativeAudio": true,
   "expectedCredits": 90,
-  "subjects": ["Sara", "Eva"],
+  "subjects": [
+    "Sara",
+    "Eva"
+  ],
   "scene": "beach-sunset",
   "boundElements": [
-    { "tag": "Sara", "source": "library" },
-    { "tag": "Eva", "source": "library" },
-    { "tag": "beach-sunset", "source": "library" },
-    { "tag": "sara-notebook-rescue", "source": "library" }
+    {
+      "tag": "Sara",
+      "source": "library"
+    },
+    {
+      "tag": "Eva",
+      "source": "library"
+    },
+    {
+      "tag": "beach-sunset",
+      "source": "library"
+    },
+    {
+      "tag": "sara-notebook-rescue",
+      "source": "library"
+    }
   ],
-  "prompt": "Mid-close-up on @beach-sunset — soft golden-hour light raking gently from the right, soft pastel sunset gradient in the background. @Sara already CENTER-LEFT seated cross-legged on a folded beach towel on the dry sand, the open @sara-notebook-rescue resting gently on her lap, a chunky purple crayon held gently in her right hand. Sara has exactly two arms and two hands visible. @Eva already pressed in close on Sara's RIGHT shoulder from behind, her chin gently resting on Sara's shoulder, both hands softly clasped at her own chest. Eva has exactly two arms and two hands visible. Curly blonde hair with rainbow bow. (BEAT 1 — 0-5s) Eva softly leans her head over Sara's shoulder, big warm wonder-eyes peering at the map page. Eva (gentle wonder-whisper, finger softly pointing at the X on the page): \"Tomorrow we build a... BOAT?\" (BEAT 2 — 5-10s) Sara (still gently drawing softly with the crayon, calm warm voice): \"Yep. Tomorrow we... start.\" Both sisters share a quiet warm sister-moment together looking at the page. Calm cheerful kid-show family ambiance throughout — gentle distant surf, soft seabirds. STRICT ANATOMY: Sara has exactly two arms and two hands at all times — right hand with crayon, left hand softly resting on the notebook. Eva has exactly two arms and two hands at all times — both gently clasped at her own chest. Sara stays seated cross-legged on the towel throughout. Eva stays softly leaning at Sara's shoulder throughout — no jumping, no leaping. The sand and notebook stay plain clean — no marks (other than the rescue plan drawing), no red, no liquid spills.",
-  "negativePrompt": "duplicate character, twin, clone, two of the same, mirrored figure, second mother, two Mama, mama in this clip, mama visible, second father, two Papa, papa in this clip, papa visible, dog visible, joe visible, ginger visible, third child, second sister, second sara, second eva, two eva, duplicate eva, three girls, four kids, second blonde child, fourth child, fifth child, additional children, extra child in background, ghost figure, ghost kid, ghost children, shadow children, shadow of person, mirrored children, mirror reflection, family members in the background, strangers, crowd, group of people, other faces, background people, friends, neighbors, three arms, third arm, extra arm, extra hand, floating hand, anatomy error, sara has three hands, eva has three hands, scary face, frightening expression, horror lighting, blood, red liquid, red splatter, red stain on notebook, gore, injury, scary, violent, distressing, sara airborne, eva airborne, sara leaping, eva leaping, hard fall, hard impact, painful fall, environmental shake, motion lines, action lines, notebook flying, crayon flying"
+  "prompt": "Mid-close-up on @beach-sunset — soft golden-hour light raking gently from the right, soft pastel sunset gradient in the background. @Sara already CENTER-LEFT seated cross-legged on a folded beach towel on the dry sand, the open @sara-notebook-rescue resting gently on her lap, a chunky purple crayon held gently in her right hand. Sara has exactly two arms and two hands visible. @Eva already pressed in close behind her big-sister, her chin gently resting on her big-sister's RIGHT shoulder, both hands softly clasped at her own chest. Eva has exactly two arms and two hands visible. Curly blonde hair with rainbow bow. (BEAT 1 — 0-5s) Eva softly leans her head over Sara's shoulder, big warm wonder-eyes peering at the map page. Eva (gentle wonder-whisper, finger softly pointing at the X on the page): \"Tomorrow we build a... BOAT?\" (BEAT 2 — 5-10s) Sara (still gently drawing softly with the crayon, calm warm voice): \"Yep. Tomorrow we... start.\" Both sisters share a quiet warm sister-moment together looking at the page. Calm cheerful kid-show family ambiance throughout — gentle distant surf, soft seabirds. Preserve each character's silhouette and proportions throughout — no morphing of facial features, no shifting of hair or wardrobe, no color drift on clothing or skin tone. Keep all character bodies stable, consistent in scale, and locked to the same outfit and hairstyle from second 0 through the final second. STRICT ANATOMY: Sara has exactly two arms and two hands at all times — right hand with crayon, left hand softly resting on the notebook. Eva has exactly two arms and two hands at all times — both gently clasped at her own chest. Sara stays seated cross-legged on the towel throughout. Eva stays softly leaning at Sara's shoulder throughout — no jumping, no leaping. The sand and notebook stay plain clean — no marks (other than the rescue plan drawing), no red, no liquid spills.",
+  "negativePrompt": "duplicate character, twin, clone, two of the same, mirrored figure, second mother, two Mama, mama in this clip, mama visible, second father, two Papa, papa in this clip, papa visible, dog visible, joe visible, ginger visible, third child, second sister, second sara, second eva, two eva, duplicate eva, three girls, four kids, second blonde child, fourth child, fifth child, additional children, extra child in background, ghost figure, ghost kid, ghost children, shadow children, shadow of person, mirrored children, mirror reflection, family members in the background, strangers, crowd, group of people, other faces, background people, friends, neighbors, three arms, third arm, extra arm, extra hand, floating hand, anatomy error, sara has three hands, eva has three hands, scary face, frightening expression, horror lighting, blood, red liquid, red splatter, red stain on notebook, gore, injury, scary, violent, distressing, sara airborne, eva airborne, sara leaping, eva leaping, hard fall, hard impact, painful fall, environmental shake, motion lines, action lines, notebook flying, crayon flying, morphing, flickering, disfigured, distorted, extra face, unstable motion, identical adults"
 }
