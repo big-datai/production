@@ -180,6 +180,29 @@ const MULTI_POSITION_PATH_TRAP = (prompt) => {
   return null;
 };
 
+// Post-ep13 v2 — IMAGE-TO-VIDEO PROMPT-OVER-DESCRIPTION TRAP. When a Nano
+// Banana group still is bound as the primary anchor (tag pattern: "*-group"
+// or "*-still"), the Kling prompt should describe ONLY motion + dialogue,
+// NOT re-describe the composition (positions, wardrobe, characters). Re-
+// describing fights the still and spawns duplicates / wrong composition.
+// ep13 v2 clips 16 + A burned 225 cr on this — the user's pre-rendered
+// group still showed Papa-at-FRONT but the prompt redescribed Papa "in
+// front of the tower" with full character details, and Kling rendered a
+// confused mash-up with extra characters and wrong staging.
+//
+// Detection heuristic: if any boundElement tag matches *-group/*-still AND
+// the prompt contains 3+ POSITION_TOKENS (CENTER-LEFT, CENTER-RIGHT, FAR-
+// RIGHT, etc) describing characters, flag a WARNING — recommend stripping
+// the position re-description down to motion-only.
+const PROMPT_OVERDESCRIBE_RISK = (prompt, tags) => {
+  const hasGroupStill = tags.some(t => /-(group|still)$/i.test(t));
+  if (!hasGroupStill) return false;
+  // Count position-anchor labels in the prompt (CENTER-LEFT etc)
+  const POSITION_LABELS = /\b(CENTER-LEFT|CENTER-RIGHT|FAR-LEFT|FAR-RIGHT|FOREGROUND-LEFT|FOREGROUND-RIGHT|LEFT WINDOW|RIGHT WINDOW)\b/g;
+  const matches = prompt.match(POSITION_LABELS) || [];
+  return matches.length >= 3 ? matches.length : false;
+};
+
 // Post-ep13 — SISTER-PAIR SIMILAR-POSE RISK. When Sara + Eva are co-bound
 // AND both are described with structurally-similar pose phrases ("both hands
 // X at her Y") AND no distinct color-anchored objects (helmet/scooter/ball),
@@ -335,6 +358,16 @@ for (const { file, spec } of clips) {
   const sisterRisk = SISTER_PAIR_SIMILAR_POSE_RISK(prompt, tags);
   if (sisterRisk) {
     warns.push(`Sara + Eva both described with similar pose ("${sisterRisk.saraGesture}" / "${sisterRisk.evaGesture}") and no distinct color-anchored object — recommend Nano Banana group-shot pre-render via generateGroupShot.py. Sister-pair Kling render risk (post-ep13). memory: lesson_kling_position_lock.md`);
+  }
+
+  // 8f. Prompt-over-description trap (post-ep13 v2 clips 16 + A). When a
+  //     Nano Banana group still is the primary anchor, the prompt should be
+  //     motion-only — re-describing the composition fights the still and
+  //     spawns duplicates / wrong staging. HARD ERROR (this burned 225 cr
+  //     on top of the v1 dup bug).
+  const overdescribeCount = PROMPT_OVERDESCRIBE_RISK(prompt, tags);
+  if (overdescribeCount) {
+    issues.push(`group-still anchor + ${overdescribeCount} POSITION_LABELS (CENTER-LEFT / FAR-RIGHT / LEFT WINDOW / etc.) in prompt — when a *-group or *-still PNG is the bound anchor, the prompt MUST be motion-only. Re-describing the composition fights the still and spawns duplicates. Strip position labels from the prompt; describe only beat-by-beat motion + dialogue. memory: lesson_kling_position_lock.md (post-ep13 v2)`);
   }
 
   // 9. Group-noun check (rule #5) — only flag when the group noun is the SUBJECT
