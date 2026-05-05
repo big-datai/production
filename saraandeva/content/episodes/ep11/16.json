@@ -1,0 +1,22 @@
+{
+  "episode": 11,
+  "beat": 18,
+  "clip": 16,
+  "title": "CLIFFHANGER + AUDIENCE-ASK — Papa keeps one eye on Joe, 'pancakes?!'",
+  "mode": "omni",
+  "durationSec": 10,
+  "quality": "720p",
+  "nativeAudio": true,
+  "expectedCredits": 90,
+  "subjects": ["Papa", "Sara", "Eva"],
+  "scene": "backyard-grill-area",
+  "boundElements": [
+    { "tag": "Papa", "source": "library" },
+    { "tag": "Sara", "source": "library" },
+    { "tag": "Eva", "source": "library" },
+    { "tag": "backyard-grill-area", "source": "library" },
+    { "tag": "papas-apron", "source": "library" }
+  ],
+  "prompt": "Wide cheerful shot of @backyard-grill-area, late golden-hour sunshine. @Papa already CENTER-BACK at the grill wearing @papas-apron (now with a faded ketchup smear from the earlier slip), starting a fresh ROUND-3 of patties on the grates with a fresh sizzle, ONE eye locked suspiciously sideways toward the right edge of the frame where the bushes are. @Sara already in the FOREGROUND-LEFT in the grass, sitting cross-legged grinning. @Eva already in the FOREGROUND-RIGHT next to her sister, also cross-legged. In the FAR-RIGHT BACKGROUND-CORNER behind a leafy bush, a small fluffy off-white Pomeranian (Joe) is just barely visible peeking out, calmly licking his lips and making EYE CONTACT with the camera with a tiny innocent sparkle, then ducks back behind the bush. Eva turns her head DIRECTLY to the camera, leans forward conspiratorially, eyes bright with curiosity. Eva (to camera, friend-to-friend energy): \"Hey kids — what do YOU think Papa should make tomorrow?\" She holds the look at the camera waiting for the kid at home to call out an answer, beat. Sara whispers loudly leaning in to Eva, hand cupped beside her mouth toward camera. Sara (loud stage whisper to camera): \"...PANCAKES?!\" Eva claps both hands over her mouth, eyes shining, looking straight at camera. Papa flips a patty warily without taking his eye off the bush, mutters: \"Not. This. Time.\"",
+  "negativePrompt": "duplicate character, twin, clone, two of the same, mirrored figure, second father, two Papa, identical adults, extra people, third child, second sister, second sara, second eva, two eva, duplicate eva, mirror reflection, family members, additional children, extra child, second blonde child, duplicate dog, second dog, two pomeranians, mama in this clip, three arms, extra hand, anatomy error, eva not looking at camera, sara not looking at camera, fourth named child, joe in foreground, joe close to camera"
+}

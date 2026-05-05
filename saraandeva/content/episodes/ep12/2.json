@@ -1,0 +1,20 @@
+{
+  "episode": 12,
+  "beat": 2,
+  "clip": 2,
+  "title": "Setup — Sara digs, Papa+Eva enter surf",
+  "mode": "omni",
+  "durationSec": 10,
+  "quality": "720p",
+  "nativeAudio": true,
+  "expectedCredits": 90,
+  "subjects": ["Papa", "Eva"],
+  "scene": "beach-shore",
+  "boundElements": [
+    { "tag": "Papa", "source": "library" },
+    { "tag": "Eva", "source": "library" },
+    { "tag": "beach-shore", "source": "library" }
+  ],
+  "prompt": "Wide cinematic shot on @beach-shore facing the surf. @Papa already mid-frame, knee-deep in the gentle blue-green surf, holding @Eva up on his shoulders with both hands gripping her ankles for safety. Eva curly blonde with rainbow bow, hands held high above her head laughing huge as a small wave splashes against Papa's legs. Sun glittering on the wet sand at the tide line. Sara is OUT OF FRAME (off-camera digging on the dry sand behind the camera). Papa (booming happy laugh): \"SQUEEZE my shoulders kiddo — wave incoming!\" Eva (squealing with delight): \"HIIIGHER, Daddy! HIIIGHER!\" A small wave laps in. Papa staggers playfully, Eva shrieks with joy.",
+  "negativePrompt": "duplicate character, twin, clone, two of the same, mirrored figure, second father, second mother, two Papa, two Mama, identical adults, extra people, third child, second sister, second sara, second eva, two eva, duplicate eva, mirror reflection, family members in the background, additional children, extra child in background, ghost figure, shadow of person, strangers on the beach, crowd, group of people, other beachgoers, other families, sara in this clip, mama in this clip, surfers, swimmers"
+}

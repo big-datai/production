@@ -1,0 +1,20 @@
+{
+  "episode": 11,
+  "beat": 9,
+  "clip": 8,
+  "title": "Papa starts a NEW round of patties (round 2), muttering about losing his mind",
+  "mode": "omni",
+  "durationSec": 10,
+  "quality": "720p",
+  "nativeAudio": true,
+  "expectedCredits": 90,
+  "subjects": ["Papa"],
+  "scene": "backyard-grill-area",
+  "boundElements": [
+    { "tag": "Papa", "source": "library" },
+    { "tag": "backyard-grill-area", "source": "library" },
+    { "tag": "papas-apron", "source": "library" }
+  ],
+  "prompt": "Medium shot of @backyard-grill-area, sunny afternoon. @Papa already CENTER-FRAME at the grill wearing @papas-apron, expression of deep dad-confusion, shaking his head slowly. He picks up a fresh package of pink ground-beef patties from the grill's lower shelf and starts slapping them onto the hot grates one by one with a sharp *sizzle-sizzle-sizzle*, talking quietly to himself the whole time like a man reasoning with the universe. Papa (muttering, mostly to himself, increasingly worried): \"Okay. Cook them AGAIN. ...I am LOSING IT. That's it. The dad brain has officially CRACKED.\" *sizzle* He sets a hot dog onto the grates next to the patties. Papa (continuing, voice rising): \"Maybe I just THOUGHT I cooked them. Maybe I'm in a dad-coma. Is this a dad-coma?\" He flips a patty already, looks at it suspiciously, scratches his eyebrow with the back of the spatula handle. Papa (to himself, philosophical): \"...is anyone else's dad like this?\"",
+  "negativePrompt": "duplicate character, twin, clone, two of the same, mirrored figure, second father, two Papa, identical adults, extra people, third child, second sister, family members, additional children, ghost figure, shadow of person, strangers, crowd, group of people, other faces, background people, friends, neighbors, sara in this clip, eva in this clip, mama in this clip, dog visible, joe visible, three arms, extra hand, anatomy error, free arm swinging while holding spatula, spatula levitating"
+}

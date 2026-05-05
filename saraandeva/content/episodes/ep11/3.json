@@ -1,0 +1,19 @@
+{
+  "episode": 11,
+  "beat": 3,
+  "clip": 3,
+  "title": "Eva — tiny waitress with a bowl of ketchup packets",
+  "mode": "omni",
+  "durationSec": 10,
+  "quality": "720p",
+  "nativeAudio": true,
+  "expectedCredits": 90,
+  "subjects": ["Eva"],
+  "scene": "backyard-grill-area",
+  "boundElements": [
+    { "tag": "Eva", "source": "library" },
+    { "tag": "backyard-grill-area", "source": "library" }
+  ],
+  "prompt": "Cheerful low-angle medium shot in @backyard-grill-area, sunny afternoon. @Eva already standing CENTER-FRAME on the grass next to the picnic table, curly blonde hair with rainbow bow, wearing a small kid's polka-dot sundress, holding a bright white plastic BOWL with both hands carefully balanced in front of her, the bowl piled high with little red and white ketchup packets. Eva walks with intense five-year-old waitress importance — taking tiny careful steps in place to keep the bowl level — chin up, shoulders back, eyes super-serious. Eva (in her best fancy-restaurant voice): \"One bowl of KEH-CHOOP for the BUR-GER guests, please!\" She bows her head once formally, lifts the bowl with a tiny dramatic flourish, then cracks up giggling at her own joke and bobs her shoulders. Eva (grinning, sing-song): \"I'm the FANCIEST waitress in the WHOLE backyard!\"",
+  "negativePrompt": "duplicate character, twin, clone, two of the same, mirrored figure, second sister, second eva, two eva, duplicate eva, mirror reflection, family members, strangers, crowd, group of people, other faces, background people, friends, neighbors, sara in this clip, papa in this clip, mama in this clip, dog in this clip, joe in this clip, additional children, extra child, second blonde child, ghost figure, shadow of person, three arms, extra hand, anatomy error, bowl levitating, hands free of bowl"
+}

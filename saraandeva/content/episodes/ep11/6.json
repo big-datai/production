@@ -1,0 +1,20 @@
+{
+  "episode": 11,
+  "beat": 6,
+  "clip": 6,
+  "title": "Joe creeps out from the bush — silent fourth-wall wink",
+  "mode": "omni",
+  "durationSec": 10,
+  "quality": "720p",
+  "nativeAudio": true,
+  "expectedCredits": 90,
+  "subjects": ["Joe"],
+  "scene": "backyard-grill-area",
+  "boundElements": [
+    { "tag": "Joe", "source": "library" },
+    { "tag": "backyard-grill-area", "source": "library" },
+    { "tag": "burger-platter", "source": "library" }
+  ],
+  "prompt": "Low-angle dramatic shot in @backyard-grill-area — the picnic table on the LEFT, the empty grill on the RIGHT, sunny afternoon. @Joe (small fluffy off-white Pomeranian, fox-like face, perky triangle ears, bushy curling tail) already CENTER-FRAME, slowly creeping out from behind the leafy bushes at the property edge, low to the ground, ears perked forward, nose twitching dramatically, his eyes laser-locked on @burger-platter (now on the picnic table loaded with three plump grilled hot dogs and four juicy grill-marked hamburger patties). Joe pauses mid-step. He turns his head SLOWLY toward the camera, makes direct eye contact with the lens for two full seconds with a tiny sparkle of conspiratorial mischief in his eyes, gives one slow deliberate blink — a silent fourth-wall acknowledgment to the kid watching at home — then turns back to the platter and resumes his low slinky stalk. Joe (a small low cheerful conspiratorial yip to himself): \"Mff hff hff!\" Tail wags slowly with criminal intent.",
+  "negativePrompt": "duplicate character, twin, clone, two of the same, mirrored figure, duplicate dog, second dog, two pomeranians, second pomeranian, identical dogs, extra dogs, ghost dog, mirror reflection, family members, strangers, crowd, group of people, other faces, background people, friends, neighbors, sara in this clip, eva in this clip, mama in this clip, papa in this clip, kids in this clip, adults in this clip, three arms, extra hand, anatomy error, dog talks like a human, dog has human teeth, anthropomorphic dog standing on hind legs"
+}

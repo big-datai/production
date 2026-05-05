@@ -1,0 +1,20 @@
+{
+  "episode": 12,
+  "beat": 7,
+  "clip": 7,
+  "title": "AUDIENCE-ASK — Eva reads halting, Sara turns to camera",
+  "mode": "omni",
+  "durationSec": 10,
+  "quality": "720p",
+  "nativeAudio": true,
+  "expectedCredits": 90,
+  "subjects": ["Sara", "Eva"],
+  "scene": "beach-shore",
+  "boundElements": [
+    { "tag": "Sara", "source": "library" },
+    { "tag": "Eva", "source": "library" },
+    { "tag": "rescue-note", "source": "library" }
+  ],
+  "prompt": "Mid-close-up on the wet sand of beach. @Sara already holding the unrolled @rescue-note between her fingers. @Eva already leaning over her shoulder, finger pointing at the words, sounding them out slowly with cute concentration. Eva (slow, halting, finger tracing the words): \"I... am... STUCK... on... a... fa-RA-way... ISLAND... please come find me!\" Sara (eyes huge, then turning her head DIRECTLY toward the camera): \"WHO do YOU think wrote this?!\" Sara holds the note up close to camera with two hands so the audience can see the handwriting. Eva's curly-blonde face appears in frame next to Sara's, both staring at camera waiting for an answer.",
+  "negativePrompt": "duplicate character, twin, clone, two of the same, mirrored figure, second father, second mother, two Papa, two Mama, identical adults, extra people, third child, second sister, second sara, second eva, two eva, duplicate eva, mirror reflection, family members in the background, additional children, extra child in background, ghost figure, shadow of person, strangers on the beach, crowd, group of people, papa in this clip, mama in this clip, two notes, multiple notes, garbled handwriting"
+}

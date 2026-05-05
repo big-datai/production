@@ -1,0 +1,22 @@
+{
+  "episode": 12,
+  "beat": 11,
+  "clip": 11,
+  "title": "Mama and Papa read the note together",
+  "mode": "omni",
+  "durationSec": 10,
+  "quality": "720p",
+  "nativeAudio": true,
+  "expectedCredits": 90,
+  "subjects": ["Mama", "Papa"],
+  "scene": "beach-blanket",
+  "boundElements": [
+    { "tag": "Mama", "source": "library" },
+    { "tag": "Papa", "source": "library" },
+    { "tag": "beach-blanket", "source": "library" },
+    { "tag": "magic-bottle", "source": "library" },
+    { "tag": "rescue-note", "source": "library" }
+  ],
+  "prompt": "Mid-close-up at the @beach-blanket. @Mama already standing on the LEFT holding the glowing @magic-bottle in her hand, head tilted toward Papa to read along. @Papa already standing on the RIGHT, the unrolled @rescue-note held out between them, both adults reading silently. They share a look of bewildered concern. Sara and Eva are OFF-CAMERA (their voices project softly from off-frame). Papa (folding the note carefully, looking at Mama): \"Honey... a magic-forest fox stuck on an ISLAND. We promised them an adventure.\" Mama (looking at the bottle in her hand, then up at Papa, smiling small): \"Then we need a plan. And a BOAT.\" Papa nods, jaw set, already thinking.",
+  "negativePrompt": "duplicate character, twin, clone, two of the same, mirrored figure, second father, second mother, two Papa, two Mama, identical adults, extra people, third child, child in this clip, kid, sister, sara, eva, mirror reflection, family members in the background, additional adults, extra adult, ghost figure, shadow of person, third adult, strangers on the beach, other beachgoers, two bottles, multiple bottles, multiple notes"
+}

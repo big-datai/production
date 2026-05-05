@@ -1,0 +1,21 @@
+{
+  "episode": 12,
+  "beat": 8,
+  "clip": 8,
+  "title": "GINGER REVEAL — signed by Ginger from the magic forest",
+  "mode": "omni",
+  "durationSec": 10,
+  "quality": "720p",
+  "nativeAudio": true,
+  "expectedCredits": 90,
+  "subjects": ["Sara", "Eva"],
+  "scene": "beach-shore",
+  "boundElements": [
+    { "tag": "Sara", "source": "library" },
+    { "tag": "Eva", "source": "library" },
+    { "tag": "beach-shore", "source": "library" },
+    { "tag": "rescue-note", "source": "library" }
+  ],
+  "prompt": "Tight close-up on @beach-shore tide line. @Sara already turning the @rescue-note over to read the back. The bottom corner of the paper has handwritten text reading 'GINGER' followed by a tiny pawprint stamp. Sara's eyes go HUGE — pure shock and recognition. @Eva already pressed in beside her, eyes equally huge. Sara (gasping, barely a breath): \"...Ginger? GINGER?!\" Eva (jaw dropped): \"From the MAGIC FOREST?!\" Sara (looking back at the note, then at the camera): \"It's HER! She's the FOX from our adventure!\" Eva (clutching her face with both hands): \"She NEEDS US!\" Both girls look at each other with determined faces.",
+  "negativePrompt": "duplicate character, twin, clone, two of the same, mirrored figure, second father, second mother, two Papa, two Mama, identical adults, extra people, third child, second sister, second sara, second eva, two eva, duplicate eva, mirror reflection, family members in the background, additional children, extra child in background, ghost figure, shadow of person, papa in this clip, mama in this clip, ginger fox in this clip, animal in this clip, multiple notes, garbled handwriting"
+}

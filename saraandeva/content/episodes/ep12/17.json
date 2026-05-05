@@ -1,0 +1,21 @@
+{
+  "episode": 12,
+  "beat": 19,
+  "clip": 17,
+  "title": "Eva peeks — tomorrow we build a boat?",
+  "mode": "omni",
+  "durationSec": 10,
+  "quality": "720p",
+  "nativeAudio": true,
+  "expectedCredits": 90,
+  "subjects": ["Sara", "Eva"],
+  "scene": "beach-sunset",
+  "boundElements": [
+    { "tag": "Sara", "source": "library" },
+    { "tag": "Eva", "source": "library" },
+    { "tag": "beach-sunset", "source": "library" },
+    { "tag": "sara-notebook-rescue", "source": "library" }
+  ],
+  "prompt": "Mid-close-up on @beach-sunset, golden hour light raking from the right. @Sara already seated cross-legged with the open @sara-notebook-rescue on her lap, still drawing. @Eva already pops her curly-blonde head over Sara's RIGHT shoulder from behind, big eyes peering at the map page. Eva (whispered awe, finger pointing at the X on the page): \"Tomorrow we build a BOAT?\" Sara (still drawing, very calm and matter-of-fact, not even looking up): \"Yep. Tomorrow we... start.\" Eva slides down to sit next to Sara on the towel, leaning her head on Sara's shoulder, both girls staring at the open notebook page in companionable silence as the wave sounds wash gently in the background.",
+  "negativePrompt": "duplicate character, twin, clone, two of the same, mirrored figure, second father, second mother, two Papa, two Mama, identical adults, extra people, third child, second sister, second sara, second eva, two eva, duplicate eva, mirror reflection, family members in the background, additional children, extra child in background, second blonde child, ghost figure, shadow of person, papa in this clip, mama in this clip, multiple notebooks, garbled text"
+}

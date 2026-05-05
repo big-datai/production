@@ -1,0 +1,21 @@
+{
+  "episode": 12,
+  "beat": 21,
+  "clip": 18,
+  "title": "CLIFFHANGER + CAMERA-ASK — Will YOU help us find Ginger?",
+  "mode": "omni",
+  "durationSec": 10,
+  "quality": "720p",
+  "nativeAudio": true,
+  "expectedCredits": 90,
+  "subjects": ["Sara", "Eva"],
+  "scene": "beach-sunset",
+  "boundElements": [
+    { "tag": "Sara", "source": "library" },
+    { "tag": "Eva", "source": "library" },
+    { "tag": "beach-sunset", "source": "library" },
+    { "tag": "sara-notebook-rescue", "source": "library" }
+  ],
+  "prompt": "Tight head-on close-up on @beach-sunset, the sunset gradient blazing pink-orange behind them, gentle ocean roar. @Sara already in the LEFT FOREGROUND holding the open @sara-notebook-rescue page up toward the camera, fully visible — the 'MAGIC FOREST RESCUE PLAN' title and the hand-drawn map clearly readable. @Eva already on the RIGHT FOREGROUND right next to her, leaning in toward the camera with eyes huge. Both girls staring DIRECTLY into the lens. Sara (intensely earnest, holding up the notebook): \"Will YOU help us find Ginger?\" Eva (jumping with excitement): \"What kind of BOAT should we build?!\" Sara (eyes huge): \"Tell your grown-up to come back next time so you can come WITH US!\" Both girls lean in even closer to camera as the screen begins to fade to black. End cliffhanger.",
+  "negativePrompt": "duplicate character, twin, clone, two of the same, mirrored figure, second father, second mother, two Papa, two Mama, identical adults, extra people, third child, second sister, second sara, second eva, two eva, duplicate eva, mirror reflection, family members in the background, additional children, extra child in background, second blonde child, ghost figure, shadow of person, papa in this clip, mama in this clip, multiple notebooks, garbled text on notebook, strangers in background, other beachgoers"
+}

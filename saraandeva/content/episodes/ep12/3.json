@@ -1,0 +1,20 @@
+{
+  "episode": 12,
+  "beat": 3,
+  "clip": 3,
+  "title": "Eva spots the glitter",
+  "mode": "omni",
+  "durationSec": 10,
+  "quality": "720p",
+  "nativeAudio": true,
+  "expectedCredits": 90,
+  "subjects": ["Papa", "Eva"],
+  "scene": "beach-shore",
+  "boundElements": [
+    { "tag": "Papa", "source": "library" },
+    { "tag": "Eva", "source": "library" },
+    { "tag": "beach-shore", "source": "library" }
+  ],
+  "prompt": "Mid-shot on @beach-shore — @Papa already standing knee-deep in the gentle surf, @Eva already perched up on his shoulders. Eva freezes, eyes locked on something glittering in the wet sand at the tide line, off to the right. She points urgently with her tiny finger. Papa follows her gaze and squints. The waves hush a moment. Eva (wide-eyed, urgent stage-whisper): \"Daddy... DADDY look — it's SHINY!\" Papa (squinting, hand to forehead): \"What is THAT?\" Eva (tugging at his hair, bouncing on his shoulders): \"Get it get it GET IT!\" Papa starts wading toward the shore, Eva still pointing.",
+  "negativePrompt": "duplicate character, twin, clone, two of the same, mirrored figure, second father, second mother, two Papa, two Mama, identical adults, extra people, third child, second sister, second sara, second eva, two eva, duplicate eva, mirror reflection, family members in the background, additional children, extra child in background, ghost figure, shadow of person, strangers on the beach, crowd, group of people, other beachgoers, other families, sara in this clip, mama in this clip, surfers, swimmers"
+}

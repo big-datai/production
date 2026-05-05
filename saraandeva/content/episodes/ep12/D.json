@@ -1,0 +1,37 @@
+{
+  "episode": 12,
+  "beat": "music-video-D",
+  "clip": "D",
+  "title": "MUSIC VIDEO RENDER D — Papa+Sara+Eva Can't Catch Us! playground tag with slide gag",
+  "mode": "omni",
+  "durationSec": 10,
+  "quality": "720p",
+  "nativeAudio": true,
+  "expectedCredits": 90,
+  "subjects": ["Papa", "Sara", "Eva"],
+  "scene": "beach-playground",
+  "boundElements": [
+    { "tag": "Papa", "source": "library" },
+    { "tag": "Sara", "source": "library" },
+    { "tag": "Eva", "source": "library" },
+    { "tag": "beach-playground", "source": "library" }
+  ],
+  "reuseAsset": true,
+  "reuseAssetNote": "ONE 10s render, paired with Suno song 'Cant Catch Us.mp3' via loopVideoWithSong.mjs to fill the 60s music block. Loop choreography is rhythmic playground tag with a slide-gag punchline.",
+  "musicVideoBlock": true,
+  "loopExpansion": {
+    "iterations": 6,
+    "xfadeDuration": 0.3,
+    "outputDurationSec": 58
+  },
+  "usedUnderSongs": [
+    {
+      "song": "assets/music/Cant Catch Us.mp3",
+      "blockDurationSec": 60,
+      "trimStart": 0,
+      "placementClipNumber": "1music"
+    }
+  ],
+  "prompt": "Wide cinematic shot at @beach-playground — wooden beach playground with a red curly tube-slide on the LEFT, a blue climbing tower with rope ladder in the CENTER-BACK, two swings on the RIGHT, sandy ground with a few palm trees, ocean visible faintly in the background. Bright sunny daylight. The shot is designed as a LOOP-CLEAN tag-game music video. @Papa already on the LEFT side of the frame at the bottom of the curly slide, arms outstretched in a playful tickle-monster pose, big silly comic grin. @Sara already on the climbing tower in the CENTER-BACK halfway up the rope ladder, mid-climb, ponytail flying, looking back over her shoulder laughing. @Eva already on the RIGHT side of the frame on a swing seat mid-air at the top of her arc, both hands gripping the swing chains, curly blonde with rainbow bow flying. STRICT 3-FOREGROUND-CHAR composition, no fourth person anywhere. The 3 figures are spread across the wide composition with the playground equipment between them — playing the tickle-monster game around the playground. Choreographed loop: Papa lunges to one side and reaches up toward Sara, Sara hops to a higher rung and shakes her head playfully, Eva swings forward and back chanting silently, then Papa attempts to climb into the curly tube-slide opening — but he is COMICALLY TOO BIG, his shoulders get wedged in the entrance with his big-eyes 'oh no' face, both legs sticking out, he wiggles dramatically. Sara and Eva burst into silent laughter pointing at stuck-Papa. Papa pops out of the slide with comic motion. All three return to their starting positions ready to loop again. Movements are RHYTHMIC and LOOPABLE — clean cycle: lunge → hop → swing → slide-stuck → laughter → reset. Camera locked at wide angle, head-on, kid-eye-level. Bright cheerful playground lighting. The three hum and sing along generically — no specific dialogue, no lip-sync to any words. The shot is designed to LOOP cleanly. No audible speech, no music — silent render.",
+  "negativePrompt": "duplicate character, twin, clone, two of the same, mirrored figure, second father, second mother, two Papa, two Mama, identical adults, extra people, fourth person, fourth silhouette, third child, second sister, second sara, second eva, two eva, duplicate eva, mirror reflection, family members in the background, additional children, extra child in background, second blonde child, ghost figure, shadow of person, mama in this clip, strangers in playground, other kids on equipment, other families, crowd, group of people, other beachgoers, other parents, three arms, third arm, extra arm, extra hand, floating hand, anatomy error, specific dialogue words, lip-sync to specific syllables, audible music, audible singing words, papa actually fitting through the slide, second slide, two slides, identical playground equipment, chase verb visualizations"
+}

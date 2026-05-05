@@ -1,0 +1,34 @@
+{
+  "episode": 11,
+  "beat": "music-video-A",
+  "clip": "A",
+  "title": "MUSIC VIDEO RENDER A — Joe slow-mo burger heist (solo)",
+  "mode": "omni",
+  "durationSec": 10,
+  "quality": "720p",
+  "nativeAudio": true,
+  "expectedCredits": 90,
+  "subjects": ["Joe"],
+  "scene": "(designed cookout-noir backdrop)",
+  "boundElements": [
+    { "tag": "Joe", "source": "library" }
+  ],
+  "reuseAsset": true,
+  "reuseAssetNote": "ONE 10s render, paired with Suno song 'Slow-Mo Burger Heist.mp3' via loopVideoWithSong.mjs to fill the 60s music block.",
+  "musicVideoBlock": true,
+  "loopExpansion": {
+    "iterations": 2,
+    "xfadeDuration": 0.3,
+    "outputDurationSec": 19.7
+  },
+  "usedUnderSongs": [
+    {
+      "song": "assets/music/Slow-Mo Burger Heist.mp3",
+      "blockDurationSec": 20,
+      "trimStart": 0,
+      "placementClipNumber": "6music"
+    }
+  ],
+  "prompt": "Wide cinematic music-video shot — designed STUDIO BACKDROP with a soft sky-blue gradient sky behind, a stylized cartoon GRILL silhouette on the LEFT puffing tiny rolling smoke wisps continuously, a single floating cartoon BURGER and a single floating cartoon HOT DOG hanging in the air on the RIGHT like prize trophies, scattered tiny ketchup-packet sparkles drifting slowly down like confetti. NO scene, NO room, NO real backyard, NO furniture, NO logos, NO real text. @Joe (small fluffy off-white Pomeranian, fox-like face, perky triangle ears, bushy curling tail) is the SOLO STAR, dramatic-lit slightly from below for movie-noir energy, slow-motion energy throughout. Joe poses CENTER-FRAME. Joe's RHYTHMIC LOOPABLE move set: (1) crouches low to the ground, eyes-locked-criminal-mastermind, ears flicked forward; (2) takes one slow exaggerated heist-creep step forward in slow motion, paw lifted high; (3) jumps gracefully into the air in arcing slow-motion, paws spread, mouth wide; (4) lands cleanly with a bounce, ears flopping, tail giving one slow heroic wag; (5) slow theatrical tail-wag-spin in place, fluff billowing in slow-motion; (6) returns to start crouch position. Camera locked, head-on, kid-eye-level. Looped cleanly: Joe returns to the same start crouch at second 0 and second 10. Joe makes occasional satisfied slow-motion cartoon yip sounds (no specific words) — generic dog vocalizations, no human dialogue. The shot is designed to LOOP cleanly. Smoke wisps + ketchup-packet confetti continuously drift. No audible speech, no music — silent render.",
+  "negativePrompt": "duplicate character, twin, clone, two of the same, mirrored figure, duplicate dog, second dog, two pomeranians, second pomeranian, identical dogs, extra dogs, ghost dog, mirror reflection, family members, strangers, crowd, group of people, other faces, background people, friends, neighbors, sara in this clip, eva in this clip, mama in this clip, papa in this clip, kids in this clip, adults in this clip, real grill brand, real burger brand, specific dialogue words, lip-sync to specific syllables, audible music, audible singing words, three arms, extra hand, anatomy error, dog talks like a human, anthropomorphic dog standing on hind legs"
+}

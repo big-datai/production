@@ -1,0 +1,20 @@
+{
+  "episode": 11,
+  "beat": 11,
+  "clip": 10,
+  "title": "AUDIENCE-ASK — Sara and Eva collapsed in grass laughing, ask the camera",
+  "mode": "omni",
+  "durationSec": 10,
+  "quality": "720p",
+  "nativeAudio": true,
+  "expectedCredits": 90,
+  "subjects": ["Sara", "Eva"],
+  "scene": "backyard",
+  "boundElements": [
+    { "tag": "Sara", "source": "library" },
+    { "tag": "Eva", "source": "library" },
+    { "tag": "backyard", "source": "library" }
+  ],
+  "prompt": "Cheerful low-angle wide shot in @backyard — green grass, leafy backyard tree, black iron fence, sunny afternoon. @Sara already lying on her back in the grass on the LEFT, both hands clutching her tummy, hair fanned out, face crumpled with helpless laughter, kicking her feet weakly in the air. @Eva already lying on her tummy on the RIGHT next to her sister, propped on her elbows, face buried in the grass between fits of giggles, curly blonde hair shaking. Sara wipes a tear of laughter from her cheek, sits halfway up, props on one elbow, and turns her head DIRECTLY toward the camera, eyes sparkling with conspiratorial delight. Sara (to camera, big stage whisper, finger pointed past the lens at the watching kid): \"Kids — did YOU see where the FIRST burgers went?!\" She raises both eyebrows expectantly, waiting for the kid at home to answer out loud, holds the look for two beats. Eva pops her head up next to Sara, also looking at camera, nodding furiously. Eva (to camera, also stage-whispering, eyes huge): \"It was JOE! It was the WHOLE TIME JOE!\" Both girls dissolve back into helpless giggles, rolling onto their backs in the grass.",
+  "negativePrompt": "duplicate character, twin, clone, two of the same, mirrored figure, second sister, second sara, second eva, two eva, duplicate eva, mirror reflection, family members, strangers, crowd, group of people, other faces, background people, friends, neighbors, papa in this clip, mama in this clip, dog visible, joe visible, additional children, extra child, second blonde child, ghost figure, shadow of person, three arms, extra hand, anatomy error, sara not looking at camera, eva not looking at camera"
+}

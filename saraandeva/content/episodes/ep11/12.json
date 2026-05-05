@@ -1,0 +1,20 @@
+{
+  "episode": 11,
+  "beat": 13,
+  "clip": 12,
+  "title": "AUDIENCE-ASK — Eva: 'Should we tell Papa?' then yells",
+  "mode": "omni",
+  "durationSec": 10,
+  "quality": "720p",
+  "nativeAudio": true,
+  "expectedCredits": 90,
+  "subjects": ["Sara", "Eva"],
+  "scene": "backyard",
+  "boundElements": [
+    { "tag": "Sara", "source": "library" },
+    { "tag": "Eva", "source": "library" },
+    { "tag": "backyard", "source": "library" }
+  ],
+  "prompt": "Medium shot of @backyard, sunny afternoon. @Eva already CENTER-LEFT in the grass on her knees, naughty grin, pressing one finger to her lips in a 'shhh' gesture, and turning her head DIRECTLY toward the camera with a scheming sparkle. @Sara already CENTER-RIGHT next to her sister also kneeling in the grass, both girls still pink-cheeked from laughing. Eva (to camera, finger to lips, conspiratorial whisper): \"Should we tell Papa?\" She holds the look at the camera for two full beats — waiting for the kid watching at home to answer out loud. Then she breaks into a huge mischievous grin and her face goes from whisper to MAXIMUM VOLUME instantly. Eva (suddenly cupping both hands around her mouth, full-volume yell, cheerful but commanding): \"PAPA — LOOK!! LOOOOOK!!\" Sara claps both hands over her mouth, beaming, eyes huge, trying not to lose it. Sara (giggling, leaning in to Eva): \"He's gonna FREAK.\" Eva (still beaming straight at camera): \"Watch this. Watch THIS.\"",
+  "negativePrompt": "duplicate character, twin, clone, two of the same, mirrored figure, second sister, second sara, second eva, two eva, duplicate eva, mirror reflection, family members, strangers, crowd, group of people, other faces, background people, friends, neighbors, papa in this clip, mama in this clip, dog visible, joe visible, additional children, extra child, second blonde child, ghost figure, shadow of person, three arms, extra hand, anatomy error, eva not looking at camera"
+}

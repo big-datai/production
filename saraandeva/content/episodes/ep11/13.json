@@ -1,0 +1,22 @@
+{
+  "episode": 11,
+  "beat": 14,
+  "clip": 13,
+  "title": "Papa sees Joe — the burger graveyard reveal",
+  "mode": "omni",
+  "durationSec": 10,
+  "quality": "720p",
+  "nativeAudio": true,
+  "expectedCredits": 90,
+  "subjects": ["Papa", "Joe"],
+  "scene": "backyard-grill-area",
+  "boundElements": [
+    { "tag": "Papa", "source": "library" },
+    { "tag": "Joe", "source": "library" },
+    { "tag": "backyard-grill-area", "source": "library" },
+    { "tag": "papas-apron", "source": "library" },
+    { "tag": "burger-platter", "source": "library" }
+  ],
+  "prompt": "Wide shot of @backyard-grill-area, sunny afternoon, viewer-favorite reveal angle. @Papa already CENTER-LEFT at the grill wearing @papas-apron, mid-flip with his spatula, now turning his head sharply over his right shoulder toward the bushes corner because of an off-screen yell. @Joe already CENTER-RIGHT half-tucked into the leafy bushes at the property edge, still holding a hot dog crosswise in his mouth, fluffy chest dramatically smeared with bright red ketchup. Around Joe in the grass: the now-EMPTY @burger-platter tipped sideways, with crumpled paper wrappers scattered, a few stray bun pieces, a tiny smear of ketchup on the ceramic — a comic 'crime scene' of vanished burgers. Papa's eyes track the scene one element at a time — sees the empty platter, sees the wrappers, sees Joe. His jaw drops slowly, spatula drifts down to his side, eyebrows shoot up to his hairline in slow-motion realization. Papa (a long, low, stunned breath): \"...the ENTIRE TIME?\" He stares wordlessly. Joe stares back, hot dog firmly in mouth, slow innocent blink, perfect criminal poker-face.",
+  "negativePrompt": "duplicate character, twin, clone, two of the same, mirrored figure, second father, two Papa, identical adults, duplicate dog, second dog, two pomeranians, identical dogs, extra dogs, ghost dog, mirror reflection, family members, strangers, crowd, group of people, other faces, background people, friends, neighbors, sara in this clip, eva in this clip, mama in this clip, additional children, extra child, ghost figure, shadow of person, three arms, extra hand, anatomy error, free arm swinging while holding spatula, spatula levitating"
+}

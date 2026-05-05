@@ -1,0 +1,35 @@
+{
+  "episode": 12,
+  "beat": "music-video-A",
+  "clip": "A",
+  "title": "MUSIC VIDEO RENDER A — Sara+Eva Sandy Toes duo dance",
+  "mode": "omni",
+  "durationSec": 10,
+  "quality": "720p",
+  "nativeAudio": true,
+  "expectedCredits": 90,
+  "subjects": ["Sara", "Eva"],
+  "scene": "(designed beach-pastel backdrop)",
+  "boundElements": [
+    { "tag": "Sara", "source": "library" },
+    { "tag": "Eva", "source": "library" }
+  ],
+  "reuseAsset": true,
+  "reuseAssetNote": "ONE 10s render, paired with Suno song 'Sandy Toes.mp3' via loopVideoWithSong.mjs to fill the 60s music block.",
+  "musicVideoBlock": true,
+  "loopExpansion": {
+    "iterations": 6,
+    "xfadeDuration": 0.3,
+    "outputDurationSec": 58
+  },
+  "usedUnderSongs": [
+    {
+      "song": "assets/music/Sandy Toes.mp3",
+      "blockDurationSec": 60,
+      "trimStart": 0,
+      "placementClipNumber": "13music"
+    }
+  ],
+  "prompt": "Wide front-facing music-video shot — designed pastel beach backdrop. SKY: soft sky-blue to seafoam gradient. GROUND: stylized golden-sand floor with cartoon-shape seashells in pinks, corals, and creams scattered around. Tiny seashell confetti and fluffy cloud-shapes drift gently down the frame from above. NO real beach, NO real ocean, NO scene clutter, NO logos, NO real text. @Sara on the LEFT and @Eva on the RIGHT stand side-by-side facing the camera, both barefoot and grinning huge. Sara holds a yellow plastic sand-bucket. Eva holds a tiny pink shovel. STRICT ANATOMY: each girl has EXACTLY 2 arms, EXACTLY 2 hands — both hands ALWAYS holding their bucket / shovel prop OR returning to start position. They perform a choreographed beach-day duo loop — LOWER BODY + HEAD only since hands are occupied: bop right hip, bop left hip, knees bend slightly, head bobs side-to-side, both girls take a small step toward each other and CLINK their bucket and shovel together at center, step back, repeat. Movements are RHYTHMIC and LOOPABLE — clean cycle: bop → bop → step-in-and-clink → step-back → return. Camera locked, head-on, kid-eye-level. Bright cheerful pastel beach lighting. Sara and Eva hum and sing along generically — no specific dialogue, no lip-sync to any words. The shot is designed to LOOP cleanly. No audible speech, no music — silent render.",
+  "negativePrompt": "duplicate character, twin, clone, two of the same, mirrored figure, second father, second mother, two Papa, two Mama, identical adults, extra people, third child, second sister, second sara, second eva, two eva, duplicate eva, mirror reflection, family members, strangers, crowd, group of people, other faces, background people, friends, neighbors, three arms, third arm, extra arm, extra hand, floating hand, four arms, anatomy error, free arm swinging while holding prop, specific dialogue words, lip-sync to specific syllables, audible music, audible singing words, real beach photo realism, real ocean"
+}

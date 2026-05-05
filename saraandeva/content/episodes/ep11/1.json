@@ -1,0 +1,20 @@
+{
+  "episode": 11,
+  "beat": 1,
+  "clip": 1,
+  "title": "HOOK — Apron close-up + grill ignition",
+  "mode": "omni",
+  "durationSec": 10,
+  "quality": "720p",
+  "nativeAudio": true,
+  "expectedCredits": 90,
+  "subjects": ["Papa"],
+  "scene": "backyard-grill-area",
+  "boundElements": [
+    { "tag": "Papa", "source": "library" },
+    { "tag": "backyard-grill-area", "source": "library" },
+    { "tag": "papas-apron", "source": "library" }
+  ],
+  "prompt": "Sunny Saturday afternoon medium-close shot in @backyard-grill-area, golden-hour light, faint heat-shimmer rising from the grill. @Papa stands CENTER-FRAME at the grill, just finishing tying the waist strings of @papas-apron behind his back, then proudly smooths the front of the apron flat across his chest so the printed text reads loud and clear toward the camera: WORLD'S OKAYEST DAD. The apron's cartoon dad-mustache chef icon and the printed letters are all clearly readable, English text only, large clear printed Roman alphabet, NO foreign characters. Papa grins huge, picks up a metal spatula from the grill's side hook, and waggles it cheerfully. He flips a perfectly-formed hamburger patty on the hot grates with a satisfying *sizzle* and a small puff of cheerful steam. Papa (booming, proud chef energy): \"Saturday burgers — DAD MODE: ENGAGED!\" He hums tunelessly, deeply satisfied with himself.",
+  "negativePrompt": "duplicate character, twin, clone, two of the same, mirrored figure, second father, two Papa, identical adults, extra people, third child, second sister, family members in the background, additional children, extra child in background, ghost figure, shadow of person, strangers, crowd, group of people, other faces, background people, friends, neighbors, kids in this clip, mama in this clip, dog in this clip, joe in this clip, Cyrillic, Chinese characters, Korean, Japanese, Arabic, garbled letters, misspelled, scrambled letters, wrong text, three arms, extra hand, anatomy error"
+}

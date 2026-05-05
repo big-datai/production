@@ -1,0 +1,22 @@
+{
+  "episode": 11,
+  "beat": 4,
+  "clip": 4,
+  "title": "PARENT-ACTIVITY (15s) — Papa teaches Sara and Eva to flip ONE patty each",
+  "mode": "omni",
+  "durationSec": 15,
+  "quality": "720p",
+  "nativeAudio": true,
+  "expectedCredits": 135,
+  "subjects": ["Papa", "Sara", "Eva"],
+  "scene": "backyard-grill-area",
+  "boundElements": [
+    { "tag": "Papa", "source": "library" },
+    { "tag": "Sara", "source": "library" },
+    { "tag": "Eva", "source": "library" },
+    { "tag": "backyard-grill-area", "source": "library" },
+    { "tag": "papas-apron", "source": "library" }
+  ],
+  "prompt": "Wide cinematic medium shot of @backyard-grill-area, sunny golden-hour light, faint heat-shimmer above the grates. @Papa already in the CENTER at the grill wearing @papas-apron, holding a long metal spatula in one hand, big proud teaching grin. @Sara already standing on the LEFT next to Papa, on a small upturned wooden block to reach grill height, both hands gripping a kid-sized spatula. @Eva already standing on the RIGHT at the other side of Papa on her own block, holding her own kid-sized spatula. (BEAT 1 — 0-5s) Papa (cheerful coach voice): \"Okay champs — gentle slide UNDER, then a confident FLIP — like THIS!\" He demonstrates with his spatula, flipping a juicy patty cleanly with a satisfying *sizzle*. Sara (eyes saucers): \"OOH!\" Eva (gasping, hand to mouth): \"Pro chef Papa!\" (BEAT 2 — 5-10s) Sara goes first — slowly slides her spatula under a patty, scrunches her face in concentration, FLIPS — the patty lands cleanly with a sizzle. Sara (fists pumping in the air for one second): \"YESSS! Bun Squad CAN COOK!\" Papa beams down at her, totally proud, gives her a giant thumbs-up. (BEAT 3 — 10-15s) Eva tries next — slides her spatula under, flips with WAY too much enthusiasm, the patty rotates almost end-over-end and lands askew with a loud *SPLAT* of grease. Eva freezes one second wide-eyed, then breaks into a triumphant grin. Eva (arms up, triumphant): \"BURGER GYMNASTICS! TEN POINTS!\" Papa laughs and ruffles her hair. Papa (grinning): \"My grill team, ladies and gentlemen!\"",
+  "negativePrompt": "duplicate character, twin, clone, two of the same, mirrored figure, second father, two Papa, identical adults, extra people, third child, second sister, second sara, second eva, two eva, duplicate eva, mirror reflection, family members in the background, additional children, extra child in background, ghost figure, shadow of person, strangers, crowd, group of people, other faces, background people, friends, neighbors, mama in this clip, dog in this clip, joe in this clip, three arms, extra hand, anatomy error, spatula levitating, free arm swinging while holding spatula"
+}

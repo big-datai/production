@@ -1,0 +1,21 @@
+{
+  "episode": 12,
+  "beat": 9,
+  "clip": 9,
+  "title": "Sara runs the bottle to Mama",
+  "mode": "omni",
+  "durationSec": 10,
+  "quality": "720p",
+  "nativeAudio": true,
+  "expectedCredits": 90,
+  "subjects": ["Mama", "Sara"],
+  "scene": "beach-blanket",
+  "boundElements": [
+    { "tag": "Mama", "source": "library" },
+    { "tag": "Sara", "source": "library" },
+    { "tag": "beach-blanket", "source": "library" },
+    { "tag": "magic-bottle", "source": "library" }
+  ],
+  "prompt": "Mid-shot at the @beach-blanket setup — striped beach blanket on the dry sand with a sun umbrella, picnic cooler, and a magazine. @Mama already seated cross-legged on the blanket reading a magazine, sun hat on. @Sara already standing in front of her, breathless from running, ponytail tousled, holding the glowing @magic-bottle out in both hands toward Mama. Sara (out of breath, eyes shining): \"MOMMY! LOOK at this — it just WASHED UP!\" Mama (lowering her magazine, eyebrows raising as she sees the glow): \"Sweet pea, what is THAT?\" Sara (vibrating with energy, holding the bottle even higher): \"It's GINGER! GINGER from the magic forest! She wrote us a note!\"",
+  "negativePrompt": "duplicate character, twin, clone, two of the same, mirrored figure, second father, second mother, two Papa, two Mama, identical adults, extra people, third child, second sister, second sara, two sara, duplicate sara, mirror reflection, family members in the background, additional children, extra child in background, ghost figure, shadow of person, papa in this clip, eva in this clip, two bottles, multiple bottles, strangers on the beach, other beachgoers"
+}

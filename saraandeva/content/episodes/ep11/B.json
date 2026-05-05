@@ -1,0 +1,37 @@
+{
+  "episode": 11,
+  "beat": "music-video-B",
+  "clip": "B",
+  "title": "MUSIC VIDEO RENDER B — Papa+Sara+Eva sock-hop dance (apron flapping)",
+  "mode": "omni",
+  "durationSec": 10,
+  "quality": "720p",
+  "nativeAudio": true,
+  "expectedCredits": 90,
+  "subjects": ["Papa", "Sara", "Eva"],
+  "scene": "(designed cookout-celebration backdrop)",
+  "boundElements": [
+    { "tag": "Papa", "source": "library" },
+    { "tag": "Sara", "source": "library" },
+    { "tag": "Eva", "source": "library" },
+    { "tag": "papas-apron", "source": "library" }
+  ],
+  "reuseAsset": true,
+  "reuseAssetNote": "ONE 10s render, paired with Suno song 'World's Okayest Dad.mp3' via loopVideoWithSong.mjs to fill the 30s music block.",
+  "musicVideoBlock": true,
+  "loopExpansion": {
+    "iterations": 3,
+    "xfadeDuration": 0.3,
+    "outputDurationSec": 28.5
+  },
+  "usedUnderSongs": [
+    {
+      "song": "assets/music/World's Okayest Dad.mp3",
+      "blockDurationSec": 30,
+      "trimStart": 0,
+      "placementClipNumber": "15music"
+    }
+  ],
+  "prompt": "Wide front-facing music-video shot — designed soft pastel sunny-yellow / sky-blue gradient backdrop with a HUGE stylized cartoon GRILL on the LEFT puffing rhythmic happy smoke wisps in time, scattered cheerful CONFETTI shaped like tiny burgers, hot dogs, and red-and-white checker squares raining continuously down. NO scene, NO room, NO furniture, NO logos, NO real text. @Papa on the LEFT wearing @papas-apron with the printed text WORLD'S OKAYEST DAD clearly readable across his chest, English text only large clear printed Roman alphabet, NO foreign characters; @Sara CENTER and @Eva on the RIGHT, all three side-by-side beaming huge, bopping in rhythm. Papa hip-bops to the LEFT with a big proud dad-grin, hands flat at his sides snapping fingers on the off-beat. Sara claps over her head once, beaming. Eva claps over her head once, beaming. Papa hip-bops to the RIGHT. Sara does a little spin in place. Eva does a little spin in place. Papa points his thumbs proudly at his apron text twice in a row — pointer-pointer beat. All three pump their fists in the air on the big beat. Sara and Eva each do a tiny sock-hop kick. They all return to grinning side-by-side starting pose. Movements are RHYTHMIC and LOOPABLE — clean cycle: bop-left → claps → bop-right → spins → apron-points → fist-pumps → kicks → return. Camera locked, head-on, kid-eye-level. Bright cheerful party lighting. The three hum and sing along generically — no specific dialogue, no lip-sync to any words. The shot is designed to LOOP cleanly: all three return to the same starting pose at second 0 and second 10. Smoke wisps + burger-confetti continuously rain. No audible speech, no music — silent render.",
+  "negativePrompt": "duplicate character, twin, clone, two of the same, mirrored figure, second father, two Papa, identical adults, extra people, third child, second sister, second sara, second eva, two eva, duplicate eva, mirror reflection, family members, strangers, crowd, group of people, other faces, background people, friends, neighbors, mama in this clip, dog visible, joe visible, real grill brand, real burger brand, specific dialogue words, lip-sync to specific syllables, audible music, audible singing words, three arms, extra hand, anatomy error, Cyrillic, Chinese characters, garbled letters, scrambled letters, wrong text on apron, fourth person dancing"
+}

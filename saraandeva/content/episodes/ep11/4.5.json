@@ -1,0 +1,22 @@
+{
+  "episode": 11,
+  "beat": "4.5",
+  "clip": "4.5",
+  "title": "PARENT-ACTIVITY (15s) — Papa-tag-monster game with Sara and Eva",
+  "mode": "omni",
+  "durationSec": 15,
+  "quality": "720p",
+  "nativeAudio": true,
+  "expectedCredits": 135,
+  "subjects": ["Papa", "Sara", "Eva"],
+  "scene": "backyard",
+  "boundElements": [
+    { "tag": "Papa", "source": "library" },
+    { "tag": "Sara", "source": "library" },
+    { "tag": "Eva", "source": "library" },
+    { "tag": "backyard", "source": "library" },
+    { "tag": "papas-apron", "source": "library" }
+  ],
+  "prompt": "Wide cinematic playful shot in @backyard, green grass, leafy backyard tree, black iron fence, sunny golden-hour afternoon, soft cheerful kid-show comedy lighting. @Papa already CENTER-FRAME on hands and knees in the middle of the grass in goofy 'tag-monster' pose, wearing @papas-apron, big silly grin, fingers wiggling in the air playfully like a friendly cartoon monster. @Sara already on the LEFT side of the yard a few feet away in a low dodge stance, knees bent, both arms held wide for balance, mouth wide in a delighted giggle. @Eva already on the RIGHT side of the yard a few feet away in her own dodge stance, hands flapping with excitement, hair bouncing. (BEAT 1 — 0-5s) Papa wiggles his fingers and waggles his shoulders. Papa (booming silly tag-monster voice): \"GRRRR! The TAG-MONSTER is HUNGRY!\" Sara squeals delightedly and pivots in place. Eva bounces on her toes. Sara (giggling, one hand cupped beside her mouth): \"You can't catch us, Tag-Monster!\" (BEAT 2 — 5-10s) Papa LUNGES sideways toward the LEFT in slow comic slow-mo, arms still wide. Sara already PIVOTS and DUCKS to the right side, evading easily, laughing all the way. Eva dances in place on her side, clapping in delight. Papa lands on his palms in the grass with a goofy 'WOMP'. Papa (theatrically defeated, in the grass): \"NOOO! Too FAST for the Tag-Monster!\" (BEAT 3 — 10-15s) Papa hops back up onto knees, then LUNGES the OTHER way toward the RIGHT side. Eva already DUCKS and rolls onto the grass laughing, but Papa GENTLY taps her shoulder with one big fingertip. Eva (cheering on her back in the grass, grass-blade in her hair): \"GOTCHA back, Papa!\" Sara claps from her side and bounces. Papa (puffing out his chest in mock-victory): \"ONE Tag-Monster point!\" The three are giggling helplessly together. Cheerful, warm, kid-show energy throughout.",
+  "negativePrompt": "duplicate character, twin, clone, two of the same, mirrored figure, second father, two Papa, identical adults, extra people, third child, second sister, second sara, second eva, two eva, duplicate eva, mirror reflection, family members in the background, additional children, extra child in background, second blonde child, ghost figure, shadow of person, strangers, crowd, group of people, other faces, background people, friends, neighbors, mama in this clip, dog visible, joe visible, joe in frame, fourth character, fourth child, three arms, extra hand, anatomy error, papa screaming aggressively, papa angry shout, papa scary face, scary expression, frightening expression, intense yelling, papa actually catching kids violently, kid being grabbed, kid being pulled, kid being lifted forcefully, real monster, scary monster, ghost figure, shadow of a person, motion blur"
+}

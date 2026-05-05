@@ -1,0 +1,20 @@
+{
+  "episode": 11,
+  "beat": 8,
+  "clip": 7,
+  "title": "AUDIENCE-ASK — Papa returns to empty grill, asks the camera if he dreamed it",
+  "mode": "omni",
+  "durationSec": 10,
+  "quality": "720p",
+  "nativeAudio": true,
+  "expectedCredits": 90,
+  "subjects": ["Papa"],
+  "scene": "backyard-grill-area",
+  "boundElements": [
+    { "tag": "Papa", "source": "library" },
+    { "tag": "backyard-grill-area", "source": "library" },
+    { "tag": "papas-apron", "source": "library" }
+  ],
+  "prompt": "Medium shot of @backyard-grill-area, sunny afternoon. @Papa already CENTER-FRAME at the grill wearing @papas-apron, just returned from the house. The grill is COMPLETELY EMPTY — just a thin curl of dying smoke and bare grates. The picnic table behind him is also EMPTY of food. Papa stops dead in his tracks, blinks rapidly three times, looks at the empty grill, looks at the empty picnic table, looks back at the empty grill. He pats his apron pockets with both hands as if maybe the burgers are in there. He SLOWLY scratches the back of his head, deeply baffled, eyebrows knit. Then Papa turns to face the camera DIRECTLY, looks straight into the lens with a completely lost, baffled expression, palms open beside his head in confused-shrug position. Papa (to camera, totally bewildered, soft and sincere): \"Wait... wait wait wait. Did I cook anything today? Or did I... did I just DREAM the whole thing?\" He squints at the camera one more second, genuinely seeking guidance from the kid watching, then looks down at the empty grill and shakes his head muttering: \"I was SO sure. I felt the heat. I FLIPPED a patty. ...did I?\"",
+  "negativePrompt": "duplicate character, twin, clone, two of the same, mirrored figure, second father, two Papa, identical adults, extra people, third child, second sister, family members, additional children, ghost figure, shadow of person, strangers, crowd, group of people, other faces, background people, friends, neighbors, sara in this clip, eva in this clip, mama in this clip, dog visible, joe visible, food on the grill, food on the table, hot dog visible, hamburger visible, three arms, extra hand, anatomy error, papa not looking at camera"
+}

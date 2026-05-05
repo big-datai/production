@@ -1,0 +1,21 @@
+{
+  "episode": 12,
+  "beat": 5,
+  "clip": 5,
+  "title": "Stuck cap — Sara joins, both struggle",
+  "mode": "omni",
+  "durationSec": 10,
+  "quality": "720p",
+  "nativeAudio": true,
+  "expectedCredits": 90,
+  "subjects": ["Sara", "Eva"],
+  "scene": "beach-shore",
+  "boundElements": [
+    { "tag": "Sara", "source": "library" },
+    { "tag": "Eva", "source": "library" },
+    { "tag": "beach-shore", "source": "library" },
+    { "tag": "magic-bottle", "source": "library" }
+  ],
+  "prompt": "Mid-shot on @beach-shore at the wet tide line. @Eva already kneeling holding the @magic-bottle in both hands. @Sara already kneeling beside her in the wet sand, ponytail bouncing, both hands gripping the cork stopper of the bottle, tongue poking out in concentration as she twists hard. Sara (grunting playfully, tongue out): \"It's STUCK! Why is it so stuck?\" Eva (helping pull, both girls bracing against each other): \"Pull HARDER!\" The cork wobbles, the girls grimace dramatically, faces scrunched in determined effort. The bottle glows a tiny bit brighter as if reacting. Eva: \"It's GLOWING!\" Sara (twisting harder): \"One — two — THREE!\"",
+  "negativePrompt": "duplicate character, twin, clone, two of the same, mirrored figure, second father, second mother, two Papa, two Mama, identical adults, extra people, third child, second sister, second sara, second eva, two eva, duplicate eva, mirror reflection, family members in the background, additional children, extra child in background, ghost figure, shadow of person, strangers on the beach, crowd, group of people, other beachgoers, other families, papa in this clip, mama in this clip, two bottles, multiple bottles, identical bottles"
+}

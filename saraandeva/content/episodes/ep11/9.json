@@ -1,0 +1,21 @@
+{
+  "episode": 11,
+  "beat": 10,
+  "clip": 9,
+  "title": "Mama returns — confusion deepens",
+  "mode": "omni",
+  "durationSec": 10,
+  "quality": "720p",
+  "nativeAudio": true,
+  "expectedCredits": 90,
+  "subjects": ["Mama", "Papa"],
+  "scene": "backyard-grill-area",
+  "boundElements": [
+    { "tag": "Mama", "source": "library" },
+    { "tag": "Papa", "source": "library" },
+    { "tag": "backyard-grill-area", "source": "library" },
+    { "tag": "papas-apron", "source": "library" }
+  ],
+  "prompt": "Wide shot of @backyard-grill-area, sunny afternoon. @Papa already on the LEFT at the grill wearing @papas-apron, just finished setting up his SECOND round of fresh patties on the grates, light sizzle and smoke. @Mama already standing on the RIGHT side stepping out from the patio direction, drying her hands on a kitchen towel, hair pulled back, casual confused expression. She stops, looks at the brand-new patties cooking, looks at Papa, looks back at the patties. Mama (squinting, totally puzzled): \"...wait. Weren't you JUST out here? Cooking? Like five minutes ago?\" Papa pauses mid-flip, looks at her with an utterly lost, surrendering shrug, both palms open. Papa (helplessly, voice cracking a little): \"I... I think so? I genuinely don't know anymore. I think I dreamed it. The doctor warned me dad-brain peaks at thirty-eight.\" Mama tilts her head one second, hand pausing on the towel. Mama (suspicious, slow): \"...you didn't. Did you?\" Papa shrugs and just slowly flips a patty.",
+  "negativePrompt": "duplicate character, twin, clone, two of the same, mirrored figure, second father, second mother, two Papa, two Mama, identical adults, extra people, third child, second sister, family members in the background, additional children, extra child in background, ghost figure, shadow of person, strangers, crowd, group of people, other faces, background people, friends, neighbors, sara in this clip, eva in this clip, dog visible, joe visible, three arms, extra hand, anatomy error, second father in background, third adult"
+}

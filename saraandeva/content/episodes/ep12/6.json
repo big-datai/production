@@ -1,0 +1,22 @@
+{
+  "episode": 12,
+  "beat": 6,
+  "clip": 6,
+  "title": "Note inside! — bottle pops open",
+  "mode": "omni",
+  "durationSec": 10,
+  "quality": "720p",
+  "nativeAudio": true,
+  "expectedCredits": 90,
+  "subjects": ["Sara", "Eva"],
+  "scene": "beach-shore",
+  "boundElements": [
+    { "tag": "Sara", "source": "library" },
+    { "tag": "Eva", "source": "library" },
+    { "tag": "beach-shore", "source": "library" },
+    { "tag": "magic-bottle", "source": "library" },
+    { "tag": "rescue-note", "source": "library" }
+  ],
+  "prompt": "Tight close-up on @beach-shore tide line. @Sara already with both hands on the @magic-bottle, the cork POPS out with a soft *thwop* sound. A tiny rolled paper — the @rescue-note — slides out into Sara's open palm. Sara holds it up between her thumb and finger, eyes huge. @Eva already pressed in close beside her, mouth a small 'O' of wonder, both girls leaning in to look. The empty bottle still glows faintly. Sara (whispered awe): \"It... it's a NOTE.\" Eva (nose almost touching the paper): \"What does it SAY?\" Sara (carefully unrolling the tiny scroll between two fingers): \"Hold on, hold on...\" The paper unfurls to reveal handwritten lines.",
+  "negativePrompt": "duplicate character, twin, clone, two of the same, mirrored figure, second father, second mother, two Papa, two Mama, identical adults, extra people, third child, second sister, second sara, second eva, two eva, duplicate eva, mirror reflection, family members in the background, additional children, extra child in background, ghost figure, shadow of person, strangers on the beach, crowd, group of people, papa in this clip, mama in this clip, two bottles, multiple bottles, multiple notes, identical notes"
+}

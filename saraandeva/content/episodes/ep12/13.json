@@ -1,0 +1,22 @@
+{
+  "episode": 12,
+  "beat": 14,
+  "clip": 13,
+  "title": "PARENT-ACTIVITY (15s) — Papa+Sara+Eva sandcastle research base",
+  "mode": "omni",
+  "durationSec": 15,
+  "quality": "720p",
+  "nativeAudio": true,
+  "expectedCredits": 135,
+  "subjects": ["Papa", "Sara", "Eva"],
+  "scene": "beach-shore",
+  "boundElements": [
+    { "tag": "Papa", "source": "library" },
+    { "tag": "Sara", "source": "library" },
+    { "tag": "Eva", "source": "library" },
+    { "tag": "beach-shore", "source": "library" },
+    { "tag": "sandcastle-research-base", "source": "library" }
+  ],
+  "prompt": "Wide cinematic shot on @beach-shore — sunny dry sand, the developing @sandcastle-research-base mid-build. @Papa already on his knees in the sand on the LEFT shoveling sand into a bucket. @Sara already in the CENTER with a smaller bucket pouring sand on the wall. @Eva already on the RIGHT digging the moat with both hands. (BEAT 1 — 0-5s) Papa (sing-songy, scooping fast): \"Big walls comin' up!\" Sara (patting the wall with the back of her shovel): \"Smooth them down!\" Eva (digging with both hands flying): \"BIGGER moat, bigger MOAT!\" The three of them work in synchronized rhythm. (BEAT 2 — 5-10s) Eva fills her bucket with seawater, walks to Papa, then with comic seriousness pours the entire bucket of water OVER PAPA'S HEAD instead of into the moat. Papa freezes in shock, water dripping off his nose. Sara DIES laughing. Eva (deadpan, looking at her empty bucket): \"...wrong moat.\" Papa (theatrical comic gasp, wiping water off his face with both hands): \"OH IS THAT how it is?!\" (BEAT 3 — 10-15s) Papa grabs a small handful of sand and gently sprinkles it on Eva's head, all three burst into laughter. Together they plant a small twig at the top of the castle with a tiny rectangular paper flag reading 'RESCUE'. Sara, Eva, and Papa all stand back, sandy and sun-touched, looking at their finished base proudly. Eva (hands on hips, beaming): \"PHASE ONE — DONE!\"",
+  "negativePrompt": "duplicate character, twin, clone, two of the same, mirrored figure, second father, second mother, two Papa, two Mama, identical adults, extra people, third child, second sister, second sara, second eva, two eva, duplicate eva, mirror reflection, family members in the background, additional children, extra child in background, second blonde child, ghost figure, shadow of person, mama in this clip, strangers on the beach, other beachgoers, other families, multiple sandcastles, three arms, third arm, extra arm, anatomy error, water as red liquid, splash near face, splatter on face"
+}

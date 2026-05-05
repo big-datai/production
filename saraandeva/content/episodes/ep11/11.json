@@ -1,0 +1,19 @@
+{
+  "episode": 11,
+  "beat": 12,
+  "clip": 11,
+  "title": "Joe in the bush corner — hot dog in snout, ketchup-smeared face",
+  "mode": "omni",
+  "durationSec": 10,
+  "quality": "720p",
+  "nativeAudio": true,
+  "expectedCredits": 90,
+  "subjects": ["Joe"],
+  "scene": "backyard",
+  "boundElements": [
+    { "tag": "Joe", "source": "library" },
+    { "tag": "backyard", "source": "library" }
+  ],
+  "prompt": "Cheerful close-up shot in the corner of @backyard near the leafy bushes at the property edge, sunny afternoon. @Joe (small fluffy off-white Pomeranian, fox-like face, perky triangle ears, bushy curling tail) already CENTER-FRAME, lying half-tucked under the bushes amid scattered crumpled empty paper-wrappers and stray fluffy bun pieces, an entire grilled hot dog still hanging dramatically out of one corner of his mouth like a fat cigar. Joe's white fluffy chest fur is comically smeared with bright red ketchup streaks, ketchup also dotting his snout and one ear. Joe makes contented little munching motions, then ROLLS lazily onto his back in the grass, tossing the hot dog up an inch and catching it again in his mouth without dropping it, paws contentedly in the air. Joe (a tiny muffled satisfied burble around the hot dog): \"Mmmf. Mmmf hff.\" His tail wags slowly at the dirt. Joe (small content sigh, hot dog still in mouth): \"Mmmrf — best Saturday EVER.\" Bird chirps softly in the background.",
+  "negativePrompt": "duplicate character, twin, clone, two of the same, mirrored figure, duplicate dog, second dog, two pomeranians, second pomeranian, identical dogs, extra dogs, ghost dog, mirror reflection, family members, strangers, crowd, group of people, other faces, background people, friends, neighbors, sara in this clip, eva in this clip, mama in this clip, papa in this clip, kids in this clip, adults in this clip, three arms, extra hand, anatomy error, dog talks like a human, anthropomorphic dog standing on hind legs, dog with full human teeth"
+}

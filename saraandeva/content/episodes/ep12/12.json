@@ -1,0 +1,21 @@
+{
+  "episode": 12,
+  "beat": 13,
+  "clip": 12,
+  "title": "Papa: RESEARCH BASE!",
+  "mode": "omni",
+  "durationSec": 10,
+  "quality": "720p",
+  "nativeAudio": true,
+  "expectedCredits": 90,
+  "subjects": ["Papa", "Sara", "Eva"],
+  "scene": "beach-shore",
+  "boundElements": [
+    { "tag": "Papa", "source": "library" },
+    { "tag": "Sara", "source": "library" },
+    { "tag": "Eva", "source": "library" },
+    { "tag": "beach-shore", "source": "library" }
+  ],
+  "prompt": "Wide mid-shot on the dry sand of @beach-shore. @Papa already crouched on one knee on the sand with @Sara on his LEFT and @Eva on his RIGHT, both kids leaning in close. Papa is gesturing with both arms wide like he's drawing a giant invisible castle in the air. Papa (eyes lit up, theatrical hand gestures): \"You know what every rescue mission needs? A RE-SEARCH. BASE!\" Sara (eyes huge, mouth agape): \"Like a CASTLE?\" Eva (jumping up and down on her knees): \"With TURRETS?!\" Papa (grabbing a yellow plastic bucket and a red shovel from the sand): \"With turrets, a MOAT, and a flag on top! Let's BUILD!\" The two girls cheer in unison.",
+  "negativePrompt": "duplicate character, twin, clone, two of the same, mirrored figure, second father, second mother, two Papa, two Mama, identical adults, extra people, third child, second sister, second sara, second eva, two eva, duplicate eva, mirror reflection, family members in the background, additional children, extra child in background, second blonde child, ghost figure, shadow of person, mama in this clip, strangers on the beach, other beachgoers, other families"
+}

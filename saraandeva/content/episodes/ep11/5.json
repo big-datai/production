@@ -1,0 +1,20 @@
+{
+  "episode": 11,
+  "beat": 5,
+  "clip": 5,
+  "title": "Mama (offscreen) — 'doorbell!' — Papa exits",
+  "mode": "omni",
+  "durationSec": 10,
+  "quality": "720p",
+  "nativeAudio": true,
+  "expectedCredits": 90,
+  "subjects": ["Papa"],
+  "scene": "backyard-grill-area",
+  "boundElements": [
+    { "tag": "Papa", "source": "library" },
+    { "tag": "backyard-grill-area", "source": "library" },
+    { "tag": "papas-apron", "source": "library" }
+  ],
+  "prompt": "Medium shot of @backyard-grill-area, sunny afternoon. @Papa already CENTER-FRAME at the grill wearing @papas-apron, spatula in hand, three plump hot dogs and four juicy hamburger patties sizzling beautifully on the grates with golden grill-marks, light steam wisps. Mama's voice carries clearly from inside the house, off-screen: Mama (offscreen, calling): \"Honey! The doorbell — can you grab it? My hands are full!\" Papa pauses, blinks at his beautiful sizzling food, then sighs theatrically and sets the spatula down on the grill's side shelf. He points a stern dad-finger directly DOWN at the grill, addressing his food like it might run off. Papa (firm dad voice, totally serious): \"You — burgers. You — hot dogs. STAY. PUT. Papa will be RIGHT back. Don't go anywhere fancy.\" He turns and jogs out of frame to the LEFT toward the house. Empty backyard with sizzling food and a faint birdsong holds for the last beat.",
+  "negativePrompt": "duplicate character, twin, clone, two of the same, mirrored figure, second father, two Papa, identical adults, extra people, third child, second sister, family members in the background, additional children, ghost figure, shadow of person, strangers, crowd, group of people, other faces, background people, friends, neighbors, sara in this clip, eva in this clip, mama visible on screen, mama walking into frame, dog visible, joe visible, three arms, extra hand, anatomy error"
+}

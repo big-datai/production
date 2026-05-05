@@ -54,6 +54,7 @@ If the user provides a paragraph-length story idea, treat that as the spec input
 1. Read context — `locationCatalog.yaml`, latest episode JSON as format reference, key memory files
 2. Identify cast / scenes / NEW bound elements from the prompt
 3. Apply the audience-retention rules (hook, curiosity gaps, emotional pivot, parent-activity scene at 15s, cliffhanger)
+3.5. **Bake in 2-4 fourth-wall audience-engagement beats** — direct-to-camera "ask the kid" questions placed at story-beat boundaries. The kid watching should be invited to ANSWER OUT LOUD ("Did YOU see where the burgers went?", "What should we make tomorrow?"). The final cliffhanger MUST be a camera-ask. (memory: `lesson_fourth_wall_audience_engagement.md`)
 4. Plan music-video loop blocks (1-2 per episode, decimal slots like 4.5/12.5/18.5)
 5. Draft the arc (8-11 beats, 1-3 clips per beat)
 6. Write `episode.json`
@@ -109,7 +110,16 @@ Use the canonical structure (see ep10's `Kick the Ball.md` / `Pink Tree Whisper.
 
 ## 🛑 USER HANDOFF #1 — Manual upload + Suno generation
 
-Print a single-block hand-off message to the user. List exactly:
+**FIRST — auto-open Suno + every lyric file** (memory: `feedback_auto_open_suno.md` — user flagged 2026-05-04). Run BEFORE printing the chat message so they pop up while user is still reading:
+
+```bash
+open "https://suno.com/create"
+for md in saraandeva/assets/music/lyrics/<Song1>.md saraandeva/assets/music/lyrics/<Song2>.md; do
+  open -t "$md"
+done
+```
+
+THEN print a single-block hand-off message to the user. List exactly:
 
 1. **PNGs to upload to Kling library** (each named with HYPHENS, lowercase to match spec tags):
    ```
@@ -118,7 +128,7 @@ Print a single-block hand-off message to the user. List exactly:
    • ...
    ```
 
-2. **Suno lyrics to paste + generate**:
+2. **Suno lyrics to paste + generate** (already opened in editor + suno.com/create open in browser):
    ```
    • Kick the Ball         ← assets/music/lyrics/Kick the Ball.md
    • Pink Tree Whisper     ← assets/music/lyrics/Pink Tree Whisper.md

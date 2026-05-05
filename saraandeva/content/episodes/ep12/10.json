@@ -1,0 +1,21 @@
+{
+  "episode": 12,
+  "beat": 10,
+  "clip": 10,
+  "title": "Eva runs the note to Papa",
+  "mode": "omni",
+  "durationSec": 10,
+  "quality": "720p",
+  "nativeAudio": true,
+  "expectedCredits": 90,
+  "subjects": ["Papa", "Eva"],
+  "scene": "beach-shore",
+  "boundElements": [
+    { "tag": "Papa", "source": "library" },
+    { "tag": "Eva", "source": "library" },
+    { "tag": "beach-shore", "source": "library" },
+    { "tag": "rescue-note", "source": "library" }
+  ],
+  "prompt": "Mid-shot at the surf line on @beach-shore. @Papa already standing ankle-deep in the gentle surf, hands on his hips, looking out at the horizon. @Eva already mid-stride a few feet from Papa on the dry sand, holding the unrolled @rescue-note up over her head with both hands like a victory flag, curly blonde hair flying. Eva (yelling joyfully): \"DADDY! GINGER NEEDS US!\" Papa (turning, surprised, kneeling down to her level as she stops in front of him): \"Whoa whoa, slow down, sweet pea — what's this?\" Eva (panting, holding the note up to his face): \"She's STUCK on an ISLAND! READ IT, Daddy, READ IT!\" Papa takes the note carefully, eyebrows shooting up.",
+  "negativePrompt": "duplicate character, twin, clone, two of the same, mirrored figure, second father, second mother, two Papa, two Mama, identical adults, extra people, third child, second sister, second sara, second eva, two eva, duplicate eva, mirror reflection, family members in the background, additional children, extra child in background, ghost figure, shadow of person, sara in this clip, mama in this clip, multiple notes, surfers, swimmers, other beachgoers"
+}

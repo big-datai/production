@@ -1,0 +1,35 @@
+{
+  "episode": 12,
+  "beat": "music-video-C",
+  "clip": "C",
+  "title": "MUSIC VIDEO RENDER C — Sara+Eva Tomorrow's Adventure twilight duo",
+  "mode": "omni",
+  "durationSec": 10,
+  "quality": "720p",
+  "nativeAudio": true,
+  "expectedCredits": 90,
+  "subjects": ["Sara", "Eva"],
+  "scene": "(designed sunset-gradient backdrop)",
+  "boundElements": [
+    { "tag": "Sara", "source": "library" },
+    { "tag": "Eva", "source": "library" }
+  ],
+  "reuseAsset": true,
+  "reuseAssetNote": "ONE 10s render, paired with Suno song 'Tomorrows Adventure.mp3' via loopVideoWithSong.mjs to fill the 60s music block.",
+  "musicVideoBlock": true,
+  "loopExpansion": {
+    "iterations": 6,
+    "xfadeDuration": 0.3,
+    "outputDurationSec": 58
+  },
+  "usedUnderSongs": [
+    {
+      "song": "assets/music/Tomorrows Adventure.mp3",
+      "blockDurationSec": 60,
+      "trimStart": 0,
+      "placementClipNumber": "17music"
+    }
+  ],
+  "prompt": "Wide front-facing music-video shot — designed sunset gradient backdrop. SKY: deep coral pink at the top fading down through orange, gold, and finally a soft lavender-blue at the bottom, with tiny twinkling stars beginning to appear at the top edge. GROUND: stylized silhouette dune line at the bottom of the frame. NO real beach, NO real horizon, NO scene clutter, NO logos. @Sara on the LEFT and @Eva on the RIGHT stand side-by-side facing the camera, both grinning warmly in the golden-hour glow. Sara holds a closed notebook in both hands. Eva holds a tiny battery flashlight pointing upward and slowly turning on / off in rhythm. STRICT ANATOMY: each girl has EXACTLY 2 arms, EXACTLY 2 hands — both hands always holding their notebook / flashlight prop. They perform a gentle dreamy duo loop — LOWER BODY + HEAD only since hands are occupied: gentle hip-sway right, gentle hip-sway left, knees bend slightly, head bobs softly side-to-side, both girls take a small step toward each other and lean in, then step back. As they sway, more tiny stars appear in the gradient sky behind them. Movements are RHYTHMIC and LOOPABLE — clean cycle: sway → sway → step-in-lean → step-back → return. Camera locked, head-on, kid-eye-level. Soft warm sunset rim-light from the right. Sara and Eva hum and sing along generically — no specific dialogue, no lip-sync to any words. The shot is designed to LOOP cleanly. No audible speech, no music — silent render.",
+  "negativePrompt": "duplicate character, twin, clone, two of the same, mirrored figure, second father, second mother, two Papa, two Mama, identical adults, extra people, third child, second sister, second sara, second eva, two eva, duplicate eva, mirror reflection, family members, strangers, crowd, group of people, other faces, background people, friends, neighbors, three arms, third arm, extra arm, extra hand, floating hand, anatomy error, specific dialogue words, lip-sync to specific syllables, audible music, audible singing words, real beach photo realism, real horizon, multiple notebooks, multiple flashlights"
+}

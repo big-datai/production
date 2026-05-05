@@ -1,0 +1,1003 @@
+{
+  "episode": 11,
+  "title": "Sara, Eva & The Great Backyard Burger Heist!",
+  "logline": "Papa fires up the grill on a sunny Saturday in his 'WORLD'S OKAYEST DAD' apron. Sara helps with buns, Eva carries ketchup-packets like a tiny waitress. The instant Papa steps inside to answer the doorbell, Joe (the Pomeranian) pulls off the slowest, most magnificent slow-motion food heist in dog history — and Papa returns convinced he must have DAYDREAMED the whole cookout. The girls (and the kid watching) know exactly where the burgers went. Cliffhanger: Joe locks eyes with the camera while Papa fires up grill round 3. What's tomorrow's meal? PANCAKES?!",
+  "formulaReference": "Bluey-style 'family chaos comedy + dog-thief gag' — confident-Papa setup → fourth-wall conspiracy with viewer (kids see what Papa doesn't) → slow-mo musical heist centerpiece → gaslit-Papa confusion → girls-as-witnesses reveal → physical-comedy outburst → reconciliation → cliffhanger that sets up ep12 (pancakes). Sequel-tier callback to ep04 'Joe's Secret Stash' (channel #1 hero @ 16.8k views, 2× next).",
+  "mode": "omni",
+  "durationTotal": "~5:11 (14 normal × 10s = 140s + 2 × 15s = 30s + A 60s + B 30s + intro 31s + outro 20s)",
+  "expectedCreditsTotal": 1710,
+  "expectedCreditsBreakdown": "14 normal clips × 90 cr = 1260 + 2 parent-activity 15s clips × 135 cr = 270 + 2 render specs (A,B) × 90 cr = 180 → 1710 cr base; +25% buffer ≈ 2138 cr realistic ceiling. Comfortably under 2200 abort threshold.",
+  "newBoundElements": [
+    {
+      "tag": "backyard-grill-area",
+      "source": "library",
+      "asset": "assets/scenes/backyard_grill_area.png",
+      "purpose": "Backyard staged for cookout — black gas grill + red-and-white checkered picnic table + condiments + bushes Joe hides in. Used in clips 1, 2, 3, 4, 5, 6, 7, 8, 9, 13, 14, 16."
+    },
+    {
+      "tag": "papas-apron",
+      "source": "library",
+      "asset": "assets/scenes/papas_apron.png",
+      "purpose": "Charcoal-grey 'WORLD'S OKAYEST DAD' apron with cartoon dad-mustache chef icon. Worn by Papa in clips 1, 2, 4, 5, 7, 8, 9, 13, 14, 15. Text-prop — apply English-text-anchor in every prompt; if rendered text drifts, post-process clip 1 close-up via ffmpeg + Pillow text overlay (memory rule #17/18)."
+    },
+    {
+      "tag": "burger-platter",
+      "source": "library",
+      "asset": "assets/scenes/burger_platter.png",
+      "purpose": "Round ceramic platter with 3 hot dogs + 4 burger patties (cooked, grill-marked). Used in clips 6 (full, on table), 13 (graveyard around Joe — empty wrappers and crumbs implied)."
+    }
+  ],
+  "reusedBoundElements": [
+    "Sara, Eva, Mama, Papa, Joe — character avatars",
+    "backyard — clips 10 (girls in grass laughing), 11 (Joe in bush corner), 15 (parent-activity tackle-hug in grass)"
+  ],
+  "scenes": [
+    "backyard",
+    "backyard-grill-area"
+  ],
+  "cast": [
+    "Sara",
+    "Eva",
+    "Mama",
+    "Papa",
+    "Joe"
+  ],
+  "reuse": {
+    "intro": {
+      "source": "season_01/intro/",
+      "clips": [
+        "intro_song.mp4"
+      ],
+      "totalDuration": "~31s",
+      "playOrder": "Theme song"
+    },
+    "outro": {
+      "source": "season_01/OUTRO/",
+      "clips": [
+        "17.mp4",
+        "18.mp4",
+        "0_song.mp4"
+      ],
+      "totalDuration": "~20s",
+      "note": "0_song.mp4 sorts last via parseInt-Infinity hack — keep (memory rule #23)"
+    }
+  },
+  "music": {
+    "policy": "ALL music is Suno — Kling renders dialogue + ambient ONLY. No music phrases inside any clip prompt (memory rule #24).",
+    "musicVideoBlocks": [
+      {
+        "blockId": "6music",
+        "song": "assets/music/Slow-Mo Burger Heist.mp3",
+        "trimStart": 0,
+        "blockDurationSec": 20,
+        "render": "A",
+        "renderSpec": "content/episodes/ep11/A.json",
+        "placement": "between clip 6 (Joe creeps out of bush, eyes locked on grill) and clip 7 (Papa returns confused) — Joe's slow-motion heist set to dramatic surf-rock heist music. Trimmed to 20s post-ep11 review (was 60s, user said too long).",
+        "mood": "Comically epic slow-motion crime — bass-heavy surf-rock with jazz-flute flourishes, the canine equivalent of an Ocean's Eleven montage"
+      },
+      {
+        "blockId": "15music",
+        "song": "assets/music/World's Okayest Dad.mp3",
+        "trimStart": 0,
+        "blockDurationSec": 30,
+        "render": "B",
+        "renderSpec": "content/episodes/ep11/B.json",
+        "placement": "between clip 15 (parent-activity tackle-hug in grass) and clip 16 (cliffhanger) — Papa-Sara-Eva sock-hop celebration around the grill, apron flapping",
+        "mood": "Goofy dad-rock celebration — upbeat 50s rock-and-roll, hand-claps, cheerful brass, kids cheering 'GO PAPA GO!'"
+      }
+    ],
+    "renders": {
+      "A": "content/episodes/ep11/A.json — Joe solo slow-mo heist, designed-grill backdrop, 60s loop. Joe is the SOLO STAR of this music video.",
+      "B": "content/episodes/ep11/B.json — Sara+Eva+Papa trio dance, designed-cookout backdrop with apron + grill smoke, 30s loop"
+    },
+    "mixRecipe": "[1:a]atrim=start=X:duration=N,asetpts=PTS-STARTPTS,volume=0.30[bg]; [0:a]volume=1.4[fg]; [fg][bg]amix=inputs=2:duration=first:dropout_transition=0[a]",
+    "loopRecipe": "node loopVideoWithSong.mjs <render>.mp4 <song>.mp3 <Nmusic>.mp4 --duration=N"
+  },
+  "arc": [
+    {
+      "beat": 1,
+      "name": "HOOK — Apron close-up + grill ignition",
+      "purpose": "Establishes Saturday-cookout premise + 'WORLD'S OKAYEST DAD' joke. Papa's confidence sets up his fall.",
+      "clips": [
+        1
+      ]
+    },
+    {
+      "beat": 2,
+      "name": "Sara helps with buns",
+      "purpose": "Sara lining up burger buns on the picnic table — domestic helper beat.",
+      "clips": [
+        2
+      ]
+    },
+    {
+      "beat": 3,
+      "name": "Eva — tiny waitress with ketchup packets",
+      "purpose": "Eva carries a bowl of ketchup-packets out, total tiny-waitress confidence. Comic gold.",
+      "clips": [
+        3
+      ]
+    },
+    {
+      "beat": 4,
+      "name": "PARENT-ACTIVITY 1 (15s) — Patty-flip lesson",
+      "purpose": "Papa shows Sara, then Eva, how to flip ONE patty each on the grill. 3-beat structure. (memory: lesson_papa_play_scene_per_episode.md — Papa-active-cooking-with-girls hybrid)",
+      "clips": [
+        4
+      ]
+    },
+    {
+      "beat": 5,
+      "name": "Mama (offscreen): doorbell — Papa exits",
+      "purpose": "Mama's voice from inside calls Papa to the door. He sets down spatula and jogs in.",
+      "clips": [
+        5
+      ]
+    },
+    {
+      "beat": 6,
+      "name": "AUDIENCE-ASK + Joe creeps out",
+      "purpose": "Empty grill-area beat. JOE the Pomeranian creeps out from behind the bushes, eyes locked on the burger-platter. He gives the camera a tiny conspiratorial look (silent fourth-wall acknowledgment).",
+      "clips": [
+        6
+      ]
+    },
+    {
+      "beat": 7,
+      "name": "🎵 MUSIC VIDEO A — Slow-Mo Burger Heist (60s)",
+      "purpose": "Joe's full slow-motion heist set to surf-rock. The comedic centerpiece. Render A under 'Slow-Mo Burger Heist' — Joe solo.",
+      "clips": [
+        "A→6music"
+      ]
+    },
+    {
+      "beat": 8,
+      "name": "AUDIENCE-ASK — Papa returns confused",
+      "purpose": "Papa returns to empty grill + empty plates. Stares confused. Looks DIRECTLY at camera, baffled: 'Did I cook anything today? Or did I just DREAM the whole thing?' Top-tier engagement beat.",
+      "clips": [
+        7
+      ]
+    },
+    {
+      "beat": 9,
+      "name": "Papa starts new round of patties",
+      "purpose": "Papa scratches head, mutters about losing his mind, slaps a fresh round of patties on the grill.",
+      "clips": [
+        8
+      ]
+    },
+    {
+      "beat": 10,
+      "name": "Mama returns — confusion deepens",
+      "purpose": "Mama walks back out, sees Papa cooking AGAIN, confused: '...weren't you just here?' Papa shrugs helplessly.",
+      "clips": [
+        9
+      ]
+    },
+    {
+      "beat": 11,
+      "name": "AUDIENCE-ASK — Cut to girls collapsed laughing",
+      "purpose": "Sara + Eva collapsed in grass dying laughing, hands on tummies. Sara turns to camera: 'Kids — did YOU see where the FIRST burgers went?!' Massive curiosity-gap payoff (audience knows, Papa doesn't).",
+      "clips": [
+        10
+      ]
+    },
+    {
+      "beat": 12,
+      "name": "Joe in the bush corner — evidence!",
+      "purpose": "Joe in the corner of the yard, hot dog hanging from his snout, ketchup smeared all over his fluffy face. Reveal of where the burgers went.",
+      "clips": [
+        11
+      ]
+    },
+    {
+      "beat": 13,
+      "name": "AUDIENCE-ASK — Eva: should we tell Papa?",
+      "purpose": "Eva pops up in grass, finger to her lips, looking at camera with naughty grin: 'Should we tell Papa?' (beat — Sara nods solemnly) Eva (yells): 'PAPA — LOOK!'",
+      "clips": [
+        12
+      ]
+    },
+    {
+      "beat": 14,
+      "name": "Papa sees the burger graveyard",
+      "purpose": "Papa turns at Eva's yell, follows her pointing finger, JAW DROPS as he spots Joe and the empty platter / empty wrappers. Apoplectic recognition.",
+      "clips": [
+        13
+      ]
+    },
+    {
+      "beat": 15,
+      "name": "JOOOOE! — mmf?",
+      "purpose": "Papa: 'JOOOOE!' Joe (mouth full of hot dog, innocent eyes): 'mmf?'",
+      "clips": [
+        14
+      ]
+    },
+    {
+      "beat": 16,
+      "name": "PARENT-ACTIVITY 2 (15s) — Lunge, slip, tackle-hug",
+      "purpose": "Papa lunges (off-frame at Joe), slips on a ketchup-packet, face-plants in the grass with theatrical 'ARGH!', Sara + Eva pile-tackle-hug Papa giggling. 3-beat structure. (Joe NOT bound here — clip is 3-foreground-char to avoid ghost trap.)",
+      "clips": [
+        15
+      ]
+    },
+    {
+      "beat": 17,
+      "name": "🎵 MUSIC VIDEO B — World's Okayest Dad (30s)",
+      "purpose": "Render B under 'World's Okayest Dad' — Sara+Eva+Papa sock-hop trio dance celebration around the grill.",
+      "clips": [
+        "B→15music"
+      ]
+    },
+    {
+      "beat": 18,
+      "name": "CLIFFHANGER + AUDIENCE-ASK — Pancakes?!",
+      "purpose": "Papa fires up grill round 3, ONE eye locked on Joe behind the bush. Joe calmly licks his lips, makes EYE CONTACT with camera. Eva turns to camera: 'What do YOU think Papa should make tomorrow?' Sara whispers: '...PANCAKES?!' Direct setup for ep12 (Mama's pancake morning — already in backlog). Cut to black.",
+      "clips": [
+        16
+      ]
+    },
+    {
+      "beat": 19,
+      "name": "OUTRO (reused)",
+      "purpose": "Subscribe pair from season_01/OUTRO/ — 17.mp4 → 18.mp4 → 0_song.mp4 last.",
+      "clips": [
+        "reused"
+      ]
+    }
+  ],
+  "audienceEngagement": {
+    "rule": "memory: lesson_fourth_wall_audience_engagement.md — 2-4 fourth-wall direct-to-camera 'ask the kid' beats per episode; final cliffhanger MUST be a camera-ask",
+    "beats": [
+      {
+        "clip": 6,
+        "type": "silent-look",
+        "character": "Joe",
+        "framing": "Joe glances at camera with conspiratorial sparkle in eye before stealing food — non-verbal fourth-wall break"
+      },
+      {
+        "clip": 7,
+        "type": "question",
+        "character": "Papa",
+        "line": "Did I cook anything today? Or did I just DREAM the whole thing?"
+      },
+      {
+        "clip": 10,
+        "type": "question",
+        "character": "Sara",
+        "line": "Kids — did YOU see where the FIRST burgers went?!"
+      },
+      {
+        "clip": 12,
+        "type": "question",
+        "character": "Eva",
+        "line": "Should we tell Papa?"
+      },
+      {
+        "clip": 16,
+        "type": "cliffhanger-question",
+        "character": "Eva",
+        "line": "What do YOU think Papa should make tomorrow?"
+      }
+    ],
+    "totalQuestions": 4,
+    "cap": 4,
+    "withinCap": true
+  },
+  "rules": {
+    "maxBoundPerClip": 7,
+    "maxTagMentionsPerCharacter": 1,
+    "klingPromptMustNotContain": [
+      "music sting",
+      "music swell",
+      "tender swell",
+      "cheerful music",
+      "comedic music",
+      "playful music",
+      "heartfelt music",
+      "music cue",
+      "score swell",
+      "background music"
+    ],
+    "klingPromptMustNotContainReason": "All music is Suno-mixed in assemble (memory rule #24).",
+    "motionTowardForbidden": "No 'walks in/toward', 'approaches', 'moves to(ward)', 'heads to/in', 'walks up' — these spawn duplicates when another character is anchored. Use static placement only. (memory: lesson_kling_motion_verbs_duplicate.md)",
+    "max3ForegroundChars": "Hard cap 3 foreground-anchored characters per clip. ALL ep11 clips comply — clip 4 (Papa+Sara+Eva = 3), clip 15 (Papa+Sara+Eva = 3, Joe NOT bound here), clip 13/14 (Papa+Joe = 2, even with platter visible).",
+    "negativePromptRequired": "duplicate character, twin, clone, two of the same, mirrored figure, second father, second mother, two Papa, two Mama, identical adults, extra people, third child, second sister, second sara, second eva, two eva, duplicate eva, duplicate dog, second dog, two pomeranians, mirror reflection, family members in the background, additional children, extra child in background, second blonde child, ghost figure, shadow of person, three arms, extra hand, anatomy error",
+    "characterNamesInDialogue": "Drop the bound character's name from other characters' dialogue (memory: rule from ep01). Note: 'PAPA — LOOK!' (Eva yelling) and 'JOOOOE!' (Papa yelling) are exceptions — both names refer to the FOREGROUND-anchored characters in those clips, not absent ones, so the duplicate-char trigger doesn't apply.",
+    "audienceEngagementMin": "≥2 fourth-wall direct-to-camera 'ask the kid' beats per episode (final cliffhanger is one). ep11 ships 4 question-beats + 1 silent Joe-wink. memory: lesson_fourth_wall_audience_engagement.md",
+    "textPropPostProcess": "Apron text 'WORLD'S OKAYEST DAD' relies on Kling's best-effort with English-text-anchor language. If clip 1 (apron close-up) renders garbled text, ffmpeg+Pillow overlay using the canonical papas_apron.png frame (memory rule #17/18, lesson_episode_thumbnail_recipe.md technique).",
+    "joeIsCanonicalChar": "Joe = the family Pomeranian. Bound character in Kling library (joe_front.png/joe_3q.png/joe_profile.png/joe_sheet.png). Continuity callback to ep04 'Joe's Secret Stash' (channel #1 hero, 16.8k views)."
+  },
+  "clips": [
+    {
+      "episode": 11,
+      "beat": 1,
+      "clip": 1,
+      "title": "HOOK — Apron close-up + grill ignition",
+      "mode": "omni",
+      "durationSec": 10,
+      "quality": "720p",
+      "nativeAudio": true,
+      "expectedCredits": 90,
+      "subjects": [
+        "Papa"
+      ],
+      "scene": "backyard-grill-area",
+      "boundElements": [
+        {
+          "tag": "Papa",
+          "source": "library"
+        },
+        {
+          "tag": "backyard-grill-area",
+          "source": "library"
+        },
+        {
+          "tag": "papas-apron",
+          "source": "library"
+        }
+      ],
+      "prompt": "Sunny Saturday afternoon medium-close shot in @backyard-grill-area, golden-hour light, faint heat-shimmer rising from the grill. @Papa stands CENTER-FRAME at the grill, just finishing tying the waist strings of @papas-apron behind his back, then proudly smooths the front of the apron flat across his chest so the printed text reads loud and clear toward the camera: WORLD'S OKAYEST DAD. The apron's cartoon dad-mustache chef icon and the printed letters are all clearly readable, English text only, large clear printed Roman alphabet, NO foreign characters. Papa grins huge, picks up a metal spatula from the grill's side hook, and waggles it cheerfully. He flips a perfectly-formed hamburger patty on the hot grates with a satisfying *sizzle* and a small puff of cheerful steam. Papa (booming, proud chef energy): \"Saturday burgers — DAD MODE: ENGAGED!\" He hums tunelessly, deeply satisfied with himself.",
+      "negativePrompt": "duplicate character, twin, clone, two of the same, mirrored figure, second father, two Papa, identical adults, extra people, third child, second sister, family members in the background, additional children, extra child in background, ghost figure, shadow of person, strangers, crowd, group of people, other faces, background people, friends, neighbors, kids in this clip, mama in this clip, dog in this clip, joe in this clip, Cyrillic, Chinese characters, Korean, Japanese, Arabic, garbled letters, misspelled, scrambled letters, wrong text, three arms, extra hand, anatomy error"
+    },
+    {
+      "episode": 11,
+      "beat": 2,
+      "clip": 2,
+      "title": "Sara helps line up the burger buns on the picnic table",
+      "mode": "omni",
+      "durationSec": 10,
+      "quality": "720p",
+      "nativeAudio": true,
+      "expectedCredits": 90,
+      "subjects": [
+        "Sara",
+        "Papa"
+      ],
+      "scene": "backyard-grill-area",
+      "boundElements": [
+        {
+          "tag": "Sara",
+          "source": "library"
+        },
+        {
+          "tag": "Papa",
+          "source": "library"
+        },
+        {
+          "tag": "backyard-grill-area",
+          "source": "library"
+        },
+        {
+          "tag": "papas-apron",
+          "source": "library"
+        }
+      ],
+      "prompt": "Wide cheerful shot of @backyard-grill-area in golden-hour light. @Papa already on the LEFT side at the hot grill wearing @papas-apron, flipping a hamburger patty with the spatula, faint smoke wisps rising. @Sara already standing on the RIGHT side at the red-and-white checkered picnic table, hair in cheerful pigtails, carefully lining up fluffy round burger buns one-by-one in a neat row with intense five-year-old concentration, tongue poking out the corner of her mouth. Sara (proudly to herself): \"Bun. Bun. Bun. Bun. PERFECT row of buns.\" Papa (calling over from the grill, grinning): \"My sous-chef! Captain of the Bun Squad!\" Sara (puffing up her chest, hands on hips for two seconds): \"Captain of the BUN SQUAD, reporting for duty!\" She giggles and goes right back to bun-lining.",
+      "negativePrompt": "duplicate character, twin, clone, two of the same, mirrored figure, second father, second mother, two Papa, two Mama, identical adults, extra people, third child, second sister, second sara, second eva, two eva, duplicate eva, mirror reflection, family members in the background, additional children, extra child in background, ghost figure, shadow of person, strangers, crowd, group of people, other faces, background people, friends, neighbors, eva in this clip, mama in this clip, dog in this clip, joe in this clip, Cyrillic, Chinese characters, garbled letters, scrambled letters, three arms, extra hand, anatomy error"
+    },
+    {
+      "episode": 11,
+      "beat": 3,
+      "clip": 3,
+      "title": "Eva — tiny waitress with a bowl of ketchup packets",
+      "mode": "omni",
+      "durationSec": 10,
+      "quality": "720p",
+      "nativeAudio": true,
+      "expectedCredits": 90,
+      "subjects": [
+        "Eva"
+      ],
+      "scene": "backyard-grill-area",
+      "boundElements": [
+        {
+          "tag": "Eva",
+          "source": "library"
+        },
+        {
+          "tag": "backyard-grill-area",
+          "source": "library"
+        }
+      ],
+      "prompt": "Cheerful low-angle medium shot in @backyard-grill-area, sunny afternoon. @Eva already standing CENTER-FRAME on the grass next to the picnic table, curly blonde hair with rainbow bow, wearing a small kid's polka-dot sundress, holding a bright white plastic BOWL with both hands carefully balanced in front of her, the bowl piled high with little red and white ketchup packets. Eva walks with intense five-year-old waitress importance — taking tiny careful steps in place to keep the bowl level — chin up, shoulders back, eyes super-serious. Eva (in her best fancy-restaurant voice): \"One bowl of KEH-CHOOP for the BUR-GER guests, please!\" She bows her head once formally, lifts the bowl with a tiny dramatic flourish, then cracks up giggling at her own joke and bobs her shoulders. Eva (grinning, sing-song): \"I'm the FANCIEST waitress in the WHOLE backyard!\"",
+      "negativePrompt": "duplicate character, twin, clone, two of the same, mirrored figure, second sister, second eva, two eva, duplicate eva, mirror reflection, family members, strangers, crowd, group of people, other faces, background people, friends, neighbors, sara in this clip, papa in this clip, mama in this clip, dog in this clip, joe in this clip, additional children, extra child, second blonde child, ghost figure, shadow of person, three arms, extra hand, anatomy error, bowl levitating, hands free of bowl"
+    },
+    {
+      "episode": 11,
+      "beat": 4,
+      "clip": 4,
+      "title": "PARENT-ACTIVITY (15s) — Papa teaches Sara and Eva to flip ONE patty each",
+      "mode": "omni",
+      "durationSec": 15,
+      "quality": "720p",
+      "nativeAudio": true,
+      "expectedCredits": 135,
+      "subjects": [
+        "Papa",
+        "Sara",
+        "Eva"
+      ],
+      "scene": "backyard-grill-area",
+      "boundElements": [
+        {
+          "tag": "Papa",
+          "source": "library"
+        },
+        {
+          "tag": "Sara",
+          "source": "library"
+        },
+        {
+          "tag": "Eva",
+          "source": "library"
+        },
+        {
+          "tag": "backyard-grill-area",
+          "source": "library"
+        },
+        {
+          "tag": "papas-apron",
+          "source": "library"
+        }
+      ],
+      "prompt": "Wide cinematic medium shot of @backyard-grill-area, sunny golden-hour light, faint heat-shimmer above the grates. @Papa already in the CENTER at the grill wearing @papas-apron, holding a long metal spatula in one hand, big proud teaching grin. @Sara already standing on the LEFT next to Papa, on a small upturned wooden block to reach grill height, both hands gripping a kid-sized spatula. @Eva already standing on the RIGHT at the other side of Papa on her own block, holding her own kid-sized spatula. (BEAT 1 — 0-5s) Papa (cheerful coach voice): \"Okay champs — gentle slide UNDER, then a confident FLIP — like THIS!\" He demonstrates with his spatula, flipping a juicy patty cleanly with a satisfying *sizzle*. Sara (eyes saucers): \"OOH!\" Eva (gasping, hand to mouth): \"Pro chef Papa!\" (BEAT 2 — 5-10s) Sara goes first — slowly slides her spatula under a patty, scrunches her face in concentration, FLIPS — the patty lands cleanly with a sizzle. Sara (fists pumping in the air for one second): \"YESSS! Bun Squad CAN COOK!\" Papa beams down at her, totally proud, gives her a giant thumbs-up. (BEAT 3 — 10-15s) Eva tries next — slides her spatula under, flips with WAY too much enthusiasm, the patty rotates almost end-over-end and lands askew with a loud *SPLAT* of grease. Eva freezes one second wide-eyed, then breaks into a triumphant grin. Eva (arms up, triumphant): \"BURGER GYMNASTICS! TEN POINTS!\" Papa laughs and ruffles her hair. Papa (grinning): \"My grill team, ladies and gentlemen!\"",
+      "negativePrompt": "duplicate character, twin, clone, two of the same, mirrored figure, second father, two Papa, identical adults, extra people, third child, second sister, second sara, second eva, two eva, duplicate eva, mirror reflection, family members in the background, additional children, extra child in background, ghost figure, shadow of person, strangers, crowd, group of people, other faces, background people, friends, neighbors, mama in this clip, dog in this clip, joe in this clip, three arms, extra hand, anatomy error, spatula levitating, free arm swinging while holding spatula"
+    },
+    {
+      "episode": 11,
+      "beat": 5,
+      "clip": 5,
+      "title": "Mama (offscreen) — 'doorbell!' — Papa exits",
+      "mode": "omni",
+      "durationSec": 10,
+      "quality": "720p",
+      "nativeAudio": true,
+      "expectedCredits": 90,
+      "subjects": [
+        "Papa"
+      ],
+      "scene": "backyard-grill-area",
+      "boundElements": [
+        {
+          "tag": "Papa",
+          "source": "library"
+        },
+        {
+          "tag": "backyard-grill-area",
+          "source": "library"
+        },
+        {
+          "tag": "papas-apron",
+          "source": "library"
+        }
+      ],
+      "prompt": "Medium shot of @backyard-grill-area, sunny afternoon. @Papa already CENTER-FRAME at the grill wearing @papas-apron, spatula in hand, three plump hot dogs and four juicy hamburger patties sizzling beautifully on the grates with golden grill-marks, light steam wisps. Mama's voice carries clearly from inside the house, off-screen: Mama (offscreen, calling): \"Honey! The doorbell — can you grab it? My hands are full!\" Papa pauses, blinks at his beautiful sizzling food, then sighs theatrically and sets the spatula down on the grill's side shelf. He points a stern dad-finger directly DOWN at the grill, addressing his food like it might run off. Papa (firm dad voice, totally serious): \"You — burgers. You — hot dogs. STAY. PUT. Papa will be RIGHT back. Don't go anywhere fancy.\" He turns and jogs out of frame to the LEFT toward the house. Empty backyard with sizzling food and a faint birdsong holds for the last beat.",
+      "negativePrompt": "duplicate character, twin, clone, two of the same, mirrored figure, second father, two Papa, identical adults, extra people, third child, second sister, family members in the background, additional children, ghost figure, shadow of person, strangers, crowd, group of people, other faces, background people, friends, neighbors, sara in this clip, eva in this clip, mama visible on screen, mama walking into frame, dog visible, joe visible, three arms, extra hand, anatomy error"
+    },
+    {
+      "episode": 11,
+      "beat": 6,
+      "clip": 6,
+      "title": "Joe creeps out from the bush — silent fourth-wall wink",
+      "mode": "omni",
+      "durationSec": 10,
+      "quality": "720p",
+      "nativeAudio": true,
+      "expectedCredits": 90,
+      "subjects": [
+        "Joe"
+      ],
+      "scene": "backyard-grill-area",
+      "boundElements": [
+        {
+          "tag": "Joe",
+          "source": "library"
+        },
+        {
+          "tag": "backyard-grill-area",
+          "source": "library"
+        },
+        {
+          "tag": "burger-platter",
+          "source": "library"
+        }
+      ],
+      "prompt": "Low-angle dramatic shot in @backyard-grill-area — the picnic table on the LEFT, the empty grill on the RIGHT, sunny afternoon. @Joe (small fluffy off-white Pomeranian, fox-like face, perky triangle ears, bushy curling tail) already CENTER-FRAME, slowly creeping out from behind the leafy bushes at the property edge, low to the ground, ears perked forward, nose twitching dramatically, his eyes laser-locked on @burger-platter (now on the picnic table loaded with three plump grilled hot dogs and four juicy grill-marked hamburger patties). Joe pauses mid-step. He turns his head SLOWLY toward the camera, makes direct eye contact with the lens for two full seconds with a tiny sparkle of conspiratorial mischief in his eyes, gives one slow deliberate blink — a silent fourth-wall acknowledgment to the kid watching at home — then turns back to the platter and resumes his low slinky stalk. Joe (a small low cheerful conspiratorial yip to himself): \"Mff hff hff!\" Tail wags slowly with criminal intent.",
+      "negativePrompt": "duplicate character, twin, clone, two of the same, mirrored figure, duplicate dog, second dog, two pomeranians, second pomeranian, identical dogs, extra dogs, ghost dog, mirror reflection, family members, strangers, crowd, group of people, other faces, background people, friends, neighbors, sara in this clip, eva in this clip, mama in this clip, papa in this clip, kids in this clip, adults in this clip, three arms, extra hand, anatomy error, dog talks like a human, dog has human teeth, anthropomorphic dog standing on hind legs"
+    },
+    {
+      "episode": 11,
+      "beat": 8,
+      "clip": 7,
+      "title": "AUDIENCE-ASK — Papa returns to empty grill, asks the camera if he dreamed it",
+      "mode": "omni",
+      "durationSec": 10,
+      "quality": "720p",
+      "nativeAudio": true,
+      "expectedCredits": 90,
+      "subjects": [
+        "Papa"
+      ],
+      "scene": "backyard-grill-area",
+      "boundElements": [
+        {
+          "tag": "Papa",
+          "source": "library"
+        },
+        {
+          "tag": "backyard-grill-area",
+          "source": "library"
+        },
+        {
+          "tag": "papas-apron",
+          "source": "library"
+        }
+      ],
+      "prompt": "Medium shot of @backyard-grill-area, sunny afternoon. @Papa already CENTER-FRAME at the grill wearing @papas-apron, just returned from the house. The grill is COMPLETELY EMPTY — just a thin curl of dying smoke and bare grates. The picnic table behind him is also EMPTY of food. Papa stops dead in his tracks, blinks rapidly three times, looks at the empty grill, looks at the empty picnic table, looks back at the empty grill. He pats his apron pockets with both hands as if maybe the burgers are in there. He SLOWLY scratches the back of his head, deeply baffled, eyebrows knit. Then Papa turns to face the camera DIRECTLY, looks straight into the lens with a completely lost, baffled expression, palms open beside his head in confused-shrug position. Papa (to camera, totally bewildered, soft and sincere): \"Wait... wait wait wait. Did I cook anything today? Or did I... did I just DREAM the whole thing?\" He squints at the camera one more second, genuinely seeking guidance from the kid watching, then looks down at the empty grill and shakes his head muttering: \"I was SO sure. I felt the heat. I FLIPPED a patty. ...did I?\"",
+      "negativePrompt": "duplicate character, twin, clone, two of the same, mirrored figure, second father, two Papa, identical adults, extra people, third child, second sister, family members, additional children, ghost figure, shadow of person, strangers, crowd, group of people, other faces, background people, friends, neighbors, sara in this clip, eva in this clip, mama in this clip, dog visible, joe visible, food on the grill, food on the table, hot dog visible, hamburger visible, three arms, extra hand, anatomy error, papa not looking at camera"
+    },
+    {
+      "episode": 11,
+      "beat": 9,
+      "clip": 8,
+      "title": "Papa starts a NEW round of patties (round 2), muttering about losing his mind",
+      "mode": "omni",
+      "durationSec": 10,
+      "quality": "720p",
+      "nativeAudio": true,
+      "expectedCredits": 90,
+      "subjects": [
+        "Papa"
+      ],
+      "scene": "backyard-grill-area",
+      "boundElements": [
+        {
+          "tag": "Papa",
+          "source": "library"
+        },
+        {
+          "tag": "backyard-grill-area",
+          "source": "library"
+        },
+        {
+          "tag": "papas-apron",
+          "source": "library"
+        }
+      ],
+      "prompt": "Medium shot of @backyard-grill-area, sunny afternoon. @Papa already CENTER-FRAME at the grill wearing @papas-apron, expression of deep dad-confusion, shaking his head slowly. He picks up a fresh package of pink ground-beef patties from the grill's lower shelf and starts slapping them onto the hot grates one by one with a sharp *sizzle-sizzle-sizzle*, talking quietly to himself the whole time like a man reasoning with the universe. Papa (muttering, mostly to himself, increasingly worried): \"Okay. Cook them AGAIN. ...I am LOSING IT. That's it. The dad brain has officially CRACKED.\" *sizzle* He sets a hot dog onto the grates next to the patties. Papa (continuing, voice rising): \"Maybe I just THOUGHT I cooked them. Maybe I'm in a dad-coma. Is this a dad-coma?\" He flips a patty already, looks at it suspiciously, scratches his eyebrow with the back of the spatula handle. Papa (to himself, philosophical): \"...is anyone else's dad like this?\"",
+      "negativePrompt": "duplicate character, twin, clone, two of the same, mirrored figure, second father, two Papa, identical adults, extra people, third child, second sister, family members, additional children, ghost figure, shadow of person, strangers, crowd, group of people, other faces, background people, friends, neighbors, sara in this clip, eva in this clip, mama in this clip, dog visible, joe visible, three arms, extra hand, anatomy error, free arm swinging while holding spatula, spatula levitating"
+    },
+    {
+      "episode": 11,
+      "beat": 10,
+      "clip": 9,
+      "title": "Mama returns — confusion deepens",
+      "mode": "omni",
+      "durationSec": 10,
+      "quality": "720p",
+      "nativeAudio": true,
+      "expectedCredits": 90,
+      "subjects": [
+        "Mama",
+        "Papa"
+      ],
+      "scene": "backyard-grill-area",
+      "boundElements": [
+        {
+          "tag": "Mama",
+          "source": "library"
+        },
+        {
+          "tag": "Papa",
+          "source": "library"
+        },
+        {
+          "tag": "backyard-grill-area",
+          "source": "library"
+        },
+        {
+          "tag": "papas-apron",
+          "source": "library"
+        }
+      ],
+      "prompt": "Wide shot of @backyard-grill-area, sunny afternoon. @Papa already on the LEFT at the grill wearing @papas-apron, just finished setting up his SECOND round of fresh patties on the grates, light sizzle and smoke. @Mama already standing on the RIGHT side stepping out from the patio direction, drying her hands on a kitchen towel, hair pulled back, casual confused expression. She stops, looks at the brand-new patties cooking, looks at Papa, looks back at the patties. Mama (squinting, totally puzzled): \"...wait. Weren't you JUST out here? Cooking? Like five minutes ago?\" Papa pauses mid-flip, looks at her with an utterly lost, surrendering shrug, both palms open. Papa (helplessly, voice cracking a little): \"I... I think so? I genuinely don't know anymore. I think I dreamed it. The doctor warned me dad-brain peaks at thirty-eight.\" Mama tilts her head one second, hand pausing on the towel. Mama (suspicious, slow): \"...you didn't. Did you?\" Papa shrugs and just slowly flips a patty.",
+      "negativePrompt": "duplicate character, twin, clone, two of the same, mirrored figure, second father, second mother, two Papa, two Mama, identical adults, extra people, third child, second sister, family members in the background, additional children, extra child in background, ghost figure, shadow of person, strangers, crowd, group of people, other faces, background people, friends, neighbors, sara in this clip, eva in this clip, dog visible, joe visible, three arms, extra hand, anatomy error, second father in background, third adult"
+    },
+    {
+      "episode": 11,
+      "beat": 11,
+      "clip": 10,
+      "title": "AUDIENCE-ASK — Sara and Eva collapsed in grass laughing, ask the camera",
+      "mode": "omni",
+      "durationSec": 10,
+      "quality": "720p",
+      "nativeAudio": true,
+      "expectedCredits": 90,
+      "subjects": [
+        "Sara",
+        "Eva"
+      ],
+      "scene": "backyard",
+      "boundElements": [
+        {
+          "tag": "Sara",
+          "source": "library"
+        },
+        {
+          "tag": "Eva",
+          "source": "library"
+        },
+        {
+          "tag": "backyard",
+          "source": "library"
+        }
+      ],
+      "prompt": "Cheerful low-angle wide shot in @backyard — green grass, leafy backyard tree, black iron fence, sunny afternoon. @Sara already lying on her back in the grass on the LEFT, both hands clutching her tummy, hair fanned out, face crumpled with helpless laughter, kicking her feet weakly in the air. @Eva already lying on her tummy on the RIGHT next to her sister, propped on her elbows, face buried in the grass between fits of giggles, curly blonde hair shaking. Sara wipes a tear of laughter from her cheek, sits halfway up, props on one elbow, and turns her head DIRECTLY toward the camera, eyes sparkling with conspiratorial delight. Sara (to camera, big stage whisper, finger pointed past the lens at the watching kid): \"Kids — did YOU see where the FIRST burgers went?!\" She raises both eyebrows expectantly, waiting for the kid at home to answer out loud, holds the look for two beats. Eva pops her head up next to Sara, also looking at camera, nodding furiously. Eva (to camera, also stage-whispering, eyes huge): \"It was JOE! It was the WHOLE TIME JOE!\" Both girls dissolve back into helpless giggles, rolling onto their backs in the grass.",
+      "negativePrompt": "duplicate character, twin, clone, two of the same, mirrored figure, second sister, second sara, second eva, two eva, duplicate eva, mirror reflection, family members, strangers, crowd, group of people, other faces, background people, friends, neighbors, papa in this clip, mama in this clip, dog visible, joe visible, additional children, extra child, second blonde child, ghost figure, shadow of person, three arms, extra hand, anatomy error, sara not looking at camera, eva not looking at camera"
+    },
+    {
+      "episode": 11,
+      "beat": 12,
+      "clip": 11,
+      "title": "Joe in the bush corner — hot dog in snout, ketchup-smeared face",
+      "mode": "omni",
+      "durationSec": 10,
+      "quality": "720p",
+      "nativeAudio": true,
+      "expectedCredits": 90,
+      "subjects": [
+        "Joe"
+      ],
+      "scene": "backyard",
+      "boundElements": [
+        {
+          "tag": "Joe",
+          "source": "library"
+        },
+        {
+          "tag": "backyard",
+          "source": "library"
+        }
+      ],
+      "prompt": "Cheerful close-up shot in the corner of @backyard near the leafy bushes at the property edge, sunny afternoon. @Joe (small fluffy off-white Pomeranian, fox-like face, perky triangle ears, bushy curling tail) already CENTER-FRAME, lying half-tucked under the bushes amid scattered crumpled empty paper-wrappers and stray fluffy bun pieces, an entire grilled hot dog still hanging dramatically out of one corner of his mouth like a fat cigar. Joe's white fluffy chest fur is comically smeared with bright red ketchup streaks, ketchup also dotting his snout and one ear. Joe makes contented little munching motions, then ROLLS lazily onto his back in the grass, tossing the hot dog up an inch and catching it again in his mouth without dropping it, paws contentedly in the air. Joe (a tiny muffled satisfied burble around the hot dog): \"Mmmf. Mmmf hff.\" His tail wags slowly at the dirt. Joe (small content sigh, hot dog still in mouth): \"Mmmrf — best Saturday EVER.\" Bird chirps softly in the background.",
+      "negativePrompt": "duplicate character, twin, clone, two of the same, mirrored figure, duplicate dog, second dog, two pomeranians, second pomeranian, identical dogs, extra dogs, ghost dog, mirror reflection, family members, strangers, crowd, group of people, other faces, background people, friends, neighbors, sara in this clip, eva in this clip, mama in this clip, papa in this clip, kids in this clip, adults in this clip, three arms, extra hand, anatomy error, dog talks like a human, anthropomorphic dog standing on hind legs, dog with full human teeth"
+    },
+    {
+      "episode": 11,
+      "beat": 13,
+      "clip": 12,
+      "title": "AUDIENCE-ASK — Eva: 'Should we tell Papa?' then yells",
+      "mode": "omni",
+      "durationSec": 10,
+      "quality": "720p",
+      "nativeAudio": true,
+      "expectedCredits": 90,
+      "subjects": [
+        "Sara",
+        "Eva"
+      ],
+      "scene": "backyard",
+      "boundElements": [
+        {
+          "tag": "Sara",
+          "source": "library"
+        },
+        {
+          "tag": "Eva",
+          "source": "library"
+        },
+        {
+          "tag": "backyard",
+          "source": "library"
+        }
+      ],
+      "prompt": "Medium shot of @backyard, sunny afternoon. @Eva already CENTER-LEFT in the grass on her knees, naughty grin, pressing one finger to her lips in a 'shhh' gesture, and turning her head DIRECTLY toward the camera with a scheming sparkle. @Sara already CENTER-RIGHT next to her sister also kneeling in the grass, both girls still pink-cheeked from laughing. Eva (to camera, finger to lips, conspiratorial whisper): \"Should we tell Papa?\" She holds the look at the camera for two full beats — waiting for the kid watching at home to answer out loud. Then she breaks into a huge mischievous grin and her face goes from whisper to MAXIMUM VOLUME instantly. Eva (suddenly cupping both hands around her mouth, full-volume yell, cheerful but commanding): \"PAPA — LOOK!! LOOOOOK!!\" Sara claps both hands over her mouth, beaming, eyes huge, trying not to lose it. Sara (giggling, leaning in to Eva): \"He's gonna FREAK.\" Eva (still beaming straight at camera): \"Watch this. Watch THIS.\"",
+      "negativePrompt": "duplicate character, twin, clone, two of the same, mirrored figure, second sister, second sara, second eva, two eva, duplicate eva, mirror reflection, family members, strangers, crowd, group of people, other faces, background people, friends, neighbors, papa in this clip, mama in this clip, dog visible, joe visible, additional children, extra child, second blonde child, ghost figure, shadow of person, three arms, extra hand, anatomy error, eva not looking at camera"
+    },
+    {
+      "episode": 11,
+      "beat": 14,
+      "clip": 13,
+      "title": "Papa sees Joe — the burger graveyard reveal",
+      "mode": "omni",
+      "durationSec": 10,
+      "quality": "720p",
+      "nativeAudio": true,
+      "expectedCredits": 90,
+      "subjects": [
+        "Papa",
+        "Joe"
+      ],
+      "scene": "backyard-grill-area",
+      "boundElements": [
+        {
+          "tag": "Papa",
+          "source": "library"
+        },
+        {
+          "tag": "Joe",
+          "source": "library"
+        },
+        {
+          "tag": "backyard-grill-area",
+          "source": "library"
+        },
+        {
+          "tag": "papas-apron",
+          "source": "library"
+        },
+        {
+          "tag": "burger-platter",
+          "source": "library"
+        }
+      ],
+      "prompt": "Wide shot of @backyard-grill-area, sunny afternoon, viewer-favorite reveal angle. @Papa already CENTER-LEFT at the grill wearing @papas-apron, mid-flip with his spatula, now turning his head sharply over his right shoulder toward the bushes corner because of an off-screen yell. @Joe already CENTER-RIGHT half-tucked into the leafy bushes at the property edge, still holding a hot dog crosswise in his mouth, fluffy chest dramatically smeared with bright red ketchup. Around Joe in the grass: the now-EMPTY @burger-platter tipped sideways, with crumpled paper wrappers scattered, a few stray bun pieces, a tiny smear of ketchup on the ceramic — a comic 'crime scene' of vanished burgers. Papa's eyes track the scene one element at a time — sees the empty platter, sees the wrappers, sees Joe. His jaw drops slowly, spatula drifts down to his side, eyebrows shoot up to his hairline in slow-motion realization. Papa (a long, low, stunned breath): \"...the ENTIRE TIME?\" He stares wordlessly. Joe stares back, hot dog firmly in mouth, slow innocent blink, perfect criminal poker-face.",
+      "negativePrompt": "duplicate character, twin, clone, two of the same, mirrored figure, second father, two Papa, identical adults, duplicate dog, second dog, two pomeranians, identical dogs, extra dogs, ghost dog, mirror reflection, family members, strangers, crowd, group of people, other faces, background people, friends, neighbors, sara in this clip, eva in this clip, mama in this clip, additional children, extra child, ghost figure, shadow of person, three arms, extra hand, anatomy error, free arm swinging while holding spatula, spatula levitating"
+    },
+    {
+      "episode": 11,
+      "beat": 15,
+      "clip": 14,
+      "title": "Family laughs together — 'Give it back, little dog!'",
+      "mode": "omni",
+      "durationSec": 15,
+      "quality": "720p",
+      "nativeAudio": true,
+      "expectedCredits": 135,
+      "subjects": [
+        "Papa",
+        "Sara",
+        "Eva",
+        "Joe"
+      ],
+      "scene": "backyard-grill-area",
+      "boundElements": [
+        {
+          "tag": "Papa",
+          "source": "library"
+        },
+        {
+          "tag": "Sara",
+          "source": "library"
+        },
+        {
+          "tag": "Eva",
+          "source": "library"
+        },
+        {
+          "tag": "Joe",
+          "source": "library"
+        },
+        {
+          "tag": "backyard-grill-area",
+          "source": "library"
+        },
+        {
+          "tag": "papas-apron",
+          "source": "library"
+        }
+      ],
+      "prompt": "Wide cheerful family-comedy shot in @backyard-grill-area, sunny golden-hour afternoon, soft warm kid-show comedy lighting, family-laugh-out-loud energy throughout. (BEAT 1 — 0-5s) @Papa already CENTER-LEFT in the grass on his knees, wearing @papas-apron, leaning forward laughing helplessly with both hands flat on his knees, mouth wide open in a big silly belly-laugh, eyes crinkled with pure dad-joy, NOT angry NOT scary NOT shouting. @Joe already FOREGROUND-CENTER STANDING FIRMLY ON ALL FOUR PAWS planted flat on the green grass facing the camera at a slight angle, hot dog still firmly crossways in his mouth like a cigar, big innocent eyes wide, fluffy head tilted one inch sideways, ears perked up, picture of cute confusion. Papa (booming through his laughter, gentle silly playful tone): \"Oh JOE — give it BACK, little dog!\" (BEAT 2 — 5-10s) @Sara already CENTER-RIGHT next to Papa, kneeling close to him in the grass, both hands cupped giggling against her cheeks. @Eva already FAR-RIGHT next to Sara, also kneeling in the grass, both arms held out wide in a friendly 'come here' welcoming gesture, giggling helplessly. Sara (singing-giggling): \"Little dog, little dog!\" Eva (giggling sweetly): \"Give it back, silly Joe!\" Joe wiggles his fluffy head playfully back and forth, hot dog still firmly in his mouth, takes one tiny playful hop-in-place on his four paws (NOT lifting off the ground), tail wagging mischievously. (BEAT 3 — 10-15s) Papa, Sara, and Eva all extend gentle laughing hands forward toward Joe in a comic 'come here you' welcoming gesture, all three still kneeling/grounded in the grass laughing together. Joe gives a tiny happy yip (\"Mmf hff hff!\") and gives a small playful wiggle in place, hot dog still firmly in his mouth, all four paws planted firmly on the grass throughout. Papa, Sara, Eva all dissolve into helpless warm family laughter together watching the cute pup. Cheerful, warm, kid-show family-comedy joy throughout.",
+      "negativePrompt": "duplicate character, twin, clone, two of the same, mirrored figure, second father, two Papa, identical adults, second mother, two Mama, mama in this clip, extra people, third child, second sister, second sara, second eva, two eva, duplicate eva, three girls, four kids, extra kids, additional children, extra child in background, second blonde child, fourth child, fifth child, ghost figure, ghost kid, ghost children, shadow children, shadow of person, mirrored children, mirror reflection, family members in the background, strangers, crowd, group of people, other faces, background people, friends, neighbors, duplicate dog, second dog, two pomeranians, identical dogs, extra dogs, ghost dog, three arms, extra hand, anatomy error, dog talks like a human, anthropomorphic dog standing on hind legs, dog flying, dog in mid-air, dog jumping high, dog leaping, dog floating, dog levitating, airborne dog, dog launched into air, dog mid-leap, dog lifted off ground, dog hovering, papa screaming aggressively, papa shouting violently, papa angry shout, papa rage face, papa scary face, papa frowning, scary expression, frightening expression, intense yelling, environmental shake, leaves trembling, ground shaking, dramatic sound waves, action lines, motion lines from shouting, blood, red splatter, red stain on apron"
+    },
+    {
+      "episode": 11,
+      "beat": 16,
+      "clip": 15,
+      "title": "PARENT-ACTIVITY (15s) — Papa lunges, slips on a ketchup packet, tackle-hug from girls",
+      "mode": "omni",
+      "durationSec": 15,
+      "quality": "720p",
+      "nativeAudio": true,
+      "expectedCredits": 135,
+      "subjects": [
+        "Papa",
+        "Sara",
+        "Eva"
+      ],
+      "scene": "backyard",
+      "boundElements": [
+        {
+          "tag": "Papa",
+          "source": "library"
+        },
+        {
+          "tag": "Sara",
+          "source": "library"
+        },
+        {
+          "tag": "Eva",
+          "source": "library"
+        },
+        {
+          "tag": "backyard",
+          "source": "library"
+        },
+        {
+          "tag": "papas-apron",
+          "source": "library"
+        }
+      ],
+      "prompt": "Wide cinematic comedy shot in @backyard, green grass, leafy backyard tree, black iron fence, sunny afternoon. @Papa already CENTER-FRAME in the foreground in the grass, wearing @papas-apron, in a dramatic mid-lunge pose chasing after a now-OFF-SCREEN tail-wagging escape, both arms outstretched in classic comic-pursuit form. (BEAT 1 — 0-5s) Papa's leading foot SLIPS sideways on a tiny SEALED unopened SHINY-FOIL PURPLE KETCHUP PACKET lying flat in the grass (the packet stays SEALED and INTACT throughout the entire clip — it skitters one inch away as his foot slides, the packet remains fully closed, fully sealed, fully whole at all times). Papa's leg shoots forward in slapstick slow-motion, both arms windmill cartoonishly in the air. Papa's eyes go saucer-wide, mouth in a perfect surprised 'O'. Papa (theatrical slow-motion shout, big and silly): \"OH NO-OOOOO-OOOO!\" (BEAT 2 — 5-10s) Papa face-plants GENTLY into the soft springy grass with arms still outstretched. The apron stays its normal CHARCOAL-GREY canvas color — no stains, no marks, no liquid, no red anywhere. Head turns sideways with a goofy defeated dad expression. He blows a single small blade of grass off his lips with a tiny puff. Papa (muffled, into the grass, defeated and silly): \"...I'll just live here now. This is my home.\" (BEAT 3 — 10-15s) @Sara already kneeling on the LEFT side of Papa in the grass close to his shoulder, both arms already wrapped around his upper arm in a hug, giggling uncontrollably. @Eva already kneeling on the RIGHT side of Papa close to his other shoulder, both arms already wrapped around his other arm in a hug, also giggling uncontrollably. The three are already in a cuddly tangle in the grass, all three giggling in a heap. Sara (squeezing his shoulders): \"It's okay Papa! We still LOVE you, dream-cooker!\" Eva (kissing the top of his head): \"You're our FAVORITE okayest dad in the WHOLE WORLD!\" Papa lets out a long surrendered laugh. Cheerful kid-show comedy lighting, clean and warm. The apron front and grass remain visually clean throughout — no marks, no spills, no stains, no liquid of any kind in this clip.",
+      "negativePrompt": "duplicate character, twin, clone, two of the same, mirrored figure, second father, two Papa, identical adults, extra people, third child, second sister, second sara, second eva, two eva, duplicate eva, three girls, four kids, extra kids, additional children, extra child in background, second blonde child, fourth child, fifth child, ghost figure, ghost kid, ghost children, shadow children, shadow of person, mirrored children, mirror reflection, family members in the background, strangers, crowd, group of people, other faces, background people, friends, neighbors, mama in this clip, dog visible, joe visible, joe in frame, fourth character, three arms, extra hand, anatomy error, blood, blood splatter, red liquid spraying, red liquid on face, red liquid near mouth, red liquid around mouth, red splatter near face, red splatter near mouth, red stain on face, red dripping, red drips on apron, red splash on apron front, red on Papa's face, red on Papa's mouth, blood on lips, blood on chin, blood on shirt, ketchup squirt, ketchup spray, ketchup squirting, ruptured packet, exploded packet, opened packet, gory, gore, injury, wound, bleeding, scary, violent, distressing"
+    },
+    {
+      "episode": 11,
+      "beat": 18,
+      "clip": 16,
+      "title": "CLIFFHANGER + AUDIENCE-ASK — Papa keeps one eye on Joe, 'pancakes?!'",
+      "mode": "omni",
+      "durationSec": 10,
+      "quality": "720p",
+      "nativeAudio": true,
+      "expectedCredits": 90,
+      "subjects": [
+        "Papa",
+        "Sara",
+        "Eva"
+      ],
+      "scene": "backyard-grill-area",
+      "boundElements": [
+        {
+          "tag": "Papa",
+          "source": "library"
+        },
+        {
+          "tag": "Sara",
+          "source": "library"
+        },
+        {
+          "tag": "Eva",
+          "source": "library"
+        },
+        {
+          "tag": "backyard-grill-area",
+          "source": "library"
+        },
+        {
+          "tag": "papas-apron",
+          "source": "library"
+        }
+      ],
+      "prompt": "Wide cheerful shot of @backyard-grill-area, late golden-hour sunshine. @Papa already CENTER-BACK at the grill wearing @papas-apron (now with a faded ketchup smear from the earlier slip), starting a fresh ROUND-3 of patties on the grates with a fresh sizzle, ONE eye locked suspiciously sideways toward the right edge of the frame where the bushes are. @Sara already in the FOREGROUND-LEFT in the grass, sitting cross-legged grinning. @Eva already in the FOREGROUND-RIGHT next to her sister, also cross-legged. In the FAR-RIGHT BACKGROUND-CORNER behind a leafy bush, a small fluffy off-white Pomeranian (Joe) is just barely visible peeking out, calmly licking his lips and making EYE CONTACT with the camera with a tiny innocent sparkle, then ducks back behind the bush. Eva turns her head DIRECTLY to the camera, leans forward conspiratorially, eyes bright with curiosity. Eva (to camera, friend-to-friend energy): \"Hey kids — what do YOU think Papa should make tomorrow?\" She holds the look at the camera waiting for the kid at home to call out an answer, beat. Sara whispers loudly leaning in to Eva, hand cupped beside her mouth toward camera. Sara (loud stage whisper to camera): \"...PANCAKES?!\" Eva claps both hands over her mouth, eyes shining, looking straight at camera. Papa flips a patty warily without taking his eye off the bush, mutters: \"Not. This. Time.\"",
+      "negativePrompt": "duplicate character, twin, clone, two of the same, mirrored figure, second father, two Papa, identical adults, extra people, third child, second sister, second sara, second eva, two eva, duplicate eva, mirror reflection, family members, additional children, extra child, second blonde child, duplicate dog, second dog, two pomeranians, mama in this clip, three arms, extra hand, anatomy error, eva not looking at camera, sara not looking at camera, fourth named child, joe in foreground, joe close to camera"
+    }
+  ],
+  "musicVideos": [
+    {
+      "episode": 11,
+      "beat": "4.5",
+      "clip": "4.5",
+      "title": "PARENT-ACTIVITY (15s) — Papa-tag-monster game with Sara and Eva",
+      "mode": "omni",
+      "durationSec": 15,
+      "quality": "720p",
+      "nativeAudio": true,
+      "expectedCredits": 135,
+      "subjects": [
+        "Papa",
+        "Sara",
+        "Eva"
+      ],
+      "scene": "backyard",
+      "boundElements": [
+        {
+          "tag": "Papa",
+          "source": "library"
+        },
+        {
+          "tag": "Sara",
+          "source": "library"
+        },
+        {
+          "tag": "Eva",
+          "source": "library"
+        },
+        {
+          "tag": "backyard",
+          "source": "library"
+        },
+        {
+          "tag": "papas-apron",
+          "source": "library"
+        }
+      ],
+      "prompt": "Wide cinematic playful shot in @backyard, green grass, leafy backyard tree, black iron fence, sunny golden-hour afternoon, soft cheerful kid-show comedy lighting. @Papa already CENTER-FRAME on hands and knees in the middle of the grass in goofy 'tag-monster' pose, wearing @papas-apron, big silly grin, fingers wiggling in the air playfully like a friendly cartoon monster. @Sara already on the LEFT side of the yard a few feet away in a low dodge stance, knees bent, both arms held wide for balance, mouth wide in a delighted giggle. @Eva already on the RIGHT side of the yard a few feet away in her own dodge stance, hands flapping with excitement, hair bouncing. (BEAT 1 — 0-5s) Papa wiggles his fingers and waggles his shoulders. Papa (booming silly tag-monster voice): \"GRRRR! The TAG-MONSTER is HUNGRY!\" Sara squeals delightedly and pivots in place. Eva bounces on her toes. Sara (giggling, one hand cupped beside her mouth): \"You can't catch us, Tag-Monster!\" (BEAT 2 — 5-10s) Papa LUNGES sideways toward the LEFT in slow comic slow-mo, arms still wide. Sara already PIVOTS and DUCKS to the right side, evading easily, laughing all the way. Eva dances in place on her side, clapping in delight. Papa lands on his palms in the grass with a goofy 'WOMP'. Papa (theatrically defeated, in the grass): \"NOOO! Too FAST for the Tag-Monster!\" (BEAT 3 — 10-15s) Papa hops back up onto knees, then LUNGES the OTHER way toward the RIGHT side. Eva already DUCKS and rolls onto the grass laughing, but Papa GENTLY taps her shoulder with one big fingertip. Eva (cheering on her back in the grass, grass-blade in her hair): \"GOTCHA back, Papa!\" Sara claps from her side and bounces. Papa (puffing out his chest in mock-victory): \"ONE Tag-Monster point!\" The three are giggling helplessly together. Cheerful, warm, kid-show energy throughout.",
+      "negativePrompt": "duplicate character, twin, clone, two of the same, mirrored figure, second father, two Papa, identical adults, extra people, third child, second sister, second sara, second eva, two eva, duplicate eva, mirror reflection, family members in the background, additional children, extra child in background, second blonde child, ghost figure, shadow of person, strangers, crowd, group of people, other faces, background people, friends, neighbors, mama in this clip, dog visible, joe visible, joe in frame, fourth character, fourth child, three arms, extra hand, anatomy error, papa screaming aggressively, papa angry shout, papa scary face, scary expression, frightening expression, intense yelling, papa actually catching kids violently, kid being grabbed, kid being pulled, kid being lifted forcefully, real monster, scary monster, ghost figure, shadow of a person, motion blur"
+    },
+    {
+      "episode": 11,
+      "beat": "music-video-A",
+      "clip": "A",
+      "title": "MUSIC VIDEO RENDER A — Joe slow-mo burger heist (solo)",
+      "mode": "omni",
+      "durationSec": 10,
+      "quality": "720p",
+      "nativeAudio": true,
+      "expectedCredits": 90,
+      "subjects": [
+        "Joe"
+      ],
+      "scene": "(designed cookout-noir backdrop)",
+      "boundElements": [
+        {
+          "tag": "Joe",
+          "source": "library"
+        }
+      ],
+      "reuseAsset": true,
+      "reuseAssetNote": "ONE 10s render, paired with Suno song 'Slow-Mo Burger Heist.mp3' via loopVideoWithSong.mjs to fill the 60s music block.",
+      "musicVideoBlock": true,
+      "loopExpansion": {
+        "iterations": 2,
+        "xfadeDuration": 0.3,
+        "outputDurationSec": 19.7
+      },
+      "usedUnderSongs": [
+        {
+          "song": "assets/music/Slow-Mo Burger Heist.mp3",
+          "blockDurationSec": 20,
+          "trimStart": 0,
+          "placementClipNumber": "6music"
+        }
+      ],
+      "prompt": "Wide cinematic music-video shot — designed STUDIO BACKDROP with a soft sky-blue gradient sky behind, a stylized cartoon GRILL silhouette on the LEFT puffing tiny rolling smoke wisps continuously, a single floating cartoon BURGER and a single floating cartoon HOT DOG hanging in the air on the RIGHT like prize trophies, scattered tiny ketchup-packet sparkles drifting slowly down like confetti. NO scene, NO room, NO real backyard, NO furniture, NO logos, NO real text. @Joe (small fluffy off-white Pomeranian, fox-like face, perky triangle ears, bushy curling tail) is the SOLO STAR, dramatic-lit slightly from below for movie-noir energy, slow-motion energy throughout. Joe poses CENTER-FRAME. Joe's RHYTHMIC LOOPABLE move set: (1) crouches low to the ground, eyes-locked-criminal-mastermind, ears flicked forward; (2) takes one slow exaggerated heist-creep step forward in slow motion, paw lifted high; (3) jumps gracefully into the air in arcing slow-motion, paws spread, mouth wide; (4) lands cleanly with a bounce, ears flopping, tail giving one slow heroic wag; (5) slow theatrical tail-wag-spin in place, fluff billowing in slow-motion; (6) returns to start crouch position. Camera locked, head-on, kid-eye-level. Looped cleanly: Joe returns to the same start crouch at second 0 and second 10. Joe makes occasional satisfied slow-motion cartoon yip sounds (no specific words) — generic dog vocalizations, no human dialogue. The shot is designed to LOOP cleanly. Smoke wisps + ketchup-packet confetti continuously drift. No audible speech, no music — silent render.",
+      "negativePrompt": "duplicate character, twin, clone, two of the same, mirrored figure, duplicate dog, second dog, two pomeranians, second pomeranian, identical dogs, extra dogs, ghost dog, mirror reflection, family members, strangers, crowd, group of people, other faces, background people, friends, neighbors, sara in this clip, eva in this clip, mama in this clip, papa in this clip, kids in this clip, adults in this clip, real grill brand, real burger brand, specific dialogue words, lip-sync to specific syllables, audible music, audible singing words, three arms, extra hand, anatomy error, dog talks like a human, anthropomorphic dog standing on hind legs"
+    },
+    {
+      "episode": 11,
+      "beat": "music-video-B",
+      "clip": "B",
+      "title": "MUSIC VIDEO RENDER B — Papa+Sara+Eva sock-hop dance (apron flapping)",
+      "mode": "omni",
+      "durationSec": 10,
+      "quality": "720p",
+      "nativeAudio": true,
+      "expectedCredits": 90,
+      "subjects": [
+        "Papa",
+        "Sara",
+        "Eva"
+      ],
+      "scene": "(designed cookout-celebration backdrop)",
+      "boundElements": [
+        {
+          "tag": "Papa",
+          "source": "library"
+        },
+        {
+          "tag": "Sara",
+          "source": "library"
+        },
+        {
+          "tag": "Eva",
+          "source": "library"
+        },
+        {
+          "tag": "papas-apron",
+          "source": "library"
+        }
+      ],
+      "reuseAsset": true,
+      "reuseAssetNote": "ONE 10s render, paired with Suno song 'World's Okayest Dad.mp3' via loopVideoWithSong.mjs to fill the 30s music block.",
+      "musicVideoBlock": true,
+      "loopExpansion": {
+        "iterations": 3,
+        "xfadeDuration": 0.3,
+        "outputDurationSec": 28.5
+      },
+      "usedUnderSongs": [
+        {
+          "song": "assets/music/World's Okayest Dad.mp3",
+          "blockDurationSec": 30,
+          "trimStart": 0,
+          "placementClipNumber": "15music"
+        }
+      ],
+      "prompt": "Wide front-facing music-video shot — designed soft pastel sunny-yellow / sky-blue gradient backdrop with a HUGE stylized cartoon GRILL on the LEFT puffing rhythmic happy smoke wisps in time, scattered cheerful CONFETTI shaped like tiny burgers, hot dogs, and red-and-white checker squares raining continuously down. NO scene, NO room, NO furniture, NO logos, NO real text. @Papa on the LEFT wearing @papas-apron with the printed text WORLD'S OKAYEST DAD clearly readable across his chest, English text only large clear printed Roman alphabet, NO foreign characters; @Sara CENTER and @Eva on the RIGHT, all three side-by-side beaming huge, bopping in rhythm. Papa hip-bops to the LEFT with a big proud dad-grin, hands flat at his sides snapping fingers on the off-beat. Sara claps over her head once, beaming. Eva claps over her head once, beaming. Papa hip-bops to the RIGHT. Sara does a little spin in place. Eva does a little spin in place. Papa points his thumbs proudly at his apron text twice in a row — pointer-pointer beat. All three pump their fists in the air on the big beat. Sara and Eva each do a tiny sock-hop kick. They all return to grinning side-by-side starting pose. Movements are RHYTHMIC and LOOPABLE — clean cycle: bop-left → claps → bop-right → spins → apron-points → fist-pumps → kicks → return. Camera locked, head-on, kid-eye-level. Bright cheerful party lighting. The three hum and sing along generically — no specific dialogue, no lip-sync to any words. The shot is designed to LOOP cleanly: all three return to the same starting pose at second 0 and second 10. Smoke wisps + burger-confetti continuously rain. No audible speech, no music — silent render.",
+      "negativePrompt": "duplicate character, twin, clone, two of the same, mirrored figure, second father, two Papa, identical adults, extra people, third child, second sister, second sara, second eva, two eva, duplicate eva, mirror reflection, family members, strangers, crowd, group of people, other faces, background people, friends, neighbors, mama in this clip, dog visible, joe visible, real grill brand, real burger brand, specific dialogue words, lip-sync to specific syllables, audible music, audible singing words, three arms, extra hand, anatomy error, Cyrillic, Chinese characters, garbled letters, scrambled letters, wrong text on apron, fourth person dancing"
+    }
+  ]
+}

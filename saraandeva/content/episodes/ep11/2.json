@@ -1,0 +1,21 @@
+{
+  "episode": 11,
+  "beat": 2,
+  "clip": 2,
+  "title": "Sara helps line up the burger buns on the picnic table",
+  "mode": "omni",
+  "durationSec": 10,
+  "quality": "720p",
+  "nativeAudio": true,
+  "expectedCredits": 90,
+  "subjects": ["Sara", "Papa"],
+  "scene": "backyard-grill-area",
+  "boundElements": [
+    { "tag": "Sara", "source": "library" },
+    { "tag": "Papa", "source": "library" },
+    { "tag": "backyard-grill-area", "source": "library" },
+    { "tag": "papas-apron", "source": "library" }
+  ],
+  "prompt": "Wide cheerful shot of @backyard-grill-area in golden-hour light. @Papa already on the LEFT side at the hot grill wearing @papas-apron, flipping a hamburger patty with the spatula, faint smoke wisps rising. @Sara already standing on the RIGHT side at the red-and-white checkered picnic table, hair in cheerful pigtails, carefully lining up fluffy round burger buns one-by-one in a neat row with intense five-year-old concentration, tongue poking out the corner of her mouth. Sara (proudly to herself): \"Bun. Bun. Bun. Bun. PERFECT row of buns.\" Papa (calling over from the grill, grinning): \"My sous-chef! Captain of the Bun Squad!\" Sara (puffing up her chest, hands on hips for two seconds): \"Captain of the BUN SQUAD, reporting for duty!\" She giggles and goes right back to bun-lining.",
+  "negativePrompt": "duplicate character, twin, clone, two of the same, mirrored figure, second father, second mother, two Papa, two Mama, identical adults, extra people, third child, second sister, second sara, second eva, two eva, duplicate eva, mirror reflection, family members in the background, additional children, extra child in background, ghost figure, shadow of person, strangers, crowd, group of people, other faces, background people, friends, neighbors, eva in this clip, mama in this clip, dog in this clip, joe in this clip, Cyrillic, Chinese characters, garbled letters, scrambled letters, three arms, extra hand, anatomy error"
+}

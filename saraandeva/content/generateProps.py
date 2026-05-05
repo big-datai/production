@@ -12,11 +12,14 @@ Reuses generateScenes.py's helpers for env loading, API key rotation,
 Gemini call, and inline-data formatting — keeps the prop generator
 small and avoids duplicating the call/retry logic.
 
-Output: assets/scenes/<prop_id>_v{1..N}.png (matches ep07 convention)
+Output: assets/scenes/<prop_id>.png (single version per prop — default).
+        Pass --variants N>1 to produce <prop_id>_v1.png … _vN.png for
+        manual variant-pick (rare; only when text rendering is finicky).
 
 Usage:
     python3 content/generateProps.py --prop gas_mask
-    python3 content/generateProps.py --prop all --variants 3
+    python3 content/generateProps.py --prop all
+    python3 content/generateProps.py --prop papas_apron --variants 3   # only if you need to compare text-rendering candidates
     python3 content/generateProps.py --list
 """
 
@@ -211,6 +214,68 @@ PROPS = {
             "feel. Pixar 3D render, premium kraft-paper material with "
             "subtle texture, a faint shimmer on the foil-lined opening. "
             "NO real-world brand marks, NO watermark."
+        ),
+    },
+
+    # ─── ep11 (Joe-burger-heist) ──────────────────────────────────────
+    "papas_apron": {
+        "label": "Papa's 'WORLD'S OKAYEST DAD' grilling apron",
+        "refs": [],
+        "description": (
+            "A SINGLE adult-sized cooking APRON laid flat (or hung on a "
+            "neutral hook), shown front-facing so the printed text reads "
+            "clearly. SHAPE: classic full-length bib apron with a neck "
+            "loop, two waist ties, and a single horizontal POCKET across "
+            "the lower middle. COLOR: heathered NATURAL CHARCOAL-GREY "
+            "canvas with subtle texture (cotton-canvas-look), reinforced "
+            "stitching at the seams in burnt-orange contrast thread. "
+            "FRONT GRAPHIC (centered chest-area): a chunky friendly "
+            "cartoon CHEF / DAD-MUSTACHE icon (round face, big mustache, "
+            "wide grin, simple line-drawn) printed in CREAM-OFF-WHITE "
+            "ink, with a tiny printed CHEF'S HAT sitting jauntily on top. "
+            "CENTERED PRINTED TEXT, large, clean printed Roman block "
+            "letters in CREAM ink — TWO LINES, stacked: line 1 = "
+            "\"WORLD'S\", line 2 = \"OKAYEST DAD\" (the apostrophe in "
+            "WORLD'S printed cleanly). Beneath the text, a tiny printed "
+            "subtitle in smaller Roman letters: 'EST. WHENEVER'. English "
+            "text only, every letter large, clean, fully legible and "
+            "CORRECTLY SPELLED, NO foreign characters, NO Cyrillic, NO "
+            "Chinese characters, NO garbled or scrambled letters, NO "
+            "misspellings. PALETTE: charcoal-grey canvas, cream-off-white "
+            "ink graphic, burnt-orange seam thread, soft natural shadows. "
+            "Centered on a soft off-white / pale-cream neutral backdrop "
+            "with a gentle drop shadow underneath. Lighting: soft top-"
+            "key with a fill, even studio-product feel. Pixar 3D render, "
+            "premium cotton-canvas material with subtle weave texture. "
+            "NO real-world brand marks, NO watermark."
+        ),
+    },
+
+    "burger_platter": {
+        "label": "Cookout food platter — 3 hot dogs + 4 burger patties (cooked)",
+        "refs": [],
+        "description": (
+            "A SINGLE round chunky white CERAMIC PLATTER (slight grey "
+            "rim accent), seen at a flattering 3/4 top-down angle, "
+            "displayed as the canonical cookout-food prop. ON THE "
+            "PLATTER: arranged neatly in two rows — TOP ROW: THREE "
+            "GRILLED HOT DOGS in cheerful golden-brown cartoon-chunky "
+            "skin, slight char-marks across each, plump and rounded, "
+            "lined up parallel left-to-right. BOTTOM ROW: FOUR JUICY "
+            "GRILLED HAMBURGER PATTIES, deep cooked-brown with crisp "
+            "edges, rich grill-mark X-criss-crosses on the top, slight "
+            "glossy meat-juice highlights, lined up neatly two-by-two. "
+            "BETWEEN the rows of food, a small sprig of green parsley "
+            "or a single wedge of lemon for cheerful color pop. "
+            "PALETTE: warm golden-brown cooked meat tones, ivory "
+            "platter, fresh green garnish accent. Centered in the "
+            "frame on a soft off-white / pale-cream neutral backdrop "
+            "with a gentle drop shadow underneath. Lighting: warm "
+            "soft top-key with a slight fill — even studio-product "
+            "feel, food-photography mouth-watering vibe. Pixar 3D "
+            "render, premium plate ceramic + cooked-meat materials. "
+            "NO PEOPLE, NO HANDS, NO CHARACTERS, NO real-world brand "
+            "marks, NO text on the platter, NO watermark."
         ),
     },
 }

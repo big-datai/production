@@ -1,0 +1,20 @@
+{
+  "episode": 12,
+  "beat": 18,
+  "clip": 16,
+  "title": "Sara opens notebook — MAGIC FOREST RESCUE PLAN",
+  "mode": "omni",
+  "durationSec": 10,
+  "quality": "720p",
+  "nativeAudio": true,
+  "expectedCredits": 90,
+  "subjects": ["Sara"],
+  "scene": "beach-sunset",
+  "boundElements": [
+    { "tag": "Sara", "source": "library" },
+    { "tag": "beach-sunset", "source": "library" },
+    { "tag": "sara-notebook-rescue", "source": "library" }
+  ],
+  "prompt": "Tight close-up shot on the @beach-sunset sand. @Sara already seated cross-legged on a beach towel, the open @sara-notebook-rescue spread across her lap, a chunky purple crayon in her hand. The notebook page already shows the title 'MAGIC FOREST RESCUE PLAN' in big handwriting at the top with a small drawing of the glowing bottle next to it. Sara is mid-drawing — adding a small island shape and a dotted-line route from the bottle to the island, an X marking the spot. Sara (concentrating, tongue poking out): \"Bottle here... island here... route... X marks the SPOT.\" She holds up the page admiring her own work. Sara (satisfied, to herself): \"Nailed it.\" Soft golden sunset light from the right side, gentle wave sounds.",
+  "negativePrompt": "duplicate character, twin, clone, two of the same, mirrored figure, second father, second mother, two Papa, two Mama, identical adults, extra people, third child, second sister, second sara, two sara, duplicate sara, mirror reflection, family members in the background, additional children, extra child in background, ghost figure, shadow of person, papa in this clip, mama in this clip, eva in this clip, multiple notebooks, identical notebooks, garbled text on notebook"
+}

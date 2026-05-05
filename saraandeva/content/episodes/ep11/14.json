@@ -1,0 +1,23 @@
+{
+  "episode": 11,
+  "beat": 15,
+  "clip": 14,
+  "title": "Family laughs together — 'Give it back, little dog!'",
+  "mode": "omni",
+  "durationSec": 15,
+  "quality": "720p",
+  "nativeAudio": true,
+  "expectedCredits": 135,
+  "subjects": ["Papa", "Sara", "Eva", "Joe"],
+  "scene": "backyard-grill-area",
+  "boundElements": [
+    { "tag": "Papa", "source": "library" },
+    { "tag": "Sara", "source": "library" },
+    { "tag": "Eva", "source": "library" },
+    { "tag": "Joe", "source": "library" },
+    { "tag": "backyard-grill-area", "source": "library" },
+    { "tag": "papas-apron", "source": "library" }
+  ],
+  "prompt": "Wide cheerful family-comedy shot in @backyard-grill-area, sunny golden-hour afternoon, soft warm kid-show comedy lighting, family-laugh-out-loud energy throughout. (BEAT 1 — 0-5s) @Papa already CENTER-LEFT in the grass on his knees, wearing @papas-apron, leaning forward laughing helplessly with both hands flat on his knees, mouth wide open in a big silly belly-laugh, eyes crinkled with pure dad-joy, NOT angry NOT scary NOT shouting. @Joe already FOREGROUND-CENTER STANDING FIRMLY ON ALL FOUR PAWS planted flat on the green grass facing the camera at a slight angle, hot dog still firmly crossways in his mouth like a cigar, big innocent eyes wide, fluffy head tilted one inch sideways, ears perked up, picture of cute confusion. Papa (booming through his laughter, gentle silly playful tone): \"Oh JOE — give it BACK, little dog!\" (BEAT 2 — 5-10s) @Sara already CENTER-RIGHT next to Papa, kneeling close to him in the grass, both hands cupped giggling against her cheeks. @Eva already FAR-RIGHT next to Sara, also kneeling in the grass, both arms held out wide in a friendly 'come here' welcoming gesture, giggling helplessly. Sara (singing-giggling): \"Little dog, little dog!\" Eva (giggling sweetly): \"Give it back, silly Joe!\" Joe wiggles his fluffy head playfully back and forth, hot dog still firmly in his mouth, takes one tiny playful hop-in-place on his four paws (NOT lifting off the ground), tail wagging mischievously. (BEAT 3 — 10-15s) Papa, Sara, and Eva all extend gentle laughing hands forward toward Joe in a comic 'come here you' welcoming gesture, all three still kneeling/grounded in the grass laughing together. Joe gives a tiny happy yip (\"Mmf hff hff!\") and gives a small playful wiggle in place, hot dog still firmly in his mouth, all four paws planted firmly on the grass throughout. Papa, Sara, Eva all dissolve into helpless warm family laughter together watching the cute pup. Cheerful, warm, kid-show family-comedy joy throughout.",
+  "negativePrompt": "duplicate character, twin, clone, two of the same, mirrored figure, second father, two Papa, identical adults, second mother, two Mama, mama in this clip, extra people, third child, second sister, second sara, second eva, two eva, duplicate eva, three girls, four kids, extra kids, additional children, extra child in background, second blonde child, fourth child, fifth child, ghost figure, ghost kid, ghost children, shadow children, shadow of person, mirrored children, mirror reflection, family members in the background, strangers, crowd, group of people, other faces, background people, friends, neighbors, duplicate dog, second dog, two pomeranians, identical dogs, extra dogs, ghost dog, three arms, extra hand, anatomy error, dog talks like a human, anthropomorphic dog standing on hind legs, dog flying, dog in mid-air, dog jumping high, dog leaping, dog floating, dog levitating, airborne dog, dog launched into air, dog mid-leap, dog lifted off ground, dog hovering, papa screaming aggressively, papa shouting violently, papa angry shout, papa rage face, papa scary face, papa frowning, scary expression, frightening expression, intense yelling, environmental shake, leaves trembling, ground shaking, dramatic sound waves, action lines, motion lines from shouting, blood, red splatter, red stain on apron"
+}

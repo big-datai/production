@@ -1,0 +1,22 @@
+{
+  "episode": 11,
+  "beat": 16,
+  "clip": 15,
+  "title": "PARENT-ACTIVITY (15s) — Papa lunges, slips on a ketchup packet, tackle-hug from girls",
+  "mode": "omni",
+  "durationSec": 15,
+  "quality": "720p",
+  "nativeAudio": true,
+  "expectedCredits": 135,
+  "subjects": ["Papa", "Sara", "Eva"],
+  "scene": "backyard",
+  "boundElements": [
+    { "tag": "Papa", "source": "library" },
+    { "tag": "Sara", "source": "library" },
+    { "tag": "Eva", "source": "library" },
+    { "tag": "backyard", "source": "library" },
+    { "tag": "papas-apron", "source": "library" }
+  ],
+  "prompt": "Wide cinematic comedy shot in @backyard, green grass, leafy backyard tree, black iron fence, sunny afternoon. @Papa already CENTER-FRAME in the foreground in the grass, wearing @papas-apron, in a dramatic mid-lunge pose chasing after a now-OFF-SCREEN tail-wagging escape, both arms outstretched in classic comic-pursuit form. (BEAT 1 — 0-5s) Papa's leading foot SLIPS sideways on a tiny SEALED unopened SHINY-FOIL PURPLE KETCHUP PACKET lying flat in the grass (the packet stays SEALED and INTACT throughout the entire clip — it skitters one inch away as his foot slides, the packet remains fully closed, fully sealed, fully whole at all times). Papa's leg shoots forward in slapstick slow-motion, both arms windmill cartoonishly in the air. Papa's eyes go saucer-wide, mouth in a perfect surprised 'O'. Papa (theatrical slow-motion shout, big and silly): \"OH NO-OOOOO-OOOO!\" (BEAT 2 — 5-10s) Papa face-plants GENTLY into the soft springy grass with arms still outstretched. The apron stays its normal CHARCOAL-GREY canvas color — no stains, no marks, no liquid, no red anywhere. Head turns sideways with a goofy defeated dad expression. He blows a single small blade of grass off his lips with a tiny puff. Papa (muffled, into the grass, defeated and silly): \"...I'll just live here now. This is my home.\" (BEAT 3 — 10-15s) @Sara already kneeling on the LEFT side of Papa in the grass close to his shoulder, both arms already wrapped around his upper arm in a hug, giggling uncontrollably. @Eva already kneeling on the RIGHT side of Papa close to his other shoulder, both arms already wrapped around his other arm in a hug, also giggling uncontrollably. The three are already in a cuddly tangle in the grass, all three giggling in a heap. Sara (squeezing his shoulders): \"It's okay Papa! We still LOVE you, dream-cooker!\" Eva (kissing the top of his head): \"You're our FAVORITE okayest dad in the WHOLE WORLD!\" Papa lets out a long surrendered laugh. Cheerful kid-show comedy lighting, clean and warm. The apron front and grass remain visually clean throughout — no marks, no spills, no stains, no liquid of any kind in this clip.",
+  "negativePrompt": "duplicate character, twin, clone, two of the same, mirrored figure, second father, two Papa, identical adults, extra people, third child, second sister, second sara, second eva, two eva, duplicate eva, three girls, four kids, extra kids, additional children, extra child in background, second blonde child, fourth child, fifth child, ghost figure, ghost kid, ghost children, shadow children, shadow of person, mirrored children, mirror reflection, family members in the background, strangers, crowd, group of people, other faces, background people, friends, neighbors, mama in this clip, dog visible, joe visible, joe in frame, fourth character, three arms, extra hand, anatomy error, blood, blood splatter, red liquid spraying, red liquid on face, red liquid near mouth, red liquid around mouth, red splatter near face, red splatter near mouth, red stain on face, red dripping, red drips on apron, red splash on apron front, red on Papa's face, red on Papa's mouth, blood on lips, blood on chin, blood on shirt, ketchup squirt, ketchup spray, ketchup squirting, ruptured packet, exploded packet, opened packet, gory, gore, injury, wound, bleeding, scary, violent, distressing"
+}

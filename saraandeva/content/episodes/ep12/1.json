@@ -1,0 +1,21 @@
+{
+  "episode": 12,
+  "beat": 1,
+  "clip": 1,
+  "title": "HOOK — beach arrival",
+  "mode": "omni",
+  "durationSec": 10,
+  "quality": "720p",
+  "nativeAudio": true,
+  "expectedCredits": 90,
+  "subjects": ["Mama", "Sara", "Eva"],
+  "scene": "beach-shore",
+  "boundElements": [
+    { "tag": "Mama", "source": "library" },
+    { "tag": "Sara", "source": "library" },
+    { "tag": "Eva", "source": "library" },
+    { "tag": "beach-shore", "source": "library" }
+  ],
+  "prompt": "Wide cinematic shot on @beach-shore — bright sunny morning, gentle surf rolling in, soft sandy beach, blue sky with a few cotton clouds. @Mama already standing on the dry sand carrying a striped beach bag and a small cooler, sun hat and sunglasses on, smiling. @Sara already mid-stride next to her on the sand, holding a yellow plastic bucket and a red shovel, ponytail bouncing with excitement. @Eva already next to Sara, curly blonde hair with rainbow bow, holding a tiny pink boogie-board, eyes huge at the surf. Mama (warm, looking around): \"Okay, sandcastle station — RIGHT here!\" Sara (vibrating with energy): \"I want to make TURRETS!\" Eva (pointing at the surf, jumping in place): \"WAVES! WAVES!\"",
+  "negativePrompt": "duplicate character, twin, clone, two of the same, mirrored figure, second father, second mother, two Papa, two Mama, identical adults, extra people, third child, second sister, second sara, second eva, two eva, duplicate eva, mirror reflection, family members in the background, additional children, extra child in background, second blonde child, ghost figure, shadow of person, strangers on the beach, crowd, group of people, other faces, other beachgoers, other families, friends, neighbors, papa in this clip"
+}

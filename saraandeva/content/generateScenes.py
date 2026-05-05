@@ -333,6 +333,37 @@ SCENES = {
             "to be composited in."
         ),
     },
+    "backyard_grill_area": {
+        "label": "Backyard grill + picnic table area (Saturday cookout)",
+        "refs": [str(HOUSE_DIR / "back_yard.jpeg")],
+        "description": (
+            "The family's REAL backyard from the prior 'backyard' scene, "
+            "now staged for a Saturday afternoon BBQ cookout — same green "
+            "lawn, black iron fence along the back boundary, mature trees "
+            "behind the fence, late-afternoon golden-hour sunshine. "
+            "FOREGROUND CENTER: a chunky cartoon-styled BLACK GAS GRILL on "
+            "wheels with two side shelves, a chrome lid lifted slightly to "
+            "reveal a hot grilling surface with criss-crossing grill grates "
+            "and faint heat-shimmer wisps rising up — NO food on the grill "
+            "(food gets composited per clip). A small spatula and BBQ "
+            "tongs hang from the grill's side hook. To the LEFT of the "
+            "grill: a long natural-wood PICNIC TABLE with attached benches, "
+            "draped with a soft red-and-white CHECKERED tablecloth, set "
+            "with a stack of WHITE PAPER PLATES, a row of fluffy round "
+            "BURGER BUNS lined up neatly, a couple of white squeeze "
+            "bottles of mustard and mayonnaise (no readable text labels), "
+            "a stack of red picnic napkins. To the RIGHT of the grill: a "
+            "few mature LEAFY GREEN BUSHES at the property edge against "
+            "the iron fence — perfect 'Joe hides here' bushes. Above and "
+            "behind: blue sky, a few wispy clouds, the leafy tree from "
+            "the canonical backyard catching golden-hour light. Pixar "
+            "cartoon render, premium materials, warm cheerful family-"
+            "weekend mood. EMPTY of people and animals, ready for "
+            "characters + food platter + Joe to be composited in. NO "
+            "real-world brand logos, NO foreign characters, NO readable "
+            "label text on the grill or condiments."
+        ),
+    },
     "front_house": {
         "label": "Front of house (summer)",
         "refs": [str(HOUSE_DIR / "fron_house_lemonade_stand.jpeg"), str(HOUSE_DIR / "front_fence_school_buss.jpeg")],
@@ -977,6 +1008,234 @@ SCENES = {
             "side. NO PEOPLE in frame. The canonical drive-in food-"
             "tray prop. Pixar feature-render quality, mouth-watering "
             "vintage Americana food styling."
+        ),
+    },
+
+    # ─── ep12 (Beach + Ginger's Magic Bottle) ─────────────────────────────
+    "beach_shore": {
+        "label": "Beach shore — sunny sandy beach with gentle surf",
+        "refs": [],
+        "description": (
+            "A bright sunny SANDY BEACH on a warm summer day. KEY "
+            "FEATURES: soft golden sand stretching from foreground "
+            "to a long wet tide line in the mid-ground, gentle "
+            "blue-green surf rolling in with small white-foam "
+            "wave crests, distant hazy horizon line where ocean "
+            "meets sky. SKY: vivid cartoon blue with a few "
+            "stylized cotton-puff clouds. SUN: warm midday light "
+            "from upper-right casting soft sand-pattern shadows. "
+            "Decorative DETAILS: a few cartoon-shape seashells "
+            "scattered on the dry sand, scattered seaweed bits "
+            "near the tide line, a single seagull silhouette "
+            "drifting across the sky. NO PEOPLE in frame. NO "
+            "buildings, NO boardwalk, NO real beach photo "
+            "texture — fully Pixar-stylized cheerful family "
+            "beach. Wide establishing shot at adult eye-level "
+            "looking from the dry sand toward the surf and "
+            "horizon. Clean composition with breathing room. "
+            "Cinematic Pixar render, warm summer mood. NO "
+            "foreign characters, NO garbled text, NO real-world "
+            "brand marks."
+        ),
+    },
+
+    "beach_blanket": {
+        "label": "Beach blanket setup — Mama's home base on the sand",
+        "refs": [],
+        "description": (
+            "A close-up still-life-style scene of a FAMILY "
+            "BEACH-DAY base on the dry golden sand. KEY ITEMS "
+            "(arranged in a pleasing composition): a large "
+            "RED-AND-WHITE STRIPED beach blanket spread flat on "
+            "the sand, a brightly-colored sun umbrella tilted "
+            "at a slight angle providing a shady arc, a small "
+            "PICNIC COOLER (white with a turquoise lid) sitting "
+            "on the corner of the blanket with a juice box "
+            "peeking out the top, a folded magazine and a pair "
+            "of sunglasses on the blanket, a yellow plastic "
+            "BUCKET and a red SHOVEL leaning against the cooler, "
+            "and a few seashells the kids have already "
+            "collected scattered on the blanket. BACKGROUND: "
+            "softly out-of-focus golden beach with a hint of "
+            "the surf line in the deep distance. Warm midday "
+            "sunlight casts soft shadows. NO PEOPLE in frame — "
+            "this is the canonical 'Mama's home base' setup. "
+            "Cinematic Pixar render, lived-in family-day "
+            "atmosphere. NO garbled text, NO real-world brand "
+            "marks anywhere."
+        ),
+    },
+
+    "beach_sunset": {
+        "label": "Beach at golden hour — sunset with silhouette-friendly long shadows",
+        "refs": [],
+        "description": (
+            "SAME beach as the beach_shore canonical but at "
+            "GOLDEN HOUR sunset. KEY FEATURES: the sun half-set "
+            "on the horizon casting a CORAL-PINK + ORANGE + "
+            "GOLD gradient sky, the wet sand near the surf line "
+            "REFLECTING the sky in mirror-like sheen, gentle "
+            "surf rolling in lit with warm golden caps. The dry "
+            "sand in the foreground glows warm amber. Long "
+            "soft shadows extend from any potential foreground "
+            "elements. SKY: starts deep coral pink at the top, "
+            "fades down through orange, gold, and finally a "
+            "soft lavender-blue at the bottom, with a few wispy "
+            "clouds catching the warm light. NO PEOPLE in "
+            "frame — empty silhouette-friendly composition "
+            "designed for compositing characters in profile or "
+            "as silhouettes against the sunset. Cinematic Pixar "
+            "render, dreamy magical end-of-day mood. NO "
+            "foreign characters, NO garbled text, NO real-world "
+            "brand marks."
+        ),
+    },
+
+    "beach_playground": {
+        "label": "Beach playground — wooden play structure on sand with curly slide",
+        "refs": [],
+        "description": (
+            "A cheerful BEACH PLAYGROUND set right on the soft "
+            "golden sand of a sunny seaside. KEY EQUIPMENT: on "
+            "the LEFT side of the frame a tall RED CURLY TUBE "
+            "SLIDE with one full corkscrew turn before reaching "
+            "ground level (the comic-gag point — visibly TOO "
+            "NARROW for an adult to fit through). In the "
+            "CENTER-BACK a sturdy BLUE CLIMBING TOWER with a "
+            "knotted-rope ladder going up its side and a small "
+            "pretend-pirate-ship bow at the top with a tiny "
+            "yellow flag. On the RIGHT side, two empty SWINGS "
+            "hanging from a wooden A-frame, both at rest. A "
+            "small SANDPIT with toys at the base. SETTING: "
+            "the playground sits right on the dry beach sand "
+            "with two stylized PALM TREES framing the edges of "
+            "the frame, and the OCEAN visible in soft focus in "
+            "the background showing gentle blue-green surf "
+            "and a hazy horizon. Bright sunny daylight from "
+            "above-right, warm Pixar-cheerful lighting. NO "
+            "PEOPLE in frame — this is the canonical 'beach "
+            "playground' bound element ready for characters "
+            "to be composited in. Wide establishing shot at "
+            "kid-eye level. NO garbled text, NO real-world "
+            "brand marks. Cinematic Pixar render."
+        ),
+    },
+
+    "magic_bottle": {
+        "label": "Magic bottle — small glowing aqua-blue glass bottle with rolled note inside",
+        "refs": [],
+        "description": (
+            "A close-up still-life prop reference: a small "
+            "GLOWING AQUA-BLUE GLASS BOTTLE on a soft sandy "
+            "background. KEY DETAILS: the bottle is roughly "
+            "kid-palm-sized, hand-blown style with thick glass "
+            "and a slightly irregular shape, slim neck and a "
+            "tiny rounded body. Inside the bottle a small "
+            "ROLLED PAPER NOTE is clearly visible through the "
+            "glass, sitting at the bottom. A SMALL WOODEN CORK "
+            "STOPPER plugs the neck. The bottle EMITS a faint "
+            "magical aqua-blue GLOW as if lit from within, "
+            "with tiny glowing sparkles drifting up around it. "
+            "BACKGROUND: softly out-of-focus wet sand with a "
+            "few water ripples just visible to suggest the "
+            "tide line of a beach. Warm sunlight catches the "
+            "glass making it shimmer. NO PEOPLE in frame, NO "
+            "other bottles, NO clutter. The canonical magic-"
+            "bottle prop, ready to be composited into kids' "
+            "hands later. Pixar feature-render quality, "
+            "magical storybook atmosphere."
+        ),
+    },
+
+    "rescue_note": {
+        "label": "Rescue note — tiny rolled paper from Ginger the magic-forest fox",
+        "refs": [],
+        "description": (
+            "A close-up still-life prop reference: a SMALL "
+            "ROLLED PAPER SCROLL just opened up flat on a "
+            "child's open palm. The paper is slightly aged and "
+            "cream-colored with a soft deckled edge, the sort "
+            "you'd find rolled inside a magical message "
+            "bottle. HANDWRITTEN TEXT (in clean printed Roman "
+            "letters, English only, fully legible — NO "
+            "garbled characters, NO foreign characters): "
+            "'I AM STUCK ON A FARAWAY ISLAND' on the first "
+            "line and 'PLEASE COME FIND ME!' on the second "
+            "line, written in a friendly cursive child-style "
+            "with a small tilt. At the bottom-right corner: "
+            "a signature reading '— Ginger' with a tiny "
+            "stamped pawprint next to it. A FAINT MAGICAL "
+            "SHIMMER lifts off the paper as if it carries a "
+            "spell. BACKGROUND: softly out-of-focus child's "
+            "palm and a hint of beach sand. Bright warm "
+            "sunlight from above. NO PEOPLE in full frame "
+            "(only a child's open palm holding the note from "
+            "below). The canonical rescue-note prop. Pixar "
+            "feature-render quality, magical storybook "
+            "atmosphere."
+        ),
+    },
+
+    "sandcastle_research_base": {
+        "label": "Sandcastle research base — enormous sandcastle with rescue flag and moat",
+        "refs": [],
+        "description": (
+            "An ENORMOUS SANDCASTLE built on a sunny beach. "
+            "KEY FEATURES: multiple turret towers of varying "
+            "heights (the tallest reaching about kid-shoulder "
+            "height), elaborate tiers and battlements decorated "
+            "with cartoon-shape SEASHELLS pressed into the "
+            "sand walls in pinks, corals, and creams. A DEEP "
+            "MOAT around the base of the castle with a small "
+            "amount of seawater sloshing in it. A small "
+            "wooden bridge made from a stick crosses the "
+            "moat. AT THE TOP of the tallest turret a "
+            "TWIG-FLAG sticks up bearing a tiny rectangular "
+            "PAPER FLAG with the word 'RESCUE' clearly "
+            "written across it in chunky kid-style printed "
+            "Roman letters (English only, fully legible, NO "
+            "garbled characters). Cute kid-shovel and yellow "
+            "bucket lying nearby in the sand as evidence of "
+            "the build process. BACKGROUND: bright sunny dry "
+            "beach with the surf line visible in soft focus "
+            "in the deep distance. NO PEOPLE in frame — this "
+            "is the finished-base hero shot ready for kids "
+            "to be composited next to it. Cinematic Pixar "
+            "render, triumphant family-craft mood. NO real-"
+            "world brand marks."
+        ),
+    },
+
+    "sara_notebook_rescue": {
+        "label": "Sara's notebook — MAGIC FOREST RESCUE PLAN map page",
+        "refs": [],
+        "description": (
+            "A close-up prop reference: an OPEN SPIRAL "
+            "NOTEBOOK lying flat with both pages visible. "
+            "The notebook has a chunky purple plastic spiral "
+            "binding down the center. The LEFT PAGE shows "
+            "the title 'MAGIC FOREST RESCUE PLAN' written "
+            "across the top in big chunky kid-style printed "
+            "Roman letters (English only, fully legible, NO "
+            "garbled characters), in PURPLE crayon. Below "
+            "the title a HAND-DRAWN MAP: a small drawing of "
+            "a glowing aqua-blue bottle on the LEFT side, a "
+            "DOTTED ROUTE LINE (like a treasure-map trail) "
+            "snaking across the page, and on the RIGHT side "
+            "a small ISLAND-SHAPE drawing with a giant "
+            "purple X marking it. Doodles around the map: a "
+            "tiny cartoon fox face labeled 'GINGER', a few "
+            "stars, an arrow with the word 'NORTH'. The "
+            "RIGHT PAGE is mostly blank with three bullet "
+            "points: 'Step 1: BUILD BASE ✓', 'Step 2: BUILD "
+            "BOAT', 'Step 3: SAVE GINGER!'. BACKGROUND: "
+            "softly out-of-focus sandy beach blanket beneath "
+            "the open notebook, a chunky purple crayon "
+            "lying nearby. Warm golden-hour light. NO "
+            "PEOPLE in frame — this is the canonical "
+            "notebook prop ready to be held by Sara in "
+            "later clips. Pixar feature-render quality, "
+            "kid-craft magical adventure-planning mood."
         ),
     },
 }

@@ -175,8 +175,20 @@ if (startFrom <= 2 && stopAfter >= 2) {
 const existingVersions = fs.existsSync(deliverDir)
   ? fs.readdirSync(deliverDir).filter(f => new RegExp(`^ep${epPad}_v(\\d+)\\.mp4$`).test(f)).map(f => Number(f.match(/_v(\d+)\.mp4$/)[1]))
   : [];
+// When Phase 3 will run, create the next version. When skipped (--start-from > 3),
+// the assembled mp4 must already exist on disk — use the LATEST version instead of
+// trying to point at a fresh nextVersion that doesn't exist. (Fix post-ep11 v5: upload
+// failed because nextVersion=6 was computed but Phase 3 was skipped, so v6.mp4 never
+// got created and the upload script got an empty path arg.)
+const willAssemble = startFrom <= 3 && stopAfter >= 3;
 const nextVersion = existingVersions.length === 0 ? 1 : Math.max(...existingVersions) + 1;
-const assembledPath = path.join(deliverDir, `ep${epPad}_v${nextVersion}.mp4`);
+const latestExistingVersion = existingVersions.length === 0 ? null : Math.max(...existingVersions);
+const useVersion = willAssemble ? nextVersion : latestExistingVersion;
+if (!willAssemble && useVersion === null) {
+  console.error(`❌ --start-from ${startFrom} skips Phase 3 but no existing ep${epPad}_v<N>.mp4 found in ${deliverDir}. Run with --start-from <= 3 to assemble first.`);
+  process.exit(1);
+}
+const assembledPath = path.join(deliverDir, `ep${epPad}_v${useVersion}.mp4`);
 
 if (startFrom <= 3 && stopAfter >= 3) {
   runPhase(3, `assembleEpisode → ep${epPad}_v${nextVersion}.mp4`, [
