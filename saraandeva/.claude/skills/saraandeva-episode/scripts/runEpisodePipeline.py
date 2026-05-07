@@ -74,6 +74,11 @@ def build_phase_list(ep: int, skip_eyeball: bool):
         Phase("7. normalize", ["node", str(SCRIPTS / "normalizeClipFilenames.mjs"), str(ep_dir / "clips")], optional=True),
         Phase("8. audit",     ["node", str(SCRIPTS / "auditClipsWithGemini.mjs"),
                                str(ep_dir / "clips"), "--out", str(ep_dir / "audit_v1.json")]),
+        Phase("8.5 auto-classify-defects",
+                              ["python3", str(SCRIPTS / "autoFixDefects.py"),
+                               "--audit", str(ep_dir / "audit_v1.json"),
+                               "--episode", str(ep)],
+                              optional=True),
         # Music / assemble / thumb / short / validate / upload remain manual until they're tested in this orchestrator
         # — surface them as TODO phases the human approves before running.
     ]
