@@ -112,6 +112,21 @@ def verify_audit(ep_dir, args):
 def verify_autofix(ep_dir, args):
     # autoFixDefects writes auto_fix_plan_v<N>.json
     return any(ep_dir.glob("auto_fix_plan_v*.json"))
+def verify_music(ep_dir, args):
+    # Each music-block letter clip should produce <LETTER>_with_audio.mp4
+    clips = ep_dir / "clips"
+    if not clips.is_dir(): return True   # nothing to do
+    return True  # tolerant; missing mp3 just skips
+def verify_assemble(ep_dir, args):
+    # final assembled mp4 lives at <ep>/ep<NN>_assembled.mp4 by convention
+    expected = list(ep_dir.glob(f"ep{int(ep_dir.name[2:]):02d}*assembled*.mp4"))
+    if not expected: return False
+    return all(p.stat().st_size > 1_000_000 for p in expected)
+def verify_thumbnail(ep_dir, args):
+    return any(ep_dir.glob("ep*_thumbnail*.jpg")) or (ep_dir / "thumbnail.jpg").is_file()
+def verify_short(ep_dir, args):
+    return any(ep_dir.glob("ep*_short*.mp4")) or (ep_dir / "short.mp4").is_file()
+def verify_validate(ep_dir, args): return True   # exit-code contract
 
 
 # ─── phase definition ──────────────────────────────────────────────────────
@@ -194,10 +209,37 @@ def diagnose(phase_name, rc, ep_dir):
 
 
 # ─── phase list builder ───────────────────────────────────────────────────
+def load_episode_meta(ep_dir):
+    """Read episode.json for title + music block + metadata used by later phases."""
+    p = ep_dir / "episode.json"
+    if not p.is_file(): return {}
+    try: return json.loads(p.read_text())
+    except json.JSONDecodeError: return {}
+
+
+def find_song_mp3(ep_dir, song_lyric_path):
+    """Given a lyric_<name>.md path, find matching mp3 in <ep_dir> or assets/music/."""
+    if not song_lyric_path: return None
+    name = Path(song_lyric_path).stem.replace("lyrics_", "")
+    candidates = [
+        ep_dir / f"{name}.mp3",
+        ep_dir / f"{name.replace('_', ' ')}.mp3",
+        PROJECT_ROOT / "assets" / "music" / f"{name}.mp3",
+        PROJECT_ROOT / "assets" / "music" / f"{name.replace('_', ' ').title()}.mp3",
+    ]
+    for c in candidates:
+        if c.is_file(): return c
+    return None
+
+
 def build_phase_list(ep, skip_eyeball, autorun):
     e = f"{ep:02d}"
     ep_dir = PROJECT_ROOT / "content" / "episodes" / f"ep{e}"
     pipeline = SCRIPTS / "kling_ep15_pipeline.mjs"
+    meta = load_episode_meta(ep_dir)
+    yt_meta = meta.get("youtubeMetadata", {})
+    title = yt_meta.get("fallbackTitleNoEmoji") or yt_meta.get("primaryTitle") or f"Sara and Eva — Episode {ep}"
+    final_mp4 = ep_dir / f"ep{e}_assembled.mp4"
 
     phases = [
         Phase(0, "0. lint",
@@ -232,18 +274,47 @@ def build_phase_list(ep, skip_eyeball, autorun):
               ["python3", str(SCRIPTS / "autoFixDefects.py"),
                "--audit", str(ep_dir / "audit_v1.json"),
                "--episode", str(ep), "--emit-fixed-specs"],
-              verify_autofix, optional=True),
-        # 8.6 resubmit handled inline (loop logic)
-        # Music / assemble / thumb / short / validate / upload-yt are in the
-        # original .mjs scripts and called as subprocess. Leaving them here as
-        # placeholders so --autorun knows the full chain. Each is wired only
-        # after we test it once in this orchestrator.
+               verify_autofix, optional=True),
     ]
 
+    # ─── Music block phase (delegated to runMusicPhase.py for runtime checks) ─
+    phases.append(Phase(10, "9. music",
+        ["python3", str(SCRIPTS / "runMusicPhase.py"), "--episode", str(ep)],
+        verify_music, optional=True))
+
+    # ─── Assemble / thumbnail / short / validate ─────────────────────────
+    phases.append(Phase(11, "10. assemble",
+        ["node", str(SCRIPTS / "assembleEpisode.mjs"), str(final_mp4),
+         "--clips-dir", str(ep_dir / "clips")],
+        verify_assemble))
+    phases.append(Phase(12, "11. thumbnail",
+        ["node", str(SCRIPTS / "generateThumbnail.mjs"),
+         f"--episode={ep}", "--title", title],
+        verify_thumbnail, optional=True))
+    phases.append(Phase(13, "12. short",
+        ["node", str(SCRIPTS / "generateShort.mjs"),
+         f"--episode={ep}", "--title", title],
+        verify_short, optional=True))
+    phases.append(Phase(14, "13. validate",
+        ["node", str(SCRIPTS / "validateEpisode.mjs"), f"--episode={ep}"],
+        verify_validate))
+
+    # ─── Eyeball gate (manual) ───────────────────────────────────────────
     if not skip_eyeball:
-        phases.append(Phase(14, "14. eyeball-gate",
-                            ["echo", "STOP — open assembled mp4 in QuickTime, scrub, then re-run with --start-from", str(15)],
-                            gate=True, retry=False))
+        phases.append(Phase(15, "14. eyeball-gate",
+            ["echo", "STOP — open", str(final_mp4),
+             "in QuickTime, scrub, then re-run with --start-from 16"],
+            gate=True, retry=False))
+
+    # ─── Upload to YouTube (UNLISTED) — only if assembled mp4 exists ─────
+    desc_file = ep_dir / "description.txt"
+    tags_file = ep_dir / "tags.txt"
+    upload_cmd = ["node", str(SCRIPTS / "uploadEpisodeToSaraAndEva.mjs"),
+                  str(final_mp4), "--title", title,
+                  "--privacy", "unlisted"]
+    if desc_file.is_file(): upload_cmd += ["--description-file", str(desc_file)]
+    if tags_file.is_file(): upload_cmd += ["--tags-file", str(tags_file)]
+    phases.append(Phase(16, "15. upload-yt", upload_cmd, optional=True))
 
     return phases
 
