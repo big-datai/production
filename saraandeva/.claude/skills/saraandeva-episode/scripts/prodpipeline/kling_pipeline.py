@@ -436,13 +436,15 @@ def phase_submit(ep_num: int, specific_clip: int | None = None):
 
 # ─── Phase D: download ──────────────────────────────────────────────────────
 def phase_download(ep_num: int):
-    state = load_state(ep_num)
     out_dir = clips_out_dir(ep_num)
     out_dir.mkdir(parents=True, exist_ok=True)
     ak, sk = load_env()
     print("Phase D: poll + download")
 
     for attempt in range(1, 61):
+        # Reload state each poll-tick so concurrent submits (resubmit of a single
+        # clip) are picked up without needing to restart the download phase.
+        state = load_state(ep_num)
         _, j, _ = api("GET", "/v1/videos/omni-video?pageNum=1&pageSize=50", ak, sk)
         if (j or {}).get("code") != 0:
             print("  poll fail", file=sys.stderr); time.sleep(10); continue
