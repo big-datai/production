@@ -1,0 +1,44 @@
+{
+  "episode": 15,
+  "beat": 18,
+  "clip": 18,
+  "title": "Reunion close-up — Eva snuggles Ginger five stars",
+  "mode": "omni",
+  "durationSec": 10,
+  "quality": "720p",
+  "nativeAudio": true,
+  "expectedCredits": 90,
+  "subjects": [
+    "Sara",
+    "Eva",
+    "Joe",
+    "Ginger"
+  ],
+  "scene": "ep15_house5_candy_house",
+  "boundElements": [
+    {
+      "tag": "Sara",
+      "source": "library"
+    },
+    {
+      "tag": "Eva",
+      "source": "library"
+    },
+    {
+      "tag": "Joe",
+      "source": "library"
+    },
+    {
+      "tag": "Ginger",
+      "source": "library"
+    },
+    {
+      "tag": "ep15_house5_candy_house",
+      "source": "library"
+    }
+  ],
+  "prompt": "Cast (Halloween night):\n- @Sara: fairy princess — silver tiara, pink-white tutu, wings, wand, jack-o-lantern bucket. Wavy dark-blonde hair.\n- @Eva: pumpkin onesie — orange body w/ jack-o-lantern face on tummy, green leaf hat, pumpkin bucket. Curly blonde.\n- @Joe: cream-gold Pomeranian dog in red-and-black-spotted ladybug body costume.\n- @Ginger: Jack Russell dog (white + tan ginger patches), tiny pumpkin-orange cape.\n\nMulti-shot composition. Continuity from clip 17 closing frame: parents and Mrs. Patel softly off-frame, kids and dogs still kneeling at @ep15_house5_candy_house porch.\n\nShot 1 (0-4s, close-medium eye-level, slow dolly push, slow tilt down) — Elements: @Sara, @Eva, @Ginger, @ep15_house5_candy_house\n@Sara center-left kneeling on the porch boards beside @Eva, candy bucket on the porch beside her left knee, rating card in her right hand at chest height (five star outlines, all five colored in pink), her left hand softly on @Ginger's head. @Eva center-right kneeling, both arms cradling @Ginger wrapped in her own pumpkin-orange cape. Soft warm candy-corn string lights twinkling soft-blurred background, fabric cobweb-tunnel softly in background, head-sized giant lollipop softly visible background-left, soft purple porch light. @Eva softly hugs @Ginger closer, Ginger's tail softly wags from inside the cape, Ginger softly nuzzles her head into Eva's collar. @Sara's left hand softly strokes Ginger's head once.\n\nShot 2 (4-6s, medium-close, cut to) — Elements: @Joe, @Ginger, @ep15_house5_candy_house\n@Joe sitting calmly on the porch boards beside the kneeling kids in his bug costume. @Joe leans his fluffy white nose softly toward @Ginger from his sitting spot in a small in-place dog-friend nuzzle, tail wagging. @Ginger softly visible at edge of frame in pumpkin cape, softly nuzzling back.\n\nShot 3 (6-10s, soft medium, slow tilt up + slow pull back) — Elements: @Sara, @Eva, @Ginger, @ep15_house5_candy_house\nReturn to Sara and Eva. @Eva, into Ginger's fur: \"You're safe, Ginger. We've got you.\" @Sara: \"Joe nuzzled her too! Best search-dog!\" @Sara softly lifts her rating card up to chest height in a polite show-and-tell. @Sara: \"Scariest decorations but Mrs. Patel SAVED Ginger! FIVE stars!\" @Eva, looking softly down at @Ginger: \"Five stars from Ginger too!\"\n\nLighting: soft warm candy-corn string lights softly twinkling, gentle reunion warmth.\nStyle: Pixar 3D feature-render, kid-show.",
+  "negativePrompt": "duplicate character, twin, clone, two of the same, mirrored figure, second father, two Papa, identical adults, second mother, two Mama, mama visible, papa visible, mrs patel visible, third child, second sister, second sara, second eva, two eva, duplicate eva, three girls, fourth child, fifth child, additional children, extra child in background, ghost figure, ghost kid, ghost children, shadow children, shadow of person, mirrored children, mirror reflection, family members in the background, strangers, crowd, group of people, other faces, background people, friends, neighbors, extra neighbors, third dog, second pomeranian, two joe, two ginger, second jack russell, ghost dog, three arms, third arm, extra arm, extra hand, floating hand, anatomy error, scary face, frightening expression, horror lighting, scary monster, real monster, monstrous teeth, fangs, claws, papa angry, papa thundering shout, papa apoplectic, papa rage face, intense yelling, blood, red liquid, red splatter, red stain, gore, injury, ginger injured, ginger bloody, ginger limp, ginger lifeless, scary, violent, distressing, motion lines, action lines, dust trails, speed lines, motion blur, papa with hair, papa not bald, eva with brown hair, eva with red hair, eva brunette, sara in ponytail, sara with straight hair, morphing, flickering, disfigured, distorted, extra face, unstable motion, papa standing still, papa motionless, papa idle, papa observing without acting, papa waiting passively, joe airborne, joe leaping, ginger airborne, ginger leaping, sara airborne, eva airborne, eva running, sara running, ginger as fox, ginger as deer, second dog, sara crying hysterically, eva crying hysterically, dutch angle, handheld shake, whip pan, jump cut",
+  "cameraStyle": "slow dolly push to close-medium, slow tilt down to Ginger, one cut to medium-close on Joe, slow tilt up back to Eva and Sara, capped by a slow pull back",
+  "closingFrame": "Reunion close-medium on the porch at @ep15_house5_candy_house — @Sara center-left kneeling, holding the all-pink-stars rating card forward at chest height, left hand still softly on @Ginger's head; @Eva center-right kneeling, both arms cradling @Ginger wrapped in pumpkin cape, Ginger's head nuzzled into Eva's collar; @Joe sitting beside Eva's right knee in bug costume, fluffy nose still tilted softly toward Ginger, tail mid-wag; soft warm candy-corn string lights twinkling softly above."
+}

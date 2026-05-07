@@ -1,0 +1,39 @@
+{
+  "episode": 15,
+  "beat": 15,
+  "clip": 15,
+  "title": "Lisa encounter — classmate fairy gives the candy-house clue",
+  "mode": "omni",
+  "durationSec": 10,
+  "quality": "720p",
+  "nativeAudio": true,
+  "expectedCredits": 90,
+  "subjects": [
+    "Sara",
+    "Eva",
+    "Lisa"
+  ],
+  "scene": "front_fence_sidewalk",
+  "boundElements": [
+    {
+      "tag": "Sara",
+      "source": "library"
+    },
+    {
+      "tag": "Eva",
+      "source": "library"
+    },
+    {
+      "tag": "Lisa",
+      "source": "library"
+    },
+    {
+      "tag": "front_fence_sidewalk",
+      "source": "library"
+    }
+  ],
+  "prompt": "Cast (Halloween night):\n- @Sara: 7yo, FAIRY-PRINCESS COSTUME — silver tiara, pink-white ombre tutu w/ crystal bodice, glittery wings, fairy wand + jack-o-lantern bucket. Wavy dark-blonde hair, fair skin, brown eyes.\n- @Eva: 3yo, PUMPKIN-ONESIE COSTUME — round orange pumpkin body w/ carved jack-o-lantern face on tummy, green leaf-stem hat, tiny pumpkin treat bucket. Curly bright-blonde hair, fair skin, brown eyes.\n- @Lisa: <no costume lock defined>\n\nMulti-shot composition. Continuity from clip 14 closing frame: Sara and Eva stepped softly off Isabel's porch path onto the leaf-strewn sidewalk at @front_fence_sidewalk.\n\nShot 1 (0-4s, medium-wide eye-level, slow tracking to stop, slow push in) — Elements: @Sara, @Eva, @Lisa, @front_fence_sidewalk\n@Sara center-left softly to a stop on the sidewalk, candy bucket in left hand, magic-wand in right at chest height. @Eva two steps to the left-foreground of Sara, both hands on her pumpkin bucket. @Lisa center-right four steps from Sara, copper-red pigtails, pale skin with copper freckles, emerald-green eyes, green fairy wings, flower headband, green-and-yellow tiered fairy dress, flower-shaped candy bucket in her left hand at hip, right hand softly raised in a friendly little wave. Lisa's family softly soft-blurred ten steps behind Lisa as friendly adult silhouettes, never sharp-focus. @Sara softly lifts her right hand (still holding wand) in a small 'hi friend' wave. @Lisa keeps her right hand raised. @Sara: \"Hi Lisa! From school!\" @Lisa: \"Hi Sara! Look at your fairy princess costume!\"\n\nShot 2 (4-7s, medium-close, cut to) — Elements: @Lisa, @front_fence_sidewalk\n@Lisa's right hand lowers softly to chest height in a small excited 'I have news' gesture, palm open. @Lisa: \"Have you been to the BIG CANDY HOUSE? They have a lollipop as BIG as my HEAD! AND I saw a little brown-and-white doggie running around there!\"\n\nShot 3 (7-10s, medium-wide, slow pan right + slow pull back) — Elements: @Sara, @Eva, @front_fence_sidewalk\n@Sara and @Eva softly tilt their faces toward Lisa's direction with warm hopeful eyes, mouths softly open in delighted comic-gasp. @Sara: \"GINGER! Thank you, Lisa!\" @Eva: \"Bye Lisa!\"\n\nLighting: soft warm Halloween-night porch glow drifting from neighboring houses.\nStyle: Pixar 3D feature-render, kid-show.",
+  "negativePrompt": "duplicate character, twin, clone, two of the same, mirrored figure, second father, two Papa, identical adults, second mother, two Mama, mama visible, papa visible, third child, second sister, second sara, second eva, two eva, duplicate eva, three girls, fourth child, fifth child, additional children, extra child in background, ghost figure, ghost kid, ghost children, shadow children, shadow of person, mirrored children, mirror reflection, family members in the background, strangers, crowd, group of people, other faces, background people, friends, neighbors, extra neighbors, lisa as blonde, lisa with loose hair, lisa with flowing hair, lisa as twin of sara, lisa in pink, lisa in tiara, lisa in pink-and-white, lisa with pink wings, lisa with white wings, sara in green dress, sara with pigtails, sara in copper hair, lisa-as-second-sara, three arms, third arm, extra arm, extra hand, floating hand, anatomy error, scary face, frightening expression, horror lighting, scary monster, real monster, monstrous teeth, fangs, claws, papa angry, papa thundering shout, papa apoplectic, papa rage face, intense yelling, blood, red liquid, red splatter, red stain, gore, injury, scary, violent, distressing, motion lines, action lines, dust trails, speed lines, motion blur, papa with hair, papa not bald, eva with brown hair, eva with red hair, eva brunette, sara in ponytail, sara with straight hair, morphing, flickering, disfigured, distorted, extra face, unstable motion, papa standing still, papa motionless, papa idle, papa observing without acting, papa waiting passively, joe visible, joe in this clip, ginger visible, ginger in this clip, second dog, eva running, sara running, lisa running, kids running on sidewalk, dutch angle, handheld shake, whip pan, jump cut",
+  "cameraStyle": "tracking shot opening into a slow push in to a soft medium on Sara and Lisa, one cut to medium-close on Lisa, slow pan right, capped by a slow pull back",
+  "closingFrame": "Sidewalk medium-wide at @front_fence_sidewalk — @Sara center-left mouth softly open in delighted comic-gasp with candy bucket in left hand and wand in right; @Eva center-left-foreground holding pumpkin bucket with both hands, eyes wide; @Lisa center-right with right hand at chest height in a small excited gesture, flower-shaped bucket in left hand, copper pigtails and green fairy wings clearly distinct from Sara; soft warm porch glow from neighboring houses."
+}

@@ -1,0 +1,31 @@
+{
+  "episode": 15,
+  "beat": 19,
+  "clip": 19,
+  "title": "MUSIC VIDEO A \u2014 celebration walk home, Eva carrying Ginger",
+  "mode": "omni",
+  "durationSec": 10,
+  "quality": "720p",
+  "nativeAudio": true,
+  "expectedCredits": 90,
+  "subjects": [
+    "Sara",
+    "Eva",
+    "Papa",
+    "Mama",
+    "Joe",
+    "Ginger"
+  ],
+  "scene": "front_fence_sidewalk",
+  "musicVideoBlock": true,
+  "boundElements": [
+    {
+      "tag": "ep15-clip19-group",
+      "source": "library"
+    }
+  ],
+  "prompt": "Multi-shot composition. Music-video block A \u2014 designed to LOOP cleanly. Composition anchored on pre-rendered Pattern E group still (image-to-video reference). Motion-only prompt \u2014 Suno song mp3 will be overlaid in post; no specific lip-sync. Locked formation \u2014 no character separates, no character changes positions.\n\nShot 1 (0-5s, slow tracking shot eye-level alongside the family, hold on Pattern E group still anchor) \u2014 Elements: @ep15-clip19-group\nHold the Pattern E group still composition while tracking softly alongside on the leaf-strewn sidewalk: Sara center-left walking softly beside Eva, candy bucket in left hand and Joe's blue leash gently in right; Eva center-right cradling Ginger wrapped in pumpkin cape; Joe trotting softly beside Sara on all four paws with blue collar visible, tail wagging softly; Papa behind-left carrying both pumpkin candy buckets one in each hand, shoulders softly bouncing to music; Mama behind-right beside Papa with flashlight at her side, right hand softly raised to chest in a 'we did it' gesture, beaming. Eva softly nuzzles her cheek to Ginger's head; Ginger's tail wags softly from inside the cape; Joe's tail wags; group hums softly with gentle smiles.\n\nShot 2 (5-10s, slow tracking shot eye-level, continuing alongside the family \u2014 same Pattern E anchor) \u2014 Elements: @ep15-clip19-group\nLocked formation continues. Sara turns her face softly toward Eva and Ginger with a warm big-sister smile then forward; Papa softly tilts his head toward Mama with a warm dad-grin then forward; Mama softly turns her face toward Papa then forward. Soft fall leaves drift gently in the background; soft warm porch lights twinkle softly from neighboring houses. Loop point matches opening frame \u2014 designed to loop.\n\nLighting: soft warm porch lights drifting from neighboring houses, soft Halloween-night ambience, gentle 'we found her' family-glow.\nStyle: Pixar 3D feature-render, kid-show music-video.",
+  "negativePrompt": "duplicate character, twin, clone, two of the same, mirrored figure, second father, two Papa, identical adults, second mother, two Mama, third child, second sister, second sara, second eva, two eva, duplicate eva, three girls, fourth child, fifth child, additional children, extra child in background, ghost figure, ghost kid, ghost children, shadow children, shadow of person, mirrored children, mirror reflection, family members in the background, strangers, crowd, group of people, other faces, background people, friends, neighbors, extra neighbors, mrs patel visible, lisa visible, isabel visible, leo visible, third dog, second pomeranian, two joe, two ginger, second jack russell, ghost dog, three arms, third arm, extra arm, extra hand, floating hand, anatomy error, scary face, frightening expression, horror lighting, scary monster, real monster, monstrous teeth, fangs, claws, papa angry, papa thundering shout, papa apoplectic, papa rage face, intense yelling, papa with wolf-mask on face, papa with hair, papa not bald, blood, red liquid, red splatter, red stain, gore, injury, ginger injured, ginger bloody, ginger limp, ginger lifeless, scary, violent, distressing, motion lines, action lines, dust trails, speed lines, motion blur, eva with brown hair, eva with red hair, eva brunette, sara in ponytail, sara with straight hair, morphing, flickering, disfigured, distorted, extra face, unstable motion, papa standing still, papa motionless, papa idle, papa observing without acting, papa waiting passively, joe airborne, joe leaping, ginger airborne, ginger leaping, sara airborne, eva airborne, family separating, family splitting up, characters changing positions, audible singing words, lip-sync to specific syllables, dramatic shouting, ginger as fox, ginger as deer, dutch angle, handheld shake, whip pan, jump cut",
+  "cameraStyle": "slow tracking shot alongside the family in locked formation, designed to loop cleanly",
+  "closingFrame": "Tracking-shot composition at @front_fence_sidewalk \u2014 @Papa behind-left carrying both pumpkin candy buckets; @Mama behind-right with flashlight at side, right hand at chest in 'we did it' gesture; @Sara center-left holding @Joe's leash in right hand and candy bucket in left; @Eva center-right cradling @Ginger wrapped in pumpkin cape; @Joe trotting softly on all four paws beside Sara in bug costume, tail mid-wag; soft warm porch lights drifting from neighboring houses; loop point matches opening frame."
+}

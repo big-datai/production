@@ -1,0 +1,39 @@
+{
+  "episode": 15,
+  "beat": 14,
+  "clip": 14,
+  "title": "House 4 leaving — apple slice and FIVE stars",
+  "mode": "omni",
+  "durationSec": 10,
+  "quality": "720p",
+  "nativeAudio": true,
+  "expectedCredits": 90,
+  "subjects": [
+    "Sara",
+    "Eva",
+    "Isabel"
+  ],
+  "scene": "ep15_house4_isabel_cottage",
+  "boundElements": [
+    {
+      "tag": "Sara",
+      "source": "library"
+    },
+    {
+      "tag": "Eva",
+      "source": "library"
+    },
+    {
+      "tag": "Isabel",
+      "source": "library"
+    },
+    {
+      "tag": "ep15_house4_isabel_cottage",
+      "source": "library"
+    }
+  ],
+  "prompt": "Cast (Halloween night):\n- @Sara: 7yo, FAIRY-PRINCESS COSTUME — silver tiara, pink-white ombre tutu w/ crystal bodice, glittery wings, fairy wand + jack-o-lantern bucket. Wavy dark-blonde hair, fair skin, brown eyes.\n- @Eva: 3yo, PUMPKIN-ONESIE COSTUME — round orange pumpkin body w/ carved jack-o-lantern face on tummy, green leaf-stem hat, tiny pumpkin treat bucket. Curly bright-blonde hair, fair skin, brown eyes.\n- @Isabel: kid friend in UNICORN COSTUME — pastel rainbow mane hood, white onesie, gold horn.\n\nMulti-shot composition. Continuity from clip 13 closing frame: kids stepped softly back from the side yard to the front porch path of @ep15_house4_isabel_cottage.\n\nShot 1 (0-4s, static medium-wide eye-level, slow push in on rating card) — Elements: @Sara, @ep15_house4_isabel_cottage\n@Sara center-frame holding her rating card softly at chest height — five star outlines, all five colored in pink. Fairy-lit cottage porch softly visible background, warm string lights twinkling, mini-pumpkins on the porch step. @Sara softly lifts the card a touch forward in a polite show-and-tell. @Sara: \"Friendliest house EVER! FIVE stars!\"\n\nShot 2 (4-7s, medium-close, cut to) — Elements: @Eva, @Isabel, @ep15_house4_isabel_cottage\n@Eva center-right with pumpkin bucket in her left hand and her right hand softly extended palm-up at chest height. @Isabel softly on the porch step one above her, holding a soft green-skinned apple slice in her right hand, unicorn-shaped bucket tucked under her left arm. @Isabel softly lowers her right hand and gently places the green apple slice into @Eva's open palm. @Eva's fingers softly close around it. @Eva, looking down at the apple: \"For energy! Thank you, Isabel!\" @Isabel, from her step: \"Find Ginger! You can do it!\"\n\nShot 3 (7-10s, medium-wide, slow pull back) — Elements: @Sara, @Eva, @ep15_house4_isabel_cottage\n@Sara center-left holding the all-pink-stars rating card softly forward; @Eva center-right with pumpkin bucket in left hand and apple slice in right palm. @Sara: \"Off to the next house!\"\n\nLighting: soft warm twinkling string lights washing the porch.\nStyle: Pixar 3D feature-render, kid-show.",
+  "negativePrompt": "duplicate character, twin, clone, two of the same, mirrored figure, second father, two Papa, identical adults, second mother, two Mama, mama visible, papa visible, third child, second sister, second sara, second eva, two eva, duplicate eva, three girls, fourth child, fifth child, additional children, extra child in background, ghost figure, ghost kid, ghost children, shadow children, shadow of person, mirrored children, mirror reflection, family members in the background, strangers, crowd, group of people, other faces, background people, friends, neighbors, extra neighbors, isabel as blonde, isabel with straight hair, isabel as twin of sara, isabel in pink, isabel in tutu, leo visible in this clip, three arms, third arm, extra arm, extra hand, floating hand, anatomy error, scary face, frightening expression, horror lighting, scary monster, real monster, monstrous teeth, fangs, claws, papa angry, papa thundering shout, papa apoplectic, papa rage face, intense yelling, blood, red liquid, red splatter, red stain, red apple slice, red apple, gore, injury, scary, violent, distressing, motion lines, action lines, dust trails, speed lines, motion blur, papa with hair, papa not bald, eva with brown hair, eva with red hair, eva brunette, sara in ponytail, sara with straight hair, morphing, flickering, disfigured, distorted, extra face, unstable motion, papa standing still, papa motionless, papa idle, papa observing without acting, papa waiting passively, joe visible, joe in this clip, ginger visible, ginger in this clip, second dog, eva running, sara running, isabel running, dutch angle, handheld shake, whip pan, jump cut",
+  "cameraStyle": "static medium-wide into a slow push in on Sara's rating card, one cut to medium-close on Eva and Isabel, slow tilt up to Eva, capped by a slow pull back",
+  "closingFrame": "Cottage porch medium-wide at @ep15_house4_isabel_cottage — @Sara center-left holding the all-pink-stars rating card softly forward; @Eva center-right with pumpkin bucket in left hand and a green apple slice in her right palm; @Isabel softly on porch step with unicorn-shaped bucket tucked under left arm; warm twinkling string lights washing the porch."
+}

@@ -1,0 +1,39 @@
+{
+  "episode": 15,
+  "beat": 22,
+  "clip": 22,
+  "title": "Final camera-ask — Which house did YOU like BEST?",
+  "mode": "omni",
+  "durationSec": 10,
+  "quality": "720p",
+  "nativeAudio": true,
+  "expectedCredits": 90,
+  "subjects": [
+    "Sara",
+    "Eva",
+    "Ginger"
+  ],
+  "scene": "front_house_fall",
+  "boundElements": [
+    {
+      "tag": "Sara",
+      "source": "library"
+    },
+    {
+      "tag": "Eva",
+      "source": "library"
+    },
+    {
+      "tag": "Ginger",
+      "source": "library"
+    },
+    {
+      "tag": "front_house_fall",
+      "source": "library"
+    }
+  ],
+  "prompt": "Cast (Halloween night):\n- @Sara: 7yo, FAIRY-PRINCESS COSTUME — silver tiara, pink-white ombre tutu w/ crystal bodice, glittery wings, fairy wand + jack-o-lantern bucket. Wavy dark-blonde hair, fair skin, brown eyes.\n- @Eva: 3yo, PUMPKIN-ONESIE COSTUME — round orange pumpkin body w/ carved jack-o-lantern face on tummy, green leaf-stem hat, tiny pumpkin treat bucket. Curly bright-blonde hair, fair skin, brown eyes.\n- @Ginger: JACK RUSSELL dog, white body with tan ginger patches on head/ears + saddle, tiny PUMPKIN-ORANGE CAPE.\n\nCamera: slow dolly push, eye-level, opening medium-close — matches the closing frame of clip 21 with Sara and Eva still on the couch, blanket draped across Eva and Ginger. Final fourth-wall camera-ask — direct-to-lens engagement payoff.\n\nScene: @front_house_fall living-room interior — soft beige couch, autumn-orange throw blanket, warm orange floor-lamp glow, paper jack-o-lanterns soft-blurred background.\n\n0:0-0:2 — Slow dolly push, medium-close. @Sara center-left holding a final paper rating card softly with both hands at chest height — five star outlines, all five colored in pink, with a tiny pink heart drawn beside the stars. @Eva center-right with @Ginger softly cradled in the autumn-orange blanket on her lap, Ginger's head softly resting on Eva's forearm.\n\n0:2-0:4 — Slow push in to a soft close-medium on @Sara. @Sara turns softly toward camera, breaks the fourth wall, holds the rating card just slightly forward toward the lens. @Sara, softly to camera: \"Which house did YOU like BEST?\"\n\n0:4-0:6 — Hold close-medium on @Sara. @Sara, counting softly with kind eyes: \"House ONE, TWO, THREE, FOUR, or FIVE? Tell us!\"\n\n0:6-0:8 — Slow pan right to @Eva and @Ginger. @Eva softly lifts @Ginger's right front paw with her left hand in a tiny in-place wave toward camera. @Eva, softly to camera: \"Ginger says THANK YOU!\"\n\n0:8-1:0 — Slow pull back to opening medium-close. Both girls turn toward camera with warm shining smiles. @Sara: \"Bye!\" @Eva: \"Bye!\" Smash to title card on cut.\n\nLighting: warm orange floor-lamp glow, soft cozy living-room ambiance, gentle hero-finale warmth.\nStyle: Pixar 3D feature-render, cinematic kid-show, NOT scary. Final fourth-wall engagement payoff.",
+  "negativePrompt": "duplicate character, twin, clone, two of the same, mirrored figure, second father, two Papa, identical adults, second mother, two Mama, mama visible, papa visible, third child, second sister, second sara, second eva, two eva, duplicate eva, three girls, fourth child, fifth child, additional children, extra child in background, ghost figure, ghost kid, ghost children, shadow children, shadow of person, mirrored children, mirror reflection, family members in the background, strangers, crowd, group of people, other faces, background people, friends, neighbors, extra neighbors, third dog, second pomeranian, two ginger, second jack russell, ghost dog, joe visible, joe in this clip, three arms, third arm, extra arm, extra hand, floating hand, anatomy error, scary face, frightening expression, horror lighting, scary monster, real monster, monstrous teeth, fangs, claws, papa angry, papa thundering shout, papa apoplectic, papa rage face, intense yelling, blood, red liquid, red splatter, red stain, red ink on card, red rating card marks, red stars, red heart that looks like blood, gore, injury, ginger injured, ginger bloody, ginger lunging, ginger biting, ginger snapping, scary, violent, distressing, motion lines, action lines, dust trails, speed lines, motion blur, papa with hair, papa not bald, eva with brown hair, eva with red hair, eva brunette, sara in ponytail, sara with straight hair, morphing, flickering, disfigured, distorted, extra face, unstable motion, papa standing still, papa motionless, papa idle, papa observing without acting, papa waiting passively, ginger airborne, ginger leaping, sara airborne, eva airborne, sara running, eva running, ginger as fox, ginger as deer, dutch angle, handheld shake, whip pan, jump cut",
+  "cameraStyle": "slow dolly push to medium-close, slow push in to close-medium on Sara for the camera-ask, slow pan right to Eva and Ginger's paw-wave, capped by a slow pull back",
+  "closingFrame": "Final medium-close at @front_house_fall living room — @Sara center-left holding the all-pink-stars-with-heart rating card softly forward to camera with a warm shining smile; @Eva center-right cradling @Ginger in the autumn-orange blanket, Ginger's right front paw lifted in a tiny wave; both girls beaming directly at the lens; warm orange floor-lamp glow; smash-to-title-card hand-off frame."
+}

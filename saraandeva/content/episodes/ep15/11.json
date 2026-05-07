@@ -1,0 +1,39 @@
+{
+  "episode": 15,
+  "beat": 11,
+  "clip": 11,
+  "title": "House 3 Grandpa — chocolate bars and brown-and-white blur clue",
+  "mode": "omni",
+  "durationSec": 10,
+  "quality": "720p",
+  "nativeAudio": true,
+  "expectedCredits": 90,
+  "subjects": [
+    "Sara",
+    "Eva",
+    "Joe"
+  ],
+  "scene": "ep15_house3_skeleton_lawn",
+  "boundElements": [
+    {
+      "tag": "Sara",
+      "source": "library"
+    },
+    {
+      "tag": "Eva",
+      "source": "library"
+    },
+    {
+      "tag": "Joe",
+      "source": "library"
+    },
+    {
+      "tag": "ep15_house3_skeleton_lawn",
+      "source": "library"
+    }
+  ],
+  "prompt": "Cast (Halloween night):\n- @Sara: 7yo, FAIRY-PRINCESS COSTUME — silver tiara, pink-white ombre tutu w/ crystal bodice, glittery wings, fairy wand + jack-o-lantern bucket. Wavy dark-blonde hair, fair skin, brown eyes.\n- @Eva: 3yo, PUMPKIN-ONESIE COSTUME — round orange pumpkin body w/ carved jack-o-lantern face on tummy, green leaf-stem hat, tiny pumpkin treat bucket. Curly bright-blonde hair, fair skin, brown eyes.\n- @Joe: fluffy cream-and-gold POMERANIAN dog in red-with-black-spots LADYBUG body costume.\n\nCamera: static medium-wide, eye-level — matches the closing frame of clip 10, family stepped softly to the porch step, Papa now off-frame.\n\nScene: @ep15_house3_skeleton_lawn — porch step center-foreground, friendly cartoon plastic lawn skeletons soft-blurred background, soft purple porch lights. A kindly Skeleton-House Grandpa NPC stands on the porch — regular friendly older face, NO mask, soft grey cardigan over flannel, holding a small wooden bowl of chocolate bars and a tan dog biscuit at chest height — described in-prompt only.\n\n0:0-0:2 — Static medium-wide. @Sara center-left, candy bucket in left hand, rating card in right at chest height — five star outlines, three colored in pink. @Eva center-right with @Joe's leash in her right hand, pumpkin bucket in her left. @Joe standing calm at Eva's left side. Grandpa smiles warmly behind his bowl.\n\n0:2-0:4 — Slow tilt down toward the bowl. Grandpa lowers a soft chocolate bar wrapped in brown-and-orange foil into Sara's bucket, a few into Eva's, and a tan biscuit gently onto the porch step beside @Joe's nose. @Joe's nose dips softly toward the biscuit in a small in-place sniff, tail wagging fast.\n\n0:4-0:6 — Slow tilt up to Grandpa's face. Grandpa: \"For the brave kids — and a biscuit for your search-pup when you find him!\" @Sara: \"Thank you! Have you seen our dog Ginger?\"\n\n0:6-0:8 — Slow pan right onto Grandpa, kind eyes crinkling. Grandpa: \"Saw a brown-and-white blur scoot past about an hour ago — thataway!\"\n\n0:8-1:0 — Slow pull back to opening medium-wide. @Sara turns toward camera and breaks the fourth wall. @Sara, softly to camera: \"Were YOU brave like Eva?\" @Eva: \"Three stars! He was so NICE!\" @Joe's tail wags faster.\n\nLighting: soft purple porch glow, gentle Halloween-night ambience.\nStyle: Pixar 3D feature-render, cinematic kid-show, NOT scary.",
+  "negativePrompt": "duplicate character, twin, clone, two of the same, mirrored figure, second father, two Papa, identical adults, second mother, two Mama, mama visible, papa visible, third child, second sister, second sara, second eva, two eva, duplicate eva, three girls, fourth child, fifth child, additional children, extra child in background, ghost figure, ghost kid, ghost children, shadow children, shadow of person, mirrored children, mirror reflection, family members in the background, strangers, crowd, group of people, other faces, background people, friends, neighbors, extra neighbors, three arms, third arm, extra arm, extra hand, floating hand, anatomy error, scary face, frightening expression, horror lighting, scary monster, real monster, monstrous teeth, fangs, claws, scary skeleton, real skeleton, real bones, animatronic skeleton, moving skeleton, skeleton reaching, scream sound, motion-sensor scream, jump-scare, grandpa with mask, scary grandpa, papa angry, papa thundering shout, papa apoplectic, papa rage face, intense yelling, blood, red liquid, red splatter, red stain, red foil chocolate, red wrapped candy, gore, injury, scary, violent, distressing, motion lines, action lines, dust trails, speed lines, motion blur, papa with hair, papa not bald, eva with brown hair, eva with red hair, eva brunette, sara in ponytail, sara with straight hair, morphing, flickering, disfigured, distorted, extra face, unstable motion, papa standing still, papa motionless, papa idle, papa observing without acting, papa waiting passively, joe airborne, joe leaping, joe eating biscuit on screen, sara airborne, eva airborne, ginger visible, ginger in this clip, second dog, two joe, eva running, sara running, dutch angle, handheld shake, whip pan, jump cut",
+  "cameraStyle": "static medium-wide with a slow tilt down to the bowl, slow tilt up to Grandpa, slow pan right, capped by a slow pull back for the camera-ask",
+  "closingFrame": "Front-of-porch medium-wide at @ep15_house3_skeleton_lawn — @Sara center-left holding the three-of-five-pink-stars rating card softly to camera; @Eva center-right grinning with @Joe's leash in right hand and pumpkin bucket in left; @Joe standing calm at Eva's left side, biscuit on the porch step beside him in bug costume, tail mid-wag; Grandpa softly on the porch with bowl still slightly forward; soft purple porch glow and friendly cartoon plastic skeletons in background."
+}

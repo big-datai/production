@@ -1,0 +1,40 @@
+{
+  "episode": 15,
+  "beat": 9,
+  "clip": 9,
+  "title": "House 3 Skeleton Lawn — Eva freezes Joe licks her hand",
+  "mode": "omni",
+  "durationSec": 10,
+  "quality": "720p",
+  "nativeAudio": true,
+  "expectedCredits": 90,
+  "subjects": [
+    "Sara",
+    "Eva",
+    "Joe"
+  ],
+  "scene": "ep15_house3_skeleton_lawn",
+  "boundElements": [
+    {
+      "tag": "Sara",
+      "source": "library"
+    },
+    {
+      "tag": "Eva",
+      "source": "library"
+    },
+    {
+      "tag": "Joe",
+      "source": "library"
+    },
+    {
+      "tag": "ep15_house3_skeleton_lawn",
+      "source": "library"
+    }
+  ],
+  "prompt": "Cast (Halloween night):\n- @Sara: 7yo, FAIRY-PRINCESS COSTUME — silver tiara, pink-white ombre tutu w/ crystal bodice, glittery wings, fairy wand + jack-o-lantern bucket. Wavy dark-blonde hair, fair skin, brown eyes.\n- @Eva: 3yo, PUMPKIN-ONESIE COSTUME — round orange pumpkin body w/ carved jack-o-lantern face on tummy, green leaf-stem hat, tiny pumpkin treat bucket. Curly bright-blonde hair, fair skin, brown eyes.\n- @Joe: fluffy cream-and-gold POMERANIAN dog in red-with-black-spots LADYBUG body costume.\n\nCamera: slow dolly push, eye-level, opening medium-wide on the lawn pathway.\n\nScene: @ep15_house3_skeleton_lawn — front lawn with a row of friendly cartoon white plastic lawn skeletons softly placed across the grass (smiling skull faces, simple plastic, NO animatronic, NO scream sound), soft purple porch lights, gentle Halloween-night ambiance.\n\n0:0-0:2 — Slow dolly push, medium-wide eye-level. @Sara center-left on the path, her left hand resting reassuringly on @Eva's right shoulder, candy bucket in her right hand at hip. @Eva center-right beside Sara, gripping @Joe's blue leash, pumpkin bucket on her left. @Joe standing in front of Eva's left foot, head tilted up at her.\n\n0:2-0:4 — Slow push in to a soft medium on @Eva. @Eva freezes softly in place, mouth in a small kid-show pout, eyes worried-but-brave. @Eva, gently: \"Sara... they're a lot of skeletons.\"\n\n0:4-0:6 — Cut to low-angle close-up on @Joe. @Joe lifts his fluffy white face softly upward and gently licks @Eva's left hand once with a small in-place tongue motion. Tail wagging.\n\n0:6-0:8 — Slow tilt up from @Joe to @Eva. @Eva looks down at his lick, her pout softens into a relieved smile. @Sara turns her cheerful face toward Eva. @Sara: \"They're cartoon skeletons, Eva. They smile.\"\n\n0:8-1:0 — Slow pull back to opening medium-wide. @Eva, looking softly down at @Joe: \"Joe is brave, so I'm brave.\" Lawn skeletons sit motionless in the soft purple background.\n\nLighting: soft purple porch glow gently washing the friendly cartoon plastic skeletons in the background.\nStyle: Pixar 3D feature-render, cinematic kid-show, NOT scary.",
+  "negativePrompt": "duplicate character, twin, clone, two of the same, mirrored figure, second father, two Papa, identical adults, second mother, two Mama, mama visible, papa visible, third child, second sister, second sara, second eva, two eva, duplicate eva, three girls, fourth child, fifth child, additional children, extra child in background, ghost figure, ghost kid, ghost children, shadow children, shadow of person, mirrored children, mirror reflection, family members in the background, strangers, crowd, group of people, other faces, background people, friends, neighbors, extra neighbors, three arms, third arm, extra arm, extra hand, floating hand, anatomy error, scary face, frightening expression, horror lighting, scary monster, real monster, monstrous teeth, fangs, claws, scary skeleton, real skeleton, real bones, animatronic skeleton, moving skeleton, skeleton reaching, skeleton chasing, scream sound, motion-sensor scream, jump-scare, papa angry, papa thundering shout, papa apoplectic, papa rage face, intense yelling, blood, red liquid, red splatter, red stain, gore, injury, scary, violent, distressing, motion lines, action lines, dust trails, speed lines, motion blur, papa with hair, papa not bald, eva with brown hair, eva with red hair, eva brunette, sara in ponytail, sara with straight hair, morphing, flickering, disfigured, distorted, extra face, unstable motion, papa standing still, papa motionless, papa idle, papa observing without acting, papa waiting passively, joe airborne, joe leaping, sara airborne, eva airborne, ginger visible, ginger in this clip, second dog, two joe, eva running, sara running, eva crying, eva sobbing, eva terrified, dutch angle, handheld shake, whip pan, jump cut",
+  "cameraStyle": "slow dolly push to medium, one cut to low-angle close-up on Joe, capped by a slow tilt up and slow pull back",
+  "closingFrame": "Lawn pathway medium-wide at @ep15_house3_skeleton_lawn — @Sara center-left with her left hand on @Eva's right shoulder and candy bucket in her right hand at hip; @Eva center-right with relieved smile, @Joe's leash in right hand and pumpkin bucket in left; @Joe standing in front of Eva's left foot in bug costume, fluffy face still slightly lifted toward Eva's hand; row of friendly cartoon plastic skeletons softly placed across the lawn in soft purple porch glow.",
+  "papaCheckIn": "no Papa in this clip — Papa returns in clip 10 for the Papa-active beat"
+}

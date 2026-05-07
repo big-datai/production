@@ -1,0 +1,39 @@
+{
+  "episode": 15,
+  "beat": 4,
+  "clip": 4,
+  "title": "House 1 Witch Cauldron — candy and ask about Ginger",
+  "mode": "omni",
+  "durationSec": 10,
+  "quality": "720p",
+  "nativeAudio": true,
+  "expectedCredits": 90,
+  "subjects": [
+    "Sara",
+    "Eva",
+    "Joe"
+  ],
+  "scene": "ep15_house1_witch_cauldron",
+  "boundElements": [
+    {
+      "tag": "Sara",
+      "source": "library"
+    },
+    {
+      "tag": "Eva",
+      "source": "library"
+    },
+    {
+      "tag": "Joe",
+      "source": "library"
+    },
+    {
+      "tag": "ep15_house1_witch_cauldron",
+      "source": "library"
+    }
+  ],
+  "prompt": "Cast (Halloween night):\n- @Sara: 7yo, FAIRY-PRINCESS COSTUME — silver tiara, pink-white ombre tutu w/ crystal bodice, glittery wings, fairy wand + jack-o-lantern bucket. Wavy dark-blonde hair, fair skin, brown eyes.\n- @Eva: 3yo, PUMPKIN-ONESIE COSTUME — round orange pumpkin body w/ carved jack-o-lantern face on tummy, green leaf-stem hat, tiny pumpkin treat bucket. Curly bright-blonde hair, fair skin, brown eyes.\n- @Joe: fluffy cream-and-gold POMERANIAN dog in red-with-black-spots LADYBUG body costume.\n\nCamera: slow dolly push, eye-level, opening medium-wide on the front lawn approach — matches the closing frame of clip 3 carried forward to House 1.\n\nScene: @ep15_house1_witch_cauldron — friendly cardboard cauldron prop on the porch, soft purple porch lights, paper bats and smiling-face paper jack-o-lanterns hanging gently. A friendly Witch-Mama NPC stands behind the cauldron with a soft cartoon-style witch hat tilted, kind smiling eyes, holding a candy bowl at chest height — described in-prompt only.\n\n0:0-0:2 — Slow dolly push, medium-wide eye-level. @Sara center-left at the foot of the porch step, @Eva center-right three steps to Sara's right, @Joe standing calm at Eva's left side. Witch-Mama smiles warmly behind the cauldron.\n\n0:2-0:4 — Slow push in to medium framing. @Sara and @Eva each lift their candy buckets a touch forward in a polite trick-or-treat pose. @Joe lowers his nose for a small in-place sniff of the porch step. @Sara: \"Trick or TREAT! And — have you seen our dog Ginger? She ran away!\"\n\n0:4-0:6 — Slow tilt down to the cauldron, rack focus from Sara onto Witch-Mama's gentle smile. Witch-Mama tilts her bowl forward and softly drops a small handful of green-and-orange gummy worms into Sara's bucket — pastel green and orange only.\n\n0:6-0:8 — Slow pan right onto Eva's bucket as a few more gummy worms drop in. @Joe's tail wags faster. Witch-Mama, warmly: \"A little brown-and-white pup? I haven't seen her, sweetie — but I'll keep an eye out!\"\n\n0:8-1:0 — Slow pull back to opening medium-wide. @Sara and @Eva, together: \"Thank you!\" @Joe's tail still wagging.\n\nLighting: soft purple-and-warm-orange porch glow, gentle Halloween-night ambience.\nStyle: Pixar 3D feature-render, cinematic kid-show, NOT scary.",
+  "negativePrompt": "duplicate character, twin, clone, two of the same, mirrored figure, second father, two Papa, identical adults, second mother, two Mama, mama visible, papa visible, third child, second sister, second sara, second eva, two eva, duplicate eva, three girls, fourth child, fifth child, additional children, extra child in background, ghost figure, ghost kid, ghost children, shadow children, shadow of person, mirrored children, mirror reflection, family members in the background, strangers, crowd, group of people, other faces, background people, friends, neighbors, extra neighbors, three arms, third arm, extra arm, extra hand, floating hand, anatomy error, scary face, frightening expression, horror lighting, scary monster, real monster, monstrous teeth, fangs, claws, scary witch, evil witch, hag witch, witch with green skin, witch with warts, scary cackle, witch laughing menacingly, witch with knife, witch threatening, real cobweb, real spider web, scary bats, motion-sensor scream, scream sound, papa angry, papa thundering shout, papa apoplectic, papa rage face, intense yelling, blood, red liquid, red splatter, red stain, red gummy worms, red candy, red worms, red gummies, gore, injury, scary, violent, distressing, motion lines, action lines, dust trails, speed lines, motion blur, papa with hair, papa not bald, eva with brown hair, eva with red hair, eva brunette, sara in ponytail, sara with straight hair, morphing, flickering, disfigured, distorted, extra face, unstable motion, papa standing still, papa motionless, papa idle, papa observing without acting, papa waiting passively, joe airborne, joe leaping, sara airborne, eva airborne, ginger visible, ginger in this clip, second dog, two joe, eva running, sara running, dutch angle, handheld shake, whip pan, jump cut",
+  "cameraStyle": "slow dolly push to medium, slow tilt down with rack focus to the candy bowl, capped by a slow pan right and slow pull back",
+  "closingFrame": "Front-lawn approach at @ep15_house1_witch_cauldron — @Sara center-left at the foot of the porch step holding candy bucket forward, fresh gummy worms inside; @Eva center-right with bucket forward, gummy worms inside; @Joe standing calm at Eva's left side, tail mid-wag in bug costume; Witch-Mama behind the cauldron softly smiling and lowering the candy bowl; soft purple porch glow."
+}

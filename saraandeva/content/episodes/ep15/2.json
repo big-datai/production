@@ -1,0 +1,44 @@
+{
+  "episode": 15,
+  "beat": 2,
+  "clip": 2,
+  "title": "The escape — Ginger spooks and bolts past their feet",
+  "mode": "omni",
+  "durationSec": 10,
+  "quality": "720p",
+  "nativeAudio": true,
+  "expectedCredits": 90,
+  "subjects": [
+    "Sara",
+    "Eva",
+    "Joe",
+    "Ginger"
+  ],
+  "scene": "front_house_fall",
+  "boundElements": [
+    {
+      "tag": "Sara",
+      "source": "library"
+    },
+    {
+      "tag": "Eva",
+      "source": "library"
+    },
+    {
+      "tag": "Joe",
+      "source": "library"
+    },
+    {
+      "tag": "Ginger",
+      "source": "library"
+    },
+    {
+      "tag": "front_house_fall",
+      "source": "library"
+    }
+  ],
+  "prompt": "Cast (Halloween night):\n- @Sara: 7yo, FAIRY-PRINCESS COSTUME — silver tiara, pink-white ombre tutu w/ crystal bodice, glittery wings, fairy wand + jack-o-lantern bucket. Wavy dark-blonde hair, fair skin, brown eyes.\n- @Eva: 3yo, PUMPKIN-ONESIE COSTUME — round orange pumpkin body w/ carved jack-o-lantern face on tummy, green leaf-stem hat, tiny pumpkin treat bucket. Curly bright-blonde hair, fair skin, brown eyes.\n- @Joe: fluffy cream-and-gold POMERANIAN dog in red-with-black-spots LADYBUG body costume.\n- @Ginger: JACK RUSSELL dog, white body with tan ginger patches on head/ears + saddle, tiny PUMPKIN-ORANGE CAPE.\n\nCamera: static medium-wide, eye-level, on the front porch — matches the closing frame of clip 1, family now stepped out onto the porch boards.\n\nScene: @front_house_fall front porch — open front door, two warmly lit pumpkin lanterns flanking the doorway, a round vinyl smiling inflatable ghost tied to the left railing, soft fall leaves on the boards.\n\n0:0-0:2 — Static medium-wide. The inflatable ghost on the left railing billows gently in the breeze. Rack focus pulls from the ghost to @Ginger's alert ears in foreground. @Sara center-left, hand still on the doorknob; @Eva center-right gripping @Joe's blue leash; @Joe sitting right-foreground; @Ginger standing left-foreground.\n\n0:2-0:4 — Slow push in to a tighter medium on @Ginger. @Ginger's ears flatten back, she takes one tiny step backward, eyes wide in a cute cartoon-style spook. @Sara's mouth opens in a comic-gasp. @Eva's grip on the leash tightens.\n\n0:4-0:6 — Tracking shot follows @Ginger at low ground-level as she pivots and zooms along the porch boards then off the right edge of frame onto the sidewalk — smooth, all four paws on the wood and concrete, never airborne, never leaping. @Sara and @Eva remain rooted; only their faces turn toward Ginger's exit. @Joe sits calm.\n\n0:6-0:8 — Whip pan back to a tighter medium-close on @Sara and @Eva on the porch. @Eva gives a tiny in-place yank on @Joe's leash. @Sara: \"Ginger! Wait!\"\n\n0:8-1:0 — Slow pull back to the opening medium-wide. Right edge of frame is empty where Ginger exited. @Eva: \"Don't run away too, Joe!\" The inflatable ghost keeps swaying gently.\n\nLighting: warm Halloween-night porch-light glow, golden-hour fall.\nStyle: Pixar 3D feature-render, cinematic kid-show, NOT scary.",
+  "negativePrompt": "duplicate character, twin, clone, two of the same, mirrored figure, second father, two Papa, identical adults, second mother, two Mama, mama visible, papa visible, third child, second sister, second sara, second eva, two eva, duplicate eva, three girls, fourth child, fifth child, additional children, extra child in background, ghost figure, ghost kid, ghost children, shadow children, shadow of person, mirrored children, mirror reflection, family members in the background, strangers, crowd, group of people, other faces, background people, friends, neighbors, extra neighbors, three arms, third arm, extra arm, extra hand, floating hand, anatomy error, scary face, frightening expression, horror lighting, scary monster, real monster, monstrous teeth, fangs, claws, real specter, translucent ghost, spectral figure, scary inflatable, dark shadowy figure, screaming face, papa angry, papa thundering shout, papa apoplectic, papa rage face, intense yelling, blood, red liquid, red splatter, red stain, gore, injury, scary, violent, distressing, motion lines, action lines, dust trails, speed lines, motion blur, papa with hair, papa not bald, eva with brown hair, eva with red hair, eva brunette, sara in ponytail, sara with straight hair, morphing, flickering, disfigured, distorted, extra face, unstable motion, papa standing still, papa motionless, papa idle, papa observing without acting, papa waiting passively, joe airborne, ginger airborne, joe leaping, ginger leaping, sara airborne, eva airborne, ginger as fox, ginger as deer, third dog, two ginger, duplicate dog, sara crossing the porch, eva crossing the porch, eva running off porch, joe running off porch, dutch angle, handheld shake, jump cut",
+  "cameraStyle": "static medium-wide opening into a low-angle tracking shot following Ginger off-frame, capped by a single whip pan back to the porch",
+  "closingFrame": "Empty porch right of frame where @Ginger just exited; @Sara center-left outside the open door with comic-gasp face; @Eva center-right gripping @Joe's blue leash with a worried pout; @Joe sitting right-foreground in bug costume; round white inflatable ghost still swaying gently on the left railing; soft warm porch lanterns glowing."
+}
