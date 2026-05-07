@@ -245,43 +245,52 @@ def build_phase_list(ep, skip_eyeball, autorun):
         Phase(0, "0. lint",
               ["python3", str(SCRIPTS / "lintEpisode.py"), "--episode", str(ep)],
               verify_lint, retry=False),
-        Phase(1, "0.5 budget",
+        # Phase 0.4 — Gemini second-opinion on every clip prompt before submit.
+        # Catches static-render verbs, ambiguous action, sister-collision, costume
+        # drift risk that the deterministic lint can't see. Optional (warn-only)
+        # because Gemini is occasionally over-strict; rule-of-thumb: apply its
+        # CAPS-verb / body-part anchor suggestions, ignore stylistic complaints.
+        Phase(1, "0.4 gemini-review",
+              ["python3", str(SCRIPTS / "reviewPromptWithGemini.py"),
+               "--episode", str(ep), "--all"],
+              optional=True, retry=False),
+        Phase(2, "0.5 budget",
               ["python3", str(SCRIPTS / "trackEpisodeBudget.py"), "--episode", str(ep)],
               verify_budget, optional=True, retry=False),  # warn-only by default
         # Fix E — phase 0.6: sync registry with Kling library (catches duplicates,
         # fills missing entries). Idempotent. Per ep15 retrospective lesson.
-        Phase(2, "0.6 sync-registry",
+        Phase(3, "0.6 sync-registry",
               ["python3", str(SCRIPTS / "syncElementsRegistry.py")],
               optional=True, retry=False),
         # Fix E — phase 0.7: auto-discover assets/scenes/ PNGs, idempotent upload
         # + element register. The single answer to "agent forgot which PNGs exist".
-        Phase(3, "0.7 discover-assets",
+        Phase(4, "0.7 discover-assets",
               ["python3", str(SCRIPTS / "discoverAndRegisterAssets.py"),
                "--episode", str(ep), "--skip-create"],
               optional=True, retry=False),
-        Phase(4, "1. scenes",
+        Phase(5, "1. scenes",
               ["python3", str(PROJECT_ROOT / "content" / "generateScenes.py")],
               verify_scenes, optional=True),
-        Phase(5, "3. upload",
+        Phase(6, "3. upload",
               ["python3", str(pipeline), "--episode", str(ep), "upload"],
               verify_upload),
-        Phase(6, "4. elements",
+        Phase(7, "4. elements",
               ["python3", str(pipeline), "--episode", str(ep), "elements"],
               verify_elements),
-        Phase(7, "5. submit",
+        Phase(8, "5. submit",
               ["python3", str(pipeline), "--episode", str(ep), "submit"],
               verify_submit),
-        Phase(8, "6. download",
+        Phase(9, "6. download",
               ["python3", str(pipeline), "--episode", str(ep), "download"],
               verify_download),
-        Phase(9, "7. normalize",
+        Phase(10, "7. normalize",
               ["python3", str(SCRIPTS / "normalizeClipFilenames.py"), str(ep_dir / "clips")],
               verify_normalize, optional=True),
-        Phase(10, "8. audit",
+        Phase(11, "8. audit",
               ["python3", str(SCRIPTS / "auditClipsWithGemini.py"),
                str(ep_dir / "clips"), "--out", str(ep_dir / "audit_v1.json")],
               verify_audit),
-        Phase(11, "8.5 autofix",
+        Phase(12, "8.5 autofix",
               ["python3", str(SCRIPTS / "autoFixDefects.py"),
                "--audit", str(ep_dir / "audit_v1.json"),
                "--episode", str(ep), "--emit-fixed-specs"],
@@ -289,32 +298,32 @@ def build_phase_list(ep, skip_eyeball, autorun):
     ]
 
     # ─── Music block phase (delegated to runMusicPhase.py for runtime checks) ─
-    phases.append(Phase(12, "9. music",
+    phases.append(Phase(13, "9. music",
         ["python3", str(SCRIPTS / "runMusicPhase.py"), "--episode", str(ep)],
         verify_music, optional=True))
 
     # ─── Assemble / thumbnail / short / validate ─────────────────────────
-    phases.append(Phase(13, "10. assemble",
+    phases.append(Phase(14, "10. assemble",
         ["python3", str(SCRIPTS / "assembleEpisode.py"), str(final_mp4),
          "--clips-dir", str(ep_dir / "clips")],
         verify_assemble))
-    phases.append(Phase(14, "11. thumbnail",
+    phases.append(Phase(15, "11. thumbnail",
         ["python3", str(SCRIPTS / "generateThumbnail.py"),
          f"--episode={ep}", "--title", title],
         verify_thumbnail, optional=True))
-    phases.append(Phase(15, "12. short",
+    phases.append(Phase(16, "12. short",
         ["python3", str(SCRIPTS / "generateShort.py"),
          f"--episode={ep}", "--title", title],
         verify_short, optional=True))
-    phases.append(Phase(16, "13. validate",
+    phases.append(Phase(17, "13. validate",
         ["python3", str(SCRIPTS / "validateEpisode.py"), f"--episode={ep}"],
         verify_validate))
 
     # ─── Eyeball gate (manual) ───────────────────────────────────────────
     if not skip_eyeball:
-        phases.append(Phase(17, "14. eyeball-gate",
+        phases.append(Phase(18, "14. eyeball-gate",
             ["echo", "STOP — open", str(final_mp4),
-             "in QuickTime, scrub, then re-run with --start-from 18"],
+             "in QuickTime, scrub, then re-run with --start-from 19"],
             gate=True, retry=False))
 
     # ─── Upload to YouTube (UNLISTED) — only if assembled mp4 exists ─────
@@ -325,7 +334,7 @@ def build_phase_list(ep, skip_eyeball, autorun):
                   "--privacy", "unlisted"]
     if desc_file.is_file(): upload_cmd += ["--description-file", str(desc_file)]
     if tags_file.is_file(): upload_cmd += ["--tags-file", str(tags_file)]
-    phases.append(Phase(18, "15. upload-yt", upload_cmd, optional=True))
+    phases.append(Phase(19, "15. upload-yt", upload_cmd, optional=True))
 
     return phases
 
