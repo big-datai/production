@@ -2,7 +2,7 @@
   "episode": 15,
   "beat": 17,
   "clip": 17,
-  "title": "THE FIND — Pattern E full family + Mrs. Patel + 2 dogs",
+  "title": "THE FIND — Pattern E family + Ginger (no Mrs. Patel)",
   "mode": "omni",
   "durationSec": 10,
   "quality": "720p",
@@ -23,11 +23,11 @@
     }
   ],
   "prompt": [
-    "Multi-shot composition. THE FIND — emotional reunion payoff. Composition anchored on pre-rendered Pattern E group still (image-to-video reference) for Shots 1 and 4. Motion-only prompt — the still defines who, where, and what they look like.",
-    "Shot 1 (0-3s, low-angle wide, hand-held settle, hand-held drift settling on group — emotional awe, hold on Pattern E group still anchor) — Elements: @ep15-clip17-group Hold the Pattern E group still composition — Eva foreground-right kneeling cradling Ginger wrapped in pumpkin cape on a soft pile of dried fall leaves beside a tower of pumpkins; Sara center-right kneeling beside Eva, hand on Ginger's head; Papa center-left kneeling on the porch boards behind the kids; Mama center standing behind the kneeling kids holding her flashlight; Mrs. Patel background-left on the porch by her front door holding her candy bowl. Head-sized giant lollipop on candy-cane pole at left of pumpkin tower, candy-corn string lights twinkling on porch railing, soft fabric cobweb-tunnel arching above, soft purple porch light gently washing the background.",
-    "Shot 2 (3-5s, MCU OTS, slow tracking pan), slow tracking pan with breathing CLOSE-UP, slow dolly-in 8 inches, gentle focus pull background → subject, slow dolly push in) — Elements: @ep15-clip17-group Tighter on Eva and Ginger at foreground-right of the group. @Eva hugs @Ginger a little closer, Ginger's tail wags from inside the pumpkin cape, Ginger nuzzles into Eva's collar. @Sara's left hand pets Ginger's head once. @Eva, gently: \"Oh GINGER! We found you!\"",
-    "Shot 3 (5-7s, MCU OTS, slow tracking pan), slow tracking pan with breathing, slow pan left) — Elements: @ep15-clip17-group Follow over to Papa and Mama at center-left of the group. @Papa tilts his head toward @Eva from his kneeling spot with a warm dad-grin. @Mama raises her right hand to her chest with a delighted relieved expression.",
-    "Shot 4 (7-10s, LOW-ANGLE WIDE, slow crane up to eye-level — release breath, slow pan right + slow pull back to Pattern E anchor) — Elements: @ep15-clip17-group Settle on Mrs. Patel in background-left then ease back to the Pattern E group still composition. Mrs. Patel lifts her right hand off the candy bowl in a small gesture toward Ginger then returns it. Mrs. Patel: \"She kept me company! I gave her water. Bravest kids on the block!\" @Sara: \"Thank you so much, Mrs."
+    "Cast LOCKS:\n- @Papa: 100% HUMAN HEAD, bald + dark beard + glasses, gray cardigan, blue henley. WOLF EARS HEADBAND only (plush ears on bald head). Holds WOLF MASK in right hand below shoulder, NEVER on face. Head stays human EVERY shot.\n- @Mama: orange knitted BEANIE, blonde hair, fair skin, rust knit sweater, dark jeans.\n- @Eva: 3yo curly bright-blonde, pumpkin onesie + green leaf hat.\n- @Sara: 7yo wavy dark-blonde, pink-white tutu + tiara + wings.\n- @Ginger: 4yo Jack Russell, white-and-tan, pumpkin-orange cape, BIGGER than Pomeranian, NOT puppy.",
+    "Shot 1 (0-3s, low-angle wide, hand-held settle, hold on Pattern E anchor) — Elements: @ep15-clip17-group\nHold the Pattern E composition exactly: @Eva foreground-right kneeling, her ARMS CRADLE @Ginger in pumpkin cape; @Sara center-right kneeling beside Eva, hand on Ginger's head; @Papa (HUMAN HEAD, wolf-ears headband, mask in right hand) center-left kneeling; @Mama (orange beanie, rust sweater) center standing behind kids holding flashlight. Decorations per still: lollipop pole, candy-corn lights, cobweb arch.",
+    "Shot 2 (3-5s, MCU OTS, slow tracking pan), slow dolly-in 8 inches, focus pull bg→subject) — Elements: @ep15-clip17-group Tighter on Eva and Ginger at foreground-right of the group. @Eva's ARMS HUG @Ginger closer, Ginger's tail wags from inside the pumpkin cape, Ginger nuzzles into Eva's collar. @Sara's left hand pets Ginger's head once. @Eva, gently: \"Oh GINGER! We found you!\"",
+    "Shot 3 (5-7s, MCU OTS, slow tracking pan), slow pan left) — Elements: @ep15-clip17-group Follow over to Papa and Mama at center-left of the group. @Papa tilts his head toward @Eva with a warm dad-grin. @Mama raises her right hand to her chest with a delighted relieved expression.",
+    "Shot 4 (7-10s, low-angle wide, slow crane up to eye-level — release breath, slow pull back to Pattern E anchor) — Elements: @ep15-clip17-group\nSettle on the family group only — @Eva still cradles @Ginger, @Sara's hand stays on Ginger's head, @Papa kneels behind (HUMAN HEAD with wolf-ears-headband, MASK in his hand), @Mama stands behind (orange beanie, rust sweater), hand at chest. All five hold position per Pattern E. @Mama, warm: \"Bravest kids on the block!\" @Sara, smiling up at Mama: \"We found her, Mama!\""
   ],
   "negativePrompt": [
     "duplicate character",
@@ -165,10 +165,23 @@
     "joe visible",
     "second dog",
     "pomeranian visible",
-    "only ginger"
+    "only ginger",
+    "papa as full wolf",
+    "papa with wolf snout",
+    "papa with wolf fur on body",
+    "papa transformed into beast",
+    "real wolf body papa",
+    "wolf mask covering papa face",
+    "mask on papa face",
+    "papa head as wolf",
+    "mama without orange beanie",
+    "mama with hat changed",
+    "mama with different costume",
+    "mrs patel any visible",
+    "elderly woman in scene",
+    "extra adult"
   ],
   "cameraStyle": "static low-angle medium-wide on Pattern E group still, slow dolly push to soft medium on Eva and Ginger, slow pan left to Papa and Mama, slow pan right to Mrs. Patel, capped by a slow pull back",
-  "closingFrame": "Pattern E composition holding at @ep15_house5_candy_house — @Eva foreground-right kneeling cradling @Ginger wrapped in pumpkin cape on dried leaves; @Sara center-right kneeling beside Eva, hand on Ginger's head; @Joe sitting beside Eva nuzzling Ginger in bug costume; @Papa center-left kneeling, hand on his knee; @Mama center softly standing behind the kneeling kids with hand on her chest in relief; @Mrs. Patel background-left on the porch by her front door, hand returning to her candy bowl; soft warm candy-corn string lights twinkling above.",
-  "_clip17_workaround": "Mrs. Patel removed from subjects to stay under Kling 7-element+image cap. She remains described in prompt cast identity locks; Kling will render her based on text only. Architectural fix: split clip 17 into multiple shots with tight per-shot element_list.",
+  "closingFrame": "Pattern E composition at @ep15_house5_candy_house — @Eva foreground-right kneeling cradling @Ginger wrapped in pumpkin cape on dried leaves; @Sara center-right kneeling beside Eva, hand on Ginger's head; @Papa center-left kneeling (HUMAN HEAD with wolf-ears-headband, mask in hand); @Mama center standing behind kids with orange beanie + rust sweater + hand on chest in relief; soft warm candy-corn string lights twinkling above.",
   "_droppedPatternEStill": "assets/scenes/group_ep15_clip17_the_find_redo_v2.png"
 }
