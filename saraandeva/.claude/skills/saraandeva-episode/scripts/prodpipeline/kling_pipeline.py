@@ -283,6 +283,14 @@ SCENE_MANIFEST = {
 }
 
 
+def coerce_prompt(v, sep: str = "\n\n") -> str:
+    """prompt / negativePrompt fields can be list[str] (readable JSON, recommended)
+    OR str (legacy single-line). Normalize to single string before sending to Kling."""
+    if v is None: return ""
+    if isinstance(v, list): return sep.join(str(x) for x in v)
+    return str(v)
+
+
 def translate_prompt(prompt: str, char_order: list[str]) -> str:
     out = prompt
     for name in sorted(char_order, key=len, reverse=True):
@@ -380,7 +388,7 @@ def phase_submit(ep_num: int, specific_clip: int | None = None):
             print(f"  ✗ {clip_key} no resolvable characters subjects={clip.get('subjects')}",
                   file=sys.stderr); continue
 
-        translated = translate_prompt(clip.get("prompt", ""), element_order)
+        translated = translate_prompt(coerce_prompt(clip.get("prompt"), sep="\n\n"), element_order)
         ext_id = f"ep{ep_num:02d}-clip{n}-{int(time.time()*1000)}"
         prev_key = f"clip_{n-1}"
         start_image = state.get("lastFrames", {}).get(prev_key, {}).get("httpsUrl")
@@ -395,7 +403,7 @@ def phase_submit(ep_num: int, specific_clip: int | None = None):
             "duration": str(clip.get("durationSec", 10)),
             "aspect_ratio": "16:9",
             "prompt": translated,
-            "negative_prompt": clip.get("negativePrompt", ""),
+            "negative_prompt": coerce_prompt(clip.get("negativePrompt"), sep=", "),
             "element_list": element_list,
         }
         if image_list: body["image_list"] = image_list

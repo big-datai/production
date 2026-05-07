@@ -69,10 +69,17 @@ def load_episode(ep_num: int):
 
 
 # ─── Per-clip rules ────────────────────────────────────────────────────────
+def coerce_prompt(v, sep: str = "\n\n") -> str:
+    """prompt / negativePrompt can be list[str] (readable JSON, recommended) or str (legacy)."""
+    if v is None: return ""
+    if isinstance(v, list): return sep.join(str(x) for x in v)
+    return str(v)
+
+
 def lint_clip(clip: dict):
     findings = []
     f = clip.get("_file", "<?>")
-    prompt = clip.get("prompt", "") or ""
+    prompt = coerce_prompt(clip.get("prompt"), sep="\n\n")
     subjects = clip.get("subjects", []) or []
     bound = clip.get("boundElements", []) or []
 
@@ -127,7 +134,7 @@ def lint_clip(clip: dict):
             findings.append(("warn", f"R9 group noun (may spawn strangers): /{pat}/"))
 
     # R10. negativePrompt should exist for any clip
-    if not (clip.get("negativePrompt") or "").strip():
+    if not coerce_prompt(clip.get("negativePrompt"), sep=", ").strip():
         findings.append(("warn", "R10 missing negativePrompt"))
 
     # R11. Orphan @-ref: every @<Char> in prompt body must be in subjects[].
@@ -173,8 +180,8 @@ def lint_episode(episode: dict, clips: list):
     preview_pat = re.compile(r"(?:group_)?ep\d{2}_(\w+?)_[\w_]*preview\.png", re.I)
 
     # E1. 2–4 audience-ask beats
-    asks = sum(1 for c in clips if "AUDIENCE-ASK" in (c.get("title", "") + c.get("prompt", "")).upper()
-               or re.search(r"to camera", (c.get("prompt") or ""), re.I))
+    asks = sum(1 for c in clips if "AUDIENCE-ASK" in (c.get("title", "") + coerce_prompt(c.get("prompt"))).upper()
+               or re.search(r"to camera", coerce_prompt(c.get("prompt")), re.I))
     if asks < 2:
         findings.append(("error", f"E1 only {asks} audience-ask beats (need 2-4)"))
     elif asks > 4:
@@ -189,7 +196,7 @@ def lint_episode(episode: dict, clips: list):
     # E3. Final cliffhanger should be a camera-ask
     if clips:
         last = clips[-1]
-        last_text = (last.get("title", "") + last.get("prompt", "")).upper()
+        last_text = (last.get("title", "") + coerce_prompt(last.get("prompt"))).upper()
         if "CLIFFHANGER" not in last_text and "CAMERA-ASK" not in last_text:
             findings.append(("warn", "E3 last clip may not be a cliffhanger camera-ask"))
 
@@ -253,7 +260,7 @@ def lint_episode(episode: dict, clips: list):
 
     for c in clips:
         f = c["_file"]
-        prompt = c.get("prompt", "") or ""
+        prompt = coerce_prompt(c.get("prompt"))
         for s in (c.get("subjects") or []):
             kws = costume_keywords.get(s)
             if not kws: continue

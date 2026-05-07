@@ -1,0 +1,138 @@
+{
+  "episode": 15,
+  "title": "Sara and Eva 🎃 Where's Ginger?!",
+  "logline": "Halloween night. Family in costume — Sara=fairy princess, Eva=tiny pumpkin, Papa=friendly werewolf with floppy ears, Mama=cozy autumn — is about to go trick-or-treating when the wind catches their porch's giant inflatable ghost decoration and Ginger (the family Jack Russell) BOLTS down the sidewalk. Eva yanks Joe's leash tight so he doesn't follow. Sara's plan: 'We trick-or-treat AND ask everyone if they've seen her — and Joe can SNIFF for her!' Eva, gripping the leash: 'Don't run away, Joe. FIND Ginger.' Five visually-distinct decorated houses on the block (Witch Cauldron, Pirate Ship, Skeleton Lawn, Isabel's Sweet Cottage, the Special Candy House) — each spookier than the last but every neighbor warmer. Between houses they meet Lisa (Sara's classmate, garden fairy) who tips them off about a brown-and-white dog at the candy house. The girls FREEZE at the spookiest house's path but push through (they want candy AND need Ginger). Joe alerts at the door — Ginger is curled up shivering behind the pumpkin tower. Eva wraps Ginger in her own pumpkin cape. Mrs. Patel: 'Bravest kids on the block.' Family walks home triumphant. Final camera-ask: 'Which house did YOU like BEST? One, two, three, four, or five?'",
+  "formulaReference": "Diana/Roma holiday format × ep04 animal-hero formula (Joe + lost-pet mystery in title) × mystery-box cold open × audience-rating engagement mechanic × Bluey low-stim slow-pace fall-night vibe. Visual escalation: house decorations get spookier per beat while neighbor warmth scales up in parallel — every neighbor shares extra ('extra candy for Ginger when you find her', biscuits, helps look). Recurring-character recall: Mike-style (no Mike! corrected canon), Joe = Eva's Pomeranian since ep01, Ginger = family Jack Russell since ep01 (NOT a magic-forest fox — see family_pets_canon.md). Ep13 callback: Isabel + Leo at house 4. NEW characters seeded: Lisa (Sara's classmate, school-friend roster) + Mrs. Patel (recurring kindly-elder neighbor). Audience ask cap = 4 fourth-wall asks (clips 5, 8, 11, 22).",
+  "mode": "omni",
+  "durationTotal": "~7:45 (20 normal clips × 10s = 200s + 1 Papa-active clip × 15s = 15s + 1 music-block letter A reused under 30s music block + intro 31s + outro 20s)",
+  "expectedCreditsTotal": 1935,
+  "expectedCreditsBreakdown": "20 normal clips × 90 cr = 1800 + 1 Papa-active clip 15s × 135 cr = 135 + 0 letter-music renders new (reusing existing footage technique TBD; if a new music-block render needed, +90 cr per slot). Base = 1935. 25% buffer ceiling ≈ 2419 cr — above the 2200 abort threshold but acceptable IF the music block is letter-A-reuse style. Set hard abort at 2200 and stop submitting if cumulative crosses it.",
+  "expectedCreditsAbortThreshold": 2200,
+  "newBoundElements": [
+    {
+      "tag": "Lisa",
+      "source": "library",
+      "asset": "assets/characters/lisa_front.png",
+      "purpose": "Sara's first-grade classmate — NEW recurring school-friend character introduced in ep15 (Halloween House Hunt, clip 15). Copper-red pigtails + green eyes + freckles + pale skin. Visually distinct from Sara (straight blonde), Eva (curly blonde), Isabel (curly brunette + olive). Defaults to school clothes; ep15 specifically shows her in green-winged garden-fairy Halloween costume. Future use: school playground / library / classroom-themed eps."
+    },
+    {
+      "tag": "Mrs. Patel",
+      "source": "library",
+      "asset": "assets/characters/mrs_patel_front.png",
+      "purpose": "Kind elderly Indian-American grandmother neighbor — NEW recurring character introduced in ep15. Silver-grey hair in low bun + soft-frame reading glasses on beaded chain + medium-brown South-Asian skin + cream cardigan over dusty-mauve top. Heroine of clip 17 (the find): she kept Ginger company on her porch and gave her water until the family found her. Future use: community events / holiday visits / 'kindly elder neighbor' slot."
+    },
+    {
+      "tag": "ep15-house1-witch-cauldron",
+      "source": "library",
+      "asset": "assets/scenes/ep15_house1_witch_cauldron.png",
+      "purpose": "Halloween-decorated witch-themed neighbor's house — used clips 4, 5, 6. Purple+green LED string lights, friendly cardboard cauldron with violet fog, plastic potion bottles, friendly witch cutout with broom, 'WITCHY WELCOME' sign, jack-o-lanterns on stairs, cobweb-fabric trees with purple lights."
+    },
+    {
+      "tag": "ep15-house2-pirate-ship",
+      "source": "library",
+      "asset": "assets/scenes/ep15_house2_pirate_ship.png",
+      "purpose": "Halloween-decorated pirate-themed neighbor's house — used clips 7, 8, 9. Porch turned into wooden ship deck with ship's wheel, RUM/GOLD barrels, fishnet drape, cartoon-cute skull-and-crossbones flag, treasure chest of gold-coin chocolates, parrot cutout, 'YE BE WELCOME MATEYS'."
+    },
+    {
+      "tag": "ep15-house3-skeleton-lawn",
+      "source": "library",
+      "asset": "assets/scenes/ep15_house3_skeleton_lawn.png",
+      "purpose": "Halloween-decorated skeleton-lawn neighbor's house — used clips 10, 11, 12. EIGHT cartoon-friendly white-plastic lawn skeletons in playful poses (waving, reading newspaper, mowing, yoga, raking) under purple-orange LED string lights. 'BONE-A-FIDE BEST DECORATED' sign. Designed deliberately FRIENDLY-not-scary for the kid-show tone."
+    },
+    {
+      "tag": "ep15-house4-isabel-cottage",
+      "source": "library",
+      "asset": "assets/scenes/ep15_house4_isabel_cottage.png",
+      "purpose": "Halloween-decorated cottage of Isabel & Leo's family — used clips 13, 14. Warm-white fairy lights wrap every tree + window. Smiling cartoon scarecrow with 'HAPPY HALLOWEEN' sign. Jack-o-lantern staircase. Hay bales with sleeping cat plush. 'TRICK OR TREATS WELCOME' calligraphy door sign. The friendliest, most-help house — Isabel's mom volunteers a flashlight to help search for Ginger."
+    },
+    {
+      "tag": "ep15-house5-candy-house",
+      "source": "library",
+      "asset": "assets/scenes/ep15_house5_candy_house.png",
+      "purpose": "Halloween-decorated 'Special Candy House' of Mrs. Patel — used clips 16, 17, 18. Showstopper grand-prize-winning decoration: head-sized giant SPIRAL LOLLIPOP centerpiece on candy-cane pole, tower of stacked glowing pumpkins, candy-corn string lights, hanging cobweb-fabric tunnel arch, oversized friendly inflatable jack-o-lantern with candy-corn teeth, friendly inflatable black cat, 'YOU FOUND THE SPECIAL CANDY HOUSE' door sign. Spookiest BUT warmest — the visual climax of the house-hunt arc."
+    },
+    {
+      "tag": "ep15-clip13-group-still",
+      "source": "library",
+      "asset": "assets/scenes/group_ep15_clip13_isabel_yard_v1.png",
+      "purpose": "Pattern E group still — 4 kids in costume + Joe-bug at Isabel's fairy-lit cottage side yard, fanned out across the leaf-strewn front yard searching for Ginger. Used as image-to-video reference for clip 13 to lock identity-and-composition for the 4-character search beat (anti-ghost mitigation per lesson_nano_banana_group_shot.md)."
+    },
+    {
+      "tag": "ep15-clip17-group-still",
+      "source": "library",
+      "asset": "assets/scenes/group_ep15_clip17_the_find_redo_v2.png",
+      "purpose": "Pattern E group still — the find moment at Mrs. Patel's candy house: full family + Mrs. Patel + Joe-bug + Ginger-with-pumpkin-cape gathered on the porch around the rescued dog. Used as image-to-video reference for clip 17. Locks Papa's bald + dark beard, Eva's curly blonde, Sara's loose wavy hair, Mrs. Patel's silver-bun + glasses, both dogs' anatomy."
+    }
+  ],
+  "newCostumePreviews": [
+    "assets/scenes/group_ep15_sara_princess_preview.png",
+    "assets/scenes/group_ep15_eva_pumpkin_preview.png",
+    "assets/scenes/group_ep15_papa_werewolf_preview.png",
+    "assets/scenes/group_ep15_mama_cozy_preview.png",
+    "assets/scenes/group_ep15_joe_bug_preview.png",
+    "assets/scenes/group_ep15_ginger_pumpkin_cape_preview.png",
+    "assets/scenes/group_ep15_isabel_unicorn_preview.png",
+    "assets/scenes/group_ep15_leo_dinosaur_preview.png"
+  ],
+  "newCostumePreviewsNote": "Halloween costume previews for canonical characters — generated via Nano Banana Pro to lock the costume look BEFORE Kling submission. These are PROMPT-anchor reference images, not new bound elements (the canonical Sara/Eva/Papa/Mama/Joe/Ginger/Isabel/Leo bound elements remain unchanged; the costume is described in each clip's prompt). For Pattern E clips 13 + 17 these previews ARE used as direct image refs.",
+  "reusedBoundElements": [
+    "Sara, Eva, Papa, Mama — canonical character avatars",
+    "Joe, Ginger — family pets (canonical avatars from ep01+; see family_pets_canon.md)",
+    "Isabel, Leo — ep13 callback avatars",
+    "front_house_fall — family's own front house in autumn (used clips 1, 2, 3, 21, 22)",
+    "front_fence_sidewalk — sidewalk between houses (used clips 7–9 transition + clip 15 Lisa encounter)"
+  ],
+  "scenes": [
+    "front_house_fall",
+    "front_fence_sidewalk",
+    "ep15-house1-witch-cauldron",
+    "ep15-house2-pirate-ship",
+    "ep15-house3-skeleton-lawn",
+    "ep15-house4-isabel-cottage",
+    "ep15-house5-candy-house"
+  ],
+  "cast": [
+    "Sara",
+    "Eva",
+    "Papa",
+    "Mama",
+    "Joe",
+    "Ginger",
+    "Isabel",
+    "Leo",
+    "Lisa",
+    "Mrs. Patel",
+    "Witch-Mama (one-off NPC — in-prompt only)",
+    "Pirate-Dad (one-off NPC — in-prompt only)",
+    "Skeleton-Grandpa (one-off NPC — in-prompt only)",
+    "Isabel-Mom (one-off NPC — in-prompt only)"
+  ],
+  "papaActiveBeat": "Clip 10 — @Papa LIFTS @Eva onto his shoulders, walks up to the biggest lawn skeleton, his RIGHT ARM SWINGS in a big wave; the skeleton's plastic arm SWAYS in the breeze 'waving back', @Eva LAUGHS. ~15s. Body-part-CAPS-verb template per lesson_kling_papa_active_prompt_template.md. Negative-prompt enumerates passive states: 'papa standing still / motionless / observing without acting / idle'.",
+  "fourthWallAsks": [
+    {"clip": 5, "ask": "What would YOU give it?", "context": "After rating House 1 (witch cauldron)"},
+    {"clip": 8, "ask": "Have YOU ever walked a dog?", "context": "After Joe-on-leash beat at House 2 (pirate ship)"},
+    {"clip": 11, "ask": "Were YOU brave like Eva?", "context": "After Papa-active skeleton wave at House 3"},
+    {"clip": 22, "ask": "Which house did YOU like BEST? House ONE, TWO, THREE, FOUR, or FIVE? Tell us!", "context": "Final cliffhanger camera-ask, the engagement payoff"}
+  ],
+  "musicBlock": {
+    "clips": ["A"],
+    "songLyric": "content/episodes/ep15/lyrics_we_found_ginger.md",
+    "blockType": "celebration-walk-home",
+    "blockUsage": "Clips 19 + 20 are music-video visuals scored to one Suno song ('We Found Ginger'). One letter-A 10s render (family + 2 dogs walking home down leaf-strewn block under porch lights, Eva carrying Ginger in pumpkin cape, Sara walking Joe-the-bug on leash, Papa carrying both candy buckets, Mama smiling) is LOOPED 3× with crossfade to fill the music block. See ep13 clipA/B/C for the loop-expansion convention."
+  },
+  "continuity": {
+    "joe": "Family Pomeranian, Eva's dog. From ep01. ep15 costume: ladybug. Eva walks him on leash from clip 3 onward.",
+    "ginger": "Family Jack Russell, female ~4yo. From ep01. ep15 costume: pumpkin cape. BOLTS in clip 2 (scared by inflatable ghost on family's own porch), found in clip 17 at Mrs. Patel's. Note: ep10/ep12 references to 'Ginger' = THIS family dog, not a separate magic-forest fox character. See family_pets_canon.md.",
+    "isabel": "Recurring from ep13 (playground tag). ep15 costume: unicorn onesie + horn headband.",
+    "leo": "Recurring from ep13 (Isabel's 3yo brother). ep15 costume: green dinosaur with hood + spike crests + tail.",
+    "lisa": "NEW recurring character — Sara's first-grade classmate. Introduced in clip 15 between houses. Garden-fairy costume (green wings + flower headband). Future use: school playground / library / classroom eps.",
+    "mrsPatel": "NEW recurring character — kindly elderly Indian-American grandmother neighbor. Heroine of clip 17 (the find). Future use: community events / holiday visits / kindly-elder slot."
+  },
+  "youtubeMetadata": {
+    "primaryTitle": "Sara and Eva 🎃 Where's Ginger?!",
+    "fallbackTitleNoEmoji": "Sara and Eva — Ep 15: Where's Ginger?!",
+    "primaryTitleCharCount": 33,
+    "playlist": "Halloween",
+    "thumbnailRecipe": "Frame from clip 17 (the find moment) — Eva's face hugging Ginger — with Pillow Impact-yellow text overlay 'Where's Ginger?!' (single-emoji 🎃 OK in description, NOT title). See lesson_episode_thumbnail_recipe.md."
+  }
+}

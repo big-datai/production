@@ -484,19 +484,6 @@
       ],
       "image_urls": []
     },
-    "clip_7": {
-      "task_id": "881335326000685086",
-      "external_task_id": "ep15-clip7-1778155234616",
-      "submitted_at": "2026-05-07T12:00:34.956Z",
-      "status": "submitted",
-      "element_order": [
-        "Sara",
-        "Eva",
-        "Papa",
-        "Joe"
-      ],
-      "image_urls": []
-    },
     "clip_8": {
       "task_id": "881335967641772092",
       "external_task_id": "ep15-clip8-1778155387563",
@@ -533,31 +520,6 @@
       ],
       "image_urls": []
     },
-    "clip_12": {
-      "task_id": "881336747329331221",
-      "external_task_id": "ep15-clip12-1778155573453",
-      "submitted_at": "2026-05-07T12:06:13.847Z",
-      "status": "submitted",
-      "element_order": [
-        "Sara",
-        "Eva"
-      ],
-      "image_urls": []
-    },
-    "clip_13": {
-      "task_id": "881336878589415459",
-      "external_task_id": "ep15-clip13-1778155604754",
-      "submitted_at": "2026-05-07T12:06:45.144Z",
-      "status": "submitted",
-      "element_order": [
-        "Sara",
-        "Eva",
-        "Joe"
-      ],
-      "image_urls": [
-        "https://storage.googleapis.com/saraandeva-kling-elements/ep15/ep15-clip13-group-still.png"
-      ]
-    },
     "clip_2": {
       "task_id": "881337240373952555",
       "external_task_id": "ep15-clip2-1778155690992",
@@ -573,42 +535,6 @@
         "https://storage.googleapis.com/saraandeva-kling-elements/ep15/front_house_fall.png"
       ]
     },
-    "clip_10": {
-      "task_id": "881338430456733786",
-      "external_task_id": "ep15-clip10-1778155974724",
-      "submitted_at": "2026-05-07T12:12:55.090Z",
-      "status": "submitted",
-      "element_order": [
-        "Papa",
-        "Eva",
-        "Sara"
-      ],
-      "image_urls": []
-    },
-    "clip_14": {
-      "task_id": "881338433703772176",
-      "external_task_id": "ep15-clip14-1778155975504",
-      "submitted_at": "2026-05-07T12:12:55.908Z",
-      "status": "submitted",
-      "element_order": [
-        "Sara",
-        "Eva"
-      ],
-      "image_urls": []
-    },
-    "clip_15": {
-      "task_id": "881338436828536833",
-      "external_task_id": "ep15-clip15-1778155976248",
-      "submitted_at": "2026-05-07T12:12:56.613Z",
-      "status": "submitted",
-      "element_order": [
-        "Sara",
-        "Eva"
-      ],
-      "image_urls": [
-        "https://storage.googleapis.com/saraandeva-kling-elements/ep15/front_fence_sidewalk.png"
-      ]
-    },
     "clip_16": {
       "task_id": "881338439713562671",
       "external_task_id": "ep15-clip16-1778155976932",
@@ -620,23 +546,6 @@
         "Joe"
       ],
       "image_urls": []
-    },
-    "clip_17": {
-      "task_id": "881339210702135336",
-      "external_task_id": "ep15-clip17-1778156160820",
-      "submitted_at": "2026-05-07T12:16:01.213Z",
-      "status": "submitted",
-      "element_order": [
-        "Sara",
-        "Eva",
-        "Papa",
-        "Mama",
-        "Joe",
-        "Ginger"
-      ],
-      "image_urls": [
-        "https://storage.googleapis.com/saraandeva-kling-elements/ep15/ep15-clip17-group-still.png"
-      ]
     },
     "clip_18": {
       "task_id": "881339341635723325",
@@ -714,6 +623,102 @@
       "image_urls": [
         "https://storage.googleapis.com/saraandeva-kling-elements/ep15/front_house_fall.png"
       ]
+    },
+    "clip_7": {
+      "task_id": "881451648391577696",
+      "external_task_id": "ep15-clip7-1778182968047",
+      "submitted_at": "2026-05-07T19:42:48.428Z",
+      "status": "submitted",
+      "element_order": [
+        "Sara",
+        "Eva",
+        "Papa",
+        "Joe"
+      ],
+      "image_urls": []
+    },
+    "clip_10": {
+      "task_id": "881451651562479662",
+      "external_task_id": "ep15-clip10-1778182968810",
+      "submitted_at": "2026-05-07T19:42:49.173Z",
+      "status": "submitted",
+      "element_order": [
+        "Papa",
+        "Eva",
+        "Sara"
+      ],
+      "image_urls": []
+    },
+    "clip_12": {
+      "task_id": "881451654636245014",
+      "external_task_id": "ep15-clip12-1778182969544",
+      "submitted_at": "2026-05-07T19:42:49.934Z",
+      "status": "submitted",
+      "element_order": [
+        "Sara",
+        "Eva",
+        "Isabel"
+      ],
+      "image_urls": []
+    },
+    "clip_13": {
+      "task_id": "881451657781973007",
+      "external_task_id": "ep15-clip13-1778182970268",
+      "submitted_at": "2026-05-07T19:42:50.659Z",
+      "status": "submitted",
+      "element_order": [
+        "Sara",
+        "Eva",
+        "Isabel",
+        "Leo",
+        "Joe"
+      ],
+      "image_urls": [
+        "https://storage.googleapis.com/saraandeva-kling-elements/ep15/ep15-clip13-group-still.png"
+      ]
+    },
+    "clip_14": {
+      "task_id": "881452939754213428",
+      "external_task_id": "ep15-clip14-1778183275899",
+      "submitted_at": "2026-05-07T19:47:56.301Z",
+      "status": "submitted",
+      "element_order": [
+        "Sara",
+        "Eva",
+        "Isabel"
+      ],
+      "image_urls": []
+    },
+    "clip_15": {
+      "task_id": "881453454219804735",
+      "external_task_id": "ep15-clip15-1778183398590",
+      "submitted_at": "2026-05-07T19:49:58.955Z",
+      "status": "submitted",
+      "element_order": [
+        "Sara",
+        "Eva",
+        "Lisa"
+      ],
+      "image_urls": [
+        "https://storage.googleapis.com/saraandeva-kling-elements/ep15/front_fence_sidewalk.png"
+      ]
+    },
+    "clip_17": {
+      "task_id": "881453893321498716",
+      "external_task_id": "ep15-clip17-1778183503263",
+      "submitted_at": "2026-05-07T19:51:43.611Z",
+      "status": "submitted",
+      "element_order": [
+        "Sara",
+        "Eva",
+        "Papa",
+        "Mama",
+        "Joe",
+        "Ginger"
+      ],
+      "image_urls": [
+        "https://storage.googleapis.com/saraandeva-kling-elements/ep15/ep15-clip17-group-still.png"
+      ]
     }
   },
   "clipDownloads": {
@@ -742,11 +747,6 @@
       "downloadedAt": "2026-05-07T12:09:14.725Z",
       "sourceUrl": "https://v16-kling-fdl.klingai.com/bs2/upload-ylab-stunt-sgp/muse/880729667513225227/VIDEO/20260507/7cb8610b035fcbeaf28b4093f1931950-dfe268a5-eccf-4c7f-a545-76bb4d458711.mp4?cacheKey=ChtzZWN1cml0eS5rbGluZy5tZXRhX2VuY3J5cHQSsAEscSYq4Uoex4iNWYgzvOVuapcimtpOqcU-CtP2o_ost-5IT6kNRjsXzhjykkskovttA4emahkJw68y8PFzZ3_fUvifE2wQNUXBGv-nYJODK5LeQfkT_NiC-cSDAI-b2PoE0XBNrO2ugnJM5v6KTxcw4uGrBEKpXlLsRquBjkdpQ5UNaA6bWTc_GyVc1H0_V_EgipYSLsxsycI_dde7KULNxYSU8RpLQEfHPFy_cN3CpRoSHs_XK2axmPlM1WFnjCEe17mbIiANCYH5RFvGUN-AOZ-aOLQyfzNw9YYTkjhQ2AY8GAauwigFMAE&x-kcdn-pid=112781&ksSecret=08216e710b1f83655abe65f6eed7d519&ksTime=6a240c65"
     },
-    "clip_7": {
-      "localPath": "/Volumes/Samsung500/goreadling-production/saraandeva/content/episodes/ep15/clips/clip_7.mp4",
-      "downloadedAt": "2026-05-07T12:09:17.970Z",
-      "sourceUrl": "https://v16-kling-fdl.klingai.com/bs2/upload-ylab-stunt-sgp/muse/880729667513225227/VIDEO/20260507/5bf39924b7e421fccee799054aca560e-bda174e9-58b4-4839-a365-1c7dadc96e31.mp4?cacheKey=ChtzZWN1cml0eS5rbGluZy5tZXRhX2VuY3J5cHQSsAG25d7Hgcur2etD9D4hZ73fD31aq2jg7F5iRdCJGnhUQpyZovTtld-YX5zm8WOaWmIzCymi96jtk8-i3hexn2-Vm6fiYl8YWbqI-Ad5Tw0Wqnpy2q0eeXFqeMHyQKPV4ot0RCKHsDMrQNAWero1Jq1hT87sLErKHrp-kQDai_-jskhOkxHR5nQm4PiA6PKnWqCJfwxBi2HQm7hPzDcjR2Jq0sd5psvu0OPRK2IEGKYBSBoSBJLSFVs3h7NB0bSL9MQcdiMhIiDndiPleZKYLR5P0o2E73K9ZgzE2y1u3voPsSyZp1c6PCgFMAE&x-kcdn-pid=112781&ksSecret=4dd0edb5811f6e6a5a19d36540b3b845&ksTime=6a240d17"
-    },
     "clip_8": {
       "localPath": "/Volumes/Samsung500/goreadling-production/saraandeva/content/episodes/ep15/clips/clip_8.mp4",
       "downloadedAt": "2026-05-07T12:09:24.362Z",
@@ -757,16 +757,6 @@
       "downloadedAt": "2026-05-07T12:09:26.180Z",
       "sourceUrl": "https://v16-kling-fdl.klingai.com/bs2/upload-ylab-stunt-sgp/muse/880729667513225227/VIDEO/20260507/0387e9dbe83be822558ac78f86cedb3c-27edb73b-b17b-4fa4-9c4a-b69fa1ba6c54.mp4?cacheKey=ChtzZWN1cml0eS5rbGluZy5tZXRhX2VuY3J5cHQSsAFcI_-wbUUimyR2WaREP2JtB3HBpberA06ASvKSBPR4PoH_YDnziS32vfIcriEayCux75rG4n-SpkZr1zs4_cHOPMCXcs1EzxOzq3PZ-KLV1Qxg0xmMoGUXrHPCag-uSjXkzC65SlPGWAZopohQrcXHPA8VqH0os8VheY1tzPQDCxawr_QRpqAXyJcRoaCP8p3rFTYoKdR8difi-VJB7bvjE_GqkAi4HYRYp5rnErinyhoSOFvh80_9xnI_XufDmu_AA0PdIiAO2umArTlXtEE4E35NBRzNTRzMkK7dVgc-tlCsSFceiigFMAE&x-kcdn-pid=112781&ksSecret=e109396f8e95c2643bf42443b806042a&ksTime=6a240d99"
     },
-    "clip_12": {
-      "localPath": "/Volumes/Samsung500/goreadling-production/saraandeva/content/episodes/ep15/clips/clip_12.mp4",
-      "downloadedAt": "2026-05-07T12:09:27.947Z",
-      "sourceUrl": "https://v16-kling-fdl.klingai.com/bs2/upload-ylab-stunt-sgp/muse/880729667513225227/VIDEO/20260507/6bf13eb76acd49bfcb6a7104c95a453b-5496b649-5a79-4b14-8551-56a19823dcfa.mp4?cacheKey=ChtzZWN1cml0eS5rbGluZy5tZXRhX2VuY3J5cHQSsAFYdkWgVZ_4eBkj-vIaETFX4DnV4seggDDuGLosbnPwFXzLCfOnz2Afz4kzHMI7c4Xu2q5oUIbL5i6i-WDI1fENKCqkjFsUFIFzkE4ngPQTY1Hhe2pTcbzDyU4GQnYnJCN84rNOQELY6ecd1Z5zP1yNA8baxGh0jUvuJN7_qGzlMOBSS3MUH01S3lbi2GOs0PoGd48y94tuIrNjsYaOHfDK3PtfS7pRFgw3AKYihxg3ohoSS2Y9drB8Z4ednHxTIh7XZcnaIiAe35n5D2BPun_QMExpHMqeTIe_t7MpnswFvIBq-T0GeygFMAE&x-kcdn-pid=112781&ksSecret=16f29debf3febe760af3460eb61dface&ksTime=6a240dd8"
-    },
-    "clip_13": {
-      "localPath": "/Volumes/Samsung500/goreadling-production/saraandeva/content/episodes/ep15/clips/clip_13.mp4",
-      "downloadedAt": "2026-05-07T12:10:12.434Z",
-      "sourceUrl": "https://v16-kling-fdl.klingai.com/bs2/upload-ylab-stunt-sgp/muse/880729667513225227/VIDEO/20260507/a330eb9c598261adc2915a028e380fcc-460f2834-4ecc-419c-a024-53c64baf8cc9.mp4?cacheKey=ChtzZWN1cml0eS5rbGluZy5tZXRhX2VuY3J5cHQSsAF425T7XWHMYeraYKoJc20g5ghG9o7wPJuJwvpUHcRNpQHDzKWNrD0L9tPrmVtZ4LSHIyUk4wgdMpa8-HzAsYeZnnpJ4wNr9PkB65chD2Ofr3lleWylozQDzHuCOhCWTbgvVRHFvbQ4kTysVa2Qtu7Rz7q7r56mykF2vapkTou2xq7SWfjOBMHtW9UXdm1KrgtX2D51e_LS4M_dn1_7PlN6LfQcrE6kx8jSnN2H-1ZhjhoS0dDQ6WvEt8pqXaoyQyeDsp12IiDmdgAa1ENDk9Ek5XmxuJihUKEth-dtJ-0i3EdTZbdJfSgFMAE&x-kcdn-pid=112781&ksSecret=485af0356245946de339d73285e431aa&ksTime=6a240e1d"
-    },
     "clip_9": {
       "localPath": "/Volumes/Samsung500/goreadling-production/saraandeva/content/episodes/ep15/clips/clip_9.mp4",
       "downloadedAt": "2026-05-07T12:12:21.187Z",
@@ -776,21 +766,6 @@
       "localPath": "/Volumes/Samsung500/goreadling-production/saraandeva/content/episodes/ep15/clips/clip_2.mp4",
       "downloadedAt": "2026-05-07T12:12:23.059Z",
       "sourceUrl": "https://v16-kling-fdl.klingai.com/bs2/upload-ylab-stunt-sgp/muse/880729667513225227/VIDEO/20260507/1c979aa9fde6bfcd82bd279605941060-de65b13e-3013-443e-898d-07ef2e79e977.mp4?cacheKey=ChtzZWN1cml0eS5rbGluZy5tZXRhX2VuY3J5cHQSsAE7JAJsmp7lEZSFxJB3RyJRD9-737Ku-Rv2SQd5mks_WXERBTDiOUBP4nS0jUpsWQ21QWEZ3HTOFo5re1da_7ys-ySLpxw2n87_1WI710KvSJ42eJGuzCfEQkJJbHQro3RDDv5GeV8N9eKrHefmZ66MzaxIkr99zfukAytn9gaRhuaYD3o0DtdrDHRDS1LNoXuxOLoo7pAdrXj-kfkxvHBM4Zuh6f2AHKcWmsZvRyuEPRoSsdEjH3N5CFugfV1OmSbeCusDIiCLc7y5CuMXD-rIdjdz2lxDaNYcLaHL3Va6YDPpaG8tiygFMAE&x-kcdn-pid=112781&ksSecret=c021350ee9cd0b19ebeba5f3c80a3353&ksTime=6a240e8f"
-    },
-    "clip_10": {
-      "localPath": "/Volumes/Samsung500/goreadling-production/saraandeva/content/episodes/ep15/clips/clip_10.mp4",
-      "downloadedAt": "2026-05-07T12:22:33.429Z",
-      "sourceUrl": "https://v16-kling-fdl.klingai.com/bs2/upload-ylab-stunt-sgp/muse/880729667513225227/VIDEO/20260507/62205ac0b71afa4793d601b67e1c261d-29d416c4-f7f0-4718-928f-0e392a224dc7.mp4?cacheKey=ChtzZWN1cml0eS5rbGluZy5tZXRhX2VuY3J5cHQSsAEcooJzSy3C6pMrJ9W5beSbR9xKiw0GhmJfoRJVISCxpwYPjZTsAH4sM5zI9ZUa6Z_23sRQpboUSsmL01K34pY_VXB6J88vJlgGDz0xoDHID5f-1SmhdGbEH4LaJA_1FZL_6bnslm-K6yT0RQT7uwFR3bLdZT2UGtjLfv_uNLT8Hms6GZpjNtgC02QjBxDupL3KPLlgguOPDZaPETF4hYK1R7tuTZlnjNkqnifI9sjDzRoSMiIwzDkRLkXJDo0Gm30rVg5KIiBlCLCcXkpVf_nae8T3Dlr6tf4q29kQ2yfUKf8g-EmbKigFMAE&x-kcdn-pid=112781&ksSecret=baea3b4fd093b8f6ee9d08c7f47ad673&ksTime=6a240fed"
-    },
-    "clip_14": {
-      "localPath": "/Volumes/Samsung500/goreadling-production/saraandeva/content/episodes/ep15/clips/clip_14.mp4",
-      "downloadedAt": "2026-05-07T12:22:36.840Z",
-      "sourceUrl": "https://v16-kling-fdl.klingai.com/bs2/upload-ylab-stunt-sgp/muse/880729667513225227/VIDEO/20260507/b376c285072c347d36f5beca1f5a1b1d-3586ce36-e3c9-4ab8-8efb-de9b10c9b5a1.mp4?cacheKey=ChtzZWN1cml0eS5rbGluZy5tZXRhX2VuY3J5cHQSsAFKhNy5oiZ8xw37eNyGa72jEKXEI_I4jQBuyFnCrv4X5dStYqHjV9DYsoyKFVq6PF8uosmZLEjT2wotC1jTR84I2WYTpt9iDCgY5xCquMy0DqqyiUsMZhAa0bPGqyAyNCOqnsHzYoU0kUYVbMWmrlSS-3w2oIQQQQ2RRBvQo0nin8_MqHBqQsqF3LyrQNUUhRloyra6Jn5nVeIg0TLRTYzdHMJ3XQuWQCKZ0qs40CtJABoSLL46pEJbTw3u2hySdPDYoj5mIiBd5EzLh0GG7Bm1yIhmbVW_rBRJty72ZW89PZQGPNba_ygFMAE&x-kcdn-pid=112781&ksSecret=3bd315c38231529911a262f1dc471f9f&ksTime=6a240fb9"
-    },
-    "clip_15": {
-      "localPath": "/Volumes/Samsung500/goreadling-production/saraandeva/content/episodes/ep15/clips/clip_15.mp4",
-      "downloadedAt": "2026-05-07T12:22:43.344Z",
-      "sourceUrl": "https://v16-kling-fdl.klingai.com/bs2/upload-ylab-stunt-sgp/muse/880729667513225227/VIDEO/20260507/f964f9785564cc4b5ef35d10cbca0016-a7b4ad71-a43d-4d1c-a479-c0ced2ef4ce6.mp4?cacheKey=ChtzZWN1cml0eS5rbGluZy5tZXRhX2VuY3J5cHQSsAH2h9HVkdhAsJcUe_qt2V_CUc9w0V2m9XmGotijWwivW7Ay_3Rn93nu3sm_gsXRM-YJ4lat92oBZ67ScCwvJqNGpfGKj6qfZPdZqYAmczY400HqWyzwxzKtqyLOE6eCUsD9brjF6OQvvs7dGC883mBlxHZuMXPPK2fdHtvMHsyMN99vHAOYISNJYgFk7EsjJPbyg6heXV9MhqhvuQXA4qTIPVZ2Wf26IC_bKydK8cCz_RoSk8Q9wF5iLa3FHD-a4yQLv8RpIiBChVJ-3MBjHuKk7X3AaJbhQq6Sly9vMfNO-ydGIPlNpSgFMAE&x-kcdn-pid=112781&ksSecret=30fb33aebbbdffdae0c4250588fb0621&ksTime=6a240f79"
     },
     "clip_16": {
       "localPath": "/Volumes/Samsung500/goreadling-production/saraandeva/content/episodes/ep15/clips/clip_16.mp4",
@@ -822,10 +797,35 @@
       "downloadedAt": "2026-05-07T12:27:26.497Z",
       "sourceUrl": "https://v16-kling-fdl.klingai.com/bs2/upload-ylab-stunt-sgp/muse/880729667513225227/VIDEO/20260507/3370e0c48bf016336d294ee3b3deac9c-97092d73-eb48-4d27-a86c-1bfa281c1c8c.mp4?cacheKey=ChtzZWN1cml0eS5rbGluZy5tZXRhX2VuY3J5cHQSsAH6Fpv5m3BCTB33-aX-_92ATS2dtxYTmUfHTOhSfB2PtSl-N9LQubZyUvMGsaoY-GF_xpCEEc7WrMKlprBvM32b-H57vUVqsTfHdD7ljsZBWAAF2RorKj6_6iWioE7Mj6wpn41VwOUoUhmDF3yUDlABbvCpxwEHCTS2J8b6WI0M79Cw9E_1c2lPbxDPfSDRp16Y-yhU-HMxeptlVhUZ9gbYR9-mT-CyyKHRZF-VjR7toxoSiK-SiyTQu2yvu8rTuMxr8vOaIiBGX-QkSVztrHk5k3S2S4jcf_F9MB1gLWpIPmze6sGYRigFMAE&x-kcdn-pid=112781&ksSecret=bc7fed05cfa0bbfd25c917955619b5eb&ksTime=6a241223"
     },
+    "clip_7": {
+      "localPath": "/Volumes/Samsung500/goreadling-production/saraandeva/content/episodes/ep15/clips/clip_7.mp4",
+      "downloadedAt": "2026-05-07T19:53:22.233Z",
+      "sourceUrl": "https://v16-kling-fdl.klingai.com/bs2/upload-ylab-stunt-sgp/muse/880729667513225227/VIDEO/20260508/4847d8e102cf82a1f24c9b2e217138b8-85dca64c-fc30-4e0c-8a14-a9dd89a7b76c.mp4?cacheKey=ChtzZWN1cml0eS5rbGluZy5tZXRhX2VuY3J5cHQSsAESwwhpPlSB-F8P3Giq6iCGnercV35dBUNC2PN1ISQCv6VPcrah4SI8oozkP-HHeEQvq_t5HdBcFHJ55V0_1zMRtnxQ6p5PQpvoVxiMBgsqvc7_k9TylPJHHYCe6nDeiHkShmolVGfiu8fEDm61sXhmIyoGt-NnzwpFT70nN292hzH-kWHuO-Usf9UIRIVibiQCDl4YveFAhp1oms0XRCokUxiYsH0cP5OquUreEYXRuhoSk8Q9wF5iLa3FHD-a4yQLv8RpIiBYt9obpbeB_I5Rn9swdXHBFvBT_2K8JYg1sJAAdxDxKCgFMAE&x-kcdn-pid=112781&ksSecret=d048e09cbcc4831b96874f51e3029411&ksTime=6a2479df"
+    },
+    "clip_10": {
+      "localPath": "/Volumes/Samsung500/goreadling-production/saraandeva/content/episodes/ep15/clips/clip_10.mp4",
+      "downloadedAt": "2026-05-07T19:53:30.020Z",
+      "sourceUrl": "https://v16-kling-fdl.klingai.com/bs2/upload-ylab-stunt-sgp/muse/880729667513225227/VIDEO/20260508/9a91f837ef62b2b21dd38d050b8c5ce7-b306d531-8afa-414f-b71b-37c315694185.mp4?cacheKey=ChtzZWN1cml0eS5rbGluZy5tZXRhX2VuY3J5cHQSsAE3IdSgpcMxpAC3dRbQiGYJltazmrjm0KXuYkAFgWQxDAbwaUqNDbaO2IV2Qn2JsGYPo3TN0IC-qgFZuzib_MSWdxpgd3fMQc-GgaRpOaLHeKLNOeGOFpRaoEql1tlSGKlEswVNq_mPhWMrDgpuv4d05rp6dM7gEHUvwNKbhy_2WUFUTD99U8dDGmtltG_XA2aZ6XKgM4oQ9M5_GE8KaisDvaGrgohvvbnnKISuKlqT6xoSK9DDR3Zts0AO39BBzVqoebvyIiC5ai9iLBrY133tNRQfX2ErewMLomk56LWJtv-KqND3pygFMAE&x-kcdn-pid=112781&ksSecret=a40bbefb0ea7cfbea016f9210d76dcbe&ksTime=6a247a2f"
+    },
+    "clip_12": {
+      "localPath": "/Volumes/Samsung500/goreadling-production/saraandeva/content/episodes/ep15/clips/clip_12.mp4",
+      "downloadedAt": "2026-05-07T19:53:33.336Z",
+      "sourceUrl": "https://v16-kling-fdl.klingai.com/bs2/upload-ylab-stunt-sgp/muse/880729667513225227/VIDEO/20260508/f3a627f8dc3b5b95028fbb694b0a8354-89e7a329-29e5-4744-a4f8-709f587d52a1.mp4?cacheKey=ChtzZWN1cml0eS5rbGluZy5tZXRhX2VuY3J5cHQSsAHOSA3uwomKCs0kWp0OhNPMT6WzRfJ8J-jKmRDIfqK0aEn0MbruxmtI_QPhsB6vFg7YgleFfEHubbxVuXjgJBJ8LQsHYZqiKrJzgLauynt52ABeSYCYL0na5RGL3byvCCZaF8X2Fr5L2S4DxNUBX1mb0aQDVCO9aCnLeF8v2dk0OXbE6nhIWRm8QPEFAWbvd6pyJ13BBely2lSXlsAlDF58h_dbT3-3aDiMsMYEKYFNexoS09j_LL38Qv8Yv5Zh0thEYW8BIiA5L6iYPBt0MtToEsJSpQggGNJgL1C5DFWWyHh4ZNH5iCgFMAE&x-kcdn-pid=112781&ksSecret=2719be3a861e5e4ef055c01add741bf2&ksTime=6a2479c9"
+    },
+    "clip_13": {
+      "localPath": "/Volumes/Samsung500/goreadling-production/saraandeva/content/episodes/ep15/clips/clip_13.mp4",
+      "downloadedAt": "2026-05-07T19:53:38.709Z",
+      "sourceUrl": "https://v16-kling-fdl.klingai.com/bs2/upload-ylab-stunt-sgp/muse/880729667513225227/VIDEO/20260508/a9c3b381686b35b9eae845d620e590db-7992d999-261d-4bdc-b651-7f9aaff7a81e.mp4?cacheKey=ChtzZWN1cml0eS5rbGluZy5tZXRhX2VuY3J5cHQSsAGtPg-yy176NWxAsYaeK8S_b1lyIIIbdPfy13uxqjJbZFP07-voIbh9QA0BPep9bDK9GO2MjYikUQN3mGGk6mxQjtK668MYTnsHiehAfVZHs-DlsL6SnDwL-7mqGzCAxtIshqWf5WzzZPzL24VQ8G7gZh1tNXJQgH-i6mXwFuQcJkzHoSSarqrftdGhzRxZpSxYUHLgz1XZWvMc18fghTlZsyIk7pZuOs0aaLJaDppwBxoS09j_LL38Qv8Yv5Zh0thEYW8BIiBwlcMREUJ5sO9pO57a3NmPCiKg-UlqKxIOBe6G1vXkZygFMAE&x-kcdn-pid=112781&ksSecret=d440f3978573493227559584948e4cba&ksTime=6a24795e"
+    },
+    "clip_14": {
+      "localPath": "/Volumes/Samsung500/goreadling-production/saraandeva/content/episodes/ep15/clips/clip_14.mp4",
+      "downloadedAt": "2026-05-07T19:56:06.935Z",
+      "sourceUrl": "https://v16-kling-fdl.klingai.com/bs2/upload-ylab-stunt-sgp/muse/880729667513225227/VIDEO/20260508/1a3eb6adf7c478d03accfa38391ade82-1f28679c-7b0f-4f79-aaf3-0aa769543d6e.mp4?cacheKey=ChtzZWN1cml0eS5rbGluZy5tZXRhX2VuY3J5cHQSsAGYaeHozq-OIAso5xBqR1LNGlZ8TqflOprHEfl4c7GMu3ixJzWWNZnrYumXelqZdDL8bclr_9KuaWlr58SpJLdBGq2eZ93wLeiHcRXapKhMaxs5KiePqRCI_4eijdmHZaH36Ud5cUc8wXJ9xCTcIjsRDFED6LG1RGEfo0qh9OJjyMvS7sEgB8D-UKe_5tD9LX6wzCRCo11k2Pyke_Np57XP9gdL90BqXRo3v7iSBYaWiBoSxWNjcgh9zqt_zDfpYBGATs3tIiA2Aecb1bj_CAcNwmbaNAToGPggiKKPJCFsKc9s1KlqsygFMAE&x-kcdn-pid=112781&ksSecret=67adb19f07663f66e7aa6eca8a72121f&ksTime=6a247b48"
+    },
     "clip_17": {
       "localPath": "/Volumes/Samsung500/goreadling-production/saraandeva/content/episodes/ep15/clips/clip_17.mp4",
-      "downloadedAt": "2026-05-07T12:28:54.938Z",
-      "sourceUrl": "https://v16-kling-fdl.klingai.com/bs2/upload-ylab-stunt-sgp/muse/880729667513225227/VIDEO/20260507/d2018715ee80b49b8b185f901b53b97a-ec53a5ad-3582-47ee-a219-e208f3db7bf7.mp4?cacheKey=ChtzZWN1cml0eS5rbGluZy5tZXRhX2VuY3J5cHQSsAHtrZtnmfb2vjxmPUl15kHxaKZyvxaZtSd4R0pKTOeGDPt4KM0chbHQBaPYMrQvUVzc4LKzWYKYym18BS2kqoNX1pDYEPA-xIofJm0hgn3eYx8BykH8YqLWkN4mKuO6pguULN9RlEEnKQDXixvrUhn6AT3G3RRMk-o5QRLlOieQheDG61KtprsQ-pK81NckJ4ZSCboETBU7VwKVdee2zHKK5uooAo0A08kCoEHqt2gm4hoSYF8ADrg3uvuiuzhTSVrQUvw0IiCmI3xDRToXH8Y6_ikW5zwxhpzFwu9RjJe1pEsZa_eg9igFMAE&x-kcdn-pid=112781&ksSecret=4c03ed3b07b774d6a4f6c7f05700ef15&ksTime=6a24126f"
+      "downloadedAt": "2026-05-07T20:00:19.880Z",
+      "sourceUrl": "https://v16-kling-fdl.klingai.com/bs2/upload-ylab-stunt-sgp/muse/880729667513225227/VIDEO/20260508/3da2925076dbd659743d5f0890036de1-9bd0d451-0e16-4ef8-a5e8-f057a96d1d96.mp4?cacheKey=ChtzZWN1cml0eS5rbGluZy5tZXRhX2VuY3J5cHQSsAFgf5b65S51JKmAihgYNHGrHsEFucaenli8XSiLpyxWCr4HTo1RfCq0a6BgEu3zBShOMiWfIhhUzBfxie7LUzsl5F2Aen42VYcv8pCXEIDyfNFiVG_td1rlX5jzWH860Wj-PxrgygNryRoJ_ZABXDbjG1ll4VOBN25vDLe73tP6rCWAMlHRAOvODStN3aUKaT-dkUs_jVU4IO37VM3n4Tmbv-6wrIrfe2Hu7-LB3z-tdhoS49Uq9aOrf5yDPqUQkY5LD-iDIiB-91F7JVdEpBBAovc3Jb-FOcmw0zL3Rtt5v2NktVn76igFMAE&x-kcdn-pid=112781&ksSecret=adac17221b4593c6c6a7c034e1a9e3f0&ksTime=6a247c4e"
     }
   },
   "lastFrames": {}
