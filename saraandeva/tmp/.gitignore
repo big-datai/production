@@ -1,0 +1,5 @@
+# Ignore everything in tmp/ except this gitignore + the README + .gitkeep
+*
+!.gitignore
+!.gitkeep
+!README.md

@@ -19,8 +19,9 @@ Where to put things:
 | Lesson / runbook / rule | `saraandeva/docs/lessons/*.md` (mirrors agent memory) |
 | Element registry, manifest | `saraandeva/content/*.json` |
 | One-off "I just need to test this" | **STILL** goes to `scripts/` — name it `_test_<thing>.mjs` (underscore prefix marks it experimental, but it survives) |
-| Rendered binary outputs (mp4, audit json) | `/tmp/` is fine — these are ephemeral by nature |
-| Frame extracts during audit | `/tmp/` is fine |
+| Rendered binary outputs (mp4, audit json) | `saraandeva/tmp/` (project-local scratch, git-ignored, survives sessions) |
+| Frame extracts during audit | `saraandeva/tmp/` |
+| ANY use of OS `/tmp/` | ❌ banned — `/tmp/` evaporates between sessions |
 
 # What this means for the next "quick test"
 
