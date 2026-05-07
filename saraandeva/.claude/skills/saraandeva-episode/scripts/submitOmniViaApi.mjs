@@ -21,7 +21,9 @@
  * Required: --anchor, --elements (comma-separated names from registry), --prompt-file, --out
  * Optional: --negative-file, --duration (default 10), --mode (std|pro|4k, default std),
  *           --aspect-ratio (16:9|9:16|1:1, default 16:9), --external-id (default <basename>-1),
- *           --model (default kling-v3-omni), --timeout-min (default 15)
+ *           --model (default kling-v3-omni), --timeout-min (default 15),
+ *           --sound on (default off; +~33% cost — 6u→8u for 10s std. Required for clips
+ *                       with native dialogue lines in the prompt.)
  *
  * Reads:
  *   /Volumes/Samsung500/goreadling-production/.env.local  → KLING_ACCESS_KEY, KLING_SECRET_KEY
@@ -50,6 +52,7 @@ const argFlag = (n) => { const i = argv.indexOf(`--${n}`); return i >= 0 ? argv[
 const anchorUrl = argFlag("anchor");
 const elementsCsv = argFlag("elements");
 const promptFile = argFlag("prompt-file");
+const multiPromptFile = argFlag("multi-prompt-file");
 const negativeFile = argFlag("negative-file");
 const duration = String(argFlag("duration") || "10");
 const mode = argFlag("mode") || "std";
@@ -58,9 +61,17 @@ const model = argFlag("model") || "kling-v3-omni";
 const externalId = argFlag("external-id");
 const outPath = argFlag("out");
 const timeoutMin = Number(argFlag("timeout-min") || 15);
-if (!anchorUrl || !elementsCsv || !promptFile || !outPath) {
-  console.error(`Usage: submitOmniViaApi.mjs --anchor URL --elements name1,name2,... --prompt-file path --out path
-Optional: --negative-file path --duration 10 --mode std --aspect-ratio 16:9 --external-id name-1 --model kling-v3-omni --timeout-min 15`);
+const sound = argFlag("sound");  // "on" enables Kling native TTS for prompt dialogue
+if (!anchorUrl || !elementsCsv || (!promptFile && !multiPromptFile) || !outPath) {
+  console.error(`Usage: submitOmniViaApi.mjs --anchor URL --elements name1,name2,... (--prompt-file path | --multi-prompt-file path) --out path
+Optional: --negative-file path --duration 10 --mode std --aspect-ratio 16:9 --external-id name-1 --model kling-v3-omni --timeout-min 15
+
+--multi-prompt-file expects a JSON file: {"summary": "short top-level prompt", "shots": [{"prompt":"<<<element_1>>>...", "duration":3}, ...]}
+  (each shot.prompt ≤ 512 chars; sum(durations) must equal --duration)`);
+  process.exit(1);
+}
+if (promptFile && multiPromptFile) {
+  console.error("!! cannot use --prompt-file and --multi-prompt-file together");
   process.exit(1);
 }
 
@@ -81,7 +92,30 @@ const elementIds = elementNames.map(n => {
 });
 
 // ─── load prompt + negative ─────────────────────────────────────────────────
-const prompt = fs.readFileSync(promptFile, "utf8").trim();
+let prompt = "", multiPrompt = null;
+if (promptFile) {
+  prompt = fs.readFileSync(promptFile, "utf8").trim();
+} else {
+  const mp = JSON.parse(fs.readFileSync(multiPromptFile, "utf8"));
+  if (!mp.summary || !Array.isArray(mp.shots) || mp.shots.length < 1) {
+    console.error(`!! multi-prompt file must be {"summary": str, "shots": [{prompt, duration}, ...]}`);
+    process.exit(1);
+  }
+  for (const [i, s] of mp.shots.entries()) {
+    if (!s.prompt || typeof s.duration !== "number") {
+      console.error(`!! shot ${i + 1}: missing prompt or numeric duration`); process.exit(1);
+    }
+    if (s.prompt.length > 512) {
+      console.error(`!! shot ${i + 1}: prompt is ${s.prompt.length} chars (max 512)`); process.exit(1);
+    }
+  }
+  const totalDur = mp.shots.reduce((a, s) => a + s.duration, 0);
+  if (totalDur !== Number(duration)) {
+    console.error(`!! sum of shot durations (${totalDur}s) != --duration (${duration}s)`); process.exit(1);
+  }
+  prompt = mp.summary;
+  multiPrompt = mp.shots.map(s => ({ prompt: s.prompt, duration: s.duration }));
+}
 const negativePrompt = negativeFile ? fs.readFileSync(negativeFile, "utf8").trim() : "";
 
 // ─── JWT (HS256) ────────────────────────────────────────────────────────────
@@ -116,13 +150,24 @@ const payload = {
   mode,
   aspect_ratio: aspectRatio,
   external_task_id: externalId || `${path.basename(outPath, ".mp4")}-1`,
+  ...(sound ? { sound } : {}),  // "on" → AAC dialogue track + ~33% cost surcharge
 };
+if (multiPrompt) payload.multi_prompt = multiPrompt;
+
+// Hard 2500-char prompt limit per Kling docs
+if (prompt.length > 2500) {
+  console.error(`!! prompt is ${prompt.length} chars, exceeds 2500 limit. Trim cast identity locks.`);
+  process.exit(1);
+}
 
 console.log(`▶ POST /v1/videos/omni-video`);
 console.log(`  model=${model} mode=${mode} duration=${duration}s aspect=${aspectRatio}`);
 console.log(`  elements: ${elementNames.map((n, i) => `${n}=${elementIds[i]}`).join(", ")}`);
 console.log(`  anchor: ${anchorUrl}`);
 console.log(`  ext_id: ${payload.external_task_id}`);
+if (multiPrompt) {
+  console.log(`  multi_prompt: ${multiPrompt.length} shots (${multiPrompt.map(s => s.duration + "s").join(" + ")})`);
+}
 
 const submit = await http("POST", "/v1/videos/omni-video", payload);
 if (submit.body.code !== 0) {

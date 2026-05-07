@@ -1,0 +1,49 @@
+{
+  "episode": 15,
+  "beat": 1,
+  "clip": 1,
+  "title": "Costume reveal \u2014 living room before trick-or-treat",
+  "mode": "omni",
+  "durationSec": 10,
+  "quality": "720p",
+  "nativeAudio": true,
+  "expectedCredits": 90,
+  "subjects": [
+    "Sara",
+    "Eva",
+    "Mama",
+    "Joe",
+    "Ginger"
+  ],
+  "scene": "front_house_fall",
+  "boundElements": [
+    {
+      "tag": "Sara",
+      "source": "library"
+    },
+    {
+      "tag": "Eva",
+      "source": "library"
+    },
+    {
+      "tag": "Mama",
+      "source": "library"
+    },
+    {
+      "tag": "Joe",
+      "source": "library"
+    },
+    {
+      "tag": "Ginger",
+      "source": "library"
+    },
+    {
+      "tag": "front_house_fall",
+      "source": "library"
+    }
+  ],
+  "prompt": "Cast (Halloween costume night):\n- @Sara: 7yo, FAIRY-PRINCESS COSTUME \u2014 silver tiara, pink-white ombre tutu w/ crystal bodice, glittery wings, fairy wand + jack-o-lantern bucket. Wavy dark-blonde hair, fair skin, brown eyes.\n- @Eva: 3yo, PUMPKIN-ONESIE COSTUME \u2014 round orange pumpkin body w/ jack-o-lantern face on tummy, green leaf-stem hat. Curly bright-blonde hair, fair skin, brown eyes \u2014 NOT olive, NOT brunette.\n- @Mama: adult, COZY-CHAPERONE \u2014 burnt-orange knit beanie + cable-knit sweater, mustard pants, brown boots, kid-flashlight in hand. Blonde hair, fair skin.\n- @Joe: fluffy cream-and-gold POMERANIAN dog in red-and-black LADYBUG body costume.\n- @Ginger: JACK RUSSELL dog, white w/ tan ginger patches, tiny PUMPKIN-ORANGE CAPE.\n\nCamera: slow dolly push, eye-level, opening medium-wide on the family fanned across the living-room rug. Establishing shot \u2014 first frame of the episode.\n\nScene: @front_house_fall living-room interior \u2014 paper jack-o-lanterns on side table, candy bowl on coffee table, warm orange floor-lamp glow.\n\n0:0-0:2 \u2014 Slow dolly push, medium-wide eye-level. @Sara center-left, @Eva center-right, @Mama softly behind-center between the girls, @Joe sitting right-foreground at Eva's feet, @Ginger standing left-foreground at Sara's feet. Tails wagging. @Mama: \"Are my pumpkins ready to trick-or-treat?\"\n\n0:2-0:4 \u2014 Hold. Rack focus pulls from the candy bowl in foreground onto @Sara's grin. @Sara lifts candy bucket a touch higher in a small in-place gesture. @Ginger does a tiny in-place zoomie-shimmy, all four paws on the rug.\n\n0:4-0:6 \u2014 Slow push in to a softer medium on @Sara and @Eva. @Mama's smile widens. @Joe's tail wags. @Mama: \"Let's go!\"\n\n0:6-0:8 \u2014 Slow pan right from @Sara across to @Eva at hip height, catching @Joe's bug-back wings glimmering in lamp light. @Eva does a tiny in-place wiggle of joy. @Sara: \"YES! Trick or TREAT!\" @Eva, looking down at @Joe: \"Trick treat trick treat!\"\n\n0:8-1:0 \u2014 Slow pull back to opening medium-wide. Family settles into the portrait beat. Tails still wagging.\n\nLighting: warm pumpkin-orange floor-lamp glow, soft cinematic golden-hour interior.\nStyle: Pixar 3D feature-render, cinematic kid-show, NOT scary.",
+  "negativePrompt": "duplicate character, twin, clone, two of the same, mirrored figure, second father, two Papa, identical adults, second mother, two Mama, papa visible, papa in this clip, third child, second sister, second sara, second eva, two eva, duplicate eva, three girls, fourth child, fifth child, additional children, extra child in background, ghost figure, ghost kid, ghost children, shadow children, shadow of person, mirrored children, mirror reflection, family members in the background, strangers, crowd, group of people, other faces, background people, friends, neighbors, extra neighbors, three arms, third arm, extra arm, extra hand, floating hand, anatomy error, scary face, frightening expression, horror lighting, scary monster, real monster, monstrous teeth, fangs, claws, papa angry, papa thundering shout, papa apoplectic, papa rage face, intense yelling, blood, red liquid, red splatter, red stain, gore, injury, scary, violent, distressing, motion lines, action lines, dust trails, speed lines, motion blur, papa with hair, papa not bald, eva with brown hair, eva with red hair, eva brunette, sara in ponytail, sara with straight hair, morphing, flickering, disfigured, distorted, extra face, unstable motion, papa standing still, papa motionless, papa idle, papa observing without acting, papa waiting passively, third dog, second pomeranian, two joe, two ginger, duplicate dog, ginger as fox, ginger as deer, joe airborne, ginger airborne, joe leaping, ginger leaping, sara airborne, eva airborne, real spider web, real cobweb, scary mask on face, carving knife visible, dutch angle, handheld shake, whip pan, jump cut",
+  "cameraStyle": "slow dolly push from medium-wide, settles to portrait composition with a single rack focus and a slow pan right",
+  "closingFrame": "Family fanned across the rug \u2014 @Sara center-left in fairy-princess tutu holding candy bucket at chest height, @Eva center-right in pumpkin onesie with bucket at hip height, @Mama softly behind-center smiling, @Joe sitting right-foreground in bug costume, @Ginger standing left-foreground in pumpkin cape with tail mid-wag, warm orange lamp glow."
+}
