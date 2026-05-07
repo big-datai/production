@@ -106,13 +106,41 @@ if (dryRun) {
   process.exit(0);
 }
 
-// ─── Strip lyric file metadata (keep only the body after `---`) ─────────────
-function bodyLyrics(filePath) {
+// ─── Lyric file format: two sections, LYRICS first then GENRE ──────────────
+//   # LYRICS
+//   <unlimited body — pasted into Suno lyrics box>
+//   # GENRE
+//   <≤ 1000 chars — pasted into Suno style/genre box; hard-fails over cap>
+//
+// Backwards-compat: files without those headings fall back to "everything
+// after `\n---\n` is lyrics, no genre".
+const GENRE_CAP = 1000;
+
+function parseLyricFile(filePath) {
   const text = fs.readFileSync(filePath, "utf8");
+  // Split on top-level H1 headings (`^# NAME` at start of line). Robust to
+  // either heading order — section name is case-insensitive.
+  const sections = {};
+  const padded = "\n" + text;
+  for (const part of padded.split(/\n#\s+/).slice(1)) {
+    const nl = part.indexOf("\n");
+    if (nl < 0) continue;
+    const name = part.slice(0, nl).trim().toUpperCase().split(/\s+/)[0];
+    sections[name] = part.slice(nl + 1).trim();
+  }
+  const lyrics = sections.LYRICS ?? null;
+  const genre  = sections.GENRE  ?? null;
+  if (lyrics !== null) {
+    if (genre !== null && genre.length > GENRE_CAP) {
+      throw new Error(`GENRE section is ${genre.length} chars, exceeds ${GENRE_CAP}-char Suno cap (file: ${path.basename(filePath)})`);
+    }
+    return { lyrics, genre };
+  }
+  // Fallback: legacy format (everything after `---`)
   const idx = text.indexOf("\n---\n");
   let body = idx >= 0 ? text.slice(idx + 5) : text;
   body = body.replace(/^\s*#.*$/gm, "").replace(/^\s*\*\*[^*]+\*\*.*$/gm, "");
-  return body.replace(/^\s*\n+/, "").trim();
+  return { lyrics: body.replace(/^\s*\n+/, "").trim(), genre: null };
 }
 
 // ─── Connect to Chrome ──────────────────────────────────────────────────────
@@ -134,9 +162,9 @@ for (let i = 0; i < todo.length; i++) {
   console.log(`▶  [${i + 1}/${todo.length}]  ${path.basename(t.md)}`);
   console.log(`═══════════════════════════════════════════════════════════════`);
   try {
-    const lyrics = bodyLyrics(t.md);
+    const { lyrics, genre } = parseLyricFile(t.md);
     if (!lyrics) throw new Error("lyrics body is empty after metadata strip");
-    console.log(`   📝 ${lyrics.length} chars of lyrics`);
+    console.log(`   📝 ${lyrics.length} chars of lyrics${genre ? ` + ${genre.length} chars of genre` : " (no genre section)"}`);
 
     // 1. Open Create page
     if (!page.url().includes("suno.com/create")) {
@@ -166,14 +194,24 @@ for (let i = 0; i < todo.length; i++) {
       console.log(`   ⚠ voice "${voiceName}" not picked (button hidden or missing) — continuing`);
     }
 
-    // 5. Fill lyrics textbox — Custom mode preferred ("Write some lyrics"),
-    //    Simple mode fallback ("...song about...")
-    let lyricsBox = page.getByRole("textbox", { name: /write some lyrics/i });
+    // 5. Switch to Custom mode if Suno is showing the Simple "song about..." box.
+    //    The Custom mode toggle is the "Add your own lyrics" button.
+    try {
+      const addLyricsBtn = page.getByRole("button", { name: /add your own lyrics/i });
+      if ((await addLyricsBtn.count()) > 0) {
+        await addLyricsBtn.first().click({ timeout: 2000 });
+        await page.waitForTimeout(400);
+      }
+    } catch {}
+
+    // 5a. Fill lyrics textarea — canonical selector is the testid (per Suno codegen).
+    //     Fallback to Simple mode "song about..." textbox if testid is missing.
+    let lyricsBox = page.getByTestId("lyrics-textarea");
     if ((await lyricsBox.count()) === 0) {
       lyricsBox = page.getByRole("textbox", { name: /song about/i });
     }
     if ((await lyricsBox.count()) === 0) {
-      throw new Error("could not locate Suno lyrics textbox (tried Custom + Simple mode placeholders)");
+      throw new Error("could not locate Suno lyrics textarea (tried [data-testid=lyrics-textarea] + Simple-mode 'song about' placeholder)");
     }
     await lyricsBox.first().click();
     await lyricsBox.first().press("ControlOrMeta+a");
@@ -181,9 +219,49 @@ for (let i = 0; i < todo.length; i++) {
     await lyricsBox.first().fill(lyrics);
     console.log(`   ✓ lyrics pasted (${(await lyricsBox.first().inputValue()).length} chars in box)`);
 
+    // 5b. Fill style/genre textbox (Custom-mode "Style of music" — placeholder
+    //     contains "shimmering synths, afrobeats" per Suno codegen).
+    if (genre) {
+      const styleBoxCandidates = [
+        page.getByRole("textbox", { name: /shimmering synths/i }),
+        page.getByRole("textbox", { name: /afrobeats/i }),
+        page.getByRole("textbox", { name: /style of music/i }),
+        page.getByRole("textbox", { name: /^style/i }),
+      ];
+      let styleBox = null;
+      for (const c of styleBoxCandidates) {
+        if ((await c.count()) > 0) { styleBox = c.first(); break; }
+      }
+      if (styleBox) {
+        await styleBox.click();
+        await styleBox.press("ControlOrMeta+a");
+        await styleBox.press("Delete");
+        await styleBox.fill(genre);
+        console.log(`   ✓ genre pasted (${(await styleBox.inputValue()).length} chars in box)`);
+      } else {
+        console.log(`   ⚠ style/genre textbox not located — genre skipped`);
+      }
+    }
+
     // 6. Click Create song
     await page.getByRole("button", { name: "Create song" }).click();
     console.log(`   ▶ Create clicked — waiting for render (up to 5 min)`);
+
+    // 6b. hCaptcha skip — Suno occasionally throws an hCaptcha challenge
+    //     after Create. The "Skip Challenge" button auto-completes for known
+    //     accounts. Best-effort: try a few times in the first 10s.
+    for (let attempt = 0; attempt < 6; attempt++) {
+      try {
+        const captchaFrame = page.frameLocator('iframe[title="hCaptcha challenge"]');
+        const skipBtn = captchaFrame.getByRole("button", { name: /skip challenge/i });
+        if ((await skipBtn.count()) > 0) {
+          await skipBtn.first().click({ timeout: 2000 });
+          console.log(`   ✓ hCaptcha skipped`);
+          break;
+        }
+      } catch {}
+      await page.waitForTimeout(1500);
+    }
 
     // 7. Poll for NEW Play buttons (labels not in `before`), ordered by visual
     //    Y (topmost first — Suno puts newest at the top of the workspace).
@@ -209,19 +287,48 @@ for (let i = 0; i < todo.length; i++) {
     if (!topNew) throw new Error("timed out waiting for Suno render");
     console.log(`   ✓ ready: ${JSON.stringify(topNew)}`);
 
-    // 8. Find the song's row, open its More options menu, hover Download → click MP3 Audio.
-    //    (The Download item is a submenu trigger — must hover first, can't click.)
-    const playBtn = page.getByRole("button", { name: topNew.label, exact: true }).first();
-    await playBtn.scrollIntoViewIfNeeded();
-    await playBtn.hover();
-    await page.waitForTimeout(400);
-    const row = playBtn.locator(`xpath=ancestor::*[descendant::button[@aria-label="More options"]][1]`);
-    await row.first().getByRole("button", { name: "More options" }).first().click();
-    await page.waitForTimeout(1200);
-    await page.getByText("Download", { exact: true }).first().hover();
+    // 8. Find the song's row + open its More-options menu.
+    //    Suno song title (extracted from Play-button aria-label "Play <title>")
+    //    is also the accessible name of a `role=group` wrapper around the row.
+    const songTitle = topNew.label.replace(/^Play\s+/, "").trim();
+    let menuOpened = false;
+    try {
+      // Preferred: click More-options on the named song group (per codegen #2)
+      const songGroup = page.getByRole("group", { name: songTitle }).first();
+      await songGroup.scrollIntoViewIfNeeded();
+      await songGroup.hover();
+      await page.waitForTimeout(300);
+      await songGroup.getByLabel("More options").first().click({ timeout: 4000 });
+      menuOpened = true;
+    } catch {
+      // Fallback: walk up from the Play button (legacy)
+      const playBtn = page.getByRole("button", { name: topNew.label, exact: true }).first();
+      await playBtn.scrollIntoViewIfNeeded();
+      await playBtn.hover();
+      await page.waitForTimeout(400);
+      const row = playBtn.locator(`xpath=ancestor::*[descendant::button[@aria-label="More options"]][1]`);
+      await row.first().getByRole("button", { name: "More options" }).first().click();
+      menuOpened = true;
+    }
     await page.waitForTimeout(800);
+
+    // 9. Click MP3 Audio. Suno's UI sometimes nests this under a "Download"
+    //    submenu (hover-trigger), sometimes exposes it directly. Try direct
+    //    click first (codegen #2 pattern), fall back to hover-Download.
     const dlPromise = page.waitForEvent("download", { timeout: 30_000 });
-    await page.getByText("MP3 Audio", { exact: true }).first().click();
+    let mp3Clicked = false;
+    try {
+      const mp3Btn = page.getByRole("button", { name: "MP3 Audio" }).first();
+      if ((await mp3Btn.count()) > 0) {
+        await mp3Btn.click({ timeout: 3000 });
+        mp3Clicked = true;
+      }
+    } catch {}
+    if (!mp3Clicked) {
+      try { await page.getByText("Download", { exact: true }).first().hover(); } catch {}
+      await page.waitForTimeout(600);
+      await page.getByText("MP3 Audio", { exact: true }).first().click();
+    }
     const download = await dlPromise;
     await download.saveAs(t.mp3);
     console.log(`   ✓ saved → ${path.relative(PROJECT_ROOT, t.mp3)}`);

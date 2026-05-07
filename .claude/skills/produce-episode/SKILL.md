@@ -6,6 +6,8 @@ argument-hint: "<paragraph describing the episode>"
 
 # produce-episode — end-to-end orchestrator for Sara & Eva
 
+**Source of truth for all rules + lessons:** `saraandeva/docs/lessons/` (committed). The agent's working memory mirrors this folder; on disagreement the committed copy wins.
+
 You are running the full production pipeline for a Sara & Eva episode. Input: a one-paragraph story idea from the user. Output: a YouTube UNLISTED video URL the user can flip to PUBLIC.
 
 **Two skills + two scripts + two user breakpoints** chained in sequence:
@@ -212,6 +214,40 @@ Total cost expected: ~2000-2500 cr base; realistic ceiling 2700 cr if 1-2 clips 
 - **2 sequential uploads ok, 3+ Kling UI stalls.** When auto-uploading Nano Banana stills via `source: "upload"`, Kling's "Add from Element Library" button times out after ~2 sequential calls. Fall back: ask user to drag-drop the still manually + change spec to `source: "library"`.
 
 **Output:** All clips queued at Kling. Receipt printed to stdout with task IDs. ANY clip that didn't queue is logged — re-submit only those, not the whole episode.
+
+### PHASE D-alt — Submit via API (instead of UI Playwright)
+
+For per-clip touch-ups, fixes, or full-API workflows. The API account is segregated from the UI account (per `lesson_kling_api_account_segregation.md`) — pick ONE path per episode. UI uses prepaid Kling credits; API uses pay-as-you-go units (~$0.10-0.14/unit, ~$0.60 per 10s std clip).
+
+**Element creation (one-time per character/scene):**
+
+```bash
+node .claude/skills/saraandeva-episode/scripts/createElementViaApi.mjs \
+  --name <Name> --description "<= 100 chars" \
+  --frontal <https GCS bucket URL> \
+  --refer  <https URL>  --refer <https URL>   # 1-3 refers required (NOT 0)
+```
+
+Element image URLs must be public (use `gs://saraandeva-kling-elements` GCS bucket — `gcloud storage cp --cache-control="public, max-age=31536000" <local> gs://saraandeva-kling-elements/<path>`). The script appends the resulting `element_id` to `content/elements_registry.json`.
+
+**Clip submission (per Omni clip):**
+
+```bash
+node .claude/skills/saraandeva-episode/scripts/submitOmniViaApi.mjs \
+  --anchor <GCS group-still URL> \
+  --elements Papa,Sara,Eva \
+  --prompt-file content/episodes/ep<NN>/prompts/clipNN.txt \
+  --negative-file content/episodes/ep<NN>/prompts/clipNN.neg.txt \
+  --duration 10 --mode std --aspect-ratio 16:9 \
+  --external-id ep<NN>-clipNN-1 \
+  --out season_01/episode_<NN>/clips/<NN>.mp4
+```
+
+The script does POST → poll → download in one pass. Element names are looked up in `content/elements_registry.json`. Cost: 6 units = $0.60 per 10s std clip, ~$1.20 pro, ~$3 for 4k.
+
+**Critical**: per `lesson_kling_papa_active_prompt_template.md`, the prompt must use `<<<element_1>>>` / `<<<element_2>>>` / `<<<element_3>>>` references (matching the order in `--elements`), with body-part verbs in CAPS for active characters and explicit Papa-passive bans in the negative prompt.
+
+After download: ALWAYS run `auditClipsWithGemini.mjs` on the new clip to verify no critical defects (per `lesson_claude_visual_audit_before_ready.md`).
 
 ---
 
