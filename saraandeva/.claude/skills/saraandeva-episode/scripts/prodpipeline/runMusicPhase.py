@@ -20,6 +20,8 @@ from pathlib import Path
 
 PROJECT_ROOT = Path("/Volumes/Samsung500/goreadling-production/saraandeva")
 SCRIPTS = PROJECT_ROOT / ".claude" / "skills" / "saraandeva-episode" / "scripts"
+# loopVideoWithSong.py lives in prodpipeline/ alongside this script
+LOOP_SCRIPT = PROJECT_ROOT / ".claude" / "skills" / "saraandeva-episode" / "scripts" / "prodpipeline" / "loopVideoWithSong.py"
 
 
 def find_mp3(ep_dir: Path, song_lyric_path: str):
@@ -74,7 +76,7 @@ def main():
         if out.is_file() and out.stat().st_size > 100_000:
             print(f"✓ {out.name} already exists, skipping")
             continue
-        cmd = ["node", str(SCRIPTS / "loopVideoWithSong.mjs"),
+        cmd = ["python3", str(LOOP_SCRIPT),
                str(src), str(mp3), str(out), f"--duration={args.duration}"]
         print(f"\n→ {' '.join(cmd[:3])} {letter}.mp4 → {out.name}")
         rc = subprocess.call(cmd)

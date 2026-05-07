@@ -60,7 +60,7 @@ import argparse, json, os, subprocess, sys, time, datetime
 from pathlib import Path
 
 PROJECT_ROOT = Path("/Volumes/Samsung500/goreadling-production/saraandeva")
-SCRIPTS = PROJECT_ROOT / ".claude" / "skills" / "saraandeva-episode" / "scripts"
+SCRIPTS = PROJECT_ROOT / ".claude" / "skills" / "saraandeva-episode" / "scripts" / "prodpipeline"
 
 # ─── retry policy ──────────────────────────────────────────────────────────
 RETRY_BACKOFF = [5, 15, 45]  # seconds between retries (3 retries total)

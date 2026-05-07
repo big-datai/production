@@ -197,8 +197,8 @@ def kling_create_element(name: str, description: str, frontal_url: str, dry_run:
     if dry_run:
         print(f"   [dry-run] would create element name={name} frontal={frontal_url[:60]}")
         return None
-    cmd = ["node",
-           str(PROJECT_ROOT / ".claude" / "skills" / "saraandeva-episode" / "scripts" / "createElementViaApi.mjs"),
+    cmd = ["python3",
+           str(PROJECT_ROOT / ".claude" / "skills" / "saraandeva-episode" / "scripts" / "prodpipeline" / "createElementViaApi.py"),
            "--name", name,
            "--description", description[:100],
            "--frontal", frontal_url,
