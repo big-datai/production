@@ -528,6 +528,95 @@ CHARACTERS = {
             "he knows he's adorable."
         ),
     },
+    # ─── ep15 — Lisa (Sara's classmate) + Mrs. Patel (recurring neighbor) ─
+    "lisa": {
+        "name": "Lisa",
+        "role": (
+            "Sara's first-grade classmate (~6 years old) — recurring "
+            "school-friend character introduced in ep15 (Halloween House "
+            "Hunt). Sara-age peer, warm, outgoing, lights up when she sees "
+            "Sara on the sidewalk. Designed as the school-friend counterpart "
+            "to Isabel (neighborhood-friend) for future episodes (school "
+            "playground, library, classroom-themed eps)."
+        ),
+        "look": (
+            "Friendly first-grader girl, ~6 years old, average kid-height. "
+            "VISUAL DIFFERENTIATION FROM SARA, EVA, AND ISABEL: noticeably "
+            "STRAIGHT BRIGHT-COPPER-RED HAIR (carrot-orange / copper red, "
+            "saturated and warm) in two soft low pigtails tied with simple "
+            "elastics — distinctly different from Sara's straight blonde "
+            "ponytail, Eva's curly blonde, and Isabel's curly brunette. "
+            "PALE PORCELAIN SKIN with a clear sprinkling of copper-toned "
+            "FRECKLES across the bridge of the nose and the apples of the "
+            "cheeks. Big bright EMERALD-GREEN EYES, long dark lashes. Soft "
+            "round cheeks, small button nose, wide warm friendly smile with "
+            "two faintly visible front teeth (kid-tooth charm). Lively "
+            "expressive face — she's the talkative-friendly type."
+        ),
+        "wardrobe": (
+            "A soft pastel-yellow CREW-NECK T-SHIRT with a small embroidered "
+            "DAISY graphic on the chest (no real-brand text). Soft denim "
+            "OVERALLS with rolled cuffs over the t-shirt — classic kid-"
+            "overall look with a small front pocket. White CANVAS LACE-UP "
+            "SNEAKERS with white socks. NO accessories on her head in the "
+            "canonical avatar (no headband, no hat — pigtails are her "
+            "signature). The fairy costume is ep15-specific and applied via "
+            "scene prompts, NOT in this canonical avatar."
+        ),
+        "pose": (
+            "Stands cheerfully facing the camera with both feet flat on "
+            "the ground in her sneakers, weight on her right foot, arms "
+            "relaxed at her sides with hands visible. Wide warm friendly "
+            "smile, head tilted slightly to the side in a curious-friendly "
+            "pose. Looks like a kid who'd run up and say hi on the "
+            "playground."
+        ),
+    },
+    "mrs_patel": {
+        "name": "Mrs. Patel",
+        "role": (
+            "Recurring neighbor — kind elderly Indian-American grandmother "
+            "who lives at the spookiest-decorated house on the block but is "
+            "in fact one of the warmest, most generous neighbors. Introduced "
+            "ep15 (the Special Candy House scene) where she becomes the "
+            "heroine who keeps the lost dog Ginger company until the family "
+            "finds her. Designed as a recurring kindly-elder character for "
+            "future episodes (community events, holiday visits, helping "
+            "with school projects)."
+        ),
+        "look": (
+            "Friendly grandmother in her late 60s, South Asian / Indian-"
+            "American heritage. VISUAL DIFFERENTIATION FROM GRANDMA: Mrs. "
+            "Patel has SILVER-GREY HAIR pulled back into a soft low bun "
+            "(not Grandma's dark wavy chin-length); WARM MEDIUM-BROWN "
+            "SOUTH-ASIAN SKIN (deeper than Grandma's olive-warm); SOFT-FRAME "
+            "READING GLASSES on a small beaded chain that hangs around her "
+            "neck (Grandma has none); NO red lipstick (Grandma's signature). "
+            "Warm dark-brown eyes with gentle laugh-lines at the corners. "
+            "Soft rounded cheeks, kind faintly-smiling mouth, gentle natural "
+            "aging — real late-60s character, not smoothed young, not "
+            "heavily wrinkled. Approachable, warm, the kind of grandmother "
+            "neighbor who hands out the best treats and remembers every "
+            "kid's name on the block. Fuller, rounder, huggable build."
+        ),
+        "wardrobe": (
+            "A cozy CREAM-IVORY KNITTED CARDIGAN with simple round buttons, "
+            "worn open over a soft DUSTY-MAUVE / DUSTY-PINK kurta-style top "
+            "with a subtle small embroidered floral pattern at the neckline "
+            "(no real-brand text). Comfortable SLATE-GREY LOOSE TROUSERS. "
+            "Soft brown SLIP-ON HOUSE SHOES. The reading glasses on the "
+            "beaded chain rest on her chest. No other jewelry — keep it "
+            "simple and warm."
+        ),
+        "pose": (
+            "Stands warmly facing the camera, both feet flat on the ground "
+            "in her slip-on shoes, weight evenly distributed, both arms "
+            "relaxed at her sides with hands visible. Soft warm grandmother "
+            "smile, head held straight, kind welcoming expression — the "
+            "expression of someone about to say 'come in, come in, you "
+            "look hungry.' Calm, present, deeply approachable."
+        ),
+    },
 }
 
 # ───────────────────────── Env / API Keys ──────────────────────────

@@ -201,15 +201,27 @@ def call_gemini(prompt: str, char_refs: list[Path], scene_ref_path: Path | None,
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("output_id", help="Output filename stem — saved as group_<output_id>[_vN].png in assets/scenes/")
-    ap.add_argument("--chars", required=True, help="Comma-separated character names (e.g. mama,papa,sara,eva)")
+    ap.add_argument("--chars", required=True, help="Comma-separated character names (e.g. mama,papa,sara,eva). Used for prompt labelling.")
     ap.add_argument("--pose", required=True, help="Composition / pose description")
     ap.add_argument("--scene", help="Scene ID for background reference (e.g. magic_forest_sandy)")
     ap.add_argument("--n", type=int, default=1, help="Number of candidate images to generate (default 1)")
     ap.add_argument("--force", action="store_true")
+    ap.add_argument("--char-refs", default="", help="Optional comma-separated explicit ref paths (relative to repo root or absolute). Overrides default <name>_front.png lookup. Useful when you want to use costume-specific previews as refs to lock identity+costume in one image.")
     args = ap.parse_args()
 
     chars = [c.strip().lower() for c in args.chars.split(",") if c.strip()]
-    char_paths = [char_ref(c) for c in chars]
+    if args.char_refs:
+        from pathlib import Path as _P
+        explicit = [r.strip() for r in args.char_refs.split(",") if r.strip()]
+        char_paths = []
+        for r in explicit:
+            p = _P(r) if _P(r).is_absolute() else (ROOT / r)
+            if not p.exists():
+                raise SystemExit(f"❌ --char-refs path not found: {p}")
+            char_paths.append(p)
+        print(f"   (using {len(char_paths)} explicit refs from --char-refs)")
+    else:
+        char_paths = [char_ref(c) for c in chars]
     scene_path = scene_ref(args.scene) if args.scene else None
 
     keys = get_api_keys()

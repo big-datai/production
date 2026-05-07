@@ -1343,6 +1343,174 @@ SCENES = {
             "friendly atmosphere. NO PEOPLE. NO PETS."
         ),
     },
+    # ─── ep15 — Halloween House Hunt: 5 competition-decorated houses ─
+    # Each house is decked out for the neighborhood Halloween-decoration
+    # competition. Visually distinct theme + escalating scale of decoration.
+    # Used as scene refs across ep15 clips 4-18.
+    "ep15_house1_witch_cauldron": {
+        "label": "ep15 House 1 — Witch's Cauldron Cottage (Halloween-competition decorated)",
+        "refs": [],
+        "description": (
+            "A suburban single-family house heavily decorated for a "
+            "neighborhood Halloween decoration competition — WITCH-THEMED. "
+            "Centerpiece on the front lawn: a giant friendly cardboard-"
+            "and-foam witch's CAULDRON about three feet tall, with a soft "
+            "battery-powered fog machine inside making gentle wisps of soft "
+            "violet smoke spilling over the rim. Around the cauldron: a "
+            "ring of small cute cardboard 'bubbling-potion' bottles in "
+            "purple and green. The PORCH is wrapped in soft purple-and-"
+            "green LED string lights, with a row of cheerful smiling little "
+            "jack-o-lanterns lining each step. A TALL friendly cartoon "
+            "WITCH cutout (about five feet tall, smiling kindly, pointed "
+            "purple hat with a star, holding a wooden spoon, NOT scary) "
+            "stands beside the front door. A 'WITCHY WELCOME' wooden "
+            "yard sign sits near the path. TREES on either side draped "
+            "with strings of small purple twinkle-lights and friendly "
+            "soft cobweb fabric — visibly cobweb but cute, NOT creepy. "
+            "Front lawn covered in autumn leaves. The whole house has a "
+            "warm welcoming purple-magic vibe: spooky-cute, never scary. "
+            "Dusk lighting: warm porch glow + soft purple LED ambience. "
+            "Wide establishing shot from the front sidewalk looking up "
+            "the path to the porch. Empty of people. Pixar 3D feature-"
+            "render quality. CRITICAL: NO grotesque imagery, NO blood, "
+            "NO real-horror elements, NO scary motion-sensor figures, "
+            "NO clown faces. EVERYTHING reads as kid-friendly comedy."
+        ),
+    },
+    "ep15_house2_pirate_ship": {
+        "label": "ep15 House 2 — Pirate Ship Porch (Halloween-competition decorated)",
+        "refs": [],
+        "description": (
+            "A suburban single-family house heavily decorated for the "
+            "neighborhood Halloween decoration competition — PIRATE-SHIP-"
+            "THEMED. The entire FRONT PORCH has been transformed into a "
+            "wooden PIRATE SHIP DECK: brown-painted plywood deck-rail, a "
+            "stack of three barrels labeled 'RUM' and 'GOLD' (cartoon-"
+            "cute, no real labels), a giant brown wooden SHIP'S WHEEL "
+            "mounted to a pillar beside the front door, a fishnet drape "
+            "across the porch posts, a tall plastic skull-and-crossbones "
+            "FLAG (cartoon-friendly skull with a wide goofy smile, NOT "
+            "scary) flying from a pole on the roof. On the lawn: a "
+            "wooden treasure CHEST overflowing with foil-wrapped gold-"
+            "coin chocolates (cartoon coins, oversized), a giant cardboard "
+            "PIRATE PARROT cutout perched on a wooden stand (bright "
+            "tropical colors). String lights shaped like little gold "
+            "doubloons wrap the porch railing. A 'YE BE WELCOME, MATEYS' "
+            "wooden plank sign on the porch. Trees on either side of the "
+            "house draped with rope rigging-style cord and cute paper "
+            "lanterns. Front lawn covered in autumn leaves. Warm friendly "
+            "swashbuckling-comedy vibe — NEVER scary. Dusk lighting with "
+            "amber porch glow. Wide establishing shot from the front "
+            "sidewalk looking up the path. Empty of people. Pixar 3D "
+            "feature-render quality. CRITICAL: NO real weapons, NO blood, "
+            "NO menacing pirates, NO red liquid. Everything kid-friendly."
+        ),
+    },
+    "ep15_house3_skeleton_lawn": {
+        "label": "ep15 House 3 — Friendly Skeleton Lawn (Halloween-competition decorated)",
+        "refs": [],
+        "description": (
+            "A suburban single-family house heavily decorated for the "
+            "neighborhood Halloween decoration competition — SKELETON-"
+            "THEMED, but distinctly FRIENDLY-not-scary. The front lawn "
+            "is populated with about EIGHT life-size cartoon-style "
+            "WHITE-PLASTIC LAWN SKELETONS (smooth simple skull shapes, "
+            "wide friendly cartoon smiles with no fangs, NOT realistic, "
+            "NOT scary) arranged in playful poses: one waving 'hi' with "
+            "an arm raised, one sitting in a folding lawn chair reading "
+            "a newspaper, one pretending to mow a small toy lawnmower, "
+            "two doing a goofy yoga pose on a tiny mat, one leaning on "
+            "a rake. Soft purple-and-orange LED string lights stretch "
+            "from tree to tree above the skeletons. The PORCH features "
+            "a row of warmly glowing battery-candle jack-o-lanterns "
+            "(smiling pumpkin faces) on each step, a friendly skeleton-"
+            "themed wreath on the front door, and a 'BONE-A-FIDE BEST "
+            "DECORATED' wooden sign. Trees draped with soft cobweb-"
+            "fabric (cute and translucent, NOT creepy). Front lawn "
+            "covered in autumn leaves. Warm dusk light glowing through "
+            "the trees. Whole composition reads as 'cartoon-skeleton "
+            "playground' — silly and welcoming, NEVER frightening. Wide "
+            "establishing shot from the front sidewalk. Empty of people. "
+            "Pixar 3D feature-render quality. CRITICAL: NO realistic "
+            "skeletons, NO horror imagery, NO fangs, NO motion-sensor "
+            "scream props, NO red, NO blood, NO clown faces."
+        ),
+    },
+    "ep15_house4_isabel_cottage": {
+        "label": "ep15 House 4 — Isabel's Sweet Fairy Cottage (Halloween-competition decorated)",
+        "refs": [],
+        "description": (
+            "A small charming suburban single-family COTTAGE-style house "
+            "heavily decorated for the neighborhood Halloween decoration "
+            "competition — SWEET-FAIRY-COTTAGE THEMED, the friendliest "
+            "and most welcoming of all the decorated houses on the block. "
+            "Soft warm-white FAIRY LIGHTS wrap every tree, every porch "
+            "rail, every window frame — the whole cottage glows like a "
+            "storybook illustration. On the front porch: a row of "
+            "tiny pumpkins of all sizes (small, medium, mini) arranged "
+            "in a charming staircase up each step, each with a sweet "
+            "smiling jack-o-lantern face. Mini hay bales beside the "
+            "front door with bouquets of warm autumn flowers in "
+            "terracotta pots. A 'TRICK OR TREATS WELCOME' calligraphy "
+            "wooden sign hangs on the door. The front lawn features a "
+            "few cute friendly figures: a small cartoon scarecrow with "
+            "a kind smiling face holding a 'HAPPY HALLOWEEN' sign, a "
+            "couple of tiny ceramic cottage-style pumpkins along the "
+            "stone path, and an arrangement of mini hay bales with a "
+            "sleeping cartoon-cat plush on top. The cottage itself has "
+            "a stone-and-shingle facade with rounded shutters. Soft warm "
+            "lighting glowing from the windows. Front lawn covered in "
+            "autumn leaves. Whole vibe is COZY and INVITING — the kind "
+            "of house every kid wants to visit. Dusk lighting with "
+            "amber lanterns. Wide establishing shot from the front "
+            "sidewalk looking up the stone path. Empty of people. "
+            "Pixar 3D feature-render quality. CRITICAL: NOT scary, NO "
+            "spooky elements, NO horror, NO red. Pure warm fairy-tale "
+            "charm."
+        ),
+    },
+    "ep15_house5_candy_house": {
+        "label": "ep15 House 5 — The Special Candy House (Halloween-competition decorated, the SPOOKIEST-but-WARMEST)",
+        "refs": [],
+        "description": (
+            "A suburban single-family house heavily decorated for the "
+            "neighborhood Halloween decoration competition — the GRAND-"
+            "PRIZE-WINNING showstopper, the SPOOKIEST AND MOST "
+            "SPECTACULAR of all 5 houses on the block. CENTERPIECE on "
+            "the front porch: a HEAD-SIZED GIANT SPIRAL LOLLIPOP — round "
+            "and pinwheel-spiral red-and-white, as big as a child's head, "
+            "mounted on a tall striped candy-cane pole, lit from inside "
+            "with a soft warm glow. Beside it: a tower of stacked giant "
+            "pumpkins (real-looking but oversized — about three pumpkins "
+            "tall) that runs up the side of the porch. Other porch "
+            "details: candy-corn-shaped string LIGHTS wrapped along the "
+            "porch railing in soft yellow-orange-white, a hanging "
+            "translucent COBWEB-FABRIC TUNNEL over the path leading to "
+            "the front door (cute and translucent, lit with tiny pinpoint "
+            "lights — NOT scary), an OVERSIZED inflatable round smiling "
+            "JACK-O-LANTERN with candy-corn teeth (about four feet tall, "
+            "friendly cartoon smile with NO fangs) glowing softly to one "
+            "side of the porch, an inflatable BLACK CAT (about three "
+            "feet tall, with a friendly cartoon smile, glowing yellow "
+            "eyes — NOT scary) bobbing in the breeze on the other side. "
+            "The PORCH overhead has a small soft-PURPLE PORCH LIGHT "
+            "casting magical glow. A 'YOU FOUND THE SPECIAL CANDY HOUSE' "
+            "wooden sign on the door. Around the porch: scattered candy-"
+            "wrapper confetti on the wooden boards, a few autumn leaves. "
+            "Front yard wrapped in soft purple LED string-lights from "
+            "tree to tree. Trees draped with translucent cobweb fabric "
+            "(cute, NOT creepy). The vibe is SPOOKY-SPECTACULAR-but-"
+            "FRIENDLY: maximalist Halloween magic, every detail kid-"
+            "appropriate. Dusk-into-evening lighting, deep purple porch "
+            "glow + warm golden battery-candle light from the inflatable "
+            "jack-o-lantern. Wide establishing shot from the front "
+            "sidewalk looking up the path. Empty of people. Pixar 3D "
+            "feature-render quality. CRITICAL: NO real horror, NO blood, "
+            "NO red liquid, NO fangs, NO clown faces, NO motion-sensor "
+            "screams, NO realistic skeletons. Spectacular but always "
+            "kid-friendly."
+        ),
+    },
 }
 
 
