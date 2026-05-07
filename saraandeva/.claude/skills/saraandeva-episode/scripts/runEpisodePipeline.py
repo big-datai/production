@@ -235,7 +235,7 @@ def find_song_mp3(ep_dir, song_lyric_path):
 def build_phase_list(ep, skip_eyeball, autorun):
     e = f"{ep:02d}"
     ep_dir = PROJECT_ROOT / "content" / "episodes" / f"ep{e}"
-    pipeline = SCRIPTS / "kling_ep15_pipeline.mjs"
+    pipeline = SCRIPTS / "kling_pipeline.py"   # Python port — was kling_ep15_pipeline.mjs
     meta = load_episode_meta(ep_dir)
     yt_meta = meta.get("youtubeMetadata", {})
     title = yt_meta.get("fallbackTitleNoEmoji") or yt_meta.get("primaryTitle") or f"Sara and Eva — Episode {ep}"
@@ -248,29 +248,40 @@ def build_phase_list(ep, skip_eyeball, autorun):
         Phase(1, "0.5 budget",
               ["python3", str(SCRIPTS / "trackEpisodeBudget.py"), "--episode", str(ep)],
               verify_budget, optional=True, retry=False),  # warn-only by default
-        Phase(2, "1. scenes",
+        # Fix E — phase 0.6: sync registry with Kling library (catches duplicates,
+        # fills missing entries). Idempotent. Per ep15 retrospective lesson.
+        Phase(2, "0.6 sync-registry",
+              ["python3", str(SCRIPTS / "syncElementsRegistry.py")],
+              optional=True, retry=False),
+        # Fix E — phase 0.7: auto-discover assets/scenes/ PNGs, idempotent upload
+        # + element register. The single answer to "agent forgot which PNGs exist".
+        Phase(3, "0.7 discover-assets",
+              ["python3", str(SCRIPTS / "discoverAndRegisterAssets.py"),
+               "--episode", str(ep), "--skip-create"],
+              optional=True, retry=False),
+        Phase(4, "1. scenes",
               ["python3", str(PROJECT_ROOT / "content" / "generateScenes.py")],
               verify_scenes, optional=True),
-        Phase(3, "3. upload",
-              ["node", str(pipeline), "upload"],
+        Phase(5, "3. upload",
+              ["python3", str(pipeline), "--episode", str(ep), "upload"],
               verify_upload),
-        Phase(4, "4. elements",
-              ["node", str(pipeline), "elements"],
+        Phase(6, "4. elements",
+              ["python3", str(pipeline), "--episode", str(ep), "elements"],
               verify_elements),
-        Phase(5, "5. submit",
-              ["node", str(pipeline), "submit"],
+        Phase(7, "5. submit",
+              ["python3", str(pipeline), "--episode", str(ep), "submit"],
               verify_submit),
-        Phase(6, "6. download",
-              ["node", str(pipeline), "download"],
+        Phase(8, "6. download",
+              ["python3", str(pipeline), "--episode", str(ep), "download"],
               verify_download),
-        Phase(7, "7. normalize",
-              ["node", str(SCRIPTS / "normalizeClipFilenames.mjs"), str(ep_dir / "clips")],
+        Phase(9, "7. normalize",
+              ["python3", str(SCRIPTS / "normalizeClipFilenames.py"), str(ep_dir / "clips")],
               verify_normalize, optional=True),
-        Phase(8, "8. audit",
-              ["node", str(SCRIPTS / "auditClipsWithGemini.mjs"),
+        Phase(10, "8. audit",
+              ["python3", str(SCRIPTS / "auditClipsWithGemini.py"),
                str(ep_dir / "clips"), "--out", str(ep_dir / "audit_v1.json")],
               verify_audit),
-        Phase(9, "8.5 autofix",
+        Phase(11, "8.5 autofix",
               ["python3", str(SCRIPTS / "autoFixDefects.py"),
                "--audit", str(ep_dir / "audit_v1.json"),
                "--episode", str(ep), "--emit-fixed-specs"],
@@ -278,43 +289,43 @@ def build_phase_list(ep, skip_eyeball, autorun):
     ]
 
     # ─── Music block phase (delegated to runMusicPhase.py for runtime checks) ─
-    phases.append(Phase(10, "9. music",
+    phases.append(Phase(12, "9. music",
         ["python3", str(SCRIPTS / "runMusicPhase.py"), "--episode", str(ep)],
         verify_music, optional=True))
 
     # ─── Assemble / thumbnail / short / validate ─────────────────────────
-    phases.append(Phase(11, "10. assemble",
-        ["node", str(SCRIPTS / "assembleEpisode.mjs"), str(final_mp4),
+    phases.append(Phase(13, "10. assemble",
+        ["python3", str(SCRIPTS / "assembleEpisode.py"), str(final_mp4),
          "--clips-dir", str(ep_dir / "clips")],
         verify_assemble))
-    phases.append(Phase(12, "11. thumbnail",
-        ["node", str(SCRIPTS / "generateThumbnail.mjs"),
+    phases.append(Phase(14, "11. thumbnail",
+        ["python3", str(SCRIPTS / "generateThumbnail.py"),
          f"--episode={ep}", "--title", title],
         verify_thumbnail, optional=True))
-    phases.append(Phase(13, "12. short",
-        ["node", str(SCRIPTS / "generateShort.mjs"),
+    phases.append(Phase(15, "12. short",
+        ["python3", str(SCRIPTS / "generateShort.py"),
          f"--episode={ep}", "--title", title],
         verify_short, optional=True))
-    phases.append(Phase(14, "13. validate",
-        ["node", str(SCRIPTS / "validateEpisode.mjs"), f"--episode={ep}"],
+    phases.append(Phase(16, "13. validate",
+        ["python3", str(SCRIPTS / "validateEpisode.py"), f"--episode={ep}"],
         verify_validate))
 
     # ─── Eyeball gate (manual) ───────────────────────────────────────────
     if not skip_eyeball:
-        phases.append(Phase(15, "14. eyeball-gate",
+        phases.append(Phase(17, "14. eyeball-gate",
             ["echo", "STOP — open", str(final_mp4),
-             "in QuickTime, scrub, then re-run with --start-from 16"],
+             "in QuickTime, scrub, then re-run with --start-from 18"],
             gate=True, retry=False))
 
     # ─── Upload to YouTube (UNLISTED) — only if assembled mp4 exists ─────
     desc_file = ep_dir / "description.txt"
     tags_file = ep_dir / "tags.txt"
-    upload_cmd = ["node", str(SCRIPTS / "uploadEpisodeToSaraAndEva.mjs"),
+    upload_cmd = ["python3", str(SCRIPTS / "uploadEpisodeToSaraAndEva.py"),
                   str(final_mp4), "--title", title,
                   "--privacy", "unlisted"]
     if desc_file.is_file(): upload_cmd += ["--description-file", str(desc_file)]
     if tags_file.is_file(): upload_cmd += ["--tags-file", str(tags_file)]
-    phases.append(Phase(16, "15. upload-yt", upload_cmd, optional=True))
+    phases.append(Phase(18, "15. upload-yt", upload_cmd, optional=True))
 
     return phases
 
