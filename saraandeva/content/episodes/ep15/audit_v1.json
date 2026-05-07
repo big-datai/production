@@ -1,0 +1,437 @@
+{
+  "clipsDir": "/Volumes/Samsung500/goreadling-production/saraandeva/content/episodes/ep15/clips",
+  "generatedAt": "2026-05-07T12:31:19.533Z",
+  "clipCount": 22,
+  "flagged": {
+    "fox": [],
+    "critical": [],
+    "minor": [
+      "1.mp4",
+      "5.mp4",
+      "7.mp4",
+      "8.mp4",
+      "9.mp4",
+      "11.mp4",
+      "12.mp4",
+      "13.mp4",
+      "14.mp4",
+      "15.mp4",
+      "17.mp4",
+      "18.mp4",
+      "20.mp4"
+    ],
+    "errors": []
+  },
+  "results": {
+    "3.mp4": {
+      "description": "Two girls in Halloween costumes, a fairy and a pumpkin, stand on a porch with their dog, Joe, surrounded by pumpkins and autumn leaves. They are trick-or-treating and looking for someone named Ginger.",
+      "animals": "Joe (Pomeranian dog)",
+      "humansCount": 2,
+      "humans": "Sara (older girl, brown hair, fairy costume, crown, wings, wand), Eva (younger girl, curly blonde hair, pumpkin costume)",
+      "actions": [
+        "- Sara: speaks, waves wand, smiles",
+        "- Eva: looks, pets dog",
+        "- Joe (dog): wags tail"
+      ],
+      "defects": [],
+      "overall": "CLEAN",
+      "raw": "DESCRIPTION: Two girls in Halloween costumes, a fairy and a pumpkin, stand on a porch with their dog, Joe, surrounded by pumpkins and autumn leaves. They are trick-or-treating and looking for someone named Ginger.\n\nVISIBLE_ANIMALS: Joe (Pomeranian dog)\n\nVISIBLE_HUMANS_COUNT: 2\nVISIBLE_HUMANS: Sara (older girl, brown hair, fairy costume, crown, wings, wand), Eva (younger girl, curly blonde hair, pumpkin costume)\n\nACTIONS:\n- Sara: speaks, waves wand, smiles\n- Eva: looks, pets dog\n- Joe (dog): wags tail\n\nDEFECTS: NONE\n\nOVERALL: CLEAN",
+      "file": "3.mp4",
+      "durationMs": 13183
+    },
+    "4.mp4": {
+      "description": "Two young girls in Halloween costumes, accompanied by a dog, trick-or-treat at a house where a woman dressed as a witch is giving out candy. The girls also ask the woman if she has seen their lost dog, Ginger.",
+      "animals": "dog (Pomeranian-like, in ladybug costume)",
+      "humansCount": 3,
+      "humans": "Sara (older girl, fairy costume, brown hair with crown), Eva (younger girl, pumpkin costume, curly blonde hair), Mama (adult woman, witch costume, purple hat)",
+      "actions": [
+        "- Sara: stands, holds pumpkin bucket, holds wand, talks, looks at Mama",
+        "- Eva: stands, holds pumpkin bucket, talks, looks at Mama, receives candy",
+        "- Mama: stands, talks, smiles, puts candy in Eva's bucket",
+        "- dog: stands, slightly shifts weight, looks at Mama"
+      ],
+      "defects": [],
+      "overall": "CLEAN",
+      "raw": "DESCRIPTION: Two young girls in Halloween costumes, accompanied by a dog, trick-or-treat at a house where a woman dressed as a witch is giving out candy. The girls also ask the woman if she has seen their lost dog, Ginger.\n\nVISIBLE_ANIMALS: dog (Pomeranian-like, in ladybug costume)\n\nVISIBLE_HUMANS_COUNT: 3\nVISIBLE_HUMANS: Sara (older girl, fairy costume, brown hair with crown), Eva (younger girl, pumpkin costume, curly blonde hair), Mama (adult woman, witch costume, purple hat)\n\nACTIONS:\n- Sara: stands, holds pumpkin bucket, holds wand, talks, looks at Mama\n- Eva: stands, holds pumpkin bucket, talks, looks at Mama, receives candy\n- Mama: stands, talks, smiles, puts candy in Eva's bucket\n- dog: stands, slightly shifts weight, looks at Mama\n\nDEFECTS: NONE\n\nOVERALL: CLEAN",
+      "file": "4.mp4",
+      "durationMs": 14869
+    },
+    "2.mp4": {
+      "description": "Two girls in Halloween costumes, Sara as a fairy and Eva as a pumpkin, stand on a porch with their two dogs, Ginger and Joe, and an animated ghost decoration. Ginger, a Jack Russell Terrier, barks and then runs off the porch, prompting Eva to call out to him and Joe.",
+      "animals": "Jack Russell Terrier, Pomeranian",
+      "humansCount": 2,
+      "humans": "Sara (older girl, ponytail with bow, fairy costume), Eva (younger girl, curly blonde with rainbow bow, pumpkin costume)",
+      "actions": [
+        "- Sara: stands, looks, holds wand and pumpkin bucket",
+        "- Eva: stands, speaks, looks, holds pumpkin bucket",
+        "- Ginger: stands, barks, runs, looks",
+        "- Joe: stands, looks, barks",
+        "- Ghost prop: floats, turns head"
+      ],
+      "defects": [],
+      "overall": "CLEAN",
+      "raw": "DESCRIPTION: Two girls in Halloween costumes, Sara as a fairy and Eva as a pumpkin, stand on a porch with their two dogs, Ginger and Joe, and an animated ghost decoration. Ginger, a Jack Russell Terrier, barks and then runs off the porch, prompting Eva to call out to him and Joe.\n\nVISIBLE_ANIMALS: Jack Russell Terrier, Pomeranian\n\nVISIBLE_HUMANS_COUNT: 2\nVISIBLE_HUMANS: Sara (older girl, ponytail with bow, fairy costume), Eva (younger girl, curly blonde with rainbow bow, pumpkin costume)\n\nACTIONS:\n- Sara: stands, looks, holds wand and pumpkin bucket\n- Eva: stands, speaks, looks, holds pumpkin bucket\n- Ginger: stands, barks, runs, looks\n- Joe: stands, looks, barks\n- Ghost prop: floats, turns head\n\nDEFECTS: NONE\n\nOVERALL: CLEAN",
+      "file": "2.mp4",
+      "durationMs": 17252
+    },
+    "1.mp4": {
+      "description": "The clip features Mama, Sara, and Eva dressed in Halloween costumes, sitting in a cozy living room with their two dogs. They are gathered around a coffee table with a bowl of colorful candy, preparing to go trick-or-treating.",
+      "animals": "Pomeranian, Jack Russell Terrier",
+      "humansCount": 3,
+      "humans": "Mama (adult woman, orange beanie, brown sweater), Sara (older girl, pink princess dress, fairy wings, crown), Eva (younger girl, pumpkin costume, curly blonde hair)",
+      "actions": [
+        "- Mama: sits, smiles, speaks",
+        "- Sara: sits, smiles, holds wand, holds pumpkin bucket",
+        "- Eva: sits, smiles, looks down, looks up, speaks",
+        "- Pomeranian: sits, looks at candy, looks forward",
+        "- Jack Russell Terrier: sits, looks forward"
+      ],
+      "defects": [
+        "- character_passive: Pomeranian, Jack Russell Terrier (mostly sitting and looking, minimal movement)",
+        "- other: The candy in the bowl resembles colorful faceted gems or rocks rather than typical Halloween candy."
+      ],
+      "overall": "MINOR_ISSUES",
+      "raw": "DESCRIPTION: The clip features Mama, Sara, and Eva dressed in Halloween costumes, sitting in a cozy living room with their two dogs. They are gathered around a coffee table with a bowl of colorful candy, preparing to go trick-or-treating.\n\nVISIBLE_ANIMALS: Pomeranian, Jack Russell Terrier\n\nVISIBLE_HUMANS_COUNT: 3\nVISIBLE_HUMANS: Mama (adult woman, orange beanie, brown sweater), Sara (older girl, pink princess dress, fairy wings, crown), Eva (younger girl, pumpkin costume, curly blonde hair)\n\nACTIONS:\n- Mama: sits, smiles, speaks\n- Sara: sits, smiles, holds wand, holds pumpkin bucket\n- Eva: sits, smiles, looks down, looks up, speaks\n- Pomeranian: sits, looks at candy, looks forward\n- Jack Russell Terrier: sits, looks forward\n\nDEFECTS:\n- character_passive: Pomeranian, Jack Russell Terrier (mostly sitting and looking, minimal movement)\n- other: The candy in the bowl resembles colorful faceted gems or rocks rather than typical Halloween candy.\n\nOVERALL: MINOR_ISSUES",
+      "file": "1.mp4",
+      "durationMs": 23359
+    },
+    "5.mp4": {
+      "description": "Sara, dressed as a fairy princess, holds a card with three pink stars while standing next to Eva, who is dressed as a pumpkin. Sara hands the card to Eva, and they discuss the number of stars on it.",
+      "animals": "Pomeranian (dog) in a ladybug costume",
+      "humansCount": 2,
+      "humans": "Sara (older girl, fairy princess costume, crown, wings), Eva (younger girl, pumpkin costume, curly blonde hair)",
+      "actions": [
+        "- Sara: holds card, speaks, hands card to Eva, smiles",
+        "- Eva: holds pumpkin candy bucket, smiles, receives card, speaks",
+        "- Pomeranian: stands, looks"
+      ],
+      "defects": [
+        "- other: The audio states \"four stars\" and \"five\" while the visual card consistently shows only three stars."
+      ],
+      "overall": "MINOR_ISSUES",
+      "raw": "DESCRIPTION: Sara, dressed as a fairy princess, holds a card with three pink stars while standing next to Eva, who is dressed as a pumpkin. Sara hands the card to Eva, and they discuss the number of stars on it.\nVISIBLE_ANIMALS: Pomeranian (dog) in a ladybug costume\nVISIBLE_HUMANS_COUNT: 2\nVISIBLE_HUMANS: Sara (older girl, fairy princess costume, crown, wings), Eva (younger girl, pumpkin costume, curly blonde hair)\n\nACTIONS:\n- Sara: holds card, speaks, hands card to Eva, smiles\n- Eva: holds pumpkin candy bucket, smiles, receives card, speaks\n- Pomeranian: stands, looks\n\nDEFECTS:\n- other: The audio states \"four stars\" and \"five\" while the visual card consistently shows only three stars.\n\nOVERALL: MINOR_ISSUES",
+      "file": "5.mp4",
+      "durationMs": 10339
+    },
+    "6.mp4": {
+      "description": "Two girls in Halloween costumes, a fairy and a pumpkin, trick-or-treat at a pirate-themed house. A man dressed as a pirate gives candy to the younger girl while a dog in a ladybug costume watches.",
+      "animals": "dog (Pomeranian)",
+      "humansCount": 3,
+      "humans": "Sara (older girl, long brown hair, pink fairy dress, wings, tiara), Eva (younger girl, curly blonde hair, orange pumpkin costume, pumpkin hat), unknown_adult (adult man, red and white striped bandana, eyepatch, white sleeveless shirt, pirate costume)",
+      "actions": [
+        "- unknown_adult: stands, smiles, holds treasure chest, pours candy into Eva's bucket.",
+        "- Sara: stands, smiles, holds pumpkin bucket.",
+        "- Eva: stands, smiles, holds pumpkin bucket, receives candy.",
+        "- dog: stands, wags tail."
+      ],
+      "defects": [],
+      "overall": "CLEAN",
+      "raw": "DESCRIPTION: Two girls in Halloween costumes, a fairy and a pumpkin, trick-or-treat at a pirate-themed house. A man dressed as a pirate gives candy to the younger girl while a dog in a ladybug costume watches.\n\nVISIBLE_ANIMALS: dog (Pomeranian)\n\nVISIBLE_HUMANS_COUNT: 3\nVISIBLE_HUMANS: Sara (older girl, long brown hair, pink fairy dress, wings, tiara), Eva (younger girl, curly blonde hair, orange pumpkin costume, pumpkin hat), unknown_adult (adult man, red and white striped bandana, eyepatch, white sleeveless shirt, pirate costume)\n\nACTIONS:\n- unknown_adult: stands, smiles, holds treasure chest, pours candy into Eva's bucket.\n- Sara: stands, smiles, holds pumpkin bucket.\n- Eva: stands, smiles, holds pumpkin bucket, receives candy.\n- dog: stands, wags tail.\n\nDEFECTS: NONE\n\nOVERALL: CLEAN",
+      "file": "6.mp4",
+      "durationMs": 12234
+    },
+    "7.mp4": {
+      "description": "Two girls and an adult man in Halloween costumes are on a porch with two dogs. A small fluffy dog in a ladybug costume eats coins from a bowl while the humans interact with it.",
+      "animals": "Pomeranian, Husky",
+      "humansCount": 3,
+      "humans": "Sara (older girl, fairy costume: pink dress, wings, crown, wand, brown hair with ponytail), Eva (younger girl, pumpkin costume: orange pumpkin suit, curly blonde hair), Papa (adult man, bat costume: black bat suit, wings, beard, glasses)",
+      "actions": [
+        "- Sara: stands, laughs, smiles.",
+        "- Eva: stands, looks down, looks at dog, speaks.",
+        "- Papa: stands, smiles, speaks.",
+        "- Pomeranian: eats, looks up, looks around.",
+        "- Husky: stands still."
+      ],
+      "defects": [
+        "- other: The Pomeranian's collar tag says \"Lola\", but Eva calls the dog \"Joe\" and \"Ginger\".",
+        "- other: Eva says \"Not the candy\" but the Pomeranian is eating coins."
+      ],
+      "overall": "MINOR_ISSUES",
+      "raw": "DESCRIPTION: Two girls and an adult man in Halloween costumes are on a porch with two dogs. A small fluffy dog in a ladybug costume eats coins from a bowl while the humans interact with it.\n\nVISIBLE_ANIMALS: Pomeranian, Husky\n\nVISIBLE_HUMANS_COUNT: 3\nVISIBLE_HUMANS: Sara (older girl, fairy costume: pink dress, wings, crown, wand, brown hair with ponytail), Eva (younger girl, pumpkin costume: orange pumpkin suit, curly blonde hair), Papa (adult man, bat costume: black bat suit, wings, beard, glasses)\n\nACTIONS:\n- Sara: stands, laughs, smiles.\n- Eva: stands, looks down, looks at dog, speaks.\n- Papa: stands, smiles, speaks.\n- Pomeranian: eats, looks up, looks around.\n- Husky: stands still.\n\nDEFECTS:\n- other: The Pomeranian's collar tag says \"Lola\", but Eva calls the dog \"Joe\" and \"Ginger\".\n- other: Eva says \"Not the candy\" but the Pomeranian is eating coins.\n\nOVERALL: MINOR_ISSUES",
+      "file": "7.mp4",
+      "durationMs": 17044
+    },
+    "8.mp4": {
+      "description": "Two girls in Halloween costumes and a dog stand outside a decorated house; the older girl holds a card with three stars while the younger girl holds a blue ring.",
+      "animals": "Pomeranian dog",
+      "humansCount": 2,
+      "humans": "Sara (older girl, long brown hair, fairy costume, tiara, wings), Eva (younger girl, curly blonde hair, pumpkin costume)",
+      "actions": [
+        "- Sara: stands, holds up a card, smiles, looks at Eva.",
+        "- Eva: stands, holds a blue ring, smiles, looks at Sara, looks down.",
+        "- Pomeranian dog: sits, looks forward, looks up."
+      ],
+      "defects": [
+        "- other: Audio dialogue states \"five stars\" while the visual prop (card) shows \"three stars\"."
+      ],
+      "overall": "MINOR_ISSUES",
+      "raw": "DESCRIPTION: Two girls in Halloween costumes and a dog stand outside a decorated house; the older girl holds a card with three stars while the younger girl holds a blue ring.\nVISIBLE_ANIMALS: Pomeranian dog\nVISIBLE_HUMANS_COUNT: 2\nVISIBLE_HUMANS: Sara (older girl, long brown hair, fairy costume, tiara, wings), Eva (younger girl, curly blonde hair, pumpkin costume)\nACTIONS:\n- Sara: stands, holds up a card, smiles, looks at Eva.\n- Eva: stands, holds a blue ring, smiles, looks at Sara, looks down.\n- Pomeranian dog: sits, looks forward, looks up.\nDEFECTS:\n- other: Audio dialogue states \"five stars\" while the visual prop (card) shows \"three stars\".\nOVERALL: MINOR_ISSUES",
+      "file": "8.mp4",
+      "durationMs": 13819
+    },
+    "9.mp4": {
+      "description": "An older girl dressed as a fairy comforts a younger girl in a pumpkin costume, who is initially scared by skeleton decorations. Their dog, dressed as a ladybug, also interacts with the younger girl, leading to her smiling in a subsequent daytime scene.",
+      "animals": "Dog (Pomeranian, ladybug costume)",
+      "humansCount": 2,
+      "humans": "Sara (older girl, fairy costume, brown hair with bow), Eva (younger girl, pumpkin costume, curly blonde hair)",
+      "actions": [
+        "- Sara: places hand on Eva's head, smiles",
+        "- Eva: looks concerned, looks at dog, looks forward, smiles at Sara",
+        "- Dog: looks up, licks Eva's hand, wags tail"
+      ],
+      "defects": [
+        "- scene_mismatch: The scene abruptly changes from a nighttime setting with purple lighting and skeletons to a daytime autumn setting with different house architecture, while the characters and dialogue imply continuity."
+      ],
+      "overall": "MINOR_ISSUES",
+      "raw": "DESCRIPTION: An older girl dressed as a fairy comforts a younger girl in a pumpkin costume, who is initially scared by skeleton decorations. Their dog, dressed as a ladybug, also interacts with the younger girl, leading to her smiling in a subsequent daytime scene.\n\nVISIBLE_ANIMALS: Dog (Pomeranian, ladybug costume)\n\nVISIBLE_HUMANS_COUNT: 2\nVISIBLE_HUMANS: Sara (older girl, fairy costume, brown hair with bow), Eva (younger girl, pumpkin costume, curly blonde hair)\n\nACTIONS:\n- Sara: places hand on Eva's head, smiles\n- Eva: looks concerned, looks at dog, looks forward, smiles at Sara\n- Dog: looks up, licks Eva's hand, wags tail\n\nDEFECTS:\n- scene_mismatch: The scene abruptly changes from a nighttime setting with purple lighting and skeletons to a daytime autumn setting with different house architecture, while the characters and dialogue imply continuity.\n\nOVERALL: MINOR_ISSUES",
+      "file": "9.mp4",
+      "durationMs": 14708
+    },
+    "10.mp4": {
+      "description": "A father and his two daughters, dressed in Halloween costumes, stand on a sidewalk with autumn leaves and four purple skeletons. They wave and talk to one of the skeletons, who waves back.",
+      "animals": "NONE",
+      "humansCount": 3,
+      "humans": "Papa (adult man, beard, glasses, blue shirt), Sara (older girl, brown hair, fairy costume, holds star wand and pumpkin basket), Eva (younger girl, curly blonde hair, pumpkin costume, sits on Papa's shoulders)",
+      "actions": [
+        "- Papa: stands, smiles, waves, looks at Eva, looks at Sara, talks",
+        "- Sara: stands, holds wand, holds pumpkin basket, looks at skeleton, talks",
+        "- Eva: sits on Papa's shoulders, smiles, waves, talks",
+        "- Skeleton (right): waves"
+      ],
+      "defects": [],
+      "overall": "CLEAN",
+      "raw": "DESCRIPTION: A father and his two daughters, dressed in Halloween costumes, stand on a sidewalk with autumn leaves and four purple skeletons. They wave and talk to one of the skeletons, who waves back.\n\nVISIBLE_ANIMALS: NONE\n\nVISIBLE_HUMANS_COUNT: 3\nVISIBLE_HUMANS: Papa (adult man, beard, glasses, blue shirt), Sara (older girl, brown hair, fairy costume, holds star wand and pumpkin basket), Eva (younger girl, curly blonde hair, pumpkin costume, sits on Papa's shoulders)\n\nACTIONS:\n- Papa: stands, smiles, waves, looks at Eva, looks at Sara, talks\n- Sara: stands, holds wand, holds pumpkin basket, looks at skeleton, talks\n- Eva: sits on Papa's shoulders, smiles, waves, talks\n- Skeleton (right): waves\n\nDEFECTS: NONE\n\nOVERALL: CLEAN",
+      "file": "10.mp4",
+      "durationMs": 20070
+    },
+    "11.mp4": {
+      "description": "Two young girls in Halloween costumes are trick-or-treating at a house where an adult man is giving out candy. A small dog in a ladybug costume is also present, eating a biscuit.",
+      "animals": "dog (Pomeranian-like)",
+      "humansCount": 3,
+      "humans": "Papa (adult man, no beard, wearing a blue cardigan), Sara (older girl, long brown hair, pink fairy costume with wings and tiara), Eva (younger girl, curly blonde hair, orange pumpkin costume)",
+      "actions": [
+        "- Papa: kneels, holds a bowl, gives candy, smiles, talks.",
+        "- Sara: stands, holds a pumpkin bucket and a sign, smiles, talks.",
+        "- Eva: stands, holds a pumpkin bucket, smiles, talks, gestures with arm.",
+        "- dog: stands, looks down, eats a biscuit."
+      ],
+      "defects": [
+        "- other: A dog biscuit spontaneously appears on the ground in front of the dog without being visibly placed by Papa."
+      ],
+      "overall": "MINOR_ISSUES",
+      "raw": "DESCRIPTION: Two young girls in Halloween costumes are trick-or-treating at a house where an adult man is giving out candy. A small dog in a ladybug costume is also present, eating a biscuit.\n\nVISIBLE_ANIMALS: dog (Pomeranian-like)\n\nVISIBLE_HUMANS_COUNT: 3\nVISIBLE_HUMANS: Papa (adult man, no beard, wearing a blue cardigan), Sara (older girl, long brown hair, pink fairy costume with wings and tiara), Eva (younger girl, curly blonde hair, orange pumpkin costume)\n\nACTIONS:\n- Papa: kneels, holds a bowl, gives candy, smiles, talks.\n- Sara: stands, holds a pumpkin bucket and a sign, smiles, talks.\n- Eva: stands, holds a pumpkin bucket, smiles, talks, gestures with arm.\n- dog: stands, looks down, eats a biscuit.\n\nDEFECTS:\n- other: A dog biscuit spontaneously appears on the ground in front of the dog without being visibly placed by Papa.\n\nOVERALL: MINOR_ISSUES",
+      "file": "11.mp4",
+      "durationMs": 17918
+    },
+    "12.mp4": {
+      "description": "Three children in Halloween costumes are on a porch, then two of them move to the yard. They discuss looking for a dog named Ginjer with an adult woman.",
+      "animals": "NONE",
+      "humansCount": 4,
+      "humans": "Sara (older girl, fairy costume, brown hair, crown, wings), Eva (younger girl, unicorn costume, rainbow hair), unknown_child (younger girl, pumpkin costume, curly blonde hair), Mama (adult woman, orange sweater, holds camera)",
+      "actions": [
+        "- Sara: talks, holds pumpkin bucket, holds wand, smiles, looks",
+        "- Eva: smiles, holds pumpkin bucket, talks, looks down",
+        "- Mama: smiles, holds camera",
+        "- unknown_child: smiles, holds pumpkin bucket, looks, gestures with arm"
+      ],
+      "defects": [
+        "- other: Eva disappears from the scene in the final shot despite being part of the group and the ongoing conversation."
+      ],
+      "overall": "MINOR_ISSUES",
+      "raw": "DESCRIPTION: Three children in Halloween costumes are on a porch, then two of them move to the yard. They discuss looking for a dog named Ginjer with an adult woman.\nVISIBLE_ANIMALS: NONE\nVISIBLE_HUMANS_COUNT: 4\nVISIBLE_HUMANS: Sara (older girl, fairy costume, brown hair, crown, wings), Eva (younger girl, unicorn costume, rainbow hair), unknown_child (younger girl, pumpkin costume, curly blonde hair), Mama (adult woman, orange sweater, holds camera)\n\nACTIONS:\n- Sara: talks, holds pumpkin bucket, holds wand, smiles, looks\n- Eva: smiles, holds pumpkin bucket, talks, looks down\n- Mama: smiles, holds camera\n- unknown_child: smiles, holds pumpkin bucket, looks, gestures with arm\n\nDEFECTS:\n- other: Eva disappears from the scene in the final shot despite being part of the group and the ongoing conversation.\n\nOVERALL: MINOR_ISSUES",
+      "file": "12.mp4",
+      "durationMs": 16101
+    },
+    "13.mp4": {
+      "description": "Five children in Halloween costumes and two Pomeranian dogs are on a grassy lawn with autumn leaves. The children react as one of the dogs, named Joe, spots a cat walking in the background.",
+      "animals": "Pomeranian, Pomeranian, Cat",
+      "humansCount": 5,
+      "humans": "Sara (older girl, brown hair, ponytail, fairy costume), Eva (younger girl, curly blonde hair, pumpkin costume), unknown_child (dark curly hair, unicorn costume), unknown_child (dark hair, dinosaur costume), unknown_child (curly blonde hair, small pumpkin costume)",
+      "actions": [
+        "- Sara: stands, holds pumpkin bucket",
+        "- Eva: stands, holds pumpkin bucket, speaks",
+        "- unknown_child (unicorn): stands, holds pumpkin bucket, speaks, looks down, looks at dog",
+        "- unknown_child (dinosaur): stands, holds pumpkin bucket, points",
+        "- unknown_child (small pumpkin): stands, holds pumpkin bucket",
+        "- Pomeranian (ladybug): stands, looks at cat, looks around",
+        "- Pomeranian (blue collar): stands",
+        "- Cat: walks"
+      ],
+      "defects": [
+        "- other: Character name mismatch: A dog is referred to as \"Joe\" in the dialogue, but \"Joe\" is defined as a human character (Costco employee) in the character list."
+      ],
+      "overall": "MINOR_ISSUES",
+      "raw": "DESCRIPTION: Five children in Halloween costumes and two Pomeranian dogs are on a grassy lawn with autumn leaves. The children react as one of the dogs, named Joe, spots a cat walking in the background.\n\nVISIBLE_ANIMALS: Pomeranian, Pomeranian, Cat\n\nVISIBLE_HUMANS_COUNT: 5\nVISIBLE_HUMANS: Sara (older girl, brown hair, ponytail, fairy costume), Eva (younger girl, curly blonde hair, pumpkin costume), unknown_child (dark curly hair, unicorn costume), unknown_child (dark hair, dinosaur costume), unknown_child (curly blonde hair, small pumpkin costume)\n\nACTIONS:\n- Sara: stands, holds pumpkin bucket\n- Eva: stands, holds pumpkin bucket, speaks\n- unknown_child (unicorn): stands, holds pumpkin bucket, speaks, looks down, looks at dog\n- unknown_child (dinosaur): stands, holds pumpkin bucket, points\n- unknown_child (small pumpkin): stands, holds pumpkin bucket\n- Pomeranian (ladybug): stands, looks at cat, looks around\n- Pomeranian (blue collar): stands\n- Cat: walks\n\nDEFECTS:\n- other: Character name mismatch: A dog is referred to as \"Joe\" in the dialogue, but \"Joe\" is defined as a human character (Costco employee) in the character list.\n\nOVERALL: MINOR_ISSUES",
+      "file": "13.mp4",
+      "durationMs": 20225
+    },
+    "14.mp4": {
+      "description": "Three children in Halloween costumes are on a porch. One child dressed as a fairy holds a sign with six pink stars, while another dressed as a pumpkin holds a candy bucket.",
+      "animals": "NONE",
+      "humansCount": 3,
+      "humans": "Sara (older girl, fairy costume, brown hair, tiara, wings), Eva (younger girl, pumpkin costume, curly blonde hair), unknown_child (unicorn costume, blue hair).",
+      "actions": [
+        "- Sara: holds sign, smiles, looks at Eva.",
+        "- Eva: holds candy bucket, smiles, looks at Sara.",
+        "- unknown_child: stands behind Eva, gestures with hand, smiles."
+      ],
+      "defects": [
+        "- other: The sign displays six stars, but the audio states \"Five stars\"."
+      ],
+      "overall": "MINOR_ISSUES",
+      "raw": "DESCRIPTION: Three children in Halloween costumes are on a porch. One child dressed as a fairy holds a sign with six pink stars, while another dressed as a pumpkin holds a candy bucket.\n\nVISIBLE_ANIMALS: NONE\n\nVISIBLE_HUMANS_COUNT: 3\nVISIBLE_HUMANS: Sara (older girl, fairy costume, brown hair, tiara, wings), Eva (younger girl, pumpkin costume, curly blonde hair), unknown_child (unicorn costume, blue hair).\n\nACTIONS:\n- Sara: holds sign, smiles, looks at Eva.\n- Eva: holds candy bucket, smiles, looks at Sara.\n- unknown_child: stands behind Eva, gestures with hand, smiles.\n\nDEFECTS:\n- other: The sign displays six stars, but the audio states \"Five stars\".\n\nOVERALL: MINOR_ISSUES",
+      "file": "14.mp4",
+      "durationMs": 11732
+    },
+    "15.mp4": {
+      "description": "Three young girls in Halloween costumes are trick-or-treating on a suburban street. Two of the girls, dressed as a fairy princess and a pumpkin, are talking to a third girl dressed as a green fairy.",
+      "animals": "NONE",
+      "humansCount": 3,
+      "humans": "Eva (younger girl, curly blonde with rainbow bow, in pumpkin costume), Sara (older girl, ponytail with bow, in fairy princess costume with crown and wings), unknown_child (reddish-brown hair, green dress, green wings, flower headband, holding candy bucket)",
+      "actions": [
+        "- Eva: stands, looks, smiles",
+        "- Sara: stands, holds wand, holds pumpkin bucket, smiles, looks",
+        "- unknown_child: stands, holds candy bucket, talks, raises hand, smiles"
+      ],
+      "defects": [
+        "- other: mentioned animal (dog) not visible"
+      ],
+      "overall": "MINOR_ISSUES",
+      "raw": "DESCRIPTION: Three young girls in Halloween costumes are trick-or-treating on a suburban street. Two of the girls, dressed as a fairy princess and a pumpkin, are talking to a third girl dressed as a green fairy.\nVISIBLE_ANIMALS: NONE\nVISIBLE_HUMANS_COUNT: 3\nVISIBLE_HUMANS: Eva (younger girl, curly blonde with rainbow bow, in pumpkin costume), Sara (older girl, ponytail with bow, in fairy princess costume with crown and wings), unknown_child (reddish-brown hair, green dress, green wings, flower headband, holding candy bucket)\n\nACTIONS:\n- Eva: stands, looks, smiles\n- Sara: stands, holds wand, holds pumpkin bucket, smiles, looks\n- unknown_child: stands, holds candy bucket, talks, raises hand, smiles\n\nDEFECTS:\n- other: mentioned animal (dog) not visible\n\nOVERALL: MINOR_ISSUES",
+      "file": "15.mp4",
+      "durationMs": 14601
+    },
+    "16.mp4": {
+      "description": "Two girls, one dressed as a fairy and one as a pumpkin, stand on a candy-strewn path in front of a Halloween-decorated house with a small white dog. They hold hands and look at each other while the dog stands patiently beside them.",
+      "animals": "Pomeranian",
+      "humansCount": 2,
+      "humans": "Sara (older girl, long brown hair, tiara, fairy wings), Eva (younger girl, curly blonde hair, pumpkin costume)",
+      "actions": [
+        "- Sara: stands, holds hand, looks at Eva",
+        "- Eva: stands, holds hand, looks at Sara",
+        "- Joe (Pomeranian): stands, looks forward"
+      ],
+      "defects": [],
+      "overall": "CLEAN",
+      "raw": "DESCRIPTION: Two girls, one dressed as a fairy and one as a pumpkin, stand on a candy-strewn path in front of a Halloween-decorated house with a small white dog. They hold hands and look at each other while the dog stands patiently beside them.\n\nVISIBLE_ANIMALS: Pomeranian\n\nVISIBLE_HUMANS_COUNT: 2\nVISIBLE_HUMANS: Sara (older girl, long brown hair, tiara, fairy wings), Eva (younger girl, curly blonde hair, pumpkin costume)\n\nACTIONS:\n- Sara: stands, holds hand, looks at Eva\n- Eva: stands, holds hand, looks at Sara\n- Joe (Pomeranian): stands, looks forward\n\nDEFECTS: NONE\n\nOVERALL: CLEAN",
+      "file": "16.mp4",
+      "durationMs": 15774
+    },
+    "17.mp4": {
+      "description": "A family gathers on a Halloween-decorated porch, where the youngest daughter, Eva, dressed as a pumpkin, joyfully hugs her dog, Ginger, who is in a ladybug costume. An older woman and other family members watch and interact.",
+      "animals": "Pomeranian (ladybug costume), Jack Russell Terrier (pumpkin blanket)",
+      "humansCount": 5,
+      "humans": "Papa (adult man, beard, wolf ears headband), Mama (adult woman, orange beanie, holding flashlight), Sara (older girl, pink fairy dress, tiara), Eva (younger girl, curly blonde hair, pumpkin costume), unknown_adult (older woman, grey hair in bun, glasses, holding blue bowl)",
+      "actions": [
+        "- Papa: kneels, holds plushie, smiles, looks, talks.",
+        "- Mama: stands, holds flashlight, smiles, looks, talks, places hand on chest.",
+        "- Sara: stands, smiles, looks, places hand on Eva's shoulder.",
+        "- Eva: kneels, hugs dog, rubs face against dog, smiles, looks.",
+        "- unknown_adult: stands, holds bowl, smiles, gestures, talks.",
+        "- Pomeranian: stands, wags tail, gets hugged.",
+        "- Jack Russell Terrier: sleeps."
+      ],
+      "defects": [
+        "- character_passive: Jack Russell Terrier (sleeping for the entire clip)"
+      ],
+      "overall": "MINOR_ISSUES",
+      "raw": "DESCRIPTION: A family gathers on a Halloween-decorated porch, where the youngest daughter, Eva, dressed as a pumpkin, joyfully hugs her dog, Ginger, who is in a ladybug costume. An older woman and other family members watch and interact.\n\nVISIBLE_ANIMALS: Pomeranian (ladybug costume), Jack Russell Terrier (pumpkin blanket)\n\nVISIBLE_HUMANS_COUNT: 5\nVISIBLE_HUMANS: Papa (adult man, beard, wolf ears headband), Mama (adult woman, orange beanie, holding flashlight), Sara (older girl, pink fairy dress, tiara), Eva (younger girl, curly blonde hair, pumpkin costume), unknown_adult (older woman, grey hair in bun, glasses, holding blue bowl)\n\nACTIONS:\n- Papa: kneels, holds plushie, smiles, looks, talks.\n- Mama: stands, holds flashlight, smiles, looks, talks, places hand on chest.\n- Sara: stands, smiles, looks, places hand on Eva's shoulder.\n- Eva: kneels, hugs dog, rubs face against dog, smiles, looks.\n- unknown_adult: stands, holds bowl, smiles, gestures, talks.\n- Pomeranian: stands, wags tail, gets hugged.\n- Jack Russell Terrier: sleeps.\n\nDEFECTS:\n- character_passive: Jack Russell Terrier (sleeping for the entire clip)\n\nOVERALL: MINOR_ISSUES",
+      "file": "17.mp4",
+      "durationMs": 18895
+    },
+    "18.mp4": {
+      "description": "Two young girls, Sara and Eva, dressed in Halloween costumes, are sitting on a porch petting a small white dog in a pumpkin costume. The scene briefly cuts to a different small white dog in a ladybug costume sniffing another dog, then returns to the girls and their dog.",
+      "animals": "Small white fluffy dog (Pomeranian-like) in a pumpkin costume, small white fluffy dog (Pomeranian-like) in a ladybug costume, brown and white dog (Jack Russell Terrier-like)",
+      "humansCount": 2,
+      "humans": "Sara (older girl, long brown hair, pink fairy costume, tiara, holding a card with stars), Eva (younger girl, curly blonde hair, pumpkin costume, pumpkin hat)",
+      "actions": [
+        "- Sara: holds card, pets dog, smiles, talks",
+        "- Eva: pets dog, smiles, talks",
+        "- Small white fluffy dog (pumpkin costume): sits, is petted, looks happy",
+        "- Small white fluffy dog (ladybug costume): sniffs",
+        "- Brown and white dog: stands, is sniffed"
+      ],
+      "defects": [
+        "- scene_mismatch: The scene abruptly cuts from the girls petting a dog to a different scene with different dogs, then cuts back to the original scene."
+      ],
+      "overall": "MINOR_ISSUES",
+      "raw": "DESCRIPTION: Two young girls, Sara and Eva, dressed in Halloween costumes, are sitting on a porch petting a small white dog in a pumpkin costume. The scene briefly cuts to a different small white dog in a ladybug costume sniffing another dog, then returns to the girls and their dog.\n\nVISIBLE_ANIMALS: Small white fluffy dog (Pomeranian-like) in a pumpkin costume, small white fluffy dog (Pomeranian-like) in a ladybug costume, brown and white dog (Jack Russell Terrier-like)\n\nVISIBLE_HUMANS_COUNT: 2\nVISIBLE_HUMANS: Sara (older girl, long brown hair, pink fairy costume, tiara, holding a card with stars), Eva (younger girl, curly blonde hair, pumpkin costume, pumpkin hat)\n\nACTIONS:\n- Sara: holds card, pets dog, smiles, talks\n- Eva: pets dog, smiles, talks\n- Small white fluffy dog (pumpkin costume): sits, is petted, looks happy\n- Small white fluffy dog (ladybug costume): sniffs\n- Brown and white dog: stands, is sniffed\n\nDEFECTS:\n- scene_mismatch: The scene abruptly cuts from the girls petting a dog to a different scene with different dogs, then cuts back to the original scene.\n\nOVERALL: MINOR_ISSUES",
+      "file": "18.mp4",
+      "durationMs": 19621
+    },
+    "20.mp4": {
+      "description": "A family of four (two adults, two children) and two dogs are dressed in Halloween costumes and standing on a suburban street lined with autumn trees. They are posing for a picture or standing still.",
+      "animals": "Pomeranian dog, Jack Russell Terrier",
+      "humansCount": 4,
+      "humans": "Papa (adult man, black cat/demon mask, black hoodie, red beard), Mama (adult woman, brown knit hat, brown sweater, tan pants), Sara (older girl, pink fairy costume with wings, tiara, holding a pumpkin basket), Eva (younger girl, pumpkin costume, holding a Jack Russell Terrier)",
+      "actions": [
+        "- Papa: stands, looks forward",
+        "- Mama: stands, looks forward, places hand on chest",
+        "- Sara: stands, looks forward, holds pumpkin basket",
+        "- Eva: stands, looks forward, holds dog",
+        "- Pomeranian dog: stands, looks forward",
+        "- Jack Russell Terrier: held, looks forward"
+      ],
+      "defects": [
+        "- character_passive: Papa, Mama, Sara, Eva, Pomeranian dog, Jack Russell Terrier"
+      ],
+      "overall": "MINOR_ISSUES",
+      "raw": "DESCRIPTION: A family of four (two adults, two children) and two dogs are dressed in Halloween costumes and standing on a suburban street lined with autumn trees. They are posing for a picture or standing still.\n\nVISIBLE_ANIMALS: Pomeranian dog, Jack Russell Terrier\n\nVISIBLE_HUMANS_COUNT: 4\nVISIBLE_HUMANS: Papa (adult man, black cat/demon mask, black hoodie, red beard), Mama (adult woman, brown knit hat, brown sweater, tan pants), Sara (older girl, pink fairy costume with wings, tiara, holding a pumpkin basket), Eva (younger girl, pumpkin costume, holding a Jack Russell Terrier)\n\nACTIONS:\n- Papa: stands, looks forward\n- Mama: stands, looks forward, places hand on chest\n- Sara: stands, looks forward, holds pumpkin basket\n- Eva: stands, looks forward, holds dog\n- Pomeranian dog: stands, looks forward\n- Jack Russell Terrier: held, looks forward\n\nDEFECTS:\n- character_passive: Papa, Mama, Sara, Eva, Pomeranian dog, Jack Russell Terrier\n\nOVERALL: MINOR_ISSUES",
+      "file": "20.mp4",
+      "durationMs": 15348
+    },
+    "22.mp4": {
+      "description": "Two young girls, one dressed as a fairy and the other in a pumpkin costume, sit on a couch. The fairy girl holds up a card with drawings while they both interact and smile.",
+      "animals": "dog (Jack Russell Terrier)",
+      "humansCount": 2,
+      "humans": "Sara (older girl, long brown hair, tiara, fairy wings, pink dress), Eva (younger girl, curly blonde hair, pumpkin costume)",
+      "actions": [
+        "- Sara: holds card, looks, smiles, talks",
+        "- Eva: holds dog, looks, smiles, talks, waves",
+        "- dog: sits, looks"
+      ],
+      "defects": [],
+      "overall": "CLEAN",
+      "raw": "DESCRIPTION: Two young girls, one dressed as a fairy and the other in a pumpkin costume, sit on a couch. The fairy girl holds up a card with drawings while they both interact and smile.\n\nVISIBLE_ANIMALS: dog (Jack Russell Terrier)\n\nVISIBLE_HUMANS_COUNT: 2\nVISIBLE_HUMANS: Sara (older girl, long brown hair, tiara, fairy wings, pink dress), Eva (younger girl, curly blonde hair, pumpkin costume)\n\nACTIONS:\n- Sara: holds card, looks, smiles, talks\n- Eva: holds dog, looks, smiles, talks, waves\n- dog: sits, looks\n\nDEFECTS: NONE\n\nOVERALL: CLEAN",
+      "file": "22.mp4",
+      "durationMs": 11960
+    },
+    "21.mp4": {
+      "description": "Mama, Sara, and Eva are celebrating Halloween at home, dressed in costumes. Eva feeds a biscuit to a small dog on her lap, while Sara holds a chocolate treat and a candy bucket.",
+      "animals": "dog (Jack Russell Terrier type), dog (white with red spots, ladybug costume)",
+      "humansCount": 3,
+      "humans": "Mama (adult woman, blonde, orange beanie, brown sweater), Sara (older girl, blonde, pink fairy costume, tiara, wings), Eva (younger girl, curly blonde, orange pumpkin costume, pumpkin hat)",
+      "actions": [
+        "- Mama: stands, smiles, looks down, looks forward.",
+        "- Sara: sits, holds treat, holds candy bucket, smiles, looks up.",
+        "- Eva: sits, holds biscuit, offers biscuit, pets dog.",
+        "- dog (Jack Russell Terrier type): sits, sniffs, takes biscuit.",
+        "- dog (ladybug costume): sits."
+      ],
+      "defects": [],
+      "overall": "CLEAN",
+      "raw": "DESCRIPTION: Mama, Sara, and Eva are celebrating Halloween at home, dressed in costumes. Eva feeds a biscuit to a small dog on her lap, while Sara holds a chocolate treat and a candy bucket.\n\nVISIBLE_ANIMALS: dog (Jack Russell Terrier type), dog (white with red spots, ladybug costume)\n\nVISIBLE_HUMANS_COUNT: 3\nVISIBLE_HUMANS: Mama (adult woman, blonde, orange beanie, brown sweater), Sara (older girl, blonde, pink fairy costume, tiara, wings), Eva (younger girl, curly blonde, orange pumpkin costume, pumpkin hat)\n\nACTIONS:\n- Mama: stands, smiles, looks down, looks forward.\n- Sara: sits, holds treat, holds candy bucket, smiles, looks up.\n- Eva: sits, holds biscuit, offers biscuit, pets dog.\n- dog (Jack Russell Terrier type): sits, sniffs, takes biscuit.\n- dog (ladybug costume): sits.\n\nDEFECTS: NONE\n\nOVERALL: CLEAN",
+      "file": "21.mp4",
+      "durationMs": 15511
+    },
+    "19.mp4": {
+      "description": "A family of four, consisting of two adults and two young girls, stands on an autumn street with two dogs. The girls are dressed in Halloween costumes, while the adults are casually dressed, and everyone is smiling.",
+      "animals": "Pomeranian dog, Jack Russell Terrier dog",
+      "humansCount": 4,
+      "humans": "Papa (adult man, beard, glasses, blue shirt, crown), Sara (older girl, brown hair, pink fairy dress, wings, holding pumpkin bucket), Eva (younger girl, curly blonde hair, orange pumpkin costume, holding small dog), Mama (adult woman, blonde hair, orange beanie, brown sweater, brown pants, holding flashlight)",
+      "actions": [
+        "- Papa: stands, smiles",
+        "- Sara: stands, smiles, holds pumpkin bucket, holds dog leash",
+        "- Eva: stands, smiles, holds small dog",
+        "- Mama: stands, smiles, holds flashlight, places hand on chest",
+        "- Pomeranian dog: stands",
+        "- Jack Russell Terrier dog: held"
+      ],
+      "defects": [],
+      "overall": "CLEAN",
+      "raw": "DESCRIPTION: A family of four, consisting of two adults and two young girls, stands on an autumn street with two dogs. The girls are dressed in Halloween costumes, while the adults are casually dressed, and everyone is smiling.\n\nVISIBLE_ANIMALS: Pomeranian dog, Jack Russell Terrier dog\n\nVISIBLE_HUMANS_COUNT: 4\nVISIBLE_HUMANS: Papa (adult man, beard, glasses, blue shirt, crown), Sara (older girl, brown hair, pink fairy dress, wings, holding pumpkin bucket), Eva (younger girl, curly blonde hair, orange pumpkin costume, holding small dog), Mama (adult woman, blonde hair, orange beanie, brown sweater, brown pants, holding flashlight)\n\nACTIONS:\n- Papa: stands, smiles\n- Sara: stands, smiles, holds pumpkin bucket, holds dog leash\n- Eva: stands, smiles, holds small dog\n- Mama: stands, smiles, holds flashlight, places hand on chest\n- Pomeranian dog: stands\n- Jack Russell Terrier dog: held\n\nDEFECTS: NONE\n\nOVERALL: CLEAN",
+      "file": "19.mp4",
+      "durationMs": 48472
+    }
+  }
+}
