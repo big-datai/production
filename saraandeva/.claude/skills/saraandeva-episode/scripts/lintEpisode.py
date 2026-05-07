@@ -163,6 +163,78 @@ def lint_episode(episode: dict, clips: list):
     if total > 2200:
         findings.append(("warn", f"E4 expected total {total} cr exceeds 2200 abort threshold"))
 
+    # E6. Cross-clip element consistency — every character in episode.cast must
+    # resolve to the SAME element_id across every clip they appear in. Catches
+    # name typos (e.g. "Mama" vs "mama" vs "Mom") and missing-element silent
+    # fallbacks before submission. Same logic as kling_ep15_pipeline.mjs
+    # resolveElementId(): prefer ep<NN>_<Name> over <Name>.
+    ep_num = episode.get("episode")
+    if ep_num:
+        ep_prefix = f"ep{int(ep_num):02d}_"
+        registry_path = PROJECT_ROOT / "content" / "elements_registry.json"
+        registry = {}
+        if registry_path.is_file():
+            try: registry = json.loads(registry_path.read_text())
+            except json.JSONDecodeError: pass
+
+        def resolve(name):
+            return registry.get(f"{ep_prefix}{name}") or registry.get(name)
+
+        # build map of char -> set of (clip_file, resolved_element_id) where char appeared
+        char_resolutions = {}  # {char: {(file, eid_or_None)}}
+        for c in clips:
+            f = c["_file"]
+            for s in (c.get("subjects") or []):
+                eid = resolve(s)
+                char_resolutions.setdefault(s, set()).add((f, eid))
+
+        for char, pairs in char_resolutions.items():
+            eids = {eid for _, eid in pairs}
+            files = sorted({f for f, _ in pairs})
+            if None in eids:
+                missing_files = [f for f, eid in pairs if eid is None]
+                findings.append(("error",
+                    f"E6 character {char!r} has NO element in registry "
+                    f"(neither {ep_prefix}{char} nor bare {char}); clips: {missing_files} "
+                    f"will be submitted with this char missing from element_list."))
+            elif len(eids) > 1:
+                findings.append(("error",
+                    f"E6 character {char!r} resolves to multiple element_ids "
+                    f"across the episode: {eids} — Kling will render inconsistently. "
+                    f"clips: {files}"))
+
+    # E7. Costume keyword in every clip-prompt where a costumed character appears.
+    # ep15 found that Joe/Ginger costume reverted in some clips because the action
+    # lines didn't mention "ladybug" / "pumpkin cape" — Kling defaulted to baseline
+    # Pomeranian/Jack-Russell. Forcing the costume keyword in EVERY clip where the
+    # character appears keeps the costume locked.
+    continuity = episode.get("continuity", {}) or {}
+    costume_keywords = {}  # {Char: [keyword, ...]}
+    for char_key, desc in continuity.items():
+        m = re.search(r"costume:\s*([^.\n]{3,80})", desc or "", re.I)
+        if not m: continue
+        # normalize char_key (joe → Joe, mrspatel → Mrs. Patel)
+        char = {"joe": "Joe", "ginger": "Ginger", "sara": "Sara", "eva": "Eva",
+                "papa": "Papa", "mama": "Mama", "isabel": "Isabel", "leo": "Leo",
+                "lisa": "Lisa", "mrspatel": "Mrs. Patel"}.get(char_key.lower(), char_key.capitalize())
+        # extract substantive words (4+ chars, skip stopwords)
+        STOP = {"with", "and", "the", "her", "his", "their", "onesie", "costume"}
+        words = [w.lower().strip(",.;:") for w in re.split(r"[\s\-+]+", m.group(1)) if len(w) >= 4]
+        words = [w for w in words if w not in STOP]
+        if words:
+            costume_keywords[char] = words[:3]   # top 3
+
+    for c in clips:
+        f = c["_file"]
+        prompt = c.get("prompt", "") or ""
+        for s in (c.get("subjects") or []):
+            kws = costume_keywords.get(s)
+            if not kws: continue
+            if not any(re.search(rf"\b{re.escape(kw)}\w*", prompt, re.I) for kw in kws):
+                findings.append(("warn",
+                    f"E7 {f}: {s!r} in subjects but prompt doesn't mention costume keyword "
+                    f"({'|'.join(kws)}) — Kling may render {s} without costume."))
+
     # E5. Costumed-element coverage — every newCostumePreviews entry must have
     # a matching ep<NN>_<Char> element in content/elements_registry.json.
     # Filename convention: group_ep<NN>_<char>_<costume>_preview.png → element key ep<NN>_<Char>.
