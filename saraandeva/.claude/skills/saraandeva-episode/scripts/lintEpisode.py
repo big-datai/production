@@ -163,6 +163,35 @@ def lint_episode(episode: dict, clips: list):
     if total > 2200:
         findings.append(("warn", f"E4 expected total {total} cr exceeds 2200 abort threshold"))
 
+    # E5. Costumed-element coverage — every newCostumePreviews entry must have
+    # a matching ep<NN>_<Char> element in content/elements_registry.json.
+    # Filename convention: group_ep<NN>_<char>_<costume>_preview.png → element key ep<NN>_<Char>.
+    # ep15 caught us with Papa: papa_werewolf_preview.png existed but ep15_Papa was never created,
+    # so kling_ep15_pipeline.mjs fell back to generic Papa (everyday look) and rendered Papa
+    # inconsistently across clips 7, 10 (bare element) vs 17, 19, 20 (group still).
+    previews = episode.get("newCostumePreviews", []) or []
+    if previews:
+        ep_num = episode.get("episode")
+        if ep_num:
+            ep_prefix = f"ep{int(ep_num):02d}_"
+            registry_path = PROJECT_ROOT / "content" / "elements_registry.json"
+            registry = {}
+            if registry_path.is_file():
+                try: registry = json.loads(registry_path.read_text())
+                except json.JSONDecodeError: pass
+            preview_pat = re.compile(r"(?:group_)?ep\d{2}_(\w+?)_[\w_]*preview\.png", re.I)
+            for p in previews:
+                m = preview_pat.search(p)
+                if not m: continue
+                char_key = m.group(1).capitalize()
+                if char_key in ("Joe", "Ginger", "Sara", "Eva", "Papa", "Mama", "Isabel", "Leo"):
+                    expected = f"{ep_prefix}{char_key}"
+                    if expected not in registry:
+                        findings.append(("error",
+                            f"E5 costume preview {p!r} declares {char_key} costume but {expected!r} "
+                            f"missing from elements_registry.json — Kling will fall back to generic "
+                            f"{char_key} element (everyday look) and render inconsistently."))
+
     return findings
 
 
