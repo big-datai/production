@@ -1,5 +1,5 @@
 {
-  "_comment": "Persisted Kling element_ids created via the API path. Read by submitOmniViaApi.mjs. Add new elements via createElementViaApi (or /tmp/kling_create_element.py) and append the {name -> element_id} pair here. Element_ids are stable; don't edit existing entries unless an element is recreated. Names are case-sensitive — match the API element_name exactly.",
+  "_comment": "Persisted Kling element_ids created via the API path. Read by submitOmniViaApi.mjs. Add new elements via createElementViaApi (or /tmp/kling_create_element.py) and append the {name -> element_id} pair here. Element_ids are stable; don't edit existing entries unless an element is recreated. Names are case-sensitive \u2014 match the API element_name exactly.",
   "_source": "API account JWT-signed with KLING_ACCESS_KEY/SECRET_KEY in .env.local. NOT the same pool as the kling.ai web UI library (segregated per lesson_kling_api_account_segregation.md).",
   "Joe": 310000741885315,
   "jo_beach": 310000923945307,
@@ -10,5 +10,16 @@
   "ep15_Sara": 310124227725311,
   "ep15_Mama": 310124218481317,
   "ep15_Joe": 310094145048304,
-  "ep15_Ginger": 310094151148317
+  "ep15_Ginger": 310094151148317,
+  "ep15_Papa": 310086206650303,
+  "ep15_Isabel": 310086208190303,
+  "ep15_Leo": 310086208480313,
+  "ep15_Lisa": 310153862499504,
+  "Mrs_Patel": 310086202484504,
+  "Lisa": 310086202135524,
+  "Mrs. Patel": 310086202484504,
+  "Mama": 310086200106306,
+  "Ginger": 310086200551316,
+  "Isabel": 310086201450506,
+  "Leo": 310086201607522
 }

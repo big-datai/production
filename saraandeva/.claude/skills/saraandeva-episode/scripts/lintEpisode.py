@@ -13,7 +13,7 @@ Exit codes:
   1  errors present (don't submit)
   2  warnings present (review but submittable; only with --strict does it fail)
 """
-import argparse, json, re, sys
+import argparse, json, re, sys, time
 from pathlib import Path
 
 PROJECT_ROOT = Path("/Volumes/Samsung500/goreadling-production/saraandeva")
@@ -130,12 +130,47 @@ def lint_clip(clip: dict):
     if not (clip.get("negativePrompt") or "").strip():
         findings.append(("warn", "R10 missing negativePrompt"))
 
+    # R11. Orphan @-ref: every @<Char> in prompt body must be in subjects[].
+    # The submit pipeline (kling_ep15_pipeline.mjs:translatePromptToElementSyntax)
+    # only translates @-refs whose name is in the elementOrder built from subjects[].
+    # If the spec mentions @Joe but Joe was removed from subjects, the @-ref goes
+    # to Kling as literal text and Kling has no element to bind it to. Renders
+    # garbage or invents a generic dog. ep15 retrospective: this is what would
+    # silently break a v3 of clip 17 if we drop Joe from subjects but leave
+    # "@Joe leans" in the prompt body.
+    # Multi-word names ("Mrs. Patel") need their full match — build a regex per subject.
+    subject_set = set(subjects)
+    # Find all @-mentions: @Char (possibly multi-word for "Mrs. Patel")
+    # Pattern: @<Capitalized-word>(?: <Capitalized-word>)? followed by punct/space.
+    at_pattern = re.compile(r"@([A-Z][a-zA-Z]*(?:\.\s+[A-Z][a-zA-Z]*)?)(?=['\s.,;:!?\)])")
+    seen_orphans = set()
+    for m in at_pattern.finditer(prompt):
+        name = m.group(1).strip()
+        # Drop trailing punctuation just in case
+        if name not in subject_set and name not in seen_orphans:
+            seen_orphans.add(name)
+            findings.append(("error",
+                f"R11 prompt mentions @{name!r} but it's NOT in subjects[]={subjects} — "
+                f"the submit translator can't resolve it; @{name} will go to Kling as "
+                f"literal text and the character won't bind to any element."))
+
     return findings
 
 
 # ─── Episode-level rules ───────────────────────────────────────────────────
 def lint_episode(episode: dict, clips: list):
     findings = []
+
+    # ─── Common setup (used by E5, E6, E8) ────────────────────────────────
+    ep_num = episode.get("episode")
+    ep_prefix = f"ep{int(ep_num):02d}_" if ep_num else ""
+    registry_path = PROJECT_ROOT / "content" / "elements_registry.json"
+    registry = {}
+    if registry_path.is_file():
+        try: registry = json.loads(registry_path.read_text())
+        except json.JSONDecodeError: pass
+    previews = episode.get("newCostumePreviews", []) or []
+    preview_pat = re.compile(r"(?:group_)?ep\d{2}_(\w+?)_[\w_]*preview\.png", re.I)
 
     # E1. 2–4 audience-ask beats
     asks = sum(1 for c in clips if "AUDIENCE-ASK" in (c.get("title", "") + c.get("prompt", "")).upper()
@@ -168,15 +203,7 @@ def lint_episode(episode: dict, clips: list):
     # name typos (e.g. "Mama" vs "mama" vs "Mom") and missing-element silent
     # fallbacks before submission. Same logic as kling_ep15_pipeline.mjs
     # resolveElementId(): prefer ep<NN>_<Name> over <Name>.
-    ep_num = episode.get("episode")
     if ep_num:
-        ep_prefix = f"ep{int(ep_num):02d}_"
-        registry_path = PROJECT_ROOT / "content" / "elements_registry.json"
-        registry = {}
-        if registry_path.is_file():
-            try: registry = json.loads(registry_path.read_text())
-            except json.JSONDecodeError: pass
-
         def resolve(name):
             return registry.get(f"{ep_prefix}{name}") or registry.get(name)
 
@@ -235,34 +262,82 @@ def lint_episode(episode: dict, clips: list):
                     f"E7 {f}: {s!r} in subjects but prompt doesn't mention costume keyword "
                     f"({'|'.join(kws)}) — Kling may render {s} without costume."))
 
+    # E8. Registry ↔ Kling library coverage. Reads /tmp/kling_elements_cache.json
+    # (populated by syncElementsRegistry.py within the last 60s; refreshed if
+    # missing or stale). Catches the ep15-style failure where the Kling library
+    # has costumed elements that aren't in the local registry — agent could
+    # create duplicates if it ran a "create" workflow without checking first.
+    cache_p = Path("/tmp/kling_elements_cache.json")
+    if not cache_p.is_file() or (time.time() - cache_p.stat().st_mtime) > 60:
+        # Lint shouldn't make API calls itself (it must run fast + offline).
+        # Just print an info note that cache is stale and skip E8.
+        findings.append(("warn", "E8 cache stale or missing; run syncElementsRegistry.py to populate /tmp/kling_elements_cache.json"))
+    else:
+        try:
+            cache_data = json.loads(cache_p.read_text())
+        except json.JSONDecodeError:
+            cache_data = []
+        # Build name → list[ids] from envelopes
+        kling_by_name = {}
+        for envelope in cache_data:
+            inner = (envelope.get("task_result") or {}).get("elements") or []
+            for el in inner:
+                nm = el.get("element_name") or ""
+                eid = el.get("element_id")
+                if nm and eid:
+                    kling_by_name.setdefault(nm, []).append(int(eid))
+
+        # E8a (warn): registry entry whose value is NOT in Kling library at all (orphan)
+        kling_all_ids = {eid for ids in kling_by_name.values() for eid in ids}
+        for k, v in registry.items():
+            if k.startswith("_") or not isinstance(v, (int, str)): continue
+            try:
+                vid = int(v)
+                if vid not in kling_all_ids:
+                    findings.append(("warn",
+                        f"E8a registry[{k!r}]={vid} not in Kling library — element may have been deleted "
+                        f"or registry has stale ID."))
+            except (ValueError, TypeError): pass
+
+        # E8b (error): episode declares costume preview for char X but Kling library
+        # has zero matches for ep<NN>_<X> AND zero matches for <X>_HW_<*>.
+        for p in previews:
+            m = preview_pat.search(p)
+            if not m: continue
+            char = m.group(1).capitalize()
+            expected = f"{ep_prefix}{char}"
+            hw_pattern = re.compile(rf"^{re.escape(char)}_HW_\w+$")
+            if expected not in kling_by_name and not any(hw_pattern.match(n) for n in kling_by_name):
+                findings.append(("error",
+                    f"E8b costume preview {p!r} expects {expected!r} or {char}_HW_* on Kling but neither "
+                    f"exists. Upload PNG + create element before submit."))
+
+        # E8c (warn): Kling library has ep<NN>_<X> or <X>_HW_<*> not in registry
+        for nm in kling_by_name:
+            mm = re.fullmatch(rf"ep{int(ep_num):02d}_(\w+)", nm) if ep_num else None
+            mh = re.fullmatch(r"(\w+)_HW_\w+", nm)
+            char = (mm.group(1) if mm else None) or (mh.group(1) if mh else None)
+            if not char: continue
+            registry_key = f"{ep_prefix}{char}"
+            if registry_key not in registry:
+                findings.append(("warn",
+                    f"E8c Kling library has {nm!r} but registry has no {registry_key!r} — "
+                    f"run syncElementsRegistry.py to add."))
+
     # E5. Costumed-element coverage — every newCostumePreviews entry must have
     # a matching ep<NN>_<Char> element in content/elements_registry.json.
-    # Filename convention: group_ep<NN>_<char>_<costume>_preview.png → element key ep<NN>_<Char>.
-    # ep15 caught us with Papa: papa_werewolf_preview.png existed but ep15_Papa was never created,
-    # so kling_ep15_pipeline.mjs fell back to generic Papa (everyday look) and rendered Papa
-    # inconsistently across clips 7, 10 (bare element) vs 17, 19, 20 (group still).
-    previews = episode.get("newCostumePreviews", []) or []
-    if previews:
-        ep_num = episode.get("episode")
-        if ep_num:
-            ep_prefix = f"ep{int(ep_num):02d}_"
-            registry_path = PROJECT_ROOT / "content" / "elements_registry.json"
-            registry = {}
-            if registry_path.is_file():
-                try: registry = json.loads(registry_path.read_text())
-                except json.JSONDecodeError: pass
-            preview_pat = re.compile(r"(?:group_)?ep\d{2}_(\w+?)_[\w_]*preview\.png", re.I)
-            for p in previews:
-                m = preview_pat.search(p)
-                if not m: continue
-                char_key = m.group(1).capitalize()
-                if char_key in ("Joe", "Ginger", "Sara", "Eva", "Papa", "Mama", "Isabel", "Leo"):
-                    expected = f"{ep_prefix}{char_key}"
-                    if expected not in registry:
-                        findings.append(("error",
-                            f"E5 costume preview {p!r} declares {char_key} costume but {expected!r} "
-                            f"missing from elements_registry.json — Kling will fall back to generic "
-                            f"{char_key} element (everyday look) and render inconsistently."))
+    if previews and ep_num:
+        for p in previews:
+            m = preview_pat.search(p)
+            if not m: continue
+            char_key = m.group(1).capitalize()
+            if char_key in ("Joe", "Ginger", "Sara", "Eva", "Papa", "Mama", "Isabel", "Leo"):
+                expected = f"{ep_prefix}{char_key}"
+                if expected not in registry:
+                    findings.append(("error",
+                        f"E5 costume preview {p!r} declares {char_key} costume but {expected!r} "
+                        f"missing from elements_registry.json — Kling will fall back to generic "
+                        f"{char_key} element (everyday look) and render inconsistently."))
 
     return findings
 
