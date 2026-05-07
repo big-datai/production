@@ -1,1 +1,11 @@
 .auth/
+
+# Pipeline ephemeral artifacts (per episode dir)
+content/episodes/*/\_fix_v*/
+content/episodes/*/\_backup_v*/
+content/episodes/*/\_pipeline_log.json
+content/episodes/*/\_pipeline_state.backup.json
+content/episodes/*/auto_fix_plan_v*.json
+
+# Submit/scratch dirs (already had these as untracked)
+content/episodes/.submit-*/
