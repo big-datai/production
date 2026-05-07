@@ -13,11 +13,9 @@
     "Eva",
     "Papa",
     "Mama",
-    "Joe",
     "Ginger"
   ],
   "scene": "ep15_house5_candy_house",
-  "patternEStill": "assets/scenes/group_ep15_clip17_the_find_redo_v2.png",
   "boundElements": [
     {
       "tag": "ep15-clip17-group",
@@ -26,8 +24,8 @@
   ],
   "prompt": [
     "Multi-shot composition. THE FIND — emotional reunion payoff. Composition anchored on pre-rendered Pattern E group still (image-to-video reference) for Shots 1 and 4. Motion-only prompt — the still defines who, where, and what they look like.",
-    "Shot 1 (0-3s, static low-angle medium-wide, hold on Pattern E group still anchor) — Elements: @ep15-clip17-group\nHold the Pattern E group still composition — Eva foreground-right kneeling cradling Ginger wrapped in pumpkin cape on a soft pile of dried fall leaves beside a tower of pumpkins; Sara center-right kneeling beside Eva, hand softly on Ginger's head; Joe sitting calmly beside Eva nuzzling Ginger; Papa center-left kneeling on the porch boards behind the kids; Mama center softly standing behind the kneeling kids holding her flashlight; Mrs. Patel background-left softly on the porch by her front door holding her candy bowl. Head-sized giant lollipop on candy-cane pole at left of pumpkin tower, candy-corn string lights twinkling on porch railing, soft fabric cobweb-tunnel softly arching above, soft purple porch light gently washing the background.",
-    "Shot 2 (3-5s, soft medium close-up, slow dolly push in) — Elements: @ep15-clip17-group\nTighter on Eva, Ginger and Joe at foreground-right of the group. @Eva softly hugs @Ginger a little closer, Ginger's tail softly wags from inside the pumpkin cape, Ginger softly nuzzles into Eva's collar. @Sara's left hand pets Ginger's head once. @Joe leans his fluffy white nose softly toward @Ginger in a small in-place dog-friend nuzzle. @Eva, gently: \"Oh GINGER! We found you!\"",
+    "Shot 1 (0-3s, static low-angle medium-wide, hold on Pattern E group still anchor) — Elements: @ep15-clip17-group\nHold the Pattern E group still composition — Eva foreground-right kneeling cradling Ginger wrapped in pumpkin cape on a soft pile of dried fall leaves beside a tower of pumpkins; Sara center-right kneeling beside Eva, hand softly on Ginger's head; Papa center-left kneeling on the porch boards behind the kids; Mama center softly standing behind the kneeling kids holding her flashlight; Mrs. Patel background-left softly on the porch by her front door holding her candy bowl. Head-sized giant lollipop on candy-cane pole at left of pumpkin tower, candy-corn string lights twinkling on porch railing, soft fabric cobweb-tunnel softly arching above, soft purple porch light gently washing the background.",
+    "Shot 2 (3-5s, soft medium close-up, slow dolly push in) — Elements: @ep15-clip17-group\nTighter on Eva, Ginger and Joe at foreground-right of the group. @Eva softly hugs @Ginger a little closer, Ginger's tail softly wags from inside the pumpkin cape, Ginger softly nuzzles into Eva's collar. @Sara's left hand pets Ginger's head once. @Eva, gently: \"Oh GINGER! We found you!\"",
     "Shot 3 (5-7s, soft medium, slow pan left) — Elements: @ep15-clip17-group\nFollow over to Papa and Mama at center-left of the group. @Papa softly tilts his head toward @Eva from his kneeling spot with a warm dad-grin. @Mama softly raises her right hand to her chest with a delighted relieved expression.",
     "Shot 4 (7-10s, low-angle medium-wide, slow pan right + slow pull back to Pattern E anchor) — Elements: @ep15-clip17-group\nSettle on Mrs. Patel in background-left then ease back to the Pattern E group still composition. Mrs. Patel softly lifts her right hand off the candy bowl in a small gesture toward Ginger then returns it. Mrs. Patel: \"She kept me company! I gave her water. Bravest kids on the block!\" @Sara: \"Thank you so much, Mrs."
   ],
@@ -162,9 +160,15 @@
     "dutch angle",
     "handheld shake",
     "whip pan",
-    "jump cut"
+    "jump cut",
+    "joe in this clip",
+    "joe visible",
+    "second dog",
+    "pomeranian visible",
+    "only ginger"
   ],
   "cameraStyle": "static low-angle medium-wide on Pattern E group still, slow dolly push to soft medium on Eva and Ginger, slow pan left to Papa and Mama, slow pan right to Mrs. Patel, capped by a slow pull back",
   "closingFrame": "Pattern E composition holding at @ep15_house5_candy_house — @Eva foreground-right kneeling cradling @Ginger wrapped in pumpkin cape on dried leaves; @Sara center-right kneeling beside Eva, hand on Ginger's head; @Joe sitting beside Eva nuzzling Ginger in bug costume; @Papa center-left kneeling, hand on his knee; @Mama center softly standing behind the kneeling kids with hand on her chest in relief; @Mrs. Patel background-left on the porch by her front door, hand returning to her candy bowl; soft warm candy-corn string lights twinkling above.",
-  "_clip17_workaround": "Mrs. Patel removed from subjects to stay under Kling 7-element+image cap. She remains described in prompt cast identity locks; Kling will render her based on text only. Architectural fix: split clip 17 into multiple shots with tight per-shot element_list."
+  "_clip17_workaround": "Mrs. Patel removed from subjects to stay under Kling 7-element+image cap. She remains described in prompt cast identity locks; Kling will render her based on text only. Architectural fix: split clip 17 into multiple shots with tight per-shot element_list.",
+  "_droppedPatternEStill": "assets/scenes/group_ep15_clip17_the_find_redo_v2.png"
 }

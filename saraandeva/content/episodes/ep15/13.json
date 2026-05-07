@@ -12,11 +12,9 @@
     "Sara",
     "Eva",
     "Isabel",
-    "Leo",
-    "Joe"
+    "Leo"
   ],
   "scene": "ep15_house4_isabel_cottage",
-  "patternEStill": "assets/scenes/group_ep15_clip13_isabel_yard_v1.png",
   "boundElements": [
     {
       "tag": "ep15-clip13-group",
@@ -24,13 +22,13 @@
     }
   ],
   "prompt": [
-    "Cast (Halloween night):\n- @Sara: fairy princess — silver tiara, pink-white tutu, wings, wand, jack-o-lantern bucket. Wavy dark-blonde hair.\n- @Eva: pumpkin onesie — orange body w/ jack-o-lantern face on tummy, green leaf hat, pumpkin bucket. Curly blonde.\n- @Isabel: friend in unicorn costume — pastel rainbow-mane hood, white onesie, gold horn.\n- @Leo: toddler friend in green dinosaur onesie w/ spiky back ridge.\n- @Joe: cream-gold Pomeranian dog in red-and-black-spotted ladybug body costume.",
+    "Cast (Halloween night):\n- @Sara: fairy princess — silver tiara, pink-white tutu, wings, wand, jack-o-lantern bucket. Wavy dark-blonde hair. - @Eva: pumpkin onesie — orange body w/ jack-o-lantern face on tummy, green leaf hat, pumpkin bucket. Curly blonde. - @Isabel: friend in unicorn costume — pastel rainbow-mane hood, white onesie, gold horn. - @Leo: toddler friend in green dinosaur onesie w/ spiky back ridge.",
     "Multi-shot composition. Continuity from clip 12 closing frame: family moving softly off the porch around toward the side yard. Composition anchored on pre-rendered Pattern E group still (image-to-video reference) for Shot 1. Motion-only prompt — the still defines who, where, and what they look like.",
     "Shot 1 (0-3s, static medium-wide eye-level, hold on Pattern E group still anchor) — Elements: @ep15-clip13-group\nHold the Pattern E group still composition — Sara left, Isabel center-left, Leo center-right, Eva right; Joe-the-bug at Eva's left side, all on the side-yard grass with soft warm twinkling string lights on the side fence behind them. Tails wag, kids in costume, no character changes positions.",
     "Shot 2 (3-6s, soft medium, slow push in on Joe) — Elements: @ep15-clip13-group\nTighter on Eva and Joe-the-bug at the right side of the group. Joe's nose dips down to the side-yard grass for a small in-place sniff, then lifts and pivots his fluffy face softly toward the side gate, ears perked, tail wagging fast — all four paws stay planted, his leash goes briefly taut. Eva's upper body softly leans a tiny bit toward Joe. Sara, voice from the group: \"Joe found something! Look!\"",
     "Shot 3 (6-8s, soft medium, slow pan right to background) — Elements: @ep15-clip13-group\nFollow the line of Joe's gaze. A small striped tabby cat softly walks past in the side-yard background — soft fur, ordinary cat, never scary.",
     "Shot 4 (8-10s, medium-wide, slow pan left back + slow pull back) — Elements: @ep15-clip13-group\nReturn to the Pattern E group still composition. Joe turns his fluffy face softly back toward Eva. Eva, looking down at Joe softly: \"Joooooe! That's a CAT!\" Sara giggles: \"Try again, Joe!\" Isabel: \"You're a great search dog, Joe!\" Joe wags his tail faster, refocused. Leo claps softly.",
-    "Lighting: warm twinkling string lights, soft purple porch glow drifting around the corner.\nStyle: Pixar 3D feature-render, kid-show."
+    "Lighting: warm twinkling string lights, soft purple porch glow drifting around the corner. Style: Pixar 3D feature-render, kid-show."
   ],
   "negativePrompt": [
     "duplicate character",
@@ -157,8 +155,25 @@
     "dutch angle",
     "handheld shake",
     "whip pan",
-    "jump cut"
+    "jump cut",
+    "joe in this clip",
+    "joe visible",
+    "pomeranian visible",
+    "only ginger",
+    "duplicate sara",
+    "two saras",
+    "mirrored sister",
+    "ghost eva",
+    "two evas",
+    "third girl",
+    "fourth child",
+    "extra kid",
+    "duplicate isabel",
+    "two isabels",
+    "duplicate leo",
+    "two leos"
   ],
   "cameraStyle": "static medium-wide on Pattern E group still into a slow push in to a soft medium on Joe, slow pan right to the cat reveal, slow pan left back to the kids, capped by a slow pull back",
-  "closingFrame": "Side-yard medium-wide at @ep15_house4_isabel_cottage — Pattern E group still composition holding: Sara left, Isabel center-left, Leo center-right, Eva right; Joe-the-bug at Eva's left side, fluffy face turned softly toward Eva, tail mid-wag; tabby cat exiting frame right; soft warm string lights on the side fence."
+  "closingFrame": "Side-yard medium-wide at @ep15_house4_isabel_cottage — Pattern E group still composition holding: Sara left, Isabel center-left, Leo center-right, Eva right; Joe-the-bug at Eva's left side, fluffy face turned softly toward Eva, tail mid-wag; tabby cat exiting frame right; soft warm string lights on the side fence.",
+  "_droppedPatternEStill": "assets/scenes/group_ep15_clip13_isabel_yard_v1.png"
 }
