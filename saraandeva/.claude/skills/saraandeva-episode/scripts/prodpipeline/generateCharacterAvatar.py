@@ -36,7 +36,12 @@ Optional:
   --out path.png         override output path
   --force                regen even if file exists
 """
-import argparse, base64, json, os, sys, time
+import argparse
+import base64
+import json
+import os
+import sys
+import time
 from pathlib import Path
 from urllib.request import Request, urlopen
 from urllib.error import HTTPError
@@ -54,7 +59,7 @@ DEFAULT_STYLE_REFS = [
 
 def load_env():
     if not ENV_FILE.is_file():
-        print(f"!! .env.local not found", file=sys.stderr); sys.exit(2)
+        print("!! .env.local not found", file=sys.stderr); sys.exit(2)
     for line in ENV_FILE.read_text().splitlines():
         if "=" in line and not line.strip().startswith("#"):
             k, v = line.split("=", 1)

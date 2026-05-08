@@ -17,7 +17,13 @@ Notes:
   - Snake_case query params: start_time, end_time (ms epochs)
   - Empirical rate: kling-v3-omni std mode = 0.6 units/sec ($0.06/sec at trial pack)
 """
-import argparse, base64, hashlib, hmac, json, os, sys, time
+import argparse
+import base64
+import hashlib
+import hmac
+import json
+import sys
+import time
 from pathlib import Path
 from urllib.request import Request, urlopen
 from urllib.error import HTTPError
@@ -186,7 +192,7 @@ def main():
         print(f"  abort threshold: {e['abort_threshold']} cr")
         print(f"  remaining after: {e['remaining_balance_after']} cr")
         if e["over_threshold"]:
-            print(f"\n🛑 OVER ABORT THRESHOLD: stop submitting more clips")
+            print("\n🛑 OVER ABORT THRESHOLD: stop submitting more clips")
             sys.exit(3)
         elif e["projected_cr"] > e["abort_threshold"] * 0.85:
             print(f"\n⚠ approaching threshold ({int(e['projected_cr']/e['abort_threshold']*100)}%)")

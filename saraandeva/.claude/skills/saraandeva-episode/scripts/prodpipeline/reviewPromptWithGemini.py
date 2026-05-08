@@ -23,7 +23,10 @@ Exit codes:
   1  FAIL — review surfaces required fixes printed to stdout
   2  infrastructure error (missing env, API failure)
 """
-import argparse, json, os, sys
+import argparse
+import json
+import os
+import sys
 from pathlib import Path
 from urllib.request import Request, urlopen
 from urllib.error import HTTPError

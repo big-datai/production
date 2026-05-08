@@ -14,7 +14,13 @@ Usage:
 
 Exits 0 if no critical defects, 1 if any critical defects.
 """
-import argparse, datetime, json, os, re, sys, time
+import argparse
+import datetime
+import json
+import os
+import re
+import sys
+import time
 from pathlib import Path
 from threading import Thread, Lock
 from urllib.request import Request, urlopen
@@ -191,7 +197,7 @@ def main():
 
     clips_dir = Path(args.clips_dir).resolve()
     if not clips_dir.is_dir():
-        print(f"Usage: auditClipsWithGemini.py <clips_dir>", file=sys.stderr); sys.exit(1)
+        print("Usage: auditClipsWithGemini.py <clips_dir>", file=sys.stderr); sys.exit(1)
     out_path = Path(args.out) if args.out else Path(f"/tmp/audit_{clips_dir.name}.json")
 
     pat = re.compile(r"^\d+(\.\d+)?\.mp4$")
@@ -257,7 +263,7 @@ def main():
     }
     out_path.write_text(json.dumps(report, indent=2))
 
-    print(f"\n=== Summary ===")
+    print("\n=== Summary ===")
     print(f"Total clips: {len(clip_files)}")
     print(f"🔴 critical: {len(flagged['critical'])}  {', '.join(flagged['critical'])}")
     print(f"🟡 minor:    {len(flagged['minor'])}  {', '.join(flagged['minor'])}")

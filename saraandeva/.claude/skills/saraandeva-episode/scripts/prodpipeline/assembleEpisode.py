@@ -20,7 +20,11 @@ Faithful Python port of assembleEpisode.mjs.
 Usage:
   python3 assembleEpisode.py <output.mp4> --clips-dir <dir> [--intro-dir <dir>] [--outro-dir <dir>]
 """
-import argparse, os, re, subprocess, sys, time
+import argparse
+import re
+import subprocess
+import sys
+import time
 from pathlib import Path
 
 

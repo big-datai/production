@@ -16,7 +16,11 @@ Usage:
   python3 validateEpisode.py --episode=10
   python3 validateEpisode.py --episode=10 --strict
 """
-import argparse, json, re, subprocess, sys
+import argparse
+import json
+import re
+import subprocess
+import sys
 from pathlib import Path
 
 PROJECT_ROOT = Path("/Volumes/Samsung500/goreadling-production/saraandeva")

@@ -15,7 +15,10 @@ Exit codes:
   0  all letter clips processed (or none expected)
   2  hard failure (ffmpeg/loopVideoWithSong returned error)
 """
-import argparse, json, subprocess, sys
+import argparse
+import json
+import subprocess
+import sys
 from pathlib import Path
 
 PROJECT_ROOT = Path("/Volumes/Samsung500/goreadling-production/saraandeva")

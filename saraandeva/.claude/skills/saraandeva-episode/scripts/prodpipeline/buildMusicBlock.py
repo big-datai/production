@@ -35,7 +35,10 @@ Defaults:
   --duration 96 (seconds, ~1:36)
   --out content/episodes/ep<NN>/clips/<first-clip>.5.mp4
 """
-import argparse, re, subprocess, sys
+import argparse
+import re
+import subprocess
+import sys
 from pathlib import Path
 
 PROJECT_ROOT = Path("/Volumes/Samsung500/goreadling-production/saraandeva")

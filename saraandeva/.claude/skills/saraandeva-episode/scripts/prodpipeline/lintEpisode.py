@@ -13,7 +13,11 @@ Exit codes:
   1  errors present (don't submit)
   2  warnings present (review but submittable; only with --strict does it fail)
 """
-import argparse, json, re, sys, time
+import argparse
+import json
+import re
+import sys
+import time
 from pathlib import Path
 
 PROJECT_ROOT = Path("/Volumes/Samsung500/goreadling-production/saraandeva")

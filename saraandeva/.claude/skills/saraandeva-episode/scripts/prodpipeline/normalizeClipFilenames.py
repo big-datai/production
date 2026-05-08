@@ -10,7 +10,9 @@ Usage:
 
 Backs up displaced files to <clips_dir>/.originals/ before overwriting.
 """
-import re, shutil, sys
+import re
+import shutil
+import sys
 from pathlib import Path
 
 

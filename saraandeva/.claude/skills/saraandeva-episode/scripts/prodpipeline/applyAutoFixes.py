@@ -23,7 +23,10 @@ Exit codes:
   1  --apply succeeded with N fixes promoted
   2  no plan file or fix dir found
 """
-import argparse, json, shutil, sys
+import argparse
+import json
+import shutil
+import sys
 from pathlib import Path
 
 PROJECT_ROOT = Path("/Volumes/Samsung500/goreadling-production/saraandeva")
@@ -45,7 +48,7 @@ def reset_clip_tasks(ep_dir: Path, clips: list):
     next submit re-submits them. Backs up state file first."""
     state_p = ep_dir / "_pipeline_state.json"
     if not state_p.is_file():
-        print(f"  (no _pipeline_state.json, nothing to reset)")
+        print("  (no _pipeline_state.json, nothing to reset)")
         return 0
     state = json.loads(state_p.read_text())
     backup = ep_dir / "_pipeline_state.backup.json"
@@ -111,7 +114,7 @@ def main():
             print(f"  would back up {dst.relative_to(PROJECT_ROOT)} → {backup_dir.name}/{c}.json")
         if args.reset_state:
             print(f"\n  would clear clipTasks: {affected_clips}")
-        print(f"\nNext step (after apply):")
+        print("\nNext step (after apply):")
         print(f"  python3 runEpisodePipeline.py --episode {args.episode} --start-from 5")
         sys.exit(0)
 

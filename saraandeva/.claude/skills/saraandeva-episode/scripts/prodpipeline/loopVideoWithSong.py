@@ -13,7 +13,9 @@ Faithful Python port of loopVideoWithSong.mjs.
 Usage:
   python3 loopVideoWithSong.py <video> <audio> <output> [--duration=60] [--audio-start=0]
 """
-import argparse, subprocess, sys
+import argparse
+import subprocess
+import sys
 from pathlib import Path
 
 

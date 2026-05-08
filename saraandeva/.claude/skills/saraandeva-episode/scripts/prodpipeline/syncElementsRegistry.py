@@ -24,7 +24,15 @@ Why this exists: ep15 retrospective 2026-05-07 showed I (agent) created
 duplicate Kling elements because I didn't first listKlingViaApi. That class
 of bug is now caught here BEFORE any element create or clip submit.
 """
-import argparse, base64, hashlib, hmac, json, os, re, sys, time
+import argparse
+import base64
+import hashlib
+import hmac
+import json
+import os
+import re
+import sys
+import time
 from pathlib import Path
 from urllib.request import Request, urlopen
 from urllib.error import HTTPError, URLError

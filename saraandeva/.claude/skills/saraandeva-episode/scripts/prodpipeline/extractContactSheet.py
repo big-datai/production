@@ -15,7 +15,9 @@ Usage:
   python3 extractContactSheet.py clip.mp4 --timestamps 0.1,0.35,0.65,0.9
   python3 extractContactSheet.py --episode 15 --clip 17     # convenience
 """
-import argparse, subprocess, sys
+import argparse
+import subprocess
+import sys
 from pathlib import Path
 
 PROJECT_ROOT = Path("/Volumes/Samsung500/goreadling-production/saraandeva")

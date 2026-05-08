@@ -15,7 +15,10 @@ Usage:
   python3 generateShort.py --episode=10 --title "Magic Forest!"
   python3 generateShort.py --episode=10 --title "..." --source 12.5.mp4 --duration 60
 """
-import argparse, subprocess, sys, time
+import argparse
+import subprocess
+import sys
+import time
 from pathlib import Path
 
 PROJECT_ROOT = Path("/Volumes/Samsung500/goreadling-production/saraandeva")
@@ -48,11 +51,11 @@ def main():
     source_path = ep_dir / "clips" / args.source
     if not source_path.is_file():
         print(f"❌ source clip not found: {source_path}", file=sys.stderr)
-        print(f"   Common defaults: 4.5.mp4 (MV-A), 12.5.mp4 (MV-B), 18.5.mp4 (MV-C)", file=sys.stderr)
+        print("   Common defaults: 4.5.mp4 (MV-A), 12.5.mp4 (MV-B), 18.5.mp4 (MV-C)", file=sys.stderr)
         sys.exit(1)
     out_path = Path(args.out) if args.out else ep_dir / f"ep{ep_num:02d}_short.mp4"
 
-    print(f"📱 Vertical short recipe")
+    print("📱 Vertical short recipe")
     print(f"   source:    {args.source}")
     print(f"   duration:  {args.duration}s")
     print(f"   title:     \"{args.title}\"")

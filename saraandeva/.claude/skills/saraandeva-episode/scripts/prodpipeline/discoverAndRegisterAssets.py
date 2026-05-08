@@ -39,7 +39,16 @@ Exit codes:
   1  PNG present but no matching Kling element AND --skip-create set
   2  Kling API error or upload failure
 """
-import argparse, base64, hashlib, hmac, json, os, re, subprocess, sys, time
+import argparse
+import base64
+import hashlib
+import hmac
+import json
+import os
+import re
+import subprocess
+import sys
+import time
 from pathlib import Path
 from urllib.request import Request, urlopen
 from urllib.error import HTTPError, URLError
@@ -355,7 +364,7 @@ def main():
 
     ak, sk = load_env()
     token = make_jwt(ak, sk)
-    print(f"Pulling Kling element library...")
+    print("Pulling Kling element library...")
     kling_by_name = kling_list_elements(args.force_refresh, token)
     print(f"  {len(kling_by_name)} unique element name(s) on Kling")
 

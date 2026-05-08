@@ -19,7 +19,11 @@ Usage:
     [--privacy unlisted|public|private] [--thumbnail path.jpg]
     [--playlist-id PL...|--no-playlist]
 """
-import argparse, json, re, subprocess, sys
+import argparse
+import json
+import re
+import subprocess
+import sys
 from pathlib import Path
 
 try:
@@ -85,7 +89,7 @@ def get_oauth_credentials() -> Credentials:
     flow = Flow.from_client_config(creds_raw, scopes=SCOPES)
     flow.redirect_uri = key["redirect_uris"][0]
     auth_url, _ = flow.authorization_url(access_type="offline", prompt="consent")
-    print(f"\n🔐 OAuth for the SaraAndEva channel — full scope set.")
+    print("\n🔐 OAuth for the SaraAndEva channel — full scope set.")
     print(f"1) Open this URL in a browser logged into the SaraAndEva Google account:\n\n   {auth_url}\n")
     print("2) Authorize, copy the code from the redirect URL, paste here.")
     code = input("\nPaste the authorization code: ").strip()
@@ -181,7 +185,7 @@ def main():
     print(f"\n📤 Uploading: {video_path.name} ({file_size/1024/1024:.1f} MB)")
     print(f"   Title:   {args.title}")
     print(f"   Privacy: {args.privacy}")
-    print(f"   Made for Kids: ON (forced)")
+    print("   Made for Kids: ON (forced)")
 
     media = MediaFileUpload(str(video_path), chunksize=-1, resumable=True)
     res = youtube.videos().insert(
@@ -205,7 +209,7 @@ def main():
     ).execute()
 
     video_id = res["id"]
-    print(f"\n✅ Uploaded.")
+    print("\n✅ Uploaded.")
     print(f"   Video ID:  {video_id}")
     print(f"   Watch:     https://youtu.be/{video_id}")
     print(f"   Edit:      https://studio.youtube.com/video/{video_id}/edit")
@@ -239,8 +243,8 @@ def main():
                 print(f"   Likely a scope issue. Delete {TOKEN_PATH} and re-run.")
 
     if args.privacy == "unlisted":
-        print(f"\n📋 Status: UNLISTED — review the video in YouTube Studio.")
-        print(f"   When ready, flip privacy to PUBLIC in the Studio editor.")
+        print("\n📋 Status: UNLISTED — review the video in YouTube Studio.")
+        print("   When ready, flip privacy to PUBLIC in the Studio editor.")
 
 
 if __name__ == "__main__":

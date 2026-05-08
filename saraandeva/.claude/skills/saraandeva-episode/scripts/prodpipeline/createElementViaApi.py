@@ -27,7 +27,14 @@ Tag IDs: o_101 Hottest, o_102 Character, o_103 Animal, o_104 Item,
 Note: Kling rejects refer_images with 0 entries — duplicate frontal if no
 refers given.
 """
-import argparse, base64, hashlib, hmac, json, os, sys, time
+import argparse
+import base64
+import hashlib
+import hmac
+import json
+import os
+import sys
+import time
 from pathlib import Path
 from urllib.request import Request, urlopen
 from urllib.error import HTTPError

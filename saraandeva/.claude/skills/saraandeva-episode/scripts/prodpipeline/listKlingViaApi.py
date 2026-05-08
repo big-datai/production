@@ -12,7 +12,15 @@ Usage:
   python3 listKlingViaApi.py --balance                           # remaining trial-pack units
   python3 listKlingViaApi.py --all                               # all of the above
 """
-import argparse, base64, datetime, hashlib, hmac, json, os, sys, time
+import argparse
+import base64
+import datetime
+import hashlib
+import hmac
+import json
+import os
+import sys
+import time
 from pathlib import Path
 from urllib.request import Request, urlopen
 from urllib.error import HTTPError, URLError

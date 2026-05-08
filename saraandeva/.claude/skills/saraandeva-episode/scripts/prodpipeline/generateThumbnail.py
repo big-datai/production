@@ -15,7 +15,11 @@ Usage:
   python3 generateThumbnail.py --episode=10 --title "..." --hero=14 --time=3.0
   python3 generateThumbnail.py <ep_dir> --title "..." [--subtitle "Sara & Eva"]
 """
-import argparse, os, re, subprocess, sys, time
+import argparse
+import re
+import subprocess
+import sys
+import time
 from pathlib import Path
 
 PROJECT_ROOT = Path("/Volumes/Samsung500/goreadling-production/saraandeva")
@@ -59,7 +63,7 @@ def main():
         print(f"   Available: {avail}", file=sys.stderr)
         sys.exit(1)
 
-    print(f"🖼  Thumbnail recipe")
+    print("🖼  Thumbnail recipe")
     print(f"   hero clip:   {args.hero}.mp4 @ {args.time}s")
     print(f"   title:       \"{args.title}\"")
     print(f"   subtitle:    \"{args.subtitle}\"")
