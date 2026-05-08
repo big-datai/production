@@ -9,3 +9,13 @@ content/episodes/*/auto_fix_plan_v*.json
 
 # Submit/scratch dirs (already had these as untracked)
 content/episodes/.submit-*/
+
+# Episode deliverable mp4s (too large for git; rebuild from clips/ + assembleEpisode.py)
+season_01/episode_*/ep*.mp4
+content/episodes/*/ep*_assembled.mp4
+content/episodes/*/clips/*.mp4
+content/episodes/*/clips/.with_audio_v*/
+content/episodes/*/clips/.originals/
+
+# YouTube upload tokens (never commit)
+**/token-*.json
