@@ -1,0 +1,89 @@
+{
+  "episode": 14,
+  "beat": 7,
+  "clip": 7,
+  "title": "FLASHBACK — first conversation at cafe",
+  "mode": "omni",
+  "durationSec": 10,
+  "quality": "720p",
+  "nativeAudio": true,
+  "expectedCredits": 90,
+  "subjects": [
+    "young_Papa",
+    "young_Mama"
+  ],
+  "scene": "ep14-cafe-mams-country",
+  "boundElements": [
+    {
+      "tag": "young_Papa",
+      "source": "library"
+    },
+    {
+      "tag": "young_Mama",
+      "source": "library"
+    },
+    {
+      "tag": "ep14-cafe-mams-country",
+      "source": "library"
+    }
+  ],
+  "prompt": [
+    "Cast LOCKS: @young_Papa: 100% HUMAN HEAD, bald + dark beard + glasses (10 years younger but same identity). Brown leather backpack, navy henley + olive cargo pants, small DSLR camera in right hand. @young_Mama: straight blonde hair, fair skin (10 years younger but same identity), mustard-yellow knit sweater + cream pleated skirt + ankle boots, small leather crossbody bag.",
+    "Shot 1 (0-4s, soft MCU on @young_Mama looking up) — @young_Mama's HEAD LIFTS from her book, her eyes MEET @young_Papa standing beside her table with backpack still on. Her mouth SMILES wide warm and friendly.",
+    "Shot 2 (4-7s, OTS over @young_Mama's shoulder to @young_Papa) — @young_Papa's right HAND GESTURES at the empty chair across from her with a polite questioning look. @young_Papa, warm friendly: \"Is anyone sitting here?\"",
+    "Shot 3 (7-10s, two-shot at the table, both seated) — @young_Mama gestures yes, @young_Papa sets his backpack down and sits. Their eyes hold contact across the table. @young_Mama's mouth SOFTENS into a long warm smile."
+  ],
+  "negativePrompt": [
+    "duplicate character",
+    "twin",
+    "clone",
+    "two of the same",
+    "mirrored figure",
+    "second sara",
+    "two sara",
+    "second eva",
+    "two eva",
+    "third child",
+    "extra child in background",
+    "ghost figure",
+    "ghost kid",
+    "shadow children",
+    "three arms",
+    "third arm",
+    "extra arm",
+    "extra hand",
+    "floating hand",
+    "anatomy error",
+    "morphing",
+    "flickering",
+    "disfigured",
+    "distorted",
+    "extra face",
+    "unstable motion",
+    "papa standing still",
+    "mama standing still",
+    "scary face",
+    "frightening expression",
+    "horror lighting",
+    "scary monster",
+    "blood",
+    "red liquid",
+    "dark shadows",
+    "predatory",
+    "dutch angle",
+    "handheld shake",
+    "whip pan",
+    "jump cut",
+    "eva with brown hair",
+    "eva with red hair",
+    "eva brunette",
+    "sara in ponytail",
+    "young papa as different person",
+    "young mama as different person",
+    "younger versions look like other people",
+    "papa with hair on head",
+    "papa not bald",
+    "young papa with full head of hair",
+    "other cafe customers"
+  ]
+}

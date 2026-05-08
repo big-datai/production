@@ -1,0 +1,97 @@
+{
+  "episode": 14,
+  "beat": 21,
+  "clip": 21,
+  "title": "PARENT-ACTIVITY — baby Sara is born, hospital",
+  "mode": "omni",
+  "durationSec": 15,
+  "quality": "720p",
+  "nativeAudio": true,
+  "expectedCredits": 90,
+  "subjects": [
+    "young_Papa",
+    "young_Mama",
+    "baby_Sara"
+  ],
+  "scene": "ep14-hospital-birth-room",
+  "boundElements": [
+    {
+      "tag": "young_Papa",
+      "source": "library"
+    },
+    {
+      "tag": "young_Mama",
+      "source": "library"
+    },
+    {
+      "tag": "baby_Sara",
+      "source": "library"
+    },
+    {
+      "tag": "ep14-hospital-birth-room",
+      "source": "library"
+    }
+  ],
+  "prompt": [
+    "Cast LOCKS: @young_Papa: 100% HUMAN HEAD, bald + dark beard + glasses (10 years younger but same identity). Brown leather backpack, navy henley + olive cargo pants, small DSLR camera in right hand. @young_Mama: straight blonde hair, fair skin (10 years younger but same identity), mustard-yellow knit sweater + cream pleated skirt + ankle boots, small leather crossbody bag. @baby_Sara: newborn baby (less than 1 day old), wavy dark-blonde wisps already showing on her tiny head, brown eyes closed sleeping, swaddled in soft pink-with-clouds blanket.",
+    "Shot 1 (0-4s, wide soft pastel hospital recovery room) — @young_Mama in hospital bed in a soft white nightgown, holding @baby_Sara to her chest. @young_Papa sits on the edge of the bed beside her, his right HAND GENTLY TOUCHING @baby_Sara's tiny head.",
+    "Shot 2 (4-9s, soft MCU on the new family) — @young_Mama's mouth SMILES exhausted-happy, her eyes FULL of tears of joy. @young_Papa's mouth WHISPERS soft, his ARM AROUND @young_Mama's shoulders. @baby_Sara softly STIRS in her swaddle, her tiny FIST UNCURLS once.",
+    "Shot 3 (9-15s, slow push-in tight on @baby_Sara's face) — @baby_Sara's eyes SLOWLY OPEN for the first time. @young_Mama, whispered: \"Hi, little Sara.\" @young_Papa, soft warm tears in voice: \"Welcome to the world.\""
+  ],
+  "negativePrompt": [
+    "duplicate character",
+    "twin",
+    "clone",
+    "two of the same",
+    "mirrored figure",
+    "second sara",
+    "two sara",
+    "second eva",
+    "two eva",
+    "third child",
+    "extra child in background",
+    "ghost figure",
+    "ghost kid",
+    "shadow children",
+    "three arms",
+    "third arm",
+    "extra arm",
+    "extra hand",
+    "floating hand",
+    "anatomy error",
+    "morphing",
+    "flickering",
+    "disfigured",
+    "distorted",
+    "extra face",
+    "unstable motion",
+    "papa standing still",
+    "mama standing still",
+    "scary face",
+    "frightening expression",
+    "horror lighting",
+    "scary monster",
+    "blood",
+    "red liquid",
+    "dark shadows",
+    "predatory",
+    "dutch angle",
+    "handheld shake",
+    "whip pan",
+    "jump cut",
+    "eva with brown hair",
+    "eva with red hair",
+    "eva brunette",
+    "sara in ponytail",
+    "young papa as different person",
+    "young mama as different person",
+    "younger versions look like other people",
+    "papa with hair on head",
+    "papa not bald",
+    "young papa with full head of hair",
+    "medical instruments visible",
+    "other babies",
+    "hospital staff",
+    "scary hospital"
+  ]
+}

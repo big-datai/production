@@ -1,0 +1,90 @@
+{
+  "episode": 14,
+  "beat": 13,
+  "clip": 13,
+  "title": "ROME — Colosseum + gelato",
+  "mode": "omni",
+  "durationSec": 10,
+  "quality": "720p",
+  "nativeAudio": true,
+  "expectedCredits": 90,
+  "subjects": [
+    "young_Papa",
+    "young_Mama"
+  ],
+  "scene": "ep14-rome-colosseum",
+  "boundElements": [
+    {
+      "tag": "young_Papa",
+      "source": "library"
+    },
+    {
+      "tag": "young_Mama",
+      "source": "library"
+    },
+    {
+      "tag": "ep14-rome-colosseum",
+      "source": "library"
+    }
+  ],
+  "prompt": [
+    "Cast LOCKS: @young_Papa: 100% HUMAN HEAD, bald + dark beard + glasses (10 years younger but same identity). Brown leather backpack, navy henley + olive cargo pants, small DSLR camera in right hand. @young_Mama: straight blonde hair, fair skin (10 years younger but same identity), mustard-yellow knit sweater + cream pleated skirt + ankle boots, small leather crossbody bag.",
+    "Shot 1 (0-4s, wide eye-level, sunny afternoon Rome) — @young_Papa and @young_Mama walking arm-in-arm in front of the Roman Colosseum. Each holds a small gelato cone in their free hand. @young_Mama's gelato is pink-strawberry, @young_Papa's is pistachio-green.",
+    "Shot 2 (4-7s, MCU on @young_Mama tasting gelato) — @young_Mama's mouth SMILES wide as her tongue LICKS the gelato cone. Her eyes SPARKLE.",
+    "Shot 3 (7-10s, two-shot, @young_Papa offers his cone) — @young_Papa offers his pistachio gelato to @young_Mama, his right HAND EXTENDS the cone. @young_Mama's mouth LAUGHS, she leans in and takes a tiny lick. @young_Papa, playful: \"Best gelato in Roma!\""
+  ],
+  "negativePrompt": [
+    "duplicate character",
+    "twin",
+    "clone",
+    "two of the same",
+    "mirrored figure",
+    "second sara",
+    "two sara",
+    "second eva",
+    "two eva",
+    "third child",
+    "extra child in background",
+    "ghost figure",
+    "ghost kid",
+    "shadow children",
+    "three arms",
+    "third arm",
+    "extra arm",
+    "extra hand",
+    "floating hand",
+    "anatomy error",
+    "morphing",
+    "flickering",
+    "disfigured",
+    "distorted",
+    "extra face",
+    "unstable motion",
+    "papa standing still",
+    "mama standing still",
+    "scary face",
+    "frightening expression",
+    "horror lighting",
+    "scary monster",
+    "blood",
+    "red liquid",
+    "dark shadows",
+    "predatory",
+    "dutch angle",
+    "handheld shake",
+    "whip pan",
+    "jump cut",
+    "eva with brown hair",
+    "eva with red hair",
+    "eva brunette",
+    "sara in ponytail",
+    "young papa as different person",
+    "young mama as different person",
+    "younger versions look like other people",
+    "papa with hair on head",
+    "papa not bald",
+    "young papa with full head of hair",
+    "tourist crowds",
+    "background pedestrians"
+  ]
+}

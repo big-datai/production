@@ -1,0 +1,97 @@
+{
+  "episode": 14,
+  "beat": 20,
+  "clip": 20,
+  "title": "TRAVEL WITH JOE — Joe peeking from carry bag at landmark",
+  "mode": "omni",
+  "durationSec": 10,
+  "quality": "720p",
+  "nativeAudio": true,
+  "expectedCredits": 90,
+  "subjects": [
+    "young_Papa",
+    "young_Mama",
+    "Joe"
+  ],
+  "scene": "ep14-rome-colosseum",
+  "boundElements": [
+    {
+      "tag": "young_Papa",
+      "source": "library"
+    },
+    {
+      "tag": "young_Mama",
+      "source": "library"
+    },
+    {
+      "tag": "Joe",
+      "source": "library"
+    },
+    {
+      "tag": "ep14-rome-colosseum",
+      "source": "library"
+    }
+  ],
+  "prompt": [
+    "Cast LOCKS: @young_Papa: 100% HUMAN HEAD, bald + dark beard + glasses (10 years younger but same identity). Brown leather backpack, navy henley + olive cargo pants, small DSLR camera in right hand. @young_Mama: straight blonde hair, fair skin (10 years younger but same identity), mustard-yellow knit sweater + cream pleated skirt + ankle boots, small leather crossbody bag. @Joe: adult fluffy cream-and-gold Pomeranian (now grown up from puppy version).",
+    "Shot 1 (0-4s, wide medium, both at a generic European landmark) — @young_Papa and @young_Mama walking together at a sunny European piazza, @young_Mama carrying a soft pet carrier bag over her shoulder. @Joe's fluffy face PEEKS OUT from the top of the carrier, his tongue OUT panting happy.",
+    "Shot 2 (4-7s, MCU on @Joe in the carrier) — @Joe's HEAD TURNS to look at the landmark, his ears PERK UP, his tongue OUT. He looks like a tiny travel mascot.",
+    "Shot 3 (7-10s, two-shot, all three smiling) — @young_Papa's left HAND PETS @Joe's head through the carrier opening, @young_Mama's mouth LAUGHS happy."
+  ],
+  "negativePrompt": [
+    "duplicate character",
+    "twin",
+    "clone",
+    "two of the same",
+    "mirrored figure",
+    "second sara",
+    "two sara",
+    "second eva",
+    "two eva",
+    "third child",
+    "extra child in background",
+    "ghost figure",
+    "ghost kid",
+    "shadow children",
+    "three arms",
+    "third arm",
+    "extra arm",
+    "extra hand",
+    "floating hand",
+    "anatomy error",
+    "morphing",
+    "flickering",
+    "disfigured",
+    "distorted",
+    "extra face",
+    "unstable motion",
+    "papa standing still",
+    "mama standing still",
+    "scary face",
+    "frightening expression",
+    "horror lighting",
+    "scary monster",
+    "blood",
+    "red liquid",
+    "dark shadows",
+    "predatory",
+    "dutch angle",
+    "handheld shake",
+    "whip pan",
+    "jump cut",
+    "eva with brown hair",
+    "eva with red hair",
+    "eva brunette",
+    "sara in ponytail",
+    "young papa as different person",
+    "young mama as different person",
+    "younger versions look like other people",
+    "papa with hair on head",
+    "papa not bald",
+    "young papa with full head of hair",
+    "puppy joe in this clip",
+    "tiny puppy",
+    "joe in costume",
+    "other dogs"
+  ]
+}

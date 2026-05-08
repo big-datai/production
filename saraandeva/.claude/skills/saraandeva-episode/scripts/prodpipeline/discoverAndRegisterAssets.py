@@ -89,45 +89,90 @@ def kling_get(path: str, token: str):
 
 
 # ─── filename parser ────────────────────────────────────────────────────────
-# Returns (kind, registry_key, kling_name, char_for_description) or (None, ...) if unrecognized.
+# Multi-word character names (snake_case in filenames)
+MULTI_WORD_CHARS = {
+    "young_papa": "young_Papa", "young_mama": "young_Mama",
+    "baby_sara": "baby_Sara", "baby_eva": "baby_Eva",
+    "puppy_joe": "puppy_Joe",
+    "mama_with_camera": "mama_with_camera",
+    "mrs_patel": "Mrs_Patel",
+}
+SINGLE_WORD_CHARS = {
+    "papa": "Papa", "mama": "Mama", "sara": "Sara", "eva": "Eva",
+    "joe": "Joe", "ginger": "Ginger", "isabel": "Isabel",
+    "leo": "Leo", "lisa": "Lisa",
+    "mrspatel": "Mrs_Patel", "patel": "Mrs_Patel",
+}
+
+
+def _parse_costume_preview(name: str, ep_num: int):
+    """Try to parse name as group_ep<NN>_<char>_<costume>_preview.
+    Handle both single-word and multi-word char names by greedy-matching
+    against known multi-word chars first.
+    """
+    ep_pat = f"ep{ep_num:02d}"
+    if not name.startswith(f"group_{ep_pat}_") or not name.endswith("_preview"):
+        return None
+    middle = name[len(f"group_{ep_pat}_"):-len("_preview")]
+    # Try multi-word chars first (longer match wins)
+    for snake, char in sorted(MULTI_WORD_CHARS.items(), key=lambda x: -len(x[0])):
+        if middle.startswith(snake + "_"):
+            costume = middle[len(snake) + 1:]
+            return char, costume
+    # Then single-word chars
+    parts = middle.split("_", 1)
+    if len(parts) == 2:
+        char_lower, costume = parts
+        if char_lower in SINGLE_WORD_CHARS:
+            return SINGLE_WORD_CHARS[char_lower], costume
+    return None
+
+
+# Returns (kind, registry_key, kling_name, char_for_description) or (None, ...)
 # kind ∈ {"costume_preview", "scene", "group_still"}
 def parse_filename(p: Path, ep_num: int):
     name = p.stem
     ep_pat = rf"ep{ep_num:02d}"
 
-    # group_ep15_<char>_<costume>_preview
-    m = re.fullmatch(rf"group_{ep_pat}_(\w+?)_(\w+?)_preview", name)
-    if m:
-        char_lower = m.group(1).lower()
-        costume = m.group(2)
-        if char_lower in CANONICAL_CHARS:
-            char = {"papa": "Papa", "mama": "Mama", "sara": "Sara", "eva": "Eva",
-                    "joe": "Joe", "ginger": "Ginger", "isabel": "Isabel",
-                    "leo": "Leo", "lisa": "Lisa",
-                    "mrspatel": "Mrs_Patel", "patel": "Mrs_Patel"}.get(char_lower)
-            if not char: return None
-            registry_key = f"ep{ep_num:02d}_{char}" if char != "Mrs_Patel" else "Mrs_Patel"
-            kling_name = f"{char}_HW_{costume.title()}" if char != "Mrs_Patel" else "Mrs_Patel"
-            return ("costume_preview", registry_key, kling_name, char)
+    # 1. group_ep<NN>_<char>_<costume>_preview (single + multi-word chars)
+    parsed = _parse_costume_preview(name, ep_num)
+    if parsed:
+        char, costume = parsed
+        registry_key = f"ep{ep_num:02d}_{char}" if char != "Mrs_Patel" else "Mrs_Patel"
+        # Kling element name capped at 20 chars
+        if char == "Mrs_Patel":
+            kling_name = "Mrs_Patel"
+        else:
+            kling_name = f"{char}_HW_{costume.title().replace('_','')}"[:20]
+        return ("costume_preview", registry_key, kling_name, char)
 
-    # group_ep15_clip17_the_find or group_ep15_clip13_isabel_yard_v1 → group still
+    # 2. group_ep<NN>_clip<N>_* → Pattern E group still
     m = re.fullmatch(rf"group_{ep_pat}_clip(\d+)_.*", name)
     if m:
         clip_n = int(m.group(1))
         registry_key = f"ep{ep_num:02d}-clip{clip_n}-group-still"
-        kling_name = f"ep{ep_num:02d}_c{clip_n}_group"   # ≤20 chars
+        kling_name = f"ep{ep_num:02d}_c{clip_n}_group"
         return ("group_still", registry_key, kling_name, f"Pattern E group still for clip {clip_n}")
 
-    # ep15_house4_isabel_cottage / ep15_house1_witch_cauldron → scene
+    # 3. ep<NN>_house<N>_<theme> → numbered house scene (legacy ep15 pattern)
     m = re.fullmatch(rf"{ep_pat}_house(\d+)_(\w+)", name)
     if m:
         house_n = int(m.group(1))
         theme = m.group(2)
         registry_key = f"ep{ep_num:02d}-house{house_n}-{theme.replace('_', '-')}"
-        # short name ≤ 20 chars
         short_theme = re.sub(r"_[a-z]+$", "", theme)[:6]
         kling_name = f"ep{ep_num:02d}_h{house_n}_{short_theme}"[:20]
         return ("scene", registry_key, kling_name, f"House {house_n} {theme} scene for ep{ep_num:02d}")
+
+    # 4. ep<NN>_<anything> → generic scene (uploaded to GCS only, no element_create needed —
+    #    scenes go in image_list as direct GCS URLs, NOT element_list)
+    m = re.fullmatch(rf"{ep_pat}_([\w_]+)", name)
+    if m:
+        slug = m.group(1)
+        registry_key = f"ep{ep_num:02d}-{slug.replace('_', '-')}"
+        # No Kling element create needed for scene PNGs (they're image_list URLs).
+        # Return None for kling_name to signal "GCS upload only, skip element create".
+        return ("scene", registry_key, None, f"Scene PNG: ep{ep_num:02d} {slug.replace('_', ' ')}")
 
     return None
 
@@ -218,10 +263,13 @@ def process_asset(p: Path, ep_num: int, registry: dict, kling_by_name: dict,
     if not parsed:
         return {"file": p.name, "status": "unrecognized"}
     kind, registry_key, kling_name, char_or_desc = parsed
-    out = {"file": p.name, "kind": kind, "registry_key": registry_key, "kling_name": kling_name}
+    out = {"file": p.name, "kind": kind, "registry_key": registry_key, "kling_name": kling_name or "(scene-only)"}
 
-    # Step A: GCS
-    obj = gcs_object_name(ep_num, kling_name, kind)
+    # Step A: GCS — for scene-only (kling_name=None), use the original filename as GCS object
+    if kling_name is None:
+        obj = f"ep{ep_num:02d}/{p.stem}.png"
+    else:
+        obj = gcs_object_name(ep_num, kling_name, kind)
     if not gcs_exists(obj):
         if not gcs_upload(p, obj, args.dry_run):
             out["status"] = "gcs_upload_failed"; return out
@@ -229,7 +277,12 @@ def process_asset(p: Path, ep_num: int, registry: dict, kling_by_name: dict,
     else:
         out["gcs"] = "exists"
 
-    # Step B: Kling element lookup (exact, then prefix-match for HW costume shorthand)
+    # Step B: Kling element lookup — skip if kling_name is None (scene-only file)
+    if kling_name is None:
+        out["kling"] = "n/a (scene PNG, image_list only)"
+        out["registry"] = "n/a"
+        out["status"] = "ok"
+        return out
     eid = kling_by_name.get(kling_name)
     if not eid and kind == "costume_preview":
         # Try <Char>_HW_<*> prefix match (Kling element names cap at 20 chars,

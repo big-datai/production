@@ -1,0 +1,170 @@
+{
+  "episode": 14,
+  "title": "Sara and Eva 💕 10 Years of Love — Anniversary Special",
+  "logline": "Anniversary day. Dad sits Sara + Eva on the cozy couch with hot chocolate and tells them the story of how he met Mom 10 years ago — a short but unforgettable meeting in a charming cafe while Dad was traveling in Mom's home country. The story unfolds in flashback: phone calls across continents, monthly reunions, a European road trip through Germany, gelato at the Colosseum in Rome, first skis in Bulgaria, and Mom's lifelong dream — Disneyland Paris (where Dad surprised her). Wedding day, birthday cake, the gift of a tiny puppy named Joe in a box. Travel with Joe to more countries. Sara is born, then Eva, then Ginger joins. Back in the present, Dad reveals his anniversary gift — a brand new VIDEO CAMERA — because Mom loves making videos and helping people work out the right way. Mom comes home to a surprise. Sara + Eva sing a 2-minute Happy Anniversary song on piano while Mom and Papa hold each other with happy tears. Final cliffhanger camera-ask: 'What's YOUR favorite family memory?'",
+  "formulaReference": "10-year anniversary special × Pixar 'Up'-style love-story flashback × Bluey 'family bedtime story' format × autobiographical warmth. Episode is talkier and more sentimental than typical Sara&Eva adventures — closer to Bluey 'Sleepytime' / Pixar 'Up' opening montage emotional register. Travel beats hit specific destinations (Germany, Rome, Bulgaria ski, Disneyland Paris). Mom's home country stays unnamed (generic charming European cafe vibe) per user direction. Joe origin story: anniversary-eve birthday gift to Mom, in a gift box as a Pomeranian puppy. Disneyland Paris is Mom's lifelong dream — Dad's first big surprise gift, emotional standout. Final 2-minute song block has Sara + Eva as lead vocalists — kid voices over piano + glockenspiel — performed for Mom and Papa.",
+  "mode": "omni",
+  "durationTotal": "~10:00 (28 narrative clips × 10s = 280s + 2 × 15s parent-active = 30s + music block 120s = 430s ≈ 7:10 + intro 31s + outro 20s + camera-ask 10s ≈ 8:31. Buffer to ~10 min via slower pacing on emotional beats)",
+  "expectedCreditsTotal": 270,
+  "expectedCreditsBreakdown": "31 numeric clips × 8 cr (10s std-mode + sound:on) = 248 cr + 2 parent-active 15s × 13 cr = 26 cr — total ~274 cr base. Music block visual = 2 letter clips at 8 cr each = 16 cr. Grand total ~290 cr ≈ $29 at trial pack. Within 2200-cr abort threshold.",
+  "expectedCreditsAbortThreshold": 2200,
+  "newBoundElements": [
+    {
+      "tag": "young_Papa",
+      "source": "library",
+      "asset": "assets/scenes/group_ep14_young_papa_traveler_preview.png",
+      "purpose": "Papa 10 years younger — same bald head, dark beard, glasses, same friendly eyes. Wears a brown leather backpack on his shoulders, navy henley + dark olive cargo pants, carries a small DSLR camera in his right hand. Used in flashback clips: cafe meeting, phone calls, all travel destinations (Germany road, Rome, Bulgaria ski, Disney). The young-traveler version of Papa for the dating phase before kids."
+    },
+    {
+      "tag": "young_Mama",
+      "source": "library",
+      "asset": "assets/scenes/group_ep14_young_mama_cafe_preview.png",
+      "purpose": "Mama 10 years younger — same straight blonde hair, fair skin, same warm friendly smile. Wears a soft mustard-yellow knitted sweater + cream pleated skirt + ankle boots, carries a small leather crossbody bag. Reading a book at the cafe in her home country. Used across cafe meeting, phone calls, monthly reunions, all travel destinations, wedding (changes to white dress for that one beat)."
+    },
+    {
+      "tag": "baby_Sara",
+      "source": "library",
+      "asset": "assets/scenes/group_ep14_baby_sara_preview.png",
+      "purpose": "Sara as a newborn baby + 1-2yo toddler — wavy dark-blonde wisps already showing, big brown eyes, cherub face, dressed in soft pastel onesie (pink-with-clouds for newborn beat, lavender with white tights for toddler beat). Used in clip 23 (born) + clip 24 (toddler first steps with Joe)."
+    },
+    {
+      "tag": "baby_Eva",
+      "source": "library",
+      "asset": "assets/scenes/group_ep14_baby_eva_preview.png",
+      "purpose": "Eva as a newborn baby + 1yo toddler — curly bright-blonde tufts already showing, big round face, dressed in lemon-yellow onesie. Used in clip 25 (born) where Sara meets her in the crib."
+    },
+    {
+      "tag": "puppy_Joe",
+      "source": "library",
+      "asset": "assets/scenes/group_ep14_puppy_joe_giftbox_preview.png",
+      "purpose": "Joe as a 2-month-old Pomeranian puppy — same fluffy cream-and-gold coat as adult Joe but tiny, paw-sized, with oversized ears and bright button eyes. Sitting inside an open gift box with a satin yellow ribbon, looking up. Used in clip 21 (Mom's birthday gift reveal). Differs from canonical adult Joe which appears in clip 22 (travel-with-Joe) onward."
+    },
+    {
+      "tag": "mama_with_camera",
+      "source": "library",
+      "asset": "assets/scenes/group_ep14_mama_with_camera_preview.png",
+      "purpose": "Present-day Mama in her workout/coaching outfit — straight blonde hair in a low ponytail, no costume hat (this is everyday Mama not ep15-Halloween-Cozy), holding the new black-and-silver mirrorless VIDEO CAMERA in both hands at chest height, mid-gasp happy-surprised expression. Used in clip 31 (gift reveal) + clip 32 (joy)."
+    }
+  ],
+  "newSceneElements": [
+    {
+      "tag": "ep14-cafe-mams-country",
+      "asset": "assets/scenes/ep14_cafe_mams_country.png",
+      "purpose": "Charming cobblestone-street European-style cafe exterior + cozy interior — warm wood interior, chalkboard menu, hanging brass pendants over small marble tables, autumn maple leaves visible through the window. Generic European feel (no country-specific landmark). Used clips 5, 6, 7, 8."
+    },
+    {
+      "tag": "ep14-german-autumn-road",
+      "asset": "assets/scenes/ep14_german_autumn_road.png",
+      "purpose": "Autumn road through south-German countryside — cobblestone-paved village road + winding through vineyards + a Bavarian-style castle visible on a hilltop in the soft background. Romantische Strasse vibe. Used clip 11 (Germany road trip)."
+    },
+    {
+      "tag": "ep14-rome-colosseum",
+      "asset": "assets/scenes/ep14_rome_colosseum.png",
+      "purpose": "Wide medium shot of the Roman Colosseum on a sunny afternoon, soft blue sky, cypress trees framing left, gelato cart blurred in foreground. Used clip 12 (Rome gelato)."
+    },
+    {
+      "tag": "ep14-bulgaria-ski-slope",
+      "asset": "assets/scenes/ep14_bulgaria_ski_slope.png",
+      "purpose": "Snowy beginner ski slope in the Pirin Mountains (Bansko vibe) — pine trees on the sides, pastel-blue sky, gondola cables visible faintly behind. Used clip 13 (Bulgaria first-ski)."
+    },
+    {
+      "tag": "ep14-disney-paris-castle",
+      "asset": "assets/scenes/ep14_disney_paris_castle.png",
+      "purpose": "Disneyland Paris Sleeping Beauty Castle at golden-hour with a sky full of soft fireworks bursts — pink-and-purple romantic palette, twinkling park lights below. Mom's lifelong dream. Used clip 14 (Disney Paris)."
+    },
+    {
+      "tag": "ep14-wedding-garden",
+      "asset": "assets/scenes/ep14_wedding_garden.png",
+      "purpose": "Outdoor garden wedding archway — white peonies + green ivy archway, cream-petal aisle, soft white lanterns from trees, golden-hour light. Secular ceremony venue. No religious symbols. Used clip 16."
+    },
+    {
+      "tag": "ep14-hospital-birth-room",
+      "asset": "assets/scenes/ep14_hospital_birth_room.png",
+      "purpose": "Warm pastel hospital recovery room — soft blue blanket on the bed, pink balloons, a window with afternoon light, gentle yellow-cream walls. No clinical feel (kid-show appropriate). Used clip 23 (Sara born) + clip 25 (Eva born)."
+    },
+    {
+      "tag": "ep14-anniversary-living-room",
+      "asset": "assets/scenes/ep14_anniversary_living_room.png",
+      "purpose": "Cozy modern living room dressed for anniversary celebration — string of golden twinkling fairy lights along the mantel, heart-shaped balloon arrangement in soft pastels (cream, dusty-rose, sage), photo collage on the wall (visible: family photos), warm orange floor lamp glow, beige sectional couch with autumn-orange throw blanket, low coffee table with two mugs of hot chocolate + a small ribbon-wrapped gift box. Used clips 1-4 (Act 1 storytelling) + clips 28-30 (Act 3 reveal) + clips 33-34 (music block) + clip 35 (camera-ask)."
+    }
+  ],
+  "reusedBoundElements": [
+    "Sara, Eva — current 7yo and 3yo (canonical avatars, used in Act 1 + Act 3 + music block + camera-ask)",
+    "Mama, Papa — present-day adults (used in Act 1 + Act 3, no costume just everyday)",
+    "Joe — adult Pomeranian (used in clip 22 travel-with-Joe + clip 24 toddler-Sara-and-Joe + Act 3 home scenes)",
+    "Ginger — Jack Russell (used in clip 26 ginger-joins-family + Act 3)"
+  ],
+  "scenes": [
+    "ep14-anniversary-living-room",
+    "ep14-cafe-mams-country",
+    "ep14-german-autumn-road",
+    "ep14-rome-colosseum",
+    "ep14-bulgaria-ski-slope",
+    "ep14-disney-paris-castle",
+    "ep14-wedding-garden",
+    "ep14-hospital-birth-room"
+  ],
+  "cast": [
+    "Sara",
+    "Eva",
+    "Mama",
+    "Papa",
+    "Joe",
+    "Ginger",
+    "young_Papa",
+    "young_Mama",
+    "baby_Sara",
+    "baby_Eva",
+    "puppy_Joe",
+    "mama_with_camera"
+  ],
+  "papaActiveBeat": "Clip 11 — @young_Papa with @young_Mama in autumn German countryside, his right ARM POINTS toward the castle on the hill, his left HAND HOLDS the steering wheel of the open convertible. ~15s. Body-part-CAPS template per lesson_kling_papa_active_prompt_template.md.",
+  "fourthWallAsks": [
+    {
+      "clip": 2,
+      "ask": "Did YOU know what an anniversary is?",
+      "context": "Sara + Eva curious on couch"
+    },
+    {
+      "clip": 17,
+      "ask": "Has YOUR family ever been on a big trip?",
+      "context": "After Disneyland Paris emotional beat"
+    },
+    {
+      "clip": 31,
+      "ask": "What's the BEST gift YOU ever gave someone?",
+      "context": "Right after camera reveal"
+    },
+    {
+      "clip": 35,
+      "ask": "What's YOUR favorite family memory? Tell us!",
+      "context": "Final cliffhanger"
+    }
+  ],
+  "musicBlock": {
+    "clips": [
+      "A",
+      "B"
+    ],
+    "songLyric": "content/episodes/ep14/lyrics_anniversary.md",
+    "songMp3": "content/episodes/ep14/anniversary_song.mp3",
+    "blockType": "anniversary-girls-singing",
+    "blockUsage": "Two letter clips A + B alternated under one Suno song 'Happy Anniversary Mama and Papa'. A = Sara at piano + Eva standing, both singing into microphone, Mom + Papa watching with tears of joy. B = family slow-dance hug during chorus, Joe + Ginger at parents' feet. Loop A→B → A→B... ×3 = 60-90s × 2 to fill 120s (2 min) total music block."
+  },
+  "continuity": {
+    "youngPapa": "Papa 10 years younger — same bald head and dark beard but no glasses (got them later) OR with the same glasses, friendly traveling photographer with backpack + DSLR. Decision: keep glasses (Papa identity anchor).",
+    "youngMama": "Mama 10 years younger — same straight blonde hair (longer maybe), fair skin, friendly smile. Local in her own home country, knows the cafe, confident.",
+    "babySara": "Sara as a 0-2yo with already-visible wavy dark-blonde wisps + brown eyes. Differs from current 7yo Sara only in size/age.",
+    "babyEva": "Eva as a 0-1yo with already-visible curly bright-blonde tufts + brown eyes. Sara is older sister meeting her in crib.",
+    "puppyJoe": "Joe as 2-month-old Pomeranian puppy — fluffy cream-gold same as adult Joe, paw-sized, oversized ears. Birthday-gift moment is canonical Joe origin.",
+    "mamaCamera": "Present-day Mama with the brand new mirrorless VIDEO CAMERA gift — first appears clip 31. Connects to Mom's videos coaching workouts.",
+    "anniversaryRoom": "Anniversary-decorated living room used as bookend frame for the storytelling — Act 1 Dad tells story, Act 3 reveals camera. Same set."
+  },
+  "youtubeMetadata": {
+    "primaryTitle": "Sara and Eva 💕 10 Years of Love — Anniversary Special",
+    "fallbackTitleNoEmoji": "Sara and Eva — Ep 14: 10 Years of Love (Anniversary Special)",
+    "primaryTitleCharCount": 53,
+    "playlist": "Season 1",
+    "thumbnailRecipe": "Frame from clip 14 (Disneyland Paris) — young Mom + Dad with mouse ears, castle and fireworks behind — Pillow Impact-yellow text overlay '10 YEARS OF LOVE 💕'. Or fallback: clip 33 (Sara + Eva singing at piano, Mom + Papa hugging in background). Choose the more emotionally resonant frame after eyeball."
+  }
+}

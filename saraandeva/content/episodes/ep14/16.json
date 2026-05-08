@@ -1,0 +1,92 @@
+{
+  "episode": 14,
+  "beat": 16,
+  "clip": 16,
+  "title": "WEDDING DAY — happy tears at altar",
+  "mode": "omni",
+  "durationSec": 10,
+  "quality": "720p",
+  "nativeAudio": true,
+  "expectedCredits": 90,
+  "subjects": [
+    "young_Papa",
+    "young_Mama"
+  ],
+  "scene": "ep14-wedding-garden",
+  "boundElements": [
+    {
+      "tag": "young_Papa",
+      "source": "library"
+    },
+    {
+      "tag": "young_Mama",
+      "source": "library"
+    },
+    {
+      "tag": "ep14-wedding-garden",
+      "source": "library"
+    }
+  ],
+  "prompt": [
+    "Cast LOCKS: @young_Papa: 100% HUMAN HEAD, bald + dark beard + glasses (10 years younger but same identity). Brown leather backpack, navy henley + olive cargo pants, small DSLR camera in right hand. @young_Mama: straight blonde hair, fair skin (10 years younger but same identity), mustard-yellow knit sweater + cream pleated skirt + ankle boots, small leather crossbody bag.",
+    "Wedding outfits: @young_Papa in a charcoal suit with white shirt + soft cream tie. @young_Mama in a simple flowing white wedding dress with delicate lace neckline + small floral hair pin in her hair. Both at the garden archway of the garden archway.",
+    "Shot 1 (0-4s, wide medium on the couple at altar) — @young_Papa center-left, @young_Mama center-right, both holding hands facing each other. Soft golden-hour afternoon light through trees.",
+    "Shot 2 (4-7s, MCU on @young_Mama with happy tears) — @young_Mama's eyes FILL with tears, her mouth SMILES through them. Her right HAND SQUEEZES @young_Papa's left HAND.",
+    "Shot 3 (7-10s, OTS over @young_Mama's shoulder to @young_Papa) — @young_Papa's eyes GLOSS WET, his mouth SOFT happy smile. @young_Papa: \"I do.\" @young_Mama, soft tear-laugh: \"I do too.\""
+  ],
+  "negativePrompt": [
+    "duplicate character",
+    "twin",
+    "clone",
+    "two of the same",
+    "mirrored figure",
+    "second sara",
+    "two sara",
+    "second eva",
+    "two eva",
+    "third child",
+    "extra child in background",
+    "ghost figure",
+    "ghost kid",
+    "shadow children",
+    "three arms",
+    "third arm",
+    "extra arm",
+    "extra hand",
+    "floating hand",
+    "anatomy error",
+    "morphing",
+    "flickering",
+    "disfigured",
+    "distorted",
+    "extra face",
+    "unstable motion",
+    "papa standing still",
+    "mama standing still",
+    "scary face",
+    "frightening expression",
+    "horror lighting",
+    "scary monster",
+    "blood",
+    "red liquid",
+    "dark shadows",
+    "predatory",
+    "dutch angle",
+    "handheld shake",
+    "whip pan",
+    "jump cut",
+    "eva with brown hair",
+    "eva with red hair",
+    "eva brunette",
+    "sara in ponytail",
+    "young papa as different person",
+    "young mama as different person",
+    "younger versions look like other people",
+    "papa with hair on head",
+    "papa not bald",
+    "young papa with full head of hair",
+    "wedding guests",
+    "officiant",
+    "other people"
+  ]
+}

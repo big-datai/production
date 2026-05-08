@@ -1,0 +1,96 @@
+{
+  "episode": 14,
+  "beat": 23,
+  "clip": 23,
+  "title": "Baby Eva is born, Sara meets her in crib",
+  "mode": "omni",
+  "durationSec": 10,
+  "quality": "720p",
+  "nativeAudio": true,
+  "expectedCredits": 90,
+  "subjects": [
+    "baby_Sara",
+    "baby_Eva",
+    "young_Mama"
+  ],
+  "scene": "ep14-hospital-birth-room",
+  "boundElements": [
+    {
+      "tag": "baby_Sara",
+      "source": "library"
+    },
+    {
+      "tag": "baby_Eva",
+      "source": "library"
+    },
+    {
+      "tag": "young_Mama",
+      "source": "library"
+    },
+    {
+      "tag": "ep14-hospital-birth-room",
+      "source": "library"
+    }
+  ],
+  "prompt": [
+    "Cast LOCKS: @young_Papa: 100% HUMAN HEAD, bald + dark beard + glasses (10 years younger but same identity). Brown leather backpack, navy henley + olive cargo pants, small DSLR camera in right hand. @young_Mama: straight blonde hair, fair skin (10 years younger but same identity), mustard-yellow knit sweater + cream pleated skirt + ankle boots, small leather crossbody bag. @baby_Sara: 2yo toddler at this point, lavender top, big curious eyes. @baby_Eva: newborn baby (less than 1 day old), curly bright-blonde tufts already showing, brown eyes closed sleeping, swaddled in soft yellow blanket.",
+    "Shot 1 (0-4s, wide soft pastel hospital room) — @young_Mama in hospital bed holding @baby_Eva. @baby_Sara on tiptoes at the edge of the bed peeking over the blanket at her new baby sister.",
+    "Shot 2 (4-7s, MCU on @baby_Sara's curious face) — @baby_Sara's eyes WIDEN, her mouth FORMS a tiny O of wonder. @baby_Sara, soft toddler whisper: \"Baby!\"",
+    "Shot 3 (7-10s, soft three-shot, sisters meet) — @baby_Sara's right tiny HAND GENTLY TOUCHES @baby_Eva's swaddle. @baby_Eva STIRS, tiny mouth YAWNS. @young_Mama's mouth SMILES adoringly. @young_Mama, soft: \"This is your baby sister, Eva.\""
+  ],
+  "negativePrompt": [
+    "duplicate character",
+    "twin",
+    "clone",
+    "two of the same",
+    "mirrored figure",
+    "second sara",
+    "two sara",
+    "second eva",
+    "two eva",
+    "third child",
+    "extra child in background",
+    "ghost figure",
+    "ghost kid",
+    "shadow children",
+    "three arms",
+    "third arm",
+    "extra arm",
+    "extra hand",
+    "floating hand",
+    "anatomy error",
+    "morphing",
+    "flickering",
+    "disfigured",
+    "distorted",
+    "extra face",
+    "unstable motion",
+    "papa standing still",
+    "mama standing still",
+    "scary face",
+    "frightening expression",
+    "horror lighting",
+    "scary monster",
+    "blood",
+    "red liquid",
+    "dark shadows",
+    "predatory",
+    "dutch angle",
+    "handheld shake",
+    "whip pan",
+    "jump cut",
+    "eva with brown hair",
+    "eva with red hair",
+    "eva brunette",
+    "sara in ponytail",
+    "young papa as different person",
+    "young mama as different person",
+    "younger versions look like other people",
+    "papa with hair on head",
+    "papa not bald",
+    "young papa with full head of hair",
+    "other babies",
+    "hospital staff",
+    "young papa"
+  ]
+}

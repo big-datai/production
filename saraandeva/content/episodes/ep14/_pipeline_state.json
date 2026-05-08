@@ -1,0 +1,62 @@
+{
+  "uploads": {},
+  "elements": {},
+  "clipTasks": {
+    "clip_1": {
+      "task_id": "881538057974579249",
+      "external_task_id": "ep14-clip1-1778203569404",
+      "submitted_at": "2026-05-08T01:26:10Z",
+      "status": "submitted",
+      "element_order": [
+        "Sara",
+        "Eva",
+        "Papa"
+      ],
+      "image_urls": [
+        "https://storage.googleapis.com/saraandeva-kling-elements/ep14/ep14_anniversary_living_room.png"
+      ]
+    },
+    "clip_2": {
+      "task_id": "881538061803327566",
+      "external_task_id": "ep14-clip2-1778203570480",
+      "submitted_at": "2026-05-08T01:26:10Z",
+      "status": "submitted",
+      "element_order": [
+        "Sara",
+        "Eva",
+        "Papa"
+      ],
+      "image_urls": [
+        "https://storage.googleapis.com/saraandeva-kling-elements/ep14/ep14_anniversary_living_room.png"
+      ]
+    },
+    "clip_3": {
+      "task_id": "881538065381068807",
+      "external_task_id": "ep14-clip3-1778203571331",
+      "submitted_at": "2026-05-08T01:26:11Z",
+      "status": "submitted",
+      "element_order": [
+        "Sara",
+        "Eva",
+        "Papa"
+      ],
+      "image_urls": [
+        "https://storage.googleapis.com/saraandeva-kling-elements/ep14/ep14_anniversary_living_room.png"
+      ]
+    },
+    "clip_4": {
+      "task_id": "881538069067862101",
+      "external_task_id": "ep14-clip4-1778203572225",
+      "submitted_at": "2026-05-08T01:26:12Z",
+      "status": "submitted",
+      "element_order": [
+        "Papa"
+      ],
+      "image_urls": [
+        "https://storage.googleapis.com/saraandeva-kling-elements/ep14/ep14_anniversary_living_room.png"
+      ]
+    }
+  },
+  "clipDownloads": {},
+  "lastFrames": {}
+}

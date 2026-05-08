@@ -1,0 +1,90 @@
+{
+  "episode": 14,
+  "beat": 1,
+  "clip": 1,
+  "title": "Anniversary day — cozy couch establishing",
+  "mode": "omni",
+  "durationSec": 10,
+  "quality": "720p",
+  "nativeAudio": true,
+  "expectedCredits": 90,
+  "subjects": [
+    "Sara",
+    "Eva",
+    "Papa"
+  ],
+  "scene": "ep14-anniversary-living-room",
+  "boundElements": [
+    {
+      "tag": "Sara",
+      "source": "library"
+    },
+    {
+      "tag": "Eva",
+      "source": "library"
+    },
+    {
+      "tag": "Papa",
+      "source": "library"
+    },
+    {
+      "tag": "ep14-anniversary-living-room",
+      "source": "library"
+    }
+  ],
+  "prompt": [
+    "Cast LOCKS: @Sara: 7yo wavy dark-blonde, fair skin, brown eyes, casual home outfit (cream sweater + denim leggings). @Eva: 3yo curly bright-blonde, fair skin, brown eyes, soft-pink long-sleeve onesie. @Papa: 100% HUMAN HEAD, bald + dark beard + glasses, navy henley + dark jeans, no costumes. Mama: straight blonde hair, fair skin, sage-green knit sweater + dark jeans, friendly warm smile.",
+    "Multi-shot composition. Anniversary day inside the cozy decorated living room. Twinkling fairy lights along mantel, heart-shaped balloons in cream and dusty-rose pastels, photo collage on wall, warm orange floor-lamp glow.",
+    "Shot 1 (0-3s, wide eye-level, slow hand-held settle on the couch) — @Papa center sitting on the beige sectional couch, autumn-orange throw blanket over his lap, mug of hot chocolate in his right hand at chest height. @Sara curled at his left side hugging his arm, mug in her left hand. @Eva snuggled at his right side leaning against his shoulder, small mug in her hands.",
+    "Shot 2 (3-7s, soft medium close-up on Papa's warm face) — @Papa's mouth SMILES softly, his eyes CRINKLE in fond memory. @Papa, gentle warm dad-voice: \"Today is a very special day, my pumpkins.\"",
+    "Shot 3 (7-10s, slow pan to the small ribbon-wrapped gift box on coffee table, hold) — soft focus on the glittering ribbon, @Sara's voice off-screen: \"What's special, Papa?\""
+  ],
+  "negativePrompt": [
+    "duplicate character",
+    "twin",
+    "clone",
+    "two of the same",
+    "mirrored figure",
+    "second sara",
+    "two sara",
+    "second eva",
+    "two eva",
+    "third child",
+    "extra child in background",
+    "ghost figure",
+    "ghost kid",
+    "shadow children",
+    "three arms",
+    "third arm",
+    "extra arm",
+    "extra hand",
+    "floating hand",
+    "anatomy error",
+    "morphing",
+    "flickering",
+    "disfigured",
+    "distorted",
+    "extra face",
+    "unstable motion",
+    "papa standing still",
+    "mama standing still",
+    "scary face",
+    "frightening expression",
+    "horror lighting",
+    "scary monster",
+    "blood",
+    "red liquid",
+    "dark shadows",
+    "predatory",
+    "dutch angle",
+    "handheld shake",
+    "whip pan",
+    "jump cut",
+    "eva with brown hair",
+    "eva with red hair",
+    "eva brunette",
+    "sara in ponytail",
+    "mom in scene",
+    "mama in scene"
+  ]
+}

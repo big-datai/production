@@ -1,0 +1,92 @@
+{
+  "episode": 14,
+  "beat": 15,
+  "clip": 15,
+  "title": "DISNEYLAND PARIS — Mom's lifelong dream, emotional payoff",
+  "mode": "omni",
+  "durationSec": 10,
+  "quality": "720p",
+  "nativeAudio": true,
+  "expectedCredits": 90,
+  "subjects": [
+    "young_Papa",
+    "young_Mama"
+  ],
+  "scene": "ep14-disney-paris-castle",
+  "boundElements": [
+    {
+      "tag": "young_Papa",
+      "source": "library"
+    },
+    {
+      "tag": "young_Mama",
+      "source": "library"
+    },
+    {
+      "tag": "ep14-disney-paris-castle",
+      "source": "library"
+    }
+  ],
+  "prompt": [
+    "Cast LOCKS: @young_Papa: 100% HUMAN HEAD, bald + dark beard + glasses (10 years younger but same identity). Brown leather backpack, navy henley + olive cargo pants, small DSLR camera in right hand. @young_Mama: straight blonde hair, fair skin (10 years younger but same identity), mustard-yellow knit sweater + cream pleated skirt + ankle boots, small leather crossbody bag.",
+    "Both wearing iconic black mouse-ear headbands over their identity-locked outfits. Sleeping Beauty Castle in the background, golden-hour sky lit with soft fireworks.",
+    "Shot 1 (0-3s, low-angle wide on the castle with fireworks) — @young_Papa standing center-left, @young_Mama center-right, both looking up at the castle with awe. Their HANDS HOLD between them.",
+    "Shot 2 (3-6s, push-in on @young_Mama's face) — @young_Mama's eyes SLOWLY FILL with tears of joy, her mouth OPENS in a soft gasp, her HAND COVERS her mouth. @young_Mama, whispering: \"I... I can't believe it...\"",
+    "Shot 3 (6-10s, OTS on @young_Papa watching her) — @young_Papa's mouth SMILES adoringly, his right ARM WRAPS around her shoulders, his head TILTS to rest on top of hers. @young_Papa, soft: \"It was always your dream. Today I made it come true.\""
+  ],
+  "negativePrompt": [
+    "duplicate character",
+    "twin",
+    "clone",
+    "two of the same",
+    "mirrored figure",
+    "second sara",
+    "two sara",
+    "second eva",
+    "two eva",
+    "third child",
+    "extra child in background",
+    "ghost figure",
+    "ghost kid",
+    "shadow children",
+    "three arms",
+    "third arm",
+    "extra arm",
+    "extra hand",
+    "floating hand",
+    "anatomy error",
+    "morphing",
+    "flickering",
+    "disfigured",
+    "distorted",
+    "extra face",
+    "unstable motion",
+    "papa standing still",
+    "mama standing still",
+    "scary face",
+    "frightening expression",
+    "horror lighting",
+    "scary monster",
+    "blood",
+    "red liquid",
+    "dark shadows",
+    "predatory",
+    "dutch angle",
+    "handheld shake",
+    "whip pan",
+    "jump cut",
+    "eva with brown hair",
+    "eva with red hair",
+    "eva brunette",
+    "sara in ponytail",
+    "young papa as different person",
+    "young mama as different person",
+    "younger versions look like other people",
+    "papa with hair on head",
+    "papa not bald",
+    "young papa with full head of hair",
+    "other tourists at disney",
+    "park crowds",
+    "park staff"
+  ]
+}

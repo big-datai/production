@@ -270,6 +270,8 @@ def phase_elements(ep_num: int):
 
 
 # ─── Submit (Phase C) helpers ───────────────────────────────────────────────
+# Legacy ep15 hardcoded map (kept for backward compat). For new episodes, scenes
+# are auto-resolved from episode.json.newSceneElements via build_scene_map().
 SCENE_MANIFEST = {
     "front_house_fall":           "front_house_fall.png",
     "front_fence_sidewalk":       "front_fence_sidewalk.png",
@@ -281,6 +283,28 @@ SCENE_MANIFEST = {
     "ep15-clip13-group-still":    "ep15-clip13-group-still.png",
     "ep15-clip17-group-still":    "ep15-clip17-group-still.png",
 }
+
+
+def build_scene_map(ep_num: int) -> dict:
+    """Read episode.json.newSceneElements + .scenes and build {tag → filename}.
+    Each scene's GCS URL is bucket/<ep_NN>/<filename>. Falls back to
+    SCENE_MANIFEST for legacy ep15 tags.
+    """
+    m = dict(SCENE_MANIFEST)
+    ep_json = ep_dir(ep_num) / "episode.json"
+    if not ep_json.is_file(): return m
+    try:
+        meta = json.loads(ep_json.read_text())
+    except json.JSONDecodeError:
+        return m
+    for s in (meta.get("newSceneElements") or []):
+        tag = s.get("tag")
+        asset = s.get("asset") or ""
+        if tag and asset:
+            # asset is "assets/scenes/ep14_cafe_mams_country.png" → filename only
+            from pathlib import Path as _P
+            m[tag] = _P(asset).name
+    return m
 
 
 def coerce_prompt(v, sep: str = "\n\n") -> str:
@@ -376,8 +400,9 @@ def phase_submit(ep_num: int, specific_clip: int | None = None):
             element_list.append({"element_id": eid})
 
         image_urls = []
-        if clip.get("scene") and SCENE_MANIFEST.get(clip["scene"]):
-            image_urls.append(f"{bucket_https}/{SCENE_MANIFEST[clip['scene']]}")
+        scene_map = build_scene_map(ep_num)
+        if clip.get("scene") and scene_map.get(clip["scene"]):
+            image_urls.append(f"{bucket_https}/{scene_map[clip['scene']]}")
         pe = clip.get("patternEStill") or ""
         still_key = ("ep15-clip13-group-still" if "clip13" in pe
                      else "ep15-clip17-group-still" if "clip17" in pe else None)

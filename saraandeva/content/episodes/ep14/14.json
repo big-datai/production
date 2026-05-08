@@ -1,0 +1,91 @@
+{
+  "episode": 14,
+  "beat": 14,
+  "clip": 14,
+  "title": "BULGARIA — first skis, snowy slope",
+  "mode": "omni",
+  "durationSec": 10,
+  "quality": "720p",
+  "nativeAudio": true,
+  "expectedCredits": 90,
+  "subjects": [
+    "young_Papa",
+    "young_Mama"
+  ],
+  "scene": "ep14-bulgaria-ski-slope",
+  "boundElements": [
+    {
+      "tag": "young_Papa",
+      "source": "library"
+    },
+    {
+      "tag": "young_Mama",
+      "source": "library"
+    },
+    {
+      "tag": "ep14-bulgaria-ski-slope",
+      "source": "library"
+    }
+  ],
+  "prompt": [
+    "Cast LOCKS: @young_Papa: 100% HUMAN HEAD, bald + dark beard + glasses (10 years younger but same identity). Brown leather backpack, navy henley + olive cargo pants, small DSLR camera in right hand. @young_Mama: straight blonde hair, fair skin (10 years younger but same identity), mustard-yellow knit sweater + cream pleated skirt + ankle boots, small leather crossbody bag.",
+    "Both wearing winter ski gear over their identity-locked outfits (puffy ski jackets, ski pants, helmets, goggles up on forehead, ski poles in hands).",
+    "Shot 1 (0-4s, wide pull-back on snowy beginner slope) — @young_Mama at center frame on skis, knees BENT, her ARMS OUT for balance, slightly wobbly. @young_Papa next to her on his own skis, his left HAND HOLDS her right hand to help her stay upright.",
+    "Shot 2 (4-7s, MCU on @young_Mama's nervous-but-laughing face) — @young_Mama's mouth LAUGHS nervously, her eyes WIDEN. @young_Mama, giggling: \"I'm doing it! I'm SKIING!\"",
+    "Shot 3 (7-10s, soft pan to @young_Papa) — @young_Papa's mouth GRINS proud, his right HAND THUMBS-UP encouragingly. @young_Papa, encouraging: \"Look at you GO!\""
+  ],
+  "negativePrompt": [
+    "duplicate character",
+    "twin",
+    "clone",
+    "two of the same",
+    "mirrored figure",
+    "second sara",
+    "two sara",
+    "second eva",
+    "two eva",
+    "third child",
+    "extra child in background",
+    "ghost figure",
+    "ghost kid",
+    "shadow children",
+    "three arms",
+    "third arm",
+    "extra arm",
+    "extra hand",
+    "floating hand",
+    "anatomy error",
+    "morphing",
+    "flickering",
+    "disfigured",
+    "distorted",
+    "extra face",
+    "unstable motion",
+    "papa standing still",
+    "mama standing still",
+    "scary face",
+    "frightening expression",
+    "horror lighting",
+    "scary monster",
+    "blood",
+    "red liquid",
+    "dark shadows",
+    "predatory",
+    "dutch angle",
+    "handheld shake",
+    "whip pan",
+    "jump cut",
+    "eva with brown hair",
+    "eva with red hair",
+    "eva brunette",
+    "sara in ponytail",
+    "young papa as different person",
+    "young mama as different person",
+    "younger versions look like other people",
+    "papa with hair on head",
+    "papa not bald",
+    "young papa with full head of hair",
+    "other skiers on slope",
+    "ski instructor"
+  ]
+}
