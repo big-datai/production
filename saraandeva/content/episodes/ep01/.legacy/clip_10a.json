@@ -1,0 +1,12 @@
+{
+  "episode": 1, "beat": 10, "microClip": "a",
+  "title": "Brushing teeth — Papa center, Sara left, Eva right",
+  "durationSec": 5,
+  "mode": "single-shot",
+  "subjects": ["Papa", "Sara", "Eva"],
+  "scene": "Bathroom",
+  "nativeAudio": true,
+  "expectedCredits": 45,
+  "negativePrompt": "extra people, duplicate character, twin, clone, two of the same person, mirrored figure, background extras, crowd, identical sibling, second sister, third child, fourth child, no mirror, no reflection, single Sara, single Eva, no duplicate child, two saras, two evas, three girls",
+  "prompt": "Wide shot in the @Bathroom from in front of the sink, NO mirror visible. @Papa in the CENTER between @Sara on the LEFT and @Eva on the RIGHT, all three standing brushing teeth. @Papa: \"Up and down, side to side!\" @Sara: \"Healthy teeth!\" @Eva: \"Healthy teeths!\""
+}

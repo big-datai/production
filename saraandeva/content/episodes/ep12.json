@@ -1,0 +1,1177 @@
+{
+  "episode": 12,
+  "title": "Sara and Eva — Ep 12: Ginger's Magic Bottle!",
+  "logline": "Family beach day. While Papa wades into the surf with Eva on his shoulders and Sara starts a sandcastle, Eva spots something glittering in the wet sand — a tiny glowing glass bottle. Inside is a rolled paper note signed by GINGER (the magic-forest fox the family met in ep10): she's stuck on a faraway island and needs rescuing. Papa proposes building an enormous 'research base' sandcastle, the family plans a boat trip, and as the sun sets Sara opens her notebook and starts a 'MAGIC FOREST RESCUE PLAN' map. Cliffhanger camera-ask: Will YOU help us find Ginger? What kind of boat should we build?",
+  "formulaReference": "Bluey-style 'mystery cold open + sibling rescue arc' — beach setting (visual variety) → mystery-box reveal (glowing bottle washed up) → Ginger callback (cross-episode arc beat 2 of 4: ep10→12→16→20 island reveal) → kid-led rescue planning → Papa-active 15s sandcastle play scene → camera-ask cliffhanger setting up future episodes. Continues the magic-forest creature thread that began in ep10.",
+  "mode": "omni",
+  "durationTotal": "~7:56 (17 normal × 10s = 170s + 1 × 15s = 15s + A 60s + B 60s + C 60s + D 60s + intro 31s + outro 20s)",
+  "expectedCreditsTotal": 2025,
+  "expectedCreditsBreakdown": "17 normal clips × 90 cr = 1530 + 1 parent-activity 15s clip × 135 cr = 135 + 4 render specs (A,B,C,D) × 90 cr = 360 → 2025 cr base; +25% buffer ≈ 2531 cr realistic ceiling. Over 2200 abort threshold by ~15% (acceptable per ep10 precedent of 2970 cr; user explicitly added 4th MV for playground tag scene per post-ep11 strengthened Papa-active rule).",
+  "newBoundElements": [
+    {
+      "tag": "beach-shore",
+      "source": "library",
+      "asset": "assets/scenes/beach_shore.png",
+      "purpose": "Sunny sandy beach with gentle surf rolling in, blue sky, distant horizon. Establishing setting for clips 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 12, 14."
+    },
+    {
+      "tag": "beach-blanket",
+      "source": "library",
+      "asset": "assets/scenes/beach_blanket.png",
+      "purpose": "Striped beach blanket with sun umbrella, picnic cooler, beach toys. Mama's home base on the sand. Used in clips 9, 11, 17."
+    },
+    {
+      "tag": "beach-sunset",
+      "source": "library",
+      "asset": "assets/scenes/beach_sunset.png",
+      "purpose": "Same beach at golden hour — sunset gradient, silhouette-friendly long shadows. Used in clips 15, 16, 17, 18."
+    },
+    {
+      "tag": "magic-bottle",
+      "source": "library",
+      "asset": "assets/scenes/magic_bottle.png",
+      "purpose": "Small glowing aqua-blue glass bottle with cork stopper, faint magical sparkles around it, rolled paper visible inside. Used in clips 4, 5, 6, 8, 9."
+    },
+    {
+      "tag": "rescue-note",
+      "source": "library",
+      "asset": "assets/scenes/rescue_note.png",
+      "purpose": "Tiny rolled paper note with handwriting reading 'I am stuck on a faraway island please come find me' signed '— Ginger' with a tiny pawprint. Used in clips 6, 7, 8, 10, 11."
+    },
+    {
+      "tag": "castle-rescue-base",
+      "source": "library",
+      "asset": "assets/scenes/sandcastle_research_base.png",
+      "purpose": "Enormous sandcastle 'fort' with multiple turrets, deep moat, twig-flag at top reading 'RESCUE'. Used in clips 13, 14."
+    },
+    {
+      "tag": "sara-notebook-rescue",
+      "source": "library",
+      "asset": "assets/scenes/sara_notebook_rescue.png",
+      "purpose": "Open spiral notebook showing a hand-drawn map page titled 'MAGIC FOREST RESCUE PLAN' with the bottle, a small island, an X marking the spot, dotted-line route. Used in clips 16, 17, 18."
+    },
+    {
+      "tag": "beach-playground",
+      "source": "library",
+      "asset": "assets/scenes/beach_playground.png",
+      "purpose": "Wooden beach playground with red curly tube-slide, blue climbing-tower with rope ladder, two swings, sandy ground, palm tree, ocean visible in the background. Used in MV-D 'Can't Catch Us!' Papa-tag music video."
+    },
+    {
+      "tag": "ep12-c1-hook",
+      "source": "library",
+      "asset": "assets/scenes/group_ep12_clip1_hook.png",
+      "purpose": "Pattern E group still — Mama+Sara+Eva on beach-shore, all standing with props (bag/bucket-shovel/float-ring). Anchors clip 1 motion-only animation."
+    },
+    {
+      "tag": "ep12-c12-base",
+      "source": "library",
+      "asset": "assets/scenes/group_ep12_clip12_research_base.png",
+      "purpose": "Pattern E group still — Papa crouched arms-wide + Sara+Eva kneeling at his sides on beach-shore. Anchors clip 12 motion-only animation."
+    },
+    {
+      "tag": "ep12-c13-build",
+      "source": "library",
+      "asset": "assets/scenes/group_ep12_clip13_sandcastle.png",
+      "purpose": "Pattern E group still — Papa+Sara+Eva all kneeling around partly-built sandcastle. Anchors clip 13 (15s parent-activity) motion-only animation."
+    },
+    {
+      "tag": "ep12-c15-sunset",
+      "source": "library",
+      "asset": "assets/scenes/group_ep12_clip15_sunset_walk.png",
+      "purpose": "Pattern E group still — Papa+Sara+Eva walking together holding hands at sunset. Anchors clip 15 sunset-walk camera-ask animation."
+    },
+    {
+      "tag": "ep12-cD-tag",
+      "source": "library",
+      "asset": "assets/scenes/group_ep12_clipD_playground_tag.png",
+      "purpose": "Pattern E group still — Papa stuck at slide bottom + Sara+Eva on climbing tower. Anchors music-video D loop-clean tag-game animation."
+    }
+  ],
+  "reusedBoundElements": [
+    "Sara, Eva, Mama, Papa — character avatars",
+    "Ginger — referenced via the rescue note signature (off-screen character; her name in handwriting in rescue-note prop, no Kling binding needed since she doesn't appear on screen until ep20 island reveal)"
+  ],
+  "scenes": [
+    "beach-shore",
+    "beach-blanket",
+    "beach-sunset",
+    "beach-playground"
+  ],
+  "cast": [
+    "Sara",
+    "Eva",
+    "Mama",
+    "Papa"
+  ],
+  "reuse": {
+    "intro": {
+      "source": "season_01/intro/",
+      "clips": [
+        "intro_song.mp4"
+      ],
+      "totalDuration": "~31s",
+      "playOrder": "Theme song"
+    },
+    "outro": {
+      "source": "season_01/OUTRO/",
+      "clips": [
+        "17.mp4",
+        "18.mp4",
+        "0_song.mp4"
+      ],
+      "totalDuration": "~20s",
+      "note": "0_song.mp4 sorts last via parseInt-Infinity hack — keep (memory rule #23)"
+    }
+  },
+  "music": {
+    "policy": "ALL music is Suno — Kling renders dialogue + ambient ONLY. No music phrases inside any clip prompt (memory rule #24).",
+    "musicVideoBlocks": [
+      {
+        "blockId": "1music",
+        "song": "assets/music/Cant Catch Us.mp3",
+        "trimStart": 0,
+        "blockDurationSec": 60,
+        "render": "D",
+        "renderSpec": "content/episodes/ep12/D.json",
+        "placement": "between clip 1 (beach arrival HOOK) and clip 2 (Sara digs sandcastle) — Papa-tag at the beach playground. Sara+Eva dance-and-run on playground equipment singing 'You're IT! Can't catch us!' with the running gag of Papa being TOO BIG to fit through the curly slide. Loop-clean rhythmic chase choreography. Per post-ep11 strengthened rule: Papa-active play scene REQUIRED in every episode; this is the second Papa-active beat (alongside clip 13's sandcastle build) — over-delivers on the retention driver.",
+        "mood": "Playful chase tag — bouncy ukulele-driven kids' pop, hand-claps, sister duet 'You're IT! YOU'RE IT! Can't catch us!' with Papa booming 'I'M COMING!'"
+      },
+      {
+        "blockId": "11music",
+        "song": "assets/music/Magic Bottle Whisper.mp3",
+        "trimStart": 0,
+        "blockDurationSec": 60,
+        "render": "B",
+        "renderSpec": "content/episodes/ep12/B.json",
+        "placement": "between clip 11 (parents read note) and clip 12 (Papa proposes research base) — Eva slow-mo wonder at the glowing bottle, magical reveal moment",
+        "mood": "Soft awe and discovery — gentle wonder ballad, glockenspiel + airy strings, like Pink Tree Whisper (ep10) tonally"
+      },
+      {
+        "blockId": "13music",
+        "song": "assets/music/Sandy Toes.mp3",
+        "trimStart": 0,
+        "blockDurationSec": 60,
+        "render": "A",
+        "renderSpec": "content/episodes/ep12/A.json",
+        "placement": "between clip 13 (15s sandcastle play scene) and clip 14 (finished base reveal) — Sara+Eva duo dance with sand-bucket props on a designed beach backdrop",
+        "mood": "Upbeat beach pop — bouncy ukulele, surf percussion, sister duet about 'sandy toes and salty knees'"
+      },
+      {
+        "blockId": "17music",
+        "song": "assets/music/Tomorrows Adventure.mp3",
+        "trimStart": 0,
+        "blockDurationSec": 60,
+        "render": "C",
+        "renderSpec": "content/episodes/ep12/C.json",
+        "placement": "between clip 17 (Eva peeks at Sara's notebook) and clip 18 (cliffhanger camera-ask) — Sara+Eva twilight duo on sunset-gradient backdrop, holding notebook + flashlight, dreamy wonder",
+        "mood": "Twilight wonder — dreamy synth pad, soft acoustic guitar, sisters humming about 'tomorrow we sail away'"
+      }
+    ],
+    "renders": {
+      "A": "content/episodes/ep12/A.json — Sara+Eva duo, beach-pastel backdrop with seashell confetti, 60s loop",
+      "B": "content/episodes/ep12/B.json — Eva solo slow-mo, pastel-teal backdrop with floating bubbles + bottle, 60s",
+      "C": "content/episodes/ep12/C.json — Sara+Eva twilight duo, sunset-gradient backdrop with stars appearing, 60s",
+      "D": "content/episodes/ep12/D.json — Papa+Sara+Eva trio at beach playground, Papa-tag with slide-gag (Papa too big to fit through curly tube-slide), 60s loop"
+    },
+    "mixRecipe": "[1:a]atrim=start=X:duration=N,asetpts=PTS-STARTPTS,volume=0.30[bg]; [0:a]volume=1.4[fg]; [fg][bg]amix=inputs=2:duration=first:dropout_transition=0[a]",
+    "loopRecipe": "node loopVideoWithSong.mjs <render>.mp4 <song>.mp3 <Nmusic>.mp4 --duration=N"
+  },
+  "arc": [
+    {
+      "beat": 1,
+      "name": "HOOK — beach arrival",
+      "purpose": "Family unloads beach gear, sun is bright, kids are pumped. Establishes today's setting + energy.",
+      "clips": [
+        1
+      ]
+    },
+    {
+      "beat": 1.5,
+      "name": "🎵 MUSIC VIDEO D — Can't Catch Us! Papa-tag at the beach playground (60s)",
+      "purpose": "Render D under 'Can't Catch Us!' — kids burst onto the beach playground first thing, Papa chasing them in playful tag-game. Sara+Eva dance-and-run on the equipment singing 'You're IT! Can't catch us!' Papa attempts to slide down the curly tube-slide but is TOO BIG, gets stuck and pretends to be a stuck-monster. Pure visual comedy + Papa-active play. (memory: lesson_papa_play_scene_per_episode.md — strengthened post-ep11; this is the 2nd Papa-active beat in ep12 alongside clip 13's sandcastle.)",
+      "clips": [
+        "D→1music"
+      ]
+    },
+    {
+      "beat": 2,
+      "name": "Setup — Sara digs, Papa+Eva enter surf",
+      "purpose": "Sara starts sandcastle on the dry sand. Papa wades into the surf with Eva perched on his shoulders, both grinning at the waves.",
+      "clips": [
+        2
+      ]
+    },
+    {
+      "beat": 3,
+      "name": "Eva spots the glitter",
+      "purpose": "From Papa's shoulders, Eva sees something shiny in the wet sand at the tide line. She points urgently.",
+      "clips": [
+        3
+      ]
+    },
+    {
+      "beat": 4,
+      "name": "AUDIENCE-ASK — Eva picks up the bottle",
+      "purpose": "Eva placed back on sand, runs to the spot, picks up a tiny glowing aqua-blue glass bottle. Camera-ask: 'Did YOU see what Eva just found?!'",
+      "clips": [
+        4
+      ]
+    },
+    {
+      "beat": 5,
+      "name": "Stuck cap — Sara joins",
+      "purpose": "Sara joins. Both girls struggle with the cork stopper, comically twist and pull together.",
+      "clips": [
+        5
+      ]
+    },
+    {
+      "beat": 6,
+      "name": "Note inside!",
+      "purpose": "Pop! Cork comes out. A tiny rolled paper slides into Sara's palm. Both girls gasp.",
+      "clips": [
+        6
+      ]
+    },
+    {
+      "beat": 7,
+      "name": "AUDIENCE-ASK — Eva reads halting",
+      "purpose": "Eva sounds out the note slowly: 'I am... STUCK... on... a... fa-RA-way... ISLAND... please come find me!' Sara to camera: 'WHO do YOU think wrote this?!'",
+      "clips": [
+        7
+      ]
+    },
+    {
+      "beat": 8,
+      "name": "GINGER REVEAL",
+      "purpose": "Sara turns the paper over. Bottom corner: '— GINGER' with a tiny pawprint. SARA'S EYES GO HUGE. 'GINGER! From the magic forest!' (ep10 callback)",
+      "clips": [
+        8
+      ]
+    },
+    {
+      "beat": 9,
+      "name": "Sara runs bottle to Mama",
+      "purpose": "Sara sprints across the beach to Mama on the beach blanket, breathless: 'MAMA! LOOK!'",
+      "clips": [
+        9
+      ]
+    },
+    {
+      "beat": 10,
+      "name": "Eva runs note to Papa",
+      "purpose": "Eva sprints to Papa at the edge of surf, holding the unrolled note up: 'PAPA! GINGER NEEDS US!'",
+      "clips": [
+        10
+      ]
+    },
+    {
+      "beat": 11,
+      "name": "Mama + Papa read together",
+      "purpose": "Mama and Papa stand together, the bottle in Mama's hand and the note in Papa's. They exchange a look. Mama: 'A magic-forest fox stuck on an island... we need a plan.'",
+      "clips": [
+        11
+      ]
+    },
+    {
+      "beat": 12,
+      "name": "🎵 MUSIC VIDEO B — Magic Bottle Whisper (60s)",
+      "purpose": "Render B under 'Magic Bottle Whisper' — Eva solo slow-mo wonder at the glowing bottle, designed teal-pink backdrop with floating bubbles. The reveal-magic moment.",
+      "clips": [
+        "B→11music"
+      ]
+    },
+    {
+      "beat": 13,
+      "name": "Papa: RESEARCH BASE!",
+      "purpose": "Papa stands up, sand on his knees, eyes lit up: 'You know what every rescue mission needs? A RESEARCH BASE!' He grabs a bucket and a shovel.",
+      "clips": [
+        12
+      ]
+    },
+    {
+      "beat": 14,
+      "name": "PARENT-ACTIVITY (15s) — Sandcastle build",
+      "purpose": "Papa + Sara + Eva building the enormous sandcastle research base. 3-beat structure: BEAT 1 digging the moat, BEAT 2 Eva pours bucket of water on Papa's head (peak silly), BEAT 3 all three plant a twig-flag reading 'RESCUE' on top.",
+      "clips": [
+        13
+      ]
+    },
+    {
+      "beat": 15,
+      "name": "Finished base reveal + SARA: phase 1 done",
+      "purpose": "Wide shot: enormous sandcastle research base with moat + RESCUE flag, three figures standing proudly. Sara: 'Phase ONE — done. Phase TWO — the BOAT!'",
+      "clips": [
+        14
+      ]
+    },
+    {
+      "beat": 16,
+      "name": "🎵 MUSIC VIDEO A — Sandy Toes (60s)",
+      "purpose": "Render A under 'Sandy Toes' — Sara+Eva duo dance with bucket-and-shovel props on beach-pastel backdrop with seashell confetti. Celebration of finished research base.",
+      "clips": [
+        "A→13music"
+      ]
+    },
+    {
+      "beat": 17,
+      "name": "AUDIENCE-ASK — Sunset walk",
+      "purpose": "Three silhouettes walk along the wet shore at golden hour, holding hands. Sara to camera: 'Where do YOU think Ginger's island is?'",
+      "clips": [
+        15
+      ]
+    },
+    {
+      "beat": 18,
+      "name": "Sara's notebook — rescue plan map",
+      "purpose": "Close-up: Sara's hands on the open notebook on her lap. She writes 'MAGIC FOREST RESCUE PLAN' across the top, then sketches the bottle, an island shape, a dotted-line route, and an X.",
+      "clips": [
+        16
+      ]
+    },
+    {
+      "beat": 19,
+      "name": "Eva peeks: tomorrow we build a boat?",
+      "purpose": "Eva pokes her head over Sara's shoulder, big eyes: 'Tomorrow we build a boat?' Sara nods, still drawing: 'Yep. Tomorrow we... start.'",
+      "clips": [
+        17
+      ]
+    },
+    {
+      "beat": 20,
+      "name": "🎵 MUSIC VIDEO C — Tomorrows Adventure (60s)",
+      "purpose": "Render C under 'Tomorrow's Adventure' — Sara+Eva twilight duo on sunset-gradient backdrop, holding the notebook + a tiny flashlight. Dreamy wonder before the cliffhanger.",
+      "clips": [
+        "C→17music"
+      ]
+    },
+    {
+      "beat": 21,
+      "name": "CLIFFHANGER + CAMERA-ASK — Will YOU help us?",
+      "purpose": "Final camera-ask cliffhanger. Sara holds the open notebook page up to camera. Sara: 'Will YOU help us find Ginger?' Eva (leaning in beside her): 'What kind of BOAT should we build?!' Both lean toward camera, eyes huge. Cut to black.",
+      "clips": [
+        18
+      ]
+    },
+    {
+      "beat": 22,
+      "name": "OUTRO (reused)",
+      "purpose": "Subscribe pair from season_01/OUTRO/ — 17.mp4 → 18.mp4 → 0_song.mp4 last.",
+      "clips": [
+        "reused"
+      ]
+    }
+  ],
+  "audienceEngagement": {
+    "rule": "memory: lesson_fourth_wall_audience_engagement.md — 2-4 fourth-wall direct-to-camera 'ask the kid' beats per episode; final cliffhanger MUST be a camera-ask",
+    "beats": [
+      {
+        "clip": 4,
+        "type": "camera-ask",
+        "character": "Sara",
+        "line": "Did YOU see what Eva just found?!"
+      },
+      {
+        "clip": 7,
+        "type": "camera-ask",
+        "character": "Sara",
+        "line": "WHO do YOU think wrote this?!"
+      },
+      {
+        "clip": 15,
+        "type": "camera-ask",
+        "character": "Sara",
+        "line": "Where do YOU think Ginger's island is?"
+      },
+      {
+        "clip": 18,
+        "type": "camera-ask + cliffhanger",
+        "character": "Sara + Eva",
+        "line": "Will YOU help us find Ginger? What kind of BOAT should we build?!"
+      }
+    ]
+  },
+  "crossEpisodeArc": {
+    "thread": "Magic-forest creature reveal arc (4 beats across 10 episodes)",
+    "thisEpisodeRole": "Beat 2 of 4 — Ginger's bottle washes up at the beach, family commits to building a boat for the rescue mission",
+    "prior": "ep10 — pink creature tree at the magic forest (Beat 1: family discovers magic creatures live here)",
+    "future": "ep16 — magic feather found at the petting farm (Beat 3: cross-thread breadcrumb), ep20 — island reveal with Ginger + new glowing turtle creature (Beat 4: PAYOFF, season-1 finale)"
+  },
+  "rules": {
+    "maxBoundPerClip": 7,
+    "maxTagMentionsPerCharacter": 1,
+    "klingPromptMustNotContain": [
+      "music sting",
+      "music swell",
+      "tender swell",
+      "cheerful music",
+      "comedic music",
+      "playful music",
+      "heartfelt music",
+      "music cue",
+      "score swell",
+      "background music"
+    ],
+    "klingPromptMustNotContainReason": "All music is Suno-mixed in assemble (memory rule #24).",
+    "motionTowardForbidden": "No 'walks in/toward', 'approaches', 'moves to(ward)', 'heads to/in', 'walks up' — Use static placement only. (memory: lesson_kling_motion_verbs_duplicate.md)",
+    "max3ForegroundChars": "Hard cap 3 foreground-anchored characters per clip. No 4-char clips in this episode (every multi-char clip is ≤3).",
+    "negativePromptRequired": "duplicate character, twin, clone, two of the same, mirrored figure, second father, second mother, two Papa, two Mama, identical adults, extra people, third child, second sister, second sara, second eva, two eva, duplicate eva, mirror reflection, family members in the background, additional children, extra child in background, second blonde child, ghost figure, shadow of person",
+    "characterNamesInDialogue": "Drop the bound character's name from other characters' dialogue (memory: rule from ep01).",
+    "noRedSplatterNearFace": "memory: lesson_no_red_splatter_kids_show.md — no 'red liquid', 'splash', 'splatter' near face/mouth in any clip prompt (Kling renders as blood). Beach episode — safe; flagged only as preventative.",
+    "noKlingHorrorIntensity": "memory: lesson_kids_show_comedy_intensity.md — never write 'thundering shout', 'apoplectic', 'rage face', 'leaves tremble'. Use 'calm sigh', 'comic gasp', soft tones. No pets airborne — all four paws on ground. Beach episode — Ginger only appears via the note, no live-pet renders to worry about."
+  },
+  "clips": [
+    {
+      "episode": 12,
+      "beat": 1,
+      "clip": 1,
+      "title": "HOOK — beach arrival",
+      "mode": "omni",
+      "durationSec": 10,
+      "quality": "720p",
+      "nativeAudio": true,
+      "expectedCredits": 90,
+      "subjects": [
+        "Mama",
+        "Sara",
+        "Eva"
+      ],
+      "scene": "beach-shore",
+      "boundElements": [
+        {
+          "tag": "ep12-c1-hook2",
+          "source": "library"
+        }
+      ],
+      "prompt": "Composition is anchored by @ep12-c1-hook2. Animate the still gently — every figure stays in their EXACT physical spot throughout the entire 10s, only their faces and small upper-body gestures change. There are EXACTLY 3 people in the entire frame, no extras, no additional spawns. (BEAT 1 — 0-5s) Sara warmly looks out toward the surf, eyes bright with cheerful kid-show energy. Sara (cheerful warm voice): \"BEACH DAY!\" Eva softly shakes her float ring with both hands and giggles brightly. Eva (giggling sing-song): \"Sandy toes! Salty knees!\" (BEAT 2 — 5-10s) Mama tilts her head softly and warm-laughs. Mama (warm laugh): \"Let's find a good spot for our blanket.\" All three keep both feet planted on the sand throughout — no leaping, no jumping, no walking. Calm cheerful kid-show family ambiance. Preserve each character's silhouette and proportions throughout — no morphing, no shifting of hair or wardrobe, no color drift.",
+      "negativePrompt": "duplicate character, twin, clone, two of the same, mirrored figure, second father, two Papa, identical adults, second mother, two Mama, third child, second sister, second sara, second eva, two eva, duplicate eva, duplicate sara, mirror reflection, fourth child, additional children, extra child in background, ghost figure, ghost kid, shadow children, family members in the background, strangers, crowd, group of people, other faces, background people, friends, neighbors, other kids on beach, three arms, third arm, extra arm, extra hand, floating hand, anatomy error, scary face, frightening expression, horror lighting, blood, red liquid, red splatter, gore, injury, scary, violent, distressing, hard fall, hard impact, environmental shake, motion lines, action lines, morphing, flickering, disfigured, distorted, extra face, unstable motion, identical adults"
+    },
+    {
+      "episode": 12,
+      "beat": 2,
+      "clip": 2,
+      "title": "Setup — Papa+Eva already in the surf, Sara digging on sand off-frame",
+      "mode": "omni",
+      "durationSec": 10,
+      "quality": "720p",
+      "nativeAudio": true,
+      "expectedCredits": 90,
+      "subjects": [
+        "Papa",
+        "Eva"
+      ],
+      "scene": "beach-shore",
+      "boundElements": [
+        {
+          "tag": "ep12-c2-papa-eva",
+          "source": "library"
+        }
+      ],
+      "prompt": "Composition is anchored by @ep12-c2-papa-eva. Animate the still gently — every figure stays in their EXACT physical spot throughout the entire 10s, only their faces and small upper-body gestures change. There are EXACTLY 2 people in the entire frame, no extras, no additional spawns. (BEAT 1 — 0-5s) A small soft wave gently laps against Papa's shins with a soft swoosh. Eva softly giggles brightly above with her arms held up. Eva (cheerful sing-song laugh): \"Daddy! The water's TICKLY!\" Papa (warm dad-laugh, eyes crinkled): \"Hold tight, little explorer!\" (BEAT 2 — 5-10s) Eva softly looks down to her left toward the dry sand beyond the surf, smiling. Papa rocks gently from side to side in the calm water, very slowly, swaying her playfully. Eva (delighted): \"I'm SO TALL!\" Papa (warm chuckle): \"Tallest little waves-watcher on the beach.\" Papa stays grounded with both feet on the sandy seabed throughout — no swimming, no leaping, no falling. Eva stays safely seated on Papa's shoulders throughout. The surf stays plain blue gentle calm water — no big waves, no foam. Preserve each character's silhouette and proportions throughout — no morphing, no shifting, no color drift on Papa's shorts or t-shirt or Eva's teal swimsuit.",
+      "negativePrompt": "duplicate character, twin, clone, two of the same, mirrored figure, second father, two Papa, identical adults, second mother, two Mama, mama in this clip, mama visible, dog visible, joe visible, ginger visible, third child, second sister, sara in this clip, sara visible, second eva, two eva, duplicate eva, second blonde child, additional children, extra child in background, ghost figure, ghost kid, ghost children, shadow children, shadow of person, mirrored children, mirror reflection, family members in the background, strangers, crowd, group of people, other faces, background people, friends, neighbors, other beachgoers, other surfers, swimmers, lifeguards, three arms, third arm, extra arm, extra hand, floating hand, anatomy error, scary face, frightening expression, horror lighting, blood, red liquid, red splatter, red stain, gore, injury, scary, violent, distressing, papa airborne, papa launching, papa flying, papa diving, eva falling off shoulders, eva airborne, eva flying, eva launching, eva tumbling, hard fall, hard impact, painful fall, drowning, swept away, dangerous surf, big crashing waves, stormy water, scary ocean, ocean monster, shark, jellyfish, environmental shake, motion lines, action lines, morphing, flickering, disfigured, distorted, extra face, unstable motion"
+    },
+    {
+      "episode": 12,
+      "beat": 3,
+      "clip": 3,
+      "title": "Eva spots the glitter at the tide line",
+      "mode": "omni",
+      "durationSec": 10,
+      "quality": "720p",
+      "nativeAudio": true,
+      "expectedCredits": 90,
+      "subjects": [
+        "Papa",
+        "Eva"
+      ],
+      "scene": "beach-shore",
+      "boundElements": [
+        {
+          "tag": "ep12-c3-papa-eva",
+          "source": "library"
+        }
+      ],
+      "prompt": "Composition is anchored by @ep12-c3-papa-eva. Animate the still gently — every figure stays in their EXACT physical spot throughout the entire 10s. There are EXACTLY 2 people in the entire frame, no extras, no additional spawns. (BEAT 1 — 0-5s) Eva goes still all of a sudden, eyes locked wide on something glittering softly in the wet sand at the tide line, off-screen to her right. Eva keeps her right index finger gently pointing carefully toward the spot, mouth small in awe. Papa softly follows her gaze and squints curiously, head tilted slightly. The waves go soft and quiet for a hush moment. Eva (cheerful wide-eyed urgent stage-whisper): \"Daddy... LOOK — something is shiny!\" (BEAT 2 — 5-10s) Papa (warm soft curious tone): \"...I see it too. Let's go check.\" Papa stays standing in the gentle surf with both feet planted on the sandy seabed, holding Eva safely steady. The water around Papa's legs stays calm and gentle. Calm cheerful kid-show ocean ambiance throughout — gentle wave swoosh, no scary intensity, no shouting. Preserve each character's silhouette and proportions throughout — no morphing, no shifting, no color drift on Papa's shorts or t-shirt or Eva's teal swimsuit.",
+      "negativePrompt": "duplicate character, twin, clone, two of the same, mirrored figure, second father, two Papa, identical adults, second mother, two Mama, mama in this clip, mama visible, dog visible, joe visible, ginger visible, third child, second sister, sara in this clip, sara visible, second eva, two eva, duplicate eva, second blonde child, additional children, extra child in background, ghost figure, ghost kid, ghost children, shadow children, shadow of person, mirrored children, mirror reflection, family members in the background, strangers, crowd, group of people, other faces, background people, friends, neighbors, other beachgoers, three arms, third arm, extra arm, extra hand, floating hand, anatomy error, scary face, frightening expression, horror lighting, blood, red liquid, red splatter, red stain, gore, injury, scary, violent, distressing, papa airborne, papa launching, papa flying, papa diving, eva falling off shoulders, eva airborne, eva flying, hard fall, hard impact, painful fall, drowning, dangerous surf, big crashing waves, stormy water, scary ocean, ocean monster, shark, sea creature attacking, environmental shake, motion lines, action lines, papa thundering shout, papa apoplectic, papa rage face, morphing, flickering, disfigured, distorted, extra face, unstable motion"
+    },
+    {
+      "episode": 12,
+      "beat": 4,
+      "clip": 4,
+      "title": "AUDIENCE-ASK — Eva picks up the glowing magic bottle",
+      "mode": "omni",
+      "durationSec": 10,
+      "quality": "720p",
+      "nativeAudio": true,
+      "expectedCredits": 90,
+      "subjects": [
+        "Eva"
+      ],
+      "scene": "beach-shore",
+      "boundElements": [
+        {
+          "tag": "eva-beach",
+          "source": "library"
+        },
+        {
+          "tag": "beach-shore",
+          "source": "library"
+        },
+        {
+          "tag": "magic-bottle",
+          "source": "library"
+        }
+      ],
+      "prompt": "Tight close-up shot on @beach-shore — the wet sand at the gentle calm tide line, soft ripples lapping in slowly. @eva-beach already kneeling on the wet sand with both knees softly resting on the sand and both hands cupping a small glowing aqua-blue glass bottle she has gently lifted out of the wet sand. Curly blonde hair with rainbow bow falling softly forward. Eva has exactly two arms and two hands visible — both holding the bottle gently together. The @magic-bottle has a tiny cork stopper and emits a soft faint magical sparkle, the rolled paper note visible inside through the aqua-blue glass. Tiny twinkly sparkles drift upward from the bottle softly. (BEAT 1 — 0-5s) Eva turns the bottle slowly in her cupped hands, eyes huge with wonder. Eva (small wonder-whisper): \"...what IS this?\" (BEAT 2 — 5-10s) Eva slowly turns her head DIRECTLY toward the camera with bright wonder-sparkle eyes, the bottle still cupped softly in her hands. She holds the bottle up gently toward the camera with both hands. Eva (warm friend-to-friend tone, eyes lit up): \"Did YOU see what I just found?!\" She holds her warm look at the camera waiting cheerfully for the kid watching at home to answer. STRICT ANATOMY: Eva has exactly two arms and two hands at all times, both holding the bottle together. Eva stays kneeling with both knees softly on the wet sand throughout — no jumping, no leaping, no running off. Calm cheerful kid-show ocean ambiance throughout. The wet sand stays plain wet sand — no marks, no red, no debris, no trash.",
+      "negativePrompt": "duplicate character, twin, clone, two of the same, mirrored figure, second mother, two Mama, mama in this clip, mama visible, second father, two Papa, papa in this clip, papa visible, dog visible, joe visible, ginger visible, third child, second sister, sara in this clip, sara visible, second eva, two eva, duplicate eva, second blonde child, additional children, extra child in background, ghost figure, ghost kid, ghost children, shadow children, shadow of person, mirrored children, mirror reflection, family members in the background, strangers, crowd, group of people, other faces, background people, friends, neighbors, other beachgoers, three arms, third arm, extra arm, extra hand, floating hand, anatomy error, eva not looking at camera, eva looking away from camera, scary face, frightening expression, horror lighting, blood, red liquid, red splatter, red stain, gore, injury, scary, violent, distressing, eva airborne, eva leaping, eva flying, eva launching, hard fall, hard impact, painful fall, dangerous surf, big crashing waves, stormy water, scary ocean, ocean monster, shark, environmental shake, motion lines, action lines, broken glass, sharp shards, cut hands, bleeding fingers, morphing, flickering, disfigured, distorted, extra face, unstable motion, identical adults"
+    },
+    {
+      "episode": 12,
+      "beat": 5,
+      "clip": 5,
+      "title": "Stuck cap — Sara joins, both struggle gently with the cork",
+      "mode": "omni",
+      "durationSec": 10,
+      "quality": "720p",
+      "nativeAudio": true,
+      "expectedCredits": 90,
+      "subjects": [
+        "Sara",
+        "Eva"
+      ],
+      "scene": "beach-shore",
+      "boundElements": [
+        {
+          "tag": "sara-beach",
+          "source": "library"
+        },
+        {
+          "tag": "eva-beach",
+          "source": "library"
+        },
+        {
+          "tag": "beach-shore",
+          "source": "library"
+        },
+        {
+          "tag": "magic-bottle",
+          "source": "library"
+        }
+      ],
+      "prompt": "Mid-shot on @beach-shore at the gentle calm wet tide line. @eva-beach already kneeling on the LEFT on the wet sand with both knees softly on the sand, both hands holding the @magic-bottle steady at chest height with curly blonde hair with rainbow bow. Eva has exactly two arms and two hands visible — BOTH bracing the BOTTOM-THIRD of the bottle steady, NEVER touching the cork. @sara-beach already kneeling on the RIGHT next to Eva on the wet sand with both knees softly on the sand, ponytail with bow, both hands gently gripping the small cork stopper of the bottle, tongue poking out softly in concentration as she gently twists. Sara has exactly two arms and two hands visible — BOTH gripping the cork stopper at the TOP of the bottle. (BEAT 1 — 0-5s) Sara twists the cork softly with both hands, eyebrows scrunched playfully, tongue out. Sara (warm playful grunt-giggle): \"It's STUCK! Why is it so stuck?\" (BEAT 2 — 5-10s) Eva braces the bottle steady with both hands, both girls leaning in close together over the bottle. Eva (cheerful encouraging, both hands STILL bracing the bottle's bottom-third): \"You can do it! Pull pull pull!\" Both girls keep their hands gently on the bottle, twisting and bracing softly together. Cheerful warm kid-show energy. Both girls stay kneeling with knees on the wet sand throughout. Preserve each character's silhouette and proportions throughout — no morphing of facial features, no shifting of hair or wardrobe, no color drift on clothing or skin tone. Keep all character bodies stable, consistent in scale, and locked to the same outfit and hairstyle from second 0 through the final second. STRICT ANATOMY: Sara has exactly two arms and two hands at all times, both gripping the cork. Eva has exactly two arms and two hands at all times, both bracing the bottle. No third hand from either girl. The wet sand stays plain wet sand — no marks, no red, no debris.",
+      "negativePrompt": "duplicate character, twin, clone, two of the same, mirrored figure, second mother, two Mama, mama in this clip, mama visible, second father, two Papa, papa in this clip, papa visible, dog visible, joe visible, ginger visible, third child, second sister, second sara, second eva, two eva, duplicate eva, three girls, four kids, second blonde child, additional children, extra child in background, ghost figure, ghost kid, ghost children, shadow children, shadow of person, mirrored children, mirror reflection, family members in the background, strangers, crowd, group of people, other faces, background people, friends, neighbors, other beachgoers, three arms, third arm, extra arm, extra hand, floating hand, anatomy error, sara has three hands, eva has three hands, scary face, frightening expression, horror lighting, blood, red liquid, red splatter, red stain, gore, injury, scary, violent, distressing, sara airborne, sara leaping, eva airborne, eva leaping, hard fall, hard impact, painful fall, broken glass, shattered bottle, sharp shards, cut hands, bleeding fingers, dangerous surf, big crashing waves, stormy water, environmental shake, motion lines, action lines, morphing, flickering, disfigured, distorted, extra face, unstable motion, identical adults"
+    },
+    {
+      "episode": 12,
+      "beat": 6,
+      "clip": 6,
+      "title": "Note inside! — bottle pops open softly, paper slides into Sara's palm",
+      "mode": "omni",
+      "durationSec": 10,
+      "quality": "720p",
+      "nativeAudio": true,
+      "expectedCredits": 90,
+      "subjects": [
+        "Sara",
+        "Eva"
+      ],
+      "scene": "beach-shore",
+      "boundElements": [
+        {
+          "tag": "sara-beach",
+          "source": "library"
+        },
+        {
+          "tag": "eva-beach",
+          "source": "library"
+        },
+        {
+          "tag": "beach-shore",
+          "source": "library"
+        },
+        {
+          "tag": "magic-bottle",
+          "source": "library"
+        },
+        {
+          "tag": "rescue-note",
+          "source": "library"
+        }
+      ],
+      "prompt": "Tight close-up on @beach-shore at the gentle calm wet tide line. @sara-beach already kneeling with both hands gently holding the @magic-bottle, the small cork stopper just gently lifted out and resting in her right palm with a soft *thwop* sound. Sara has exactly two arms and two hands visible — right hand on the cork, left hand cupped under the open bottle. The tiny rolled paper @rescue-note already softly resting in Sara's open left palm, just slid out of the bottle. @eva-beach already pressed in close beside Sara on the LEFT, kneeling with both knees softly on the wet sand, both hands clasped softly in her lap with curly blonde hair and rainbow bow falling forward. Eva has exactly two arms and two hands visible — both clasped softly in her lap, NEITHER hand touching the bottle or note. Both girls lean in close over the open hand with the rolled paper. The empty bottle still emits a soft faint aqua-blue magical glow. (BEAT 1 — 0-5s) Sara holds up the tiny rolled paper note carefully between her thumb and finger of her right hand, eyes huge. Sara (small breathless gasp): \"It's a NOTE!\" (BEAT 2 — 5-10s) Eva (mouth a small 'O' of wonder, leaning in even closer): \"Open it open it open it!\" Both girls stay kneeling close together on the wet sand. Calm cheerful kid-show ocean ambiance throughout. Preserve each character's silhouette and proportions throughout — no morphing of facial features, no shifting of hair or wardrobe, no color drift on clothing or skin tone. Keep all character bodies stable, consistent in scale, and locked to the same outfit and hairstyle from second 0 through the final second. STRICT ANATOMY: Sara has exactly two arms and two hands at all times. Eva has exactly two arms and two hands at all times. Both girls stay kneeling with knees softly on the wet sand throughout — no jumping, no leaping. The wet sand stays plain wet sand — no marks, no red, no debris.",
+      "negativePrompt": "duplicate character, twin, clone, two of the same, mirrored figure, second mother, two Mama, mama in this clip, mama visible, second father, two Papa, papa in this clip, papa visible, dog visible, joe visible, ginger visible, third child, second sister, second sara, second eva, two eva, duplicate eva, three girls, four kids, second blonde child, additional children, extra child in background, ghost figure, ghost kid, ghost children, shadow children, shadow of person, mirrored children, mirror reflection, family members in the background, strangers, crowd, group of people, other faces, background people, friends, neighbors, three arms, third arm, extra arm, extra hand, floating hand, anatomy error, sara has three hands, eva has three hands, scary face, frightening expression, horror lighting, blood, red liquid, red splatter, red stain, gore, injury, scary, violent, distressing, sara airborne, eva airborne, hard fall, hard impact, painful fall, broken glass, shattered bottle, sharp shards, cut hands, bleeding fingers, environmental shake, motion lines, action lines, morphing, flickering, disfigured, distorted, extra face, unstable motion, identical adults"
+    },
+    {
+      "episode": 12,
+      "beat": 7,
+      "clip": 7,
+      "title": "AUDIENCE-ASK — Eva reads halting, Sara turns to camera",
+      "mode": "omni",
+      "durationSec": 10,
+      "quality": "720p",
+      "nativeAudio": true,
+      "expectedCredits": 90,
+      "subjects": [
+        "Sara",
+        "Eva"
+      ],
+      "scene": "beach-shore",
+      "boundElements": [
+        {
+          "tag": "sara-beach",
+          "source": "library"
+        },
+        {
+          "tag": "eva-beach",
+          "source": "library"
+        },
+        {
+          "tag": "beach-shore",
+          "source": "library"
+        },
+        {
+          "tag": "rescue-note",
+          "source": "library"
+        }
+      ],
+      "prompt": "Mid-close-up on @beach-shore — wet sand at the gentle calm tide line. @sara-beach already kneeling on the RIGHT on the wet sand with both knees softly on the sand, both hands gently holding the unrolled @rescue-note open in front of her chest. Sara has exactly two arms and two hands visible — BOTH holding the unrolled note open in front of her chest. @eva-beach already kneeling on the LEFT pressed in close to Sara, both knees softly on the wet sand, her right index finger gently pointing at the words on the paper, sounding them out slowly with cute concentration on her face. Curly blonde hair with rainbow bow. Eva has exactly two arms and two hands visible — right index finger softly tracing words on the note, left hand resting softly in her lap. (BEAT 1 — 0-5s) Eva (slow halting cute reading, finger softly tracing the words): \"I... am... STUCK... on... a... fa-RA-way... ISLAND... please come find me!\" Eva's eyes go huge with wonder at her own reading. (BEAT 2 — 5-10s) Sara (eyes huge, then turning her head DIRECTLY to camera with friend-to-friend conspiratorial sparkle): \"WHO do YOU think wrote this?!\" Sara holds her warm look at the camera waiting cheerfully for the kid watching at home to call out a guess. Both girls stay kneeling close together on the wet sand. Preserve each character's silhouette and proportions throughout — no morphing of facial features, no shifting of hair or wardrobe, no color drift on clothing or skin tone. Keep all character bodies stable, consistent in scale, and locked to the same outfit and hairstyle from second 0 through the final second. STRICT ANATOMY: Sara has exactly two arms and two hands at all times, both holding the note. Eva has exactly two arms and two hands at all times. Calm cheerful kid-show ocean ambiance throughout — no shouting, no scary intensity, no environmental shake. The wet sand stays plain wet sand — no marks, no red, no debris.",
+      "negativePrompt": "duplicate character, twin, clone, two of the same, mirrored figure, second mother, two Mama, mama in this clip, mama visible, second father, two Papa, papa in this clip, papa visible, dog visible, joe visible, ginger visible, third child, second sister, second sara, second eva, two eva, duplicate eva, three girls, four kids, second blonde child, additional children, extra child in background, ghost figure, ghost kid, ghost children, shadow children, shadow of person, mirrored children, mirror reflection, family members in the background, strangers, crowd, group of people, other faces, background people, friends, neighbors, three arms, third arm, extra arm, extra hand, floating hand, anatomy error, sara has three hands, eva has three hands, sara not looking at camera, sara looking away from camera, scary face, frightening expression, horror lighting, blood, red liquid, red splatter, red stain, gore, injury, scary, violent, distressing, sara airborne, eva airborne, hard fall, hard impact, painful fall, environmental shake, motion lines, action lines, dramatic sound waves, scary ocean, big crashing waves, morphing, flickering, disfigured, distorted, extra face, unstable motion, identical adults"
+    },
+    {
+      "episode": 12,
+      "beat": 8,
+      "clip": 8,
+      "title": "GINGER REVEAL — signed by Ginger from the magic forest",
+      "mode": "omni",
+      "durationSec": 10,
+      "quality": "720p",
+      "nativeAudio": true,
+      "expectedCredits": 90,
+      "subjects": [
+        "Sara",
+        "Eva"
+      ],
+      "scene": "beach-shore",
+      "boundElements": [
+        {
+          "tag": "sara-beach",
+          "source": "library"
+        },
+        {
+          "tag": "eva-beach",
+          "source": "library"
+        },
+        {
+          "tag": "beach-shore",
+          "source": "library"
+        },
+        {
+          "tag": "rescue-note",
+          "source": "library"
+        }
+      ],
+      "prompt": "Tight close-up on @beach-shore — wet sand at the gentle calm tide line. @sara-beach already kneeling on the RIGHT on the wet sand with both knees softly on the sand, the @rescue-note held open between her two hands, gently turning the paper over to read the back. Sara has exactly two arms and two hands visible — BOTH gently holding the rescue-note open between her thumbs and fingers. The bottom corner of the back of the paper has handwritten English text reading 'GINGER' followed by a tiny pawprint stamp, clearly visible. @eva-beach already kneeling on the LEFT pressed in close beside Sara, both knees softly on the wet sand, leaning in over the paper with eyes huge. Curly blonde hair with rainbow bow. Eva has exactly two arms and two hands visible — BOTH softly clasped under her chin in cute wonder pose, NEITHER touching the note. (BEAT 1 — 0-5s) Sara's eyes go HUGE with cheerful wonder-recognition — pure happy shock-recognition, mouth open in a soft 'O'. Sara (small breathy gasp, soft and cheerful): \"...Ginger? GINGER!\" (BEAT 2 — 5-10s) Eva (jaw gently dropped, eyes shining): \"From the magic forest? The pink-tree fox?!\" Sara (nodding slowly, holding the note up gently): \"It's HER. It's REALLY her.\" Both girls share a warm awe-look together. Calm cheerful kid-show ocean ambiance throughout. Preserve each character's silhouette and proportions throughout — no morphing of facial features, no shifting of hair or wardrobe, no color drift on clothing or skin tone. Keep all character bodies stable, consistent in scale, and locked to the same outfit and hairstyle from second 0 through the final second. STRICT ANATOMY: Sara has exactly two arms and two hands at all times, both holding the note. Eva has exactly two arms and two hands at all times. Both girls stay kneeling with knees softly on the wet sand throughout — no jumping, no leaping. The wet sand stays plain wet sand — no marks, no red, no debris.",
+      "negativePrompt": "duplicate character, twin, clone, two of the same, mirrored figure, second mother, two Mama, mama in this clip, mama visible, second father, two Papa, papa in this clip, papa visible, dog visible, joe visible, ginger visible as live character, ginger appearing on screen, fox visible, third child, second sister, second sara, second eva, two eva, duplicate eva, three girls, four kids, second blonde child, additional children, extra child in background, ghost figure, ghost kid, ghost children, shadow children, shadow of person, mirrored children, mirror reflection, family members in the background, strangers, crowd, group of people, other faces, background people, friends, neighbors, three arms, third arm, extra arm, extra hand, floating hand, anatomy error, sara has three hands, eva has three hands, scary face, frightening expression, horror lighting, blood, red liquid, red splatter, red stain, gore, injury, scary, violent, distressing, sara airborne, eva airborne, hard fall, hard impact, painful fall, environmental shake, motion lines, action lines, morphing, flickering, disfigured, distorted, extra face, unstable motion, identical adults"
+    },
+    {
+      "episode": 12,
+      "beat": 9,
+      "clip": 9,
+      "title": "Sara at the beach blanket — bottle to Mama",
+      "mode": "omni",
+      "durationSec": 10,
+      "quality": "720p",
+      "nativeAudio": true,
+      "expectedCredits": 90,
+      "subjects": [
+        "Mama",
+        "Sara"
+      ],
+      "scene": "beach-blanket",
+      "boundElements": [
+        {
+          "tag": "mama-beach",
+          "source": "library"
+        },
+        {
+          "tag": "sara-beach",
+          "source": "library"
+        },
+        {
+          "tag": "beach-blanket",
+          "source": "library"
+        },
+        {
+          "tag": "magic-bottle",
+          "source": "library"
+        }
+      ],
+      "prompt": "Mid-shot at the @beach-blanket setup — striped beach blanket on the dry golden sand with a soft sun umbrella, picnic cooler, beach toys, a magazine. @mama-beach already CENTER-FRAME seated cross-legged on the blanket with both feet softly on the blanket, sun hat and sunglasses on, holding a magazine in both hands at her chest. Mama has exactly two arms and two hands visible. @sara-beach already standing on the dry sand right in front of Mama with both feet planted on the sand, ponytail with bow tousled softly from her brisk walk over, holding the glowing @magic-bottle out in front of her with both hands cupped gently together, eyes shining bright. Sara has exactly two arms and two hands visible. (BEAT 1 — 0-5s) Sara (cheerful warm out-of-breath voice, eyes shining): \"Mommy! Look look LOOK!\" Mama gently lowers her magazine into her lap, eyes going wide and warm. (BEAT 2 — 5-10s) Mama leans forward gently, eyes warm and curious, peering at the bottle softly cupped in Sara's hands. Mama (warm soft wonder voice): \"Oh sweetie... that's GLOWING. Where did you find this?\" Sara (cheerful warm bright tone): \"In the SAND. My LITTLE SISTER spotted it. There's a NOTE inside!\" Calm cheerful kid-show family ambiance throughout. Preserve each character's silhouette and proportions throughout — no morphing of facial features, no shifting of hair or wardrobe, no color drift on clothing or skin tone. Keep all character bodies stable, consistent in scale, and locked to the same outfit and hairstyle from second 0 through the final second. STRICT ANATOMY: Mama has exactly two arms and two hands at all times. Sara has exactly two arms and two hands at all times, both cupping the bottle. Mama stays seated cross-legged on the blanket throughout. Sara stays grounded with both feet on the sand throughout. The sand and blanket stay plain clean — no marks, no red, no debris.",
+      "negativePrompt": "duplicate character, twin, clone, two of the same, mirrored figure, second mother, two Mama, identical adults, second father, two Papa, papa in this clip, papa visible, dog visible, joe visible, ginger visible, third child, second sister, eva in this clip, eva visible, second sara, two sara, duplicate sara, second blonde child, additional children, extra child in background, ghost figure, ghost kid, ghost children, shadow children, shadow of person, mirrored children, mirror reflection, family members in the background, strangers, crowd, group of people, other faces, background people, friends, neighbors, other beachgoers, other families on the beach, three arms, third arm, extra arm, extra hand, floating hand, anatomy error, sara has three hands, scary face, frightening expression, horror lighting, blood, red liquid, red splatter, red stain, gore, injury, scary, violent, distressing, sara airborne, sara leaping, sara mid-air, mama airborne, hard fall, hard impact, painful fall, broken glass, shattered bottle, sharp shards, cut hands, bleeding fingers, environmental shake, motion lines, action lines, dust trails, speed lines, morphing, flickering, disfigured, distorted, extra face, unstable motion"
+    },
+    {
+      "episode": 12,
+      "beat": 10,
+      "clip": 10,
+      "title": "Eva at the surf line — note to Papa",
+      "mode": "omni",
+      "durationSec": 10,
+      "quality": "720p",
+      "nativeAudio": true,
+      "expectedCredits": 90,
+      "subjects": [
+        "Papa",
+        "Eva"
+      ],
+      "scene": "beach-shore",
+      "boundElements": [
+        {
+          "tag": "papa-beach",
+          "source": "library"
+        },
+        {
+          "tag": "eva-beach",
+          "source": "library"
+        },
+        {
+          "tag": "beach-shore",
+          "source": "library"
+        },
+        {
+          "tag": "rescue-note",
+          "source": "library"
+        }
+      ],
+      "prompt": "Mid-shot at the gentle calm surf line of @beach-shore. @papa-beach already CENTER-LEFT standing ankle-deep in the gentle calm surf with both feet planted firmly on the sandy seabed, hands relaxed at his sides, gently looking out at the horizon. Papa has exactly two arms and two hands visible. @eva-beach already standing on the dry sand on the RIGHT a few feet from Papa with both feet planted on the sand, holding the unrolled @rescue-note up over her head with both hands like a happy victory flag. Curly blonde hair with rainbow bow. Eva has exactly two arms and two hands visible. (BEAT 1 — 0-5s) Eva (cheerful warm joyful sing-song call, big smile, NOT scary, NOT angry): \"Daddy! Daddy LOOK! Ginger needs us!\" Papa turns gently with a surprised warm dad-smile, knee-deep in the calm surf. (BEAT 2 — 5-10s) Papa (warm curious dad-tone): \"Ginger needs us? Show me, little explorer.\" Papa gently lifts both hands toward Eva in a 'come here let me see' gesture, still standing in the calm gentle surf with both feet on the sandy seabed. Eva keeps the note held up softly with both hands. The water around Papa's legs stays calm and gentle. Preserve each character's silhouette and proportions throughout — no morphing of facial features, no shifting of hair or wardrobe, no color drift on clothing or skin tone. Keep all character bodies stable, consistent in scale, and locked to the same outfit and hairstyle from second 0 through the final second. STRICT ANATOMY: Papa has exactly two arms and two hands at all times. Eva has exactly two arms and two hands at all times, both holding the note up. Papa stays grounded in the gentle calm surf with both feet on the sandy seabed throughout. Eva stays grounded with both feet on the dry sand throughout. The sand and water stay plain clean — no marks, no red, no debris.",
+      "negativePrompt": "duplicate character, twin, clone, two of the same, mirrored figure, second father, two Papa, identical adults, second mother, two Mama, mama in this clip, mama visible, dog visible, joe visible, ginger visible, third child, second sister, sara in this clip, sara visible, second eva, two eva, duplicate eva, second blonde child, additional children, extra child in background, ghost figure, ghost kid, ghost children, shadow children, shadow of person, mirrored children, mirror reflection, family members in the background, strangers, crowd, group of people, other faces, background people, friends, neighbors, other beachgoers, three arms, third arm, extra arm, extra hand, floating hand, anatomy error, eva has three hands, papa has three hands, scary face, frightening expression, horror lighting, papa thundering shout, papa apoplectic, papa rage face, intense yelling, blood, red liquid, red splatter, red stain, gore, injury, scary, violent, distressing, eva airborne, eva leaping, eva mid-air, papa airborne, papa launching, papa diving, hard fall, hard impact, painful fall, dangerous surf, big crashing waves, stormy water, scary ocean, ocean monster, environmental shake, motion lines, action lines, dust trails, speed lines, morphing, flickering, disfigured, distorted, extra face, unstable motion"
+    },
+    {
+      "episode": 12,
+      "beat": 11,
+      "clip": 11,
+      "title": "Mama and Papa already standing together reading the note",
+      "mode": "omni",
+      "durationSec": 10,
+      "quality": "720p",
+      "nativeAudio": true,
+      "expectedCredits": 90,
+      "subjects": [
+        "Mama",
+        "Papa"
+      ],
+      "scene": "beach-blanket",
+      "boundElements": [
+        {
+          "tag": "mama-beach",
+          "source": "library"
+        },
+        {
+          "tag": "papa-beach",
+          "source": "library"
+        },
+        {
+          "tag": "beach-blanket",
+          "source": "library"
+        },
+        {
+          "tag": "magic-bottle",
+          "source": "library"
+        },
+        {
+          "tag": "rescue-note",
+          "source": "library"
+        }
+      ],
+      "prompt": "Mid-close-up at the @beach-blanket on the dry golden sand. @mama-beach already CENTER-LEFT standing on the dry sand with both feet planted, sun hat on, holding the glowing @magic-bottle gently in her right hand at chest height, head tilted softly toward Papa to read along. Mama has exactly two arms and two hands visible. @papa-beach already CENTER-RIGHT standing on the dry sand with both feet planted right beside Mama, holding the unrolled @rescue-note open between his two hands at chest height between them, both adults reading the words silently. Papa has exactly two arms and two hands visible. (BEAT 1 — 0-5s) Both adults read the note in soft silence. Mama and Papa share a quiet warm look of bewildered curious concern. (BEAT 2 — 5-10s) Mama (soft warm thoughtful voice): \"A magic-forest fox stuck on an island... we need a plan.\" Papa (warm thoughtful nod, quiet dad-voice): \"...we sure do.\" Both adults stay standing together gently on the dry sand. Calm cheerful kid-show family ambiance throughout — no shouting, no scary intensity, no environmental shake. Preserve each character's silhouette and proportions throughout — no morphing of facial features, no shifting of hair or wardrobe, no color drift on clothing or skin tone. Keep all character bodies stable, consistent in scale, and locked to the same outfit and hairstyle from second 0 through the final second. STRICT ANATOMY: Mama has exactly two arms and two hands at all times — right hand on the bottle, left hand at her side. Papa has exactly two arms and two hands at all times, both holding the note. Both adults stay grounded with both feet on the dry sand throughout — no leaping, no jumping. The sand stays plain clean golden sand — no marks, no red, no debris.",
+      "negativePrompt": "duplicate character, twin, clone, two of the same, mirrored figure, second mother, two Mama, identical adults, second father, two Papa, dog visible, joe visible, ginger visible, sara in this clip, sara visible, eva in this clip, eva visible, third child, second sister, additional children, extra child in background, ghost figure, ghost kid, ghost children, shadow children, shadow of person, mirrored children, mirror reflection, family members in the background, strangers, crowd, group of people, other faces, background people, friends, neighbors, other beachgoers, other families, three arms, third arm, extra arm, extra hand, floating hand, anatomy error, mama has three hands, papa has three hands, scary face, frightening expression, horror lighting, papa thundering shout, papa apoplectic, papa rage face, mama angry, intense yelling, blood, red liquid, red splatter, red stain, gore, injury, scary, violent, distressing, mama airborne, papa airborne, mama leaping, papa leaping, hard fall, hard impact, painful fall, broken glass, shattered bottle, sharp shards, environmental shake, motion lines, action lines, morphing, flickering, disfigured, distorted, extra face, unstable motion"
+    },
+    {
+      "episode": 12,
+      "beat": 13,
+      "clip": 12,
+      "title": "Papa: RESEARCH BASE!",
+      "mode": "omni",
+      "durationSec": 10,
+      "quality": "720p",
+      "nativeAudio": true,
+      "expectedCredits": 90,
+      "subjects": [
+        "Papa",
+        "Sara",
+        "Eva"
+      ],
+      "scene": "beach-shore",
+      "boundElements": [
+        {
+          "tag": "ep12-c12-base2",
+          "source": "library"
+        }
+      ],
+      "prompt": "Composition is anchored by @ep12-c12-base2. Animate the still gently — every figure stays in their EXACT physical kneeling spot throughout the entire 10s. There are EXACTLY 3 people in the entire frame, no extras, no additional spawns. (BEAT 1 — 0-5s) Papa softly spreads both arms slightly wider in a friendly drawing-an-invisible-castle dad-gesture, warm cheerful theatrical face. Papa (cheerful warm theatrical dad-voice): \"You know what every rescue mission needs? A RE-SEARCH. BASE!\" (BEAT 2 — 5-10s) Sara's eyes go huge with cheerful awe, mouth opens softly. Sara (cheerful kid-voice): \"A research BASE?!\" Eva nods softly with her chin moving up and down, beaming bright. Eva (cheerful nodding): \"Like real explorers!\" Papa softly closes his arms back gently in. Papa (warm cheerful nod): \"Bucket. Shovel. Let's GO.\" All three keep their kneeling/crouching positions throughout — no standing, no walking, no leaping. Calm cheerful kid-show family energy. Preserve each character's silhouette and proportions throughout — no morphing, no shifting, no color drift.",
+      "negativePrompt": "duplicate character, twin, clone, two of the same, mirrored figure, second father, two Papa, identical adults, second mother, two Mama, third child, second sister, second sara, second eva, two eva, duplicate eva, duplicate sara, mirror reflection, fourth child, additional children, extra child in background, ghost figure, ghost kid, shadow children, family members in the background, strangers, crowd, group of people, other faces, background people, friends, neighbors, other kids on beach, three arms, third arm, extra arm, extra hand, floating hand, anatomy error, scary face, frightening expression, horror lighting, blood, red liquid, red splatter, gore, injury, scary, violent, distressing, hard fall, hard impact, environmental shake, motion lines, action lines, morphing, flickering, disfigured, distorted, extra face, unstable motion, identical adults"
+    },
+    {
+      "episode": 12,
+      "beat": 14,
+      "clip": 13,
+      "title": "PARENT-ACTIVITY (15s) — Papa+Sara+Eva sandcastle research base build (locked positions)",
+      "mode": "omni",
+      "durationSec": 15,
+      "quality": "720p",
+      "nativeAudio": true,
+      "expectedCredits": 135,
+      "subjects": [
+        "Papa",
+        "Sara",
+        "Eva"
+      ],
+      "scene": "beach-shore",
+      "boundElements": [
+        {
+          "tag": "ep12-c13-build2",
+          "source": "library"
+        }
+      ],
+      "prompt": "Composition is anchored by @ep12-c13-build2. Animate the still gently — every figure stays in their EXACT physical kneeling spot throughout the entire 15s, no character ever stands up, walks, crosses to another spot, or reaches across. Only arms move in place. There are EXACTLY 3 people in the entire frame, no extras, no additional spawns. (BEAT 1 — 0-5s) Papa softly pats sand against the castle wall with both hands. Sara softly tilts her bucket and pours a tiny stream of dry sand onto the wall. Eva softly digs in the moat-shaped depression with both her hands. Papa (warm cheerful sing-song dad-voice): \"Big walls comin' up!\" Sara (cheerful kid-voice): \"Smooth them down!\" Eva (cheerful giggle): \"Bigger moat!\" (BEAT 2 — 5-10s) Eva softly lifts her empty plastic bucket with both hands and pretends to dump it the wrong direction, deadpan, looking at her own bucket with cute confusion. Sara giggles softly with both hands still on her bucket. Papa softly lifts both his hands off the wall in a comic palms-up shrug-gesture. Eva (cute deadpan): \"...wrong moat.\" Papa (warm theatrical comic gasp): \"Oh, is THAT how it is?!\" (BEAT 3 — 10-15s) A small thin twig with a tiny rectangular paper flag reading 'RESCUE' appears softly planted at the very top of the castle wall. Papa softly raises both his hands in a celebration gesture. Sara softly raises both her hands above her bucket cheering. Eva softly raises both her hands above her empty bucket cheering. All three giggle warmly. Eva (cheerful warm cheer): \"PHASE ONE — DONE!\" All three keep kneeling on both knees in their exact same spot from second 0 through second 15. Cheerful warm kid-show family-comedy lighting. Preserve each character's silhouette and proportions throughout — no morphing, no shifting, no color drift.",
+      "negativePrompt": "duplicate character, twin, clone, two of the same, mirrored figure, second father, two Papa, identical adults, second mother, two Mama, third child, second sister, second sara, second eva, two eva, duplicate eva, duplicate sara, mirror reflection, fourth child, additional children, extra child in background, ghost figure, ghost kid, shadow children, family members in the background, strangers, crowd, group of people, other faces, background people, friends, neighbors, other kids on beach, three arms, third arm, extra arm, extra hand, floating hand, anatomy error, scary face, frightening expression, horror lighting, blood, red liquid, red splatter, gore, injury, scary, violent, distressing, hard fall, hard impact, environmental shake, motion lines, action lines, morphing, flickering, disfigured, distorted, extra face, unstable motion, identical adults, papa standing up, sara standing up, eva standing up, character walking, character crossing position, reaching across to another character"
+    },
+    {
+      "episode": 12,
+      "beat": 15,
+      "clip": 14,
+      "title": "Finished base reveal — Sara: phase ONE done, phase TWO the BOAT",
+      "mode": "omni",
+      "durationSec": 10,
+      "quality": "720p",
+      "nativeAudio": true,
+      "expectedCredits": 90,
+      "subjects": [
+        "Sara",
+        "Eva"
+      ],
+      "scene": "beach-shore",
+      "boundElements": [
+        {
+          "tag": "sara-beach",
+          "source": "library"
+        },
+        {
+          "tag": "eva-beach",
+          "source": "library"
+        },
+        {
+          "tag": "beach-shore",
+          "source": "library"
+        },
+        {
+          "tag": "castle-rescue-base",
+          "source": "library"
+        }
+      ],
+      "prompt": "Wide hero shot on @beach-shore — dry golden sand. The completed @castle-rescue-base CENTER-BACK in all its glory: enormous multi-turret sandcastle with a deep moat, decorated with seashells, a small thin twig at the top with a tiny rectangular paper flag reading 'RESCUE'. Soft warm afternoon sunlight. @sara-beach already on the LEFT-FOREGROUND standing on the sand with both feet planted, both hands gently on her hips, sand softly on her cheeks, beaming with proud cheerful smile. Sara has exactly two arms and two hands visible — left hand on her left hip, right hand free at her side ready to point in BEAT 2. @eva-beach already on the RIGHT-FOREGROUND standing on the sand with both feet planted right next to Sara, also doing a proud hands-on-hips stance, beaming. Curly blonde hair with rainbow bow, sand softly on her cheeks. Eva has exactly two arms and two hands visible — BOTH hands on her hips throughout, NEVER off her hips, NEVER raising a finger. (BEAT 1 — 0-5s) Both girls stand proudly grounded on the sand looking at their finished base. (BEAT 2 — 5-10s) Sara (cheerful proud big-sister tone, raising one hand finger gently in the air): \"Phase ONE — DONE!\" Eva (cheerful nodding fast): \"Phase TWO?\" Sara (warm cheerful determined tone): \"...the BOAT!\" Both girls share a happy proud sister-look. Calm cheerful kid-show family ambiance throughout — soft seabird sounds, gentle distant surf. Preserve each character's silhouette and proportions throughout — no morphing of facial features, no shifting of hair or wardrobe, no color drift on clothing or skin tone. Keep all character bodies stable, consistent in scale, and locked to the same outfit and hairstyle from second 0 through the final second. STRICT ANATOMY: Sara has exactly two arms and two hands at all times. Eva has exactly two arms and two hands at all times. Both girls stay grounded with both feet on the sand throughout — no leaping, no jumping. The sand and castle stay plain clean — no marks, no red, no debris.",
+      "negativePrompt": "duplicate character, twin, clone, two of the same, mirrored figure, second mother, two Mama, mama in this clip, mama visible, second father, two Papa, papa in this clip, papa visible, dog visible, joe visible, ginger visible, third child, second sister, second sara, second eva, two eva, duplicate eva, three girls, four kids, second blonde child, fourth child, fifth child, additional children, extra child in background, ghost figure, ghost kid, ghost children, shadow children, shadow of person, mirrored children, mirror reflection, family members in the background, strangers, crowd, group of people, other faces, background people, friends, neighbors, other beachgoers, other families, three arms, third arm, extra arm, extra hand, floating hand, anatomy error, sara has three hands, eva has three hands, scary face, frightening expression, horror lighting, blood, red liquid, red splatter, red stain, gore, injury, scary, violent, distressing, sara airborne, sara leaping, eva airborne, eva leaping, hard fall, hard impact, painful fall, environmental shake, motion lines, action lines, dust trails, speed lines, sandcastle collapsing, castle falling apart, morphing, flickering, disfigured, distorted, extra face, unstable motion, identical adults"
+    },
+    {
+      "episode": 12,
+      "beat": 17,
+      "clip": 15,
+      "title": "AUDIENCE-ASK — sunset walk: where is Ginger's island?",
+      "mode": "omni",
+      "durationSec": 10,
+      "quality": "720p",
+      "nativeAudio": true,
+      "expectedCredits": 90,
+      "subjects": [
+        "Papa",
+        "Sara",
+        "Eva"
+      ],
+      "scene": "beach-sunset",
+      "boundElements": [
+        {
+          "tag": "ep12-c15-sunset2",
+          "source": "library"
+        }
+      ],
+      "prompt": "Composition is anchored by @ep12-c15-sunset2. Animate the still gently — the three figures stroll forward at a slow gentle pace along the wet shore, holding hands across the frame, staying in their EXACT side-by-side line throughout the entire 10s. There are EXACTLY 3 people in the entire frame, no extras, no additional spawns. (BEAT 1 — 0-5s) The three of them stroll gently together along the wet shore, gentle small soft surf lapping at their feet. Papa looks calmly out at the horizon with a warm dad-smile. (BEAT 2 — 5-10s) Sara softly turns her head DIRECTLY toward the camera with a warm friend-to-friend wonder-sparkle in her eyes. Sara (gentle warm thoughtful voice, friend-to-friend energy): \"Where do YOU think Ginger's island is?\" She holds her warm look at the camera waiting cheerfully for the kid watching at home to call out a guess. All three keep gently walking slowly forward in line, holding hands throughout — no running, no leaping, no breaking the line, no crossing positions. Calm cheerful kid-show ocean ambiance throughout — gentle surf, soft seabirds. Preserve each character's silhouette and proportions throughout — no morphing, no shifting, no color drift.",
+      "negativePrompt": "duplicate character, twin, clone, two of the same, mirrored figure, second father, two Papa, identical adults, second mother, two Mama, third child, second sister, second sara, second eva, two eva, duplicate eva, duplicate sara, mirror reflection, fourth child, additional children, extra child in background, ghost figure, ghost kid, shadow children, family members in the background, strangers, crowd, group of people, other faces, background people, friends, neighbors, other kids on beach, three arms, third arm, extra arm, extra hand, floating hand, anatomy error, scary face, frightening expression, horror lighting, blood, red liquid, red splatter, gore, injury, scary, violent, distressing, hard fall, hard impact, environmental shake, motion lines, action lines, morphing, flickering, disfigured, distorted, extra face, unstable motion, identical adults"
+    },
+    {
+      "episode": 12,
+      "beat": 18,
+      "clip": 16,
+      "title": "Sara opens notebook — MAGIC FOREST RESCUE PLAN",
+      "mode": "omni",
+      "durationSec": 10,
+      "quality": "720p",
+      "nativeAudio": true,
+      "expectedCredits": 90,
+      "subjects": [
+        "Sara"
+      ],
+      "scene": "beach-sunset",
+      "boundElements": [
+        {
+          "tag": "sara-beach",
+          "source": "library"
+        },
+        {
+          "tag": "beach-sunset",
+          "source": "library"
+        },
+        {
+          "tag": "sara-notebook-rescue",
+          "source": "library"
+        }
+      ],
+      "prompt": "Tight close-up shot on the dry sand of @beach-sunset — soft golden-hour light raking from the right, gentle pastel sunset gradient in the background. @sara-beach already CENTER-FRAME seated cross-legged on a folded beach towel on the dry sand, the open @sara-notebook-rescue spread softly across her lap, a chunky purple crayon held gently in her right hand. Sara has exactly two arms and two hands visible. The notebook page already shows the title 'MAGIC FOREST RESCUE PLAN' in big handwritten letters at the top, with a small drawing of the glowing aqua-blue bottle next to it. (BEAT 1 — 0-5s) Sara is gently mid-drawing — her right hand softly adding a small island shape and a dotted-line route to the page, the chunky purple crayon making soft marks. Sara softly bites her lower lip in cute concentration, brow gently scrunched. (BEAT 2 — 5-10s) Sara gently adds a small letter 'X' on the dotted line and lets out a tiny satisfied warm hum. Sara (gentle thoughtful warm voice to herself): \"Bottle... island... X marks the spot.\" Calm cheerful kid-show family ambiance throughout — gentle distant surf, soft seabirds. STRICT ANATOMY: Sara has exactly two arms and two hands at all times — right hand drawing with crayon, left hand softly resting on the notebook page. Sara stays seated cross-legged on the towel throughout — no jumping, no leaping. The sand and notebook stay plain clean — no marks (other than the rescue plan drawing), no red, no liquid spills.",
+      "negativePrompt": "duplicate character, twin, clone, two of the same, mirrored figure, second sister, second sara, duplicate sara, two sara, identical girls, second mother, two Mama, mama in this clip, mama visible, second father, two Papa, papa in this clip, papa visible, dog visible, joe visible, ginger visible, third child, eva in this clip, eva visible, second eva, two eva, duplicate eva, second blonde child, fourth child, fifth child, additional children, extra child in background, ghost figure, ghost kid, ghost children, shadow children, shadow of person, mirrored children, mirror reflection, family members in the background, strangers, crowd, group of people, other faces, background people, friends, neighbors, three arms, third arm, extra arm, extra hand, floating hand, anatomy error, sara has three hands, scary face, frightening expression, horror lighting, blood, red liquid, red splatter, red stain on notebook, gore, injury, scary, violent, distressing, sara airborne, sara leaping, sara mid-air, hard fall, hard impact, painful fall, environmental shake, motion lines, action lines, notebook flying away, crayon flying out of hand, page tearing, paper ripping, morphing, flickering, disfigured, distorted, extra face, unstable motion, identical adults"
+    },
+    {
+      "episode": 12,
+      "beat": 19,
+      "clip": 17,
+      "title": "Eva peeks — tomorrow we build a boat?",
+      "mode": "omni",
+      "durationSec": 10,
+      "quality": "720p",
+      "nativeAudio": true,
+      "expectedCredits": 90,
+      "subjects": [
+        "Sara",
+        "Eva"
+      ],
+      "scene": "beach-sunset",
+      "boundElements": [
+        {
+          "tag": "sara-beach",
+          "source": "library"
+        },
+        {
+          "tag": "eva-beach",
+          "source": "library"
+        },
+        {
+          "tag": "beach-sunset",
+          "source": "library"
+        },
+        {
+          "tag": "sara-notebook-rescue",
+          "source": "library"
+        }
+      ],
+      "prompt": "Mid-close-up on @beach-sunset — soft golden-hour light raking gently from the right, soft pastel sunset gradient in the background. @sara-beach already CENTER-LEFT seated cross-legged on a folded beach towel on the dry sand, the open @sara-notebook-rescue resting gently on her lap, a chunky purple crayon held gently in her right hand. Sara has exactly two arms and two hands visible. @eva-beach already pressed in close behind her big-sister, her chin gently resting on her big-sister's RIGHT shoulder, both hands softly clasped at her own chest. Eva has exactly two arms and two hands visible. Curly blonde hair with rainbow bow. (BEAT 1 — 0-5s) Eva softly leans her head over Sara's shoulder, big warm wonder-eyes peering at the map page. Eva (gentle wonder-whisper, finger softly pointing at the X on the page): \"Tomorrow we build a... BOAT?\" (BEAT 2 — 5-10s) Sara (still gently drawing softly with the crayon, calm warm voice): \"Yep. Tomorrow we... start.\" Both sisters share a quiet warm sister-moment together looking at the page. Calm cheerful kid-show family ambiance throughout — gentle distant surf, soft seabirds. Preserve each character's silhouette and proportions throughout — no morphing of facial features, no shifting of hair or wardrobe, no color drift on clothing or skin tone. Keep all character bodies stable, consistent in scale, and locked to the same outfit and hairstyle from second 0 through the final second. STRICT ANATOMY: Sara has exactly two arms and two hands at all times — right hand with crayon, left hand softly resting on the notebook. Eva has exactly two arms and two hands at all times — both gently clasped at her own chest. Sara stays seated cross-legged on the towel throughout. Eva stays softly leaning at Sara's shoulder throughout — no jumping, no leaping. The sand and notebook stay plain clean — no marks (other than the rescue plan drawing), no red, no liquid spills.",
+      "negativePrompt": "duplicate character, twin, clone, two of the same, mirrored figure, second mother, two Mama, mama in this clip, mama visible, second father, two Papa, papa in this clip, papa visible, dog visible, joe visible, ginger visible, third child, second sister, second sara, second eva, two eva, duplicate eva, three girls, four kids, second blonde child, fourth child, fifth child, additional children, extra child in background, ghost figure, ghost kid, ghost children, shadow children, shadow of person, mirrored children, mirror reflection, family members in the background, strangers, crowd, group of people, other faces, background people, friends, neighbors, three arms, third arm, extra arm, extra hand, floating hand, anatomy error, sara has three hands, eva has three hands, scary face, frightening expression, horror lighting, blood, red liquid, red splatter, red stain on notebook, gore, injury, scary, violent, distressing, sara airborne, eva airborne, sara leaping, eva leaping, hard fall, hard impact, painful fall, environmental shake, motion lines, action lines, notebook flying, crayon flying, morphing, flickering, disfigured, distorted, extra face, unstable motion, identical adults"
+    },
+    {
+      "episode": 12,
+      "beat": 21,
+      "clip": 18,
+      "title": "CLIFFHANGER + CAMERA-ASK — Will YOU help us find Ginger?",
+      "mode": "omni",
+      "durationSec": 10,
+      "quality": "720p",
+      "nativeAudio": true,
+      "expectedCredits": 90,
+      "subjects": [
+        "Sara",
+        "Eva"
+      ],
+      "scene": "beach-sunset",
+      "boundElements": [
+        {
+          "tag": "sara-beach",
+          "source": "library"
+        },
+        {
+          "tag": "eva-beach",
+          "source": "library"
+        },
+        {
+          "tag": "beach-sunset",
+          "source": "library"
+        },
+        {
+          "tag": "sara-notebook-rescue",
+          "source": "library"
+        }
+      ],
+      "prompt": "Tight head-on close-up on @beach-sunset — soft pastel sunset gradient blazing pink-orange behind the girls, gentle distant ocean roar. @sara-beach already CENTER-LEFT FOREGROUND seated cross-legged on a folded beach towel, holding the open @sara-notebook-rescue page up gently toward the camera with both hands, the 'MAGIC FOREST RESCUE PLAN' title and the hand-drawn map clearly visible to the kid watching. Sara has exactly two arms and two hands visible — BOTH holding the notebook up gently toward the camera (notebook is hers). @eva-beach already CENTER-RIGHT FOREGROUND seated cross-legged on the towel right next to her big-sister, leaning gently in toward the camera, both hands softly clasped under her chin in cute wondering pose. Curly blonde hair with rainbow bow. Eva has exactly two arms and two hands visible. Both girls turn their heads DIRECTLY toward the camera with bright warm friend-to-friend sparkle in their eyes. (BEAT 1 — 0-5s) Sara (gently lifting the notebook a tiny bit higher with both hands, warm friend-to-friend tone, eyes shining): \"Will YOU help us find Ginger?\" She holds her warm look at the camera for one full beat. (BEAT 2 — 5-10s) Eva (leaning in even closer beside Sara, eyes huge with cheerful wonder): \"What kind of BOAT should we build?\" Both girls hold their warm look at the camera together waiting cheerfully for the kid watching at home to answer out loud. Calm cheerful warm kid-show family ambiance throughout — gentle distant surf, soft seabirds. Preserve each character's silhouette and proportions throughout — no morphing of facial features, no shifting of hair or wardrobe, no color drift on clothing or skin tone. Keep all character bodies stable, consistent in scale, and locked to the same outfit and hairstyle from second 0 through the final second. STRICT ANATOMY: Sara has exactly two arms and two hands at all times, both holding the notebook up. Eva has exactly two arms and two hands at all times, both clasped under her chin. Both girls stay seated cross-legged on the towel throughout — no jumping, no leaping. The sand and notebook stay plain clean — no marks (other than the rescue plan drawing), no red, no liquid spills.",
+      "negativePrompt": "duplicate character, twin, clone, two of the same, mirrored figure, second mother, two Mama, mama in this clip, mama visible, second father, two Papa, papa in this clip, papa visible, dog visible, joe visible, ginger visible, third child, second sister, second sara, second eva, two eva, duplicate eva, three girls, four kids, second blonde child, fourth child, fifth child, additional children, extra child in background, ghost figure, ghost kid, ghost children, shadow children, shadow of person, mirrored children, mirror reflection, family members in the background, strangers, crowd, group of people, other faces, background people, friends, neighbors, three arms, third arm, extra arm, extra hand, floating hand, anatomy error, sara has three hands, eva has three hands, sara not looking at camera, sara looking away from camera, eva not looking at camera, eva looking away from camera, scary face, frightening expression, horror lighting, blood, red liquid, red splatter, red stain on notebook, gore, injury, scary, violent, distressing, sara airborne, eva airborne, hard fall, hard impact, painful fall, environmental shake, motion lines, action lines, notebook flying away, page tearing, morphing, flickering, disfigured, distorted, extra face, unstable motion, identical adults"
+    }
+  ],
+  "musicVideos": [
+    {
+      "episode": 12,
+      "beat": "music-video-A",
+      "clip": "A",
+      "title": "MUSIC VIDEO RENDER A — Sara+Eva Sandy Toes duo dance",
+      "mode": "omni",
+      "durationSec": 10,
+      "quality": "720p",
+      "nativeAudio": true,
+      "expectedCredits": 90,
+      "subjects": [
+        "Sara",
+        "Eva"
+      ],
+      "scene": "beach-pastel-backdrop",
+      "boundElements": [
+        {
+          "tag": "sara-beach",
+          "source": "library"
+        },
+        {
+          "tag": "eva-beach",
+          "source": "library"
+        }
+      ],
+      "reuseAsset": true,
+      "reuseAssetNote": "ONE 10s render, paired with Suno song 'Sandy Toes.mp3' via loopVideoWithSong.mjs to fill the 60s music block. Loop choreography is rhythmic kid-pop dance with bucket-and-shovel props.",
+      "musicVideoBlock": true,
+      "loopExpansion": {
+        "iterations": 6,
+        "xfadeDuration": 0.3,
+        "outputDurationSec": 58
+      },
+      "usedUnderSongs": [
+        {
+          "song": "assets/music/Sandy Toes.mp3",
+          "blockDurationSec": 60,
+          "trimStart": 0,
+          "placementClipNumber": "13music"
+        }
+      ],
+      "prompt": "Wide front-facing music-video shot — designed pastel-beach backdrop. SKY: soft sky-blue to seafoam-green gradient. GROUND: stylized golden-sand floor with cartoon-shape pastel seashells in pinks, corals, and creams scattered around. Tiny pastel seashell confetti and fluffy soft cloud-shapes drift gently down through the frame from above. NO real beach, NO real ocean, NO scene clutter, NO logos, NO real text. @sara-beach already on the LEFT and @eva-beach already on the RIGHT, both standing on the stylized golden-sand floor with both feet planted side-by-side at slight angles to the camera at gentle dance distance from each other. Both girls hold a small yellow plastic bucket and a small red plastic shovel — Sara holds one bucket in her left hand at her side and one small shovel in her right hand, Eva holds one bucket in her right hand at her side and one small shovel in her left hand. Sara has exactly two arms and two hands visible — bucket left, shovel right. Eva has exactly two arms and two hands visible — bucket right, shovel left. Mouths gently open in cheerful sing-along expression. Both girls perform a synchronized loop-clean kid-pop dance: gentle hip-sway to the LEFT, gentle hip-sway to the RIGHT, both lift their bucket-arm out and down softly, both lift their shovel-arm out and down softly, both step gently in place — left foot stomp, right foot stomp — then return to standing facing the camera. Movements are RHYTHMIC and LOOPABLE. Camera locked, head-on, kid-eye-level. Bright cheerful warm summer afternoon lighting. The two girls hum and sing along generically — generic happy mouth movements, no specific lip-sync to specific words. Designed to LOOP cleanly: both girls return to identical starting pose at second 0 and second 10. No audible speech, no music — silent render. MIRROR-LOCK — Sara's bucket is in her LEFT hand and shovel in her RIGHT hand throughout the entire 10s. Eva's bucket is in her RIGHT hand and shovel in her LEFT hand throughout the entire 10s. Neither girl ever swaps props or has the same hand-arrangement. STRICT ANATOMY: Sara has exactly two arms and two hands at all times — bucket in left, shovel in right. Eva has exactly two arms and two hands at all times — bucket in right, shovel in left. NO third hand, NO fourth arm, NO floating hand from either girl. Each girl stays grounded with both feet on the stylized sand floor throughout. The sand floor stays plain clean — no marks, no red, no debris.",
+      "negativePrompt": "duplicate character, twin, clone, two of the same, mirrored figure, second sister, second sara, second eva, two eva, duplicate eva, three girls, four kids, identical girls, second mother, mama in this clip, second father, papa in this clip, dog visible, joe visible, ginger visible, additional children, extra child in background, second blonde child, fourth child, ghost figure, ghost kid, ghost children, shadow children, shadow of person, mirrored children, mirror reflection, family members in the background, strangers, crowd, group of people, other faces, background people, friends, neighbors, real beach photo realism, real ocean, real beach scene, scene clutter, logos, real text, real signage, three arms, third arm, extra arm, extra hand, floating hand, free arm swinging while holding bucket, free arm swinging while holding shovel, bucket levitating, shovel levitating, anatomy error, sara has three hands, eva has three hands, scary face, frightening expression, horror lighting, blood, red liquid, red splatter, red stain, gore, injury, scary, violent, distressing, sara airborne, eva airborne, sara leaping, eva leaping, sara mid-air, eva mid-air, hard fall, hard impact, painful fall, environmental shake, motion lines, action lines, dust trails, speed lines, specific dialogue words, lip-sync to specific syllables, audible music, audible singing words, morphing, flickering, disfigured, distorted, extra face, unstable motion, identical adults, two Papa, two Mama"
+    },
+    {
+      "episode": 12,
+      "beat": "music-video-B",
+      "clip": "B",
+      "title": "MUSIC VIDEO RENDER B — Eva solo slow-mo wonder at the magic bottle",
+      "mode": "omni",
+      "durationSec": 10,
+      "quality": "720p",
+      "nativeAudio": true,
+      "expectedCredits": 90,
+      "subjects": [
+        "Eva"
+      ],
+      "scene": "pastel-teal-backdrop",
+      "boundElements": [
+        {
+          "tag": "eva-beach",
+          "source": "library"
+        },
+        {
+          "tag": "magic-bottle",
+          "source": "library"
+        }
+      ],
+      "reuseAsset": true,
+      "reuseAssetNote": "ONE 10s slow-motion render, paired with Suno song 'Magic Bottle Whisper.mp3' via loopVideoWithSong.mjs to fill the 60s music block. Slow-mo wonder choreography.",
+      "musicVideoBlock": true,
+      "loopExpansion": {
+        "iterations": 6,
+        "xfadeDuration": 0.3,
+        "outputDurationSec": 58
+      },
+      "usedUnderSongs": [
+        {
+          "song": "assets/music/Magic Bottle Whisper.mp3",
+          "blockDurationSec": 60,
+          "trimStart": 0,
+          "placementClipNumber": "11music"
+        }
+      ],
+      "prompt": "Wide slow-motion music-video shot — soft pastel-teal and pink dreamy gradient backdrop, glowing soft soap-bubbles and tiny pastel-pollen motes drifting slowly through the frame. NO real beach, NO real ocean, NO scene clutter, NO logos, NO real text. @eva-beach already CENTER-FRAME standing softly on a stylized creamy pastel cloud-floor with both feet planted gently, curly blonde hair with rainbow bow. Eva has exactly two arms and two hands visible — both hands gently cupping the @magic-bottle she has lifted up to her chest, the bottle softly aglow with aqua-blue magical sparkle, the rolled paper note visible inside. Tiny twinkly sparkles drift slowly upward from the bottle. (BEAT 1 — 0-5s) Eva slowly turns her head with soft awe, eyes huge with magical wonder, mouth gently open in a small 'O'. The bottle rests softly cupped in both her hands at chest height, glowing softly. (BEAT 2 — 5-10s) Eva slowly raises the bottle up softly with both hands above her head, bathing her face in the soft aqua-blue glow. She closes her eyes very softly with a gentle wonder-smile. Movements are SOFT, SLOW, and DREAMY. Camera locked, head-on, kid-eye-level. Soft warm dreamy lighting. Designed to LOOP cleanly: Eva returns to identical starting pose at second 0 and second 10. No audible speech, no music — silent render. STRICT ANATOMY: Eva has exactly two arms and two hands at all times, both gently holding the bottle. NO third hand, NO fourth arm, NO floating hand. Eva stays grounded with both feet on the stylized cloud-floor throughout — no leaping, no jumping. The bottle stays whole and soft-glowing — no shattering, no broken glass.",
+      "negativePrompt": "duplicate character, twin, clone, two of the same, mirrored figure, second sister, sara in this clip, sara visible, second eva, two eva, duplicate eva, three girls, four kids, second mother, mama in this clip, mama visible, second father, papa in this clip, papa visible, dog visible, joe visible, ginger visible, additional children, extra child in background, second blonde child, ghost figure, ghost kid, ghost children, shadow children, shadow of person, mirrored children, mirror reflection, family members in the background, strangers, crowd, group of people, other faces, background people, friends, neighbors, real beach photo realism, real ocean, real beach scene, scene clutter, logos, real text, real signage, three arms, third arm, extra arm, extra hand, floating hand, free arm swinging while holding bottle, bottle levitating, anatomy error, eva has three hands, scary face, frightening expression, horror lighting, blood, red liquid, red splatter, red stain, gore, injury, scary, violent, distressing, eva airborne, eva leaping, eva mid-air, eva flying, hard fall, hard impact, painful fall, broken glass, shattered bottle, sharp shards, cut hands, bleeding fingers, environmental shake, motion lines, action lines, specific dialogue words, lip-sync to specific syllables, audible music, audible singing words, morphing, flickering, disfigured, distorted, extra face, unstable motion, identical adults, two Papa, two Mama"
+    },
+    {
+      "episode": 12,
+      "beat": "music-video-C",
+      "clip": "C",
+      "title": "MUSIC VIDEO RENDER C — Sara+Eva Tomorrow's Adventure twilight duo",
+      "mode": "omni",
+      "durationSec": 10,
+      "quality": "720p",
+      "nativeAudio": true,
+      "expectedCredits": 90,
+      "subjects": [
+        "Sara",
+        "Eva"
+      ],
+      "scene": "sunset-gradient-backdrop",
+      "boundElements": [
+        {
+          "tag": "sara-beach",
+          "source": "library"
+        },
+        {
+          "tag": "eva-beach",
+          "source": "library"
+        }
+      ],
+      "reuseAsset": true,
+      "reuseAssetNote": "ONE 10s render, paired with Suno song 'Tomorrows Adventure.mp3' via loopVideoWithSong.mjs to fill the 60s music block. Dreamy twilight duo choreography.",
+      "musicVideoBlock": true,
+      "loopExpansion": {
+        "iterations": 6,
+        "xfadeDuration": 0.3,
+        "outputDurationSec": 58
+      },
+      "usedUnderSongs": [
+        {
+          "song": "assets/music/Tomorrows Adventure.mp3",
+          "blockDurationSec": 60,
+          "trimStart": 0,
+          "placementClipNumber": "17music"
+        }
+      ],
+      "prompt": "Wide front-facing music-video shot — designed pastel sunset-gradient backdrop. SKY: deep coral pink at the top fading down softly through warm orange, gold, and finally a soft lavender-blue at the bottom, with tiny gentle twinkling stars beginning to appear at the top edge. GROUND: stylized soft silhouette dune-line at the bottom of the frame. NO real beach, NO real horizon, NO scene clutter, NO logos, NO real text. @sara-beach already on the LEFT and @eva-beach already on the RIGHT, both standing on the stylized dune floor with both feet planted side-by-side at slight angles to the camera. Sara has exactly two arms and two hands visible — BOTH softly clasped together holding a tiny silver kid-flashlight at chest height. Eva has exactly two arms and two hands visible — both hands softly clasped EMPTY at chest height, NEVER holding the flashlight (the flashlight is Sara's prop). Curly blonde hair with rainbow bow. Mouths gently open in cheerful sing-along expression. Both girls perform a synchronized loop-clean dreamy duo dance: gentle hip-sway to the LEFT, gentle hip-sway to the RIGHT, both gently raise their clasped hands up softly toward the twinkly stars, both gently lower their clasped hands back to chest height, gentle shoulder-shimmy together, then return to standing facing the camera. Movements are RHYTHMIC, SOFT, DREAMY, and LOOPABLE. Camera locked, head-on, kid-eye-level. Soft warm dreamy twilight lighting. The two girls hum and sing along generically — generic happy mouth movements, no specific lip-sync to specific words. Designed to LOOP cleanly: both girls return to identical starting pose at second 0 and second 10. No audible speech, no music — silent render. STRICT ANATOMY: Sara has exactly two arms and two hands at all times. Eva has exactly two arms and two hands at all times. NO third hand, NO fourth arm, NO floating hand from either girl. Each girl stays grounded with both feet on the stylized dune floor throughout — no leaping, no jumping.",
+      "negativePrompt": "duplicate character, twin, clone, two of the same, mirrored figure, second sister, second sara, second eva, two eva, duplicate eva, three girls, four kids, identical girls, second mother, mama in this clip, second father, papa in this clip, dog visible, joe visible, ginger visible, additional children, extra child in background, second blonde child, fourth child, ghost figure, ghost kid, ghost children, shadow children, shadow of person, mirrored children, mirror reflection, family members in the background, strangers, crowd, group of people, other faces, background people, friends, neighbors, real beach photo realism, real ocean, real horizon, scene clutter, logos, real text, real signage, three arms, third arm, extra arm, extra hand, floating hand, anatomy error, sara has three hands, eva has three hands, scary face, frightening expression, horror lighting, blood, red liquid, red splatter, red stain, gore, injury, scary, violent, distressing, sara airborne, eva airborne, sara leaping, eva leaping, sara mid-air, eva mid-air, hard fall, hard impact, painful fall, environmental shake, motion lines, action lines, specific dialogue words, lip-sync to specific syllables, audible music, audible singing words, morphing, flickering, disfigured, distorted, extra face, unstable motion, identical adults, two Papa, two Mama"
+    },
+    {
+      "episode": 12,
+      "beat": "music-video-D",
+      "clip": "D",
+      "title": "MUSIC VIDEO RENDER D — Papa+Sara+Eva Can't Catch Us! beach playground tag with slide gag",
+      "mode": "omni",
+      "durationSec": 10,
+      "quality": "720p",
+      "nativeAudio": true,
+      "expectedCredits": 90,
+      "subjects": [
+        "Papa",
+        "Sara",
+        "Eva"
+      ],
+      "scene": "beach-playground",
+      "boundElements": [
+        {
+          "tag": "ep12-cD-tag2",
+          "source": "library"
+        }
+      ],
+      "reuseAsset": true,
+      "reuseAssetNote": "ONE 10s render, paired with Suno song 'Cant Catch Us.mp3' via loopVideoWithSong.mjs to fill the 60s music block. Loop-clean tag-game choreography with curly tube-slide stuck-Papa visual gag.",
+      "musicVideoBlock": true,
+      "loopExpansion": {
+        "iterations": 6,
+        "xfadeDuration": 0.3,
+        "outputDurationSec": 58
+      },
+      "usedUnderSongs": [
+        {
+          "song": "assets/music/Cant Catch Us.mp3",
+          "blockDurationSec": 60,
+          "trimStart": 0,
+          "placementClipNumber": "1music"
+        }
+      ],
+      "prompt": "Composition is anchored by @ep12-cD-tag2. Animate the still as a loop-clean kid-pop music-video tag-game scene — every figure stays in their EXACT physical spot throughout the entire 10s, the loop starts and ends in the identical starting pose. There are EXACTLY 3 people in the entire frame, no extras, no additional spawns. (BEAT 1 — 0-5s) Sara and Eva perform a synchronized loop-clean playful tag-game dance from the climbing tower deck: gentle hip-sway to the LEFT, gentle hip-sway to the RIGHT, both wave their right hand softly above their head with a 'you're it' wiggle. Papa simultaneously performs a comic stuck-at-the-slide-bottom shimmy: gentle shoulder-wiggle LEFT, gentle shoulder-wiggle RIGHT, warm dad-laugh head-shake. (BEAT 2 — 5-10s) Sara and Eva continue the synchronized dance — both wave their left hand softly above their head with another 'you're it' wiggle, both step gently in place left foot then right foot, then return to standing facing the camera. Papa continues his loop-clean stuck-at-the-slide shimmy and ends with hands gently back on his hips, warm comic 'oh no I'm too big' grin. All three are humming and singing along with generic happy mouth movements — no specific lip-sync to specific syllables. Sara and Eva stay grounded with both feet on the wooden deck throughout — staying on the deck, no jumping off, no climbing UP the slide. Papa stays grounded with both feet on the soft sand throughout — no climbing into the slide tunnel, no walking away. Designed to LOOP cleanly: each character returns to identical starting pose at second 0 and second 10. No audible speech, no music — silent render. Preserve each character's silhouette and proportions throughout — no morphing, no shifting, no color drift.",
+      "negativePrompt": "duplicate character, twin, clone, two of the same, mirrored figure, second father, two Papa, identical adults, second mother, two Mama, third child, second sister, second sara, second eva, two eva, duplicate eva, duplicate sara, mirror reflection, fourth child, additional children, extra child in background, ghost figure, ghost kid, shadow children, family members in the background, strangers, crowd, group of people, other faces, background people, friends, neighbors, other kids on beach, three arms, third arm, extra arm, extra hand, floating hand, anatomy error, scary face, frightening expression, horror lighting, blood, red liquid, red splatter, gore, injury, scary, violent, distressing, hard fall, hard impact, environmental shake, motion lines, action lines, morphing, flickering, disfigured, distorted, extra face, unstable motion, identical adults"
+    }
+  ]
+}

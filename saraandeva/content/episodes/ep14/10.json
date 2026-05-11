@@ -2,22 +2,17 @@
   "episode": 14,
   "beat": 10,
   "clip": 10,
-  "title": "FLASHBACK — phone calls montage, split screen",
+  "title": "FLASHBACK \u2014 Mom on phone in cafe, smiling about Dad's stories",
   "mode": "omni",
   "durationSec": 10,
   "quality": "720p",
   "nativeAudio": true,
   "expectedCredits": 90,
   "subjects": [
-    "young_Papa",
     "young_Mama"
   ],
   "scene": "ep14-cafe-mams-country",
   "boundElements": [
-    {
-      "tag": "young_Papa",
-      "source": "library"
-    },
     {
       "tag": "young_Mama",
       "source": "library"
@@ -28,64 +23,26 @@
     }
   ],
   "prompt": [
-    "Cast LOCKS: @young_Papa: 100% HUMAN HEAD, bald + dark beard + glasses (10 years younger but same identity). Brown leather backpack, navy henley + olive cargo pants, small DSLR camera in right hand. @young_Mama: straight blonde hair, fair skin (10 years younger but same identity), mustard-yellow knit sweater + cream pleated skirt + ankle boots, small leather crossbody bag.",
-    "Multi-shot montage. Split-screen design — @young_Papa LEFT half of frame, @young_Mama RIGHT half of frame, both holding mobile phones to their ears.",
-    "Shot 1 (0-3s, split — Papa left in his apartment looking out city window night, Mama right in her cozy kitchen daytime) — both LAUGH simultaneously, @young_Papa's mouth WIDENS in laugh, @young_Mama's HEAD TILTS BACK in laugh.",
-    "Shot 2 (3-7s, time passes — same split, different outfits, different time of day, both still on phones) — @young_Papa's hand HOLDS phone, big smile. @young_Mama's hand TWIRLS hair, big smile.",
-    "Shot 3 (7-10s, final split, both look down at phones with fond expressions) — @young_Papa's mouth SMILES softly. @young_Mama's mouth SMILES softly."
+    "@young_Mama in the cafe corner at the marble window table, warm wood interior, brass pendants overhead, right hand HOLDS a mobile phone to her ear. Mouth LAUGHS softly, head TILTS back. Other hand TWIRLS hair playfully. Eyes WARM, big smile. Soft afternoon sun through the window, autumn leaves visible outside. young_Mama (soft, laughing): \"Tell me about Germany again.\""
   ],
   "negativePrompt": [
     "duplicate character",
-    "twin",
-    "clone",
-    "two of the same",
-    "mirrored figure",
-    "second sara",
-    "two sara",
-    "second eva",
-    "two eva",
-    "third child",
-    "extra child in background",
     "ghost figure",
-    "ghost kid",
-    "shadow children",
-    "three arms",
-    "third arm",
     "extra arm",
-    "extra hand",
-    "floating hand",
     "anatomy error",
     "morphing",
     "flickering",
     "disfigured",
-    "distorted",
-    "extra face",
-    "unstable motion",
-    "papa standing still",
-    "mama standing still",
     "scary face",
-    "frightening expression",
     "horror lighting",
-    "scary monster",
     "blood",
-    "red liquid",
-    "dark shadows",
-    "predatory",
     "dutch angle",
     "handheld shake",
-    "whip pan",
     "jump cut",
     "eva with brown hair",
-    "eva with red hair",
-    "eva brunette",
     "sara in ponytail",
-    "young papa as different person",
-    "young mama as different person",
-    "younger versions look like other people",
-    "papa with hair on head",
-    "papa not bald",
-    "young papa with full head of hair",
-    "other people in apartment",
-    "other people in kitchen"
+    "papa standing still",
+    "live action footage",
+    "photographic realism"
   ]
 }

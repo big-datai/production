@@ -1,0 +1,72 @@
+{
+  "episode": 30,
+  "title": "Sara and Eva's BIG Father's Day Surprise! 💝",
+  "publishDate": "2026-06-21",
+  "publishDayContext": "Father's Day USA",
+  "logline": "Father's Day morning. Sara and Eva sneak into the closet to plan the BEST gift in the world. They build a giant 'Papa Trophy' from couch cushions. Joe steals Papa's leather slipper as the prize-piece. Then Ginger smells the trophy and DIGS the whole thing — cushion stuffing flies, trophy collapses, Eva cries. Sara has a quick idea: she ties the rescued slipper with a ribbon. Papa walks in, sees the wreckage AND the ribboned slipper, and SOFTENS — group hug with happy tears. Papa-play: he wears the slipper as a crown and chases the girls around the couch. Final camera-ask: 'What did YOU make for YOUR daddy?'",
+  "formulaReference": "Channel-winning formula × 3: (1) real-life holiday moment (Father's Day) — proven by Mother's Day Short at 28k views / $0.237/sub; (2) pet mishap — Joe-steals callback to ep04 'Joe's Secret Stash' ($0.042/sub channel hero) + Ginger-DIGS as new beat; (3) emotional payoff — Papa's tear-up hug mirrors ep07 Mother's Day Mama-cries beat. Includes mandatory Papa-active scene (15-20s) per lesson_papa_play_scene_per_episode.md. 2-4 audience-engagement camera-asks per lesson_fourth_wall_audience_engagement.md.",
+  "mode": "omni",
+  "durationTotal": "~5:30 (22 narrative clips × ~15s avg = 330s ≈ 5:30 + 5s opening voice-CTA + 10s closing camera-ask)",
+  "expectedCreditsTotal": 240,
+  "expectedCreditsBreakdown": "20 numeric clips × 8 cr (10s std-mode + sound:on) = 160 cr. 2 short clips at 6 cr = 12 cr. Papa-play 15s clip at 13 cr. Total ~185-240 cr depending on re-renders. Well under 2200-cr abort threshold.",
+  "expectedCreditsAbortThreshold": 2200,
+  "newBoundElements": [],
+  "newSceneElements": [
+    {
+      "tag": "ep16-hall-closet",
+      "asset": "assets/scenes/ep16_hall_closet.png",
+      "purpose": "Cozy hall closet interior — soft natural light through doorway, hanging coats in background, two pillows leaning against the wall. Conspirator-fort vibe. Used clips 2, 3."
+    },
+    {
+      "tag": "ep16-living-room-trophy",
+      "asset": "assets/scenes/ep16_living_room.png",
+      "purpose": "Family living room — beige sectional couch with cushions removed/stacked into 'trophy', warm afternoon sun through window, wooden floor, Sara & Eva's craft supplies (ribbons, glitter glue, construction paper) scattered. Used clips 4-22."
+    }
+  ],
+  "beats": [
+    { "beat": 1, "name": "HOOK — Sara to camera (the secret)", "purpose": "Sara whispers to camera holding finger to lips, hooks viewer with Father's Day secret + 5-sec voice CTA: 'Tap subscribe so you don't miss this!'", "clips": [1] },
+    { "beat": 2, "name": "Closet conspiracy", "purpose": "Sara + Eva crouched in hall closet whispering — 'We need the BEST gift in the world!'", "clips": [2] },
+    { "beat": 3, "name": "Eva's idea moment", "purpose": "Eva's lightbulb — eyes WIDEN, mouth opens — 'I HAVE AN IDEA!'", "clips": [3] },
+    { "beat": 4, "name": "Cushion-trophy build", "purpose": "Sara + Eva STACK couch cushions into wobbly trophy tower with ribbons. Hands carefully balance.", "clips": [4] },
+    { "beat": 5, "name": "Joe enters with slipper", "purpose": "Pomeranian Joe TROTS in dragging Papa's leather slipper — happy proud face.", "clips": [5] },
+    { "beat": 6, "name": "Joe's contribution accepted", "purpose": "Sara: 'JOE! That's PERFECT!' She GRABS slipper, PLACES on trophy peak. Joe sits proudly.", "clips": [6] },
+    { "beat": 7, "name": "Trophy finished — wide shot", "purpose": "Cushion sculpture with slipper crown, ribbon detail. Sara and Eva step back to admire.", "clips": [7] },
+    { "beat": 8, "name": "CAMERA-ASK #1", "purpose": "Sara turns to camera: 'Do YOU think Papa will LOVE it?!'", "clips": [8] },
+    { "beat": 9, "name": "Ginger sniffs the trophy", "purpose": "Jack Russell Ginger's nose TWITCHES, head TILTS — she's interested.", "clips": [9] },
+    { "beat": 10, "name": "Ginger DIGS the cushions", "purpose": "Ginger's paws DIG FURIOUSLY, cushion stuffing FLIES into air. Comedy-chaos.", "clips": [10] },
+    { "beat": 11, "name": "Sara + Eva — horror reaction", "purpose": "Mouths OPEN wide, hands on cheeks, frozen in shock.", "clips": [11] },
+    { "beat": 12, "name": "Trophy TOPPLES", "purpose": "Cushion mountain TOPPLES sideways, slipper BOUNCES off, ribbon flies.", "clips": [12] },
+    { "beat": 13, "name": "Eva sad — eyes well up", "purpose": "Big tear forms in Eva's eye, chin trembles, looks at the wreckage.", "clips": [13] },
+    { "beat": 14, "name": "Sara: 'I have a plan!'", "purpose": "Sara's face HARDENS into determination — picks up ribbon, eyes on slipper.", "clips": [14] },
+    { "beat": 15, "name": "Sara ties slipper with ribbon", "purpose": "Careful hands tie satin ribbon around slipper. Joe watches, head tilted.", "clips": [15] },
+    { "beat": 16, "name": "Papa enters — surveys the scene", "purpose": "Papa walks in, eyes SCAN the room (cushion chaos + ribboned slipper), face SOFTENS into a smile.", "clips": [16] },
+    { "beat": 17, "name": "Sara presents the gift", "purpose": "Sara HOLDS UP ribboned slipper to Papa: 'Daddy — best gift EVER!' Eva peeks nervously from behind couch.", "clips": [17] },
+    { "beat": 18, "name": "Papa hugs both girls — TEARS", "purpose": "Papa kneels, ARMS open WIDE, both girls run into hug. Papa's eyes WET, big dad-laugh through tears.", "clips": [18] },
+    { "beat": 19, "name": "PAPA-PLAY (mandatory) — slipper crown chase", "purpose": "15s parent-active scene: Papa wears the ribboned slipper AS A CROWN on his head, ROARS playfully, CHASES Sara and Eva around the sectional couch with big bouncing dad-laugh. Both girls SHRIEK with delight.", "clips": [19], "duration": 15 },
+    { "beat": 20, "name": "Mama enters, laughs", "purpose": "Mama steps into living room: 'What is HAPPENING?!' — bright laugh, hand on heart.", "clips": [20] },
+    { "beat": 21, "name": "Family group hug — Joe + Ginger join", "purpose": "All five plus both dogs PILE onto the couch. Joe licks Papa, Ginger nuzzles Eva. Warm chaos.", "clips": [21] },
+    { "beat": 22, "name": "CAMERA-ASK CLIFFHANGER", "purpose": "Sara to camera, big smile: 'What did YOU make for YOUR Daddy?! Tell us! See you tomorrow!' Quick fade.", "clips": [22] }
+  ],
+  "audienceEngagementBeats": [
+    { "beat": 1, "type": "opening_voice_cta", "text": "Hi friends! Shhh — it's a Father's Day SECRET. Tap subscribe so you don't miss this!" },
+    { "beat": 8, "type": "camera_ask", "text": "Do YOU think Papa will LOVE it?!" },
+    { "beat": 22, "type": "camera_ask_cliffhanger", "text": "What did YOU make for YOUR Daddy?! Tell us! See you tomorrow!" }
+  ],
+  "papaActiveScene": {
+    "beat": 19,
+    "duration": 15,
+    "activity": "Papa wears slipper as crown, chases Sara and Eva around couch, bouncing dad-laugh"
+  },
+  "petMishap": {
+    "primary": "Ginger DIGS the cushion trophy and destroys it",
+    "secondary": "Joe brings Papa's slipper — accidentally provides the perfect prize-piece"
+  },
+  "thumbnailConcept": "Papa hugging both girls in the wrecked living room, ribboned slipper visible in foreground, cushion-trophy debris around, 'FATHER'S DAY!' yellow Impact text overlay top-center, brand badge bottom-right.",
+  "thumbnailHook": "FATHER'S DAY!",
+  "youtubeMetadata": {
+    "title": "Sara and Eva's BIG Father's Day Surprise! 💝",
+    "description": "Watch all Sara & Eva episodes in order: https://www.youtube.com/playlist?list=PLMLz_1vaheL7MwZ8OdmSPd1qftZ_WRwvS\n\nIt's Father's Day morning. Sara and Eva have a SECRET PLAN to make Papa the best gift in the world — a giant Papa Trophy from couch cushions! 🏆 But Joe has OTHER ideas with Papa's slipper, and Ginger turns the whole thing into a DIG-FEST. Total chaos! 💥\n\nWill Sara save the day with a quick-thinking ribbon? And will Papa actually LIKE the wreckage? 💕\n\nFamily animated series — new episodes every week!\n\n⏱️ Chapters\n0:00 The Secret\n0:30 Building the Trophy\n1:30 Joe brings the prize\n2:00 Ginger's surprise\n3:00 Sara has a plan\n4:00 Papa's reaction\n4:45 Family hug\n5:15 Camera-ask\n\n#SaraAndEva #FamilyShow #FathersDay",
+    "tags": ["sara and eva", "family animation", "fathers day", "kids stories", "puppy stories", "sister cartoon"],
+    "categoryId": "24"
+  }
+}

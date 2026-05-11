@@ -1,0 +1,12 @@
+{
+  "episode": 1, "beat": 6, "microClip": "c",
+  "title": "Papa kisses Mama at the stove",
+  "durationSec": 5,
+  "mode": "single-shot",
+  "subjects": ["Papa", "Mama"],
+  "scene": "KitchenMorning",
+  "nativeAudio": true,
+  "expectedCredits": 45,
+  "negativePrompt": "extra people, duplicate character, twin, clone, two of the same person, mirrored figure, background extras, crowd, identical sibling",
+  "prompt": "Close two-shot. @Papa kisses @Mama on the cheek at the black range in @KitchenMorning. @Papa: \"Morning, beautiful.\" @Mama: \"Plate duty for you, chef!\" @Papa: \"Yes ma'am!\""
+}

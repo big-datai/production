@@ -1,0 +1,12 @@
+{
+  "episode": 1, "beat": 3, "microClip": "b",
+  "title": "Eva runs with Ginger barking alongside",
+  "durationSec": 5,
+  "mode": "single-shot",
+  "subjects": ["Eva", "Ginger"],
+  "scene": "Livingroom",
+  "nativeAudio": true,
+  "expectedCredits": 45,
+  "negativePrompt": "extra people, duplicate character, twin, clone, two of the same person, mirrored figure, background extras, crowd, identical sibling",
+  "prompt": "Medium tracking shot. @Eva runs across @Livingroom. @Ginger runs alongside, barking: \"Woof! Woof!\""
+}

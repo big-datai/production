@@ -159,16 +159,29 @@ def main():
     if not video_path.is_file():
         print(f"video not found: {video_path}", file=sys.stderr); sys.exit(1)
 
-    if not args.skip_validation:
-        m = re.search(r"episode_(\d+)/", str(video_path))
-        if m:
-            ep_num = int(m.group(1))
-            validator = Path(__file__).parent / "validateEpisode.py"
-            print(f"\n🩺 Pre-upload validation — validateEpisode --episode={ep_num}")
-            r = subprocess.run(["python3", str(validator), f"--episode={ep_num}"])
-            if r.returncode == 1:
-                print("\n❌ validateEpisode found errors. Fix or pass --skip-validation. Aborting.",
-                      file=sys.stderr); sys.exit(1)
+    # Detect episode number from path (season_01/episode_NN/ or content/episodes/epNN/)
+    ep_num = None
+    m = re.search(r"episode_(\d+)/|content/episodes/ep(\d+)/", str(video_path))
+    if m:
+        ep_num = int(m.group(1) or m.group(2))
+
+    if not args.skip_validation and ep_num is not None:
+        validator = Path(__file__).parent / "validateEpisode.py"
+        print(f"\n🩺 Pre-upload validation — validateEpisode --episode={ep_num}")
+        r = subprocess.run(["python3", str(validator), f"--episode={ep_num}"])
+        if r.returncode == 1:
+            print("\n❌ validateEpisode found errors. Fix or pass --skip-validation. Aborting.",
+                  file=sys.stderr); sys.exit(1)
+
+    # Inject episode number into title if missing.
+    # User directive 2026-05-08: every uploaded video MUST have its episode number visible.
+    # Detect "Ep <N>" / "Episode <N>" / "ep<NN>" anywhere in the title; if none AND we know
+    # ep_num, prepend "Ep <N>:" to the title. Idempotent — re-uploading same title doesn't double.
+    if ep_num is not None:
+        has_epnum = re.search(r"\b(?:ep(?:isode)?\.?\s*0?\d+)\b", args.title, re.I)
+        if not has_epnum:
+            args.title = f"Ep {ep_num}: {args.title}"
+            print(f"  ℹ injected episode number — title now: {args.title!r}")
 
     tags = (Path(args.tags_file).read_text().splitlines()
             if args.tags_file and Path(args.tags_file).is_file()

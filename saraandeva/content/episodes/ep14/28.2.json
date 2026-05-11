@@ -1,0 +1,58 @@
+{
+  "episode": 14,
+  "beat": 28.2,
+  "clip": "28.2",
+  "title": "Papa + Sara + Eva jump from behind couch yelling surprise",
+  "mode": "omni",
+  "durationSec": 5,
+  "quality": "720p",
+  "nativeAudio": true,
+  "expectedCredits": 4,
+  "subjects": [
+    "Papa",
+    "Sara",
+    "Eva"
+  ],
+  "scene": "ep14-anniversary-living-room",
+  "boundElements": [
+    {
+      "tag": "Papa",
+      "source": "library"
+    },
+    {
+      "tag": "Sara",
+      "source": "library"
+    },
+    {
+      "tag": "Eva",
+      "source": "library"
+    },
+    {
+      "tag": "ep14-anniversary-living-room",
+      "source": "library"
+    }
+  ],
+  "prompt": [
+    "Wide shot in cozy anniversary living room with twinkling fairy lights, beige sectional couch in foreground, heart-shaped balloons, warm lamp glow. @Papa CENTER pops up from behind the couch with arms wide open. @Sara LEFT pops up from behind the couch with arms wide. @Eva RIGHT pops up from behind the couch with arms wide. All three with huge joyful smiles, eyes WIDE. Whole household together (joyful): \"SURPRISE! HAPPY ANNIVERSARY!\""
+  ],
+  "negativePrompt": [
+    "duplicate character",
+    "ghost figure",
+    "extra arm",
+    "anatomy error",
+    "morphing",
+    "flickering",
+    "disfigured",
+    "scary face",
+    "horror lighting",
+    "blood",
+    "dutch angle",
+    "handheld shake",
+    "jump cut",
+    "eva with brown hair",
+    "sara in ponytail",
+    "extra child",
+    "live action footage",
+    "photographic realism"
+  ]
+}

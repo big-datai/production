@@ -1,0 +1,12 @@
+{
+  "episode": 1, "beat": 9, "microClip": "a",
+  "title": "Family closer — Mama Papa Sara at the table",
+  "durationSec": 5,
+  "mode": "single-shot",
+  "subjects": ["Mama", "Papa", "Sara"],
+  "scene": "DiningRoom",
+  "nativeAudio": true,
+  "expectedCredits": 45,
+  "negativePrompt": "extra people, duplicate character, twin, clone, two of the same person, mirrored figure, background extras, crowd, identical sibling, second sister, second girl, fourth person, child in pink, additional kid, second child, empty chair occupant, Eva, curly hair child, smaller sister, younger sister, toddler",
+  "prompt": "Tight three-shot at the @DiningRoom table. The OLDER sister @Sara, with wavier hair, sits eating pancakes between @Mama and @Papa. @Sara: \"Best breakfast ever!\" @Papa: \"I love Saturdays!\" @Mama: \"Yum yum!\""
+}

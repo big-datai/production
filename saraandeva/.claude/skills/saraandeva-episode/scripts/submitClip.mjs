@@ -12,7 +12,7 @@
  *   7. Stop at Generate for user review (unless --auto-submit)
  *
  * Usage:
- *   node .../submitClip.mjs content/saraandeva/episodes/ep01/clip_03.json
+ *   node .../submitClip.mjs content/episodes/ep14/5.json
  *   node .../submitClip.mjs <clip.json> --auto-submit
  *
  * Scene filename resolution — spec.scene is a CamelCase name ("Livingroom",

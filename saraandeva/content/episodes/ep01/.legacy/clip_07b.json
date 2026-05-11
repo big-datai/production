@@ -1,0 +1,12 @@
+{
+  "episode": 1, "beat": 7, "microClip": "b",
+  "title": "Counting two-three-four",
+  "durationSec": 5,
+  "mode": "single-shot",
+  "subjects": ["Sara", "Eva"],
+  "scene": "DiningRoom",
+  "nativeAudio": true,
+  "expectedCredits": 45,
+  "negativePrompt": "extra people, duplicate character, twin, clone, two of the same person, mirrored figure, background extras, crowd, identical sibling, second sister, additional girl, dog, puppy, two saras, two evas, third child",
+  "prompt": "Wide two-shot at the @DiningRoom table from the side, plate of pancakes in middle. @Sara on the LEFT side pointing with a fork: \"Two. Three. Four.\" @Eva on the RIGHT side clapping: \"Two! Three! Four!\""
+}

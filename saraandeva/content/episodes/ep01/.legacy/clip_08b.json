@@ -1,0 +1,12 @@
+{
+  "episode": 1, "beat": 8, "microClip": "b",
+  "title": "Joe wags tail under the table",
+  "durationSec": 5,
+  "mode": "single-shot",
+  "subjects": ["Joe"],
+  "scene": "DiningRoom",
+  "nativeAudio": true,
+  "expectedCredits": 45,
+  "negativePrompt": "extra people, duplicate character, twin, clone, two of the same person, mirrored figure, background extras, crowd, identical sibling, second dog, additional puppy",
+  "prompt": "Low shot on the rug under the @DiningRoom table. @Joe wags tail and looks up at the camera. @Joe: \"Yip yip!\" @Joe: \"Pancake belly!\" @Joe: \"Yip yip!\""
+}

@@ -1,0 +1,12 @@
+{
+  "episode": 2, "beat": 3, "microClip": "i",
+  "title": "Trail leads to the stairs!",
+  "durationSec": 5,
+  "mode": "single-shot",
+  "subjects": ["Sara", "Eva", "Joe"],
+  "scene": "Livingroom",
+  "nativeAudio": true,
+  "expectedCredits": 45,
+  "negativePrompt": "extra people, duplicate character, twin, clone, two of the same person, mirrored figure, background extras, third child, second sister, second joe",
+  "prompt": "Wide shot in @Livingroom. @Sara points up the staircase: \"It went up the stairs! Detectives — follow me!\" @Eva and @Joe rush after her: \"Yip yip!\""
+}

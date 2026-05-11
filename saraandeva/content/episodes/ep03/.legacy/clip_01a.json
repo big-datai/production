@@ -1,0 +1,27 @@
+{
+  "episode": 3,
+  "beat": 1,
+  "microClip": "a",
+  "title": "HOOK 1 — Postman walks up the bike circle",
+  "mode": "omni",
+  "durationSec": 10,
+  "quality": "720p",
+  "nativeAudio": true,
+  "expectedCredits": 90,
+  "subjects": [
+    "Postman"
+  ],
+  "scene": "bike-circle",
+  "boundElements": [
+    {
+      "tag": "Postman",
+      "source": "library"
+    },
+    {
+      "tag": "bike-circle",
+      "source": "library"
+    }
+  ],
+  "prompt": "Wide shot at @bike-circle in cheerful spring morning. @Postman walks confidently up the asphalt cul-de-sac toward the camera, mailbag swaying at his hip, brown package held in both hands at chest height, friendly smile. Long warm shadows from the trees. Postman: \"Almost there! Last delivery of the morning.\" He whistles a cheerful tune. Camera holds steady, slight push-in.",
+  "negativePrompt": "duplicate character, twin, clone, two of the same, mirrored figure, second father, second mother, two Papa, two Mama, identical adults, extra people, second postman, two postmen, kids visible, dogs visible, mailbox visible, house number visible, street sign visible, license plate visible"
+}

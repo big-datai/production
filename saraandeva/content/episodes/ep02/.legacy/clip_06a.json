@@ -1,0 +1,12 @@
+{
+  "episode": 2, "beat": 6, "microClip": "a",
+  "title": "SUBSCRIBE OUTRO — Sara + Eva direct to camera",
+  "durationSec": 5,
+  "mode": "single-shot",
+  "subjects": ["Sara", "Eva"],
+  "scene": "Livingroom",
+  "nativeAudio": true,
+  "expectedCredits": 45,
+  "negativePrompt": "extra people, duplicate character, twin, clone, two of the same person, mirrored figure, background extras, third child, second sister",
+  "prompt": "Medium two-shot in @Livingroom. @Sara on the LEFT and @Eva on the RIGHT face directly toward the camera, smiling brightly, waving with both hands. @Sara: \"Subscribe so you don't miss new videos!\" @Eva: \"New episodes every week!\""
+}

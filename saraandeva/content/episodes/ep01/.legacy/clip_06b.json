@@ -1,0 +1,12 @@
+{
+  "episode": 1, "beat": 6, "microClip": "b",
+  "title": "Papa tickles Eva",
+  "durationSec": 5,
+  "mode": "single-shot",
+  "subjects": ["Papa", "Eva"],
+  "scene": "KitchenMorning",
+  "nativeAudio": true,
+  "expectedCredits": 45,
+  "negativePrompt": "extra people, duplicate character, twin, clone, two of the same person, mirrored figure, background extras, crowd, identical sibling",
+  "prompt": "Medium shot. @Papa tickles @Eva from behind in @KitchenMorning. @Eva: \"Stop it stop it stop it!\" @Papa: \"Wiggle attack!\" @Eva: \"Noooo too funny!\""
+}

@@ -329,9 +329,48 @@ def translate_prompt(prompt: str, char_order: list[str]) -> str:
     for name in sorted(char_order, key=len, reverse=True):
         idx = char_order.index(name) + 1
         escaped = re.escape(name)
-        out = re.sub(rf"@{escaped}(?=[\s.,;:'\"!?\)])", f"<<<element_{idx}>>>", out)
+        out = re.sub(rf"@{escaped}(?=[\s.,;:'\"!?\)\-—])", f"<<<element_{idx}>>>", out)
         out = re.sub(rf"@{escaped}'s\b", f"<<<element_{idx}>>>'s", out)
     return out
+
+
+def verify_translation(raw_prompt: str, translated: str, element_list: list, char_order: list[str]) -> list[str]:
+    """Post-translation integrity check. Returns list of issues; empty = clean.
+
+    Catches:
+      - @-refs that didn't translate (regex edge cases like `@Sara—` em-dash)
+      - <<<element_N>>> indices outside element_list bounds
+      - Subjects with element_id=None (registry miss) sneaking through
+      - Subjects in element_list but never referenced in translated prompt (missing render)
+    """
+    issues = []
+    # 1. Untranslated @-refs left in final prompt (leaked)
+    leaked = re.findall(r"@([A-Za-z][\w]*)", translated)
+    leaked = [n for n in leaked if n in char_order]  # only care about known chars
+    if leaked:
+        issues.append(f"untranslated @-refs leaked: {set(leaked)} — translator regex didn't match (em-dash, etc?)")
+
+    # 2. Every <<<element_N>>> must be within element_list bounds
+    refs = [int(n) for n in re.findall(r"<<<element_(\d+)>>>", translated)]
+    for n in refs:
+        if n < 1 or n > len(element_list):
+            issues.append(f"<<<element_{n}>>> out of bounds (element_list has {len(element_list)} entries)")
+
+    # 3. Every element in element_list with a valid element_id must be referenced ≥1×
+    referenced_indices = set(refs)
+    for i in range(1, len(element_list) + 1):
+        if i not in referenced_indices:
+            char = char_order[i-1] if i-1 < len(char_order) else "?"
+            issues.append(f"<<<element_{i}>>> = {char} is in element_list but NEVER referenced in translated prompt — character won't render")
+
+    # 4. element_list entries must all have valid IDs
+    for i, el in enumerate(element_list, 1):
+        eid = el.get("element_id")
+        if not eid or eid in (None, "", 0, "0"):
+            char = char_order[i-1] if i-1 < len(char_order) else "?"
+            issues.append(f"element_list[{i-1}] = {char} has invalid element_id={eid!r}")
+
+    return issues
 
 
 _REGISTRY = None
@@ -368,23 +407,112 @@ def count_in_flight(ak: str, sk: str) -> int:
 
 
 # ─── Phase C: submit ────────────────────────────────────────────────────────
+def audit_pattern_e_images(image_urls: list[str], expected_chars: list[str], ep_num: int) -> list[str]:
+    """Per-image deterministic content audit for any Pattern E group still in image_list.
+
+    Pattern E images have filename starting with 'group_' (per generateGroupShot.py
+    convention). Empty-scene PNGs (e.g. 'ep14_anniversary_living_room.png') are skipped
+    since they shouldn't contain characters.
+
+    Caches results in <png>.audit.json sidecar — re-audits only if PNG mtime newer.
+
+    Returns list of issue strings (empty = clean). User directive 2026-05-08: image
+    content must be deterministically validated before any Kling submission.
+    """
+    audit_script = Path(__file__).parent / "auditScenePNG.py"
+    issues = []
+    for url in image_urls:
+        # Extract filename and look for local copy in assets/scenes/
+        fname = url.rsplit("/", 1)[-1]
+        if not fname.startswith("group_"):
+            continue  # empty-scene PNGs don't need character audit
+        local = SARAANDEVA / "assets" / "scenes" / fname
+        if not local.is_file():
+            issues.append(f"image audit: local file not found {local} (URL was {url})")
+            continue
+        # Check sidecar cache
+        cache = local.with_suffix(local.suffix + ".audit.json")
+        if cache.is_file() and cache.stat().st_mtime > local.stat().st_mtime:
+            try:
+                cached = json.loads(cache.read_text())
+                if cached.get("verdict") == "CLEAN":
+                    print(f"    🛡  audit cached CLEAN for {fname}")
+                    continue
+                else:
+                    issues.append(f"image audit cached FAIL for {fname}: {cached.get('issues', [])}")
+                    continue
+            except Exception: pass  # re-audit
+        # Run auditScenePNG.py on local file
+        expected = ",".join(expected_chars)
+        print(f"    🔍 auditing {fname} (expect: {expected})...")
+        r = subprocess.run(
+            ["python3", str(audit_script), str(local), "--expect", expected],
+            capture_output=True, text=True, timeout=60,
+        )
+        verdict = "CLEAN" if r.returncode == 0 else "FAIL"
+        cache.write_text(json.dumps({"verdict": verdict, "stdout": r.stdout[-500:],
+                                      "ts": time.strftime("%Y-%m-%dT%H:%M:%SZ", time.gmtime())}))
+        if r.returncode != 0:
+            issues.append(f"image audit FAILED for {fname}: see {cache}")
+    return issues
+
+
+def lint_gate(ep_num: int):
+    """Hard gate — run lintEpisode.py BEFORE any Kling submission.
+    Aborts the submit phase if lint exits non-zero (any R1-R16 error).
+
+    User directive 2026-05-07: lint MUST run before any scenario is submitted to Kling.
+    This is a hard gate with NO bypass flag — if you want to override lint, fix the
+    underlying spec or the lint rule. Memory: lesson_kling_prompt_length_research_2026_05_07.md.
+    """
+    lint_script = Path(__file__).parent / "lintEpisode.py"
+    # Use --skip-submitted so already-rendered clips don't block re-submits of others.
+    # Already-rendered specs may have lingering errors (e.g. R28 body-parts) but their
+    # mp4 is on disk; only what we're ABOUT to submit needs to pass lint.
+    print(f"  ⛓  Running lint gate: lintEpisode.py --episode {ep_num} --skip-submitted")
+    r = subprocess.run(
+        ["python3", str(lint_script), "--episode", str(ep_num), "--skip-submitted"],
+        capture_output=True, text=True
+    )
+    print(r.stdout)
+    if r.returncode != 0:
+        print(r.stderr, file=sys.stderr)
+        print("\n❌ LINT FAILED — refusing to submit. Fix the spec violations above and retry.\n",
+              file=sys.stderr)
+        sys.exit(r.returncode)
+    print("  ✅ lint passed; proceeding to submit\n")
+
+
 def phase_submit(ep_num: int, specific_clip: int | None = None):
+    # HARD GATE — lint must pass before any clip is sent to Kling.
+    lint_gate(ep_num)
     state = load_state(ep_num)
     print("Phase C: submit clips with INLINE elements")
     bucket_prefix = f"ep{ep_num:02d}"
     bucket_https = f"https://storage.googleapis.com/{BUCKET}/{bucket_prefix}"
     ak, sk = load_env()
 
+    # Match numeric ('7'), decimal ('7.5'), AND letter ('A', 'B') clip names
     clip_files = sorted(
-        [p for p in ep_dir(ep_num).iterdir() if re.fullmatch(r"\d+\.json", p.name)],
-        key=lambda p: int(p.stem)
+        [p for p in ep_dir(ep_num).iterdir()
+         if re.fullmatch(r"\d+(\.\d+)?\.json", p.name) or re.fullmatch(r"[A-Z]\.json", p.name)],
+        # Sort: numeric clips first (by float value), then letter clips (alphabetical)
+        key=lambda p: (1, p.stem) if p.stem.isalpha() else (0, float(p.stem)),
     )
     PARALLEL = 4
 
     for fp in clip_files:
-        n = int(fp.stem)
-        if specific_clip is not None and n != specific_clip: continue
-        clip_key = f"clip_{n}"
+        # Support integer ('7'), decimal ('7.5'), and letter ('A', 'B') stems
+        stem = fp.stem
+        if stem.isdigit():
+            n = int(stem)
+        elif stem.replace(".", "").isdigit():
+            n = float(stem)
+        else:
+            n = stem  # letter clip
+        if specific_clip is not None and str(n) != str(specific_clip): continue
+        # clip_key uses the stem verbatim so '7.5' → 'clip_7.5', 'A' → 'clip_A'
+        clip_key = f"clip_{stem}"
 
         if state["clipTasks"].get(clip_key, {}).get("task_id") and not specific_clip:
             print(f"  ⏭️  {clip_key} already submitted (task={state['clipTasks'][clip_key]['task_id']})")
@@ -424,8 +552,14 @@ def phase_submit(ep_num: int, specific_clip: int | None = None):
 
         translated = translate_prompt(coerce_prompt(clip.get("prompt"), sep="\n\n"), element_order)
         ext_id = f"ep{ep_num:02d}-clip{n}-{int(time.time()*1000)}"
-        prev_key = f"clip_{n-1}"
-        start_image = state.get("lastFrames", {}).get(prev_key, {}).get("httpsUrl")
+        # Continuity from previous clip's last frame — only for numeric clip sequences
+        # (letter clips like A, B are music-block standalones, no continuity)
+        if isinstance(n, (int, float)):
+            prev_key = f"clip_{n-1 if isinstance(n, int) else n - 1}"
+            start_image = state.get("lastFrames", {}).get(prev_key, {}).get("httpsUrl")
+        else:
+            prev_key = None
+            start_image = None
         image_list = []
         if start_image: image_list.append({"image_url": start_image})
         image_list.extend({"image_url": u} for u in image_urls)
@@ -444,10 +578,69 @@ def phase_submit(ep_num: int, specific_clip: int | None = None):
         if clip.get("nativeAudio"): body["sound"] = "on"
 
         if start_image: print(f"    🎬 continuity from {prev_key}")
+        # Image-content audit — for every Pattern E group still in image_list,
+        # run Gemini Vision audit BEFORE submission. Aborts if image has wrong /
+        # missing / extra characters compared to expected subjects.
+        # Empty-scene PNGs (no 'group_' prefix) are skipped automatically.
+        all_image_urls = [img["image_url"] for img in image_list]
+        image_issues = audit_pattern_e_images(all_image_urls, clip.get("subjects") or [], ep_num)
+        if image_issues:
+            print(f"  ✗ IMAGE AUDIT FAILED for clip {n}:", file=sys.stderr)
+            for iss in image_issues:
+                print(f"      • {iss}", file=sys.stderr)
+            print(f"  ✗ skipping clip {n} (regenerate the bad image, then re-run)", file=sys.stderr)
+            state["clipTasks"][clip_key] = {
+                "status": "image_audit_failed", "errors": image_issues,
+                "attempted_at": time.strftime("%Y-%m-%dT%H:%M:%SZ", time.gmtime()),
+            }
+            save_state(ep_num, state)
+            continue
+        # Post-translation integrity check — CATCHES untranslated @-refs, out-of-bounds
+        # element references, and unreferenced elements. Aborts THIS clip if found.
+        verify_issues = verify_translation(
+            coerce_prompt(clip.get("prompt"), sep="\n\n"),
+            translated, element_list, element_order
+        )
+        if verify_issues:
+            print(f"  ✗ verify_translation FAILED for clip {n}:", file=sys.stderr)
+            for iss in verify_issues:
+                print(f"      • {iss}", file=sys.stderr)
+            print(f"  ✗ skipping clip {n} (fix the spec and re-run)", file=sys.stderr)
+            state["clipTasks"][clip_key] = {
+                "status": "verify_failed", "errors": verify_issues,
+                "attempted_at": time.strftime("%Y-%m-%dT%H:%M:%SZ", time.gmtime()),
+            }
+            save_state(ep_num, state)
+            continue
         print(f"\n  → POST clip {n} (element_list={len(element_list)} "
               f"[{','.join(element_order)}], image_list={len(image_list)}, "
               f"dur={body['duration']}s, sound={body.get('sound', 'off')})")
+        # Append the FULL submission body to submissions.log BEFORE the POST so we
+        # can audit exactly what Kling received even if the request fails. User
+        # directive 2026-05-08: log everything for traceability.
+        log_path = ep_dir(ep_num) / "submissions.log"
+        log_entry = {
+            "timestamp": time.strftime("%Y-%m-%dT%H:%M:%SZ", time.gmtime()),
+            "clip": n,
+            "ep": ep_num,
+            "external_task_id": ext_id,
+            "request_body": body,
+            "spec_subjects": clip.get("subjects"),
+            "spec_scene": clip.get("scene"),
+        }
+        with open(log_path, "a") as lf:
+            lf.write(json.dumps(log_entry) + "\n")
         status, j, _ = api("POST", "/v1/videos/omni-video", ak, sk, body)
+        # Append response to log for full traceability
+        with open(log_path, "a") as lf:
+            lf.write(json.dumps({
+                "timestamp": time.strftime("%Y-%m-%dT%H:%M:%SZ", time.gmtime()),
+                "clip": n, "external_task_id": ext_id,
+                "response_status": status,
+                "response_code": (j or {}).get("code"),
+                "task_id": (j or {}).get("data", {}).get("task_id"),
+                "response_message": (j or {}).get("message", "")[:300],
+            }) + "\n")
         if (j or {}).get("code") != 0:
             print(f"    ✗ failed: status={status} code={(j or {}).get('code')} "
                   f"msg={(j or {}).get('message','')[:200]}", file=sys.stderr)
@@ -475,24 +668,27 @@ def phase_download(ep_num: int):
     ak, sk = load_env()
     print("Phase D: poll + download")
 
+    # Use per-task GET (reliable) instead of LIST (paginates, drops old tasks beyond 50).
+    # Bug fix 2026-05-08: clip 1 v2 was never picked up by phase_download because its
+    # task_id had fallen off the first page of the LIST endpoint. Per-task GET avoids this.
     for attempt in range(1, 61):
         # Reload state each poll-tick so concurrent submits (resubmit of a single
         # clip) are picked up without needing to restart the download phase.
         state = load_state(ep_num)
-        _, j, _ = api("GET", "/v1/videos/omni-video?pageNum=1&pageSize=50", ak, sk)
-        if (j or {}).get("code") != 0:
-            print("  poll fail", file=sys.stderr); time.sleep(10); continue
-        tasks = j.get("data") or []
         pending = downloaded = 0
         for clip_key, info in state["clipTasks"].items():
             if state["clipDownloads"].get(clip_key, {}).get("localPath"): downloaded += 1; continue
             if not info.get("task_id"): continue
-            t = next((x for x in tasks if x.get("task_id") == info["task_id"]), None)
-            if not t: pending += 1; continue
-            if t.get("task_status") == "succeed":
+            # Per-task GET — always returns current status regardless of task age
+            _, body, _ = api("GET", f"/v1/videos/omni-video/{info['task_id']}", ak, sk)
+            t = body.get("data", {}) if isinstance(body, dict) else {}
+            ts = t.get("task_status")
+            if ts == "succeed":
                 url = ((t.get("task_result") or {}).get("videos") or [{}])[0].get("url")
                 if not url: print(f"  {clip_key} succeed but no url", file=sys.stderr); continue
-                out = out_dir / f"{clip_key}.mp4"
+                # Use clip stem (after "clip_") for filename, supports decimal '7.5'
+                stem = clip_key.removeprefix("clip_") if clip_key.startswith("clip_") else clip_key
+                out = out_dir / f"{stem}.mp4"
                 rc = subprocess.call(["curl", "-sL", url, "-o", str(out)])
                 if rc == 0:
                     state["clipDownloads"][clip_key] = {
@@ -504,14 +700,14 @@ def phase_download(ep_num: int):
                     print(f"  ✓ downloaded {clip_key} → {out}")
                 else:
                     print(f"  ✗ download fail {clip_key}", file=sys.stderr)
-            elif t.get("task_status") == "failed":
+            elif ts == "failed":
                 if info.get("status") != "failed":
                     state["clipTasks"][clip_key]["status"] = "failed"
                     state["clipTasks"][clip_key]["failure_reason"] = t.get("task_status_msg")
                     save_state(ep_num, state)
                     print(f"  ✗ {clip_key} FAILED: {t.get('task_status_msg')}", file=sys.stderr)
             else:
-                pending += 1
+                pending += 1  # submitted / processing
         if pending == 0:
             print("Phase D done.")
             return
@@ -576,7 +772,12 @@ def main():
     ap.add_argument("--episode", "-e", type=int, required=True)
     ap.add_argument("phase", choices=["upload", "elements", "submit", "download",
                                       "extract", "status", "all", "clip"])
-    ap.add_argument("clip_n", nargs="?", type=int, default=None)
+    # Accept int ("7"), decimal ("7.5"), or letter ("A") for clip names
+    def _parse_clip(s):
+        if s.isdigit(): return int(s)
+        if s.replace(".", "").isdigit(): return float(s)
+        return s  # letter clips like 'A', 'B'
+    ap.add_argument("clip_n", nargs="?", type=_parse_clip, default=None)
     args = ap.parse_args()
 
     ep_num = args.episode
@@ -585,7 +786,7 @@ def main():
 
     if args.phase == "upload":     phase_upload(ep_num)
     elif args.phase == "elements": phase_elements(ep_num)
-    elif args.phase == "submit":   phase_submit(ep_num)
+    elif args.phase == "submit":   phase_submit(ep_num, args.clip_n)
     elif args.phase == "download": phase_download(ep_num)
     elif args.phase == "extract":  phase_extract(ep_num)
     elif args.phase == "status":   phase_status(ep_num)

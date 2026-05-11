@@ -33,7 +33,22 @@ ENV_CANDIDATES = [
 ]
 GEMINI_BASE = "https://generativelanguage.googleapis.com"
 
-AUDIT_PROMPT = '''You are a video QA auditor for the "Sara and Eva" Pixar-style children's animated series.
+CANONICAL_CAST = (
+    'Mama (adult blonde woman, often hat), Papa (adult man, bald + dark beard + glasses), '
+    'Sara (older girl ~7yo, wavy dark-blonde hair), Eva (younger girl ~3yo, curly bright-blonde hair), '
+    'Joe (Pomeranian, fluffy cream-and-gold), Ginger (Jack Russell)'
+)
+
+EP_VARIANTS_HINT = '''
+This episode also uses age/costume variants of the family. If you see them, identify by tag:
+{variant_lines}
+
+Don't call them "unknown_adult"/"unknown_child" if their description matches one of these variants.
+'''
+
+AUDIT_PROMPT_TEMPLATE = '''You are a video QA auditor for the "Sara and Eva" Pixar-style children's animated series.
+
+{cast_block}
 
 Watch this video clip and produce a structured report. Be CONCISE and SPECIFIC.
 
@@ -44,7 +59,7 @@ DESCRIPTION: <2 sentences describing what happens in the clip>
 VISIBLE_ANIMALS: <comma-list of any visible animals with species, or "NONE">
 
 VISIBLE_HUMANS_COUNT: <number>
-VISIBLE_HUMANS: <comma-list. Per character try to identify if recognizable: Mama (adult woman, often hat), Papa (adult man, beard), Sara (older girl, ponytail with bow), Eva (younger girl, curly blonde with rainbow bow), Joe (Costco employee, red apron), or "unknown_child"/"unknown_adult". Note distinct visual features.>
+VISIBLE_HUMANS: <comma-list. Per character try to identify by their canonical NAME (Mama, Papa, Sara, Eva, young_Mama, young_Papa, baby_Sara, baby_Eva, etc.). Only use "unknown_adult"/"unknown_child" if the visible character truly does NOT match any name in the cast list above.>
 
 ACTIONS:
 - <character>: <what they DO in the clip — verbs only, body parts moving, e.g. "Papa: walks forward, raises arm">
@@ -143,12 +158,34 @@ def delete_file(file_name: str, api_key: str):
         pass
 
 
-def audit_one(clip: Path, api_key: str) -> str:
+def build_audit_prompt(ep_num: int | None = None) -> str:
+    """Compose the AUDIT_PROMPT with the canonical cast + this episode's
+    age/costume variants. If ep_num=None, fall back to canonical only."""
+    cast_lines = [f"Canonical cast: {CANONICAL_CAST}."]
+    if ep_num is not None:
+        ep_dir = PROJECT_ROOT / "content" / "episodes" / f"ep{ep_num:02d}"
+        ep_json = ep_dir / "episode.json"
+        if ep_json.is_file():
+            try:
+                ep = json.loads(ep_json.read_text())
+                variant_lines = []
+                for el in (ep.get("newBoundElements") or []):
+                    tag = el.get("tag", "")
+                    purpose = (el.get("purpose") or "")[:160]
+                    if tag and any(p in tag.lower() for p in ("young_", "baby_", "puppy_", "_camera", "_with_")):
+                        variant_lines.append(f"  - {tag}: {purpose}")
+                if variant_lines:
+                    cast_lines.append(EP_VARIANTS_HINT.format(variant_lines="\n".join(variant_lines)))
+            except Exception: pass
+    return AUDIT_PROMPT_TEMPLATE.format(cast_block="\n".join(cast_lines))
+
+
+def audit_one(clip: Path, api_key: str, ep_num: int | None = None) -> str:
     file = upload_file(clip, api_key)
     body = json.dumps({
         "contents": [{"parts": [
             {"fileData": {"mimeType": "video/mp4", "fileUri": file["uri"]}},
-            {"text": AUDIT_PROMPT},
+            {"text": build_audit_prompt(ep_num)},
         ]}],
         "generationConfig": {"temperature": 0.1},
     }).encode()
@@ -188,7 +225,13 @@ def main():
     ap.add_argument("clips_dir")
     ap.add_argument("--out", default=None)
     ap.add_argument("--concurrency", type=int, default=3)
+    ap.add_argument("--episode", "-e", type=int, default=None,
+                    help="episode number — enables variant-aware Gemini prompt (knows about young_/baby_/puppy_ etc)")
     args = ap.parse_args()
+    # Auto-detect episode from clips_dir if not provided
+    if args.episode is None:
+        m = re.search(r"ep(\d{2})", str(args.clips_dir))
+        if m: args.episode = int(m.group(1))
 
     load_env()
     keys = get_keys()
@@ -218,7 +261,7 @@ def main():
             api_key = keys[idx % len(keys)]
             t0 = time.time()
             try:
-                text = audit_one(clip, api_key)
+                text = audit_one(clip, api_key, ep_num=args.episode)
                 parsed = parse_report(text)
                 parsed["file"] = clip.name
                 parsed["durationMs"] = int((time.time() - t0) * 1000)

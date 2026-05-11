@@ -1,0 +1,12 @@
+{
+  "episode": 1, "beat": 12, "microClip": "b",
+  "title": "Eva to school with Papa from the driveway",
+  "durationSec": 5,
+  "mode": "single-shot",
+  "subjects": ["Papa", "Eva"],
+  "scene": "Driveway",
+  "nativeAudio": true,
+  "expectedCredits": 45,
+  "negativePrompt": "extra people, duplicate character, twin, clone, two of the same person, mirrored figure, background extras, crowd, identical sibling, second girl, second sister, other children, walking from street, walking up the driveway",
+  "prompt": "Wide shot at @Driveway, camera at street level. @Papa walks @Eva by the hand from the house side DOWN the driveway toward the gray Tesla parked nearer the camera: \"Time for school!\" @Eva turns over her shoulder waving back at the house: \"Bye-bye house!\""
+}

@@ -56,8 +56,12 @@ def parse_clip_spec(spec: str, episode: int) -> tuple[Path, float | None, float 
         m = re.match(r"^(.+?\.mp4)(?::(\d+(?:\.\d+)?)-(\d+(?:\.\d+)?))?$", spec)
         if not m: raise ValueError(f"can't parse clip spec: {spec}")
         return Path(m.group(1)), (float(m.group(2)) if m.group(2) else None), (float(m.group(3)) if m.group(3) else None)
-    m = re.match(r"^(\d+(?:\.\d+)?)(?::(\d+(?:\.\d+)?)-(\d+(?:\.\d+)?))?$", spec)
-    if not m: raise ValueError(f"can't parse clip spec: {spec}")
+    # Match: numeric ('19'), decimal ('7.5'), letter clip ('A', 'B'), optional :start-end slice
+    m = re.match(r"^([A-Z]|\d+(?:\.\d+)?)(?::(\d+(?:\.\d+)?)-(\d+(?:\.\d+)?))?$", spec)
+    if not m: raise ValueError(
+        f"can't parse clip spec: {spec!r}. Accepted: '19' / '7.5' / 'A' / '/abs/path.mp4' "
+        f"(any with optional ':start-end' slice)"
+    )
     n, st, et = m.group(1), m.group(2), m.group(3)
     p = PROJECT_ROOT / "content" / "episodes" / f"ep{episode:02d}" / "clips" / f"{n}.mp4"
     return p, (float(st) if st else None), (float(et) if et else None)

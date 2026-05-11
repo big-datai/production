@@ -1,0 +1,35 @@
+{
+  "clipsDir": "/Volumes/Samsung500/goreadling-production/saraandeva/content/episodes/ep14/clips",
+  "generatedAt": "2026-05-07T21:50:46.174270Z",
+  "clipCount": 1,
+  "flagged": {
+    "fox": [],
+    "critical": [
+      "3.mp4"
+    ],
+    "minor": [],
+    "errors": []
+  },
+  "results": {
+    "3.mp4": {
+      "description": "A Pixar-style animated family (Papa, Mama, Sara, and Eva) sits on a couch while Papa tells a story. Eva claps and smiles, listening intently.",
+      "animals": "NONE",
+      "humansCount": 4,
+      "humans": "Papa (adult man, beard, glasses), Eva (younger girl, curly blonde with rainbow bow), Sara (older girl, long blonde hair), Mama (adult woman, blonde hair)",
+      "actions": [
+        "- Papa: talks, smiles, holds Eva",
+        "- Eva: claps, smiles, rests chin on hands, looks up",
+        "- Sara: sits, smiles, looks",
+        "- Mama: sits, smiles, looks"
+      ],
+      "defects": [
+        "- scene_mismatch: The framed pictures on the wall are realistic photographs, clashing with the Pixar-style animation of the characters and the rest of the scene.",
+        "- visual_clone: The animated characters (Papa, Mama, and a baby) appear as realistic versions of themselves in some of the framed photos on the wall, creating a stylistic inconsistency."
+      ],
+      "overall": "CRITICAL_DEFECT",
+      "raw": "DESCRIPTION: A Pixar-style animated family (Papa, Mama, Sara, and Eva) sits on a couch while Papa tells a story. Eva claps and smiles, listening intently.\nVISIBLE_ANIMALS: NONE\nVISIBLE_HUMANS_COUNT: 4\nVISIBLE_HUMANS: Papa (adult man, beard, glasses), Eva (younger girl, curly blonde with rainbow bow), Sara (older girl, long blonde hair), Mama (adult woman, blonde hair)\nACTIONS:\n- Papa: talks, smiles, holds Eva\n- Eva: claps, smiles, rests chin on hands, looks up\n- Sara: sits, smiles, looks\n- Mama: sits, smiles, looks\nDEFECTS:\n- scene_mismatch: The framed pictures on the wall are realistic photographs, clashing with the Pixar-style animation of the characters and the rest of the scene.\n- visual_clone: The animated characters (Papa, Mama, and a baby) appear as realistic versions of themselves in some of the framed photos on the wall, creating a stylistic inconsistency.\nOVERALL: CRITICAL_DEFECT",
+      "file": "3.mp4",
+      "durationMs": 15944
+    }
+  }
+}

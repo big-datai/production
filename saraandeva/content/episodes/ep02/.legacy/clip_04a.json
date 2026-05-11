@@ -1,0 +1,12 @@
+{
+  "episode": 2, "beat": 4, "microClip": "a",
+  "title": "Peer under the bunk bed",
+  "durationSec": 5,
+  "mode": "single-shot",
+  "subjects": ["Sara", "Eva", "Joe"],
+  "scene": "BedroomSisters",
+  "nativeAudio": true,
+  "expectedCredits": 45,
+  "negativePrompt": "extra people, duplicate character, twin, clone, two of the same person, mirrored figure, background extras, third child, second sister, second joe",
+  "prompt": "Wide shot in @BedroomSisters. @Sara on the LEFT and @Eva on the RIGHT crouch peering under the dark-wood bunk bed. @Joe behind them with paws on the floor sniffing the trundle drawer: \"Yip yip!\" @Sara: \"Under the bed!\""
+}

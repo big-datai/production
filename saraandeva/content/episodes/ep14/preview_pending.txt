@@ -1,0 +1,742 @@
+    ⚠ resolveElementId: Sara → bare element 310001512573308 (no ep14_Sara registered) — character will render WITHOUT episode-specific costume
+    ⚠ resolveElementId: Eva → bare element 310001518722300 (no ep14_Eva registered) — character will render WITHOUT episode-specific costume
+    ⚠ resolveElementId: Papa → bare element 310056797721310 (no ep14_Papa registered) — character will render WITHOUT episode-specific costume
+    ⚠ resolveElementId: Sara → bare element 310001512573308 (no ep14_Sara registered) — character will render WITHOUT episode-specific costume
+    ⚠ resolveElementId: Eva → bare element 310001518722300 (no ep14_Eva registered) — character will render WITHOUT episode-specific costume
+    ⚠ resolveElementId: Papa → bare element 310056797721310 (no ep14_Papa registered) — character will render WITHOUT episode-specific costume
+    ⚠ resolveElementId: Joe → bare element 310000741885315 (no ep14_Joe registered) — character will render WITHOUT episode-specific costume
+    ⚠ resolveElementId: Joe → bare element 310000741885315 (no ep14_Joe registered) — character will render WITHOUT episode-specific costume
+    ⚠ resolveElementId: Joe → bare element 310000741885315 (no ep14_Joe registered) — character will render WITHOUT episode-specific costume
+    ⚠ resolveElementId: Joe → bare element 310000741885315 (no ep14_Joe registered) — character will render WITHOUT episode-specific costume
+    ⚠ resolveElementId: Sara → bare element 310001512573308 (no ep14_Sara registered) — character will render WITHOUT episode-specific costume
+    ⚠ resolveElementId: Eva → bare element 310001518722300 (no ep14_Eva registered) — character will render WITHOUT episode-specific costume
+    ⚠ resolveElementId: Ginger → bare element 310086200551316 (no ep14_Ginger registered) — character will render WITHOUT episode-specific costume
+    ⚠ resolveElementId: Mama → bare element 310086200106306 (no ep14_Mama registered) — character will render WITHOUT episode-specific costume
+    ⚠ resolveElementId: Papa → bare element 310056797721310 (no ep14_Papa registered) — character will render WITHOUT episode-specific costume
+    ⚠ resolveElementId: Sara → bare element 310001512573308 (no ep14_Sara registered) — character will render WITHOUT episode-specific costume
+    ⚠ resolveElementId: Eva → bare element 310001518722300 (no ep14_Eva registered) — character will render WITHOUT episode-specific costume
+    ⚠ resolveElementId: Ginger → bare element 310086200551316 (no ep14_Ginger registered) — character will render WITHOUT episode-specific costume
+    ⚠ resolveElementId: Mama → bare element 310086200106306 (no ep14_Mama registered) — character will render WITHOUT episode-specific costume
+    ⚠ resolveElementId: Papa → bare element 310056797721310 (no ep14_Papa registered) — character will render WITHOUT episode-specific costume
+    ⚠ resolveElementId: Sara → bare element 310001512573308 (no ep14_Sara registered) — character will render WITHOUT episode-specific costume
+    ⚠ resolveElementId: Eva → bare element 310001518722300 (no ep14_Eva registered) — character will render WITHOUT episode-specific costume
+    ⚠ resolveElementId: Papa → bare element 310056797721310 (no ep14_Papa registered) — character will render WITHOUT episode-specific costume
+    ⚠ resolveElementId: Sara → bare element 310001512573308 (no ep14_Sara registered) — character will render WITHOUT episode-specific costume
+    ⚠ resolveElementId: Eva → bare element 310001518722300 (no ep14_Eva registered) — character will render WITHOUT episode-specific costume
+    ⚠ resolveElementId: Papa → bare element 310056797721310 (no ep14_Papa registered) — character will render WITHOUT episode-specific costume
+    ⚠ resolveElementId: Sara → bare element 310001512573308 (no ep14_Sara registered) — character will render WITHOUT episode-specific costume
+    ⚠ resolveElementId: Eva → bare element 310001518722300 (no ep14_Eva registered) — character will render WITHOUT episode-specific costume
+    ⚠ resolveElementId: Papa → bare element 310056797721310 (no ep14_Papa registered) — character will render WITHOUT episode-specific costume
+    ⚠ resolveElementId: Sara → bare element 310001512573308 (no ep14_Sara registered) — character will render WITHOUT episode-specific costume
+    ⚠ resolveElementId: Eva → bare element 310001518722300 (no ep14_Eva registered) — character will render WITHOUT episode-specific costume
+    ⚠ resolveElementId: Papa → bare element 310056797721310 (no ep14_Papa registered) — character will render WITHOUT episode-specific costume
+    ⚠ resolveElementId: Sara → bare element 310001512573308 (no ep14_Sara registered) — character will render WITHOUT episode-specific costume
+    ⚠ resolveElementId: Eva → bare element 310001518722300 (no ep14_Eva registered) — character will render WITHOUT episode-specific costume
+    ⚠ resolveElementId: Papa → bare element 310056797721310 (no ep14_Papa registered) — character will render WITHOUT episode-specific costume
+    ⚠ resolveElementId: Sara → bare element 310001512573308 (no ep14_Sara registered) — character will render WITHOUT episode-specific costume
+    ⚠ resolveElementId: Eva → bare element 310001518722300 (no ep14_Eva registered) — character will render WITHOUT episode-specific costume
+    ⚠ resolveElementId: Papa → bare element 310056797721310 (no ep14_Papa registered) — character will render WITHOUT episode-specific costume
+    ⚠ resolveElementId: Sara → bare element 310001512573308 (no ep14_Sara registered) — character will render WITHOUT episode-specific costume
+    ⚠ resolveElementId: Eva → bare element 310001518722300 (no ep14_Eva registered) — character will render WITHOUT episode-specific costume
+    ⚠ resolveElementId: Mama → bare element 310086200106306 (no ep14_Mama registered) — character will render WITHOUT episode-specific costume
+    ⚠ resolveElementId: Papa → bare element 310056797721310 (no ep14_Papa registered) — character will render WITHOUT episode-specific costume
+    ⚠ resolveElementId: Joe → bare element 310000741885315 (no ep14_Joe registered) — character will render WITHOUT episode-specific costume
+    ⚠ resolveElementId: Ginger → bare element 310086200551316 (no ep14_Ginger registered) — character will render WITHOUT episode-specific costume
+    ⚠ resolveElementId: Sara → bare element 310001512573308 (no ep14_Sara registered) — character will render WITHOUT episode-specific costume
+    ⚠ resolveElementId: Eva → bare element 310001518722300 (no ep14_Eva registered) — character will render WITHOUT episode-specific costume
+    ⚠ resolveElementId: Mama → bare element 310086200106306 (no ep14_Mama registered) — character will render WITHOUT episode-specific costume
+    ⚠ resolveElementId: Papa → bare element 310056797721310 (no ep14_Papa registered) — character will render WITHOUT episode-specific costume
+    ⚠ resolveElementId: Joe → bare element 310000741885315 (no ep14_Joe registered) — character will render WITHOUT episode-specific costume
+    ⚠ resolveElementId: Ginger → bare element 310086200551316 (no ep14_Ginger registered) — character will render WITHOUT episode-specific costume
+    ⚠ resolveElementId: Sara → bare element 310001512573308 (no ep14_Sara registered) — character will render WITHOUT episode-specific costume
+    ⚠ resolveElementId: Eva → bare element 310001518722300 (no ep14_Eva registered) — character will render WITHOUT episode-specific costume
+    ⚠ resolveElementId: Papa → bare element 310056797721310 (no ep14_Papa registered) — character will render WITHOUT episode-specific costume
+    ⚠ resolveElementId: Sara → bare element 310001512573308 (no ep14_Sara registered) — character will render WITHOUT episode-specific costume
+    ⚠ resolveElementId: Eva → bare element 310001518722300 (no ep14_Eva registered) — character will render WITHOUT episode-specific costume
+    ⚠ resolveElementId: Papa → bare element 310056797721310 (no ep14_Papa registered) — character will render WITHOUT episode-specific costume
+    ⚠ resolveElementId: Sara → bare element 310001512573308 (no ep14_Sara registered) — character will render WITHOUT episode-specific costume
+    ⚠ resolveElementId: Eva → bare element 310001518722300 (no ep14_Eva registered) — character will render WITHOUT episode-specific costume
+    ⚠ resolveElementId: Mama → bare element 310086200106306 (no ep14_Mama registered) — character will render WITHOUT episode-specific costume
+    ⚠ resolveElementId: Papa → bare element 310056797721310 (no ep14_Papa registered) — character will render WITHOUT episode-specific costume
+    ⚠ resolveElementId: Sara → bare element 310001512573308 (no ep14_Sara registered) — character will render WITHOUT episode-specific costume
+    ⚠ resolveElementId: Eva → bare element 310001518722300 (no ep14_Eva registered) — character will render WITHOUT episode-specific costume
+    ⚠ resolveElementId: Mama → bare element 310086200106306 (no ep14_Mama registered) — character will render WITHOUT episode-specific costume
+    ⚠ resolveElementId: Papa → bare element 310056797721310 (no ep14_Papa registered) — character will render WITHOUT episode-specific costume
+    ⚠ resolveElementId: Sara → bare element 310001512573308 (no ep14_Sara registered) — character will render WITHOUT episode-specific costume
+    ⚠ resolveElementId: Eva → bare element 310001518722300 (no ep14_Eva registered) — character will render WITHOUT episode-specific costume
+    ⚠ resolveElementId: Mama → bare element 310086200106306 (no ep14_Mama registered) — character will render WITHOUT episode-specific costume
+    ⚠ resolveElementId: Papa → bare element 310056797721310 (no ep14_Papa registered) — character will render WITHOUT episode-specific costume
+    ⚠ resolveElementId: Sara → bare element 310001512573308 (no ep14_Sara registered) — character will render WITHOUT episode-specific costume
+    ⚠ resolveElementId: Eva → bare element 310001518722300 (no ep14_Eva registered) — character will render WITHOUT episode-specific costume
+    ⚠ resolveElementId: Mama → bare element 310086200106306 (no ep14_Mama registered) — character will render WITHOUT episode-specific costume
+    ⚠ resolveElementId: Papa → bare element 310056797721310 (no ep14_Papa registered) — character will render WITHOUT episode-specific costume
+    ⚠ resolveElementId: Sara → bare element 310001512573308 (no ep14_Sara registered) — character will render WITHOUT episode-specific costume
+    ⚠ resolveElementId: Eva → bare element 310001518722300 (no ep14_Eva registered) — character will render WITHOUT episode-specific costume
+    ⚠ resolveElementId: Mama → bare element 310086200106306 (no ep14_Mama registered) — character will render WITHOUT episode-specific costume
+    ⚠ resolveElementId: Papa → bare element 310056797721310 (no ep14_Papa registered) — character will render WITHOUT episode-specific costume
+    ⚠ resolveElementId: Joe → bare element 310000741885315 (no ep14_Joe registered) — character will render WITHOUT episode-specific costume
+    ⚠ resolveElementId: Ginger → bare element 310086200551316 (no ep14_Ginger registered) — character will render WITHOUT episode-specific costume
+    ⚠ resolveElementId: Sara → bare element 310001512573308 (no ep14_Sara registered) — character will render WITHOUT episode-specific costume
+    ⚠ resolveElementId: Eva → bare element 310001518722300 (no ep14_Eva registered) — character will render WITHOUT episode-specific costume
+    ⚠ resolveElementId: Mama → bare element 310086200106306 (no ep14_Mama registered) — character will render WITHOUT episode-specific costume
+    ⚠ resolveElementId: Papa → bare element 310056797721310 (no ep14_Papa registered) — character will render WITHOUT episode-specific costume
+    ⚠ resolveElementId: Joe → bare element 310000741885315 (no ep14_Joe registered) — character will render WITHOUT episode-specific costume
+    ⚠ resolveElementId: Ginger → bare element 310086200551316 (no ep14_Ginger registered) — character will render WITHOUT episode-specific costume
+
+=== Preview: ep14 — 26 clip(s) ===
+
+══════════════════════════════════════════════════════════════════════════════
+CLIP 7  —  FLASHBACK — first conversation at cafe
+══════════════════════════════════════════════════════════════════════════════
+
+  📋 INTENT (from spec):
+     subjects:  ['young_Papa', 'young_Mama']
+     scene:     ep14-cafe-mams-country
+     duration:  10s, sound=on
+
+     dialogue lines from prompt:
+       • "Is anyone sitting here?"
+
+  📤 SUBMISSION TO KLING:
+     element_list (2):
+       <<<element_1>>>  =  young_Papa (id 310173724062314)
+       <<<element_2>>>  =  young_Mama (id 310173706436317)
+     image_list (1):
+       • https://storage.googleapis.com/saraandeva-kling-elements/ep14/ep14_cafe_mams_country.png
+
+     translated prompt (349 chars):
+       <<<element_2>>> at her cafe table reading a paperback book. <<<element_1>>> standing beside her table with backpack on, polite questioning look, gestures at the empty chair. young_Papa (warm friendly): "Is anyone sitting here?" Smiling yes nod from across the table. Setting backpack down and sitting. Eyes meeting across the table. Soft warm smile.
+
+     negative prompt: duplicate character, ghost figure, extra arm, anatomy error, morphing, flickering, disfigured, scary face, horror lighting, blood, dutch angle, handheld shake, jump cut, eva with brown hair, sara in p...
+
+══════════════════════════════════════════════════════════════════════════════
+CLIP 8  —  FLASHBACK — phone number on coffee receipt
+══════════════════════════════════════════════════════════════════════════════
+
+  📋 INTENT (from spec):
+     subjects:  ['young_Papa', 'young_Mama']
+     scene:     ep14-cafe-mams-country
+     duration:  10s, sound=on
+
+     dialogue lines from prompt:
+       • "If you ever come back..."
+       • "I will. I promise."
+
+  📤 SUBMISSION TO KLING:
+     element_list (2):
+       <<<element_1>>>  =  young_Papa (id 310173724062314)
+       <<<element_2>>>  =  young_Mama (id 310173706436317)
+     image_list (1):
+       • https://storage.googleapis.com/saraandeva-kling-elements/ep14/ep14_cafe_mams_country.png
+
+     translated prompt (374 chars):
+       <<<element_2>>> at the cafe table, right hand HOLDS a small pencil, fingers slowly WRITE a phone number on a paper coffee receipt on the marble table. Hand GENTLY SLIDES the receipt across. young_Mama (soft kind): "If you ever come back..." <<<element_1>>> right hand TAKES the receipt carefully, looks down at the number, mouth SMILES wide. young_Papa: "I will. I promise."
+
+     negative prompt: duplicate character, ghost figure, extra arm, anatomy error, morphing, flickering, disfigured, scary face, horror lighting, blood, dutch angle, handheld shake, jump cut, eva with brown hair, sara in p...
+
+══════════════════════════════════════════════════════════════════════════════
+CLIP 9  —  FLASHBACK — Dad at airport flying home, clutching receipt
+══════════════════════════════════════════════════════════════════════════════
+
+  📋 INTENT (from spec):
+     subjects:  ['young_Papa']
+     scene:     ep14-cafe-mams-country
+     duration:  10s, sound=on
+
+     dialogue lines from prompt:
+
+  📤 SUBMISSION TO KLING:
+     element_list (1):
+       <<<element_1>>>  =  young_Papa (id 310173724062314)
+     image_list (1):
+       • https://storage.googleapis.com/saraandeva-kling-elements/ep14/ep14_cafe_mams_country.png
+
+     translated prompt (431 chars):
+       <<<element_1>>> sitting in a row of empty waiting chairs at the airport, brown backpack at feet, right hand HOLDS the small folded coffee receipt at chest height. Looks down at the receipt with a soft smile. The receipt has a phone number written in soft pencil, very visible. Head TURNS toward the airport window, mouth SOFTENS into a private smile. Airplane silhouette visible outside. No dialogue, only soft airport ambient hum.
+
+     negative prompt: duplicate character, ghost figure, extra arm, anatomy error, morphing, flickering, disfigured, scary face, horror lighting, blood, dutch angle, handheld shake, jump cut, eva with brown hair, sara in p...
+
+══════════════════════════════════════════════════════════════════════════════
+CLIP 10  —  FLASHBACK — phone calls montage, split screen
+══════════════════════════════════════════════════════════════════════════════
+
+  📋 INTENT (from spec):
+     subjects:  ['young_Mama']
+     scene:     ep14-cafe-mams-country
+     duration:  10s, sound=on
+
+     dialogue lines from prompt:
+       • "Tell me about Germany again."
+
+  📤 SUBMISSION TO KLING:
+     element_list (1):
+       <<<element_1>>>  =  young_Mama (id 310173706436317)
+     image_list (1):
+       • https://storage.googleapis.com/saraandeva-kling-elements/ep14/ep14_cafe_mams_country.png
+
+     translated prompt (331 chars):
+       <<<element_1>>> in the cafe corner sitting at the window table, right hand HOLDS a mobile phone to her ear. Mouth LAUGHS softly, head TILTS back. Other hand TWIRLS hair playfully. Eyes WARM, big smile. Soft afternoon sun through the window, autumn leaves visible outside. young_Mama (soft, laughing): "Tell me about Germany again."
+
+     negative prompt: duplicate character, ghost figure, extra arm, anatomy error, morphing, flickering, disfigured, scary face, horror lighting, blood, dutch angle, handheld shake, jump cut, eva with brown hair, sara in p...
+
+══════════════════════════════════════════════════════════════════════════════
+CLIP 11  —  PARENT-ACTIVITY — Dad at airport waiting with flowers, Mama runs to him
+══════════════════════════════════════════════════════════════════════════════
+
+  📋 INTENT (from spec):
+     subjects:  ['young_Papa', 'young_Mama']
+     scene:     ep14-cafe-mams-country
+     duration:  15s, sound=on
+
+     dialogue lines from prompt:
+       • "You're here."
+
+  📤 SUBMISSION TO KLING:
+     element_list (2):
+       <<<element_1>>>  =  young_Papa (id 310173724062314)
+       <<<element_2>>>  =  young_Mama (id 310173706436317)
+     image_list (1):
+       • https://storage.googleapis.com/saraandeva-kling-elements/ep14/ep14_cafe_mams_country.png
+
+     translated prompt (672 chars):
+       Medium two-shot in the airport arrivals hall, soft afternoon light through large glass windows, polished floor, arrivals signage in the soft background. <<<element_1>>> standing center-frame holding a small bouquet of pink-and-white peonies in right hand, eyes SCAN the arrivals doors, left hand ADJUSTS collar in a small nervous gesture. <<<element_2>>> appearing through the arrivals door with a small wheeled suitcase behind, head LIFTS, eyes WIDEN with joy, legs RUN forward. Right arm RAISES the bouquet, left arm EXTENDS open in welcome. They run into hug, arms WRAP around, hands GRIP shoulders. Mouth KISSES the top of her head. young_Papa (gentle): "You're here."
+
+     negative prompt: duplicate character, ghost figure, extra arm, anatomy error, morphing, flickering, disfigured, scary face, horror lighting, blood, dutch angle, handheld shake, jump cut, eva with brown hair, sara in p...
+
+══════════════════════════════════════════════════════════════════════════════
+CLIP 12  —  GERMANY ROAD TRIP — autumn convertible, castle on hill
+══════════════════════════════════════════════════════════════════════════════
+
+  📋 INTENT (from spec):
+     subjects:  ['young_Papa', 'young_Mama']
+     scene:     ep14-german-autumn-road
+     duration:  10s, sound=on
+
+     dialogue lines from prompt:
+
+  📤 SUBMISSION TO KLING:
+     element_list (2):
+       <<<element_1>>>  =  young_Papa (id 310173724062314)
+       <<<element_2>>>  =  young_Mama (id 310173706436317)
+     image_list (1):
+       • https://storage.googleapis.com/saraandeva-kling-elements/ep14/ep14_german_autumn_road.png
+
+     translated prompt (481 chars):
+       Small open cream convertible on a cobblestone road through south-German autumn vineyards. <<<element_1>>> driving, hands on the steering wheel. <<<element_2>>> in the passenger seat, hair WHIPPING in the wind. Bavarian-style castle on the hilltop in soft background. Right arm POINTS up toward the castle from the passenger seat, mouth GASPS happy. Driver hand GESTURES at the castle in agreement. Adoring glance from the driver. Passenger mouth LAUGHS, hand TUCKS hair behind ear.
+
+     negative prompt: duplicate character, ghost figure, extra arm, anatomy error, morphing, flickering, disfigured, scary face, horror lighting, blood, dutch angle, handheld shake, jump cut, eva with brown hair, sara in p...
+
+══════════════════════════════════════════════════════════════════════════════
+CLIP 13  —  ROME — Colosseum + gelato
+══════════════════════════════════════════════════════════════════════════════
+
+  📋 INTENT (from spec):
+     subjects:  ['young_Papa', 'young_Mama']
+     scene:     ep14-rome-colosseum
+     duration:  10s, sound=on
+
+     dialogue lines from prompt:
+       • "Best gelato in Roma!"
+
+  📤 SUBMISSION TO KLING:
+     element_list (2):
+       <<<element_1>>>  =  young_Papa (id 310173724062314)
+       <<<element_2>>>  =  young_Mama (id 310173706436317)
+     image_list (1):
+       • https://storage.googleapis.com/saraandeva-kling-elements/ep14/ep14_rome_colosseum.png
+
+     translated prompt (395 chars):
+       <<<element_1>>> and <<<element_2>>> walking arm-in-arm in front of the Roman Colosseum. Each holds a small gelato cone in their free hand. Pink-strawberry cone for her, pistachio-green for him. Mouth SMILES wide, tongue LICKS the gelato cone, eyes SPARKLE. Right hand EXTENDS the pistachio cone offering. Mouth LAUGHS, leans in and takes a tiny lick. young_Papa (playful): "Best gelato in Roma!"
+
+     negative prompt: duplicate character, ghost figure, extra arm, anatomy error, morphing, flickering, disfigured, scary face, horror lighting, blood, dutch angle, handheld shake, jump cut, eva with brown hair, sara in p...
+
+══════════════════════════════════════════════════════════════════════════════
+CLIP 14  —  BULGARIA — first skis, snowy slope
+══════════════════════════════════════════════════════════════════════════════
+
+  📋 INTENT (from spec):
+     subjects:  ['young_Papa', 'young_Mama']
+     scene:     ep14-bulgaria-ski-slope
+     duration:  10s, sound=on
+
+     dialogue lines from prompt:
+       • "I'm doing it! I'm SKIING!"
+       • "Look at you GO!"
+
+  📤 SUBMISSION TO KLING:
+     element_list (2):
+       <<<element_1>>>  =  young_Papa (id 310173724062314)
+       <<<element_2>>>  =  young_Mama (id 310173706436317)
+     image_list (1):
+       • https://storage.googleapis.com/saraandeva-kling-elements/ep14/ep14_bulgaria_ski_slope.png
+
+     translated prompt (489 chars):
+       <<<element_2>>> center frame on skis, knees BENT, arms OUT for balance, slightly wobbly. <<<element_1>>> next to her on his own skis, left hand HOLDS her right hand to help her stay upright. Both wearing puffy ski jackets, ski pants, helmets, goggles up on forehead, ski poles in hands. Mouth LAUGHS nervously, eyes WIDEN. young_Mama (giggling): "I'm doing it! I'm SKIING!" Mouth GRINS proud from the partner, right hand THUMBS-UP encouragingly. young_Papa (encouraging): "Look at you GO!"
+
+     negative prompt: duplicate character, ghost figure, extra arm, anatomy error, morphing, flickering, disfigured, scary face, horror lighting, blood, dutch angle, handheld shake, jump cut, eva with brown hair, sara in p...
+
+══════════════════════════════════════════════════════════════════════════════
+CLIP 15  —  DISNEYLAND PARIS — Mom's lifelong dream, emotional payoff
+══════════════════════════════════════════════════════════════════════════════
+
+  📋 INTENT (from spec):
+     subjects:  ['young_Papa', 'young_Mama']
+     scene:     ep14-disney-paris-castle
+     duration:  10s, sound=on
+
+     dialogue lines from prompt:
+       • "I... I can't believe it..."
+       • "It was always your dream. Today I made it come true."
+
+  📤 SUBMISSION TO KLING:
+     element_list (2):
+       <<<element_1>>>  =  young_Papa (id 310173724062314)
+       <<<element_2>>>  =  young_Mama (id 310173706436317)
+     image_list (1):
+       • https://storage.googleapis.com/saraandeva-kling-elements/ep14/ep14_disney_paris_castle.png
+
+     translated prompt (555 chars):
+       <<<element_1>>> standing center-left and <<<element_2>>> center-right, both wearing iconic black mouse-ear headbands. Sleeping Beauty Castle in the background, golden-hour sky lit with soft fireworks. Hands HOLD between them. Eyes SLOWLY FILL with tears of joy from her, mouth OPENS in a soft gasp, hand COVERS her mouth. young_Mama (whispering): "I... I can't believe it..." Mouth SMILES adoringly from him, right arm WRAPS around her shoulders, head TILTS to rest on top of hers. young_Papa (soft): "It was always your dream. Today I made it come true."
+
+     negative prompt: duplicate character, ghost figure, extra arm, anatomy error, morphing, flickering, disfigured, scary face, horror lighting, blood, dutch angle, handheld shake, jump cut, eva with brown hair, sara in p...
+
+══════════════════════════════════════════════════════════════════════════════
+CLIP 16  —  WEDDING DAY — happy tears at altar
+══════════════════════════════════════════════════════════════════════════════
+
+  📋 INTENT (from spec):
+     subjects:  ['young_Papa', 'young_Mama']
+     scene:     ep14-wedding-garden
+     duration:  10s, sound=on
+
+     dialogue lines from prompt:
+       • "I do."
+       • "I do too."
+
+  📤 SUBMISSION TO KLING:
+     element_list (2):
+       <<<element_1>>>  =  young_Papa (id 310173724062314)
+       <<<element_2>>>  =  young_Mama (id 310173706436317)
+     image_list (1):
+       • https://storage.googleapis.com/saraandeva-kling-elements/ep14/ep14_wedding_garden.png
+
+     translated prompt (492 chars):
+       <<<element_1>>> in a charcoal suit with white shirt and soft cream tie. <<<element_2>>> in a simple flowing white wedding dress with delicate lace neckline and small floral hair pin. Both at the garden archway holding hands facing each other. Soft golden-hour afternoon light through trees. Eyes FILL with tears, mouth SMILES through them. Right hand SQUEEZES the partner's left hand. Eyes GLOSS WET on his side, soft happy smile. young_Papa: "I do." young_Mama (soft tear-laugh): "I do too."
+
+     negative prompt: duplicate character, ghost figure, extra arm, anatomy error, morphing, flickering, disfigured, scary face, horror lighting, blood, dutch angle, handheld shake, jump cut, eva with brown hair, sara in p...
+
+══════════════════════════════════════════════════════════════════════════════
+CLIP 17  —  AUDIENCE-ASK 2 — has YOUR family been on a big trip?
+══════════════════════════════════════════════════════════════════════════════
+
+  📋 INTENT (from spec):
+     subjects:  ['Sara', 'Eva', 'Papa']
+     scene:     ep14-anniversary-living-room
+     duration:  10s, sound=on
+
+     dialogue lines from prompt:
+       • "It was her biggest dream..."
+       • "Has YOUR family ever been on a big trip?"
+
+  📤 SUBMISSION TO KLING:
+     element_list (3):
+       <<<element_1>>>  =  Sara (id 310001512573308)
+       <<<element_2>>>  =  Eva (id 310001518722300)
+       <<<element_3>>>  =  Papa (id 310056797721310)
+     image_list (1):
+       • https://storage.googleapis.com/saraandeva-kling-elements/ep14/ep14_anniversary_living_room.png
+
+     translated prompt (407 chars):
+       Brief return to present-day couch — <<<element_3>>> center mid-story, soft remembering. Papa: "It was her biggest dream..." Mouth WIDENS in nostalgic smile. <<<element_1>>> left side of couch, head TILTS curious, then turns slightly toward camera with wide curious eyes. Sara (to camera): "Has YOUR family ever been on a big trip?" <<<element_2>>> right side of couch, head TILTS too, nods enthusiastically.
+
+     negative prompt: duplicate character, ghost figure, extra arm, anatomy error, morphing, flickering, disfigured, scary face, horror lighting, blood, dutch angle, handheld shake, jump cut, eva with brown hair, sara in p...
+
+══════════════════════════════════════════════════════════════════════════════
+CLIP 18  —  MOM'S BIRTHDAY — cake + candles
+══════════════════════════════════════════════════════════════════════════════
+
+  📋 INTENT (from spec):
+     subjects:  ['young_Papa', 'young_Mama']
+     scene:     ep14-anniversary-living-room
+     duration:  10s, sound=on
+
+     dialogue lines from prompt:
+
+  📤 SUBMISSION TO KLING:
+     element_list (2):
+       <<<element_1>>>  =  young_Papa (id 310173724062314)
+       <<<element_2>>>  =  young_Mama (id 310173706436317)
+     image_list (1):
+       • https://storage.googleapis.com/saraandeva-kling-elements/ep14/ep14_anniversary_living_room.png
+
+     translated prompt (628 chars):
+       Soft warm interior of a first home — cozy apartment, birthday balloons in pastels, small round table with chocolate birthday cake topped with lit candles. <<<element_2>>> sitting at the table, hands CLASPED in front of cake, mouth EXHALES SOFTLY at the lit candles. <<<element_1>>> standing behind her left shoulder, watching with adoring smile. A small ribbon-wrapped gift box sits on the table next to the cake. Lips PURSE, BLOWS softly across the cake. The candles FLICKER and one by one go out. Right hand from behind GENTLY PICKS UP the gift box and slides it forward. The box has soft holes on top, slight movement inside.
+
+     negative prompt: duplicate character, ghost figure, extra arm, anatomy error, morphing, flickering, disfigured, scary face, horror lighting, blood, dutch angle, handheld shake, jump cut, eva with brown hair, sara in p...
+
+══════════════════════════════════════════════════════════════════════════════
+CLIP 19  —  PUPPY JOE GIFT — Mom gasps, Joe peeks out
+══════════════════════════════════════════════════════════════════════════════
+
+  📋 INTENT (from spec):
+     subjects:  ['young_Papa', 'young_Mama', 'puppy_Joe']
+     scene:     ep14-anniversary-living-room
+     duration:  10s, sound=on
+
+     dialogue lines from prompt:
+       • "OH MY GOODNESS!"
+
+  📤 SUBMISSION TO KLING:
+     element_list (3):
+       <<<element_1>>>  =  young_Papa (id 310173724062314)
+       <<<element_2>>>  =  young_Mama (id 310173706436317)
+       <<<element_3>>>  =  puppy_Joe (id 310173688411304)
+     image_list (1):
+       • https://storage.googleapis.com/saraandeva-kling-elements/ep14/ep14_anniversary_living_room.png
+
+     translated prompt (643 chars):
+       Medium two-shot in the soft warm interior of their first home — cozy apartment with birthday balloons in pastels, small round table with chocolate birthday cake. <<<element_2>>> at the table, hands REACH for a small ribbon-wrapped gift box on the table, fingers SLOWLY UNTIE the satin ribbon, lifts the lid. <<<element_3>>> tiny fluffy face POPS UP from inside the box, ears OVERSIZED, eyes BRIGHT, tail wags inside the box. <<<element_1>>> standing behind her right shoulder with adoring proud smile. Mouth GASPS open big, hands COVER her mouth in shock, eyes FILL with tears of joy. young_Mama: "OH MY GOODNESS!" Tiny puppy yip from the box.
+
+     negative prompt: duplicate character, ghost figure, extra arm, anatomy error, morphing, flickering, disfigured, scary face, horror lighting, blood, dutch angle, handheld shake, jump cut, eva with brown hair, sara in p...
+
+══════════════════════════════════════════════════════════════════════════════
+CLIP 20  —  TRAVEL WITH JOE — Joe peeking from carry bag at landmark
+══════════════════════════════════════════════════════════════════════════════
+
+  📋 INTENT (from spec):
+     subjects:  ['young_Papa', 'young_Mama', 'Joe']
+     scene:     ep14-rome-colosseum
+     duration:  10s, sound=on
+
+     dialogue lines from prompt:
+
+  📤 SUBMISSION TO KLING:
+     element_list (3):
+       <<<element_1>>>  =  young_Papa (id 310173724062314)
+       <<<element_2>>>  =  young_Mama (id 310173706436317)
+       <<<element_3>>>  =  Joe (id 310000741885315)
+     image_list (1):
+       • https://storage.googleapis.com/saraandeva-kling-elements/ep14/ep14_rome_colosseum.png
+
+     translated prompt (330 chars):
+       <<<element_1>>> and <<<element_2>>> walking together at a sunny European piazza, soft pet carrier bag over her shoulder. <<<element_3>>> fluffy face PEEKS OUT from the top of the carrier, tongue OUT panting happy, ears PERK UP. Like a tiny travel mascot. Hand PETS through the carrier opening from the partner. Mouth LAUGHS happy.
+
+     negative prompt: duplicate character, ghost figure, extra arm, anatomy error, morphing, flickering, disfigured, scary face, horror lighting, blood, dutch angle, handheld shake, jump cut, eva with brown hair, sara in p...
+
+══════════════════════════════════════════════════════════════════════════════
+CLIP 21  —  PARENT-ACTIVITY — baby Sara is born, hospital
+══════════════════════════════════════════════════════════════════════════════
+
+  📋 INTENT (from spec):
+     subjects:  ['young_Papa', 'young_Mama', 'baby_Sara']
+     scene:     ep14-hospital-birth-room
+     duration:  15s, sound=on
+
+     dialogue lines from prompt:
+       • "Hi, little one."
+       • "Welcome to the world."
+
+  📤 SUBMISSION TO KLING:
+     element_list (3):
+       <<<element_1>>>  =  young_Papa (id 310173724062314)
+       <<<element_2>>>  =  young_Mama (id 310173706436317)
+       <<<element_3>>>  =  baby_Sara (id 310173653110507)
+     image_list (1):
+       • https://storage.googleapis.com/saraandeva-kling-elements/ep14/ep14_hospital_birth_room.png
+
+     translated prompt (488 chars):
+       <<<element_2>>> in a hospital bed in a soft white nightgown, holding <<<element_3>>> to her chest. <<<element_1>>> sits on the edge of the bed beside her, right hand GENTLY TOUCHING the tiny head. Mouth SMILES exhausted-happy, eyes FULL of tears of joy. Whispering soft, arm AROUND her shoulders. Tiny stir in the swaddle, tiny FIST UNCURLS once. Eyes SLOWLY OPEN for the first time. young_Mama (whispered): "Hi, little one." young_Papa (soft warm tears in voice): "Welcome to the world."
+
+     negative prompt: duplicate character, ghost figure, extra arm, anatomy error, morphing, flickering, disfigured, scary face, horror lighting, blood, dutch angle, handheld shake, jump cut, eva with brown hair, sara in p...
+
+══════════════════════════════════════════════════════════════════════════════
+CLIP 22  —  Sara as toddler, first steps with Joe
+══════════════════════════════════════════════════════════════════════════════
+
+  📋 INTENT (from spec):
+     subjects:  ['baby_Sara', 'Joe', 'young_Mama', 'young_Papa']
+     scene:     ep14-anniversary-living-room
+     duration:  10s, sound=on
+
+     dialogue lines from prompt:
+       • "You did it!"
+
+  📤 SUBMISSION TO KLING:
+     element_list (4):
+       <<<element_1>>>  =  baby_Sara (id 310173653110507)
+       <<<element_2>>>  =  Joe (id 310000741885315)
+       <<<element_3>>>  =  young_Mama (id 310173706436317)
+       <<<element_4>>>  =  young_Papa (id 310173724062314)
+     image_list (1):
+       • https://storage.googleapis.com/saraandeva-kling-elements/ep14/ep14_anniversary_living_room.png
+
+     translated prompt (672 chars):
+       Wide three-shot inside the cozy anniversary living room — twinkling fairy lights, beige sectional couch in soft background, autumn-orange throw blanket. <<<element_3>>> kneeling on the floor at left with arms OUT in catch-position. <<<element_4>>> kneeling at right with arms also OUT. <<<element_1>>> stands in the middle on wobbly legs. <<<element_2>>> sits at the toddler's left side looking up supportively. Right LEG STEPS forward bravely, tiny ARMS OUT for balance, mouth GIGGLES happy. Pomeranian tail WAGS faster. Wobble-runs into the left open arms. Clapping in encouragement from the right. Pomeranian LICKS the tiny hand once. young_Mama (joyful): "You did it!"
+
+     negative prompt: duplicate character, ghost figure, extra arm, anatomy error, morphing, flickering, disfigured, scary face, horror lighting, blood, dutch angle, handheld shake, jump cut, eva with brown hair, sara in p...
+
+══════════════════════════════════════════════════════════════════════════════
+CLIP 23  —  Baby Eva is born, Sara meets her in crib
+══════════════════════════════════════════════════════════════════════════════
+
+  📋 INTENT (from spec):
+     subjects:  ['baby_Sara', 'baby_Eva', 'young_Mama']
+     scene:     ep14-hospital-birth-room
+     duration:  10s, sound=on
+
+     dialogue lines from prompt:
+       • "Baby!"
+       • "This is your baby sister."
+
+  📤 SUBMISSION TO KLING:
+     element_list (3):
+       <<<element_1>>>  =  baby_Sara (id 310173653110507)
+       <<<element_2>>>  =  baby_Eva (id 310173635448302)
+       <<<element_3>>>  =  young_Mama (id 310173706436317)
+     image_list (1):
+       • https://storage.googleapis.com/saraandeva-kling-elements/ep14/ep14_hospital_birth_room.png
+
+     translated prompt (375 chars):
+       <<<element_3>>> in hospital bed holding <<<element_2>>>. <<<element_1>>> on tiptoes at the edge of the bed peeking over the blanket. Eyes WIDEN, mouth FORMS a tiny O of wonder. baby_Sara (soft toddler whisper): "Baby!" Right tiny hand GENTLY TOUCHES the swaddle. Tiny stir, tiny mouth YAWNS. Mouth SMILES adoringly from the bed. young_Mama (soft): "This is your baby sister."
+
+     negative prompt: duplicate character, ghost figure, extra arm, anatomy error, morphing, flickering, disfigured, scary face, horror lighting, blood, dutch angle, handheld shake, jump cut, eva with brown hair, sara in p...
+
+══════════════════════════════════════════════════════════════════════════════
+CLIP 24  —  Ginger joins family — adoption / arrival
+══════════════════════════════════════════════════════════════════════════════
+
+  📋 INTENT (from spec):
+     subjects:  ['Sara', 'Eva', 'Ginger', 'Mama', 'Papa']
+     scene:     ep14-anniversary-living-room
+     duration:  10s, sound=on
+
+     dialogue lines from prompt:
+       • "Welcome home, Ginger."
+
+  📤 SUBMISSION TO KLING:
+     element_list (5):
+       <<<element_1>>>  =  Sara (id 310001512573308)
+       <<<element_2>>>  =  Eva (id 310001518722300)
+       <<<element_3>>>  =  Ginger (id 310086200551316)
+       <<<element_4>>>  =  Mama (id 310086200106306)
+       <<<element_5>>>  =  Papa (id 310056797721310)
+     image_list (1):
+       • https://storage.googleapis.com/saraandeva-kling-elements/ep14/ep14_anniversary_living_room.png
+
+     translated prompt (653 chars):
+       Wide five-shot in the cozy anniversary living room — twinkling fairy lights, beige sectional couch in background, warm orange lamp glow. <<<element_4>>> kneeling at left holding a soft blanket. <<<element_5>>> standing center. <<<element_1>>> about 5yo here at right with arms open. <<<element_2>>> about 1yo here in <<<element_4>>>'s lap. <<<element_3>>> trotting through the doorway center toward the family, tail WAGGING wildly, mouth SMILES open-tongue happy, legs RUN. The new family addition. Lands in the open right arms. Laughing hard. Tiny hand from the lap REACHES to pet the puppy's head. Warm smile from center. Papa: "Welcome home, Ginger."
+
+     negative prompt: duplicate character, ghost figure, extra arm, anatomy error, morphing, flickering, disfigured, scary face, horror lighting, blood, dutch angle, handheld shake, jump cut, eva with brown hair, sara in p...
+
+══════════════════════════════════════════════════════════════════════════════
+CLIP 25  —  BACK TO PRESENT — Sara: 'What's your gift this year?'
+══════════════════════════════════════════════════════════════════════════════
+
+  📋 INTENT (from spec):
+     subjects:  ['Sara', 'Eva', 'Papa']
+     scene:     ep14-anniversary-living-room
+     duration:  10s, sound=on
+
+     dialogue lines from prompt:
+       • "...and that's how our family came to be."
+       • "What are you giving her THIS year?"
+       • "Something VERY special..."
+
+  📤 SUBMISSION TO KLING:
+     element_list (3):
+       <<<element_1>>>  =  Sara (id 310001512573308)
+       <<<element_2>>>  =  Eva (id 310001518722300)
+       <<<element_3>>>  =  Papa (id 310056797721310)
+     image_list (1):
+       • https://storage.googleapis.com/saraandeva-kling-elements/ep14/ep14_anniversary_living_room.png
+
+     translated prompt (592 chars):
+       Medium three-shot back in the cozy anniversary living room — twinkling fairy lights, beige sectional couch with autumn-orange throw, warm lamp glow. <<<element_3>>> center on the couch, finishing the story. <<<element_1>>> curled at his left side, head TILTS curious, right hand tugs gently on his sleeve. <<<element_2>>> snuggled at his right side, listening with wide eyes. Papa: "...and that's how our family came to be." Mouth SMILES warm. Sara: "What are you giving her THIS year?" Eyes SPARKLE conspiratorially, mouth WIDENS. Papa (whispering like a secret): "Something VERY special..."
+
+     negative prompt: duplicate character, ghost figure, extra arm, anatomy error, morphing, flickering, disfigured, scary face, horror lighting, blood, dutch angle, handheld shake, jump cut, eva with brown hair, sara in p...
+
+══════════════════════════════════════════════════════════════════════════════
+CLIP 26  —  CAMERA REVEAL — Papa shows new video camera
+══════════════════════════════════════════════════════════════════════════════
+
+  📋 INTENT (from spec):
+     subjects:  ['Sara', 'Eva', 'Papa']
+     scene:     ep14-anniversary-living-room
+     duration:  10s, sound=on
+
+     dialogue lines from prompt:
+       • "It's a CAMERA!"
+       • "She LOVES making videos and helping people work out the right way. This is for her to share more with the world."
+
+  📤 SUBMISSION TO KLING:
+     element_list (3):
+       <<<element_1>>>  =  Sara (id 310001512573308)
+       <<<element_2>>>  =  Eva (id 310001518722300)
+       <<<element_3>>>  =  Papa (id 310056797721310)
+     image_list (1):
+       • https://storage.googleapis.com/saraandeva-kling-elements/ep14/ep14_anniversary_living_room.png
+
+     translated prompt (646 chars):
+       Medium three-shot in the cozy anniversary living room — twinkling fairy lights, beige sectional couch, coffee table in foreground. <<<element_3>>> center holding a small ribbon-wrapped gift box, hands LIFT the box, fingers UNTIE the ribbon. Inside the box, a sleek black-and-silver mirrorless VIDEO CAMERA with a soft cream lens cap. <<<element_1>>> at his left, mouth GASPS open. <<<element_2>>> at his right, eyes WIDEN huge. Right hand POINTS at the camera. Sara (excited): "It's a CAMERA!" Mouth SMILES proud from center. Papa: "She LOVES making videos and helping people work out the right way. This is for her to share more with the world."
+
+     negative prompt: duplicate character, ghost figure, extra arm, anatomy error, morphing, flickering, disfigured, scary face, horror lighting, blood, dutch angle, handheld shake, jump cut, eva with brown hair, sara in p...
+
+══════════════════════════════════════════════════════════════════════════════
+CLIP 27  —  AUDIENCE-ASK 3 + wrap the gift
+══════════════════════════════════════════════════════════════════════════════
+
+  📋 INTENT (from spec):
+     subjects:  ['Sara', 'Eva', 'Papa']
+     scene:     ep14-anniversary-living-room
+     duration:  10s, sound=on
+
+     dialogue lines from prompt:
+       • "What's the BEST gift YOU ever gave someone? Tell us!"
+
+  📤 SUBMISSION TO KLING:
+     element_list (3):
+       <<<element_1>>>  =  Sara (id 310001512573308)
+       <<<element_2>>>  =  Eva (id 310001518722300)
+       <<<element_3>>>  =  Papa (id 310056797721310)
+     image_list (1):
+       • https://storage.googleapis.com/saraandeva-kling-elements/ep14/ep14_anniversary_living_room.png
+
+     translated prompt (544 chars):
+       Medium three-shot in the cozy anniversary living room — twinkling fairy lights, coffee table in foreground with the gift box on it. <<<element_3>>> center, hands GENTLY PLACE the camera back in the box. <<<element_1>>> at his left, hands HOLD the ribbon. <<<element_2>>> at his right, tiny hand PATS the lid down. Wrapping together. Finished wrapped box on the coffee table. From the left, head turns toward camera with conspiratorial smile, finger over lips like 'shhh'. Sara (to camera): "What's the BEST gift YOU ever gave someone? Tell us!"
+
+     negative prompt: duplicate character, ghost figure, extra arm, anatomy error, morphing, flickering, disfigured, scary face, horror lighting, blood, dutch angle, handheld shake, jump cut, eva with brown hair, sara in p...
+
+══════════════════════════════════════════════════════════════════════════════
+CLIP 28  —  MOM COMES HOME — surprise reveal
+══════════════════════════════════════════════════════════════════════════════
+
+  📋 INTENT (from spec):
+     subjects:  ['Sara', 'Eva', 'Mama', 'Papa', 'Joe', 'Ginger']
+     scene:     ep14-anniversary-living-room
+     duration:  10s, sound=on
+
+     dialogue lines from prompt:
+       • "SURPRISE! HAPPY ANNIVERSARY!"
+
+  📤 SUBMISSION TO KLING:
+     element_list (6):
+       <<<element_1>>>  =  Sara (id 310001512573308)
+       <<<element_2>>>  =  Eva (id 310001518722300)
+       <<<element_3>>>  =  Mama (id 310086200106306)
+       <<<element_4>>>  =  Papa (id 310056797721310)
+       <<<element_5>>>  =  Joe (id 310000741885315)
+       <<<element_6>>>  =  Ginger (id 310086200551316)
+     image_list (1):
+       • https://storage.googleapis.com/saraandeva-kling-elements/ep14/ep14_anniversary_living_room.png
+
+     translated prompt (414 chars):
+       Front door OPENS. <<<element_3>>> enters in her work outfit (gym leggings, workout top, gym bag over shoulder). Steps inside. Head LIFTS, eyes WIDEN, hand COVERS mouth. <<<element_1>>>, <<<element_2>>>, <<<element_4>>> POP UP from behind the couch with arms wide open. <<<element_5>>> RUNS forward wagging tail. <<<element_6>>> BOUNCES at her feet. Whole household together (joyful): "SURPRISE! HAPPY ANNIVERSARY!"
+
+     negative prompt: duplicate character, ghost figure, extra arm, anatomy error, morphing, flickering, disfigured, scary face, horror lighting, blood, dutch angle, handheld shake, jump cut, eva with brown hair, sara in p...
+
+══════════════════════════════════════════════════════════════════════════════
+CLIP 29  —  MAMA UNWRAPS CAMERA — happy tears, family hug
+══════════════════════════════════════════════════════════════════════════════
+
+  📋 INTENT (from spec):
+     subjects:  ['Sara', 'Eva', 'Papa', 'mama_with_camera']
+     scene:     ep14-anniversary-living-room
+     duration:  10s, sound=on
+
+     dialogue lines from prompt:
+       • "You... you got me a CAMERA!"
+
+  📤 SUBMISSION TO KLING:
+     element_list (4):
+       <<<element_1>>>  =  Sara (id 310001512573308)
+       <<<element_2>>>  =  Eva (id 310001518722300)
+       <<<element_3>>>  =  Papa (id 310056797721310)
+       <<<element_4>>>  =  mama_with_camera (id 310173670443316)
+     image_list (1):
+       • https://storage.googleapis.com/saraandeva-kling-elements/ep14/ep14_anniversary_living_room.png
+
+     translated prompt (533 chars):
+       Medium close-up in the cozy anniversary living room — twinkling fairy lights, beige sectional couch in soft background, coffee table in foreground. <<<element_4>>> kneeling at the coffee table holding the new black-and-silver video camera in both hands at chest height. Mouth GASPS open, eyes FILL with happy tears. mama_with_camera (voice trembling joy): "You... you got me a CAMERA!" <<<element_3>>> wraps arms around her on the couch, <<<element_1>>> hugs from one side, <<<element_2>>> hugs from other. All smiling and emotional.
+
+     negative prompt: duplicate character, ghost figure, extra arm, anatomy error, morphing, flickering, disfigured, scary face, horror lighting, blood, dutch angle, handheld shake, jump cut, eva with brown hair, sara in p...
+
+══════════════════════════════════════════════════════════════════════════════
+CLIP 30  —  FINAL CLIFFHANGER — camera-ask: what's YOUR favorite memory?
+══════════════════════════════════════════════════════════════════════════════
+
+  📋 INTENT (from spec):
+     subjects:  ['Sara', 'Eva', 'Mama', 'Papa']
+     scene:     ep14-anniversary-living-room
+     duration:  10s, sound=on
+
+     dialogue lines from prompt:
+       • "What's YOUR favorite family memory? Tell us in the comments!"
+
+  📤 SUBMISSION TO KLING:
+     element_list (4):
+       <<<element_1>>>  =  Sara (id 310001512573308)
+       <<<element_2>>>  =  Eva (id 310001518722300)
+       <<<element_3>>>  =  Mama (id 310086200106306)
+       <<<element_4>>>  =  Papa (id 310056797721310)
+     image_list (1):
+       • https://storage.googleapis.com/saraandeva-kling-elements/ep14/ep14_anniversary_living_room.png
+
+     translated prompt (413 chars):
+       <<<element_3>>> leans against the partner's shoulder on the couch. <<<element_4>>> beside her. <<<element_1>>> on the left, <<<element_2>>> on the right, both kids between them. All four SMILE happy. Head TURNS toward camera from the left, mouth SMILES wide direct-to-audience. Sara (to camera): "What's YOUR favorite family memory? Tell us in the comments!" Right child waves goodbye to camera, mouth SMILES big.
+
+     negative prompt: duplicate character, ghost figure, extra arm, anatomy error, morphing, flickering, disfigured, scary face, horror lighting, blood, dutch angle, handheld shake, jump cut, eva with brown hair, sara in p...
+
+══════════════════════════════════════════════════════════════════════════════
+CLIP A  —  MUSIC VIDEO A — Sara at piano + Eva singing into mic, parents watching
+══════════════════════════════════════════════════════════════════════════════
+
+  📋 INTENT (from spec):
+     subjects:  ['Sara', 'Eva', 'Mama', 'Papa']
+     scene:     ep14-anniversary-living-room
+     duration:  10s, sound=on
+
+     dialogue lines from prompt:
+
+  📤 SUBMISSION TO KLING:
+     element_list (4):
+       <<<element_1>>>  =  Sara (id 310001512573308)
+       <<<element_2>>>  =  Eva (id 310001518722300)
+       <<<element_3>>>  =  Mama (id 310086200106306)
+       <<<element_4>>>  =  Papa (id 310056797721310)
+     image_list (1):
+       • https://storage.googleapis.com/saraandeva-kling-elements/ep14/ep14_anniversary_living_room.png
+
+     translated prompt (524 chars):
+       <<<element_1>>> sitting at a small upright piano center-left, hands GENTLY ON KEYS playing softly. <<<element_2>>> standing center-right beside the piano holding a small handheld microphone. Mouths shape lyrics softly. <<<element_3>>> and <<<element_4>>> sitting on the couch in soft background watching with hands HELD. Happy tears on her cheeks. Soft smile from him. Twinkling fairy lights all around. Slow camera drift left-to-right for cinematic loop. NO LIP-SYNC required. Static formation, no character moves position.
+
+     negative prompt: duplicate character, ghost figure, extra arm, anatomy error, morphing, flickering, disfigured, scary face, horror lighting, blood, dutch angle, handheld shake, jump cut, eva with brown hair, sara in p...
+
+══════════════════════════════════════════════════════════════════════════════
+CLIP B  —  MUSIC VIDEO B — family slow-dance hug during chorus, dogs at feet
+══════════════════════════════════════════════════════════════════════════════
+
+  📋 INTENT (from spec):
+     subjects:  ['Sara', 'Eva', 'Mama', 'Papa', 'Joe', 'Ginger']
+     scene:     ep14-anniversary-living-room
+     duration:  10s, sound=on
+
+     dialogue lines from prompt:
+
+  📤 SUBMISSION TO KLING:
+     element_list (6):
+       <<<element_1>>>  =  Sara (id 310001512573308)
+       <<<element_2>>>  =  Eva (id 310001518722300)
+       <<<element_3>>>  =  Mama (id 310086200106306)
+       <<<element_4>>>  =  Papa (id 310056797721310)
+       <<<element_5>>>  =  Joe (id 310000741885315)
+       <<<element_6>>>  =  Ginger (id 310086200551316)
+     image_list (1):
+       • https://storage.googleapis.com/saraandeva-kling-elements/ep14/ep14_anniversary_living_room.png
+
+     translated prompt (521 chars):
+       Slow-dancing on a cozy living-room rug. <<<element_3>>> and <<<element_4>>> center holding each other, gently SWAYING side-to-side. <<<element_1>>> holding her free hand at left, <<<element_2>>> holding his free hand at right. All four softly SWAY in one connected dance. <<<element_5>>> and <<<element_6>>> sit at parents' feet watching contentedly. Twinkling fairy lights all around, golden lamp glow. Slow circular camera move around the group. NO LIP-SYNC required. Static formation, slow continuous gentle sway only.
+
+     negative prompt: duplicate character, ghost figure, extra arm, anatomy error, morphing, flickering, disfigured, scary face, horror lighting, blood, dutch angle, handheld shake, jump cut, eva with brown hair, sara in p...
+
+══════════════════════════════════════════════════════════════════════════════
+Summary: 26 clip(s) previewed, 0 with missing elements

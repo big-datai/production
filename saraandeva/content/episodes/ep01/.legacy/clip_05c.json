@@ -1,0 +1,12 @@
+{
+  "episode": 1, "beat": 5, "microClip": "c",
+  "title": "Eva bounces with excitement",
+  "durationSec": 5,
+  "mode": "single-shot",
+  "subjects": ["Eva"],
+  "scene": "KitchenMorning",
+  "nativeAudio": true,
+  "expectedCredits": 45,
+  "negativePrompt": "extra people, duplicate character, twin, clone, two of the same person, mirrored figure, background extras, crowd, identical sibling, second girl, additional child, dog, puppy, dining room, dining table, wrong scene",
+  "prompt": "Close shot of @Eva standing in @KitchenMorning in front of the black range with white cabinets behind, bouncing on her toes excitedly: \"Pancakes pancakes pancakes! Best day ever! Yummy!\""
+}

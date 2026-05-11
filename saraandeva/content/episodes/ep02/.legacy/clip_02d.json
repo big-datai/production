@@ -1,0 +1,12 @@
+{
+  "episode": 2, "beat": 2, "microClip": "d",
+  "title": "Sara reasons through the case",
+  "durationSec": 5,
+  "mode": "single-shot",
+  "subjects": ["Sara", "Eva"],
+  "scene": "KitchenMorning",
+  "nativeAudio": true,
+  "expectedCredits": 45,
+  "negativePrompt": "extra people, duplicate character, twin, clone, two of the same person, mirrored figure, background extras, third child, second sara, second eva",
+  "prompt": "Two-shot in @KitchenMorning. @Sara on the LEFT thinking carefully, @Eva on the RIGHT listening. @Sara: \"Pancakes don't fly away on their own — someone took them.\""
+}

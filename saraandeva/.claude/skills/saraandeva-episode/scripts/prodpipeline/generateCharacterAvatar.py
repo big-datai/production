@@ -51,10 +51,20 @@ ENV_FILE = Path("/Volumes/Samsung500/goreadling-production/.env.local")
 MODEL = "gemini-3-pro-image-preview"
 API = "https://generativelanguage.googleapis.com/v1beta/models"
 
+# DEFAULT_STYLE_REFS: must be character-NEUTRAL Pixar-style references.
+# OLD bug 2026-05-08: defaults pointed to ep15 Isabel + Leo previews; those
+# leaked into ep14 group-still generation as character templates → wrong
+# Mama/Sara/Eva (rendered as Isabel/Leo/their-mom). FIX: use canonical
+# Sara&Eva family avatars (correct identity, also serves as style anchor).
 DEFAULT_STYLE_REFS = [
-    PROJECT_ROOT / "assets" / "scenes" / "group_ep15_isabel_unicorn_preview.png",
-    PROJECT_ROOT / "assets" / "scenes" / "group_ep15_leo_dinosaur_preview.png",
+    PROJECT_ROOT / "assets" / "characters" / "sara_front.png",
+    PROJECT_ROOT / "assets" / "characters" / "eva_front.png",
 ]
+
+# Reject these as --char values — they imply a multi-character group still,
+# which this script CAN'T handle (it's hardcoded for single-char output).
+# Use content/generateGroupShot.py instead for group shots.
+GROUP_CHAR_KEYWORDS = ("family", "group", "everyone", "all", "kids", "girls", "household")
 
 
 def load_env():
@@ -110,7 +120,79 @@ def main():
     ap.add_argument("--force", action="store_true", help="regen even if file exists")
     args = ap.parse_args()
 
+    # GUARD: hard-reject group/family char values (script is single-character only)
+    char_lower_check = args.char.lower().replace("_", " ")
+    for kw in GROUP_CHAR_KEYWORDS:
+        if kw in char_lower_check.split() or char_lower_check == kw:
+            print(f"""
+!! WRONG SCRIPT — generateCharacterAvatar.py rejected --char='{args.char}'
+
+   What this script does:
+     Generates a SINGLE-CHARACTER Pixar-3D frontal avatar PNG via Nano Banana.
+     Designed for new costumes / age variants of ONE canonical character.
+     The script's prompt explicitly says "NO other characters in frame. Only {{char}}."
+
+   Why your call is wrong:
+     '{args.char}' is a group/family identifier, not a single character name.
+     The script would tell Nano Banana to render ONE person literally called
+     '{args.char}' — which leaks adjacent style-ref characters as the rest.
+     (This is exactly how ep14 clip 28 ended up with Leo-as-Eva and Isabel-as-Sara.)
+
+   Use this instead (multi-character group still generator):
+
+     python3 content/generateGroupShot.py ep<NN>_<scene_name> \\
+       --chars sara,eva,mama,papa[,joe,ginger] \\
+       --pose "<composition + pose description>" \\
+       [--scene <scene_id_for_background>]
+
+   Then audit BEFORE upload:
+     python3 prodpipeline/auditScenePNG.py <output.png> --expect sara,eva,mama,papa
+""", file=sys.stderr)
+            sys.exit(2)
+
+    # GUARD: --char must be a known canonical character name (or its variant)
+    KNOWN_CHARS = {
+        "sara", "eva", "mama", "papa", "joe", "ginger",
+        "young_papa", "young_mama", "baby_sara", "baby_eva", "puppy_joe",
+        "mama_with_camera", "isabel", "leo", "lisa", "mrs_patel", "mrs.patel",
+    }
+    if args.char.lower().replace(" ", "_").replace(".", "") not in KNOWN_CHARS:
+        print(f"""
+!! UNKNOWN CHARACTER — generateCharacterAvatar.py rejected --char='{args.char}'
+
+   What this script does:
+     Generates a Pixar-3D frontal avatar for ONE known character of the
+     'Sara and Eva' series, with the option to apply a costume/age variant.
+     The script uses canonical avatar refs from assets/characters/ to lock
+     identity — but only for known names.
+
+   Known character names (case-insensitive, underscores OK):
+     {sorted(KNOWN_CHARS)}
+
+   If you're adding a NEW canonical character, register it in:
+     - assets/characters/<name>_front.png  (canonical avatar PNG)
+     - content/elements_registry.json     (Kling element_id mapping)
+   then add to KNOWN_CHARS in this script.
+""", file=sys.stderr)
+        sys.exit(2)
+
     keys = load_env()
+
+    # Log this invocation to commands.log for traceability
+    log_path = PROJECT_ROOT / "content" / "episodes" / f"ep{args.episode:02d}" / "commands.log"
+    log_path.parent.mkdir(parents=True, exist_ok=True)
+    with open(log_path, "a") as lf:
+        lf.write(json.dumps({
+            "timestamp": time.strftime("%Y-%m-%dT%H:%M:%SZ", time.gmtime()),
+            "script": "generateCharacterAvatar.py",
+            "episode": args.episode,
+            "char": args.char,
+            "costume": args.costume,
+            "description": args.description[:300],
+            "identity_ref": args.identity_ref,
+            "style_refs": args.style_refs,
+            "out": args.out,
+        }) + "\n")
 
     char_lower = args.char.lower().replace(" ", "_").replace(".", "")
     costume_slug = args.costume.lower().replace(" ", "_").replace("-", "_")

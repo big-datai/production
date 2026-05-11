@@ -1,0 +1,12 @@
+{
+  "episode": 2, "beat": 2, "microClip": "c",
+  "title": "Eva spots chocolate paw prints",
+  "durationSec": 5,
+  "mode": "single-shot",
+  "subjects": ["Eva"],
+  "scene": "KitchenMorning",
+  "nativeAudio": true,
+  "expectedCredits": 45,
+  "negativePrompt": "extra people, duplicate character, twin, clone, two of the same person, mirrored figure, background extras, second sister, second girl",
+  "prompt": "Low shot in @KitchenMorning. @Eva crouches pointing at chocolate paw-prints on the kitchen floor, eyes wide with discovery: \"Really?! Really-really-really chocolate paw prints!\""
+}

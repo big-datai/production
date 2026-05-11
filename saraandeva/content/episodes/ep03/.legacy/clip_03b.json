@@ -1,0 +1,33 @@
+{
+  "episode": 3,
+  "beat": 3,
+  "microClip": "b",
+  "title": "SEARCH 2 — Eva counts paw prints to NINE (COUNTING beat)",
+  "_educationalBeat": "counting — Eva counts confidently to 9, no fumbling. She can count to 30 in real life — show that confidence.",
+  "mode": "omni",
+  "durationSec": 10,
+  "quality": "720p",
+  "nativeAudio": true,
+  "expectedCredits": 90,
+  "subjects": [
+    "Eva",
+    "Sara"
+  ],
+  "scene": "livingroom",
+  "boundElements": [
+    {
+      "tag": "Eva",
+      "source": "library"
+    },
+    {
+      "tag": "Sara",
+      "source": "library"
+    },
+    {
+      "tag": "livingroom",
+      "source": "library"
+    }
+  ],
+  "prompt": "Top-down high-angle shot in @livingroom of the wood floor and the colorful play rug. Visible on the floor: a clear trail of nine small chocolate-brown paw prints leading from one side of the rug toward off-camera right. @Eva on the LEFT in pink shirt, on hands and knees, finger touching each paw print one by one as she counts. @Sara stands on the RIGHT watching. Eva (pointing each one): \"One, two, three, four, five, six, seven, eight, NINE!\" Eva (sitting back, proud): \"Nine paw prints!\" Sara: \"Good counting, Eva!\"",
+  "negativePrompt": "duplicate character, twin, clone, two of the same, mirrored figure, second father, second mother, two Papa, two Mama, identical adults, extra people, third child, second sister, second sara, second eva, dogs visible, baby doll, stuffed toy, ten paw prints, eight paw prints"
+}

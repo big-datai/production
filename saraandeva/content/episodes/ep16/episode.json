@@ -1,0 +1,76 @@
+{
+  "episode": 16,
+  "title": "The Tooth Fairy's Big Mistake! 🦷 Sara and Eva",
+  "publishDate": "2026-05-13",
+  "publishDayContext": "Wed slot — Week 1 of new cadence",
+  "logline": "Eva loses her FIRST tooth! She tucks it carefully under her pillow for the Tooth Fairy. But overnight, Joe sneaks in and steals the tooth, adding it to his secret stash (callback to ep04 'Joe's Secret Stash'). Morning comes — empty pillow, no coin. Family detective mode kicks in. They discover Joe's stash includes Eva's tooth + Papa's keys + Mama's earring + an old pancake. Sara has an idea — write the Tooth Fairy a letter explaining. Night 2: Joe is locked out, tooth + letter under pillow. Morning: TWO coins + a note: 'I understand. Joe's a good dog. — The Tooth Fairy ✨' Eva hugs Joe.",
+  "formulaReference": "Channel-winning formula × 3: (1) real-life kid-first moment (first tooth) — proven by ep08 Dentist Day at $0.135/sub; (2) pet mishap (Joe steals) — direct callback to ep04 channel hero at $0.042/sub; (3) emotional payoff (Tooth Fairy understands + Eva forgives Joe). Cross-pollinates two top-performing universes: Dentist + Joe's-Stash.",
+  "mode": "omni",
+  "durationTotal": "~5:45",
+  "expectedCreditsTotal": 245,
+  "expectedCreditsAbortThreshold": 2200,
+  "newBoundElements": [],
+  "newSceneElements": [
+    {
+      "tag": "ep16-evas-bedroom-night",
+      "asset": "assets/scenes/ep16_evas_bedroom_night.png",
+      "purpose": "Eva's bedroom at night — soft moonlight through window, twinkly fairy lights on bed-frame, purple+pink pastel pillow, plush bunny on bed. Used clips 5, 7, 8, 9, 11, 19, 20."
+    },
+    {
+      "tag": "ep16-bathroom-mirror",
+      "asset": "assets/scenes/ep16_bathroom_mirror.png",
+      "purpose": "Family bathroom mirror — Eva and Sara at sink level, soft warm lighting, tooth-themed wall sticker. Used clips 1, 2."
+    },
+    {
+      "tag": "ep16-living-room-detective",
+      "asset": "assets/scenes/ep16_living_room.png",
+      "purpose": "Family living room with crime-scene-detective layout — Sara + Eva + Mama searching, magnifying-glass moment. Used clips 13-18, 21."
+    }
+  ],
+  "beats": [
+    { "beat": 1, "name": "HOOK — Eva to camera (the wiggle)", "purpose": "Eva to camera: 'Hi friends! Look what's happening!' wiggles loose tooth with finger. Voice CTA: 'Tap subscribe so you don't miss this!'", "clips": [1] },
+    { "beat": 2, "name": "Tooth FALLS out", "purpose": "Tiny tooth lands in Eva's palm. Both girls gasp.", "clips": [2] },
+    { "beat": 3, "name": "Eva runs to Mama with trophy", "purpose": "Eva runs holding tooth like a prize: 'MAMA! My TOOTH!'", "clips": [3] },
+    { "beat": 4, "name": "Mama explains Tooth Fairy", "purpose": "Mama: 'Put it under your pillow tonight, and the Tooth Fairy will leave you a coin...'", "clips": [4] },
+    { "beat": 5, "name": "Eva places tooth under pillow", "purpose": "Careful hands lift pillow, place tooth, smooth it down. Eva smiling.", "clips": [5] },
+    { "beat": 6, "name": "CAMERA-ASK #1", "purpose": "Eva to camera: 'Do YOU believe in the Tooth Fairy?!'", "clips": [6] },
+    { "beat": 7, "name": "Night falls, lights out", "purpose": "Soft moonlight through window, Eva sleeping peacefully.", "clips": [7] },
+    { "beat": 8, "name": "Joe sneaks in", "purpose": "Pomeranian Joe PADS quietly into bedroom, JUMPS on bed.", "clips": [8] },
+    { "beat": 9, "name": "Joe's nose finds the tooth", "purpose": "Joe's nose UNDER pillow, EARS perk up. Tiny tooth in mouth.", "clips": [9] },
+    { "beat": 10, "name": "Joe takes the tooth, trots away", "purpose": "Joe trots down the hall with tiny tooth in mouth, satisfied look.", "clips": [10] },
+    { "beat": 11, "name": "Morning — Eva CHECKS pillow", "purpose": "Eva lifts pillow — NOTHING. No tooth, no coin.", "clips": [11] },
+    { "beat": 12, "name": "Eva: 'Tooth Fairy FORGOT me!'", "purpose": "Eva, eyes welling: 'MAMA! The Tooth Fairy FORGOT me!'", "clips": [12] },
+    { "beat": 13, "name": "Sara: 'I have an idea!'", "purpose": "Sara's face — detective mode (callback to ep04). 'I have an idea!'", "clips": [13] },
+    { "beat": 14, "name": "Family detective mode", "purpose": "Sara + Eva + Mama searching under couch, behind doors, in shoes.", "clips": [14] },
+    { "beat": 15, "name": "Discovery — Joe's stash (callback to ep04)", "purpose": "Behind the couch — Joe's pile: Eva's tooth + Papa's keys + Mama's earring + an old pancake!", "clips": [15] },
+    { "beat": 16, "name": "Eva: 'JOE STOLE my tooth!'", "purpose": "Eva looks at Joe. Joe sits, ears down, guilty face. Eva: 'Joe... you took it.'", "clips": [16] },
+    { "beat": 17, "name": "Sara's idea — write the Tooth Fairy", "purpose": "Sara grabs crayons + paper at kitchen table: 'Let's write her a letter!'", "clips": [17] },
+    { "beat": 18, "name": "PAPA-PLAY (mandatory) — Tooth Fairy with wand", "purpose": "15s parent-active scene: Papa enters with a SPARKLY toy wand, pretends to BE the Tooth Fairy, ROARING dad-laugh, TWIRLS Sara and Eva, fairy-magic chase.", "clips": [18], "duration": 15 },
+    { "beat": 19, "name": "Night 2 — tooth + letter under pillow", "purpose": "Eva places tooth + folded letter under pillow. Joe is LOCKED OUT of bedroom (door closed, sad face).", "clips": [19] },
+    { "beat": 20, "name": "Morning — TWO coins + a note", "purpose": "Eva lifts pillow: TWO shiny coins + a note. 'I understand. Joe's a good dog. — The Tooth Fairy ✨' Eva reads aloud.", "clips": [20] },
+    { "beat": 21, "name": "Eva hugs Joe — forgiveness", "purpose": "Eva runs to Joe, big squishy hug. Joe licks her face. Sara watches smiling.", "clips": [21] },
+    { "beat": 22, "name": "CAMERA-ASK CLIFFHANGER", "purpose": "Eva to camera, gap-tooth grin: 'Did YOU lose a tooth this year?! Tell us! See you tomorrow!'", "clips": [22] }
+  ],
+  "audienceEngagementBeats": [
+    { "beat": 1, "type": "opening_voice_cta", "text": "Hi friends! Look what's happening! Tap subscribe so you don't miss this!" },
+    { "beat": 6, "type": "camera_ask", "text": "Do YOU believe in the Tooth Fairy?!" },
+    { "beat": 22, "type": "camera_ask_cliffhanger", "text": "Did YOU lose a tooth this year?! Tell us! See you tomorrow!" }
+  ],
+  "papaActiveScene": {
+    "beat": 18,
+    "duration": 15,
+    "activity": "Papa pretends to BE the Tooth Fairy with sparkly wand, chases girls, dad-laugh"
+  },
+  "petMishap": {
+    "primary": "Joe steals Eva's tooth from under the pillow",
+    "secondary": "Joe's secret stash revealed — full of family's missing items"
+  },
+  "thumbnailConcept": "Eva holding the tiny tooth with wide-mouth gap-tooth grin + Joe in background with sneaky eyes + 'TOOTH FAIRY!' yellow Impact text overlay + brand badge bottom-right.",
+  "thumbnailHook": "TOOTH FAIRY!",
+  "youtubeMetadata": {
+    "title": "The Tooth Fairy's Big Mistake! 🦷 Sara and Eva",
+    "description": "Watch all Sara & Eva episodes in order: https://www.youtube.com/playlist?list=PLMLz_1vaheL7MwZ8OdmSPd1qftZ_WRwvS\n\nEva loses her FIRST tooth — and Mama tells her about the Tooth Fairy! 🧚 She tucks it carefully under her pillow... and then JOE has OTHER ideas. 🐶 When morning comes, the tooth is GONE and there's no coin! The family goes into DETECTIVE MODE to find out what happened.\n\nSpoiler: Joe's secret stash is back. 😅 Will the Tooth Fairy understand? Will Eva forgive Joe?\n\nFamily animated series — new episodes every week!\n\n⏱️ Chapters\n0:00 The wiggle\n0:30 The tooth comes out!\n1:00 Under the pillow\n1:30 Joe sneaks in\n2:30 Morning — empty pillow\n3:00 Family detective mode\n3:45 Joe's stash REVEALED\n4:30 A letter to the Tooth Fairy\n5:00 Papa pretends to be the Tooth Fairy\n5:30 The fairy's note\n\n#SaraAndEva #FamilyShow #ToothFairy",
+    "tags": ["sara and eva", "tooth fairy", "family animation", "first tooth", "kids stories", "puppy stories"],
+    "categoryId": "24"
+  }
+}

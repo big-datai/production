@@ -14,7 +14,7 @@
  * textbox in the bind dialog — fixes tile-index brittleness).
  *
  * Usage:
- *   node .../submitSingleShotClip.mjs content/saraandeva/episodes/ep01/clip_02a.json
+ *   node .../submitSingleShotClip.mjs content/episodes/ep14/3.json
  *   node .../submitSingleShotClip.mjs <clip.json> --auto-submit
  */
 

@@ -1,0 +1,12 @@
+{
+  "episode": 1, "beat": 9, "microClip": "b",
+  "title": "Family closer — Mama Papa Eva at the table",
+  "durationSec": 5,
+  "mode": "single-shot",
+  "subjects": ["Mama", "Papa", "Eva"],
+  "scene": "DiningRoom",
+  "nativeAudio": true,
+  "expectedCredits": 45,
+  "negativePrompt": "extra people, duplicate character, twin, clone, two of the same person, mirrored figure, background extras, crowd, identical sibling, second sister, fourth person at table, additional kid, second child, empty chair occupant",
+  "prompt": "Tight three-shot at the @DiningRoom table from the opposite side, only @Mama, @Papa, and @Eva visible eating pancakes. @Eva mouth full of syrup: \"Yummy!\" @Mama: \"Slow down, slow down!\" @Papa laughing: \"Tasty pancakes!\""
+}

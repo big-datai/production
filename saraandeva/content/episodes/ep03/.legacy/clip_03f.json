@@ -1,0 +1,37 @@
+{
+  "episode": 3,
+  "beat": 3,
+  "microClip": "f",
+  "title": "SEARCH 6 — Joe sniffs out the helmet inside the package",
+  "mode": "omni",
+  "durationSec": 10,
+  "quality": "720p",
+  "nativeAudio": true,
+  "expectedCredits": 90,
+  "subjects": [
+    "Joe",
+    "Sara",
+    "Eva"
+  ],
+  "scene": "bedroom-sisters",
+  "boundElements": [
+    {
+      "tag": "Joe",
+      "source": "library"
+    },
+    {
+      "tag": "Sara",
+      "source": "library"
+    },
+    {
+      "tag": "Eva",
+      "source": "library"
+    },
+    {
+      "tag": "bedroom-sisters",
+      "source": "library"
+    }
+  ],
+  "prompt": "Close-up shot in @bedroom-sisters. @Joe (small fluffy white-tan Pomeranian) is in the CENTER FOREGROUND, his head buried inside the chewed-open brown package on the lower bunk bed. He pulls out a colorful nylon strap with his teeth. @Sara on the LEFT and @Eva on the RIGHT crouch down to look. Joe: \"Yip yip!\" Eva (curious): \"What is it, Joe?\" Sara (peering in): \"Looks like… a strap?\" Eva (eyes wide): \"It's something for HEADS!\" Warm bedroom light.",
+  "negativePrompt": "duplicate character, twin, clone, two of the same, mirrored figure, second father, second mother, two Papa, two Mama, identical adults, extra people, third child, second sister, second sara, second eva, second dog, third dog, two joe, two pomeranian, ginger visible, jack russell visible, baby doll, stuffed toy in place of dog, twin beds, single bed"
+}

@@ -1,0 +1,12 @@
+{
+  "episode": 1, "beat": 5, "microClip": "b",
+  "title": "Mama turns and greets",
+  "durationSec": 5,
+  "mode": "single-shot",
+  "subjects": ["Mama"],
+  "scene": "KitchenMorning",
+  "nativeAudio": true,
+  "expectedCredits": 45,
+  "negativePrompt": "extra people, duplicate character, twin, clone, two of the same person, mirrored figure, background extras, crowd, identical sibling, second adult, additional woman, dog, puppy, jack russell, pomeranian, animal, pet, ginger, joe, pancake monster",
+  "prompt": "Medium shot. @Mama turns from the black range in @KitchenMorning, hands on hips, smiling warmly at the camera: \"Good morning, sleepyheads! Hungry? Plates please!\""
+}

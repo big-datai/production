@@ -1,0 +1,18 @@
+{
+  "_doc": "ep15 clip 1 — costume reveal in living room, multi_prompt format. Element order: 1=Sara, 2=Eva, 3=Mama, 4=Joe, 5=Ginger. Sum durations = 10s.",
+  "summary": "Costume reveal in living room before trick-or-treat. Family of three in Halloween costumes plus two dogs, warm orange dusk lamp glow, multi-shot dolly arc. Pixar 3D feature-render, cinematic kid-show, NOT scary.",
+  "shots": [
+    {
+      "duration": 3,
+      "prompt": "Slow dolly push, medium-wide eye-level. Living-room rug at warm orange dusk. <<<element_1>>> center-left in pink fairy tutu + silver tiara, holding candy bucket. <<<element_2>>> center-right in pumpkin onesie + green stem-hat, bucket at hip. <<<element_3>>> behind, pumpkin beanie + rust sweater. <<<element_4>>> Pomeranian in red ladybug costume at Eva's feet. <<<element_5>>> Jack Russell in pumpkin-orange cape at Sara's feet, tail wags. Paper jack-o-lanterns + candy bowl on table. Pixar 3D, NOT scary."
+    },
+    {
+      "duration": 4,
+      "prompt": "Closer medium dolly push then slow pan right. Rack focus from candy bowl to <<<element_1>>>'s grin — fair skin, dark-blonde wavy hair, fairy tutu. Candy bucket lifts a touch. Pan continues right onto <<<element_2>>> at hip height — fair skin, bright-blonde curly hair, pumpkin onesie, giggling. <<<element_4>>>'s ladybug-back wings glimmer in lamp light. <<<element_5>>> tiny tail-wag, four paws on rug. <<<element_3>>> smile widens softly behind. Warm orange floor-lamp glow. Pixar 3D."
+    },
+    {
+      "duration": 3,
+      "prompt": "Slow pull back to opening medium-wide. Family settles into closing portrait — <<<element_1>>> center-left in tutu + tiara holding bucket at chest, <<<element_2>>> center-right in pumpkin onesie at hip, <<<element_3>>> softly behind-center smiling, <<<element_4>>> sitting right-foreground in red ladybug costume, <<<element_5>>> standing left-foreground in pumpkin-orange cape, tail mid-wag. Tails wagging. Warm orange lamp glow. Paper jack-o-lanterns visible. Pixar 3D, NOT scary."
+    }
+  ]
+}

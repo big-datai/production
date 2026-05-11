@@ -1,0 +1,12 @@
+{
+  "episode": 2, "beat": 4, "microClip": "b",
+  "title": "EUREKA — pancake hoard found!",
+  "durationSec": 5,
+  "mode": "single-shot",
+  "subjects": ["Sara", "Eva", "Ginger"],
+  "scene": "BedroomSisters",
+  "nativeAudio": true,
+  "expectedCredits": 45,
+  "negativePrompt": "extra people, duplicate character, twin, clone, two of the same person, mirrored figure, background extras, third child, second sister, second ginger, second jack russell",
+  "prompt": "Medium shot in @BedroomSisters. @Sara opens the trundle drawer, revealing pancakes scattered everywhere with @Ginger curled on top, mouth full of pancake. @Eva: \"Really?! Really-really-really-really?!\" @Ginger sheepish: \"Woof?\""
+}

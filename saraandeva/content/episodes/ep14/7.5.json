@@ -1,0 +1,53 @@
+{
+  "episode": 14,
+  "beat": 7.5,
+  "clip": "7.5",
+  "title": "FLASHBACK — cafe conversation, getting to know each other",
+  "mode": "omni",
+  "durationSec": 5,
+  "quality": "720p",
+  "nativeAudio": true,
+  "expectedCredits": 4,
+  "subjects": [
+    "young_Papa",
+    "young_Mama"
+  ],
+  "scene": "ep14-cafe-mams-country",
+  "boundElements": [
+    {
+      "tag": "young_Papa",
+      "source": "library"
+    },
+    {
+      "tag": "young_Mama",
+      "source": "library"
+    },
+    {
+      "tag": "ep14-cafe-mams-country",
+      "source": "library"
+    }
+  ],
+  "prompt": [
+    "Medium two-shot at the marble cafe table inside the warm-wood European cafe, brass pendants overhead, two coffee cups between them. @young_Papa sitting across from @young_Mama, both leaning slightly forward in animated conversation. Mouth LAUGHS happily, head TIPS BACK in laughter. Hands GESTURE warmly. young_Papa (laughing): \"...and then I got on the WRONG train!\" young_Mama (laughing back, hand covers mouth): \"No way!\" Soft afternoon light through the window, autumn leaves visible outside."
+  ],
+  "negativePrompt": [
+    "duplicate character",
+    "ghost figure",
+    "extra arm",
+    "anatomy error",
+    "morphing",
+    "flickering",
+    "disfigured",
+    "scary face",
+    "horror lighting",
+    "blood",
+    "dutch angle",
+    "handheld shake",
+    "jump cut",
+    "eva with brown hair",
+    "sara in ponytail",
+    "papa standing still",
+    "live action footage",
+    "photographic realism"
+  ]
+}
