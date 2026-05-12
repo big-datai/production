@@ -1,0 +1,50 @@
+{
+  "episode": 16,
+  "beat": 22,
+  "clip": 22,
+  "title": "AUDIENCE-ASK CLIFFHANGER \u2014 Eva asks viewers",
+  "mode": "omni",
+  "durationSec": 5,
+  "quality": "720p",
+  "nativeAudio": true,
+  "expectedCredits": 45,
+  "subjects": [
+    "Eva"
+  ],
+  "scene": "ep16-living-room-detective",
+  "boundElements": [
+    {
+      "tag": "Eva",
+      "source": "library"
+    },
+    {
+      "tag": "ep16-living-room-detective",
+      "source": "library"
+    }
+  ],
+  "prompt": [
+    "Close shot. @Eva facing camera directly, big GAP-TOOTH GRIN, two gold coins held UP in right fingers like a tiny prize. Eyes SPARKLE. Mouth OPENS. The free hand WAVES to camera. Warm morning daylight. @Eva (delighted): \"Did YOU lose a tooth this year?! Tell us! See you tomorrow!\""
+  ],
+  "negativePrompt": [
+    "duplicate character",
+    "ghost figure",
+    "extra arm",
+    "anatomy error",
+    "morphing",
+    "flickering",
+    "disfigured",
+    "scary face",
+    "horror lighting",
+    "blood",
+    "dutch angle",
+    "handheld shake",
+    "jump cut",
+    "eva with brown hair",
+    "sara in ponytail",
+    "live action footage",
+    "photographic realism",
+    "adult voice",
+    "boring delivery",
+    "no eye contact"
+  ]
+}

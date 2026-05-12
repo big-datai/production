@@ -1,0 +1,60 @@
+{
+  "episode": 16,
+  "beat": 21,
+  "clip": 21,
+  "title": "Eva runs and hugs Joe \u2014 forgiveness",
+  "mode": "omni",
+  "durationSec": 5,
+  "quality": "720p",
+  "nativeAudio": false,
+  "expectedCredits": 45,
+  "subjects": [
+    "Eva",
+    "Joe",
+    "Sara"
+  ],
+  "scene": "ep16-living-room-detective",
+  "boundElements": [
+    {
+      "tag": "Eva",
+      "source": "library"
+    },
+    {
+      "tag": "Joe",
+      "source": "library"
+    },
+    {
+      "tag": "Sara",
+      "source": "library"
+    },
+    {
+      "tag": "ep16-living-room-detective",
+      "source": "library"
+    }
+  ],
+  "prompt": [
+    "@Eva RUNS into the living room, two gold coins clutched in the left hand. The small body DROPS to its knees in front of @Joe the Pomeranian, arms OPEN. A big squishy hug, face BURIED in fluffy neck fur. The little dog's TAIL WAGS fast, tongue PEEKS out, EARS PERK UP happy. A wet lick on a cheek. @Sara WATCHES from the couch, arms FOLDED, smiling warmly. Warm morning daylight. Absolutely NO dialogue, NO voices, NO speech in any language. Only soft music and ambient sound effects."
+  ],
+  "negativePrompt": [
+    "duplicate character",
+    "ghost figure",
+    "extra arm",
+    "anatomy error",
+    "morphing",
+    "flickering",
+    "disfigured",
+    "scary face",
+    "horror lighting",
+    "blood",
+    "dutch angle",
+    "handheld shake",
+    "jump cut",
+    "eva with brown hair",
+    "sara in ponytail",
+    "live action footage",
+    "photographic realism",
+    "scary hug",
+    "joe sad",
+    "joe scared"
+  ]
+}

@@ -207,7 +207,27 @@ def main():
     ap.add_argument("--n", type=int, default=1, help="Number of candidate images to generate (default 1)")
     ap.add_argument("--force", action="store_true")
     ap.add_argument("--char-refs", default="", help="Optional comma-separated explicit ref paths (relative to repo root or absolute). Overrides default <name>_front.png lookup. Useful when you want to use costume-specific previews as refs to lock identity+costume in one image.")
+    ap.add_argument("--no-validate", action="store_true",
+                    help="Skip anatomical/pose validation via Gemini Flash after rendering (validation is ON by default)")
     args = ap.parse_args()
+
+    # Log invocation to commands.log if --output_id contains an episode hint (epNN_)
+    import re as _re, json as _json, time as _time
+    ep_match = _re.search(r"ep(\d{2})", args.output_id)
+    if ep_match:
+        log_path = SARAANDEVA_DIR / "content" / "episodes" / f"ep{ep_match.group(1)}" / "commands.log"
+        log_path.parent.mkdir(parents=True, exist_ok=True)
+        with open(log_path, "a") as lf:
+            lf.write(_json.dumps({
+                "timestamp": _time.strftime("%Y-%m-%dT%H:%M:%SZ", _time.gmtime()),
+                "script": "generateGroupShot.py",
+                "output_id": args.output_id,
+                "chars": args.chars,
+                "pose": args.pose[:300],
+                "scene": args.scene,
+                "n": args.n,
+                "char_refs": args.char_refs,
+            }) + "\n")
 
     chars = [c.strip().lower() for c in args.chars.split(",") if c.strip()]
     if args.char_refs:
@@ -233,16 +253,34 @@ def main():
     print(f"   refs: {len(char_paths)} chars + {1 if scene_path else 0} scene")
     print(f"   N candidates: {args.n}")
 
+    rendered: list[Path] = []
     for i in range(args.n):
         suffix = "" if args.n == 1 else f"_v{i+1}"
         out = OUTPUT_DIR / f"group_{args.output_id}{suffix}.png"
         if out.exists() and not args.force:
             print(f"  ⏭️  cached: {out.name}")
+            rendered.append(out)
             continue
         t0 = time.time()
         data = call_gemini(prompt, char_paths, scene_path, keys)
         out.write_bytes(data)
         print(f"  ✅ {out.name}  ({len(data)/1024:.1f} KB, {time.time()-t0:.1f}s)")
+        rendered.append(out)
+
+    # Auto-validate each candidate for anatomical/pose defects (head-rotation,
+    # extra arms, distorted faces). Per user 2026-05-11 "validations should be
+    # in pipeline". Skip with --no-validate.
+    if rendered and not args.no_validate:
+        import subprocess as _sp
+        validator = (SARAANDEVA_DIR / ".claude" / "skills" / "saraandeva-episode"
+                     / "scripts" / "validate_nano_render.py")
+        if validator.is_file():
+            print(f"\n🔍 Auto-validating {len(rendered)} render(s) for anatomy/pose...")
+            try:
+                _sp.run(["python3", str(validator), *map(str, rendered)],
+                        check=False)
+            except Exception as _ve:
+                print(f"   (validator skipped: {type(_ve).__name__})")
 
 
 if __name__ == "__main__":

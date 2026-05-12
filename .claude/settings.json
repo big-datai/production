@@ -7,5 +7,18 @@
       "Bash(gcloud app:*)",
       "Bash(gcloud logging:*)"
     ]
+  },
+  "hooks": {
+    "SessionStart": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "shell": "bash",
+            "command": "[[ \"$PWD\" == *.claude/worktrees/* ]] && jq -n --arg pwd \"$PWD\" '{systemMessage: (\"⚠ WORKTREE SESSION: \" + $pwd + \"\\n\\nPer memory rule feedback_no_branches.md — DO NOT make file changes in this worktree. ALL operations must target /Volumes/Samsung500/goreadling-production/saraandeva/ (the main repo on main branch). The worktree is auto-created by Claude Desktop and is a harness artifact; changes inside it do NOT persist on main. Use absolute paths in every file/git operation.\")}' || true"
+          }
+        ]
+      }
+    ]
   }
 }

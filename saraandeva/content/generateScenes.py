@@ -1511,6 +1511,98 @@ SCENES = {
             "kid-friendly."
         ),
     },
+    "ep16_evas_bedroom_night": {
+        "label": "ep16 girls' shared bedroom at night — Tooth Fairy ready, real BUNK BED layout",
+        "refs": ["house/girls_bed.JPG"],  # real-life photo of Sara + Eva's actual bunk-bed bedroom
+        "description": (
+            "Sara and Eva's SHARED BEDROOM at NIGHT — animated/Pixar version "
+            "of the layout shown in the REAL-PHOTO REFERENCE (girls_bed.JPG). "
+            "Centerpiece: a tall solid DARK-WOOD BUNK BED against the wall, "
+            "two beds stacked (a lower bunk and an upper bunk), each with a "
+            "single big fluffy LAVENDER PILLOW. The lower bunk has a "
+            "pastel PURPLE and PINK comforter neatly tucked. A small "
+            "wooden LADDER on the right side of the bunk frame leads to "
+            "the upper bunk. A plush BUNNY toy sits at the head of the "
+            "lower bunk. TWINKLY warm FAIRY LIGHTS strung along the "
+            "lower-bunk frame, glowing tiny gentle yellow stars. To the "
+            "right side: a small white NIGHTSTAND with a tiny round LAMP "
+            "(turned off), a closed storybook, and a small framed family "
+            "photo. WINDOW on the wall behind the bunk, sheer purple "
+            "curtains, soft cool MOONLIGHT streaming in. A wooden floor "
+            "with a soft round pink RUG. The walls painted a soft pale "
+            "PINK / cream with a few framed cartoon-style child prints. "
+            "A wooden bookshelf packed with kid books visible against "
+            "one wall. Small pink toy-house / play-furniture set in the "
+            "foreground corner (matches the real photo). The room is "
+            "QUIET and PEACEFUL, just-before-sleep lighting — soft "
+            "moonlight + the warm twinkle of fairy lights, NO overhead "
+            "light on. Empty of people. Wide composed shot from the "
+            "doorway looking toward the bunk bed, framing bunk + "
+            "nightstand + window. Pixar 3D feature-render quality. "
+            "CRITICAL: this is a SHARED BUNK-BED room, NOT a single bed. "
+            "Match the layout of the real-photo ref exactly (bunk bed "
+            "frame, window position, pink walls, toy area). NO scary "
+            "shadows, NO monsters under bed, NO red, NO horror "
+            "lighting, NO live-action photography, soft kid-friendly mood."
+        ),
+    },
+    "ep16_bathroom_mirror": {
+        "label": "ep16 family bathroom mirror — kid-friendly with tooth-themed wall sticker",
+        "refs": [],
+        "description": (
+            "A bright cheerful FAMILY BATHROOM, kid-friendly. A wide "
+            "white VANITY with two side-by-side sinks at child-friendly "
+            "height, framed by a large rectangular MIRROR above. Soft "
+            "warm vanity lights along the top of the mirror. On the wall "
+            "beside the mirror: a cute cartoon TOOTH-THEMED WALL STICKER "
+            "(smiling tooth character holding a toothbrush, friendly "
+            "cartoon style). Two child-sized step-stools (one pink, one "
+            "purple) tucked under the vanity. Two colorful toothbrushes "
+            "(one pink, one blue) in a small ceramic cup. A neatly folded "
+            "white hand towel. Light blue WALLS with subtle white tile "
+            "wainscoting halfway up. Pale grey tile floor. A small window "
+            "high on the back wall lets in soft warm afternoon daylight "
+            "diffused through frosted glass. Empty of people. Wide "
+            "composed shot from in front of the vanity, mirror clearly "
+            "framing the family bathroom interior. Pixar 3D feature-render "
+            "quality. CRITICAL: NO live-action photography, NO realistic "
+            "human reflection in mirror (will be added by Kling), NO red, "
+            "NO horror lighting, NO clown faces. Soft kid-friendly mood."
+        ),
+    },
+    "ep16_living_room_detective": {
+        "label": "ep16 family living-room/play-area (real-house ref) — detective-mode search layout",
+        "refs": ["house/living_room_play_room.JPG"],  # real-life family living room + play area
+        "description": (
+            "The family's REAL combined LIVING ROOM + PLAY AREA — Pixar "
+            "animated version of the layout from the reference photo. "
+            "Layout to PRESERVE from the photo: a long cream/beige low "
+            "daybed-style SOFA along the back wall draped with a "
+            "colorful CHEVRON-PATTERN ZIGZAG throw blanket (rainbow "
+            "zigzag stripes). Stuffed-animal throw pillows on the sofa. "
+            "Dark-wood COFFEE TABLE with wicker base in the foreground "
+            "left. Wide WOOD-PLANK FLOOR in warm honey tone. Behind the "
+            "sofa on the wall: cute child alphabet stickers ('ABCDEFGHI "
+            "JLMN...') framing the wall décor. To the right of the sofa: "
+            "a pink-and-white toy PLAY KITCHEN + small pink DOLLHOUSE "
+            "set against the wall. A child play-mat (cartoon characters) "
+            "rolled out across the floor. To the right edge: a dark-wood "
+            "DINING TABLE with cushioned chairs (gray). A glass sliding "
+            "door on the LEFT letting WARM MORNING DAYLIGHT in through "
+            "sheer cream curtains. Walls painted a soft cream. "
+            "DETECTIVE-MODE additions for this scene: one sofa cushion "
+            "SLIGHTLY ASKEW (as if recently searched), a kid's magnifying "
+            "glass on the coffee table, and behind the sofa a small "
+            "corner of dog-stash peeking out (a sock, a stray crayon, "
+            "small items scattered). Empty of people. Wide composed "
+            "shot from the doorway looking across the room. Pixar 3D "
+            "feature-render quality. CRITICAL: match the real-photo "
+            "layout (sofa + zigzag blanket + play kitchen + dollhouse + "
+            "trampoline + dining table + wood floor). NO live-action "
+            "photography, NO red, NO horror lighting, NO clown faces. "
+            "Kid-friendly cozy lived-in mood."
+        ),
+    },
 }
 
 

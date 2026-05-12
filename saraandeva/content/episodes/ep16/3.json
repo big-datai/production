@@ -1,0 +1,53 @@
+{
+  "episode": 16,
+  "beat": 3,
+  "clip": 3,
+  "title": "Eva runs to Mama with tooth held high",
+  "mode": "omni",
+  "durationSec": 5,
+  "quality": "720p",
+  "nativeAudio": true,
+  "expectedCredits": 45,
+  "subjects": [
+    "Eva",
+    "Mama"
+  ],
+  "scene": "kitchen_morning",
+  "boundElements": [
+    {
+      "tag": "Eva",
+      "source": "library"
+    },
+    {
+      "tag": "Mama",
+      "source": "library"
+    },
+    {
+      "tag": "kitchen_morning",
+      "source": "library"
+    }
+  ],
+  "prompt": [
+    "@Eva RUNS into the kitchen, right hand held HIGH above head showing a tiny tooth pinched between thumb and finger, new gap visible in her smile. @Mama at the counter TURNS, eyes WIDEN, mouth SMILES. Hands LOWER from the counter, OPEN palms-up to receive. Warm morning kitchen daylight. @Eva (thrilled): \"MAMA! My TOOTH!\""
+  ],
+  "negativePrompt": [
+    "duplicate character",
+    "ghost figure",
+    "extra arm",
+    "anatomy error",
+    "morphing",
+    "flickering",
+    "disfigured",
+    "scary face",
+    "horror lighting",
+    "blood",
+    "dutch angle",
+    "handheld shake",
+    "jump cut",
+    "eva with brown hair",
+    "sara in ponytail",
+    "live action footage",
+    "photographic realism",
+    "standing still"
+  ]
+}

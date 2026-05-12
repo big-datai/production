@@ -1,0 +1,55 @@
+{
+  "episode": 16,
+  "beat": 19,
+  "clip": 19,
+  "title": "Night 2 \u2014 Eva places tooth + letter, Joe locked out",
+  "mode": "omni",
+  "durationSec": 5,
+  "quality": "720p",
+  "nativeAudio": false,
+  "expectedCredits": 45,
+  "subjects": [
+    "Eva",
+    "Joe"
+  ],
+  "scene": "ep16-evas-bedroom-night",
+  "boundElements": [
+    {
+      "tag": "Eva",
+      "source": "library"
+    },
+    {
+      "tag": "Joe",
+      "source": "library"
+    },
+    {
+      "tag": "ep16-evas-bedroom-night",
+      "source": "library"
+    }
+  ],
+  "prompt": [
+    "@Eva at the bed at night, pink pajamas, careful pose. Both hands LIFT the lavender pillow, PLACE a tiny tooth AND a folded handwritten letter on the sheet, then SMOOTH the pillow back down. The young head GLANCES toward the bedroom doorway. Through the slightly-open door, @Joe the Pomeranian SITS in the dim hallway just outside, ears DROOPING, eyes sad, tail STILL. A small reassuring wave through the gap. Soft moonlight + fairy lights. Absolutely NO dialogue, NO voices, NO speech in any language. Only soft music and ambient sound effects."
+  ],
+  "negativePrompt": [
+    "duplicate character",
+    "ghost figure",
+    "extra arm",
+    "anatomy error",
+    "morphing",
+    "flickering",
+    "disfigured",
+    "scary face",
+    "horror lighting",
+    "blood",
+    "dutch angle",
+    "handheld shake",
+    "jump cut",
+    "eva with brown hair",
+    "sara in ponytail",
+    "live action footage",
+    "photographic realism",
+    "joe inside bedroom",
+    "happy joe",
+    "papa in scene"
+  ]
+}

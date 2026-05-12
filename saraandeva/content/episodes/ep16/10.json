@@ -1,0 +1,50 @@
+{
+  "episode": 16,
+  "beat": 10,
+  "clip": 10,
+  "title": "Joe trots down the hall with the tooth",
+  "mode": "omni",
+  "durationSec": 5,
+  "quality": "720p",
+  "nativeAudio": false,
+  "expectedCredits": 45,
+  "subjects": [
+    "Joe"
+  ],
+  "scene": "ep16-hallway-night",
+  "boundElements": [
+    {
+      "tag": "Joe",
+      "source": "library"
+    },
+    {
+      "tag": "ep16-hallway-night",
+      "source": "library"
+    }
+  ],
+  "prompt": [
+    "@Joe the Pomeranian TROTS away from the bed and out the bedroom doorway, the tiny white tooth held carefully between front teeth. TAIL high and PROUD. EARS forward, EYES satisfied. PAWS pad softly along the wood floor of the dim hallway beyond the door. Camera tracks from behind at low angle. Moonlight from bedroom + soft hallway glow. Absolutely NO dialogue, NO voices, NO speech in any language. Only soft music and ambient sound effects."
+  ],
+  "negativePrompt": [
+    "duplicate character",
+    "ghost figure",
+    "extra arm",
+    "anatomy error",
+    "morphing",
+    "flickering",
+    "disfigured",
+    "scary face",
+    "horror lighting",
+    "blood",
+    "dutch angle",
+    "handheld shake",
+    "jump cut",
+    "eva with brown hair",
+    "sara in ponytail",
+    "live action footage",
+    "photographic realism",
+    "large dog",
+    "running fast",
+    "blood near mouth"
+  ]
+}

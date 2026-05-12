@@ -1,0 +1,49 @@
+{
+  "episode": 16,
+  "beat": 1,
+  "clip": 1,
+  "title": "AUDIENCE-ASK HOOK \u2014 Eva wiggles loose tooth to camera",
+  "mode": "omni",
+  "durationSec": 5,
+  "quality": "720p",
+  "nativeAudio": true,
+  "expectedCredits": 45,
+  "subjects": [
+    "Eva"
+  ],
+  "scene": "ep16-bathroom-mirror",
+  "boundElements": [
+    {
+      "tag": "Eva",
+      "source": "library"
+    },
+    {
+      "tag": "ep16-bathroom-mirror",
+      "source": "library"
+    }
+  ],
+  "prompt": [
+    "@Eva at the bathroom mirror facing camera directly. Right INDEX FINGER WIGGLES her front loose tooth side to side, tongue PUSHES against it from inside. Eyes WIDEN with excitement. Mouth OPENS in a bright smile showing the wobbling tooth. Bright warm bathroom daylight, kid-friendly. @Eva (excited): \"Hi friends! Look at this! Tap subscribe so you don't miss this!\""
+  ],
+  "negativePrompt": [
+    "duplicate character",
+    "ghost figure",
+    "extra arm",
+    "anatomy error",
+    "morphing",
+    "flickering",
+    "disfigured",
+    "scary face",
+    "horror lighting",
+    "blood",
+    "dutch angle",
+    "handheld shake",
+    "jump cut",
+    "eva with brown hair",
+    "sara in ponytail",
+    "live action footage",
+    "photographic realism",
+    "adult teeth",
+    "missing all teeth"
+  ]
+}

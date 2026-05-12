@@ -1,0 +1,59 @@
+{
+  "episode": 16,
+  "beat": 14,
+  "clip": 14,
+  "title": "Family searches living room \u2014 detective mode",
+  "mode": "omni",
+  "durationSec": 10,
+  "quality": "720p",
+  "nativeAudio": true,
+  "expectedCredits": 90,
+  "subjects": [
+    "Sara",
+    "Eva",
+    "Mama"
+  ],
+  "scene": "ep16-living-room-detective",
+  "boundElements": [
+    {
+      "tag": "Sara",
+      "source": "library"
+    },
+    {
+      "tag": "Eva",
+      "source": "library"
+    },
+    {
+      "tag": "Mama",
+      "source": "library"
+    },
+    {
+      "tag": "ep16-living-room-detective",
+      "source": "library"
+    }
+  ],
+  "prompt": [
+    "@Sara KNEELS beside the couch, hands LIFTING a cushion. @Eva on the floor PEEKS under the coffee table, eyes scanning. @Mama BENDS at the floor lamp, hands MOVING aside the lamp base to look behind it. A determined brow furrows on the older girl. A small mouth OPENS calling out. The mother SHAKES her head no, gives a comic shrug. Warm morning daylight in living room. @Eva (calling): \"Anything yet?\""
+  ],
+  "negativePrompt": [
+    "duplicate character",
+    "ghost figure",
+    "extra arm",
+    "anatomy error",
+    "morphing",
+    "flickering",
+    "disfigured",
+    "scary face",
+    "horror lighting",
+    "blood",
+    "dutch angle",
+    "handheld shake",
+    "jump cut",
+    "eva with brown hair",
+    "sara in ponytail",
+    "live action footage",
+    "photographic realism",
+    "all standing still",
+    "passive observing"
+  ]
+}

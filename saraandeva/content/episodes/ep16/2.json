@@ -1,0 +1,54 @@
+{
+  "episode": 16,
+  "beat": 2,
+  "clip": 2,
+  "title": "Tooth FALLS into Eva's palm",
+  "mode": "omni",
+  "durationSec": 5,
+  "quality": "720p",
+  "nativeAudio": true,
+  "expectedCredits": 45,
+  "subjects": [
+    "Eva",
+    "Sara"
+  ],
+  "scene": "ep16-bathroom-mirror",
+  "boundElements": [
+    {
+      "tag": "Eva",
+      "source": "library"
+    },
+    {
+      "tag": "Sara",
+      "source": "library"
+    },
+    {
+      "tag": "ep16-bathroom-mirror",
+      "source": "library"
+    }
+  ],
+  "prompt": [
+    "@Eva and @Sara at the bathroom mirror. @Eva's mouth OPENS wide. A tiny WHITE TOOTH POPS out and DROPS into a small cupped palm at chest level. Both girls' eyes WIDEN. @Sara's mouth GASPS, hands FLY UP to cheeks. The other hand HOVERS over the tooth protectively. Warm bathroom daylight. @Eva (delighted gasp): \"It POPPED out!\" @Sara (excited): \"EVA!\""
+  ],
+  "negativePrompt": [
+    "duplicate character",
+    "ghost figure",
+    "extra arm",
+    "anatomy error",
+    "morphing",
+    "flickering",
+    "disfigured",
+    "scary face",
+    "horror lighting",
+    "blood",
+    "dutch angle",
+    "handheld shake",
+    "jump cut",
+    "eva with brown hair",
+    "sara in ponytail",
+    "live action footage",
+    "photographic realism",
+    "red liquid near mouth",
+    "blood"
+  ]
+}

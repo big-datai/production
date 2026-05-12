@@ -1,0 +1,71 @@
+{
+  "episode": 16,
+  "title": "The Tooth Fairy's Big Mistake",
+  "publishDate": "2026-05-13",
+  "wardrobeTheme": "cozy BEDTIME PAJAMAS — warm pastel palette, long-sleeve PJ tops with matching pants, fuzzy socks or slippers, kid-friendly soft fabrics. Whole-episode theme so the look is consistent across daytime + nighttime scenes (kids in pajamas at breakfast is relatable family-show grammar).",
+  "avatars": {
+    "Sara": {
+      "base": "sara_front.png",
+      "wardrobe": "Sara wears a soft LAVENDER long-sleeve PAJAMA TOP with a small repeating HEART-AND-STAR pastel print scattered across the fabric, MATCHING lavender pajama PANTS (same fabric, soft cuffs at the ankles), and fuzzy white SOCKS. Pajama set is cozy and visibly cotton/jersey. Bare feet over socks visible. No daytime clothes.",
+      "state": "canonical 6-year-old girl — wavy lighter-brown shoulder-length hair (DOWN, natural), brown eyes, freckles, friendly smile with her own natural side-incisor baby gap (NOT the same kind of gap as Eva's permanent front-tooth gap)",
+      "out": "ep16_sara_front.png",
+      "triggerClip": 1,
+      "notes": "Sara is the older sister. Hair worn down throughout this episode (no pony, no braid). Pajamas read as 'cozy night-in' even in daytime scenes."
+    },
+    "Eva": {
+      "base": "eva_front.png",
+      "wardrobe": "Eva wears a soft PINK long-sleeve PAJAMA TOP with the CANONICAL RAINBOW graphic across the chest (preserved from her signature look — small embroidered/printed rainbow), MATCHING soft LAVENDER pajama PANTS (same cotton-jersey fabric, cuffed ankles), and soft pink fuzzy SOCKS. Tiny hair bow preserved. No daytime clothes.",
+      "state": "EVA HAS ONE FRONT UPPER INCISOR MISSING — clear visible GAP-TOOTH where the upper-center tooth used to be. The missing tooth is the permanent post-fall state for ALL clips 2-22. Gap is visible whenever Eva's mouth opens or smiles.",
+      "out": "ep16_eva_front.png",
+      "triggerClip": 2,
+      "notes": "Eva is the toddler sister. Canonical: VERY curly auburn-blonde hair, big brown eyes, round cheeks, tiny hair bow."
+    },
+    "Mama": {
+      "base": "mama_front.png",
+      "wardrobe": "Mama wears a cozy CORAL-PINK long-sleeve PAJAMA TOP (soft jersey/cotton, V-neck or crew, relaxed fit), MATCHING coral-pink pajama PANTS (loose drawstring waist, full-length to ankle), and simple cream slip-on slippers. Pajama set reads as 'mom comfy night-in.' No athletic shorts, no leggings.",
+      "state": "Hair in a LOW MESSY BUN at the back of the head (canonical Mama hairstyle, NOT a high ponytail, NOT loose). Blonde, athletic build, warm friendly expression.",
+      "out": "ep16_mama_front.png",
+      "triggerClip": 1,
+      "notes": "Mama wears the bun even at home in PJs. Pajamas are matching set, NOT mismatched."
+    },
+    "Papa": {
+      "base": "papa_front.png",
+      "wardrobe": "Papa wears a NAVY-BLUE long-sleeve PAJAMA TOP with a simple button placket at the chest (3 buttons, classic dad-pajama style), MATCHING navy pajama PANTS (same fabric, drawstring waist, full-length to ankle), and simple gray plaid SLIPPERS. Glasses still on. Pajamas read as 'dad cozy night-in.'",
+      "state": "canonical Papa — completely BALD head, full dark trimmed BEARD, rectangular GLASSES, athletic dad-bod (NOT overweight, NOT heavy), warm friendly dad smile.",
+      "out": "ep16_papa_front.png",
+      "triggerClip": 1,
+      "notes": "Papa wears glasses with PJs (he's nearsighted). Pajama set is matching navy. No graphic, no logo."
+    },
+    "Joe": {
+      "base": "joe_front.png",
+      "wardrobe": "Joe is a dog — no clothes. CANONICAL LOOK: PALE CREAM-BLONDE fluffy Pomeranian (almost white-blonde, NOT orange, NOT golden), LIGHT-BLUE COLLAR with small silver HEART-SHAPED ID tag. Tail fluffy and curled up. Friendly expression.",
+      "state": "canonical Joe — 9-year-old small-breed Pomeranian, fluffy double coat, friendly dark brown eyes, tiny black nose, expressive ears that perk forward when alert.",
+      "out": "ep16_joe_front.png",
+      "triggerClip": 1,
+      "notes": "Joe is Eva's dog. The light-blue heart-tag collar is canonical and must appear in every clip."
+    }
+  },
+  "scenes": {
+    "ep16_evas_bedroom_night": {
+      "label": "girls' shared bedroom (real bunk-bed layout)",
+      "refs": ["house/girls_bed.JPG"],
+      "lighting": "night with soft moonlight + warm fairy lights",
+      "wardrobeNote": "all characters in PAJAMAS for clips set here",
+      "out": "ep16_evas_bedroom_night.png"
+    },
+    "ep16_bathroom_mirror": {
+      "label": "kid-friendly family bathroom",
+      "refs": [],
+      "lighting": "soft warm afternoon daylight through frosted window",
+      "wardrobeNote": "Eva in pajamas (bedtime tooth-brushing routine)",
+      "out": "ep16_bathroom_mirror.png"
+    },
+    "ep16_living_room_detective": {
+      "label": "family living room + play area (real-house layout)",
+      "refs": ["house/living_room_play_room.JPG"],
+      "lighting": "warm morning daylight through sliding door",
+      "wardrobeNote": "family in pajamas (morning-after / lazy Sunday family-time vibe)",
+      "out": "ep16_living_room_detective.png"
+    }
+  }
+}

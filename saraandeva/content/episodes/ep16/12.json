@@ -1,0 +1,54 @@
+{
+  "episode": 16,
+  "beat": 12,
+  "clip": 12,
+  "title": "Eva \u2014 'Tooth Fairy FORGOT me!'",
+  "mode": "omni",
+  "durationSec": 5,
+  "quality": "720p",
+  "nativeAudio": true,
+  "expectedCredits": 45,
+  "subjects": [
+    "Eva",
+    "Mama"
+  ],
+  "scene": "kitchen_morning",
+  "boundElements": [
+    {
+      "tag": "Eva",
+      "source": "library"
+    },
+    {
+      "tag": "Mama",
+      "source": "library"
+    },
+    {
+      "tag": "kitchen_morning",
+      "source": "library"
+    }
+  ],
+  "prompt": [
+    "Close shot in the kitchen. @Mama kneels on the floor in her coral-pink PAJAMA set, arms WRAPPED around @Eva in a warm hug. @Eva (in her pink rainbow PJ top + lavender PJ pants — NOT jeans) presses her face against Mama's shoulder, eyes WELLING with tears, lower LIP TREMBLES. One small fist CLENCHES the fabric of Mama's PJ top. Mama's hand STROKES Eva's curly hair. Warm kitchen light. ONLY ONE EVA in frame and ONLY ONE MAMA — no duplicates, no second figure running in the background. @Eva (tearful, muffled into shoulder): \"MAMA! The Tooth Fairy FORGOT me!\""
+  ],
+  "negativePrompt": [
+    "duplicate character",
+    "ghost figure",
+    "extra arm",
+    "anatomy error",
+    "morphing",
+    "flickering",
+    "disfigured",
+    "scary face",
+    "horror lighting",
+    "blood",
+    "dutch angle",
+    "handheld shake",
+    "jump cut",
+    "eva with brown hair",
+    "sara in ponytail",
+    "live action footage",
+    "photographic realism",
+    "standing still",
+    "fake crying"
+  ]
+}

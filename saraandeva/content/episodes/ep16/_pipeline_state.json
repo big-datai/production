@@ -1,0 +1,472 @@
+{
+  "uploads": {
+    "clip_1_still": {
+      "httpsUrl": "https://storage.googleapis.com/saraandeva-kling-elements/ep16/stills/clip_01_audience-ask_hook_eva_wiggles_loose_toot.png",
+      "gcsKey": "ep16/stills/clip_01_audience-ask_hook_eva_wiggles_loose_toot.png",
+      "localFile": "content/episodes/ep16/stills/clip_01_audience-ask_hook_eva_wiggles_loose_toot.png",
+      "uploadedAt": "2026-05-12T00:25:18Z",
+      "type": "clip_still",
+      "clipStem": "1"
+    },
+    "clip_2_still": {
+      "httpsUrl": "https://storage.googleapis.com/saraandeva-kling-elements/ep16/stills/clip_02_tooth_falls_into_evas_palm.png",
+      "gcsKey": "ep16/stills/clip_02_tooth_falls_into_evas_palm.png",
+      "localFile": "content/episodes/ep16/stills/clip_02_tooth_falls_into_evas_palm.png",
+      "uploadedAt": "2026-05-12T01:09:50Z",
+      "type": "clip_still",
+      "clipStem": "2"
+    },
+    "clip_3_still": {
+      "httpsUrl": "https://storage.googleapis.com/saraandeva-kling-elements/ep16/stills/clip_03_eva_runs_to_mama_with_tooth_held_high.png",
+      "gcsKey": "ep16/stills/clip_03_eva_runs_to_mama_with_tooth_held_high.png",
+      "localFile": "content/episodes/ep16/stills/clip_03_eva_runs_to_mama_with_tooth_held_high.png",
+      "uploadedAt": "2026-05-12T01:09:50Z",
+      "type": "clip_still",
+      "clipStem": "3"
+    },
+    "clip_4_still": {
+      "httpsUrl": "https://storage.googleapis.com/saraandeva-kling-elements/ep16/stills/clip_04_mama_explains_the_tooth_fairy.png",
+      "gcsKey": "ep16/stills/clip_04_mama_explains_the_tooth_fairy.png",
+      "localFile": "content/episodes/ep16/stills/clip_04_mama_explains_the_tooth_fairy.png",
+      "uploadedAt": "2026-05-12T10:52:50Z",
+      "type": "clip_still",
+      "clipStem": "4"
+    },
+    "clip_5_still": {
+      "httpsUrl": "https://storage.googleapis.com/saraandeva-kling-elements/ep16/stills/clip_05_eva_carefully_places_tooth_under_pillow.png",
+      "gcsKey": "ep16/stills/clip_05_eva_carefully_places_tooth_under_pillow.png",
+      "localFile": "content/episodes/ep16/stills/clip_05_eva_carefully_places_tooth_under_pillow.png",
+      "uploadedAt": "2026-05-12T11:31:58Z",
+      "type": "clip_still",
+      "clipStem": "5"
+    },
+    "clip_6_still": {
+      "httpsUrl": "https://storage.googleapis.com/saraandeva-kling-elements/ep16/stills/clip_06_audience-ask_do_you_believe_in_the_tooth.png",
+      "gcsKey": "ep16/stills/clip_06_audience-ask_do_you_believe_in_the_tooth.png",
+      "localFile": "content/episodes/ep16/stills/clip_06_audience-ask_do_you_believe_in_the_tooth.png",
+      "uploadedAt": "2026-05-12T11:31:58Z",
+      "type": "clip_still",
+      "clipStem": "6"
+    },
+    "clip_7_still": {
+      "httpsUrl": "https://storage.googleapis.com/saraandeva-kling-elements/ep16/stills/clip_07_night_falls_eva_drifts_to_sleep.png",
+      "gcsKey": "ep16/stills/clip_07_night_falls_eva_drifts_to_sleep.png",
+      "localFile": "content/episodes/ep16/stills/clip_07_night_falls_eva_drifts_to_sleep.png",
+      "uploadedAt": "2026-05-12T11:31:58Z",
+      "type": "clip_still",
+      "clipStem": "7"
+    },
+    "clip_8_still": {
+      "httpsUrl": "https://storage.googleapis.com/saraandeva-kling-elements/ep16/stills/clip_08_joe_sneaks_into_evas_bedroom.png",
+      "gcsKey": "ep16/stills/clip_08_joe_sneaks_into_evas_bedroom.png",
+      "localFile": "content/episodes/ep16/stills/clip_08_joe_sneaks_into_evas_bedroom.png",
+      "uploadedAt": "2026-05-12T11:31:58Z",
+      "type": "clip_still",
+      "clipStem": "8"
+    },
+    "clip_9_still": {
+      "httpsUrl": "https://storage.googleapis.com/saraandeva-kling-elements/ep16/stills/clip_09_joes_nose_finds_the_tooth_under_the_pill.png",
+      "gcsKey": "ep16/stills/clip_09_joes_nose_finds_the_tooth_under_the_pill.png",
+      "localFile": "content/episodes/ep16/stills/clip_09_joes_nose_finds_the_tooth_under_the_pill.png",
+      "uploadedAt": "2026-05-12T11:31:58Z",
+      "type": "clip_still",
+      "clipStem": "9"
+    },
+    "clip_10_still": {
+      "httpsUrl": "https://storage.googleapis.com/saraandeva-kling-elements/ep16/stills/clip_10_joe_trots_down_the_hall_with_the_tooth.png",
+      "gcsKey": "ep16/stills/clip_10_joe_trots_down_the_hall_with_the_tooth.png",
+      "localFile": "content/episodes/ep16/stills/clip_10_joe_trots_down_the_hall_with_the_tooth.png",
+      "uploadedAt": "2026-05-12T11:39:48Z",
+      "type": "clip_still",
+      "clipStem": "10"
+    },
+    "clip_11_still": {
+      "httpsUrl": "https://storage.googleapis.com/saraandeva-kling-elements/ep16/stills/clip_11_morning_eva_checks_pillow_finds_nothing.png",
+      "gcsKey": "ep16/stills/clip_11_morning_eva_checks_pillow_finds_nothing.png",
+      "localFile": "content/episodes/ep16/stills/clip_11_morning_eva_checks_pillow_finds_nothing.png",
+      "uploadedAt": "2026-05-12T12:14:18Z",
+      "type": "clip_still",
+      "clipStem": "11"
+    },
+    "clip_12_still": {
+      "httpsUrl": "https://storage.googleapis.com/saraandeva-kling-elements/ep16/stills/clip_12_eva_tooth_fairy_forgot_me.png",
+      "gcsKey": "ep16/stills/clip_12_eva_tooth_fairy_forgot_me.png",
+      "localFile": "content/episodes/ep16/stills/clip_12_eva_tooth_fairy_forgot_me.png",
+      "uploadedAt": "2026-05-12T12:14:18Z",
+      "type": "clip_still",
+      "clipStem": "12"
+    },
+    "clip_13_still": {
+      "httpsUrl": "https://storage.googleapis.com/saraandeva-kling-elements/ep16/stills/clip_13_audience-ask_sara_i_have_an_idea_questio.png",
+      "gcsKey": "ep16/stills/clip_13_audience-ask_sara_i_have_an_idea_questio.png",
+      "localFile": "content/episodes/ep16/stills/clip_13_audience-ask_sara_i_have_an_idea_questio.png",
+      "uploadedAt": "2026-05-12T12:14:18Z",
+      "type": "clip_still",
+      "clipStem": "13"
+    },
+    "clip_14_still": {
+      "httpsUrl": "https://storage.googleapis.com/saraandeva-kling-elements/ep16/stills/clip_14_family_searches_living_room_detective_mo.png",
+      "gcsKey": "ep16/stills/clip_14_family_searches_living_room_detective_mo.png",
+      "localFile": "content/episodes/ep16/stills/clip_14_family_searches_living_room_detective_mo.png",
+      "uploadedAt": "2026-05-12T12:14:18Z",
+      "type": "clip_still",
+      "clipStem": "14"
+    },
+    "clip_15_still": {
+      "httpsUrl": "https://storage.googleapis.com/saraandeva-kling-elements/ep16/stills/clip_15_reveal_joes_secret_stash_behind_the_couc.png",
+      "gcsKey": "ep16/stills/clip_15_reveal_joes_secret_stash_behind_the_couc.png",
+      "localFile": "content/episodes/ep16/stills/clip_15_reveal_joes_secret_stash_behind_the_couc.png",
+      "uploadedAt": "2026-05-12T12:14:18Z",
+      "type": "clip_still",
+      "clipStem": "15"
+    },
+    "clip_16_still": {
+      "httpsUrl": "https://storage.googleapis.com/saraandeva-kling-elements/ep16/stills/clip_16_eva_joe_you_took_it_joe_guilty.png",
+      "gcsKey": "ep16/stills/clip_16_eva_joe_you_took_it_joe_guilty.png",
+      "localFile": "/Volumes/Samsung500/goreadling-production/saraandeva/content/episodes/ep16/stills/clip_16_eva_joe_you_took_it_joe_guilty.png",
+      "uploadedAt": "2026-05-12T12:23:32Z",
+      "type": "clip_still",
+      "clipStem": "16"
+    },
+    "clip_17_still": {
+      "httpsUrl": "https://storage.googleapis.com/saraandeva-kling-elements/ep16/stills/clip_17_sara_writes_a_letter_to_the_tooth_fairy.png",
+      "gcsKey": "ep16/stills/clip_17_sara_writes_a_letter_to_the_tooth_fairy.png",
+      "localFile": "/Volumes/Samsung500/goreadling-production/saraandeva/content/episodes/ep16/stills/clip_17_sara_writes_a_letter_to_the_tooth_fairy.png",
+      "uploadedAt": "2026-05-12T12:23:32Z",
+      "type": "clip_still",
+      "clipStem": "17"
+    },
+    "clip_18_still": {
+      "httpsUrl": "https://storage.googleapis.com/saraandeva-kling-elements/ep16/stills/clip_18_parent-activity_papa_pretends_to_be_the.png",
+      "gcsKey": "ep16/stills/clip_18_parent-activity_papa_pretends_to_be_the.png",
+      "localFile": "/Volumes/Samsung500/goreadling-production/saraandeva/content/episodes/ep16/stills/clip_18_parent-activity_papa_pretends_to_be_the.png",
+      "uploadedAt": "2026-05-12T12:23:32Z",
+      "type": "clip_still",
+      "clipStem": "18"
+    },
+    "clip_19_still": {
+      "httpsUrl": "https://storage.googleapis.com/saraandeva-kling-elements/ep16/stills/clip_19_night_2_eva_places_tooth_letter_joe_lock.png",
+      "gcsKey": "ep16/stills/clip_19_night_2_eva_places_tooth_letter_joe_lock.png",
+      "localFile": "/Volumes/Samsung500/goreadling-production/saraandeva/content/episodes/ep16/stills/clip_19_night_2_eva_places_tooth_letter_joe_lock.png",
+      "uploadedAt": "2026-05-12T12:23:32Z",
+      "type": "clip_still",
+      "clipStem": "19"
+    },
+    "clip_20_still": {
+      "httpsUrl": "https://storage.googleapis.com/saraandeva-kling-elements/ep16/stills/clip_20_morning_eva_discovers_two_coins_and_a_no.png",
+      "gcsKey": "ep16/stills/clip_20_morning_eva_discovers_two_coins_and_a_no.png",
+      "localFile": "/Volumes/Samsung500/goreadling-production/saraandeva/content/episodes/ep16/stills/clip_20_morning_eva_discovers_two_coins_and_a_no.png",
+      "uploadedAt": "2026-05-12T12:23:32Z",
+      "type": "clip_still",
+      "clipStem": "20"
+    },
+    "clip_21_still": {
+      "httpsUrl": "https://storage.googleapis.com/saraandeva-kling-elements/ep16/stills/clip_21_eva_runs_and_hugs_joe_forgiveness.png",
+      "gcsKey": "ep16/stills/clip_21_eva_runs_and_hugs_joe_forgiveness.png",
+      "localFile": "/Volumes/Samsung500/goreadling-production/saraandeva/content/episodes/ep16/stills/clip_21_eva_runs_and_hugs_joe_forgiveness.png",
+      "uploadedAt": "2026-05-12T12:23:32Z",
+      "type": "clip_still",
+      "clipStem": "21"
+    },
+    "clip_22_still": {
+      "httpsUrl": "https://storage.googleapis.com/saraandeva-kling-elements/ep16/stills/clip_22_audience-ask_cliffhanger_eva_asks_viewer.png",
+      "gcsKey": "ep16/stills/clip_22_audience-ask_cliffhanger_eva_asks_viewer.png",
+      "localFile": "/Volumes/Samsung500/goreadling-production/saraandeva/content/episodes/ep16/stills/clip_22_audience-ask_cliffhanger_eva_asks_viewer.png",
+      "uploadedAt": "2026-05-12T12:23:32Z",
+      "type": "clip_still",
+      "clipStem": "22"
+    }
+  },
+  "elements": {},
+  "clipTasks": {
+    "clip_1": {
+      "task_id": "882972300256088154",
+      "external_task_id": "ep16-clip1-i2v-1778545519682",
+      "endpoint": "omni-video",
+      "submitted_at": "2026-05-12T00:25:20Z",
+      "status": "submitted",
+      "image_url": "https://storage.googleapis.com/saraandeva-kling-elements/ep16/stills/clip_01_audience-ask_hook_eva_wiggles_loose_toot.png"
+    },
+    "clip_3": {
+      "task_id": "882983508540137526",
+      "external_task_id": "ep16-clip3-i2v-1778548191859",
+      "endpoint": "omni-video",
+      "submitted_at": "2026-05-12T01:09:52Z",
+      "status": "submitted",
+      "image_url": "https://storage.googleapis.com/saraandeva-kling-elements/ep16/stills/clip_03_eva_runs_to_mama_with_tooth_held_high.png"
+    },
+    "clip_2": {
+      "task_id": "882987659470184531",
+      "external_task_id": "ep16-clip2-i2v-1778549181466",
+      "endpoint": "omni-video",
+      "submitted_at": "2026-05-12T01:26:22Z",
+      "status": "submitted",
+      "image_url": "https://storage.googleapis.com/saraandeva-kling-elements/ep16/stills/clip_02_tooth_falls_into_evas_palm.png"
+    },
+    "clip_4": {
+      "task_id": "883133314558328864",
+      "external_task_id": "ep16-clip4-i2v-1778583908427",
+      "endpoint": "omni-video",
+      "submitted_at": "2026-05-12T11:05:08Z",
+      "status": "submitted",
+      "image_url": "https://storage.googleapis.com/saraandeva-kling-elements/ep16/stills/clip_04_mama_explains_the_tooth_fairy.png"
+    },
+    "clip_5": {
+      "task_id": "883140072483201101",
+      "external_task_id": "ep16-clip5-i2v-1778585519605",
+      "endpoint": "omni-video",
+      "submitted_at": "2026-05-12T11:32:00Z",
+      "status": "submitted",
+      "image_url": "https://storage.googleapis.com/saraandeva-kling-elements/ep16/stills/clip_05_eva_carefully_places_tooth_under_pillow.png"
+    },
+    "clip_6": {
+      "task_id": "883140077173080162",
+      "external_task_id": "ep16-clip6-i2v-1778585520811",
+      "endpoint": "omni-video",
+      "submitted_at": "2026-05-12T11:32:01Z",
+      "status": "submitted",
+      "image_url": "https://storage.googleapis.com/saraandeva-kling-elements/ep16/stills/clip_06_audience-ask_do_you_believe_in_the_tooth.png"
+    },
+    "clip_7": {
+      "task_id": "883140082297872470",
+      "external_task_id": "ep16-clip7-i2v-1778585521978",
+      "endpoint": "omni-video",
+      "submitted_at": "2026-05-12T11:32:02Z",
+      "status": "submitted",
+      "image_url": "https://storage.googleapis.com/saraandeva-kling-elements/ep16/stills/clip_07_night_falls_eva_drifts_to_sleep.png"
+    },
+    "clip_8": {
+      "task_id": "883140087184883747",
+      "external_task_id": "ep16-clip8-i2v-1778585523139",
+      "endpoint": "omni-video",
+      "submitted_at": "2026-05-12T11:32:03Z",
+      "status": "submitted",
+      "image_url": "https://storage.googleapis.com/saraandeva-kling-elements/ep16/stills/clip_08_joe_sneaks_into_evas_bedroom.png"
+    },
+    "clip_9": {
+      "task_id": "883140474867949634",
+      "external_task_id": "ep16-clip9-i2v-1778585615603",
+      "endpoint": "omni-video",
+      "submitted_at": "2026-05-12T11:33:36Z",
+      "status": "submitted",
+      "image_url": "https://storage.googleapis.com/saraandeva-kling-elements/ep16/stills/clip_09_joes_nose_finds_the_tooth_under_the_pill.png"
+    },
+    "clip_10": {
+      "task_id": "883142041255944198",
+      "external_task_id": "ep16-clip10-i2v-1778585989052",
+      "endpoint": "omni-video",
+      "submitted_at": "2026-05-12T11:39:49Z",
+      "status": "submitted",
+      "image_url": "https://storage.googleapis.com/saraandeva-kling-elements/ep16/stills/clip_10_joe_trots_down_the_hall_with_the_tooth.png"
+    },
+    "clip_11": {
+      "task_id": "883150853429927994",
+      "external_task_id": "ep16-clip11-i2v-1778588089980",
+      "endpoint": "omni-video",
+      "submitted_at": "2026-05-12T12:14:50Z",
+      "status": "submitted",
+      "image_url": "https://storage.googleapis.com/saraandeva-kling-elements/ep16/stills/clip_11_morning_eva_checks_pillow_finds_nothing.png"
+    },
+    "clip_12": {
+      "task_id": "883150858286927913",
+      "external_task_id": "ep16-clip12-i2v-1778588091109",
+      "endpoint": "omni-video",
+      "submitted_at": "2026-05-12T12:14:51Z",
+      "status": "submitted",
+      "image_url": "https://storage.googleapis.com/saraandeva-kling-elements/ep16/stills/clip_12_eva_tooth_fairy_forgot_me.png"
+    },
+    "clip_13": {
+      "task_id": "883150863551438913",
+      "external_task_id": "ep16-clip13-i2v-1778588092366",
+      "endpoint": "omni-video",
+      "submitted_at": "2026-05-12T12:14:52Z",
+      "status": "submitted",
+      "image_url": "https://storage.googleapis.com/saraandeva-kling-elements/ep16/stills/clip_13_audience-ask_sara_i_have_an_idea_questio.png"
+    },
+    "clip_14": {
+      "task_id": "883150868353257524",
+      "external_task_id": "ep16-clip14-i2v-1778588093507",
+      "endpoint": "omni-video",
+      "submitted_at": "2026-05-12T12:14:53Z",
+      "status": "submitted",
+      "image_url": "https://storage.googleapis.com/saraandeva-kling-elements/ep16/stills/clip_14_family_searches_living_room_detective_mo.png"
+    },
+    "clip_15": {
+      "task_id": "883151256708063325",
+      "external_task_id": "ep16-clip15-i2v-1778588186059",
+      "endpoint": "omni-video",
+      "submitted_at": "2026-05-12T12:16:26Z",
+      "status": "submitted",
+      "image_url": "https://storage.googleapis.com/saraandeva-kling-elements/ep16/stills/clip_15_reveal_joes_secret_stash_behind_the_couc.png"
+    },
+    "clip_16": {
+      "task_id": "883153046849593400",
+      "external_task_id": "ep16-clip16-i2v-1778588612945",
+      "endpoint": "omni-video",
+      "submitted_at": "2026-05-12T12:23:33Z",
+      "status": "submitted",
+      "image_url": "https://storage.googleapis.com/saraandeva-kling-elements/ep16/stills/clip_16_eva_joe_you_took_it_joe_guilty.png"
+    },
+    "clip_17": {
+      "task_id": "883153051513659462",
+      "external_task_id": "ep16-clip17-i2v-1778588614057",
+      "endpoint": "omni-video",
+      "submitted_at": "2026-05-12T12:23:34Z",
+      "status": "submitted",
+      "image_url": "https://storage.googleapis.com/saraandeva-kling-elements/ep16/stills/clip_17_sara_writes_a_letter_to_the_tooth_fairy.png"
+    },
+    "clip_18": {
+      "task_id": "883153056035119153",
+      "external_task_id": "ep16-clip18-i2v-1778588615113",
+      "endpoint": "omni-video",
+      "submitted_at": "2026-05-12T12:23:35Z",
+      "status": "submitted",
+      "image_url": "https://storage.googleapis.com/saraandeva-kling-elements/ep16/stills/clip_18_parent-activity_papa_pretends_to_be_the.png"
+    },
+    "clip_19": {
+      "task_id": "883153060564963340",
+      "external_task_id": "ep16-clip19-i2v-1778588616263",
+      "endpoint": "omni-video",
+      "submitted_at": "2026-05-12T12:23:36Z",
+      "status": "submitted",
+      "image_url": "https://storage.googleapis.com/saraandeva-kling-elements/ep16/stills/clip_19_night_2_eva_places_tooth_letter_joe_lock.png"
+    },
+    "clip_20": {
+      "task_id": "883153620131258372",
+      "external_task_id": "ep16-clip20-i2v-1778588749660",
+      "endpoint": "omni-video",
+      "submitted_at": "2026-05-12T12:25:50Z",
+      "status": "submitted",
+      "image_url": "https://storage.googleapis.com/saraandeva-kling-elements/ep16/stills/clip_20_morning_eva_discovers_two_coins_and_a_no.png"
+    },
+    "clip_22": {
+      "task_id": "883153632202465319",
+      "external_task_id": "ep16-clip22-i2v-1778588752529",
+      "endpoint": "omni-video",
+      "submitted_at": "2026-05-12T12:25:52Z",
+      "status": "submitted",
+      "image_url": "https://storage.googleapis.com/saraandeva-kling-elements/ep16/stills/clip_22_audience-ask_cliffhanger_eva_asks_viewer.png"
+    },
+    "clip_21": {
+      "task_id": "883181782005981270",
+      "external_task_id": "ep16-clip21-i2v-1778595463985",
+      "endpoint": "omni-video",
+      "submitted_at": "2026-05-12T14:17:44Z",
+      "status": "submitted",
+      "image_url": "https://storage.googleapis.com/saraandeva-kling-elements/ep16/stills/clip_21_eva_runs_and_hugs_joe_forgiveness.png"
+    }
+  },
+  "clipDownloads": {
+    "clip_1": {
+      "localPath": "/Volumes/Samsung500/goreadling-production/saraandeva/content/episodes/ep16/clips/1.mp4",
+      "downloadedAt": "2026-05-12T00:27:03Z",
+      "sourceUrl": "https://v16-kling-fdl.klingai.com/bs2/upload-ylab-stunt-sgp/muse/880729667513225227/VIDEO/20260512/0012799414e2084788fc74e4fabd77ed-660cacf7-63cf-4cd4-a93d-b0108c8dbfb4.mp4?cacheKey=ChtzZWN1cml0eS5rbGluZy5tZXRhX2VuY3J5cHQSsAEZJwq4_l_rQjR333yPIX4HnVvtxdApqYsH44CgWrPLGCV5TCjortylag_5z10ma_9DQAgrCahC_MARG9rO2YMMsdfarH24rjpVp3VxcE1g_G6M_-Db4NeFjRYqA6OgQSaaGeUrOanogGiNgZ_6nvdzf0227AbFhX4ZBvuu6H2lh6Q5auxYmV49SCBeXL4_2lJr8Tl_bQ5nAQOfW7pXM0qjBjOUp1ZCSggzVkyhuJh07BoS09j_LL38Qv8Yv5Zh0thEYW8BIiDbIBXKn2qL-P5UWGQD-g2oVhvgsxOwsXyfKpfW3S1YJygFMAE&x-kcdn-pid=112781&ksSecret=e7777d054bea080eaabc43727aeb4540&ksTime=6a2a00c3"
+    },
+    "clip_3": {
+      "localPath": "/Volumes/Samsung500/goreadling-production/saraandeva/content/episodes/ep16/clips/3.mp4",
+      "downloadedAt": "2026-05-12T01:11:59Z",
+      "sourceUrl": "https://v16-kling-fdl.klingai.com/bs2/upload-ylab-stunt-sgp/muse/880729667513225227/VIDEO/20260512/3fd7959f46f69c08aacb8dfa52e693cf-4ccc8a6d-b493-40b3-9a0c-f3d7d951230f.mp4?cacheKey=ChtzZWN1cml0eS5rbGluZy5tZXRhX2VuY3J5cHQSsAGrio16VvbJ8ru-cqk3OiCrgnsulZGj5VojeGHUnSQOCiUXGq_Tob-P5QntyELHHkWVrecPzfRjo3SrgJBNmQidxdVLuRR-RjIM9-Rf0NGfhUyrQfgGuTqjvjd9c6jjy8CQA72-Wg9FLDjzkM0ZDGqs7ot4q_PLAO0Hsw1iUH96FK9CTfHBkRhnTKEELOsOTjyHbJ1YP5pZgKyb8anB3dN1A3-qc4Q2lBBEqEFIEJCi3RoSu4b9SEvlSFLKC9ylAQ2baCJIIiCj5CxH7jNQuvZcBhWIOO1S-UEmeAYEcSK867q0pHpTJCgFMAE&x-kcdn-pid=112781&ksSecret=63bf9d0bc9b3b509889d97bf11fd877d&ksTime=6a2a0b47"
+    },
+    "clip_2": {
+      "localPath": "/Volumes/Samsung500/goreadling-production/saraandeva/content/episodes/ep16/clips/2.mp4",
+      "downloadedAt": "2026-05-12T01:28:38Z",
+      "sourceUrl": "https://v16-kling-fdl.klingai.com/bs2/upload-ylab-stunt-sgp/muse/880729667513225227/VIDEO/20260512/723942c6358e427d7cfa708c92d28653-70cf77d6-7f87-4620-955b-aa9349acec09.mp4?cacheKey=ChtzZWN1cml0eS5rbGluZy5tZXRhX2VuY3J5cHQSsAFgHKmBxCta-d8vpiGd2X00z6wTUGs_4QQkupOCoipYN-zFWTLeWPWI-UB36EXjg0pi7X6gjkXdT8EDGakUMdwIvK-rwbg3mNt5ZUvBMCaNzp6sIRE1bzCDk5rdMADYhKHEPrBGNhrZWL0NhjOXrx8qY76kLniLUOzkWeyDHgyMeDHI-xeowWIcqTneWDr2o-s2hhAqj8YA9P7zXiymvyh6OAA56rGKKYa4bcb_IY48yBoSMiIwzDkRLkXJDo0Gm30rVg5KIiBQowoHi7segcJXj1DQ6W96cpj7-zMcWO-i-llbEwND5igFMAE&x-kcdn-pid=112781&ksSecret=a382b75c1232f70935b65e51bfa70503&ksTime=6a2a0f32"
+    },
+    "clip_4": {
+      "localPath": "/Volumes/Samsung500/goreadling-production/saraandeva/content/episodes/ep16/clips/4.mp4",
+      "downloadedAt": "2026-05-12T11:09:17Z",
+      "sourceUrl": "https://v16-kling-fdl.klingai.com/bs2/upload-ylab-stunt-sgp/muse/880729667513225227/VIDEO/20260512/c83f001d13955135a838482b5f46752e-5d23679d-29b4-404d-86fc-61d90e1888ec.mp4?cacheKey=ChtzZWN1cml0eS5rbGluZy5tZXRhX2VuY3J5cHQSsAGNq1HS1TGlipggCxgUVxsKWaOfmQU_R9NTr7sPEhVZFBNTN-rqNsihVAcpMfP3J1E_Txee37pk10kGldkIgjfsSYmF46RMqjGu93OXTYAUD_4jLqPZzYwgm0ceqOBVRs_p5pv-x5-CHiagCMsh8DoTXH2WAAmYainiKgEf_moy5CuzT4PAzvY750Brm6kz3qtFk8IpSsuWbWQ9YoZ7mZnjLOZThTsofVb1kgc3Xs_itBoSEWFMYg6sFzvDzdpgVuS6Rze6IiCq6K-NuY1XfA54F_6wQpum41qXn9mPpdos4cDA8cWYPigFMAE&x-kcdn-pid=112781&ksSecret=f80953c2b2fcd87f8cfdb1eda08db6f3&ksTime=6a2a9749"
+    },
+    "clip_5": {
+      "localPath": "/Volumes/Samsung500/goreadling-production/saraandeva/content/episodes/ep16/clips/5.mp4",
+      "downloadedAt": "2026-05-12T11:34:04Z",
+      "sourceUrl": "https://v16-kling-fdl.klingai.com/bs2/upload-ylab-stunt-sgp/muse/880729667513225227/VIDEO/20260512/e7a7464ffa76c5e21100c04a166aafe8-6face1fb-cdd9-42b5-8b15-71fa07cd2f03.mp4?cacheKey=ChtzZWN1cml0eS5rbGluZy5tZXRhX2VuY3J5cHQSsAFYpYAP-86YstiGLF59EoO6GtuUGx06nCs0i5zQ-WksCC9Pq7E6MVE5c17Xn5BIv8JAVNvyb3zksx--DWU33WBDQUVgplZ8qr_Oeab-ShIuNbocDihHcDW7-FV-ZPuOlo3u53I3QjGCJqOB1bI8Y4ns4abOsZbt8SQve12HZfMGBbTS6ktPR9ENidYCof_d_9XU15lLE8tvagHAEVKyBuxNtrQJXzCU1jtjuY2v3WaCnRoS2DBhfBJlmsA0VO38d82MTxzXIiAb-S8U4iSj1raJJCed60srAHPIzVjMGzrQ1runUVN1tigFMAE&x-kcdn-pid=112781&ksSecret=52ec50f5df45d07d7ce722e396e0d873&ksTime=6a2a9d01"
+    },
+    "clip_6": {
+      "localPath": "/Volumes/Samsung500/goreadling-production/saraandeva/content/episodes/ep16/clips/6.mp4",
+      "downloadedAt": "2026-05-12T11:34:07Z",
+      "sourceUrl": "https://v16-kling-fdl.klingai.com/bs2/upload-ylab-stunt-sgp/muse/880729667513225227/VIDEO/20260512/28feb686d47966bd464bcff5887b6aa6-8d4c0ca8-a01f-4d05-a7ac-73ea2d156129.mp4?cacheKey=ChtzZWN1cml0eS5rbGluZy5tZXRhX2VuY3J5cHQSsAEXRHyL87lvMXGKCPQ7G86pN2BcjcB22DBCCpqoKLgPxrTIaXDiVtdEYFyQJZOHSX-cRTdVENUE4PIP2gtO5Xs1cCkMT5kGi9OynkrKwbuGKF_1wHPQCTt-vePUKJoYIP_rxVUzNiSejl06D-1QsSHMgAyDGrdv2cqTfg9hEz9Nnl3ajd7pF2hVBbXagsiJk7PpivPdrEKRoj2xDu3iObAQMkaxz6N01x_NVVbT-omG8BoS0dDQ6WvEt8pqXaoyQyeDsp12IiCqQjF9Vbd7RL7NrvPuoZBptp3LES2s4x7aO8Rs2yP1YCgFMAE&x-kcdn-pid=112781&ksSecret=4e3e9516ccf943f9ba76b647d82931ee&ksTime=6a2a9cf1"
+    },
+    "clip_7": {
+      "localPath": "/Volumes/Samsung500/goreadling-production/saraandeva/content/episodes/ep16/clips/7.mp4",
+      "downloadedAt": "2026-05-12T11:34:08Z",
+      "sourceUrl": "https://v16-kling-fdl.klingai.com/bs2/upload-ylab-stunt-sgp/muse/880729667513225227/VIDEO/20260512/ada957ef883c6b3415e5e6e2e736e4dc-28908d0a-32a2-4db6-8683-ea0af5dc0fa7.mp4?cacheKey=ChtzZWN1cml0eS5rbGluZy5tZXRhX2VuY3J5cHQSsAGwSv6sWC0g2S4ZN7I4pJZuoOKuS6zaHy_oMq-N8SteIPs-u2ELmsVzSvSW7XSF0iAIphxJWF0WSnTxThLzzJA-AzYpQ-zpanjw0iP62wmaOI-KwEka_4F8twl0LSNgVX2b1wza2GRQdA4dsHt00CVO4rjDaxnO0WKD8FmtHzx5xcwTmT1-_LPORFDOMsf1RZzFvozOifhfZNu9SPZh8Rr1UNL0hM3WpVYPaQ0RylIKzRoSf6vJMx190TgGD4GP2nZFxCPDIiCt64rPGAr-LpaXEK7BaVEUEDBHxn0slywkrKpMZFyvNygFMAE&x-kcdn-pid=112781&ksSecret=af86a085908962e301c27b95f522fb35&ksTime=6a2a9cf6"
+    },
+    "clip_8": {
+      "localPath": "/Volumes/Samsung500/goreadling-production/saraandeva/content/episodes/ep16/clips/8.mp4",
+      "downloadedAt": "2026-05-12T11:34:12Z",
+      "sourceUrl": "https://v16-kling-fdl.klingai.com/bs2/upload-ylab-stunt-sgp/muse/880729667513225227/VIDEO/20260512/0cbfabe77cae1a797e55e18d3409b8c9-00f58a60-0e3c-4212-b491-931c6e2685b6.mp4?cacheKey=ChtzZWN1cml0eS5rbGluZy5tZXRhX2VuY3J5cHQSsAG1n_y6FWtFk9waGlSF37WiW5PJWlHvzkEB7JO9XdPaBvpVrJ9mrv9KnX8yahZkhmHvTTlWIa0WhooEiuLqrIH0AmfMgYovPYAcdYYDy2ruKU6_uI_Q2kMec2JQ6A6gZ_AKCu5md9vvLnB5SRFojIEnJiZv9Z0Nu8qJ1e6lYsrX0-YuFHh_3XGQf8yvBCllOwIjG4Erg8kna2QurZo_sg9TQ5shuBXVhSmEhY0Kk-BotxoSiK-SiyTQu2yvu8rTuMxr8vOaIiC_h48nPMcic6ZiMBVWuKRp7V6AZE6TUhQcWeDRF4WybigFMAE&x-kcdn-pid=112781&ksSecret=17947589d062917f9c4316874e964632&ksTime=6a2a9d1f"
+    },
+    "clip_9": {
+      "localPath": "/Volumes/Samsung500/goreadling-production/saraandeva/content/episodes/ep16/clips/9.mp4",
+      "downloadedAt": "2026-05-12T11:35:16Z",
+      "sourceUrl": "https://v16-kling-fdl.klingai.com/bs2/upload-ylab-stunt-sgp/muse/880729667513225227/VIDEO/20260512/c3d4b974e0d555a9b52c79e93e3e765c-a88e442a-8845-4fbd-b325-4a38ed988983.mp4?cacheKey=ChtzZWN1cml0eS5rbGluZy5tZXRhX2VuY3J5cHQSsAENXEzmYi-C1Lk_AqsicRgRX1A-1syr2NjPTpGESY3VMwd9fdGlmjShAXJ7nw3mzd0zi0Ra4KNRHufZPdL7BULj1jJUcmBP6IWBGs8W0pI0Q6URpnm510qdd4st3Ix1oQnJNRneXndjRNFBvp0cvtZX13Emohdaa7XuoKPBHrhxYtbPaYU0puz8-F3FvOBruWfntS8sN3Me6nVRnZmOQ6YihWcI0j8FQX0lIEc4PJuFrRoSBJLSFVs3h7NB0bSL9MQcdiMhIiCSEJ4qjdUwwAOizwY2zevY2c81f1_oJkbt8lETKarMdygFMAE&x-kcdn-pid=112781&ksSecret=6b9e14d7f195687c4068917791587f1c&ksTime=6a2a9d6b"
+    },
+    "clip_10": {
+      "localPath": "/Volumes/Samsung500/goreadling-production/saraandeva/content/episodes/ep16/clips/10.mp4",
+      "downloadedAt": "2026-05-12T11:41:32Z",
+      "sourceUrl": "https://v16-kling-fdl.klingai.com/bs2/upload-ylab-stunt-sgp/muse/880729667513225227/VIDEO/20260512/a539de092c7862d4ba47899a8e1f433a-e1e90853-534b-44c8-8c89-369de41e17e4.mp4?cacheKey=ChtzZWN1cml0eS5rbGluZy5tZXRhX2VuY3J5cHQSsAG1oIa5IlwknNW7ChnQAQUEb-oOKwGGmzU7EMbxfIXYxWloF8Fk2FKwZvt_E7Gf_gkBAo2RNFNCzJoVBmFypBndJ2uWy7Qt6w8kCsImj0n9SisSlPqEeHKQT7rf0_gN3CWwWqGWg84ySfKX3nBgGqa0KHFBfkUZOTW3jGDKuKoizSVvxJhQ6W6tTjxdAAGMEc2yXWjzJUWcrME-td7Jsk-dAuRxr9wie5f301uNjX_CFhoSLL46pEJbTw3u2hySdPDYoj5mIiDfDsNBOfeWNELJgf-26ZGWBwJBymg4EA7YnoqdDuGiZCgFMAE&x-kcdn-pid=112781&ksSecret=cf2b55a570efe7174fa636f46ace7fd4&ksTime=6a2a9ee0"
+    },
+    "clip_11": {
+      "localPath": "/Volumes/Samsung500/goreadling-production/saraandeva/content/episodes/ep16/clips/11.mp4",
+      "downloadedAt": "2026-05-12T12:16:40Z",
+      "sourceUrl": "https://v16-kling-fdl.klingai.com/bs2/upload-ylab-stunt-sgp/muse/880729667513225227/VIDEO/20260512/717d80485472f7360a85e2ee46583cb6-32bbe726-c5c2-4c8c-8334-d04a621bc691.mp4?cacheKey=ChtzZWN1cml0eS5rbGluZy5tZXRhX2VuY3J5cHQSsAEi7iOMf7ALdr9olcbwWPaW376LZwsujhIbN3KI_JpinR1Y6lqulTc6JAInTdGkpXAj5HVDgi_-BAFvB9g9QbLMatZyxHjYyqklutx9b03YxsavB-8vOOJgu5u1PI4c98zV5zQLOf8kG3Lst8fWVez5vbnlhBQ2NvWXEyQgjK10drGbYVfk5Fuc9asUps28vTYN8y8jIUheVgNgKJJo_8eODVjsnFHTUsVqd5j4NsNg1RoSv3Uc89R3_xETrF65D8P8-8MOIiBdzyPy_sxbjWEsL1x7Q4eTLSkJZMB4D24VJpuyYqu85ygFMAE&x-kcdn-pid=112781&ksSecret=b07882557292bf8814eb272abf891309&ksTime=6a2aa702"
+    },
+    "clip_12": {
+      "localPath": "/Volumes/Samsung500/goreadling-production/saraandeva/content/episodes/ep16/clips/12.mp4",
+      "downloadedAt": "2026-05-12T12:16:41Z",
+      "sourceUrl": "https://v16-kling-fdl.klingai.com/bs2/upload-ylab-stunt-sgp/muse/880729667513225227/VIDEO/20260512/958381822392ba805c8104510dff20d6-e6eee345-f281-4a57-9514-55c123b2758c.mp4?cacheKey=ChtzZWN1cml0eS5rbGluZy5tZXRhX2VuY3J5cHQSsAERSmoLjY2Wf9Uf36im2rxdFfqPSSh6KEq7gnmr_8hyvsLjFf6f8yNSStEzBn4yJGLK4DKWPy7AiET93ia09biLzRlLiZXUua_1_lROnu0Thwp19M9AN67R5QeY9geizLRxS5k3CF8jIsZXekqB5S_gTdg_RPq7w2huypkPf2nki7_ilLcUZ6GXpmrSjOy_-hSfIHWLK8WP02thhpsuvxtQv-g3nIXp0lx5LxOXJWtRchoS0dDQ6WvEt8pqXaoyQyeDsp12IiB3jhwV5e44uocFXgFWhlkiIF8Nl-eK7uteyLaZzzjESygFMAE&x-kcdn-pid=112781&ksSecret=c0884b78e65c345c1898577ce3b12bcd&ksTime=6a2aa727"
+    },
+    "clip_13": {
+      "localPath": "/Volumes/Samsung500/goreadling-production/saraandeva/content/episodes/ep16/clips/13.mp4",
+      "downloadedAt": "2026-05-12T12:17:27Z",
+      "sourceUrl": "https://v16-kling-fdl.klingai.com/bs2/upload-ylab-stunt-sgp/muse/880729667513225227/VIDEO/20260512/b83e3a9033f75541321eab9a31a3f8ad-a550c7fb-0531-4638-b309-058d7d85a388.mp4?cacheKey=ChtzZWN1cml0eS5rbGluZy5tZXRhX2VuY3J5cHQSsAHDRySsbGR6PKldccw7c9lF3XWnz3_iyC0AW-XoCNzBR8UeYaYxi9u62oIJ61L-W-IWK_3ZVSk3CIVKOiB_BA8IKEzk3y6wm6OZ2Lz4-W-rb7RS1dWaqbr51-bb-wLm0XxjuVfVfT03GYtjZO7eusV7ZsEV-3WDkrF07JhOC9jDAXYw2LUje9bUAzCKp-xFH4EsCkddb_IheATvLOwQwNDwHwyiQCxJaH8-vW6r_1gqrBoSYF8ADrg3uvuiuzhTSVrQUvw0IiB7Q0_ILeWWjk_aC0UJ25Pg3VjR_QtNnb7htn8qO4uFuSgFMAE&x-kcdn-pid=112781&ksSecret=0cfe2a9794f9e5f53fa63d2d8888f1c4&ksTime=6a2aa73f"
+    },
+    "clip_14": {
+      "localPath": "/Volumes/Samsung500/goreadling-production/saraandeva/content/episodes/ep16/clips/14.mp4",
+      "downloadedAt": "2026-05-12T12:18:33Z",
+      "sourceUrl": "https://v16-kling-fdl.klingai.com/bs2/upload-ylab-stunt-sgp/muse/880729667513225227/VIDEO/20260512/486cfca8b9c41c7feed03e99ec3d0cc6-d3012efa-840c-42a9-8fe3-c590d9276044.mp4?cacheKey=ChtzZWN1cml0eS5rbGluZy5tZXRhX2VuY3J5cHQSsAFe2N7lg-S56JKQ5szUHs0fjriY1WHABbem8odie3qjy7G16un7-BjbtpJ07WBsDZWfdnT-OXSrQLQxpXOe-ZuBYpm21BColQZhmX2zESzy5YjKw4kxrpSSA2ozt5lEdK-AUjSg3qjS3LxyAabZjlgugkQEmHYInvttpTdRdE8aGnne9f86qcg0MP8HgrNDrU53343RPP0HWA1QTQi4WlhCwdHkPSCXlSVI_VnfMwUEtBoSxWNjcgh9zqt_zDfpYBGATs3tIiDfZnTDKUZmRn-cMoEu1HWa0y94nfMUAOokkDgwwlwc7CgFMAE&x-kcdn-pid=112781&ksSecret=bf05ca07edc796477e6cf7e35e0ab091&ksTime=6a2aa793"
+    },
+    "clip_15": {
+      "localPath": "/Volumes/Samsung500/goreadling-production/saraandeva/content/episodes/ep16/clips/15.mp4",
+      "downloadedAt": "2026-05-12T12:20:17Z",
+      "sourceUrl": "https://v16-kling-fdl.klingai.com/bs2/upload-ylab-stunt-sgp/muse/880729667513225227/VIDEO/20260512/7821445a109170648b5c7430412b6be2-8919d785-ea7f-4cc4-bbb8-85a8014eb115.mp4?cacheKey=ChtzZWN1cml0eS5rbGluZy5tZXRhX2VuY3J5cHQSsAEOD8R7fMxYFRWkAJ5IRua0Q_DhLh1DYPzEDC_oH7CveARxHpxqrL5q3kkFSRItHp2iAA1YRdWjGOr8qw0S7VcARe0K2plxv6KJQ44eFk1M0NT0p_r-NBw5Mzfvr27RFweQVtG6OALLE0uMZVlHOyYluvnXerWI0103fcqmB_OdOZdnYCHiC_8g2jyUL1BCkbUI9qADSTMLEo_hTTgcOH_rvSVeAgepH6Knr4Av_QTWMRoSK9DDR3Zts0AO39BBzVqoebvyIiB-R4eY1w2r9eK3p4QwAeJZIwCX3yTC0gHEZiLoZNOaPSgFMAE&x-kcdn-pid=112781&ksSecret=b2157514be13b0eece6cfef16f84de18&ksTime=6a2aa7f0"
+    },
+    "clip_16": {
+      "localPath": "/Volumes/Samsung500/goreadling-production/saraandeva/content/episodes/ep16/clips/16.mp4",
+      "downloadedAt": "2026-05-12T12:26:05Z",
+      "sourceUrl": "https://v16-kling-fdl.klingai.com/bs2/upload-ylab-stunt-sgp/muse/880729667513225227/VIDEO/20260512/590c7102665012c8945ce68f4ebbf031-ba068bb2-56ad-4484-a839-92fe9be1969e.mp4?cacheKey=ChtzZWN1cml0eS5rbGluZy5tZXRhX2VuY3J5cHQSsAEOrVhrKtZMJGwdD6_uTewwodLkt24F9auKU1urplZ8r9Aw3TaOVL3wrGIU0KwwvNEdA3Ygv0YOxybpNJWtgEEWIzN4fOmwZEbzeiK5rRlGtYUyYrKXfdC0zXLoKfs65RZ9SMaqAjCXtz21yZapj8DvmbD41odat9vx4UYngfK6I6S-DVdfroVu-Yp_2EfmD-B_OivABTaDKCokJAeo9UUtyWNy0xxn8c2gXrSymC9NThoSyfxirU_pcpSwYh-JFVmDEt6gIiBmvBjD2UW53nyz_DZhQaXMmO3jZf7RAtkljpQ_sKUeaigFMAE&x-kcdn-pid=112781&ksSecret=a6a5c3bb341053dc25d9c7f8b44c1ca5&ksTime=6a2aa92f"
+    },
+    "clip_19": {
+      "localPath": "/Volumes/Samsung500/goreadling-production/saraandeva/content/episodes/ep16/clips/19.mp4",
+      "downloadedAt": "2026-05-12T12:26:08Z",
+      "sourceUrl": "https://v16-kling-fdl.klingai.com/bs2/upload-ylab-stunt-sgp/muse/880729667513225227/VIDEO/20260512/327f6232bc0057769bf38adb53099293-43d2b7dc-f847-41a7-bb4c-6bc3536d279b.mp4?cacheKey=ChtzZWN1cml0eS5rbGluZy5tZXRhX2VuY3J5cHQSsAH_hxn3U2qBnjMcH8SVZp1_JR24pEdAbvWb34Pn-pDv3Q5mY64lfGAjqbYjDgwHUzmjZj-bv-94zCj5RHdCLAGUTTbuga_15Kjd1k_v_PdYkbKU1wRBATp_RqeiFYfPUmJcFSVQ1U6Ws4AhHmTUVowbqoxFdkCBj1HLaxk3l1f3qoeCdIrgLM3H6xWcz6mHniKkQk1iMHfq12fcI1kjAEfjj0xN6nwat7L04tioMgnnXBoSxWNjcgh9zqt_zDfpYBGATs3tIiDqy3c_8IAezuRmmOgVLYICKydKlijvgZcGvrAfutAHrSgFMAE&x-kcdn-pid=112781&ksSecret=bf5d30c0c2d5267848216ad96912fe56&ksTime=6a2aa931"
+    },
+    "clip_17": {
+      "localPath": "/Volumes/Samsung500/goreadling-production/saraandeva/content/episodes/ep16/clips/17.mp4",
+      "downloadedAt": "2026-05-12T12:26:32Z",
+      "sourceUrl": "https://v16-kling-fdl.klingai.com/bs2/upload-ylab-stunt-sgp/muse/880729667513225227/VIDEO/20260512/18423d4178a43fe794a11ef35331109c-111efc28-d595-4c4c-9155-a0c06cbac589.mp4?cacheKey=ChtzZWN1cml0eS5rbGluZy5tZXRhX2VuY3J5cHQSsAE3IWAw5wm5k7t8xl1MU_CDbMVmxA-AaKTdbDr9wNRdYY-MVzFpue-hC6ZsgwmZ2CiRkT3VT3mPAtTSuJgwZPA_leGwtc5ccYtoOHnkihJjlyGb8ajLrcctWSJxWTAPUjJjVl2OfmPUu_luHCuw4oUmjzr6OVye2OjWLDj64tdET9RB0mdgUx_fV0pm6pQgCO4yEHQDTxCe_QwNLUnE3M7oXIUyQC7wH4v1VgFHprjb1hoSNzwANz7xQHQ1n3QnpfpV26ryIiBoVFdMroiijyBZl-UbQn30lK8FxNo9jpGRrKozwwHbEigFMAE&x-kcdn-pid=112781&ksSecret=f2ca34871e9ed8e8bf312a35c21cfc58&ksTime=6a2aa96b"
+    },
+    "clip_18": {
+      "localPath": "/Volumes/Samsung500/goreadling-production/saraandeva/content/episodes/ep16/clips/18.mp4",
+      "downloadedAt": "2026-05-12T12:27:24Z",
+      "sourceUrl": "https://v16-kling-fdl.klingai.com/bs2/upload-ylab-stunt-sgp/muse/880729667513225227/VIDEO/20260512/0fedd857ead8aa55cc6e174f6c172a05-e64af789-65d9-4966-95be-67f8603df79f.mp4?cacheKey=ChtzZWN1cml0eS5rbGluZy5tZXRhX2VuY3J5cHQSsAFoQJTE5Xozr--Q36iH5mGjAQ7O-yNyKD8z_Qv2KNGwQODvulqDCV5GqMJX6ESQGWRBDrqq2EyjG4rEjzk5KRml9gLmR7b6ojxcJmn2P0qHd7XXb8soFPsFrh1fiBK2T7ax-gqJaUrtL_e_YYRyjnBfzk2Qd6Hm6CqBmeQT5cqrATHrNZSVBReGr7fRKpQR1Skst1eKkkv8XlEa8zs5ji53gMny0uodeHC9CI3cDiCUqxoSi9mNAwk6ykvhH5T-Qr88Ouz0IiAJySWsK5FJNeBc99yENGMLhuydPGz9gaUYgMa9RLfeECgFMAE&x-kcdn-pid=112781&ksSecret=be3be63f0ddf90a79da3fe9adf346660&ksTime=6a2aa999"
+    },
+    "clip_22": {
+      "localPath": "/Volumes/Samsung500/goreadling-production/saraandeva/content/episodes/ep16/clips/22.mp4",
+      "downloadedAt": "2026-05-12T12:27:28Z",
+      "sourceUrl": "https://v16-kling-fdl.klingai.com/bs2/upload-ylab-stunt-sgp/muse/880729667513225227/VIDEO/20260512/e8012f29bb09835743e0f0f7de048626-829a9eb5-9e35-4f4a-a813-a72f9d1d4c11.mp4?cacheKey=ChtzZWN1cml0eS5rbGluZy5tZXRhX2VuY3J5cHQSsAGQEroE-Q9bsK2fEylA3cGQIhg2srIvbdvMnYQ35fL15P2bYQXCG0HpBfK1igZ6cp7-nCyoOHIsn2gzbohrb-64uGXUOXOCN1vaU-52xfwEFzMrobZj-yoErOFb0S_pPj6RCdlZmUuPyy8jLdmr8q1-i9qC8Vh_rh195qqSNhGKKsFd6unIoNH6QkPMu931L8ipIKl3ySp_ka7oQv0lnw4xp2UQTbpGKkX7lTdE8qwDuxoS0dDQ6WvEt8pqXaoyQyeDsp12IiA6he9spgxhKVmOyg-tfzm_B-KK2QESvb4TfINa_T2KJygFMAE&x-kcdn-pid=112781&ksSecret=6b0598b2d375454b1417818d8dda487c&ksTime=6a2aa999"
+    },
+    "clip_20": {
+      "localPath": "/Volumes/Samsung500/goreadling-production/saraandeva/content/episodes/ep16/clips/20.mp4",
+      "downloadedAt": "2026-05-12T12:28:13Z",
+      "sourceUrl": "https://v16-kling-fdl.klingai.com/bs2/upload-ylab-stunt-sgp/muse/880729667513225227/VIDEO/20260512/aa3caf89dd481d447a480f58d6b7aeed-087e29f3-843e-4392-8523-4785ee16f6eb.mp4?cacheKey=ChtzZWN1cml0eS5rbGluZy5tZXRhX2VuY3J5cHQSsAHEoWpmL2Cwj9EuXhqbWOUIK36SDFsOiAdJCm_1oRfnliJj8NrIzFqLZ9XUcvm5FpAPred1djXpD7KmdJ-jpRfu2pk5PeI8uPUPmrGcS1aOgbVwbti6QjO2C2qa92MqU-B9yGpiZRF2UmvqtBoqlZACym3RZsHFfDb9qtw8WheA_WjditP68FfWGg76CNyd76rZBYtWkSxTv8z5xsA0IU-QE3snY0FcUzGEcbvirEEiFhoSbgFFnrpiqTZzapT733K7iU3CIiBJrygobSsHmYSwpJd2QSqcM87mlQyIQ3jLh9KzXHUrcSgFMAE&x-kcdn-pid=112781&ksSecret=7ec177386116341dc31f6b7f29b69ffd&ksTime=6a2aa9d3"
+    },
+    "clip_21": {
+      "localPath": "/Volumes/Samsung500/goreadling-production/saraandeva/content/episodes/ep16/clips/21.mp4",
+      "downloadedAt": "2026-05-12T14:20:16Z",
+      "sourceUrl": "https://v16-kling-fdl.klingai.com/bs2/upload-ylab-stunt-sgp/muse/880729667513225227/VIDEO/20260512/32c74c8083b91d9b22209e5c798ea1ef-eb95f061-5ef4-4903-ad54-f6ed01f851dc.mp4?cacheKey=ChtzZWN1cml0eS5rbGluZy5tZXRhX2VuY3J5cHQSsAGy3XXeokLv0FvA_aeNuhLSOyxgMULwAUTma-cCu4dmRqyk5q-jqC4I_p69LBhHqcJpNwKQwkdl7bU9U1WkYH3Pl0ChK3VbC1ZZ2B8zxilXwk6_iBfseE8OlvW085MBPm1x2f8E6t8FjP7NGO9h1Lo1dL-P3a49ufEkz_3mGAgTKt-gg7HMhNOVj6w2cYjGr0I8qeQA_JipS2EmUk3ki6CP_J9SPBslSpd6sHKr6FB7tRoSk8Q9wF5iLa3FHD-a4yQLv8RpIiDdzNar2nZvRApTBPHHR-vZoO_D6_eTIdoEvBbhiGqxjigFMAE&x-kcdn-pid=112781&ksSecret=c416f38b8e6a2fb252a9d442c5d253c6&ksTime=6a2ac40a"
+    }
+  },
+  "lastFrames": {}
+}

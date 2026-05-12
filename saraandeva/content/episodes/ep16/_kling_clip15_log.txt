@@ -1,0 +1,22 @@
+▶ POST /v1/videos/image2video
+  model=kling-v1-6 mode=std duration=5s
+  start=https://storage.googleapis.com/saraandeva-kling-elements/ep16/ep16_clip15_start.png
+  end  =https://storage.googleapis.com/saraandeva-kling-elements/ep16/ep16_clip15_end.png
+  ext_id=ep16-clip15-i2v-1
+  prompt: Camera arcs around the back of the cream sectional couch. @Sara, @Eva, and @Mama lean OVER the back of the couch in a tight cluster of three heads. Al...
+❌ submit failed: HTTP 400  {
+  "code": 1201,
+  "message": "model/mode/duration(kling-v1-6/std/5) is not supported with only image_tail",
+  "request_id": "fa57060e-9bf6-4e09-bdde-1ad39599443b"
+}
+▶ POST /v1/videos/image2video
+  model=kling-v1-5 mode=std duration=5s
+  start=https://storage.googleapis.com/saraandeva-kling-elements/ep16/ep16_clip15_start.png
+  end  =https://storage.googleapis.com/saraandeva-kling-elements/ep16/ep16_clip15_end.png
+  ext_id=ep16-clip15-i2v-v15
+  prompt: Camera arcs around the back of the cream sectional couch. @Sara, @Eva, and @Mama lean OVER the back of the couch in a tight cluster of three heads. Al...
+❌ submit failed: HTTP 400  {
+  "code": 1201,
+  "message": "model/mode/duration(kling-v1-5/std/5) is not supported with only image_tail",
+  "request_id": "5fa74592-e034-4ed3-80fb-cb7cd49a946f"
+}

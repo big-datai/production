@@ -1,0 +1,55 @@
+{
+  "episode": 16,
+  "beat": 17,
+  "clip": 17,
+  "title": "Sara writes a letter to the Tooth Fairy",
+  "mode": "omni",
+  "durationSec": 10,
+  "quality": "720p",
+  "nativeAudio": true,
+  "expectedCredits": 90,
+  "subjects": [
+    "Sara",
+    "Eva"
+  ],
+  "scene": "kitchen_morning",
+  "boundElements": [
+    {
+      "tag": "Sara",
+      "source": "library"
+    },
+    {
+      "tag": "Eva",
+      "source": "library"
+    },
+    {
+      "tag": "kitchen_morning",
+      "source": "library"
+    }
+  ],
+  "prompt": [
+    "@Sara sits at the kitchen table, a pink CRAYON pinched in right fingers, drawing carefully on a sheet of paper. The tongue POKES out the side of the mouth in concentration. @Eva leans on the table beside, both elbows down, chin in palms, eyes WATCHING the paper. The paper shows a child-drawn fairy with wings and a wand. The crayon ADDS sparkly dots around the fairy. The younger girl POINTS to the paper, mouth OPENS adding an idea. Warm morning kitchen daylight. @Sara (focused): \"Dear Tooth Fairy...\""
+  ],
+  "negativePrompt": [
+    "duplicate character",
+    "ghost figure",
+    "extra arm",
+    "anatomy error",
+    "morphing",
+    "flickering",
+    "disfigured",
+    "scary face",
+    "horror lighting",
+    "blood",
+    "dutch angle",
+    "handheld shake",
+    "jump cut",
+    "eva with brown hair",
+    "sara in ponytail",
+    "live action footage",
+    "photographic realism",
+    "adult handwriting",
+    "blank paper",
+    "standing still"
+  ]
+}

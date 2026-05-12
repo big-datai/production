@@ -1,0 +1,34 @@
+━━━ Render ep16 Nano stills ━━━
+  Clips:    22
+  Parallel: 4
+  Out dir:  /Volumes/Samsung500/goreadling-production/saraandeva/content/episodes/ep16/stills
+  Mode:     LIVE
+
+  ✅ clip 1: ok
+  ✅ clip 11: ok
+  ✅ clip 10: ok
+  ✅ clip 13: ok
+  ✅ clip 15: ok
+  ✅ clip 17: ok
+  ✅ clip 16: ok
+  ✅ clip 14: ok
+  ✅ clip 18: ok
+  ✅ clip 19: ok
+  ✅ clip 2: ok
+  ⏰ clip 12: timeout
+  ✅ clip 20: ok
+  ✅ clip 22: ok
+  ✅ clip 3: ok
+  ✅ clip 4: ok
+  ✅ clip 21: ok
+  ✅ clip 5: ok
+  ✅ clip 6: ok
+  ✅ clip 7: ok
+  ✅ clip 9: ok
+  ✅ clip 8: ok
+
+━━━ DONE: 21 stills generated, 0 failed ━━━
+
+📂 Review the stills in: /Volumes/Samsung500/goreadling-production/saraandeva/content/episodes/ep16/stills
+   Once approved, submit to Kling via:
+   python3 _run_ep16_kling_i2v.py  (uses stills as start frame)

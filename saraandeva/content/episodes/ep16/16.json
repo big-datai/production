@@ -1,0 +1,55 @@
+{
+  "episode": 16,
+  "beat": 16,
+  "clip": 16,
+  "title": "Eva \u2014 'Joe, YOU TOOK it!' (Joe guilty)",
+  "mode": "omni",
+  "durationSec": 5,
+  "quality": "720p",
+  "nativeAudio": true,
+  "expectedCredits": 45,
+  "subjects": [
+    "Eva",
+    "Joe"
+  ],
+  "scene": "ep16-living-room-detective",
+  "boundElements": [
+    {
+      "tag": "Eva",
+      "source": "library"
+    },
+    {
+      "tag": "Joe",
+      "source": "library"
+    },
+    {
+      "tag": "ep16-living-room-detective",
+      "source": "library"
+    }
+  ],
+  "prompt": [
+    "Close shot. @Eva kneels facing @Joe the Pomeranian on the living room rug. Small hands ON HIPS, eyebrows PULL TOGETHER. The little dog SITS, ears FLAT DOWN, eyes wide and guilty, tongue PEEKS out apologetically. TAIL gives one tiny wag. The girl's expression softens slightly. Warm morning daylight. @Eva (gentle scolding): \"Joe... you took it.\""
+  ],
+  "negativePrompt": [
+    "duplicate character",
+    "ghost figure",
+    "extra arm",
+    "anatomy error",
+    "morphing",
+    "flickering",
+    "disfigured",
+    "scary face",
+    "horror lighting",
+    "blood",
+    "dutch angle",
+    "handheld shake",
+    "jump cut",
+    "eva with brown hair",
+    "sara in ponytail",
+    "live action footage",
+    "photographic realism",
+    "yelling angry",
+    "joe scared",
+    "scary tone"
+  ]
+}

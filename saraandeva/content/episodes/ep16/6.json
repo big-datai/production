@@ -1,0 +1,49 @@
+{
+  "episode": 16,
+  "beat": 6,
+  "clip": 6,
+  "title": "AUDIENCE-ASK \u2014 Do YOU believe in the Tooth Fairy?",
+  "mode": "omni",
+  "durationSec": 5,
+  "quality": "720p",
+  "nativeAudio": true,
+  "expectedCredits": 45,
+  "subjects": [
+    "Eva"
+  ],
+  "scene": "ep16-evas-bedroom-night",
+  "boundElements": [
+    {
+      "tag": "Eva",
+      "source": "library"
+    },
+    {
+      "tag": "ep16-evas-bedroom-night",
+      "source": "library"
+    }
+  ],
+  "prompt": [
+    "@Eva sitting cross-legged on the bed at night, facing camera directly. Eyes BIG and SPARKLING under the fairy lights. Both hands COME UP under the chin, fingers INTERLACED in a wishing pose. Head TILTS slightly, eyebrows LIFT. Pink pajamas, gap-tooth grin. Soft moonlight + fairy lights. @Eva (wonder): \"Do YOU believe in the Tooth Fairy?!\""
+  ],
+  "negativePrompt": [
+    "duplicate character",
+    "ghost figure",
+    "extra arm",
+    "anatomy error",
+    "morphing",
+    "flickering",
+    "disfigured",
+    "scary face",
+    "horror lighting",
+    "blood",
+    "dutch angle",
+    "handheld shake",
+    "jump cut",
+    "eva with brown hair",
+    "sara in ponytail",
+    "live action footage",
+    "photographic realism",
+    "adult voice",
+    "boring delivery"
+  ]
+}

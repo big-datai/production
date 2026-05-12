@@ -1,0 +1,54 @@
+{
+  "episode": 16,
+  "beat": 4,
+  "clip": 4,
+  "title": "Mama explains the Tooth Fairy",
+  "mode": "omni",
+  "durationSec": 10,
+  "quality": "720p",
+  "nativeAudio": true,
+  "expectedCredits": 90,
+  "subjects": [
+    "Mama",
+    "Eva"
+  ],
+  "scene": "kitchen_morning",
+  "boundElements": [
+    {
+      "tag": "Mama",
+      "source": "library"
+    },
+    {
+      "tag": "Eva",
+      "source": "library"
+    },
+    {
+      "tag": "kitchen_morning",
+      "source": "library"
+    }
+  ],
+  "prompt": [
+    "@Mama kneels to @Eva's eye level in the kitchen. Both hands GENTLY CUP a small hand holding a tiny tooth. Lips MOVE warmly, eyes SOFTEN. Young eyes WIDEN with wonder, mouth slowly OPENS in awe. The right hand RISES and GESTURES upward as if describing a tiny fairy. A small head TILTS, eyebrows LIFT. Warm motherly nod, gesture sweeps down to mime tucking under a pillow. Warm morning kitchen daylight. @Mama (gentle): \"Put it under your pillow tonight, and the Tooth Fairy will leave you a special coin.\""
+  ],
+  "negativePrompt": [
+    "duplicate character",
+    "ghost figure",
+    "extra arm",
+    "anatomy error",
+    "morphing",
+    "flickering",
+    "disfigured",
+    "scary face",
+    "horror lighting",
+    "blood",
+    "dutch angle",
+    "handheld shake",
+    "jump cut",
+    "eva with brown hair",
+    "sara in ponytail",
+    "live action footage",
+    "photographic realism",
+    "standing still",
+    "looking away"
+  ]
+}

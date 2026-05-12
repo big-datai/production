@@ -1,0 +1,50 @@
+{
+  "episode": 16,
+  "beat": 20,
+  "clip": 20,
+  "title": "Morning \u2014 Eva discovers TWO coins and a note",
+  "mode": "omni",
+  "durationSec": 10,
+  "quality": "720p",
+  "nativeAudio": true,
+  "expectedCredits": 90,
+  "subjects": [
+    "Eva"
+  ],
+  "scene": "ep16-evas-bedroom-night",
+  "boundElements": [
+    {
+      "tag": "Eva",
+      "source": "library"
+    },
+    {
+      "tag": "ep16-evas-bedroom-night",
+      "source": "library"
+    }
+  ],
+  "prompt": [
+    "Bright morning sunlight on the bed. @Eva sits up, hair messy. Both hands LIFT the lavender pillow QUICKLY. Eyes WIDEN huge. On the sheet: TWO shiny gold COINS and a tiny folded NOTE. Fingers PICK UP the note, hands TREMBLE with excitement, UNFOLD it carefully. A tiny sparkle FLICKERS at the corner of the note. The eyes GLOW with joy. Warm morning daylight. @Eva (reading aloud with wonder): \"I understand. Joe's a good dog. Love, The Tooth Fairy.\""
+  ],
+  "negativePrompt": [
+    "duplicate character",
+    "ghost figure",
+    "extra arm",
+    "anatomy error",
+    "morphing",
+    "flickering",
+    "disfigured",
+    "scary face",
+    "horror lighting",
+    "blood",
+    "dutch angle",
+    "handheld shake",
+    "jump cut",
+    "eva with brown hair",
+    "sara in ponytail",
+    "live action footage",
+    "photographic realism",
+    "empty pillow",
+    "one coin only",
+    "papa in scene"
+  ]
+}

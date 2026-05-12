@@ -1,0 +1,52 @@
+{
+  "clips": {
+    "clip_1": {
+      "clip": 1,
+      "status": "ok",
+      "out": "/Volumes/Samsung500/goreadling-production/saraandeva/season_01/episode_16/clips/1.mp4",
+      "duration_s": 114.1
+    },
+    "clip_2": {
+      "clip": 2,
+      "status": "ok",
+      "out": "/Volumes/Samsung500/goreadling-production/saraandeva/season_01/episode_16/clips/2.mp4",
+      "duration_s": 129.7
+    },
+    "clip_3": {
+      "clip": 3,
+      "status": "ok",
+      "out": "/Volumes/Samsung500/goreadling-production/saraandeva/season_01/episode_16/clips/3.mp4",
+      "duration_s": 138.0
+    },
+    "clip_4": {
+      "clip": 4,
+      "status": "ok",
+      "out": "/Volumes/Samsung500/goreadling-production/saraandeva/season_01/episode_16/clips/4.mp4",
+      "duration_s": 188.8
+    },
+    "clip_5": {
+      "clip": 5,
+      "status": "ok",
+      "out": "/Volumes/Samsung500/goreadling-production/saraandeva/season_01/episode_16/clips/5.mp4",
+      "duration_s": 105.1
+    },
+    "clip_6": {
+      "clip": 6,
+      "status": "ok",
+      "out": "/Volumes/Samsung500/goreadling-production/saraandeva/season_01/episode_16/clips/6.mp4",
+      "duration_s": 111.8
+    },
+    "clip_7": {
+      "clip": 7,
+      "status": "ok",
+      "out": "/Volumes/Samsung500/goreadling-production/saraandeva/season_01/episode_16/clips/7.mp4",
+      "duration_s": 121.2
+    },
+    "clip_8": {
+      "clip": 8,
+      "status": "ok",
+      "out": "/Volumes/Samsung500/goreadling-production/saraandeva/season_01/episode_16/clips/8.mp4",
+      "duration_s": 110.9
+    }
+  }
+}

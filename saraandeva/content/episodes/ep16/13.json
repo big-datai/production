@@ -1,0 +1,58 @@
+{
+  "episode": 16,
+  "beat": 13,
+  "clip": 13,
+  "title": "AUDIENCE-ASK Sara \u2014 'I have an idea!' (question beat)",
+  "mode": "omni",
+  "durationSec": 10,
+  "quality": "720p",
+  "nativeAudio": true,
+  "expectedCredits": 90,
+  "subjects": [
+    "Sara"
+  ],
+  "scene": "ep16-living-room-detective",
+  "boundElements": [
+    {
+      "tag": "Sara",
+      "source": "library"
+    },
+    {
+      "tag": "ep16-living-room-detective",
+      "source": "library"
+    }
+  ],
+  "prompt": [
+    "Close shot on @Sara in the living room. Eyes NARROW in detective focus. INDEX FINGER RAISES sharply into the air. Mouth OPENS confidently. Head TILTS, eyebrows LIFT. A kid magnifying glass held in the left hand at chest level. Warm morning daylight. After the declaration, the gaze FLICKS to camera, eyebrows ARCH inviting the viewer. @Sara (confident detective): \"I have an idea! But first \u2014 where do YOU think the tooth went?\""
+  ],
+  "negativePrompt": [
+    "duplicate character",
+    "ghost figure",
+    "extra arm",
+    "anatomy error",
+    "morphing",
+    "flickering",
+    "disfigured",
+    "scary face",
+    "horror lighting",
+    "blood",
+    "dutch angle",
+    "handheld shake",
+    "jump cut",
+    "eva with brown hair",
+    "sara in ponytail",
+    "live action footage",
+    "photographic realism",
+    "blank stare"
+  ],
+  "questionBeat": {
+    "question": "Where do YOU think Eva's tooth went?",
+    "options": [
+      "The Tooth Fairy took it (but no coin yet!)",
+      "It fell under the bed",
+      "Joe the puppy took it!"
+    ],
+    "correctIndex": 2,
+    "displayHighlightAtSec": 7
+  }
+}

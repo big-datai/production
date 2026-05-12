@@ -1,0 +1,65 @@
+{
+  "episode": 16,
+  "beat": 18,
+  "clip": 18,
+  "title": "PARENT-ACTIVITY \u2014 Papa pretends to be the Tooth Fairy",
+  "mode": "omni",
+  "durationSec": 15,
+  "quality": "720p",
+  "nativeAudio": true,
+  "expectedCredits": 135,
+  "subjects": [
+    "Papa",
+    "Sara",
+    "Eva"
+  ],
+  "scene": "ep16-living-room-detective",
+  "boundElements": [
+    {
+      "tag": "Papa",
+      "source": "library"
+    },
+    {
+      "tag": "Sara",
+      "source": "library"
+    },
+    {
+      "tag": "Eva",
+      "source": "library"
+    },
+    {
+      "tag": "ep16-living-room-detective",
+      "source": "library"
+    }
+  ],
+  "prompt": [
+    "@Papa enters the living room holding a sparkly star-topped TOY WAND in the right hand. The chest PUFFS OUT, mouth BOOMS a goofy laugh. The left hand SWEEPS the wand through the air in big arcs above the head, scattering imaginary fairy dust. @Sara and @Eva SQUEAL and RUN around the dad in a circle. The father SPINS in place, wand still SWEEPING. He BENDS DOWN and SCOOPS the older girl up under one arm. A TWIRL. The older girl LAUGHS. He SETS her down, IMMEDIATELY SCOOPS the younger girl up the same way. The younger SHRIEKS with joy. Another TWIRL. She LAUGHS. He sets her down. All three FALL backwards onto the couch giggling, three smiles wide. Warm afternoon daylight in the living room. @Papa (booming): \"I am the Tooth Fairy! SPARKLE SPARKLE!\""
+  ],
+  "negativePrompt": [
+    "duplicate character",
+    "ghost figure",
+    "extra arm",
+    "anatomy error",
+    "morphing",
+    "flickering",
+    "disfigured",
+    "scary face",
+    "horror lighting",
+    "blood",
+    "dutch angle",
+    "handheld shake",
+    "jump cut",
+    "eva with brown hair",
+    "sara in ponytail",
+    "live action footage",
+    "photographic realism",
+    "papa standing still",
+    "papa observing without acting",
+    "papa idle",
+    "papa waiting passively",
+    "papa overweight",
+    "kids standing still",
+    "scary face",
+    "thundering"
+  ]
+}

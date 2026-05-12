@@ -140,10 +140,10 @@ prompts dilute the signal.
 | nativeAudio=true | MUST have either explicit dialogue in `"..."` or a silence directive ("no dialogue, only ambient X"). Otherwise Kling auto-generates unclear mumble. |
 | Scene-density triggers | Words like `bustling`, `storefronts framing`, `passersby`, `cafe patrons` spawn ambient extras. For solo/duo shots use `single quiet` / `empty` / `no other people`. |
 
-**Use the new drafting helper** `prodpipeline/draftClipSpec.py` to enforce the template programmatically:
+**Use the new drafting helper** `pipeline/draftClipSpec.py` to enforce the template programmatically:
 
 ```bash
-python3 prodpipeline/draftClipSpec.py \
+python3 pipeline/draftClipSpec.py \
   --episode 14 --clip 3 \
   --subjects Sara,Eva,Papa --scene ep14-anniversary-living-room \
   --title "Story setup" \
@@ -170,7 +170,7 @@ is unreliable against an explicit visual lock.
 > "Cast LOCKS: @Sara: ..., @Eva: ..., @Papa: ...
 >  Shot 2: @Papa says 'Mama and I met 10 years ago...'"
 
-Lint rule **R12** in `prodpipeline/lintEpisode.py` hard-fails any phantom Cast LOCK pre-submit.
+Lint rule **R12** in `pipeline/lintEpisode.py` hard-fails any phantom Cast LOCK pre-submit.
 Lesson: `lesson_kling_phantom_character_from_lock.md`.
 
 ---
@@ -197,7 +197,7 @@ episodes or running campaigns. Lessons live in `saraandeva/docs/lessons/`:
 - `reference/reference_title_template.md` — title formula + worked examples + char budget
 - `reference/reference_publication_calendar.md` — Wed/Fri/Sun cadence + holiday timing math
 
-### New lint rules (R17-R23 in `prodpipeline/lintEpisode.py`)
+### New lint rules (R17-R23 in `pipeline/lintEpisode.py`)
 
 | Rule | Type | Check |
 |---|---|---|
